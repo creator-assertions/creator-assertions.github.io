@@ -2,5 +2,3 @@ name: specifications
 version: ~
 title: Specifications Home
 start_page: index.adoc
-nav:
-- modules/nav.adoc  
