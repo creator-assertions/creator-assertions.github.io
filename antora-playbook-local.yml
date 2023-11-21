@@ -9,7 +9,7 @@ content:
   - url: .
     branches: main
     start_path: docs
-  - url: https://github.com/scouten-adobe/identity.git
+  - url: https://github.com/content-authorship/identity.git
     branches: HEAD
     start_path: docs
 ui: 

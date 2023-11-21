@@ -4,10 +4,10 @@ site:
   start_page: specifications::index.adoc
 content:
   sources: 
-  - url: git@github.com:scouten-adobe/cai-specs-site.git
+  - url: git@github.com:content-authorship/specs-site.git
     branches: main
     start_path: docs
-  - url: https://github.com/scouten-adobe/identity.git
+  - url: https://github.com/content-authorship/identity.git
     branches: HEAD
     start_path: docs
 ui: 
