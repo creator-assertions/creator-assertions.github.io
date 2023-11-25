@@ -7,11 +7,14 @@ content:
   - url: git@github.com:content-authorship/specs-site.git
     branches: main
     start_path: docs
+  - url: https://github.com/content-authorship/endorsement.git
+    branches: main
+    start_path: docs
   - url: https://github.com/content-authorship/identity.git
-    branches: HEAD
+    branches: main
     start_path: docs
   - url: https://github.com/content-authorship/training-and-data-mining.git
-    branches: HEAD
+    branches: main
     start_path: docs
 ui: 
   bundle:

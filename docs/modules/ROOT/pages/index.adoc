@@ -4,6 +4,7 @@ Introductory text goes here ...
 
 This site contains the various specifications and documents produced by the (Organization to be Named).
 
+* xref:endorsement:ROOT:index.adoc[]
 * xref:identity:ROOT:index.adoc[]
 * xref:training-and-data-mining:ROOT:index.adoc[]
 
