@@ -20,3 +20,9 @@ ui:
   bundle:
     url: https://voluble-treacle-74ce0d.netlify.app/ui-bundle.zip
     snapshot: true
+antora:
+  extensions:
+    - require: '@sntke/antora-mermaid-extension'
+      mermaid_initialize_options:
+        theme_variables:
+          font_family: Roboto,sans-serif
