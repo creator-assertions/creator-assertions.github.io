@@ -13,7 +13,9 @@ content:
     branches: HEAD
     start_path: docs
   - url: https://github.com/content-authorship/identity.git
-    branches: HEAD
+    branches:
+      - HEAD
+      - list-of-assertions
     start_path: docs
   - url: https://github.com/content-authorship/training-and-data-mining.git
     branches: HEAD
