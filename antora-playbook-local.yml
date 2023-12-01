@@ -16,6 +16,7 @@ content:
     branches:
       - HEAD
       - list-of-assertions
+      - did-verification-methods
     start_path: docs
   - url: https://github.com/content-authorship/training-and-data-mining.git
     branches: HEAD
