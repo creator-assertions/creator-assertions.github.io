@@ -15,7 +15,6 @@ content:
   - url: https://github.com/content-authorship/identity.git
     branches:
       - HEAD
-      - did-verification-methods
     start_path: docs
   - url: https://github.com/content-authorship/training-and-data-mining.git
     branches: HEAD
