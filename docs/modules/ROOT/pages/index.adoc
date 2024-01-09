@@ -6,6 +6,7 @@ This site contains the various specifications and documents produced by the (Org
 
 * xref:endorsement:ROOT:index.adoc[]
 * xref:identity:ROOT:index.adoc[]
+* xref:metadata:ROOT:index.adoc[]
 * xref:training-and-data-mining:ROOT:index.adoc[]
 
 PDF versions of these documents are not currently available, but may be added soon.

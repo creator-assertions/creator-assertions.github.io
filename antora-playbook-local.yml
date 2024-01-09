@@ -16,6 +16,9 @@ content:
     branches:
       - HEAD
     start_path: docs
+  - url: https://github.com/content-authorship/metadata.git
+    branches: HEAD
+    start_path: docs
   - url: https://github.com/content-authorship/training-and-data-mining.git
     branches: HEAD
     start_path: docs
