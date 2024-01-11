@@ -32,4 +32,4 @@ antora:
       mermaid_initialize_options:
         theme_variables:
           font_family: Roboto,sans-serif
-
+    - '@antora/pdf-extension'
