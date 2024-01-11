@@ -1,3 +1,4 @@
 .DS_Store
+.bundle/gems/
 build/
 node_modules/
