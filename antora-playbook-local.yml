@@ -28,8 +28,8 @@ ui:
     snapshot: true
 antora:
   extensions:
+    - '@antora/pdf-extension'
     - require: '@sntke/antora-mermaid-extension'
       mermaid_initialize_options:
         theme_variables:
           font_family: Roboto,sans-serif
-    - '@antora/pdf-extension'
