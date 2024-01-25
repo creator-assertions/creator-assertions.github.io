@@ -1,8 +1,8 @@
-= (Name Needed) Specifications
+= Creator Assertions Working Group Specifications
 
 Introductory text goes here ...
 
-This site contains the various specifications and documents produced by the (Organization to be Named).
+This site contains the various specifications and documents produced by the Creator Assertions Working Group.
 
 * xref:endorsement:ROOT:index.adoc[]
 * xref:identity:ROOT:index.adoc[]
