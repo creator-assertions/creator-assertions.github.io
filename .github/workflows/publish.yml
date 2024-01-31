@@ -39,6 +39,9 @@ jobs:
     - name: Generate Site
       run: npx antora antora-playbook-github-pages.yml
 
+    - name: Disable Jekyll
+      run: touch build/site/.nojekyll
+
     - name: Debug
       run: ls -al build/site
 
