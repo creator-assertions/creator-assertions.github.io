@@ -5,7 +5,7 @@ site:
 content:
   sources: 
   - url: git@github.com:creator-assertions/specs-site.git
-    branches: main
+    branches: temp-empty-content
     start_path: docs
   - url: https://gitlab.com/antora/demo/demo-component-a.git
     branches: HEAD
