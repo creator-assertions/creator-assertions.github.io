@@ -1,0 +1,30 @@
+site:
+  title: Creator Assertions Working Group
+  # url: https://specs.tbd.org
+  start_page: specifications::index.adoc
+content:
+  sources: 
+  - url: git@github.com:creator-assertions/specs-site.git
+    branches: main
+    start_path: docs
+  - url: https://gitlab.com/antora/demo/demo-component-a.git
+    branches: HEAD
+  - url: https://gitlab.com/antora/demo/demo-component-b.git
+    branches: [v2.0, v1.0]
+    start_path: docs
+ui: 
+  bundle:
+    url: https://voluble-treacle-74ce0d.netlify.app/ui-bundle.zip
+    snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+  - path: .nojekyll
+antora:
+  extensions:
+    - require: '@sntke/antora-mermaid-extension'
+      mermaid_initialize_options:
+        theme_variables:
+          font_family: Roboto,sans-serif
