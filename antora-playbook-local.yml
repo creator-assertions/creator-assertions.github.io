@@ -25,7 +25,7 @@ content:
 
 ui: 
   bundle:
-    url: https://local--voluble-treacle-74ce0d.netlify.app/ui-bundle.zip
+    url: https://creator-assertions.github.io/antora-ui/ui-bundle-local.zip
     snapshot: true
 
 antora:
