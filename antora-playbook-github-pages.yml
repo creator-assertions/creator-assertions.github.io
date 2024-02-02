@@ -1,11 +1,11 @@
 site:
   title: Creator Assertions Working Group
   # url: https://specs.tbd.org
-  start_page: specifications::index.adoc
+  start_page: ROOT::index.adoc
 
 content:
   sources: 
-  - url: https://github.com/creator-assertions/specs-site.git
+  - url: https://github.com/creator-assertions/creator-assertions.github.io.git
     branches: temp-empty-content
     start_path: docs
   - url: https://gitlab.com/antora/demo/demo-component-a.git
