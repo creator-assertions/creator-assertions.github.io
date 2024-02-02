@@ -2,7 +2,9 @@ name: Publish to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+    - main
+    - temp-empty-content
   workflow_dispatch:
 
 concurrency:
