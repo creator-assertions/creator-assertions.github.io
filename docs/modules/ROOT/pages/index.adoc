@@ -1,5 +1,24 @@
-= Creator Assertions Working Group Specifications
+= Creator Assertions Working Group
 
-This site contains the various specifications and documents produced by the Creator Assertions Working Group.
+The Creator Assertions Working Group builds upon the work of the link:https://c2pa.org:[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content.
 
-No specifications are available yet.
+(See link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_technical_overview++[Technical Overview] for an explanation of the C2PA data model including assertions.)
+
+== Technical specifications
+
+These assertions are specified by the following documents:
+
+* xref:identity:ROOT:index.adoc[]
+* _(endorsement assertion to be added)_
+* _(metadata assertion to be added)_
+* _(training and data mining assertion to be added)_
+
+PDF versions of these documents are not currently available, but may be added soon.
+
+== Governance
+
+_(to be added)_
+
+== Meeting schedule and notes
+
+_(to be added)_

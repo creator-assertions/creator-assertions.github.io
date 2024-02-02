@@ -4,7 +4,6 @@ on:
   push:
     branches:
     - main
-    - temp-empty-content
   workflow_dispatch:
 
 concurrency:
@@ -34,10 +33,10 @@ jobs:
         node-version: '20'
 
     - name: Install Antora
-      run: npm i antora
+      run: npm install antora
 
     - name: Generate Site
-      run: npx antora antora-playbook-github-pages.yml
+      run: npx antora antora-playbook.yml
 
     - name: Disable Jekyll
       run: touch .nojekyll
