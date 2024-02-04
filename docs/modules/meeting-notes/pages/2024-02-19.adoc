@@ -1,0 +1,27 @@
+= 19 February 2024
+
+== Meeting details
+
+_(to be added)_
+
+This will be replaced with a link to the meeting recording after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review
+
+=== 20 min: Introductions / why we're here
+
+Round-table discussion: Attendees describe their affiliations and what they are hoping to accomplish through the CAWG.
+
+=== 45 min: Review and prioritize TO DO items in existing draft specifications
+
+== Decisions
+
+== Action items
