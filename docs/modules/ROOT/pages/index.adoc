@@ -2,7 +2,7 @@
 
 The Creator Assertions Working Group builds upon the work of the link:https://c2pa.org:[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content.
 
-(See link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_technical_overview++[Technical Overview] for an explanation of the C2PA data model including assertions.)
+(See link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_technical_overview++[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model including assertions.)
 
 == Technical specifications
 
@@ -15,10 +15,20 @@ These assertions are specified by the following documents:
 
 PDF versions of these documents are not currently available, but may be added soon.
 
-== Governance
+== Contributing
 
-_(to be added)_
+=== Governance
 
-== Meeting schedule and notes
+Each of the projects of the Creator Assertion Working Group are licensed and governed under the link:https://github.com/CommunitySpecification/1.0[Community Specification License 1.0]. In order to contribute to the specifications or the working group meetings, you will first need to sign the contributor license agreement. The process for this is separate for each CAWG project and described in the README document for each repository.
 
-_(to be added)_
+Each project contains a scope document (see `scope.md` at the root of each repository) which describes the intended purpose of the project.
+
+=== Code of conduct
+
+Each of the projects of the Creator Assertions Working Group are covered by a code of conduct adapted from the link:https://www.contributor-covenant.org[Contributor Covenant Code of Conduct]. This code of conduct describes standards for acceptable and unacceptable behavior and policies for enforcing those standards. As an example, see the link:https://github.com/creator-assertions/identity-assertion/blob/main/code-of-conduct.md[Code of Conduct] in the Identity Assertion project. All projects follow this same code of conduct.
+
+=== Meeting schedule
+
+The Creator Assertions Working Group will hold weekly video meetings on Mondays at 8:30am US Pacific time / 11:30am US Eastern time / 1630 UTCfootnote:utc-shift[The time will change to 1530 UTC beginning with the 11 March 2024 meeting when the US adopts Daylight Savings Time.] for 90 minutes beginning on *19 February 2024.* There is a single meeting in which _all_ CAWG meetings will be discussed.
+
+Meeting dial-in details will be announced shortly. The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
