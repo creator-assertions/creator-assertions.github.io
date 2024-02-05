@@ -31,6 +31,16 @@ Each of the projects of the Creator Assertions Working Group are covered by a co
 
 The Creator Assertions Working Group will hold weekly video meetings on Mondays at 8:30am US Pacific time / 11:30am US Eastern time / 1630 UTCfootnote:utc-shift[The time will change to 1530 UTC beginning with the 11 March 2024 meeting when the US adopts Daylight Savings Time.] for 90 minutes beginning on *19 February 2024.* There is a single meeting in which _all_ CAWG meetings will be discussed.
 
-Meeting dial-in details will be announced shortly. The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
+The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
 
-Meeting notes are published xref:meeting-notes:index.adoc[here].
+==== Meeting notes
+
+Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
+
+==== Microsoft Teams meeting details
+
+Join on your computer, mobile app or room device
+
+* link:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODU4ZTQ1NGYtZTdiOC00NTE3LTgxNGItZDBiN2YxODk2NTMx%40thread.v2/0?context=%7b%22Tid%22%3a%22fa7b1b5a-7b34-4387-94ae-d2c178decee1%22%2c%22Oid%22%3a%22596af11d-71e7-488e-abdf-8c8dca1c97a0%22%7d[Click here to join the meeting]
+* Meeting ID: 246 749 579 462 / Passcode: Vfz46u
+* link:https://www.microsoft.com/en-us/microsoft-teams/download-app[Download Teams] | link:https://www.microsoft.com/microsoft-teams/join-a-meeting[Join on the web]
