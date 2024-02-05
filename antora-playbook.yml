@@ -26,6 +26,9 @@ content:
   #   branches: main
   #   start_path: docs
 
+urls:
+  html_extension_style: indexify
+
 ui: 
   bundle:
     url: https://creator-assertions.github.io/antora-ui/ui-bundle.zip
