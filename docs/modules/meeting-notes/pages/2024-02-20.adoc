@@ -24,6 +24,10 @@ This will be replaced with a link to the meeting recording after the meeting.
 
 Round-table discussion: Attendees describe their affiliations and what they are hoping to accomplish through the CAWG.
 
+=== 5 min: Motion to approve draft status
+
+As per [§4: Specification development process](https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process), motion to promote identity assertion from pre-draft to draft status.
+
 === 45 min: Review and prioritize TO DO items in existing draft specifications
 
 == Decisions
