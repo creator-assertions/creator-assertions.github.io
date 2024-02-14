@@ -39,10 +39,8 @@ The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the c
 
 Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
 
-==== Microsoft Teams meeting details
+Attendance at meetings requires acceptance of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md(Community Specification License Contributor License Agreement).
 
-Join on your computer, mobile app or room device
+To request an invitation, please send an e-mail to scouten@adobe.com indicating that you have read and agree to the Contributor License Agreement.
 
-* link:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODU4ZTQ1NGYtZTdiOC00NTE3LTgxNGItZDBiN2YxODk2NTMx%40thread.v2/0?context=%7b%22Tid%22%3a%22fa7b1b5a-7b34-4387-94ae-d2c178decee1%22%2c%22Oid%22%3a%22596af11d-71e7-488e-abdf-8c8dca1c97a0%22%7d[Click here to join the meeting]
-* Meeting ID: 246 749 579 462 / Passcode: Vfz46u
-* link:https://www.microsoft.com/en-us/microsoft-teams/download-app[Download Teams] | link:https://www.microsoft.com/microsoft-teams/join-a-meeting[Join on the web]
+Note that meeting details that were previously published on this site are no longer valid.
