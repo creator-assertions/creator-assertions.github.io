@@ -39,7 +39,7 @@ The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the c
 
 Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
 
-Attendance at meetings requires acceptance of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md(Community Specification License Contributor License Agreement).
+Attendance at meetings requires acceptance of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md[Community Specification License Contributor License Agreement].
 
 To request an invitation, please send an e-mail to scouten@adobe.com indicating that you have read and agree to the Contributor License Agreement.
 
