@@ -16,7 +16,7 @@ A link to the meeting recording will be provided after the meeting.
 
 * Start recording
 * Welcome and community specification license reminder
-* Agenda review
+* Agenda review and call for agenda items
 
 === 20 min: Introductions / why we're here
 
@@ -24,9 +24,36 @@ Round-table discussion: Attendees describe their affiliations and what they are 
 
 === 5 min: Motion to approve draft status
 
-As per [§4: Specification development process](https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process), motion to promote identity assertion from pre-draft to draft status.
+As per Community Specification License process link:++https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I submit the existing link:https://creator-assertions.github.io/identity/0.1-draft/[identity assertion specification] as a candidate draft and move to promote that document from *pre-draft* to *draft* status.
 
-=== 45 min: Review and prioritize TO DO items in existing draft specifications
+[quote,Community Specification License :: Governance Policy]
+____
+4.1. Pre-Draft. Any Participant may submit a proposed initial draft document as a candidate Draft Specification of that Working Group. The Maintainer will designate each submission as a “Pre-Draft” document.
+
+4.2. Draft. Each Pre-Draft document of a Working Group must first be Approved to become a “Draft Specification.” Once the Working Group approves a document as a Draft Specification, the Draft Specification becomes the basis for all going forward work on that specification.
+____
+
+=== 15 min: Open discussion: Issues that need to be addressed
+
+Open call for new issues to be raised and discussed. Limit to 1-2 min per issue; we'll file a GitHub issue if unable to come to a quick conclusion.
+
+=== 40 min: Review and prioritize TO DO items in existing draft specifications
+
+==== Items flagged as “major”
+
+These items are likely to take extra time and attention. Looking for members willing to advise or draft responses to these issues that I’ve flagged as “major”:
+
+* link:https://github.com/creator-assertions/identity-assertion/issues/16[Issue #16: Determine whether to use VC or VP for signature]
+* link:https://github.com/creator-assertions/identity-assertion/issues/22[Issue #22: Define identity assertion trust model]
+* link:https://github.com/creator-assertions/identity-assertion/issues/23[Issue #23: Provide user experience guidance]
+* link:https://github.com/creator-assertions/identity-assertion/issues/34[Issue #34: Consider targeting VC 2.0 data model?]
+* link:https://github.com/creator-assertions/identity-assertion/issues/41[Issue #41: Privacy when verifying VCs]
+
+If time permits, review link:https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+no%3Alabel[Other open issues].
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
 
 == Decisions
 
