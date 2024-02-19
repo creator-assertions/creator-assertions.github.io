@@ -35,12 +35,11 @@ Due to a US holiday, the opening meeting will be on *Tuesday, 20 February 2024,*
 
 The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
 
+To attend the meeting, please:
+
+* Review the terms of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md[Community Specification Contributor License Agreement].
+* Send a message to Eric Scouten (scouten@adobe.com) requesting an invitation and indicating your agreement to the CSL process.
+
 ==== Meeting notes
 
 Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
-
-Attendance at meetings requires acceptance of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md[Community Specification License Contributor License Agreement].
-
-To request an invitation, please send an e-mail to scouten@adobe.com indicating that you have read and agree to the Contributor License Agreement.
-
-Note that meeting details that were previously published on this site are no longer valid.

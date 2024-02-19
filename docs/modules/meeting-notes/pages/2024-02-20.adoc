@@ -1,14 +1,12 @@
 = 20 February 2024
 
-== Microsoft Teams meeting details
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
 
-Join on your computer, mobile app or room device
+Note that meeting details that were previously published on this site are no longer valid.
 
-* link:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODU4ZTQ1NGYtZTdiOC00NTE3LTgxNGItZDBiN2YxODk2NTMx%40thread.v2/0?context=%7b%22Tid%22%3a%22fa7b1b5a-7b34-4387-94ae-d2c178decee1%22%2c%22Oid%22%3a%22596af11d-71e7-488e-abdf-8c8dca1c97a0%22%7d[Click here to join the meeting]
-* Meeting ID: 246 749 579 462 / Passcode: Vfz46u
-* link:https://www.microsoft.com/en-us/microsoft-teams/download-app[Download Teams] | link:https://www.microsoft.com/microsoft-teams/join-a-meeting[Join on the web]
+== Meeting recording
 
-This will be replaced with a link to the meeting recording after the meeting.
+A link to the meeting recording will be provided after the meeting.
 
 == Attendees
 
