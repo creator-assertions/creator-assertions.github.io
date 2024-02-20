@@ -4,7 +4,7 @@ Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule
 
 == Meeting recording
 
-A link to the meeting recording will be provided after the meeting. _(Update: I'm sorting through some issues making the recording available to the public. Adding timestamps with 🎥 emoji for now. I will convert to links later.)_
+A link to the meeting recording will be provided after the meeting.
 
 == Attendees
 
