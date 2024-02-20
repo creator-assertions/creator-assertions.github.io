@@ -127,7 +127,6 @@ These items are likely to take extra time and attention. Looking for members wil
 
 * link:https://github.com/creator-assertions/identity-assertion/issues/22[Issue #22: Define identity assertion trust model]
 * link:https://github.com/creator-assertions/identity-assertion/issues/23[Issue #23: Provide user experience guidance]
-* link:https://github.com/creator-assertions/identity-assertion/issues/41[Issue #41: Privacy when verifying VCs]
 
 If time permits, review link:https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+no%3Alabel[Other open issues].
 
