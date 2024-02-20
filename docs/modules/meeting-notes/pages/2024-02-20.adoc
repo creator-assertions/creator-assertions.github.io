@@ -83,7 +83,7 @@ Open call for new issues to be raised and discussed. Limit to 1-2 min per issue;
 
 🎥 _23'24":_ Orie mentioned that the identity assertion has some conceptual similarities to software bill of material (SBOM) formats. Example SBOM in SPDX format: https://github.com/microsoft/sbom-tool/blob/main/samples/manifest.spdx.json
 
-🎥 _31'49":_ Concern raised about privacy implications of publishing, selective disclosure, JWT (Add to existing link:https://github.com/creator-assertions/identity-assertion/issues/41[issue #41: Privacy when verifying VCs]). *ACTION* _Eric Scouten_ to call together a smaller working group on privacy and invite Christian, Nick Lyons, Orie, and Jeremiah. Orie noted (via chat) that there are some limitations on privacy that come from building on top of verifiable credentials, depending on how you define the credential format.
+🎥 _31'49":_ Concern raised about privacy implications of publishing, selective disclosure, JWT (Add to existing link:https://github.com/creator-assertions/identity-assertion/issues/41[issue #41: Privacy when verifying VCs]). *ACTION:* _Eric Scouten_ to call together a smaller working group on privacy and invite Christian, Nick Lyons, Orie, and Jeremiah. Orie noted (via chat) that there are some limitations on privacy that come from building on top of verifiable credentials, depending on how you define the credential format.
 
 🎥 _36'04":_ Brief discussion about Sony's proposed distributed ledger system for tracking volatile things like release windows, multiple types of info, related to movie releases and that this indicates that both ownership and identity are subject to change. Group decided not to pursue this topic for now.
 
@@ -119,7 +119,7 @@ These items are likely to take extra time and attention. Looking for members wil
 
 🎥 _78'20":_ VC 2.0 is in candidate recommendation 1, but is likely to change before it becomes frozen. Not sure if the changes would affect anything we might depend upon. 
 
-*ACTION: (link:https://github.com/creator-assertions/identity-assertion/issues/34[Issue #34: Consider targeting VC 2.0 data model?]): Orie will ask around for more details.
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/34[Issue #34: Consider targeting VC 2.0 data model?]): Orie will ask around for more details.
 
 ==== Carry over for next meeting
 
