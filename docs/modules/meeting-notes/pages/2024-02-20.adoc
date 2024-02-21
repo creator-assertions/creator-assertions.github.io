@@ -1,8 +1,6 @@
 = 20 February 2024
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting. _(Update: I'm sorting through some issues making the recording available to the public. Adding timestamps with 🎥 emoji for now. I will convert to links later.)_
+link:https://www.youtube.com/watch?v=WYfS0Q8ATNA[Meeting recording]
 
 == Attendees
 
