@@ -1,12 +1,37 @@
 = 26 February 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/uAzt9rvofTM[Meeting recording]
 
 == Attendees
+
+* Aditya Khurjekar, Prove
+* Andy Rosen
+* Chris Staines, Arkeytyp
+* Christian Paquin, Microsoft
+* Drummond Reed, Gen Digital
+* Edmond Cunningham, Arkeytyp
+* Eric Scouten, Adobe
+* Francisc Romano, Adobe
+* Frank _____, Verus
+* Gavin Peacock, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* John Collomosse, Adobe
+* Judith Fleenor, Trust Over IP Foundation
+* Karen Kilroy, FileBaby
+* Lindsay Walker, Starling Labs
+* Lorie Groth, Digicert
+* Michael Klein, Adobe
+* Nick Lyons, Arkeytyp
+* Orie Steele, Transmute
+* Orson Weems, FileBaby
+* Peleus Uhley, Adobe
+* Pia Blumenthal, Adobe
+* Shrey Jain, Microsoft
+* Stu Vaeth, Mastercard
+* Truman Esmond, Partnership for Insurance Information
+* Will Kreth, HAND (Human & Digital) Identity
+* Wynne Kim, HAND (Human & Digital) Identity
 
 == Agenda
 
@@ -18,9 +43,22 @@ A link to the meeting recording will be provided after the meeting.
 
 === 10 min: New members introduction
 
+🎥 _1'56":_ New to this meeting:
+
+* Drummond Reed, Gen Digital and Trust Over IP
+* Francisc Romano, Adobe, Identity Management
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Lindsay Walker, Starling Labs
+* Orson Weems, FileBaby
+* Peleus Uhley, Adobe
+* Christian Paquin, Microsoft
+* Truman Esmond, Partnership for Insurance Information
+
 === 2 min: Action item update
 
-From previous meeting, most items will carry over to this week:
+🎥 _7'53":_ From previous meeting, most items will carry over to this week:
 
 * link:https://github.com/creator-assertions/identity-assertion/issues/41[Issue #41: Privacy when verifying VCs] – Eric to call subgroup meeting.
 * link:https://github.com/creator-assertions/identity-assertion/issues/42[Issue #42: Add a Slack or Discord channel for this group]
@@ -30,31 +68,97 @@ From previous meeting, most items will carry over to this week:
 
 === 5 min: Remove discussion of using W3C verifiable presentations 
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/pull/45[PR #45: Remove discussion of using W3C verifiable presentations]. (Based on discussion in last week's meeting.)
+🎥 _8'16":_ Discuss link:https://github.com/creator-assertions/identity-assertion/pull/45[PR #45: Remove discussion of using W3C verifiable presentations]. (Based on discussion in last week's meeting.)
+
+*DECISION:* Approved. PR has since been merged and new version of spec has been published.
 
 === 15 min: Roadmap proposal
 
-Discussion of proposal to fast-track a subset of this specification and allow more time for other portions to mature.
+🎥 _9'47":_ Discussion of proposal to fast-track a subset of this specification and allow more time for other portions to mature.
+
+Proposal is to:
+
+* Work toward a 1.0 milestone with X.509 credentials only to enable some business partners to proceed quickly.
+* Work toward a fast-follow 1.x milestone with W3C VCs, which will require more time and discussion to get right.
+
+*DECISION:* Approved.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/52[Issue #52: Roadmap: Fast-track X.509 portion of spec and fast-follow with W3C VC portion]): Eric to propose PR that splits proposed versions accordingly.
+
+*Additional discussion:*
+
+* Stuart Vaeth proposes mDL as an additional credential standard to be supported. Added link:https://github.com/creator-assertions/identity-assertion/issues/51[issue #51: Support mDL as an additional credential type] to track this topic. No decision made at this time.
+* Suggestion from Drummond Reed that this work might benefit from the work of the link:https://github.com/openwallet-foundation/credential-format-comparison-sig[OpenWallet Foundation Credential Format Comparison SIG]. Added link:https://github.com/creator-assertions/identity-assertion/issues/55[issue #55: Review work of OpenWallet Foundation Credential Format Comparison SIG] to track this topic.
 
 === 15 min: Authoring vs ownership and copyright
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/46[Issue #46: Authoring vs ownership].
+🎥 _19'15":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/46[issue #46: Authoring vs ownership].
 
 Consider writing an explicit statement in the identity assertion as to whether copyright and/or ownership is in scope for identity. If it isn't, is copyright perhaps better expressed in a separate metadata assertion?
 
+This led into related discussions about advertising content and the semantic difference between gathered and created assertions (which is more properly a C2PA discussion).
+
+*DECISION:* Group affirms the sentiment expressed in the issue that the identity assertion should convey _authorship_ and not ownership or copyright.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/46[Issue #46: Authoring vs ownership]): Eric to draft new wording clarifying that identity is about authorship and not ownership or copyright.
+
+*ACTION* _(not tracked here, as not directly relevant to CAWG):_ Andy Rosen to raise questions about created vs gathered assertions in C2PA.
+
+During the discussion on this topic, a question was raised as to whether anonymized credentisl might be expressed in the standard to create a mechanism for after-the-fact assertions of content authorship.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/53[Issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard]): Lindsay Walker to explore questions of anonymized credentials and how they might be expressed in the standard and report to group.
+
+Orie raised the concern that the timestamp information from signer is not necessarily trustworthy and that signatures could be back-dated to mislead about their validity. Added link:https://github.com/creator-assertions/identity-assertion/issues/54[issue #54: Ensure that time stamps are properly linked to identity assertion signatures] to track that issue.
+
 === 10 min: Advertising use case
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/47[Issue #47: No advertisements in North America work as described].
+🎥 _27'04":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/47[issue #47: No advertisements in North America work as described].
 
 Is there an alternative wording that would work better or should we delete this use case?
 
+NOTE: This discussion substially overlapped the previous agenda item.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/47[issue #47: No advertisements in North America work as described]): Andy Rosen to propose new wording.
+
+Created new link:https://github.com/creator-assertions/identity-assertion/issues/56[issue #56: New assertion types for representing advertising-specific metadata standards?] based on discussion.
+
 === 15 min: KERI, AIDs and ACDCs as an alternative approach
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/48[Issue #48: KERI, AIDs and ACDCs as an alternative approach].
+🎥 _43'24":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/48[issue #48: KERI, AIDs and ACDCs as an alternative approach].
 
 Can this be represented via `did:webs` and/or `did:keri` or does it need a third `sig_type`?
 
 How implementable is this, given currently-available open-source libraries?
+
+NOTE: Representatives of this issue were not present today; deferred discussion.
+
+=== Other assertions
+
+🎥 _45'22":_ John Collomosse raises question of the other assertions.
+
+*ACTION:* Eric to create repos for other assertion types (endorsements, training and data mining, and metadata) and raise them to candidate status.
+
+=== Other identity formats
+
+🎥 _48'16":_ An impromptu discussion emerged at the end of the meeting about other credential formats for this group to consider:
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/57[Issue #57: Lightweight PKI option anchoring to a web domain]): Christian Paquin offered to work on a proposal for a lightweight PKI option anchoring to a web domain which he hopes to share by next meeting.
+
+=== Recommended reading
+
+* link:https://verus.io[Verus] was mentioned only in chat; not sure what is proposed here.
+
+* From Jacques Latour: link:https://www.cira.ca/uploads/2023/12/12222023_A-trust-layer-for-the-internet-is-emerging_-report-%E2%80%93-Continuum_CIRA.pdf[PDF: A Trust Layer for the Internet is Emerging]
+
+* Eric and Santiago Lyon presented to the Trust Over IP Foundation link:https://wiki.trustoverip.org/display/HOME/2024-02-21+All+Members+Meeting+Notes[All Members' Meeting on 21 February 2024]. Recording link:https://zoom.us/rec/share/SXRG2t1Np2Ovisa8yRXD5ckCtYFcEwQoFp6Wla38JFU31IDPyJSeGkbTOOB93VEA.GUzz8Thxqm25vP7g?startTime=1708538479000[here].
+
+=== Upcoming: ICANN workshop
+
+Eric and Santiago Lyon will be presenting at ICANN79 on 6 March 2024, similar to ToIP presentation
+
+*ACTION:* Eric to add link to upcoming session.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/58[Issue #58: Readout on ICANN workshop meetings]): Jacques Latour requests 20 min for meeting two weeks from now to review ICANN workshop outcomes.
 
 === 5 min: Closing and review
 
@@ -62,4 +166,22 @@ Invitation to subsequent meetings, which will typically be on Mondays.
 
 == Decisions
 
+Summary of decisions from this meeting:
+
+* link:https://github.com/creator-assertions/identity-assertion/pull/45[PR #45: Remove discussion of using W3C verifiable presentations] approved.
+* link:https://github.com/creator-assertions/identity-assertion/issues/52[Issue #52: Roadmap: Fast-track X.509 portion of spec and fast-follow with W3C VC portion] approved. Eric to propose PR splitting versions accordingly.
+* link:https://github.com/creator-assertions/identity-assertion/issues/46[Issue #46: Authoring vs ownership]. Group approved proposal to focus on authorship, not ownership or copyright. Eric to propose PR reflecting that intent.
+
 == Action items
+
+Summary of new action items from this meeting:
+
+* link:https://github.com/creator-assertions/identity-assertion/issues/46[Issue #46: Authoring vs ownership]: Eric to draft new wording clarifying that identity is about authorship and not ownership or copyright.
+* link:https://github.com/creator-assertions/identity-assertion/issues/52[Issue #52: Roadmap: Fast-track X.509 portion of spec and fast-follow with W3C VC portion]: Eric to propose PR that splits proposed versions accordingly.
+* link:https://github.com/creator-assertions/identity-assertion/issues/47[Issue #47: No advertisements in North America work as described]: Andy Rosen to propose new wording.
+* link:https://github.com/creator-assertions/identity-assertion/issues/56[Issue #56: New assertion types for representing advertising-specific metadata standards?]
+* link:https://github.com/creator-assertions/identity-assertion/issues/53[Issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard]: Lindsay Walker to explore questions of anonymized credentials and how they might be expressed in the standard and report to group.
+* Eric to create repos for other assertion types (endorsements, training and data mining, and metadata) and raise them to candidate status.
+* Eric to add link to upcoming ICANN79 presentation.
+* link:https://github.com/creator-assertions/identity-assertion/issues/57[Issue #57: Lightweight PKI option anchoring to a web domain]: Christian Paquin offered to work on a proposal for a lightweight PKI option anchoring to a web domain which he hopes to share by next meeting.
+* link:https://github.com/creator-assertions/identity-assertion/issues/58[Issue #58: Readout on ICANN workshop meetings]: Jacques Latour requests 20 min for meeting two weeks from now to review ICANN workshop outcomes.
