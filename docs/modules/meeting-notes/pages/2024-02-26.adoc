@@ -16,13 +16,45 @@ A link to the meeting recording will be provided after the meeting.
 * Welcome and community specification license reminder
 * Agenda review and call for agenda items
 
-=== xx min: Review open pull requests
+=== 10 min: New members introduction
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/45[PR #45: Remove discussion of using W3C verifiable presentations]
+=== 2 min: Action item update
 
-=== xx min: TBD
+From previous meeting, most items will carry over to this week:
 
-To submit agenda items for this meeting, please e-mail link:mailto:scouten@adobe.com[Eric Scouten].
+* link:https://github.com/creator-assertions/identity-assertion/issues/41[Issue #41: Privacy when verifying VCs] – Eric to call subgroup meeting.
+* link:https://github.com/creator-assertions/identity-assertion/issues/42[Issue #42: Add a Slack or Discord channel for this group]
+* link:https://github.com/creator-assertions/identity-assertion/issues/43[Issue #43: Create an e-mail list for this group's discussions]
+* (DONE: See next item) link:https://github.com/creator-assertions/identity-assertion/issues/16[Issue #16: Determine whether to use VC or VP for signature] – Eric to propose a PR that removes VC vs VP as a discussion item.
+* link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding] – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
+
+=== 5 min: Remove discussion of using W3C verifiable presentations 
+
+Discuss link:https://github.com/creator-assertions/identity-assertion/pull/45[PR #45: Remove discussion of using W3C verifiable presentations]. (Based on discussion in last week's meeting.)
+
+=== 15 min: Roadmap proposal
+
+Discussion of proposal to fast-track a subset of this specification and allow more time for other portions to mature.
+
+=== 15 min: Authoring vs ownership and copyright
+
+Discuss link:https://github.com/creator-assertions/identity-assertion/issues/46[Issue #46: Authoring vs ownership].
+
+Consider writing an explicit statement in the identity assertion as to whether copyright and/or ownership is in scope for identity. If it isn't, is copyright perhaps better expressed in a separate metadata assertion?
+
+=== 10 min: Advertising use case
+
+Discuss link:https://github.com/creator-assertions/identity-assertion/issues/47[Issue #47: No advertisements in North America work as described].
+
+Is there an alternative wording that would work better or should we delete this use case?
+
+=== 15 min: KERI, AIDs and ACDCs as an alternative approach
+
+Discuss link:https://github.com/creator-assertions/identity-assertion/issues/48[Issue #48: KERI, AIDs and ACDCs as an alternative approach].
+
+Can this be represented via `did:webs` and/or `did:keri` or does it need a third `sig_type`?
+
+How implementable is this, given currently-available open-source libraries?
 
 === 5 min: Closing and review
 
