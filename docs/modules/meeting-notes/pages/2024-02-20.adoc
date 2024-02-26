@@ -111,7 +111,7 @@ These items are likely to take extra time and attention. Looking for members wil
 
 *ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/16[Issue #16: Determine whether to use VC or VP for signature]): Eric to propose a PR that removes VC vs VP as a discussion item.
 
-*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding]) discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/44[Issue #44: Review presentation with key binding]) discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
 
 *link:https://github.com/creator-assertions/identity-assertion/issues/34[Issue #34: Consider targeting VC 2.0 data model?]*
 
@@ -142,4 +142,4 @@ Invitation to subsequent meetings, which will typically be on Mondays.
 * link:https://github.com/creator-assertions/identity-assertion/issues/42[Issue #42: Add a Slack or Discord channel for this group]
 * link:https://github.com/creator-assertions/identity-assertion/issues/43[Issue #43: Create an e-mail list for this group's discussions]
 * link:https://github.com/creator-assertions/identity-assertion/issues/16[Issue #16: Determine whether to use VC or VP for signature] – Eric to propose a PR that removes VC vs VP as a discussion item.
-* link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding] – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
+* link:https://github.com/creator-assertions/identity-assertion/issues/44[Issue #44: Review presentation with key binding] – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
