@@ -17,9 +17,9 @@ content:
     - '1.x-add-w3c-vc'
     start_path: docs
 
-  # - url: https://github.com/creator-assertions/endorsement-assertion.git
-  #   branches: main
-  #   start_path: docs
+  - url: https://github.com/creator-assertions/endorsement-assertion.git
+    branches: main
+    start_path: docs
 
   # - url: https://github.com/creator-assertions/metadata-assertion.git
   #   branches: main

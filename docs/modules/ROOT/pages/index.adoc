@@ -9,7 +9,7 @@ The Creator Assertions Working Group builds upon the work of the link:https://c2
 These assertions are specified by the following documents:
 
 * xref:identity:ROOT:index.adoc[]
-* _(endorsement assertion to be added)_
+* xref:endorsement:ROOT:index.adoc[]
 * _(metadata assertion to be added)_
 * _(training and data mining assertion to be added)_
 
