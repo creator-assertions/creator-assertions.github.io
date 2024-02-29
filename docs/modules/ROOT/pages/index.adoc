@@ -10,7 +10,7 @@ These assertions are specified by the following documents:
 
 * xref:identity:ROOT:index.adoc[]
 * xref:endorsement:ROOT:index.adoc[]
-* _(metadata assertion to be added)_
+* xref:metadata:ROOT:index.adoc[]
 * _(training and data mining assertion to be added)_
 
 PDF versions of these documents are not currently available, but may be added soon.

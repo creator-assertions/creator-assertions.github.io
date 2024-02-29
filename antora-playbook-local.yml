@@ -23,9 +23,9 @@ content:
     branches: HEAD
     start_path: docs
 
-  # - url: https://github.com/creator-assertions/metadata-assertion.git
-  #   branches: HEAD
-  #   start_path: docs
+  - url: https://github.com/creator-assertions/metadata-assertion.git
+    branches: HEAD
+    start_path: docs
 
   # - url: https://github.com/creator-assertions/training-and-data-mining-assertion.git
   #   branches: HEAD
