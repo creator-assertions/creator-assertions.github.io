@@ -27,7 +27,50 @@ From previous meeting, most items will carry over to this week:
 * link:https://github.com/creator-assertions/identity-assertion/issues/43[Issue #43: Create an e-mail list for this group's discussions]
 * link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding] – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.
 
-=== TBD
+=== 10 min: Motion to approve draft status
+
+*MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I submit the following three assertion specifications as candidate drafts and move to promote each document from *pre-draft* to *draft* status.
+
+* xref:endorsement:ROOT:index.adoc[]
+* xref:metadata:ROOT:index.adoc[]
+* xref:training-and-data-mining:ROOT:index.adoc[]
+
+IMPORTANT: For these three assertions, I expect to move to *Working Group Approval* status fairly quickly (perhaps two weeks from now). If you are interested in the content of these specifications, please signal your availability to review the content.
+
+[quote,Community Specification License :: Governance Policy]
+____
+4.1. Pre-Draft. Any Participant may submit a proposed initial draft document as a candidate Draft Specification of that Working Group. The Maintainer will designate each submission as a “Pre-Draft” document.
+
+4.2. Draft. Each Pre-Draft document of a Working Group must first be Approved to become a “Draft Specification.” Once the Working Group approves a document as a Draft Specification, the Draft Specification becomes the basis for all going forward work on that specification.
+
+4.3. Working Group Approval. Once a Working Group believes it has achieved the objectives for its specification as described in the Scope, it will Approve that Draft Specification and progress it to “Approved Specification” status.
+____
+
+'''
+
+=== 10 min: PR review: Create 1.0 draft of this specification without W3C VC discussion
+
+Following up on last week's discussion, review link:https://github.com/creator-assertions/identity-assertion/pull/59[PR #59] which creates a `1.0-draft` version of this specification. In this version, the discussion of W3C VC credentials is removed except for a note stating that it will be added in a future version of the specification.
+
+*RELATED:* link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60] restores the discussion of W3C VC credentials from the previous working draft.
+
+*MOTION:* Eric requests approval from the WG to merge PR #59 as draft of version 1.0 of the identity assertion specification.
+
+*MOTION:* Eric requests approval from the WG to approve PR #60 as the working draft for a future (1.x) version identity assertion specification. While in working-draft status, this specification can be found on the site with the link:https://creator-assertions.github.io/identity/1.x-add-w3c-vc/[`1.x-add-w3c-vc` label].
+
+=== 20 min: Domain trust anchor proposal
+
+Christian Paquin will present a proposal for link:https://github.com/christianpaquin/c2pa-explorations/blob/main/web-domain-trust-anchor/web-domain-trust-anchor.md[Web Domain Trust Anchor in the CAWG identity framework].
+
+=== 30 min: Review open issues for identity 1.0 milestone
+
+There are link:https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.0[13 open issues] that I've flagged as potentially relevant for the 1.0 version of the identity specification. Review these issues and make a plan for resolving them.
+
+Related discussion: Are there other open issues that should also be flagged for 1.0?
+
+=== 2 min: FYI: upcoming ICANN workshop presentation
+
+Eric and Santiago Lyon will be presenting at ICANN79 on 6 March 2024, similar to ToIP presentation.
 
 === 5 min: Closing and review
 
