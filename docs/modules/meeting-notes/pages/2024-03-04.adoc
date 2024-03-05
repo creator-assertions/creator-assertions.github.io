@@ -133,4 +133,4 @@ Lengthy discussion with a few key points to consider:
 
 🎥 _57'48":_ Invitation to subsequent meetings, which will typically be on Mondays.
 
-*REMINDER:* The US adopts Daylight Savings Time this coming weekend, which means the UTC time for this meeting will shift from 1530 to 1630 starting next week.
+*REMINDER:* The US adopts Daylight Savings Time this coming weekend, which means the UTC time for this meeting will shift from 1630 to 1530 starting next week.
