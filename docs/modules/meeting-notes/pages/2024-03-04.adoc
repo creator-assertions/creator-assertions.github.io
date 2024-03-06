@@ -1,6 +1,6 @@
 = 04 March 2024
 
-A link to the meeting recording will be provided on Tuesday.
+link:https://www.youtube.com/watch?v=doeTp6x9P1g[Meeting recording]
 
 == Attendees
 
