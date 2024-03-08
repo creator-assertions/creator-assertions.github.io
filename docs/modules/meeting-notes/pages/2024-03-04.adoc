@@ -88,9 +88,9 @@ ____
 
 *DECISION:* PRs should only be merged when two PR approvals have been given by group members (other than the original PR author) and an opportunity to discuss in a weekly meeting has occurred.
 
-*ACTION:* link:https://github.com/creator-assertions/identity-assertion/pull/59[PR #59], which creates a `1.0-draft` version of this specification, has one of the two required PR approvals. Please read and approve or request changes as you see fit.
+[line-through]#*ACTION (DONE):* link:https://github.com/creator-assertions/identity-assertion/pull/59[PR #59], which creates a `1.0-draft` version of this specification, has one of the two required PR approvals. Please read and approve or request changes as you see fit.# *Post-meeting update:* This has been twice approved and merged.
 
-*ACTION:* link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60], which creates a 1.x draft has changes requested. Scouten to review and revise accordingly.
+[line-through]#*ACTION (DONE):* link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60], which creates a 1.x draft has changes requested. Scouten to review and revise accordingly.# *Post-meeting update:* The PR has incorporated existing change requests. Re-review in 11 March meeting.
 
 === 2 min: FYI: upcoming ICANN workshop presentation
 
@@ -104,11 +104,13 @@ The presentation will be at 0915 US Pacific / 1215 US Eastern / 1715 UTC on Wedn
 
 First discussion was around link:https://github.com/creator-assertions/identity-assertion/issues/21[issue #21: Review C2PA spec for additional X.509 certificate adaptions that might be relevant].
 
-*ACTION:* Scouten to draft a PR that:
+[line-through]#*ACTION (DONE):* Scouten to draft a PR that:#
 
 * Closes issue #21 and deletes related text in the draft specification.
 * Adds guidance that an identity assertion validator should maintain a trust list that is technically similar to the one for C2PA Manifest signatures, but disctint from that list.
 * Adds guidance that the planned C2PA trust list is not necessarily relevant for identity assertion validation.
+
+*Post-meeting update:* link:https://github.com/creator-assertions/identity-assertion/pull/69[PR #69] filed.
 
 === 20 min: Domain trust anchor proposal
 
