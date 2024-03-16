@@ -30,7 +30,7 @@ Two upcoming instances of this meeting will be cancelled:
 * link:https://github.com/creator-assertions/identity-assertion/issues/41[Issue #41: Privacy when verifying VCs] – Eric to call subgroup meeting. CARRY OVER.
 * [line-through]#link:https://github.com/creator-assertions/identity-assertion/issues/42[Issue #42: Add a Slack or Discord channel for this group]# – DONE.
 * link:https://github.com/creator-assertions/identity-assertion/issues/43[Issue #43: Create an e-mail list for this group's discussions] – NEXT ON AGENDA.
-* link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding] – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley. – CARRY OVER.
+* link:https://github.com/creator-assertions/identity-assertion/issues/44:[Issue #44: Review presentation with key binding] – CARRY OVER.
 
 Remaining issues to be covered later.
 
