@@ -29,7 +29,7 @@ Each of the projects of the Creator Assertions Working Group are covered by a co
 
 === Meeting schedule
 
-The Creator Assertions Working Group holds weekly video meetings on Mondays at 8:30am US Pacific time / 11:30am US Eastern time / 1630 UTCfootnote:utc-shift[The time will change to 1530 UTC beginning with the 11 March 2024 meeting when the US adopts Daylight Savings Time.] for 90 minutes beginning on [line-through]#*19 February 2024*#. There is a single meeting in which _all_ CAWG projects will be discussed.
+The Creator Assertions Working Group holds weekly video meetings on Mondays at 8:30am US Pacific time / 11:30am US Eastern time / 1530 UTC for 90 minutes. There is a single meeting in which _all_ CAWG projects will be discussed.
 
 The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
 
