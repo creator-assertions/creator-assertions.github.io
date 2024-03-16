@@ -54,9 +54,11 @@ ____
 
 === 10 min: Outstanding issue for endorsement assertion
 
-*DISCUSSION:* There is one open issue for the endorsement assertion: link:https://github.com/creator-assertions/endorsement-assertion/issues/1[#1: Can there be more than one endorsement assertion per claim?]
+*DISCUSSION:* There is one open issue for the endorsement assertion:
 
-=== 60 min: Review of open issues and PRs for identity 1.0
+* link:https://github.com/creator-assertions/endorsement-assertion/issues/1[#1: Can there be more than one endorsement assertion per claim?]
+
+=== 45 min: Review of open issues and PRs for identity 1.0
 
 Review work in progress and proposals. There are:
 
