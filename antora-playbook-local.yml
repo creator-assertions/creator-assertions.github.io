@@ -28,7 +28,8 @@ content:
     start_path: docs
 
   - url: https://github.com/creator-assertions/training-and-data-mining-assertion.git
-    branches: HEAD
+    branches: []
+    tags: v1.0
     start_path: docs
 
 ui:
