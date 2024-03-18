@@ -1,0 +1,27 @@
+= (date)
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+=== 5 min: New members introduction
+
+=== Topic 1
+
+=== Topic 2
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
