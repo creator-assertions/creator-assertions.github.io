@@ -38,6 +38,16 @@ To attend the meeting, please:
 * Review the terms of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md[Community Specification Contributor License Agreement].
 * Send a message to Eric Scouten (scouten@adobe.com) requesting an invitation and indicating your agreement to the CSL process.
 
+[IMPORTANT] 
+.Upcoming schedule changes
+==== 
+The following meetings will deviate from the usual Monday schedule:
+
+* 15 April 2024 *cancelled* (conflict with link:https://internetidentityworkshop.com[Internet Identity Workshop] travel -- affects several other participants)
+* 13 May 2024 *cancelled* (conflict with an internal Adobe event)
+* 27 May 2024 *rescheduled* to 28 May 2024 (US holiday)
+====
+
 ==== Meeting notes
 
 Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
