@@ -1,10 +1,6 @@
 = 18 March 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided on Tuesday.
+link:https://www.youtube.com/watch?v=-aBcAqCOLVc&list=PLW0mguwHOfA5J79IK4APnRFj4gvnc2YJl&index=5[Meeting recording]
 
 == Attendees
 
