@@ -16,7 +16,7 @@ content:
     branches: 
     - HEAD
     - '1.x-add-w3c-vc'
-    - '1.x-add-vc-v2'
+    - '1.x-add-w3c-vc-v2'
     start_path: docs
 
   - url: https://github.com/creator-assertions/endorsement-assertion.git
