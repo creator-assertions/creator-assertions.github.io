@@ -1,12 +1,24 @@
 = 01 April 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://www.youtube.com/watch?v=czb9XAiaQug[Meeting recording]
 
 == Attendees
+
+* Andy Rosen
+* Brett Russell, Accuratius
+* Carly Huitema, U of Guelph
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Karen Kilroy, FileBaby
+* Leonard Rosenthol, Adobe
+* Lindsay Walker, Starling Labs
+* Michael Becker, Identity Praxis
+* Michael Klein, Adobe
+* Patrick Boehler, independent consultant
+* Peleus Uhley, Adobe
+* Radu Ghiorghisor, Adobe
+* Will Kreth, HAND (Human & Digital) Identity
 
 == Agenda
 
@@ -20,27 +32,81 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 5 min: New members introduction
 
+New members in this meeting:
+
+* 🎥 _1'07":_ Brett Russell, Accuratius
+
 === 5 min: Endorsement assertion PR
 
-Review one open PR: link:https://github.com/creator-assertions/endorsement-assertion/pull/2[#2: Close issue regarding multiple endorsement assertions].
+🎥 _3'23":_ Review one open PR: link:https://github.com/creator-assertions/endorsement-assertion/pull/2[#2: Close issue regarding multiple endorsement assertions].
 
 Assuming agreement on this issue, I intend to bring this specification forward for final approval on *8 April 2024.*
+
+*ACTION (✅):* Eric to circle back with Charlie. There might, in fact, be viable use cases for multiple endorsement assertions per Manifest. (See link:++https://github.com/creator-assertions/endorsement-assertion/pull/2#issuecomment-2030329720++[new comment in the PR].)
 
 === 15 min: Open PRs for identity assertion 1.0
 
 Review link:https://github.com/creator-assertions/identity-assertion/pulls?q=is%3Aopen+is%3Apr+milestone%3A1.0[two open PRs].
 
+==== 🎥 _8'11":_ link:https://github.com/creator-assertions/identity-assertion/pull/74[PR #74: Allow additional credential mechanisms to be added in future 1.x versions]
+
+*ACTION (✅):* Eric to revise PR #74 as follows:
+
+* Add a designated way to respond if `sig_type` is unrecognized. _(Post-meeting update: This already existed, but I tweaked the language a bit.)_
+* Also, add language that says that credential types may be deprecated in future 1.x versions.
+
+==== 🎥 _12'06":_ link:https://github.com/creator-assertions/identity-assertion/pull/81[PR #81: Change validation language to be more permissive of extra fields in CBOR map data structure]
+
+*ACTION (✅):* Eric to merge PR #81.
+
 === 15 min: Review open issues for identity assertion 1.0
 
 Review link:https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.0[8 open issues].
 
+==== 🎥 _14'12":_ link:https://github.com/creator-assertions/identity-assertion/issues/55[Issue #55: Review work of OpenWallet Foundation Credential Format Comparison SIG]
+
+*DISCUSSION:* Long discussion about the plethora of credential formats that exist. When we are ready to consider additional formats, the OWF would be a good reference.
+
+Led to new link:https://github.com/creator-assertions/identity-assertion/issues/86[issue #86: Discuss criteria for accepting / not accepting additional forms of digital credential formats to accept in future versions of this document].
+
+Discussion acknowledged the need to accept different credential types, but also the potentially large burden on _verifying_ parties to _accept_ most or all credential types described in this specification.
+
 === 20 min: Review VC version of specification
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/85[PR #85: New draft of VC version of specification].
+==== 🎥 _37'56":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/85[PR #85: New draft of VC version of specification]
 
-*MOTION:* Close link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60: Previous draft] and make PR #85 the working draft for version 1.x.
+Long discussion. Some notable discussion items:
+
+* 🎥 _40'31":_ Do we want to require the proof to be embedded in the identity assertion VC or can it be encapsulated? (Follow up in link:https://github.com/creator-assertions/identity-assertion/issues/87[issue #87].)
+* 🎥 _41'40":_ Can a `CreatorIdentityAssertion` apply outside of the context of a C2PA Manifest? (Outside of remit of this working group, so no.)
+* 🎥 _49'34":_ Provide a vocabulary and JSON verification model for `CreatorIdentityAssertion`. (Follow up in link:https://github.com/creator-assertions/identity-assertion/issues/88[issue #88].)
+* 🎥 _50'31":_ The term `tbs` is not widely understood. Long discussion on how we got to that name and what might be clearer. (New PR as discussed in meeting: link:https://github.com/creator-assertions/identity-assertion/pull/89[PR #89: `tbs` -> `signer_payload`].)
+
+🎥 _57'13":_ *MOTION:* Close link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60: Previous draft] and make PR #85 the working draft for version 1.x. *Approved.*
+
+*ACTION (✅):* Eric to close PR #60 without merging.
+
+*ACTION (✅):* Eric to mark PR #85 as working draft for 1.x.
 
 === 20 min: Discussion of zero-knowledge identity management
+
+🎥 _1h05'02":_ Lindsay Walker led a discussion on use of ZKP (zero-knowledge-proof)-backed identity as a mechanism for enhancing safety in some reporting contexts, expanding on comments she added to link:https://github.com/creator-assertions/identity-assertion/issues/84[issue #84].
+
+A couple of referrals to other groups:
+
+* A concern was raised about inadvertent identity signals via the public key or certificate used to sign C2PA Manifests. Revising the CP2A Technical Specification is outside the scope of the CAWG Identity Assertion project and is best raised in the Technical Working Group of C2PA.
+* C2PA and thus CAWG are not optimized for point-to-point communication (i.e. where one or a small number of recipients are known ahead of time to the sender). Trust Over IP's Technology Stack Working Group may be a better place for that discussion.
+
+General sense that we should review AnonCreds as a privacy-preserving identity mechanism when we are ready to add another mechanism. Some preliminary reading:
+
+* link:https://idemix.wordpress.com/2009/08/18/quick-intro-to-credentials/[A quick introduction to anonymous credentials (2009)]
+* link:https://www.hyperledger.org/projects/anoncreds[Hyperledger AnonCreds]
+
+*ACTION:* Drummond Reed, Lindsay Walker, and Patrick Boehler to arrange liaison meeting with the AnonCreds Working Group at Hyperledger and report back to this group.
+
+=== Reminder: CAWG Slack
+
+If you are an active member of CAWG and are not a member of our Slack instance, please contact me (scouten@adobe.com) and I'll invite you.
 
 === 5 min: Closing and review
 
