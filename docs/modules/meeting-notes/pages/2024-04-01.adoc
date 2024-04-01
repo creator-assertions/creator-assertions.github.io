@@ -1,0 +1,47 @@
+= 01 April 2024
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== 5 min: New members introduction
+
+=== 5 min: Endorsement assertion PR
+
+Review one open PR: link:https://github.com/creator-assertions/endorsement-assertion/pull/2[#2: Close issue regarding multiple endorsement assertions].
+
+Assuming agreement on this issue, I intend to bring this specification forward for final approval on *8 April 2024.*
+
+=== 15 min: Open PRs for identity assertion 1.0
+
+Review link:https://github.com/creator-assertions/identity-assertion/pulls?q=is%3Aopen+is%3Apr+milestone%3A1.0[two open PRs].
+
+=== 15 min: Review open issues for identity assertion 1.0
+
+Review link:https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.0[8 open issues].
+
+=== 20 min: Review VC version of specification
+
+Review link:https://github.com/creator-assertions/identity-assertion/pull/85[PR #85: New draft of VC version of specification].
+
+*MOTION:* Close link:https://github.com/creator-assertions/identity-assertion/pull/60[PR #60: Previous draft] and make PR #85 the working draft for version 1.x.
+
+=== 20 min: Discussion of zero-knowledge identity management
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
