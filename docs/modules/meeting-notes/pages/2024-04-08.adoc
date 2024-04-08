@@ -1,12 +1,29 @@
 = 08 April 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+A link to the meeting recording will be provided later today or tomorrow.
 
 == Attendees
+
+* Andy Rosen
+* Brett Russell, Accuratius
+* Chris ___, Verus
+* Christian Paquin, Microsoft
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Judith Fleenor, Trust Over IP Foundation
+* Karen Kilroy, FileBaby
+* Leonard Rosenthol, Adobe
+* Lindsay Walker, Starling Labs
+* Lorie Groth, Digicert
+* Michael Becker, Identity Praxis
+* Nigel Earnshaw, BBC
+* Paul England, Microsoft
+* Peleus Uhley, Adobe
+* Radu Ghiorghisor, Adobe
+* Truman Esmond, Partnership for Insurance Information
+* Will Kreth, HAND (Human & Digital) Identity
 
 == Agenda
 
@@ -20,40 +37,100 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 5 min: New members introduction
 
+New members in this meeting:
+
+* 🎥 _3'14":_ Nigel Earnshaw, BBC
+
 === 5 min: Update on endorsement assertion
 
-If relevant members are present, discuss proposed update to endorsement assertion.
+🎥 _4'27":_  If relevant members are present, discuss proposed update to endorsement assertion.
 
 *MOTION:* Approve link:https://github.com/creator-assertions/endorsement-assertion/pull/2/files[PR #2] to merge.
 
+*ACTION:* Eric to follow up with Charlie Halford of BBC.
+
 === 10 min: Review `tbs` to `signer_payload` PR
 
-Follow-up to discussion from previous meeting about renaming `tbs` to `signer_payload`.
+🎥 _8'00":_ Follow-up to discussion from previous meeting about renaming `tbs` to `signer_payload`.
 
 *MOTION:* Approve link:https://github.com/creator-assertions/identity-assertion/pull/89[PR #89] to merge.
 
+🎥 _12'29":_ Approved with one minor wording change.
+
+*ACTION (✅):* Eric to update wording as discussed and merge.
+
 === 20 min: Review VC version take 3
 
-Follow-up to discussions with Adobe stakeholders. Walk through proposed changes.
+🎥 _12'57":_ Follow-up to discussions with Adobe stakeholders. Walk through proposed changes.
 
 *MOTION:* Approve link:https://github.com/creator-assertions/identity-assertion/pull/90[PR #90] as working draft for 1.x (VC) version of identity assertion specification.
 
+Important discussion topics:
+
+* 🎥 _17'09":_ Can we provide some kind of human-readable identifier for `issuer`?
+* 🎥 _19'30":_ Delayed identification is possible with this mechanism.
+* 🎥 _21'47":_ Use C2PA update manifest mechanism for re-issuing identifier with more info?
+* 🎥 _24'46":_ Move to make this the current working draft of 1.x specification.
+* 🎥 _25'35":_ Update on Rust toolkit for identity assertion. Available for experimentation now on link:https://github.com/scouten-adobe/cawg-identity-core[GitHub: scouten-adobe/cawg-identity-core]
+* 🎥 _26'54":_ Invitation to connect with Open Wallet Foundation on wallet workflows. 
+
+*ACTION (✅):* Eric to mark PR #90 as draft for 1.x specification.
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/92[issue #92]): Drummond to arrange meeting with OWF Architecture SIG.
+
 === 10 min: Review PR to allow additional credential mechanisms in 1.x spec
 
-*MOTION:* Approve link:https://github.com/creator-assertions/identity-assertion/pull/74[PR #74: Allow additional credential mechanisms to be added in future 1.x versions] to merge.
+🎥 _30'45":_ *MOTION:* Approve link:https://github.com/creator-assertions/identity-assertion/pull/74[PR #74: Allow additional credential mechanisms to be added in future 1.x versions] to merge.
+
+Discuss two changes to link:https://github.com/creator-assertions/identity-assertion/pull/74[PR #74: Allow additional credential mechanisms to be added in future 1.x versions] since last week:
+
+* Change `sig_type` field to reserve `cawg.*` prefix for all CAWG-defined credential mechanisms.
+* Allow experimentation with other credential mechanisms (but require a non-CAWG prefix).
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/93[issue #93]): Leonard to add new language to C2PA Technical Specification regarding label assignment which may be reusable for CAWG purposes.
+
+*ACTION (✅):* Eric to merge PR #74.
 
 === 15 min: Review bidirectional binding issue (issue #67)
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/67[issue #67: Bidirectional binding of identity assertions and claims]. Can we close this issue soon?
+🎥 _37'26":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/67[issue #67: Bidirectional binding of identity assertions and claims]. Can we close this issue soon?
 
 === 15 min: Discuss trust model (issue #22)
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/22[issue #22: Define identity assertion trust model]. What are the basic requirements for the trust model?
+🎥 _39'30":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/22[issue #22: Define identity assertion trust model]. What are the basic requirements for the trust model?
+
+Important discussion topics:
+
+* 🎥 _40'39":_ Comparison to C2PA trust model; decentralized makes this more complicated
+* 🎥 _42'04":_ Different credential types will require different trust types
+* 🎥 _43'31":_ Also trust model will vary depending on how credentials are used (for example, pseudonymous identity)
+* 🎥 _47'52":_ Perhaps adopt C2PA model of well-formed vs trusted credentials
+* 🎥 _49'23":_ What are threat models?
+* 🎥 _50'51":_ Argument against describing "valid" identity because it could be inaccessible to people with privacy concerns or access to tech
+* 🎥 _52'08":_ Argument for digital trust ecosystems
+* 🎥 _57'08":_ Can we add levels of assurance to some credentials? Otherwise, how is trust established?
+* 🎥 _58'52":_ Tension between privacy preservation and measures for establishing trust
+* 🎥 _1h00'16":_ Shout out to GLEIF as having established a digital trust mechanism
+* 🎥 _1h01'40":_ Is assigning trust levels a tractable problem for this group?
+* 🎥 _1h04'13":_ Call for prototype implementation
+
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/22[issue #22]): Eric to work up first draft of trust model section based on above discussion.
 
 === (if time): Follow up on zero-knowledge proof discussion (issue #84)
 
-Christian Paquin added new comments about ZKP and AnonCreds in link:++https://github.com/creator-assertions/identity-assertion/issues/84#issuecomment-2038243729++[issue #89: Discussion of Zero Knowledge Identity Management].
+🎥 _1h06'42":_ Christian Paquin added new comments about ZKP and AnonCreds in link:++https://github.com/creator-assertions/identity-assertion/issues/84#issuecomment-2038243729++[issue #89: Discussion of Zero Knowledge Identity Management].
+
+Important discussion topics:
+
+* 🎥 _1h07'32":_ There's a big spectrum on privacy; design needs to follow choices about what scenarios we are attempting to address.
+* 🎥 _1h07'53":_ Full-on privacy might be difficult due to the C2PA "inescapable super cookie" 🍪 (X.509 cert used to sign C2PA Manifests)
+* 🎥 _1h11'32":_ AnonCreds 2.0 specification is compatible with W3C VC (yay!)
+* 🎥 _1h13'35":_ Possible to address the "inescapable super cookie" problem by rotating self-signed certs?
+
+No immediate action items.
 
 === 5 min: Closing and review
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+🎥 _1h20'45":_ Invitation to subsequent meetings, which will typically be on Mondays.
+
+REMINDER: Next week's meeting is cancelled in favor of link:https://internetidentityworkshop.com[Internet Identity Workshop]. Several of us will be there and have extended invitations to connect in person.
