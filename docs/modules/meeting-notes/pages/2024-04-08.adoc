@@ -50,6 +50,10 @@ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/67[
 
 Discuss link:https://github.com/creator-assertions/identity-assertion/issues/22[issue #22: Define identity assertion trust model]. What are the basic requirements for the trust model?
 
+=== (if time): Follow up on zero-knowledge proof discussion (issue #84)
+
+Christian Paquin added new comments about ZKP and AnonCreds in link:++https://github.com/creator-assertions/identity-assertion/issues/84#issuecomment-2038243729++[issue #89: Discussion of Zero Knowledge Identity Management].
+
 === 5 min: Closing and review
 
 Invitation to subsequent meetings, which will typically be on Mondays.
