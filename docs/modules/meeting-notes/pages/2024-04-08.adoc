@@ -1,6 +1,6 @@
 = 08 April 2024
 
-A link to the meeting recording will be provided later today or tomorrow.
+link:https://www.youtube.com/watch?v=jIX-CPsJOgc[Meeting recording]
 
 == Attendees
 
