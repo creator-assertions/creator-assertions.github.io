@@ -71,7 +71,7 @@ No new members today.
 
 🎥 _1h08'05":_ Walk through link:https://github.com/creator-assertions/identity-assertion/pull/102[PR #102: Clarify identity assertion “Overview” section].
 
-*ACTION:* Eric to merge PR after making suggestions from meeting.
+*ACTION (✅):* Eric to merge PR after making suggestions from meeting.
 
 === 15 min: Discuss security model PR
 
