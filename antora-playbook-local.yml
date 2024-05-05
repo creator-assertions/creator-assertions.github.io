@@ -22,7 +22,6 @@ content:
   - url: https://github.com/creator-assertions/endorsement-assertion.git
     branches:
     - HEAD
-    - clarify-endorser-and-endorsee
     start_path: docs
 
   - url: https://github.com/creator-assertions/metadata-assertion.git
