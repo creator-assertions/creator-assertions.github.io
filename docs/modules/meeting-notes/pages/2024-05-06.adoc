@@ -68,7 +68,7 @@ ACTION (✅): Eric to split out the `sig_type` change from PRs 96 and 104. DONE:
 
 ACTION: Eric to revise PR 104 to allow identity assertion signer to add expected `signer_payload` or signing credentials.
 
-ACTION: Eric to revise PR 99 to describe the adversarial claim generator attack. Include the trust-bubbles discussion shown in the meeting at 🎥 _39'34".
+ACTION: Eric to revise PR 99 to describe the adversarial claim generator attack. Include the trust-bubbles discussion shown in the meeting at 🎥 _39'34"._
 
 === 15 min: Proposal: Declare implementer’s draft
 
