@@ -15,6 +15,7 @@ content:
   - url: https://github.com/creator-assertions/identity-assertion.git
     branches: 
     - HEAD
+    - 'new-trust-model-diagrams'
     - 'trust-model'
     - '1.x-add-w3c-vc-v3'
     start_path: docs
