@@ -1,0 +1,67 @@
+= 28 May 2024
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== 5 min: New members introduction
+
+=== 15 min: Patrick / Journalist and editorial impact
+
+Review link:++https://docs.google.com/document/d/1ZIdOuZM598e_Yw9YOQ-U5WmyGqSyrLmX47XO6jI8cw0/edit?usp=sharing++[Notes from call two weeks ago]
+
+=== 10 min: Move to approve endorsement assertion specification
+
+*MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/endorsement-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I move to promote the xref:endorsement:ROOT:index.adoc[] from draft to approved (version 1.0 final) status:
+
+[quote,Community Specification License :: Governance Policy]
+____
+4.2. Draft. Each Pre-Draft document of a Working Group must first be Approved to become a “Draft Specification.” Once the Working Group approves a document as a Draft Specification, the Draft Specification becomes the basis for all going forward work on that specification.
+
+4.3. Working Group Approval. Once a Working Group believes it has achieved the objectives for its specification as described in the Scope, it will Approve that Draft Specification and progress it to “Approved Specification” status.
+____
+
+=== 30 min: Review open identity assertion PRs
+
+I'd like to land the following PRs this week:
+
+* link:https://github.com/creator-assertions/identity-assertion/pull/103[#103: Add optional protections against unexpected claim and unexpected claim generators]. Has the required two approvals (thank you, Christian and Yondon); want to make sure concerns from Nigel are addressed.
+** Related: Request approval to close link:https://github.com/creator-assertions/identity-assertion/pull/96[#96: Signer payload fixes] without merging.
+* link:https://github.com/creator-assertions/identity-assertion/pull/107[#107: Revise Overview section to include new trust signal diagrams]. I’ve added new diagrams as suggested in last week’s meeting.
+* link:https://github.com/creator-assertions/identity-assertion/pull/98[#98: Introduce an optional `signer_payload.role` field].
+** I’ve extended this PR to allow multiple roles to be specified.
+** I would like to avoid the additional complexity and dependency on other role definitions as that creates a substantially larger implementation burden for verifiers.
+
+=== 15 min: Discuss ISCC (new ISO standard) and how it might fit here
+
+Discuss link:https://github.com/creator-assertions/identity-assertion/issues/113[#113: Consider how to reference ISCC in identity assertion or somewhere in C2PA ecosystem]. No concrete proposal at this time.
+
+Pre-read: link:https://iscc.io/iso-publishes-new-standard-enabling-content-transparency-iso-24138/[ISO Publishes New Standard Enabling Content Transparency – ISO 24138].
+
+=== 2 min: Heads up on training and data mining assertion
+
+Expecting some feedback in next week or two that may lead to requested revisions to the xref:training-and-data-mining:ROOT:index.adoc[]. If you have concerns or questions, this would be a good time to raise them.
+
+=== 2 min: European Identity Conference invitation
+
+If you’ll be at link:https://www.kuppingercole.com/events/eic2024[EIC 2024] next week, please say hi. I'll be making link:https://www.kuppingercole.com/events/eic2024/speakers/3628[three presentations or panel discussions] during the conference.
+
+IMPORTANT: Next week's CAWG meeting _will_ proceed as normal. I’ll have arrived in Berlin in time to host the meeting.
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
