@@ -1,32 +1,65 @@
 = 28 May 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/GM-q-aedSEY[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andy Rosen
+* Candice Ward
+* Clement Hecquet, Digimarc
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Hodari McClain, Capitol One
+* Jesse Carter, CIRA
+* Konrad Bleyer-Simon, Global Media Registry
+* Lindsay Walker, Starling Labs
+* Lorie Groth, Digicert
+* Michael Becker, Identity Praxis
+* Nigel Earnshaw, BBC
+* Olaf Steenfadt, Global Media Registry
+* Paul England, Microsoft
+* Pia Blumenthal, Adobe
+* Scott Perry, Digital Governance Institute
+* Truman Esmond, Partnership for Insurance Information
+* Yondon Fu, Livepeer
 
-=== 5 min: Start meeting
+== Notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _2'03":_ Candice Ward
+* 🎥 _2'43":_ Konrad Bleyer-Simon, Global Media Registry
+* 🎥 _3'54":_ Olaf Steenfadt, Global Media Registry
 
-=== 5 min: New members introduction
+=== Discuss ISCC (new ISO standard) and how it might fit here
 
-=== 15 min: Patrick / Journalist and editorial impact
+🎥 _4'46":_ Discuss link:https://github.com/creator-assertions/identity-assertion/issues/113[#113: Consider how to reference ISCC in identity assertion or somewhere in C2PA ecosystem].
 
-Review link:++https://docs.google.com/document/d/1ZIdOuZM598e_Yw9YOQ-U5WmyGqSyrLmX47XO6jI8cw0/edit?usp=sharing++[Notes from call two weeks ago]
+🎥 _8'41":_ Olaf gave a brief overview of ISCC as it was introduced in ISO meetings last week.
 
-=== 10 min: Move to approve endorsement assertion specification
+The ISCC standard is a global content identifier that describes content in visual and binary hash terms.
 
-*MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/endorsement-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I move to promote the xref:endorsement:ROOT:index.adoc[] from draft to approved (version 1.0 final) status:
+Lindsay, Olaf and Eric discussed a perceptual hash alternative to cryptographic hash. Lindsay explained that the ISCC code combines four things, including perceptual hash for the actual image, metadata hash, data similarity score, and interesting tools.
+
+Nigel pointed out that there are many different fields in the data, ranging from high-level descriptive letter down to hard hashing.
+
+The following links were shared in the chat during this discussion:
+
+* link:https://iscc.io/iso-publishes-new-standard-enabling-content-transparency-iso-24138/[ISO Publishes New Standard Enabling Content Transparency – ISO 24138]
+* link:https://iscc.foundation/iscc/[About the ISCC]
+* link:https://huggingface.co/spaces/iscc/iscc-playground[ISCC Playground]
+
+*ACTION:* No concrete proposal at this time. Eric to discuss with Leonard as to whether this is a better fit for C2PA or CAWG.
+
+=== Journalist and editorial impact
+
+🎥 _14'56":_ Review link:++https://docs.google.com/document/d/1ZIdOuZM598e_Yw9YOQ-U5WmyGqSyrLmX47XO6jI8cw0/edit?usp=sharing++[Notes from call two weeks ago]
+
+Truman and Lindsay discussed the readout from the journalist and editorial impact meeting held a couple of weeks ago. The high-level takeaway was the need for privacy and contextualization in creator assertions. They discussed challenges in maintaining trust across different contexts and industries. They will be working with Patrick to schedule follow-up meetings in the next few weeks.
+
+=== Move to approve endorsement assertion specification
+
+🎥 _18'55":_ *MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/endorsement-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I move to promote the xref:endorsement:ROOT:index.adoc[] from draft to approved (version 1.0 final) status:
 
 [quote,Community Specification License :: Governance Policy]
 ____
@@ -35,33 +68,56 @@ ____
 4.3. Working Group Approval. Once a Working Group believes it has achieved the objectives for its specification as described in the Scope, it will Approve that Draft Specification and progress it to “Approved Specification” status.
 ____
 
-=== 30 min: Review open identity assertion PRs
+*ACTION:* Eric to reach out to Charlie Halford of BBC for final review and approval. Group approves this specification, conditional on approval from Charlie.
 
-I'd like to land the following PRs this week:
+=== Review open identity assertion PRs
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/103[#103: Add optional protections against unexpected claim and unexpected claim generators]. Has the required two approvals (thank you, Christian and Yondon); want to make sure concerns from Nigel are addressed.
-** Related: Request approval to close link:https://github.com/creator-assertions/identity-assertion/pull/96[#96: Signer payload fixes] without merging.
-* link:https://github.com/creator-assertions/identity-assertion/pull/107[#107: Revise Overview section to include new trust signal diagrams]. I’ve added new diagrams as suggested in last week’s meeting.
-* link:https://github.com/creator-assertions/identity-assertion/pull/98[#98: Introduce an optional `signer_payload.role` field].
-** I’ve extended this PR to allow multiple roles to be specified.
-** I would like to avoid the additional complexity and dependency on other role definitions as that creates a substantially larger implementation burden for verifiers.
+Discussion on the following PRs:
 
-=== 15 min: Discuss ISCC (new ISO standard) and how it might fit here
+==== 🎥 _19'45":_ link:https://github.com/creator-assertions/identity-assertion/pull/103[#103: Add optional protections against unexpected claim and unexpected claim generators]
 
-Discuss link:https://github.com/creator-assertions/identity-assertion/issues/113[#113: Consider how to reference ISCC in identity assertion or somewhere in C2PA ecosystem]. No concrete proposal at this time.
+Eric and Nigel discussed expected countersigners and the inclusion of referenced assertions in identity assertions. They agreed to include the naked reference claim structure in the final claim box instead of zeroing out the representation of other identity assertions. Eric proposed modifying the definition of expected countersigners to include the signer payload.
 
-Pre-read: link:https://iscc.io/iso-publishes-new-standard-enabling-content-transparency-iso-24138/[ISO Publishes New Standard Enabling Content Transparency – ISO 24138].
+*ACTION (✅):* Eric to merge #103.
 
-=== 2 min: Heads up on training and data mining assertion
+*ACTION (✅):* Eric to close #96 without merging.
 
-Expecting some feedback in next week or two that may lead to requested revisions to the xref:training-and-data-mining:ROOT:index.adoc[]. If you have concerns or questions, this would be a good time to raise them.
+*ACTION* (link:https://github.com/creator-assertions/identity-assertion/issues/114[#114]): Eric to revise definition of `expected_countersigners` to include a copy of `signer_payload` from other identity assertions. Expect PR for this next week. 
 
-=== 2 min: European Identity Conference invitation
+---
 
-If you’ll be at link:https://www.kuppingercole.com/events/eic2024[EIC 2024] next week, please say hi. I'll be making link:https://www.kuppingercole.com/events/eic2024/speakers/3628[three presentations or panel discussions] during the conference.
+==== 🎥 _34'44":_ link:https://github.com/creator-assertions/identity-assertion/pull/107[#107: Revise Overview section to include new trust signal diagrams]
+
+Eric discussed two new diagrams that were added per a suggestion from last week, giving a visualisation of the identity assertion structure and how that compares to the C2PA Manifest structure.
+
+*ACTION (✅):* Eric to merge #107.
+
+---
+
+==== 🎥 _37'09":_ link:https://github.com/creator-assertions/identity-assertion/pull/98[#98: Introduce an optional `signer_payload.role` field].
+
+Eric discussed one change made since previous review, which was to allow multiple roles to be specified.
+
+Group discussed the values that could be accepted for `signer_payload.role` and agreed to continue the current strategy of a fairly simple built-in list of roles. There was a general discomfort with the “reviewer” role as insufficiently specified, so we agreed to delete it. A variant of this may be introduced later.
+
+*ACTION (✅):* Eric to delete the `cawg.reviewer` role.
+
+*ACTION (✅):* Eric to merge #98.
+
+---
+
+A new link:https://creator-assertions.github.io/identity/1.0-draft/[1.0-draft version of the identity assertion] has been published with the above changes merged.
+
+=== Heads up on training and data mining assertion
+
+🎥 _48'40":_ Expecting some feedback in next week or two that may lead to requested revisions to the xref:training-and-data-mining:ROOT:index.adoc[]. If you have concerns or questions, this would be a good time to raise them.
+
+=== European Identity Conference invitation
+
+🎥 _49'24":_ If you’ll be at link:https://www.kuppingercole.com/events/eic2024[EIC 2024] next week, please say hi. I'll be making link:https://www.kuppingercole.com/events/eic2024/speakers/3628[three presentations or panel discussions] during the conference.
 
 IMPORTANT: Next week's CAWG meeting _will_ proceed as normal. I’ll have arrived in Berlin in time to host the meeting.
 
-=== 5 min: Closing and review
+NOTE: Before the recording started, some of us discussed the link:https://mobileecosystemforum.com/mef-connects-id-data-2024/[Mobile Ecosystem Forum Connects ID & Data 2024 conference], organized by Michael Becker and in which Eric was a presenter.
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+include::partial$upcoming-meeting-changes.adoc[]
