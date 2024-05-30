@@ -33,8 +33,8 @@ There are a few to-do items regarding threats to the trust model which I have sp
 As mentioned in the e-mail I sent out on Wednesday, I'd like to dig into a few top-of-mind issues regarding VCs and then brainstorm on what else needs to be done to land that part of the spec.
 
 * *link:https://github.com/creator-assertions/identity-assertion/issues/73[Issue #73: VC cryptographic suites recommendation]:* (Roughly: which cryptographic suites do we want to recommend, bearing in mind that verifiers will have to understand all supported suites?)
-* *link:https://github.com/creator-assertions/identity-assertion/issues/111[Securing mechanism for VCs]:* (Roughly: do we want to express a preference for enveloping proofs or embedded proofs?)
-* *link:https://github.com/creator-assertions/identity-assertion/issues/112:[VCs: Contexts, Vocabularies, Types, and Credential Schemas]*
+* *link:https://github.com/creator-assertions/identity-assertion/issues/111[Issue #111: Securing mechanism for VCs]:* (Roughly: do we want to express a preference for enveloping proofs or embedded proofs?)
+* *link:https://github.com/creator-assertions/identity-assertion/issues/112[Issue #112: VCs: Contexts, Vocabularies, Types, and Credential Schemas]*
 
 === 10 min: EIC preview
 
