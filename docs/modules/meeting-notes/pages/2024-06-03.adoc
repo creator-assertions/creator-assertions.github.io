@@ -1,0 +1,47 @@
+= 03 June 2024
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== 5 min: New members introduction
+
+=== 20 min: Review trust model PR
+
+I'd like to land link:https://github.com/creator-assertions/identity-assertion/pull/99[PR #99], which contains a discussion of the trust model for the identity assertion.
+
+I recommend pre-reading link:++https://creator-assertions.github.io/identity/1.0+trust-model/#_trust_model++[§9, “Trust model,”] which is a rendered version of PR #99 and is almost completely re-written from the previous draft.
+
+There are a few to-do items regarding threats to the trust model which I have split out into separate issues that can be addressed later.
+
+=== 30 min: Digging into verifiable credentials more
+
+As mentioned in the e-mail I sent out on Wednesday, I'd like to dig into a few top-of-mind issues regarding VCs and then brainstorm on what else needs to be done to land that part of the spec.
+
+* *link:https://github.com/creator-assertions/identity-assertion/issues/73[Issue #73: VC cryptographic suites recommendation]:* (Roughly: which cryptographic suites do we want to recommend, bearing in mind that verifiers will have to understand all supported suites?)
+* *link:https://github.com/creator-assertions/identity-assertion/issues/111[Securing mechanism for VCs]:* (Roughly: do we want to express a preference for enveloping proofs or embedded proofs?)
+* *link:https://github.com/creator-assertions/identity-assertion/issues/112:[VCs: Contexts, Vocabularies, Types, and Credential Schemas]*
+
+=== 10 min: EIC preview
+
+Brainstorm: I'll be at link:https://www.kuppingercole.com/events/eic2024[European Identity Conference] the rest of this week. If you have presenters or people I should meet – or thoughts on what questions I should be asking while I’m here – please share them.
+
+Related: Here are link:https://www.kuppingercole.com/events/eic2024/speakers/3628[three panels and presentations I’ll be making this week].
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
