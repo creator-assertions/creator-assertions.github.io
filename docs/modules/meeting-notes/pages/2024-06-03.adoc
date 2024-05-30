@@ -22,11 +22,15 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 20 min: Review trust model PR
 
-I'd like to land link:https://github.com/creator-assertions/identity-assertion/pull/99[PR #99], which contains a discussion of the trust model for the identity assertion.
+I’d like to land link:https://github.com/creator-assertions/identity-assertion/pull/99[PR #99], which contains a discussion of the trust model for the identity assertion.
 
 I recommend pre-reading link:++https://creator-assertions.github.io/identity/1.0+trust-model/#_trust_model++[§9, “Trust model,”] which is a rendered version of PR #99 and is almost completely re-written from the previous draft.
 
 There are a few to-do items regarding threats to the trust model which I have split out into separate issues that can be addressed later.
+
+=== 10 min: Review `expected_countersigners` PR
+
+I’d like to land link:https://github.com/creator-assertions/identity-assertion/pull/119[PR #119], which follows up on last week’s request to include the expected `signer_payload` for other identity assertion signers in the `expected_countersigners` field.
 
 === 30 min: Digging into verifiable credentials more
 
