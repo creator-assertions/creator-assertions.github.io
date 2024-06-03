@@ -1,12 +1,8 @@
 = 03 June 2024
 
-IMPORTANT: Meeting recording and notes will be delayed this week so I can focus on the EIC conference.
+link:https://youtu.be/k60K2E7aG9Y[Meeting recording]
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+IMPORTANT: I’ve posted the meeting recording but notes will be delayed while I focus on the EIC conference.
 
 == Attendees
 
