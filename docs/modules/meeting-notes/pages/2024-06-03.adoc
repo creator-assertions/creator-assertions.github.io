@@ -1,5 +1,7 @@
 = 03 June 2024
 
+IMPORTANT: Meeting recording and notes will be delayed this week so I can focus on the EIC conference.
+
 Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
 
 == Meeting recording
