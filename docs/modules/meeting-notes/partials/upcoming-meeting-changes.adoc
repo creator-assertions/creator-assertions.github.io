@@ -3,6 +3,6 @@
 ==== 
 The following meetings will deviate from the usual Monday schedule:
 
-* 10 June 2024* *cancelled* (no new issues or PRs to review)
+* 10 June 2024 *cancelled* (no new issues or PRs to review)
 * 1 July 2024 *cancelled* (Adobe closed for US/Canada holiday week)
 ====
