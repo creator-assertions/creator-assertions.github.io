@@ -18,7 +18,7 @@ content:
     - 'new-trust-model-diagrams'
     - 'trust-model'
     - '1.x-add-w3c-vc-v3'
-    - '1.x-add-w3c-vc-v3-schema`
+    - '1.x-add-w3c-vc-v3-schema'
     start_path: docs
 
   - url: https://github.com/creator-assertions/endorsement-assertion.git
