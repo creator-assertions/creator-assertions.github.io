@@ -80,6 +80,6 @@ Can we provide meaningful guidance in a short timeline for these? If not, do the
 
 === Readout on VC / DID method study
 
-🎥 _52'27":_ Candice Ward has produced a link:++https://docs.google.com/spreadsheets/d/1le_rFJ1e9Ibtq2Rt7zJnxqJLuX5_RCdhoMMPdHvJ3nM/edit#gid=0++[survey of VC tech] usage in larger production instances that is intended to help guide us toward a generally-interoperable set of VC tech (DID methods, etc.) for CAWG use.
+🎥 _52'27":_ Candice Ward has produced a link:++https://docs.google.com/spreadsheets/d/1AQGm97IOUzdwSTz4stRmrxD5oxT_U4UzAEoJgYb85CA/edit?usp=sharing=0++[survey of VC tech] usage in larger production instances that is intended to help guide us toward a generally-interoperable set of VC tech (DID methods, etc.) for CAWG use.
 
 A shortened summary of this report was discussed in today’s meeting and is available link:++https://docs.google.com/document/d/10GBG7Q0w--q0S1hvclMjYbv6pDOEjs3_libS4Yv_GqQ/edit?usp=sharing++[here].
