@@ -35,7 +35,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 5 min: Road to 1.0 ratification
 
-🎥 _39'27":_ *ACTION* (all members): In next 2-3 weeks, please read the 1.0-draft spec closely and flag any items that feel like blockers to you. I'd like to move for ratification in July or have concrete issues and action items associated with any remaining blockers by then.
+*ACTION* (all members): In next 2-3 weeks, please read the 1.0-draft spec closely and flag any items that feel like blockers to you. I'd like to move for ratification in July or have concrete issues and action items associated with any remaining blockers by then.
 
 === 5 min: Closing and review
 
