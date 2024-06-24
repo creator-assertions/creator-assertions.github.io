@@ -1,42 +1,81 @@
 = 24 June 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/e9GnR70kusc[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andy Rosen
+* Candice Ward
+* Cole Davis, Switchchord
+* David Bigsby, Government of British Columbia
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Hodari McClain, Capitol One
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Loren Hart, Noosphere Technologies
+* Michael Becker, Identity Praxis
+* Pamela Dingle, Microsoft
+* Peleus Uhley, Adobe
+* Peter Black, Switchchord
+* Richard W. Kroon, EIDR
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== 5 min: Start meeting
+== Notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _1'18":_ David Bigsby, Government of British Columbia
+* 🎥 _2'18":_ Peter Black, Switchchord
+* 🎥 _2'35":_ Richard W. Kroon, EIDR
 
-=== 5 min: New members introduction
+=== Review PR #119: Change the definition of `expected_countersigners` to require the expected `signer_payload` for other identity assertions
 
-=== 30 min: Review open PRs and issues for identity 1.0
+🎥 _4'55":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/119[PR #119: Change the definition of `expected_countersigners` to require the expected `signer_payload` for other identity assertions].
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/119[PR #119: Change the definition of `expected_countersigners` to require the expected `signer_payload` for other identity assertions]
-* link:https://github.com/creator-assertions/identity-assertion/pull/125[PR #125: Define human trust vs technical trust]
-** NOTE: Needs revision to point to ToIP language
-* link:https://github.com/creator-assertions/identity-assertion/pull/127[PR #127: Best practices for avoiding parsing/validation attacks are outside scope]
-* link:https://github.com/creator-assertions/identity-assertion/pull/128[PR #128: Homoglyph attacks may not be directly solvable]
-* link:https://github.com/creator-assertions/identity-assertion/issues/129[Issue #129: Organization as named actor]
+*ACTION:* Eric to follow up with Paul England for final review. Otherwise ready to merge
 
-=== 20 min: Review open PRs for identity 1.x (W3C VC edition)
+=== Review PR #125: Define human trust vs technical trust
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/126[PR #126: Add VC schema description]
+🎥 _7'13":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/125[PR #125: Define human trust vs technical trust].
 
-=== 5 min: Road to 1.0 ratification
+*ACTION (✅):* Eric to call a special meeting with interested members to discuss terminology and revise the PR to clarify that credential issuance needs a home in this framework. Note that we will use the CIRA language as the basis for our work in favor of the Trust Over IP language. Currently scheduled for Wednesday 10:45am US Pacific / 1:45pm US Eastern.
 
-*ACTION* (all members): In next 2-3 weeks, please read the 1.0-draft spec closely and flag any items that feel like blockers to you. I'd like to move for ratification in July or have concrete issues and action items associated with any remaining blockers by then.
+=== Review PR #127: Best practices for avoiding parsing/validation attacks are outside scope
 
-=== 5 min: Closing and review
+🎥 _15'36":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/127[PR #127: Best practices for avoiding parsing/validation attacks are outside scope].
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+*ACTION (✅):* Eric to merge this PR.
+
+=== Review PR #128: Homoglyph attacks may not be directly solvable
+
+🎥 _17'21":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/128[PR #128: Homoglyph attacks may not be directly solvable].
+
+*ACTION (✅):* Eric to remove discussion about homoglyph attacks in DNS.
+
+*ACTION (✅):* Follow up meeting to be scheduled. Same meeting as for PR #125 above.
+
+=== Review issue #129: Organization as named actor
+
+🎥 _24'44":_ Review link:https://github.com/creator-assertions/identity-assertion/issues/129[Issue #129: Organization as named actor].
+
+*ACTION (✅):* Eric to add wording to “named actor” definition to clarify that it can mean individual or organization. (See new link:https://github.com/creator-assertions/identity-assertion/pull/130[PR #130: Clarify definition of "named actor"].)
+
+=== Review identity 1.x (W3C VC edition)
+
+🎥 _22'57":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/126[PR #126: Add VC schema description].
+
+*ACTION:* Eric to follow up with Radu on the following feedback:
+
+* 🎥 _28'38":_ Consider stating some form of affiliation in the credential.
+* 🎥 _33'45":_ Consider renaming `person` field in VC to `namedActor`.
+
+=== Road to 1.0 ratification
+
+🎥 _36'09":_ *ACTION* (all members): In next 2-3 weeks, please read the 1.0-draft spec closely and flag any items that feel like blockers to you. I'd like to move for ratification in July or have concrete issues and action items associated with any remaining blockers by then.
+
+=== Reminder: No meeting next week
+
+🎥 _36'47":_ Due to national holidays in the US and Canada, we will not meet next Monday (1 July). We will resume on the following Monday (8 July).
