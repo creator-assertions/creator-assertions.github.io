@@ -1,0 +1,58 @@
+= 08 July 2024
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== 5 min: Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== 5 min: New members introduction
+
+=== 10 min: Meeting schedule going forward
+
+I'd like to open a discussion about the meeting schedule going forward. Two things have changed that I'd like to discuss:
+
+. I no longer have the schedule constraint that prevents an 8am meeting, so I'm now available to start meetings on the hour instead of at 8:30am Pacific.
+. I would like to introduce an APAC-friendly meeting time. There are some experts who have been unable to attend due to the current meeting time. Is it worth doing alternating weeks of (US) morning and (US) afternoons?
+
+=== 30 min: Review open PRs for 1.0
+
+Review three open PRs against identity 1.0 assertion:
+
+* link:https://github.com/creator-assertions/identity-assertion/pull/125[#125: Define human trust vs technical trust]
+* link:https://github.com/creator-assertions/identity-assertion/pull/128[#128: Homoglyph attacks may not be directly solvable]
+* link:https://github.com/creator-assertions/identity-assertion/pull/119[#119: Change the definition of `expected_countersigners` to require the `expected signer_payload` for other identity assertions]
+
+The first two PRs were revised based on meetings with Jacques, Jesse, Lindsay, David B, and Peleus in the last week of June. Thank you all for great feedback!
+
+=== 5 min: Road to 1.0 ratification
+
+If the above PRs are merged, that will leave one open item (link:https://github.com/creator-assertions/identity-assertion/issues/118[#118: Refine wording for validation of credential status]), which I have flagged for a follow-up discussion with Pia this week.
+
+*IMPORTANT:* I would like to move for ratification of the 1.0 version of the identity assertion in the *22 July 2024* meeting.
+
+*ACTION* (all members): Last call for review of the 1.0-draft spec. Please flag any items that feel like blockers to you.
+
+=== 20 min: Review draft VC version of spec
+
+Review recent changes to link:https://github.com/creator-assertions/identity-assertion/pull/126/files/5f975b877b6e78f21cc8e6e44de3e645f10a5a45..e4901ba272cda9cbd4cee886fd35d3a7ef3683d7[PR #126: Add VC schema description], which:
+
+* Replaces `person` with `namedActor` in the creator identity assertion schema.
+* Replaced Twitter with "Example Social Network" in the examples.
+* Added `affiliations` in the creator identity assertion schema.
+
+=== 5 min: Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.
