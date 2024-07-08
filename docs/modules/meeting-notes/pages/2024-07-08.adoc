@@ -35,7 +35,7 @@ link:https://youtu.be/awevgl14Q_M[Meeting recording]
 
 === Meeting schedule going forward
 
-🎥 _1'18":_ Discussed meeting schedule going forward. I no longer have the schedule constraint that prevents an 8am meeting, so I'm now available to start meetings on the hour instead of at 8:30am Pacific.
+🎥 _2'06":_ Discussed meeting schedule going forward. I no longer have the schedule constraint that prevents an 8am meeting, so I'm now available to start meetings on the hour instead of at 8:30am Pacific.
 
 *ACTION (✅):* Reschedule future meetings to start at 8:00am US Pacific / 11:00am US Eastern / 1500 UTC.
 
