@@ -33,8 +33,6 @@ link:https://youtu.be/wwdeiEJ_J4E[Meeting recording]
 * Welcome and community specification license reminder
 * Agenda review and call for agenda items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
 === 5 min: New members introduction
 
 * 🎥 _2'22":_ Clement Hecquet, Digimarc

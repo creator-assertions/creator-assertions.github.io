@@ -39,8 +39,6 @@ A link to the meeting recording will be provided after the meeting.
 * Welcome and community specification license reminder
 * Agenda review and call for agenda items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
 === 5 min: New members introduction
 
 New members in this meeting:

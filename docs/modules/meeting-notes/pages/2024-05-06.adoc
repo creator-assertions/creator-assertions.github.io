@@ -32,8 +32,6 @@ link:https://youtu.be/-7pBRGaG1t4[Meeting recording]
 * Welcome and community specification license reminder
 * Agenda review and call for agenda items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
 === 5 min: New members introduction
 
 Two new members this meeting:

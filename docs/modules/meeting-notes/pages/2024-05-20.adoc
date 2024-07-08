@@ -27,8 +27,6 @@ link:https://youtu.be/GM-q-aedSEY[Meeting recording]
 * Welcome and community specification license reminder
 * Agenda review and call for agenda items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
 === 5 min: New members introduction
 
 * 🎥 _2'17":_ Scott Perry re-introduction as independent consultant spinning up Digital Governance Institute.

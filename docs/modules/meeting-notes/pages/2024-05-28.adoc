@@ -119,5 +119,3 @@ A new link:https://creator-assertions.github.io/identity/1.0-draft/[1.0-draft ve
 IMPORTANT: Next week's CAWG meeting _will_ proceed as normal. I’ll have arrived in Berlin in time to host the meeting.
 
 NOTE: Before the recording started, some of us discussed the link:https://mobileecosystemforum.com/mef-connects-id-data-2024/[Mobile Ecosystem Forum Connects ID & Data 2024 conference], organized by Michael Becker and in which Eric was a presenter.
-
-include::partial$upcoming-meeting-changes.adoc[]
