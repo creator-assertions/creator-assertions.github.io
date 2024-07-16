@@ -34,7 +34,7 @@ link:https://youtu.be/cDAIVNVhPu4[Meeting recording]
 
 === Updates on training and data mining assertion
 
-🎥 _3'32":_ Leonard introduced us to the work of (xxx working group) and its efforts to standardize vocabulary for content producers to express their usage intents, particularly with regard to AI training and data mining.
+🎥 _3'32":_ Leonard introduced us to the work of a new working group’s efforts to standardize vocabulary for content producers to express their usage intents, particularly with regard to AI training and data mining.
 
 No call to action at this time. Leonard expects to bring recommendations for an update to the CAWG training and data mining assertion based once this group finalizes its recommendations. This is likely in September or October.
 
