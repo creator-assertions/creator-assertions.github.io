@@ -24,7 +24,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 Review link:++https://github.com/creator-assertions/identity-assertion/pulls?q=is%3Aopen+is%3Apr+milestone%3A1.0++[three open PRs] for identity assertion 1.0.
 
-=== 5 min: 1.0 ratification vote next week?
+=== 5 min: 1.0 ratification vote next week
 
 *IMPORTANT:* We will vote on ratification of the 1.0 version of the identity assertion in the *29 July 2024* meeting.
 
