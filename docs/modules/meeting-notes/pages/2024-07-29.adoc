@@ -20,11 +20,26 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 5 min: New members introduction
 
+=== 10 min: One last PR for identity 1.0
+
+Review link:https://github.com/creator-assertions/identity-assertion/pull/138/files[PR #138: Write up section on credential revocation]. Or see the link:https://github.com/creator-assertions/identity-assertion/pull/138/commits/a1a0d23c0cf25b219c041e2cc86817520480a48e[changes made since last Monday's meeting].
+
 === 10 min: Ratification vote on identity 1.0
 
 === 15 min: Icons in identity 1.x
 
-=== OTHERS???
+=== 40 min: Open issues for identity 1.x
+
+I did an extensive review of the VC portion of the 1.x draft last week and have a few proposals to make. Some highlights:
+
+* link:https://github.com/creator-assertions/identity-assertion/pull/157[PR #157: Unify `namedActor`, `affiliations`, and `identities` into a single `verifiedIdentities` property]
+* link:https://github.com/creator-assertions/identity-assertion/pull/147[PR #147: Remove requirement for `id` field]
+* link:https://github.com/creator-assertions/identity-assertion/pull/146[PR #146: Remove `issuer` section]
+
+* link:https://github.com/creator-assertions/identity-assertion/issues/151[Issue #151: Review descriptino of `boundTo` property]
+* link:https://github.com/creator-assertions/identity-assertion/issues/155[Issue #155: Write section on proof mechanisms]
+* link:https://github.com/creator-assertions/identity-assertion/issues/115[Issue #115: Provide meaningful differentiation between similarly-named actors]
+* link:https://github.com/creator-assertions/identity-assertion/issues/64[Issue #64: Consider stronger timestamping mechanism than W3C VC requires]
 
 === 5 min: Closing and review
 
