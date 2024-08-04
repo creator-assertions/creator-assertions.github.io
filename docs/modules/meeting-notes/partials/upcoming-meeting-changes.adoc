@@ -1,1 +1,7 @@
-IMPORTANT: Beginning with the 15 July 2024 meeting, CAWG meetings will start at 0800 US Pacific / 1100 US Eastern / 1500 UTC.
+[IMPORTANT] 
+.Upcoming schedule changes
+==== 
+The following meetings will deviate from the usual Monday schedule:
+
+* 02 September 2024 *rescheduled* to 03 September 2024 (US holiday)
+====
