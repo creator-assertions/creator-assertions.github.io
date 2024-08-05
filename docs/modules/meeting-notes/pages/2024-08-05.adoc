@@ -1,28 +1,31 @@
 = 05 August 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/14dY8St_Acw[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andreas Reich, TrustNXT
+* Andy Rosen
+* Christian Paquin, Microsoft
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Karen Kilroy, FileBaby
+* Liviu Gheorghe, Adobe
+* Loren Hart, Noosphere Technologies
+* Michael Becker, Identity Praxis
+* Misha Deville, Vidos
+* Pamela Dingle, Microsoft
+* Paul England, Microsoft
+* Peleus Uhley, Adobe
+* Scott Perry, Digital Governance Institute
+* Tim Cappalli, Okta
 
-=== 5 min: Start meeting
+== Notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== Review previous action items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
-=== 5 min: New members introduction
-
-=== 5 min: Review previous action items
-
-Action items from xref:2024-07-29.adoc[previous meeting]:
+🎥 _1'07":_ Review action items from xref:2024-07-29.adoc[previous meeting]:
 
 ==== Identity assertion 1.0
 
@@ -40,17 +43,46 @@ Action items from xref:2024-07-29.adoc[previous meeting]:
 
 === 5 min: Identity 1.0 ratification vote POSTPONED
 
-Details to follow.
+🎥 _3'26":_ Late last week, we received a request to consider some new feedback and so the ratification vote is delayed until we can meet with the involved parties.
 
 === 45 min: Open issues for identity 1.x
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/159[PR #159: Rename `boundTo` to `c2paAsset` and clarify some items]
-* link:https://github.com/creator-assertions/identity-assertion/pull/162[PR #162: Tweak wording of `provider.name` entry]
-* link:https://github.com/creator-assertions/identity-assertion/issues/160[Issue #160: Determine structure for `verifiedIdentities[?\].proof`]
-* link:https://github.com/creator-assertions/identity-assertion/issues/155[Issue #155: Write section on proofs]
-* link:https://github.com/creator-assertions/identity-assertion/issues/64[Issue #64: Consider stronger timestamping mechanism than W3C VC requires]
-* link:https://github.com/creator-assertions/identity-assertion/issues/163[Issue #163: Does the approach taken in §8.1 change if issuer == named actor?]
+==== Review PR #159: Rename `boundTo` to `c2paAsset` and clarify some items
 
-=== 5 min: Closing and review
+🎥 _4'19":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/159[PR #159: Rename `boundTo` to `c2paAsset` and clarify some items].
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+There was a lengthy discussion about alternatives for what to call the `signer_payload` entry within the asset-specific credential. Ultimately, the group zeroed in on the existing proposal to rename `boundTo` to `c2paAsset`.
+
+*ACTION (✅):* Eric to merge PR 159 as is.
+
+==== Review PR #162: Tweak wording of `provider.name` entry
+
+🎥 _23'07":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/162[PR #162: Tweak wording of `provider.name` entry].
+
+*ACTION:* Eric to revise PR 162 to include some consideration of localization and possibly a definition of user-visible string.
+
+==== Review issue #160: Determine structure for `verifiedIdentities[?\].proof`
+
+🎥 _30'50":_ Review link:https://github.com/creator-assertions/identity-assertion/issues/160[issue #160: Determine structure for `verifiedIdentities[?\].proof`].
+
+*ACTION:* Liviu and Eric to do further coding / research work to describe what the `proof` data structure should look like in this case.
+
+==== Review issue #155: Write section on proofs
+
+🎥 _32'26":_ Review link:https://github.com/creator-assertions/identity-assertion/issues/155[issue #155: Write section on proofs].
+
+Again, tentative agreement that we would should use only COSE signatures to secure the VCs.
+
+*ACTION:* Pam to discuss with Microsoft engineering team and report back next week.
+
+==== Review issue #64: Consider stronger timestamping mechanism than W3C VC requires
+
+🎥 _36'43":_ Review link:https://github.com/creator-assertions/identity-assertion/issues/64[issue #64: Consider stronger timestamping mechanism than W3C VC requires].
+
+*ACTION:* Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach.
+
+==== Review issue #163: Does the approach taken in §8.1 change if issuer == named actor?
+
+🎥 _56'59":_ Review link:https://github.com/creator-assertions/identity-assertion/issues/163[issue #163: Does the approach taken in §8.1 change if issuer == named actor?]
+
+*ACTION:* Eric to reach out to Will Kreth to explore signature scenarios.
