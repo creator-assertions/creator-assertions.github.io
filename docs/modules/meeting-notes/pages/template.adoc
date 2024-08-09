@@ -20,7 +20,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === 5 min: New members introduction
 
-=== 5 min: Follow up on previous action items
+=== 5 min: Review previous action items
 
 === Topic 1
 
