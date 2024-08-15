@@ -85,7 +85,7 @@ _42'36":_ Review link:https://github.com/creator-assertions/identity-assertion/p
 
 _44'33":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism].
 
-*ACTION:* Eric to add clause limiting COSE signature algorithms to the same list used in C2PA.
+*ACTION (✅):* Eric to add clause limiting COSE signature algorithms to the same list used in C2PA.
 
 *ACTION:* All members to review PR and flag any concerns with limiting to COSE signatures only.
 
