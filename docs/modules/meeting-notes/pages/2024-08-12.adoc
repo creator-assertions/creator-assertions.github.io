@@ -52,7 +52,7 @@ Some of the discussion questions that were raised:
 * Can we translate NIST, Kantara, or similar standards into user-comprehensible reporting on the strength of the identity signal?
 * How does this all apply when identifying pseudonomous or fictional characters?
 
-*ACTION (✅):* Tim to make an introduction for NIST or Kantara for Eric.
+*ACTION:* Tim to make an introduction for NIST or Kantara for Eric.
 
 === Review previous action items
 
@@ -65,7 +65,7 @@ _37'21":_ Quickly reviewed status on the following items, summarized below:
 * *Review link:https://github.com/creator-assertions/identity-assertion/issues/160[issue #160: Determine structure for `verifiedIdentities[?\].proof`].* *ACTION:* Liviu and Eric to do further coding / research work to describe what the `proof` data structure should look like in this case. *NOT DONE*
 * *Review link:https://github.com/creator-assertions/identity-assertion/issues/155[issue #155: Write section on proofs].* *ACTION:* Pam to discuss with Microsoft engineering team and report back next week. *NO UPDATE, CARRY OVER*
 * *Review link:https://github.com/creator-assertions/identity-assertion/issues/64[issue #64: Consider stronger timestamping mechanism than W3C VC requires].* *ACTION:* Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach. *NOT DONE*
-* *Review link:https://github.com/creator-assertions/identity-assertion/issues/163[issue #163: Does the approach taken in §8.1 change if issuer == named actor?].* *ACTION (✅):* Eric to reach out to Will Kreth to explore signature scenarios. *IN PROGRESS*
+* *Review link:https://github.com/creator-assertions/identity-assertion/issues/163[issue #163: Does the approach taken in §8.1 change if issuer == named actor?].* *ACTION:* Eric to reach out to Will Kreth to explore signature scenarios. *IN PROGRESS*
 
 === Review PR #166: Update all C2PA references to point to version 2.1
 
@@ -85,7 +85,7 @@ _42'36":_ Review link:https://github.com/creator-assertions/identity-assertion/p
 
 _44'33":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism].
 
-*ACTION (✅):* Eric to add clause limiting COSE signature algorithms to the same list used in C2PA.
+*ACTION:* Eric to add clause limiting COSE signature algorithms to the same list used in C2PA.
 
 *ACTION:* All members to review PR and flag any concerns with limiting to COSE signatures only.
 
@@ -105,4 +105,4 @@ Also, worth comparing this to existing IPTC work. See link:https://www.iptc.org/
 
 _1h01'26":_ Eric proposed the idea of standardizing an HTTP interface protocol to issue CAWG identity assertions, which would allow for interoperability and ease of use across different service providers, enabling content producers to obtain signatures from their chosen identity provider. The proposal aims to facilitate a standardized method for content producers to interact with various identity providers, ensuring a consistent and reliable process for obtaining the necessary signatures for CAWG identity assertions.
 
-*ACTION (✅):* Eric to create a PR describing this standard HTTP interface.
+*ACTION:* Eric to create a PR describing this standard HTTP interface.
