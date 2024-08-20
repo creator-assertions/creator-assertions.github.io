@@ -1,37 +1,63 @@
 = 19 August 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/upqy3I0OS8E[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andreas Reich, TrustNXT
+* Andy Rosen
+* Christian Paquin, Microsoft
+* Cole Davis, Switchchord
+* Daniel Zellmer, Noosphere Technologies
+* David Bigsby, Government of British Columbia
+* Drummond Reed, Gen
+* Eli Mallon, Aquareum
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Konrad Bleyer-Simon, Global Media Registry
+* Leonard Rosenthol, Adobe
+* Lindsay Walker, Starling Labs
+* Liviu Gheorghe, Adobe
+* Loren Hart, Noosphere Technologies
+* Michael Becker, Identity Praxis
+* Nigel Earnshaw, BBC
+* Paul England, Microsoft
+* Peleus Uhley, Adobe
+* Pia Blumenthal, Adobe
+* Richard W. Kroon, EIDR
 
-=== 5 min: Start meeting
+== Notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== Training and data mining update
 
-include::partial$upcoming-meeting-changes.adoc[]
+🎥 _1'28":_ Leonard Rosenthol shared insights on the training and data mining assertion, aligning with the EU’s TDM exemption and the EU AI Act, emphasizing the importance of rights holders expressing their rights for AI training and data mining purposes.
 
-=== 5 min: New members introduction
+*EU's TDM exemption alignment:* Leonard discussed the alignment of the training and data mining assertion with the EU’s TDM exemption and the EUAI Act, highlighting the significance of rights holders being able to express their rights regarding AI training and data mining. He emphasized the assertion’s design to align with the TDM exemption established in 2019 and its extension to cover AI training, reflecting the evolving landscape of data rights in the EU.
 
-=== 15 min: Training and data mining update
+*Impact on upcoming spec:* The new regulation and its implications for the 1.1 version of the spec were addressed, with Leonard noting the importance of maintaining consistency with the EU AI Act to ensure the spec’s relevance and applicability in the European Union’s regulatory environment. He stressed the need for a common vocabulary grammar to facilitate the expression of rights across different platforms and standards.
 
-Leonard will update us on latest discussions regarding training and data mining assertion.
+*Technical details and rights expression:* Leonard provided technical insights into the assertion, discussing the hand-wavy nature of the original statement and the necessity for rights holders to express their rights either explicitly or in a fine-grained manner. He also touched on the extension of the assertion to cover AI training, reflecting the broader application of text and data mining concepts in the current technological context.
 
-=== 5 min: Review previous action items
+*Future directions and JPEG Trust:* Leonard summarized recent work in link:https://jpeg.org/jpegtrust/index.html[JPEG Trust] and their work to address questions of rights and renumeration statements on behalf of content creators and requested that CAWG not attempt to overlap that effort.
+
+*Definition of “inference:”* General agreement that the term “inference” is not well defined at this time, either in CAWG TDM assertion or in other current public specs/documents.
+
+*ACTION (✅):* Eric to file an issue requesting an amendment to TDM for 1.1. See link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/4[issue #4: Add suggestion (SHOULD/SHALL?) that TDM assertion only be used in conjunction with identity assertion].
+
+=== Review previous action items
+
+🎥 _27'14":_ Quickly reviewed status on the following items, summarized below:
 
 * *ACTION (✅):* Tim to make an introduction for NIST or Kantara for Eric.
 * *ACTION (✅):* Eric to merge PR 159 as is.
-* *ACTION:* Eric to revise PR 162 to include some consideration of localization and possibly a definition of user-visible string. *NOT DONE*
+* *ACTION:* Eric to revise PR 162 to include some consideration of localization and possibly a definition of user-visible string. *NOT DONE, CARRY OVER*
 * *ACTION:* Liviu and Eric to do further coding / research work to describe what the `proof` data structure should look like in this case. *NOT DONE*
+** Challenge: We are currently unaware of ID providers that yield anything other than an ephemeral token.
+** Eric to meet with David Bigsby mid-week regarding BC credentials.
 * *ACTION:* Pam to discuss CBOR signing proposal with Microsoft engineering team and report back next week. *NO UPDATE, CARRY OVER*
-* *ACTION:* Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach. *NOT DONE*
+* *ACTION:* Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach. *NO UPDATE, CARRY OVER*
 * *ACTION (✅):* Eric to reach out to Will Kreth to explore signature scenarios. *IN PROGRESS*
 * *ACTION (✅):* Eric to merge PR #166: Update all C2PA references to point to version 2.1.
 * *ACTION (✅):* Eric to merge PR #165: Define identity assertion generator.
@@ -41,12 +67,32 @@ Leonard will update us on latest discussions regarding training and data mining 
 * *ACTION (✅):* Eric to relay comments from discussion into the chat for training and data mining PR #1: Add `cawg.social_media` entry.
 * *ACTION (✅):* Eric to create a PR describing this standard HTTP interface. (See PR #168 later in today’s agenda.)
 
-=== Discuss identity 1.x PRs
+=== Discuss PR #167: Define VC proofing mechanism
 
-* Review link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism] -- updated with COSE signature restriction
-* Review link:https://github.com/creator-assertions/identity-assertion/pull/168[PR #168: Define HTTPS API for identity assertion signing services]
-* Review link:https://github.com/creator-assertions/identity-assertion/pull/169[PR #169: Define identity provider]
+🎥 _32'05":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism]. As discussed earlier, we chose not to vote on ratification in this meeting pending further feedback from engineering teams. Since the prior week, I did add new language to restrict COSE signature algorithms to those permitted by the C2PA technical specfication.
 
-=== 5 min: Closing and review
+*ACTION:* Eli to submit a PR adding support for K-256 signatures in CAWG. Group to discuss once available.
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+*ACTION (✅):* Eric to split out SHALL capitalization from PR #167 into a separate clerical PR. (Merged on Tuesday.)
+
+=== Discuss PR #168: Define HTTPS API for identity assertion signing services
+
+🎥 _37'01":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/168[PR #168: Define HTTPS API for identity assertion signing services].
+
+*Standardized HTTP API proposal:* Eric introduced a proposal for a standardized HTTP API for identity assertion generators, aiming to simplify the integration process with various services. The proposed API would provide a consistent interface for third-party integrations, potentially enabling a wide range of services to interoperate with identity assertion generators.
+
+*Debate on implementation flexibility:* The proposal sparked a debate among participants regarding the necessity of the API and its potential to limit implementation flexibility. Concerns were raised about the cost of standardization versus the value it provides, with some participants advocating for a more open approach that allows for diverse integration methods.
+
+This is an early proposal; will refine further before moving for a vote to merge.
+
+*ACTION:* Eric and Liviu to discuss potential refinements (for example, more detail on request/response patterns and a potential OAuth2 login site URL).
+
+=== Discuss PR #169: Define identity provider
+
+🎥 _53'57":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/169[PR #169: Define identity provider].
+
+*ACTION:* David to propose new wording to encompass full-fledged verifiable credential issuers in addition to observed authentication to social media and similar sites.
+
+*ACTION:* Jacques to propose new wording to express that the trust decision still remains in the hands of the (human) identity assertion consumer.
+
+No vote on ratification; will re-consider next week.
