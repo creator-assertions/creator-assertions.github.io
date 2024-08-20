@@ -34,13 +34,13 @@ link:https://youtu.be/tTN0d4uLvAY[Meeting recording]
 
 === New members introduction
 
-* _1'16":_ Daniel Zellmer, Noosphere Technologies
-* _1'56":_ Eli Mallon, Aquareum
-* _2'53":_ Garrett Kinsman, Click Camera
+* 🎥 _1'16":_ Daniel Zellmer, Noosphere Technologies
+* 🎥 _1'56":_ Eli Mallon, Aquareum
+* 🎥 _2'53":_ Garrett Kinsman, Click Camera
 
 === Icons and branding in identity assertion
 
-_5'45":_ Pia Blumenthal presented on the importance of iconography in CAWG UI displays, emphasizing the need for standard patterns for social media displays and verified statuses. The discussion also touched on the differentiation of verified statuses and the use of iconography to signal verified identity. The conversation explored how to differentiate between types of verified statuses, considering whether to use a single icon for all or to segment icons based on the type of identity being verified, such as individual or company. Discussion on using iconography to quickly orient viewers to the verification methods used, such as OAuth or two-factor authentication, and whether to inherit icons from social platforms to indicate different verification methods. Pia suggested the possibility of using icons or visualizations to indicate levels of trustworthiness, such as a star rating system, and the need for UX research to understand the best way to present this information.
+🎥 _5'45":_ Pia Blumenthal presented on the importance of iconography in CAWG UI displays, emphasizing the need for standard patterns for social media displays and verified statuses. The discussion also touched on the differentiation of verified statuses and the use of iconography to signal verified identity. The conversation explored how to differentiate between types of verified statuses, considering whether to use a single icon for all or to segment icons based on the type of identity being verified, such as individual or company. Discussion on using iconography to quickly orient viewers to the verification methods used, such as OAuth or two-factor authentication, and whether to inherit icons from social platforms to indicate different verification methods. Pia suggested the possibility of using icons or visualizations to indicate levels of trustworthiness, such as a star rating system, and the need for UX research to understand the best way to present this information.
 
 Some of the discussion questions that were raised:
 
@@ -56,7 +56,7 @@ Some of the discussion questions that were raised:
 
 === Review previous action items
 
-_37'21":_ Quickly reviewed status on the following items, summarized below:
+🎥 _37'21":_ Quickly reviewed status on the following items, summarized below:
 
 ==== Identity assertion 1.x (VC edition)
 
@@ -69,13 +69,13 @@ _37'21":_ Quickly reviewed status on the following items, summarized below:
 
 === Review PR #166: Update all C2PA references to point to version 2.1
 
-_38'41":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/166[PR #166: Update all C2PA references to point to version 2.1].
+🎥 _38'41":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/166[PR #166: Update all C2PA references to point to version 2.1].
 
 *ACTION (✅):* Eric to merge.
 
 === Review PR #165: Define identity assertion generator
 
-_42'36":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/165[PR #165: Define identity assertion generator].
+🎥 _42'36":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/165[PR #165: Define identity assertion generator].
 
 *ACTION (✅):* Eric to merge.
 
@@ -83,7 +83,7 @@ _42'36":_ Review link:https://github.com/creator-assertions/identity-assertion/p
 
 === Review PR #167: Define VC proofing mechanism
 
-_44'33":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism].
+🎥 _44'33":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/167[PR #167: Define VC proofing mechanism].
 
 *ACTION:* Eric to add clause limiting COSE signature algorithms to the same list used in C2PA.
 
@@ -93,7 +93,7 @@ Not merging this week. Will re-review in a week or two.
 
 === Review scope of training and data mining assertion
 
-_48'47":_ Review link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/1/files[PR#1: Add `cawg.social_media` entry].
+🎥 _48'47":_ Review link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/1/files[PR#1: Add `cawg.social_media` entry].
 
 Discussion only; no action this week. Compare to possible work being done on this front by link:https://jpeg.org/jpegtrust/index.html[JPEG Trust]. Consider whether CAWG wants to step into this space, and if so, whether it merits a separate assertion from training and data mining.
 
@@ -103,6 +103,6 @@ Also, worth comparing this to existing IPTC work. See link:https://www.iptc.org/
 
 === Proposal: Define standard HTTP interface for identity assertion
 
-_1h01'26":_ Eric proposed the idea of standardizing an HTTP interface protocol to issue CAWG identity assertions, which would allow for interoperability and ease of use across different service providers, enabling content producers to obtain signatures from their chosen identity provider. The proposal aims to facilitate a standardized method for content producers to interact with various identity providers, ensuring a consistent and reliable process for obtaining the necessary signatures for CAWG identity assertions.
+🎥 _1h01'26":_ Eric proposed the idea of standardizing an HTTP interface protocol to issue CAWG identity assertions, which would allow for interoperability and ease of use across different service providers, enabling content producers to obtain signatures from their chosen identity provider. The proposal aims to facilitate a standardized method for content producers to interact with various identity providers, ensuring a consistent and reliable process for obtaining the necessary signatures for CAWG identity assertions.
 
 *ACTION:* Eric to create a PR describing this standard HTTP interface.
