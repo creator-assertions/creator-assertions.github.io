@@ -1,43 +1,66 @@
 = 09 September 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/ZmwZYaAmf94[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Adrian Polesanu, Adobe
+* Andy Rosen, Sequence Key
+* Christian Paquin, Microsoft
+* Clement Hecquet, Digimarc
+* Konrad Bleyer-Simon, Global Media Registry
+* Cullen Miller, Spawning AI
+* David Bigsby, Government of British Columbia
+* Eli Mallon, Aquareum
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Lindsay Walker, Starling Labs
+* Loren Hart, Noosphere Technologies
+* Misha Deville, Vidos
+* Nigel Earnshaw, BBC
+* Paul England, Microsoft
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Tim Cappalli, Okta
+* Utkarsh Sharma, Vlinder
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== 5 min: Start meeting
+== Notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== Upcoming meeting changes
 
-include::partial$upcoming-meeting-changes.adoc[]
+🎥 _1'13":_ Two upcoming meetings are cancelled:
 
-=== 5 min: New members introduction
+* 23 September 2024 *cancelled* (schedule conflict)
+* 25 November 2024 *cancelled* (US Thanksgiving holiday week)
 
-=== 10 min: Review previous action items
+=== New members introduction
 
-Action items from last two meetings:
+* 🎥 _2'17":_ Adrian Polesanu, Adobe
+
+=== Review previous action items
+
+🎥 _2'42":_ Review action items from last two meetings:
 
 * *ACTION:* Eric to revise PR 162 to include some consideration of localization and possibly a definition of user-visible string. *NOT DONE, CARRY OVER*
 * *ACTION:* Liviu and Eric to do further coding / research work to describe what the `proof` data structure should look like in this case. *NOT DONE* (De-prioritize given shift to identity claim aggregation?)
 * *ACTION:* Pam to discuss CBOR signing proposal with Microsoft engineering team and report back next week. *NO UPDATE, CARRY OVER*
 * *ACTION:* Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach. *NO UPDATE, CARRY OVER*
-* *ACTION:* Eli to submit a PR adding support for K-256 signatures in CAWG. Group to discuss once available.
+* *ACTION:* Eli to submit a PR adding support for K-256 signatures in CAWG. Group to discuss once available. *NOT DONE, CARRY OVER*
 * *ACTION (✅):* David to propose new wording to encompass full-fledged verifiable credential issuers in addition to observed authentication to social media and similar sites.
 * *ACTION (✅):* Jacques to propose new wording to express that the trust decision still remains in the hands of the (human) identity assertion consumer.
 * *ACTION (✅):* Eric to close PR 168 without merging.
 * *ACTION (✅):* Eric to merge PR 169.
 * *ACTION (✅):* Eric to draft a PR to change the name from “W3C verifiable credentials” to “Identity claim aggregation” as described.
 
-=== 10 min: Approval for identity assertion 1.0
+=== Approval for identity assertion 1.0
 
-*MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I move to promote the xref:identity:ROOT:index.adoc[] from draft to approved (version 1.0 final) status:
+🎥 _6'30":_ *MOTION:* As per Community Specification License process link:++https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process++[§4: Specification development process], I move to promote the xref:identity:ROOT:index.adoc[] from draft to approved (version 1.0 final) status:
 
 [quote,Community Specification License :: Governance Policy]
 ____
@@ -46,18 +69,23 @@ ____
 4.3. Working Group Approval. Once a Working Group believes it has achieved the objectives for its specification as described in the Scope, it will Approve that Draft Specification and progress it to “Approved Specification” status.
 ____
 
-=== 20 min: Review PR #167: Define VC proofing mechanism
+*DECISION:* Approved.
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/167/files[PR #167: Define VC proofing mechanism].
+=== Review PR #167: Define VC proofing mechanism
 
-=== 20 min: Review PR #175: Rename §8.1 to “Identity claim aggregation”
+🎥 _8'19":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/167/files[PR #167: Define VC proofing mechanism].
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/175[PR #175: Rename §8.1 to “Identity claim aggregation”].
+No action; still awaiting feedback from Microsoft on viability of COSE envelope as only signature mechanism.
 
-Terminology question TO DISCUSS:
+*ACTION:* Eli to submit a GitHub issue for the group to consider EIP-712 credentials as an autonomous signing mechanism.
 
-> We use the terms “identity claim aggregation” and “creator identity assertion credential” to mean essentially the same thing. Can we unify on one term? If so, which one?
+*ACTION:* Jacques to submit a GitHub issue for the group to consider using domain-name based DIDs as an autonomous signing mechanism.
 
-=== 5 min: Closing and review
+=== Review PR #175: Rename §8.1 to “Identity claim aggregation”
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+🎥 _18'46":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/175[PR #175: Rename §8.1 to “Identity claim aggregation”].
+
+*ACTION (✅): Eric to make minor changes as discussed in the meeting and merge.
+
+* Rename from "identity claim aggregation" (singular) to "identity _claims_ aggregation" (plural).
+* Remove use of term "creator identity assertion credential" in favor of "identity claims aggregation."
