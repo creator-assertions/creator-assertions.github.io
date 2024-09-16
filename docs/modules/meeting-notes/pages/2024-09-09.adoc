@@ -8,7 +8,6 @@ link:https://youtu.be/ZmwZYaAmf94[Meeting recording]
 * Andy Rosen, Sequence Key
 * Christian Paquin, Microsoft
 * Clement Hecquet, Digimarc
-* Konrad Bleyer-Simon, Global Media Registry
 * Cullen Miller, Spawning AI
 * David Bigsby, Government of British Columbia
 * Eli Mallon, Aquareum
