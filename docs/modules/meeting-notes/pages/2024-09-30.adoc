@@ -2,7 +2,6 @@
 
 link:https://youtu.be/Mlfrk4wbYFc[Meeting recording]
 
-
 == Attendees
 
 * Andy Rosen, Sequence Key
