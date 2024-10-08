@@ -52,7 +52,7 @@ Steven and Eric discussed the importance of governance in decentralized identity
 * *ACTION:* Eric to propose a PR deleting the `proof` section. *DONE*
 * *ACTION:* Eric to propose a PR with RFC 3161 in COSE signature for identity claims aggregation model.
 
-=== PR #190: Add support for verified presentations
+=== PR #190: Consolidate wording about `cawg.` labels
 
 🎥 _19'37":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/190[PR #190: Consolidate wording about `cawg.` labels].
 
