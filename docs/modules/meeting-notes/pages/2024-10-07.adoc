@@ -1,10 +1,6 @@
 = 07 October 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+link:https://youtu.be/xTUN-j7eUbY[Meeting recording]
 
 == Attendees
 
