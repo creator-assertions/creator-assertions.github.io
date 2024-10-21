@@ -46,7 +46,7 @@ Steven and Eric discussed the importance of governance in decentralized identity
 
 🎥 _18'25":_ Briefly reviewed the following action items from last week. Most of these translated into PRs that we discussed later.
 
-* *ACTION:* Eric to propose additional language explaining the identity claims aggregator model.Feedback received before and during the meeting suggests it is not sufficiently clear yet. *NOT DONE*
+* *ACTION:* Eric to propose additional language explaining the identity claims aggregator model. Feedback received before and during the meeting suggests it is not sufficiently clear yet. *NOT DONE*
 * *ACTION:* Eric to propose a PR that suggests other identity types (non `cawg.`) should follow reverse domain syntax. *DONE*
 * *ACTION:* Eric to review potential domain control verification methods with UX and product management to determine suitability. *IN PROGRESS*
 * *ACTION:* Eric to propose a PR deleting the `proof` section. *DONE*
