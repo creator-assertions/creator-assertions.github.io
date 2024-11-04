@@ -3,6 +3,7 @@
 ==== 
 The following meetings will deviate from the usual Monday schedule:
 
-* 28 October 2024 *cancelled* (Internet Identity Workshop)
 * 25 November 2024 *cancelled* (US Thanksgiving holiday week)
+* 23 December 2024 *cancelled* (US Christmas holiday week)
+* 30 December 2024 *cancelled* (US Christmas holiday week)
 ====
