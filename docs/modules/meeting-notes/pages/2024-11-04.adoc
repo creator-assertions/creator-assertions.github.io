@@ -28,7 +28,7 @@ Review link:https://github.com/creator-assertions/identity-assertion/pull/197[PR
 
 === Governance
 
-=== Review issue #3: Schema and example are inconsistent]
+=== Review issue #3: Schema and example are inconsistent
 
 Review TDM link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/3[issue #3: Schema and example are inconsistent].
 
