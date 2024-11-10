@@ -33,6 +33,17 @@ All action items from xref:2024-10-21.adoc[] and xref:2024-11-04.adoc[] complete
 * link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for domain control validation (DCV) aka verified web site] -- updated to use `meta` tags
 * link:https://github.com/creator-assertions/identity-assertion/pull/200[PR #200: Add disclaimer about copyright information in use cases]
 
+=== Call for volunteers
+
+Looking for volunteers or collaborators with expertise in:
+
+* Writing Verifiable credentials schema documents
+* Writing validation specifications
+
+=== Call for overall review of identity claims aggregation model
+
+Aside from link:https://github.com/creator-assertions/identity-assertion/milestone/2[issues flagged for 1.1 release] and PRs being discussed today, what open issues / blockers / concerns do you have about the identity claims aggregation model being added in 1.1?
+
 === Review training and data mining assertion PRs
 
 * link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/6[PR #6: Fix #3: Schema and example are inconsistent] (preferred)
