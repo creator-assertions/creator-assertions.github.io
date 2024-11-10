@@ -25,7 +25,8 @@ include::partial$upcoming-meeting-changes.adoc[]
 === Review identity assertion PRs
 
 * link:https://github.com/creator-assertions/identity-assertion/pull/198[PR #198: Revise introduction/scope section to talk about identity assertion as a framework]
-* _(more to come ...)_
+* link:https://github.com/creator-assertions/identity-assertion/pull/199[PR #199: Allow Verifiable credentials data model 1.1 to be used]
+* link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for domain control validation (DCV) aka verified web site] -- updated to use `meta` tags
 
 === Review training and data mining assertion PRs
 
