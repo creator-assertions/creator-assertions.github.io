@@ -1,54 +1,103 @@
 = 11 November 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://youtu.be/43_UG_81q4o[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andreas Reich, TrustNXT
+* Andy Rosen, Sequence Key
+* Christian Paquin, Microsoft
+* Claudiu Cismaru, Adobe
+* Cole Davis, Switchchord
+* Daniel Zellmer, Noosphere Technologies
+* Eli Mallon, Aquareum
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Leonard Rosenthol, Adobe
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Phillippe Rixhon, JPEG Trust
+* Scott Perry, Digital Governance Institute
 
-=== 5 min: Start meeting
+== Meeting notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _1'31":_ Phillippe Rixhon, JPEG Trust
 
-=== 5 min: New members introduction
+=== Review previous action items
 
-=== 5 min: Review previous action items
-
-All action items from xref:2024-10-21.adoc[] and xref:2024-11-04.adoc[] completed (merged PRs) or accounted for in subsequent PRs in this agenda, except for:
+🎥 _3'50":_ All action items from xref:2024-10-21.adoc[] and xref:2024-11-04.adoc[] completed (merged PRs) or accounted for in subsequent PRs in this agenda, except for:
 
 * *ACTION:* Eric to review current revocation mechanisms and draft a PR describing at least one preferred revocation mechanism. → NOT DONE
 
-=== Review identity assertion PRs
+=== C2PA news
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/198[PR #198: Revise introduction/scope section to talk about identity assertion as a framework]
-* link:https://github.com/creator-assertions/identity-assertion/pull/199[PR #199: Allow Verifiable credentials data model 1.1 to be used]
-* link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for domain control validation (DCV) aka verified web site] -- updated to use `meta` tags
-* link:https://github.com/creator-assertions/identity-assertion/pull/200[PR #200: Add disclaimer about copyright information in use cases]
+🎥 _5'43":_ Leonard announced that the ISO Technical Committee 171, Subcommittee 2, Working Group 13 has sent the C2PA specification version 2.1 through the fast track process at ISO, which will turn it into ISO 22144. The ISO standard for Content Credentials is expected to become official in April, assuming no issues arise.
+
+=== Review PR #198: Revise introduction/scope section to talk about identity assertion as a framework
+
+🎥 _8'30":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/198[PR #198: Revise introduction/scope section to talk about identity assertion as a framework].
+
+The PR proposed rewriting the introduction of the identity assertion specification to describe it as a framework for using credentials to bind named actors to content. This change aims to encourage future extensions and implementations.
+
+Nigel questioned the substantial difference between describing it as a framework rather than an assertion. Eric explained that the framework approach allows for future credential formats and implementations, making it more flexible and extensible.
+
+Scott expressed concerns about the term “framework” and suggested rewording to be more clear.
+
+*ACTION:* Eric agreed to refine the language and bring it back in a future meeting. Consider splitting document into the framework and separate documents with specific implementations. Also look for ways to introduce the identity assertion that doesn't require deep knowledge of C2PA specification.
+
+=== Review PR #199: Allow Verifiable credentials data model 1.1 to be used
+
+🎥 _24'16":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/199[PR #199: Allow Verifiable credentials data model 1.1 to be used].
+
+Eric submitted a pull request to allow the use of both verifiable credentials data model 1.1 and 2.0 in the identity assertion specification. This change was requested by a party uncomfortable with building on the 2.0 version.
+
+Scott initially disagreed with down-leveling the specification but reconsidered after Eric explained that 2.0 is not yet ratified by W3C. Christian supported the inclusion of both versions to accommodate existing and emerging deployments.
+
+*ACTION (✅):* Eric to merge PR #199.
+
+=== Review PR #188: Add support for domain control validation (DCV) aka verified web site
+
+🎥 _29'44":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for domain control validation (DCV) aka verified web site].
+
+Since the last review, Eric update the PR to use `meta` tags instead of DNS records for domain control validation in the identity assertion specification. This change was based on feedback from creative professionals who found DNS entries inaccessible.
+
+The proposed meta tags would include a suffix to disambiguate competing implementations and a random value generated by the identity claims aggregator. This value would be placed on the named actor's site to verify control.
+
+*Discussion:* Karen raised concerns about the security of using meta tags, noting that hacked sites could still display valid meta tags. Eric acknowledged the feedback and suggested pausing the PR to explore more secure alternatives. Peleus explained the security issues with both DNS and meta tags, noting that DNS requests are often sent in plain text and can be manipulated. He suggested exploring other secure methods for domain control validation.
+
+*ACTION:* Eric to review feedback and revise proposal accordingly. Consider:
+
+* Removing the ability for identity assertion consumers to validate tags.
+* Clarifying whether the verification is on a domain, subdomain, or a specific URL path.
+
+=== Review PR #200: Add disclaimer about copyright information in use cases
+
+🎥 _58'06":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/200[PR #200: Add disclaimer about copyright information in use cases].
+
+*ACTION (✅):* Eric to merge PR.
 
 === Call for volunteers
 
-Looking for volunteers or collaborators with expertise in:
+🎥 _59'15":_ Looking for volunteers or collaborators with expertise in:
 
 * Writing Verifiable credentials schema documents
 * Writing validation specifications
 
 === Call for overall review of identity claims aggregation model
 
-Aside from link:https://github.com/creator-assertions/identity-assertion/milestone/2[issues flagged for 1.1 release] and PRs being discussed today, what open issues / blockers / concerns do you have about the identity claims aggregation model being added in 1.1?
+🎥 _1h02'31":_ Aside from link:https://github.com/creator-assertions/identity-assertion/milestone/2[issues flagged for 1.1 release] and PRs being discussed today, what open issues / blockers / concerns do you have about the identity claims aggregation model being added in 1.1?
 
 === Review training and data mining assertion PRs
 
-* link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/6[PR #6: Fix #3: Schema and example are inconsistent] (preferred)
+🎥 _1h02'55":_ Reviewed the following two PRs, which both address an inconsistency between the schema and example for the training and data mining assertion:
+
+* link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/6[PR #6: Fix #3: Schema and example are inconsistent]
 * link:https://github.com/creator-assertions/training-and-data-mining-assertion/pull/5[PR #5: Update `training-mining.cbordiag`]
 
-=== 5 min: Closing and review
+*ACTION (✅):* Eric to merge PR #6 and close PR #5 without merging.
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+*ACTION:* Eric to follow up on feedback provided by Phillippe on more concrete examples for how `constrained` might be defined.
