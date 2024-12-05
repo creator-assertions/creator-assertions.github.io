@@ -1,46 +1,62 @@
 = 03 December 2024
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://youtu.be/Jzg7PKv27wU[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Christian Paquin, Microsoft
+* Cole Davis, Switchchord
+* David Bigsby, Government of British Columbia
+* Eric Scouten, Adobe
+* Hans Granqvist, Noosphere
+* Jeremy Uzan, Universal Music
+* Karen Kilroy, FileBaby
+* Liviu Gheorghe, Adobe
+* Peleus Uhley, Adobe
+* Phillippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Utkarsh Sharma, Vlinder
 
-=== 5 min: Start meeting
+== Meeting notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _0'50":_ Jeremy Uzan, Universal Music
 
-=== 5 min: New members introduction
+=== Review previous action items
 
-=== 5 min: Review previous action items
-
-All action items from xref:2024-11-11.adoc[] resulted in merged PRs, except for:
+🎥 _1'36":_ All action items from xref:2024-11-11.adoc[] resulted in merged PRs, except for:
 
 * *ACTION:* Eric to review current revocation mechanisms and draft a PR describing at least one preferred revocation mechanism. → *TRACKING:* Added comment to existing link:https://github.com/creator-assertions/identity-assertion/issues/171[issue #171: Recommend (require?) use of bitstring status lists for revocation?].
 * *ACTION:* Eric to follow up on feedback provided by Phillippe on more concrete examples for how `constrained` might be defined in training and data mining assertion. → *TRACKING:* Filed as link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/7[issue #7: Provide a better definition of `constrained`].
 
-=== 20 min: Overall review of identity claims aggregation model
+=== Overall review of identity claims aggregation model
 
-From previous meeting:
+🎥 _2'51":_ From previous meeting:
 
 > Aside from issues flagged for 1.1 release and PRs being discussed today, what open issues / blockers / concerns do you have about the identity claims aggregation model being added in 1.1?
 
-=== 20 min: Review PR #188: Add support for verified web site
+Members expressed support for the model, highlighting its usefulness in providing assertions that cannot be easily validated without a trusted aggregator.
 
-Review revised version of existing link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for verified web site].
+Eric reiterated that there are some issues flagged as blockers for version 1.1 that still need to be addressed before ratification.
 
-=== 20 min: Proposal to split identity assertion spec into core data model spec and separate "methods" specs
+=== Review PR #188: Add support for verified web site
 
-Discussion to follow.
+🎥 _5'15":_ Review revised version of existing link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for verified web site].
 
-=== 5 min: Closing and review
+Eric presented a revised proposal for verified websites, which simplifies the verification process by removing prescriptive language about using meta tags.
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+Members agreed with the new approach, noting that there could be multiple ways to verify websites, and the proposal is on the right track.
+
+Christian and David raised concerns about the lack of detail on how verification methods are performed, suggesting the need for a descriptor or protocol identifier to ensure the level of assurance. Eric agreed to draft a proposal for allowing identity claims aggregator to describe its verification method. → *TRACKING* as link:https://github.com/creator-assertions/identity-assertion/issues/202[issue #202] and flagged as a blocker for 1.1 ratification.
+
+*ACTION (✅):* Eric to rename verified identity type from `cawg.domain_control_validation` to `cawg.web_site` and merge.
+
+=== Proposal to split identity assertion spec into core data model spec and separate "methods" specs
+
+🎥 _40'58":_ Eric suggested decoupling specific methods such as the current §8.1 and §8.2 from the identity assertion spec and creating separate specs for each method, similar to the DID protocol and methods.
+
+The group discussed the potential benefits and challenges of this approach, including the possibility of creating a more modular and flexible framework.
+
+No clear outcome. Will revisit in a future meeting.
