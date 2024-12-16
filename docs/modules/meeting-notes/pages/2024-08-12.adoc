@@ -26,7 +26,7 @@ link:https://youtu.be/tTN0d4uLvAY[Meeting recording]
 * Pia Blumenthal, Adobe
 * Richard W. Kroon, EIDR
 * Scott Perry, Digital Governance Institute
-* Slava Askipenko, Proof
+* Slava Asipenko, Proof
 * Tim Cappalli, Okta
 * Will Kreth, HAND (Human & Digital) Identity
 

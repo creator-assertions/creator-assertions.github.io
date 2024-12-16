@@ -23,7 +23,7 @@ link:https://youtu.be/EgyzjAlF1d0[Meeting recording]
 * Pia Blumenthal, Adobe
 * Richard W. Kroon, EIDR
 * Scott Perry, Digital Governance Institute
-* Slava Askipenko, Proof
+* Slava Asipenko, Proof
 * Tim Cappalli, Okta
 
 == Notes

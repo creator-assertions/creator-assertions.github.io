@@ -27,7 +27,7 @@ link:https://youtu.be/_pzH4MeCtjI[Meeting recording]
 * Richard W. Kroon, EIDR
 * Scott Perry, Digital Governance Institute
 * Sébastien Testeau, Radio Canada
-* Slava Askipenko, Proof
+* Slava Asipenko, Proof
 * Tim Cappalli, Okta
 * Will Kreth, HAND (Human & Digital) Identity
 
@@ -36,7 +36,7 @@ link:https://youtu.be/_pzH4MeCtjI[Meeting recording]
 === New members introduction
 
 * 🎥 _1'05":_ Liviu Gheorghe, Adobe
-* 🎥 _2'23":_ Slava Askipenko, Proof
+* 🎥 _2'23":_ Slava Asipenko, Proof
 * 🎥 _3'18":_ Tim Cappalli, Okta
 
 === Review PR #138: Section on credential revocation

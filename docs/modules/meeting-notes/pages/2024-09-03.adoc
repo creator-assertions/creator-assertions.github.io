@@ -21,7 +21,7 @@ link:https://youtu.be/JZsL9OkpKiY[Meeting recording]
 * Nigel Earnshaw, BBC
 * Richard W. Kroon, EIDR
 * Scott Perry, Digital Governance Institute
-* Slava Askipenko, Proof
+* Slava Asipenko, Proof
 * Tim Cappalli, Okta
 * Truman Esmond, Partnership for Insurance Information
 * Utkarsh Sharma, Vlinder
