@@ -1,0 +1,125 @@
+= 15 July 2024
+:page-aliases: 2024-07-15.adoc
+
+link:https://youtu.be/cDAIVNVhPu4[Meeting recording]
+
+== Attendees
+
+* Andreas Reich, TrustNXT
+* Andy Rosen
+* Candice Ward
+* Carly Huitema, U of Guelph
+* Cole Davis, Switchchord
+* David Bigsby, Government of British Columbia
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Leonard Rosenthol, Adobe
+* Loren Hart, Noosphere Technologies
+* Noga Hurwitz, Adobe
+* Pamela Dingle, Microsoft
+* Peleus Uhley, Adobe
+* Pia Blumenthal, Adobe
+* Paul England, Microsoft
+* Scott Perry, Digital Governance Institute
+* Sébastien Testeau, Radio Canada
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Notes
+
+=== New members introduction
+
+* 🎥 _1'37":_ Andreas Reich, TrustNXT
+
+=== Updates on training and data mining assertion
+
+🎥 _3'32":_ Leonard introduced us to the work of a new working group’s efforts to standardize vocabulary for content producers to express their usage intents, particularly with regard to AI training and data mining.
+
+No call to action at this time. Leonard expects to bring recommendations for an update to the CAWG training and data mining assertion based once this group finalizes its recommendations. This is likely in September or October.
+
+Related links:
+
+* link:https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Open Future: _Considerations for Opt-Out Compliance Policies by AI Model Developers_]
+* link:https://www.ga4gh.org/product/data-use-ontology-duo/[Global Alliance for Genomics and Health: _Data Use Ontology_]
+
+=== Review PRs for identity 1.0
+
+🎥 _15'51":_ The group reviewed eight open PRs against identity assertion 1.0.
+
+==== #142: Brief section to reference forthcoming UX guidance document
+
+🎥 _15'46":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/142[PR #142: Brief section to reference forthcoming UX guidance document].
+
+*ACTION (✅):* Eric to merge.
+
+==== #141: Changed trust triangle to trust diamond in 9.1
+
+🎥 _19'29":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/141[PR #141: Changed trust triangle to trust diamond in 9.1].
+
+*ACTION:* Eric to replace “trust registry” with “trust list” in the diagram and surrounding text.
+
+*ACTION:* Eric to add link to Trust Over IP discussion of trust registries.
+
+*ACTION:* Eric to add language suggesting that the trust diamond diagram is a depiction of _relationships._
+
+*ACTION:* Eric to request re-review from Jacques once above changes are made.
+
+==== #140: Revise discussion of capture devices holding credentials
+
+🎥 _41'59":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/140[PR #140: Revise discussion of capture devices holding credentials].
+
+*ACTION (✅):* Eric to merge.
+
+==== #138: Write up section on credential revocation
+
+🎥 _45'13":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/138[PR #138: Write up section on credential revocation].
+
+*ACTION:* Eric to revise discussion to avoid implication that revocation happens due to misbehavior on the part of the credential holder.
+
+*ACTION:* Eric to add language to ensure that any revocation check must include the time of issuance.
+
+*ACTION:* Eric to request re-review from David once above changes are made.
+
+==== #136: Formalize trusted, well-formed, and revoked status for identity assertion signatures
+
+🎥 _48'44":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/136[PR #136: Formalize trusted, well-formed, and revoked status for identity assertion signatures].
+
+*ACTION:* Eric to add language to ensure that any revocation check must include the time of issuance.
+
+*ACTION:* Eric to add language to clarify that trusted and well-formed statuses only apply if there is no known revocation of the named actor’s credential.
+
+*ACTION:* Eric to request re-review from group once above changes are made.
+
+==== #130: Clarify definition of “named actor”
+
+🎥 _48'44":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/130[PR #130: Clarify definition of “named actor”].
+
+*ACTION (✅):* Eric to merge.
+
+==== #128: Describe mitigations for homoglyph/typo-squatting attacks and name duplication
+
+🎥 _1h04'01":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/128[PR #128: Describe mitigations for homoglyph/typo-squatting attacks and name duplication].
+
+*ACTION (✅):* Eric to merge.
+
+==== #125: Define human trust vs technical trust
+
+🎥 _1h06'41":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/125[PR #125: Define human trust vs technical trust].
+
+*ACTION (✅):* Eric to merge.
+
+=== Road to 1.0 ratification
+
+🎥 _1h10'03":_ Given volume of changes in last week, group agreed to delay ratification vote by one week.
+
+*IMPORTANT:* We will vote on ratification of the 1.0 version of the identity assertion in the [line-through]#22 July 2024# *29 July 2024* meeting.
+
+*ACTION* (all members): Last call for review of the 1.0-draft spec. Please flag any items that feel like blockers to you.
+
+=== Beginning the UX guidance document
+
+🎥 _1h10'53":_ Pia led the group through some of the concepts which will be addressed in the forthcoming CAWG UX guidance document. (Slides available link:++https://www.figma.com/proto/J21ZWMt797w11F38gb4BPU/CAWG-identity-workshop?page-id=0%3A1&node-id=14-1563&viewport=-5473%2C678%2C0.31&t=XA9YziXHtvjTTO9Q-1&scaling=contain&content-scaling=fixed&starting-point-node-id=14%3A1563++[here].)
+
+*ACTION:* Eric to review the VC draft specification to ensure that the nature of an organizational affiliation can be expressed. (From Scott Perry: “One variant missing is the a person in a role acting on behalf of an organization such as Jane Smith, editor of The New York Times.”)

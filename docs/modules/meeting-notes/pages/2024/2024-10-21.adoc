@@ -1,0 +1,119 @@
+= 21 October 2024
+:page-aliases: 2024-10-21.adoc
+
+link:https://youtu.be/J9yHG0sfcxs[Meeting recording]
+
+== Attendees
+
+* Andreas Reich, TrustNXT
+* Andy Rosen, Sequence Key
+* Christian Paquin, Microsoft
+* Daniel Zellmer, Noosphere Technologies
+* David Bigsby, Government of British Columbia
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Hans Granqvist, Noosphere
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Liviu Gheorghe, Adobe
+* Loren Hart, Noosphere Technologies
+* Nigel Earnshaw, BBC
+* Neil Thomson, Trust Over IP Foundation
+* Noga Hurwitz, Adobe
+* Pamela Dingle, Microsoft
+* Scott Perry, Digital Governance Institute
+* Tim Cappalli, Okta
+* Utkarsh Sharma, Vlinder
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Notes
+
+=== New members introduction
+
+* 🎥 _0'42":_ Neil Thomson, Trust Over IP Foundation
+* 🎥 _1'39":_ Noga Hurwitz, Adobe
+
+=== Review previous action items
+
+🎥 _2'10":_ Briefly reviewed the following action items from two weeks ago.
+
+* *ACTION (✅):* Merged PRs as approved in previous meeting:
+** link:https://github.com/creator-assertions/identity-assertion/pull/190[PR #190: Consolidate wording about `cawg.` labels]
+** link:https://github.com/creator-assertions/identity-assertion/pull/191[PR #191: Remove `proof` entry from `verifiedIdentities\[n\]` structure]
+** link:https://github.com/creator-assertions/identity-assertion/pull/192[PR #192: Add option to use RFC 3161 timestamp in ICA COSE signature]
+
+* *ACTION (✅):* Eric to call subgroup meeting regarding link:https://github.com/creator-assertions/identity-assertion/pull/187[PR #187: Add support for verified presentations] and link:https://github.com/creator-assertions/identity-assertion/issues/53[issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard]. Outcome: No clear consensus on interoperable use case for W3C Verifiable Presentation. Move to withdraw PR 187.
+
+=== Review PR #188: Add support for domain control validation (DCV) aka verified web site
+
+🎥 _2'57":_ Discussed link:https://github.com/creator-assertions/identity-assertion/pull/188[PR #188: Add support for domain control validation (DCV) aka verified web site].
+
+Follow up to Claudiu's request to vet creator willingness/ability to go through proposed steps to prove control over domain.
+
+*Creator Feedback:* Noga shared that creators expressed enthusiasm for a verified mechanism to protect their identity, creative spaces, and brand. They preferred a simple and accessible method for domain control validation. Noga found that `meta` tags are more accessible for most creators, especially those using platforms like Squarespace or Wix.
+
+*ACTION:* Eric to revise PR 188 to remove discussion of DNS records and add discussion about using `meta` tags.
+
+Relevant links from chat:
+
+* link:https://support.wix.com/en/article/adding-additional-meta-tags-to-your-sites-pages[Wix: Adding Additional Meta Tags to Your Site's Pages]
+* link:https://docs.digicert.com/en/certcentral/manage-certificates/dv-certificate-enrollment/domain-control-validation--dcv--methods.html[Digicert: Domain Control Validation (DCV) Methods]
+* link:https://cabforum.org/working-groups/server/baseline-requirements/documents/[CA/B Forum: Baseline Requirements for TLS Server Certification] – §3.2.2.4
+
+Points to consider:
+
+* Validation should include a verification that the same random value that was initially specified remains present at the designated URL.
+* Creator should be able to specify a path within a domain.
+* Consider how BlueSky and Mastodon do domain verification.
+
+=== Review PR #187: Add support for verified presentations
+
+🎥 _22'36":_ Move to withdraw link:https://github.com/creator-assertions/identity-assertion/pull/187[PR #187: Add support for verified presentations].
+
+Discuss the following two issues, which 187 was intended to close:
+
+* link:https://github.com/creator-assertions/identity-assertion/issues/33[#33: When to verify credentials?] – Suggested outcome: Reopen and assign to post 1.1 milestone. ✅ DONE.
+* link:https://github.com/creator-assertions/identity-assertion/issues/179[#179: Describe how ICA should request a Verifiable Presentation and how to describe that in VC] – Suggested outcome: Leave closed unless a use case arises. ✅ DONE.
+
+*ACTION (✅):* Create issue to consider verified e-mail address. (DONE: See link:https://github.com/creator-assertions/identity-assertion/issues/196[issue #196: Consider adding verified e-mail address to ICA model?])
+
+*ACTION (✅):* Eric to close #187 without merging.
+
+=== Review issue #195: Make sure identity claims aggregation model is well understood
+
+🎥 _38'44":_ Discussed link:https://github.com/creator-assertions/identity-assertion/issues/195[issue #195: Make sure identity claims aggregation model is well understood].
+
+Eric acknowledged the need for more examples and explanatory text to clarify the model of identity claims aggregation. He committed to making this a priority before the next meeting.
+
+Eric mentioned the possibility of conducting a workshop at the Internet Identity Workshop (IIW) to gather feedback and improve the explanatory text for identity claims aggregation.
+
+*ACTION:* Eric to prepare more examples and explanatory text ahead of IIW and to call a session describing the ICA model there.
+
+=== Review issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard
+
+🎥 _41'38":_ Discussed link:https://github.com/creator-assertions/identity-assertion/issues/53[issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard].
+
+No clear consensus on a use case for anonymized credentials in the identity claims aggregation model.
+
+*ACTION (✅):* Eric to move issue 53 to post-1.1 milestone.
+
+=== Review issue #171: Recommend (require?) use of bitstring status lists for revocation?
+
+🎥 _41'38":_ Discussed link:https://github.com/creator-assertions/identity-assertion/issues/171[#171: Recommend (require?) use of bitstring status lists for revocation?].
+
+*Need for Revocation:* Eric discussed the need for a mechanism to signal the invalidation of claims issued by an identity claims aggregator.
+
+*Claim Retraction:* Scott emphasized the importance of having a clear path for claim retraction. He suggested exploring best practices for revocation mechanisms to ensure that claims can be invalidated when necessary. Revocation mechanisms are a moving target.
+
+*ACTION:* Eric to review current revocation mechanisms and draft a PR describing at least one preferred revocation mechanism.
+
+=== Open discussion: What questions to ask at IIW?
+
+🎥 _41'38":_ Next week is link:https://internetidentityworkshop.com[Internet Identity Workshop].
+
+Eric, Neil, and Pam will be attending.
+
+*ACTION:* Eric to call sessions on:
+
+* Explaining the identity claims aggregation model
+* (Joint presentation with Wenjing Chu of Trust Over IP) Explaining the conceptual overlap and differences between C2PA+CAWG and ToIP's Trust Spanning Protocol

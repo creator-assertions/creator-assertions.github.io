@@ -1,0 +1,122 @@
+= 08 July 2024
+:page-aliases: 2024-07-08.adoc
+
+link:https://youtu.be/awevgl14Q_M[Meeting recording]
+
+== Attendees
+
+* Andy Rosen
+* Candice Ward
+* Carly Huitema, U of Guelph
+* Clement Hecquet, Digimarc
+* Cole Davis, Switchchord
+* David Bigsby, Government of British Columbia
+* Edmond Cunningham, Arkeytyp
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Jacques Latour, CIRA
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Loren Hart, Noosphere Technologies
+* Misha Deville, Vidos
+* Nigel Earnshaw, BBC
+* Pamela Dingle, Microsoft
+* Patrick Boehler, independent consultant
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Sébastien Testeau, Radio Canada
+
+== Notes
+
+=== New members introduction
+
+* 🎥 _1'18":_ Misha Deville, Vidos
+
+=== Meeting schedule going forward
+
+🎥 _2'06":_ Discussed meeting schedule going forward. I no longer have the schedule constraint that prevents an 8am meeting, so I'm now available to start meetings on the hour instead of at 8:30am Pacific.
+
+*ACTION (✅):* Reschedule future meetings to start at 8:00am US Pacific / 11:00am US Eastern / 1500 UTC.
+
+*ACTION:* Eric to propose an APAC-friendly meeting time in addition to current schedule.
+
+=== Review PR #125: Define human trust vs technical trust
+
+🎥 _6'04":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/125[#125: Define human trust vs technical trust].
+
+This PR and #128 were revised based on meetings with Jacques, Jesse, Lindsay, David B, and Peleus in the last week of June. Thank you all for great feedback!
+
+*ACTION:* Eric to revise the PR to address the following feedback:
+
+* 🎥 _10'33":_ Add language around levels of assurance for credential issuance.
+** 🎥 _11'09":_ Stating do I understand the level of assurance offered by the issuing by the credential issuer and is it sufficient for me to accept the content as or the the statement of the named actor as? Valid and meaningful? Something like that.
+* 🎥 _15'05":_ Replace "human trust" with "reputation trust."
+* 🎥 _21'08":_ Add language to reputation trust section that reputation trust can evolve over time, even for the same _identity assertion consumer._
+* 🎥 _21'50":_ Update section to make clear that it's _identity assertion consumer_ who is evaluating these topics. Also that reputation trust is subjective on the part of the _identity assertion consumer._
+
+Specific language proposals from chat:
+
+* *Carly Huitema:* Reputation trust - the history of understanding. I don't necessarily always require to evaluate someone's governance if they have always showed up after years of interactions
+* *Jacques Latour:* ... while _human trust_ requires both _technical trust_ and _governance trust_ to be established ...
+* *Jacques Latour:* Here's my latest definition: Humans have “trust lists” and we use them subconsciously:
+** *Subjectivity:* Trust is highly subjective and personal. What one person trusts, another might not. 
+** *Contextual:* We might trust someone/something in one situation but not in another. 
+** *Dynamic:* Trust is not static; it changes over time based on our experiences and interactions. 
+** *Unconscious Process:* Often, our trust evaluations happen subconsciously, influenced by our past experiences, biases, and instincts. 
+** *Cultural Differences:* Cultural backgrounds can significantly influence our trust evaluations.
+
+Reviewers after above changes are made:
+
+* Jacques Latour
+* Pamela Dingle
+
+OK to merge after their approval.
+
+=== Review PR #128: Homoglyph attacks may not be directly solvable
+
+🎥 _27'28":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/128[#128: Homoglyph attacks may not be directly solvable].
+
+*ACTION:* Eric to revise the PR to address the following feedback:
+
+* 🎥 _29'49":_ Fix typo: _implementor_ should be _implementer._
+* 🎥 _38'34":_ Rename section title to add duplicate names in addition to homoglyph attacks.
+* 🎥 _41'20":_ Add UX suggestion that the software tools that support identity assertion consumers are encouraged to provide at the user's request additional detail, such as the unique identifiers behind the credential.
+
+Reviewers after above changes are made:
+
+* Peleus Uhley
+* David Bigsby
+
+OK to merge after their approval.
+
+=== Review PR #119: Change the definition of `expected_countersigners` to require the `expected signer_payload` for other identity assertions
+
+🎥 _44'09":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/119[#119: Change the definition of `expected_countersigners` to require the `expected signer_payload` for other identity assertions]
+
+*ACTION (✅):* Eric to merge PR #119.
+
+=== Road to 1.0 ratification
+
+🎥 _45'10":_ Once the above PRs are merged, that will leave one open item (link:https://github.com/creator-assertions/identity-assertion/issues/118[#118: Refine wording for validation of credential status]), which I have flagged for a follow-up discussion with Pia this week.
+
+*IMPORTANT:* We will vote on ratification of the 1.0 version of the identity assertion in the *22 July 2024* meeting.
+
+*ACTION* (all members): Last call for review of the 1.0-draft spec. Please flag any items that feel like blockers to you.
+
+=== Review draft VC version of spec
+
+🎥 _48'35":_ Review recent changes to link:https://github.com/creator-assertions/identity-assertion/pull/126/files/5f975b877b6e78f21cc8e6e44de3e645f10a5a45..e4901ba272cda9cbd4cee886fd35d3a7ef3683d7[PR #126: Add VC schema description], which:
+
+* Replaces `person` with `namedActor` in the creator identity assertion schema.
+* Replaced Twitter with "Example Social Network" in the examples.
+* Added `affiliations` in the creator identity assertion schema.
+
+*ACTION:* Eric to refine and prep PR updates for next week.
+
+=== Early access to Rust SDK for identity assertion
+
+🎥 _55'15":_ I mentioned in the meeting that I've been working on a Rust implementation of the identity assertion that ties into the existing link:https://github.com/contentauth/c2pa-rs/[C2PA Rust SDK].
+
+It's early days and a lot needs to be implemented yet, but early access to this code is available on link:https://github.com/scouten-adobe/cawg-identity-core[GitHub `scouten-adobe/cawg-identity-core`].

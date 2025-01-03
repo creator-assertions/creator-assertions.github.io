@@ -1,0 +1,65 @@
+= 03 June 2024
+:page-aliases: 2024-06-03.adoc
+
+link:https://youtu.be/k60K2E7aG9Y[Meeting recording]
+
+== Attendees
+
+* Andy Parsons, Adobe
+* Andy Rosen
+* Charlie Halford, BBC
+* Christian Paquin, Microsoft
+* Claire Leibowicz, Partnership on AI
+* Eric Scouten, Adobe
+* Jesse Carter, CIRA
+* Karen Kilroy, FileBaby
+* Konrad Bleyer-Simon, Global Media Registry
+* Krishna Sood, Microsoft
+* Loren Hart, Noosphere Technologies
+* Lorie Groth, Digicert
+* Michael Becker, Identity Praxis
+* Nigel Earnshaw, BBC
+* Olaf Steenfadt, Global Media Registry
+* Patrick Boehler, independent consultant
+* Radu Ghiorghisor, Adobe
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+* Yondon Fu, Livepeer
+
+== Notes
+
+=== New members introduction
+
+* 🎥 _3'15":_ Claire Leibowicz, Partnership on AI
+
+=== Review trust model PR
+
+🎥 _4'10":_ Review rendered version of link:https://github.com/creator-assertions/identity-assertion/pull/99[PR #99], which contains a discussion of the trust model for the identity assertion.
+
+🎥 _9'25":_ Olaf requests that we add a definition of the word "trust." Michael Becker offers to provide a definition that we can use. (Filed as link:https://github.com/creator-assertions/identity-assertion/issues/121[issue #121], marked as 1.0 blocker.)
+
+🎥 _19'47":_ Karen points out that the link:++https://creator-assertions.github.io/identity/1.0+trust-model/#_name_collisions++[§9.3.2, “Name collisions” scenario] can happen to organizations, too. Long discussion followed (without specific new resolution) about how to treat context of individuals and organizations to help content viewers make correct associations between similarly-named content producers. (Filed as link:https://github.com/creator-assertions/identity-assertion/issues/122[issue #122], marked as 1.0 blocker.)
+
+🎥 _29'58":_ Christian and Lorie caution us against over-specifying trust list mechanisms and exact resolution of some of these problems, as this might unnecessarily delay the ratification of a 1.0 version of this specification. Some details can be left for subsequent versions of the specification.
+
+🎥 _33'48":_ Scott calls for an assessment of the threats in link:++https://creator-assertions.github.io/identity/1.0+trust-model/#_threats_to_trust_model++[§9.3, “Threats to trust model,”] to give a sense of the level of risk associated with each of the identified threats. (Filed as link:https://github.com/creator-assertions/identity-assertion/issues/120[issue #120], marked for `post-1.0` milestone.)
+
+*ACTION (✅):* Eric to add to-do notes for items flagged in this meeting and merge PR 99.
+
+=== Review `expected_countersigners` PR
+
+🎥 _33'48":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/119[PR #119], which follows up on last week’s request to include the expected `signer_payload` for other identity assertion signers in the `expected_countersigners` field.
+
+*ACTION:* Eric to review feedback from Nigel and update. (Not completed; will carry over.)
+
+=== Digging into verifiable credentials more
+
+🎥 _46'14":_ As mentioned in the e-mail I sent out on Wednesday, I'd like to dig into a few top-of-mind issues regarding VCs and then brainstorm on what else needs to be done to land that part of the spec.
+
+* 🎥 _47'11":_ *link:https://github.com/creator-assertions/identity-assertion/issues/111[Issue #111: Securing mechanism for VCs]:* (Roughly: do we want to express a preference for enveloping proofs or embedded proofs?) More discussion about choosing specific cryptography suites to help narrow the code paths that relying parties need to implement. *ACTION:* Christian to consult with colleagues at Microsoft.
+* *link:https://github.com/creator-assertions/identity-assertion/issues/73[Issue #73: VC cryptographic suites recommendation]:* (Roughly: which cryptographic suites do we want to recommend, bearing in mind that verifiers will have to understand all supported suites?)
+* *link:https://github.com/creator-assertions/identity-assertion/issues/112[Issue #112: VCs: Contexts, Vocabularies, Types, and Credential Schemas]*
+
+=== EIC preview
+
+I'll be at link:https://www.kuppingercole.com/events/eic2024[European Identity Conference] the rest of this week. Here are link:https://www.kuppingercole.com/events/eic2024/speakers/3628[three panels and presentations I’ll be making this week].

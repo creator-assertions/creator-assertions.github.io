@@ -1,0 +1,69 @@
+= 04 November 2024
+:page-aliases: 2024-11-04.adoc
+
+https://youtu.be/73QdHsV9ips[Meeting recording]
+
+== Attendees
+
+* Andreas Reich, TrustNXT
+* Andy Rosen, Sequence Key
+* Christian Paquin, Microsoft
+* Claudiu Cismaru, Adobe
+* Cole Davis, Switchchord
+* David Bigsby, Government of British Columbia
+* Eric Scouten, Adobe
+* Hans Granqvist, Noosphere
+* Karen Kilroy, FileBaby
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Richard W. Kroon, EIDR
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Notes
+
+=== IIW readout
+
+🎥 _3'38":_ Eric shared notes from IIW sessions link:https://ericscouten.dev/2024/iiw39/[on his developer blog], highlighting the link:https://gan.foundation[Global Acceptance Network (GAN)] and its recent public launch.
+ 
+*CAWG Presentation:* Eric discussed link:++https://ericscouten.dev/2024/iiw39/#session-8c-dude-person-where-s-your-did[his presentation on the CAWG's work] at IIW (_link:https://ericscouten.dev/2024/iiw39/2024-10-30-iiw-dude-wheres-your-did.pdf[slides available here]_). The slide that described the identity assertion as a framework (see below) for describing multiple kinds of credentials over time resonated well. 
+
+*ACTION:* Eric to add a representation of this slide to introductory text. Per Nigel's feedback, consider replacing "produced the content described by" with something describing the `signer_payload.role`.
+
+.Identity assertion as a framework
+image::2024-11-04/identity-assertion-framework.png[Identity assertion as a framework,width=700,height=393,align="center"]
+
+Cole mentioned that it was interesting to see how the identity community is maturing, noting the attendance of many larger companies (Zillow, PayPal, MasterCard, Apple) and how the intersection of verifiable identity, AI, and decentralized identity was the dominant theme of the conference.
+
+=== Review PR #197: New introduction to identity claims aggregation
+
+🎥 _13'16":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/197[PR #197: New introduction to identity claims aggregation].
+
+This new section aims to clarify the role of the identity claims aggregator and the workflows involved. He mentioned that the text aligns with explanations used in various slide decks and internal discussions at Adobe.
+
+The identity claims aggregator (ICA) gathers identity attestation claims from various identity providers and links them to content produced by the same actor. The ICA validates these claims and acts as a trusted party for both named actors and identity assertion consumers.
+
+*ACTION (✅):* Eric to merge.
+
+=== Governance
+
+🎥 _23'44":_ Scott presented a detailed governance framework, emphasizing the importance of risk assessment, governance requirements, and accountability in creating a trustworthy ecosystem. He explained the Trust over IP stack model and the need for a transparent set of requirements.
+
+He discussed the need for a conformance program to ensure that governed actors adhere to the normative statements in the spec. He suggested creating a matrix to allocate requirements to different roles and using trust registries to demonstrate compliance.
+
+Scott addressed questions about balancing transparency with confidentiality, especially in highly regulated industries. He emphasized the need for a transparent set of requirements and open dialogue to ensure acceptance and trustworthiness.
+
+_link:https://img1.wsimg.com/blobby/go/e63ff354-00bb-47cc-9489-9d417512e03b/Trusting%20the%20Source%20and%20Content%20of%20Int-c852e50.pdf[Slide deck (PDF)]_
+
+=== Review issue #3: Schema and example are inconsistent
+
+🎥 _58'27":_ Review TDM link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/3[issue #3: Schema and example are inconsistent].
+
+*ACTION:* Eric to review existing usage and bring the two into consistency.
+
+=== Support VC DM 1.1?
+
+🎥 _1h01'54":_ Follow-up to an IIW conversation indicating that it would be helpful if the identity assertion were to support the W3C Verifiable Credentials standard version 1.1 in addition to the 2.0 draft. Group was generally supportive of this change.
+
+*ACTION:* Eric to draft a PR adding support for VC data model 1.1.
