@@ -38,6 +38,12 @@ jobs:
     - name: Generate Site
       run: npx antora antora-playbook.yml
 
+    - name: Post-process paths for VC context/schema docs
+      run: |
+        mkdir build/site/identity/1.1
+        mv build/site/identity/1.1-draft/_attachments/vc build/site/identity/1.1/vc
+        # IMPORTANT: This will have be updated when 1.1-draft becomes 1.1 final.
+
     - name: Disable Jekyll
       run: touch .nojekyll
 
