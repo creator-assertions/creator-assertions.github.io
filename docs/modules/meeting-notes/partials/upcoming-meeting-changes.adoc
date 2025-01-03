@@ -3,6 +3,10 @@
 ==== 
 The following meetings will deviate from the usual Monday schedule:
 
-* 23 December 2024 *cancelled* (US Christmas holiday week)
-* 30 December 2024 *cancelled* (US Christmas holiday week)
+* 20 January 2025 *postponed* to 21 January 2025 (US MLK holiday)
+* 27 January 2025 *rescheduled for APAC time*
+** 1800 US Pacific (Monday)
+** 0200 UTC (Tuesday 28 Jan)
+** 0730 India (Tuesday)
+** 1300 Sydney, Australia (Tuesday)
 ====
