@@ -18,7 +18,7 @@ https://youtu.be/r9Zm7Ih4n-k[Meeting recording]
 * Makki Elfatih, HKDolts
 * Nigel Earnshaw, BBC
 * Peleus Uhley, Adobe
-* Phillippe Rixhon, JPEG Trust
+* Philippe Rixhon, JPEG Trust
 * Richard W. Kroon, EIDR
 * Slava Asipenko, Proof
 

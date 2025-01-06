@@ -19,14 +19,14 @@ https://youtu.be/43_UG_81q4o[Meeting recording]
 * Leonard Rosenthol, Adobe
 * Nigel Earnshaw, BBC
 * Peleus Uhley, Adobe
-* Phillippe Rixhon, JPEG Trust
+* Philippe Rixhon, JPEG Trust
 * Scott Perry, Digital Governance Institute
 
 == Meeting notes
 
 === New members introduction
 
-* 🎥 _1'31":_ Phillippe Rixhon, JPEG Trust
+* 🎥 _1'31":_ Philippe Rixhon, JPEG Trust
 
 === Review previous action items
 
@@ -101,4 +101,4 @@ The proposed meta tags would include a suffix to disambiguate competing implemen
 
 *ACTION (✅):* Eric to merge PR #6 and close PR #5 without merging.
 
-*ACTION:* Eric to follow up on feedback provided by Phillippe on more concrete examples for how `constrained` might be defined.
+*ACTION:* Eric to follow up on feedback provided by Philippe on more concrete examples for how `constrained` might be defined.
