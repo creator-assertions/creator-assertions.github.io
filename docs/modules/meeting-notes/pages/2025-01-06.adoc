@@ -23,21 +23,13 @@ https://youtu.be/ycr3I3bnJEM[Meeting recording]
 
 == Agenda
 
-=== Start meeting
-
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
-
-include::partial$upcoming-meeting-changes.adoc[]
-
 === New members introduction
 
 * 🎥 _1'07":_ Philippe Mougin, AFP
 
 === Schedule / logistical announcements
 
-🎥 _4'05":_ Schedule updates affecting meetings later this month:
+🎥 _4'05":_ Schedule updates affecting meetings later this month.
 
 * 20 January 2025 *postponed* to 21 January 2025 (US MLK holiday)
 * 27 January 2025 *rescheduled for APAC time*
@@ -92,7 +84,3 @@ New PR so we'll discuss further next week.
 🎥 _36'05":_ Reviewed new link:https://github.com/creator-assertions/identity-assertion/pull/205[PR #205: Finalize URI for ICA context and schema].
 
 *ACTION: (✅)* Eric to merge PR 205.
-
-=== Closing and review
-
-Invitation to subsequent meetings, which will typically be on Mondays.
