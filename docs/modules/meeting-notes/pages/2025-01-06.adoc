@@ -1,12 +1,25 @@
 = 06 January 2025
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://youtu.be/ycr3I3bnJEM[Meeting recording]
 
 == Attendees
+
+* Brian McInnis, Long Tailed Leopard
+* Christian Paquin, Microsoft
+* Daniel Zellmer, Noosphere Technologies
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Hans Granqvist, Noosphere
+* Jeremy Uzan, Universal Music
+* Makki Elfatih, HKDolts
+* Michael Klein, Adobe
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Tim Cappalli, Okta
 
 == Agenda
 
@@ -20,7 +33,22 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === New members introduction
 
+* 🎥 _1'07":_ Philippe Mougin, AFP
+
+=== Schedule / logistical announcements
+
+🎥 _4'05":_ Schedule updates affecting meetings later this month:
+
+* 20 January 2025 *postponed* to 21 January 2025 (US MLK holiday)
+* 27 January 2025 *rescheduled for APAC time*
+** 1800 US Pacific (Monday)
+** 0200 UTC (Tuesday 28 Jan)
+** 0730 India (Tuesday)
+** 1300 Sydney, Australia (Tuesday)
+
 === Review previous action items
+
+🎥 _5'25":_ Reviewed action items from previous two meetings.
 
 ==== From xref:2024/2024-12-16.adoc[] meeting
 
@@ -29,23 +57,41 @@ All PRs updated, issues closed as per previous meeting. PR 203 will be discussed
 ==== From xref:2024/2024-12-03.adoc[] meeting
 
 * *ACTION:* Eric to review current revocation mechanisms and draft a PR describing at least one preferred revocation mechanism. → *DONE:* See PR #204 on today's agenda.
-* *ACTION:* Eric to follow up on feedback provided by Phillippe on more concrete examples for how `constrained` might be defined in training and data mining assertion. → *TRACKING:* Filed as link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/7[issue #7: Provide a better definition of `constrained`].
+* *ACTION:* Eric to follow up on feedback provided by Philippe on more concrete examples for how `constrained` might be defined in training and data mining assertion. → *TRACKING:* Filed as link:https://github.com/creator-assertions/training-and-data-mining-assertion/issues/7[issue #7: Provide a better definition of `constrained`].
 
 === PR #203: Add optional `method` field for describing the technique used to verify account/URI control
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/203[PR #203: Add optional `method` field for describing the technique used to verify account/URI control].
+🎥 _6'36":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/203[PR #203: Add optional `method` field for describing the technique used to verify account/URI control].
 
-Since last meeting, minor naming changes have been made.
+*PR Overview:* Eric described the PR as focusing on improving transparency in how the identity claims aggregator verifies identity signals, including editorial changes and renaming verification methods for clarity.
 
-*TO DISCUSS:* Suggestion from Brian McInnis to link:https://github.com/creator-assertions/identity-assertion/pull/203#discussion_r1889002960[add a `cawg.webauthn`] option.
+*Verification Methods:* Since the last meeting, Eric renamed two fields to provide clearer descriptions of the techniques used.
+
+*Security Concerns:* Peleus raised concerns about the security of using meta tags for verification, noting that while it is a standard method, it may be susceptible to attacks. Eric acknowledged the trade-offs between accessibility and security.
+
+*Name Confusion:* The roles played by _identity claims aggregator,_ _identity provider,_ and _named actor_ are not immediately clear to people reading this spec.
+
+*ACTION:* Eric to revise PR to:
+
+* Look for a more generic "federated authentication" name than the existing `cawg.oauth2`. (Review discussion at 🎥 _18'40"._)
+* Clarify which identity signals are self-asserted (DNS, meta tag, etc.) vs asserted by a third party (e-mail, federated). (Review discussion at 🎥 _18'40"_ in which Tim introduces the concept of direct vs delegated verification.)
+* Clarify who is the _identity provider_ in the third party cases. (Review discussion at  🎥 _28'38"._)
+
+*ACTION:* Brian McInnis to link:https://github.com/creator-assertions/identity-assertion/pull/203#discussion_r1889002960[add a `cawg.webauthn`] option. (This can be a separate PR.)
 
 === PR #204: Add section on credential status / revocation
 
-Review new link:https://github.com/creator-assertions/identity-assertion/pull/204[PR #204: Add section on credential status / revocation].
+🎥 _30'47":_ Reviewed new link:https://github.com/creator-assertions/identity-assertion/pull/204[PR #204: Add section on credential status / revocation].
+
+*ACTION:* Eric to create new PR to contemplate maximum lifetime of verifications? (Review discussion at 🎥 _32'21"._)
+
+New PR so we'll discuss further next week.
 
 === PR #205: Finalize URI for ICA context and schema
 
-Review new link:https://github.com/creator-assertions/identity-assertion/pull/205[PR #205: Finalize URI for ICA context and schema].
+🎥 _36'05":_ Reviewed new link:https://github.com/creator-assertions/identity-assertion/pull/205[PR #205: Finalize URI for ICA context and schema].
+
+*ACTION: (✅)* Eric to merge PR 205.
 
 === Closing and review
 
