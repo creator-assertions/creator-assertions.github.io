@@ -1,6 +1,6 @@
 = 21 January 2025
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+https://youtu.be/XlcPWbuvAGs[Meeting recording]
 
 == Meeting recording
 
@@ -8,21 +8,33 @@ A link to the meeting recording will be provided after the meeting.
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yokoa
+* Andy Rosen, Sequence Key
+* Claudiu Cismaru, Adobe
+* David Bigsby, Government of British Columbia
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Hans Granqvist, Noosphere
+* Jeremy Uzan, Universal Music
+* Makki Elfatih, HKDolts
+* Nigel Earnshaw, BBC
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Scott Perry, Digital Governance Institute
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== 5 min: Start meeting
+== Meeting notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _1'01":_ Andrew Dworschak, Yokoa
+* 🎥 _2'00":_ Victor Grey, JLINC
 
-=== 5 min: New members introduction
+=== Review previous action items
 
-=== 5 min: Review previous action items
-
-==== From xref:2025-01-06.adoc[] meeting
+🎥 _3'51":_ Reviewed action items from previous meeting:
 
 *ACTION (✅):* Eric to revise link:https://github.com/creator-assertions/identity-assertion/pull/203[PR 203] to:
 
@@ -32,23 +44,42 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 *DONE:* Will discuss later.
 
-*ACTION:* Brian McInnis to link:https://github.com/creator-assertions/identity-assertion/pull/203#discussion_r1889002960[add a `cawg.webauthn`] option. (This can be a separate PR.)
+*ACTION:* Brian McInnis to link:https://github.com/creator-assertions/identity-assertion/pull/203#discussion_r1889002960[add a `cawg.webauthn`] option. (This can be a separate PR.) → No update. Moved to link:https://github.com/creator-assertions/identity-assertion/issues/208[issue #208].
 
 *ACTION (✅):* Eric to create new PR to contemplate maximum lifetime of verifications. → *DONE:* Will discuss link:https://github.com/creator-assertions/identity-assertion/pull/207[PR 207] later.
 
 *ACTION: (✅)* Eric to merge PR 205. → *DONE*
 
-=== 40 min: Introduction to JPEG Trust work
+=== Introduction to JPEG Trust work
 
-Philippe Rixhon will present on JPEG Trust's work relating to digital rights and renumeration and how that relates to work being done both in C2PA and CAWG.
+🎥 _4'51":_ Philippe Rixon presented on the relationship between the JPEG Trust initiative and the C2PA effort, explaining the use cases, requirements, and the trust framework.
 
-=== 30 min: Review open PRs
+The initiative started with addressing fake media and has evolved to focus on provenance, authenticity, and intellectual property rights. The first edition of JPEG Trust was published, and the second edition is in the drafting stage.
 
-* link:https://github.com/creator-assertions/identity-assertion/pull/203[PR 203: Add optional method field for describing the technique used to verify account/URI control]
-** Preview link:++https://cawg.io/identity/1.1-draft+verif-method/#vc-credentialsubject-verifiedidentity-type++[Updated §8.1.2.5.1, “Verified identity type”]
-* link:https://github.com/creator-assertions/identity-assertion/pull/204[PR 204: Add section on credential status / revocation]
-* link:https://github.com/creator-assertions/identity-assertion/pull/207[PR 207: Limit validity period for identity claims verifications]
+Philippe highlighted the addition of intellectual property rights to the scope of JPEG Trust. This includes attribution, which requires identifying the creator, and rights declaration, which involves expressing and protecting both moral and commercial rights.
 
-=== 5 min: Closing and review
+Philippe explained that CAWG's work on identity and metadata is crucial for JPEG Trust. The integration involves using CAWG's identity assertions and metadata structures to identify creators, editors, and rights holders. These assertions are essential for attributing media and ensuring the accuracy of provenance information.
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+xref:attachment$2025-01-21/jpeg-trust-presentation.pdf[Slide deck (PDF)]
+
+=== Review PR 203: Add optional method field for describing the technique used to verify account/URI control
+
+🎥 _50'09":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/203[PR 203: Add optional method field for describing the technique used to verify account/URI control].
+
+*ACTION (✅):* Eric to merge PR 203.
+
+NOTE: Split out link:https://github.com/creator-assertions/identity-assertion/issues/208[issue #208] as a reminder of Brian McInnis' suggestion to consider a `cawg.webauthn` method.
+
+=== Review PR 204: Add section on credential status / revocation
+
+🎥 _58'35":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/204[PR 204: Add section on credential status / revocation].
+
+*ACTION (✅):* Eric to merge PR 204.
+
+=== Review PR 207: Limit validity period for identity claims verifications
+
+🎥 _59'39":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/207[PR 207: Limit validity period for identity claims verifications].
+
+Eric proposed a maximum lifetime for identity verifications, suggesting that the identity claims aggregator must renew the verification at least annually. The group discussed the implications of this proposal and the need for regular verification.
+
+Some concerns were raised about the arbitrary nature of the requirement for annual renewal. The group agreed to leave this PR open for further consideration.
