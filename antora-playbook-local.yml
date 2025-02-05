@@ -16,6 +16,7 @@ content:
     branches: 
     - HEAD
     - verification-method
+    - ica-validation
     tags: v1.0
     start_path: docs
 
