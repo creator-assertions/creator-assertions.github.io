@@ -1,44 +1,63 @@
 = 10 February 2025 (NA/EU)
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+Meeting recording will be posted later
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Brian McInnis, Long Tailed Leopard
+* Christian Paquin, Microsoft
+* Claudiu Cismaru, Adobe
+* Clement Hecquet, Digimarc
+* David Bigsby, Government of British Columbia
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Hans Granqvist, Noosphere
+* Jeremy Uzan, Universal Music
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== 5 min: Start meeting
+== Meeting notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== Review previous action items
 
-include::partial$upcoming-meeting-changes.adoc[]
-
-=== 5 min: New members introduction
-
-=== 5 min: Review previous action items
-
-All action items from previous meetings resulted in PRs that have been merged.
+_1'01":_ All action items from previous meetings resulted in PRs that have been merged.
 
 === Review PR #211: (Work in progress) Identity claims aggregation validation
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211]. This is a mostly-complete draft. Not yet ready to merge, but looking for group feedback on what has been written so far.
+_1'21":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211]. This was a mostly-complete draft, submitted to the group for feedback on what has been written so far.
+
+Action items:
+
+* _8'41":_ *ACTION:* Revise PR to suggest that validator could pass supplementary error codes in addition to those described by CAWG spec. (For example, "problem details" as described in the W3C VC spec.)
+* _13'39":_ *ACTION:* Revise PR to reduce the number of "validator must stop" conditions to the bare minimum. (Same for PR 210.)
+* _22'18":_ *ACTION:* Revise PR to avoid repetition of the full set of rules for `verifiedIdentities` entries.
+* _34'14":_ *ACTION (✅):* Eric to call meeting with Scott and David regarding levels of assurance and validation lifetime. (Set for Thursday, 13 February.)
 
 === Review PR #210: Introduce new section, “C2PA Manifest validation prerequisites”
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210]. This PR calls out the C2PA Manifest validation as a prerequisite for identity assertion validation. Adds two new constraints:
+_38'36":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210]. This PR calls out the C2PA Manifest validation as a prerequisite for identity assertion validation. Adds two new constraints:
 
 * The C2PA Manifest must now have been found to be _valid._ (The 1.0 CAWG spec only required well-formed.)
 * The identity assertion must have been found to match the hash reference in the claim data structure.
 
+Action items:
+
+* _48'59":_ *ACTION:* Revise PR to remove the "validator must stop" language if the manifest is not well-formed or if the assertion hash doesn't match.
+
 === Review PR #207: Limit validity period for identity claims verifications
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/207[PR #207]. No new language as yet, but I'd like to explore the idea from a previous meeting of declaring the lifetime of identity claims verifications.
+_58'27":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/207[PR #207]. No new language as yet, but I'd like to explore the idea from a previous meeting of declaring the lifetime of identity claims verifications.
 
-=== 5 min: Closing and review
+=== Next meeting
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+We will not hold a CAWG meeting next Monday, 17 February.
+
+We will hold _both_ CAWG meetings (NA/EU + APAC) the following Monday, 24 February (Tuesday, 25 February for APAC time zones).
