@@ -1,44 +1,52 @@
 = 10 February 2025 (APAC)
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
-
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://youtu.be/-wtmCk91NQ4[Meeting recording]
 
 == Attendees
 
-== Agenda
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yokoa
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Peleus Uhley, Adobe
+* Victor Grey, JLINC
 
-=== 5 min: Start meeting
+== Meeting notes
 
-* Start recording
-* Welcome and community specification license reminder
-* Agenda review and call for agenda items
+=== New member introductions
 
-include::partial$upcoming-meeting-changes.adoc[]
-
-=== 5 min: New members introduction
-
-=== 5 min: Review previous action items
-
-All action items from previous meetings resulted in PRs that have been merged.
+* 🎥 _1'10":_ Victor Grey, JLINC
+* 🎥 _2'00":_ Alex Tweeddale, Cheqd
 
 === Review PR #211: (Work in progress) Identity claims aggregation validation
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211]. This is a mostly-complete draft. Not yet ready to merge, but looking for group feedback on what has been written so far.
+🎥 _2'37":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211]. This is a mostly-complete draft. Not yet ready to merge, but looking for group feedback on what has been written so far.
+
+Discussion highlights:
+
+* *Credential status:* Andrew raised a concern about validators having to inspect credential status entries, which may require network calls. Eric explained that the bitstream status list was designed with privacy concerns in mind and that validators are not absolutely required to make network calls.
+* *Governance and trust:* Alex and Andrew discussed the importance of governance and trust in the validation process. They agreed that the governance requirements should be acknowledged in the technical spec but not fully defined, as this would require a separate governance spec.
+
+Action items:
+
+* _25'20":_ *ACTION:* Revise PR to provide room for identity assertion consumer to interpret each verified identity according to its own rules.
+* _32'34":_ *ACTION:* Create issue to track Alex's idea about using bitstring status list to flag evolution of identity after ICA credential is issued.
 
 === Review PR #210: Introduce new section, “C2PA Manifest validation prerequisites”
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210]. This PR calls out the C2PA Manifest validation as a prerequisite for identity assertion validation. Adds two new constraints:
+🎥 _35'07":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210]. This PR calls out the C2PA Manifest validation as a prerequisite for identity assertion validation. Adds two new constraints:
 
 * The C2PA Manifest must now have been found to be _valid._ (The 1.0 CAWG spec only required well-formed.)
 * The identity assertion must have been found to match the hash reference in the claim data structure.
 
 === Review PR #207: Limit validity period for identity claims verifications
 
-Review link:https://github.com/creator-assertions/identity-assertion/pull/207[PR #207]. No new language as yet, but I'd like to explore the idea from a previous meeting of declaring the lifetime of identity claims verifications.
+🎥 _37'47":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/207[PR #207]. No new language as yet, but I'd like to explore the idea from a previous meeting of declaring the lifetime of identity claims verifications.
 
-=== 5 min: Closing and review
+=== Meeting schedule
 
-Invitation to subsequent meetings, which will typically be on Mondays.
+🎥 _48'52":_ Eric announced that the next meeting would be held in two weeks, on the 24th, in both time zones. He also mentioned that there would be no meeting on the 17th due to a holiday in the US.
+
+=== Endorsements
+
+🎥 _49'17":_ Andrew inquired about the status of the endorsement spec, and Eric explained that it was waiting for industry feedback and use cases. Alex suggested that endorsements could play a role in the future by allowing others to endorse identities, which could become part of aggregated claims.
