@@ -13,11 +13,6 @@ https://youtu.be/-wtmCk91NQ4[Meeting recording]
 
 == Meeting notes
 
-=== New member introductions
-
-* 🎥 _1'10":_ Victor Grey, JLINC
-* 🎥 _2'00":_ Alex Tweeddale, Cheqd
-
 === Review PR #211: (Work in progress) Identity claims aggregation validation
 
 🎥 _2'37":_ Review link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211]. This is a mostly-complete draft. Not yet ready to merge, but looking for group feedback on what has been written so far.
@@ -47,6 +42,6 @@ Action items:
 
 🎥 _48'52":_ Eric announced that the next meeting would be held in two weeks, on the 24th, in both time zones. He also mentioned that there would be no meeting on the 17th due to a holiday in the US.
 
-=== Endorsements
+=== Endorsement assertion
 
 🎥 _49'17":_ Andrew inquired about the status of the endorsement spec, and Eric explained that it was waiting for industry feedback and use cases. Alex suggested that endorsements could play a role in the future by allowing others to endorse identities, which could become part of aggregated claims.
