@@ -1,0 +1,66 @@
+= 24 February 2024
+
+This agenda will be used for both NA/EU and APAC meetings as documented below.
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Start recording
+* Welcome and community specification license reminder
+* Agenda review and call for agenda items
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== CAWG joint collaboration agreement
+
+Kim Hamilton-Duffy will join us to introduce a joint collaboration agreement with DIF, ToIP, and CAWG.
+
+=== Meeting cadence
+
+Proposal: Retain the recently-adopted cadence of dual meetings every other Monday (Tuesday in APAC time zones) as we did on 10 February and again today. Times will be based on US Pacific time, as they are now (NA/EU = 0800, APAC = 1800).
+
+=== Review previous action items
+
+Action items from xref:2025-02-10-na-eu[10 February NA/EU]:
+
+* Update PR 211 from discussion. → *DONE* (See upcoming agenda item.)
+* Update PR 210 from discussion. → *DONE* (See upcoming agenda item.)
+* Eric to call meeting with Scott and David regarding levels of assurance and validation lifetime. → *DONE* (TO DO: See if Scott is ready to present.)
+
+Action items from xref:2025-02-10-apac[10 February APAC]:
+
+* PR 211: Revise PR to provide room for identity assertion consumer to interpret each verified identity according to its own rules. → *DONE* (See upcoming agenda item.)
+* PR 211: Create issue to track Alex’s idea about using bitstring status list to flag evolution of identity after ICA credential is issued. → *DONE* (See link:https://github.com/creator-assertions/identity-assertion/issues/215[issue #215].)
+
+=== Review PR #211: ICA validation section
+
+Review and hopefully approve link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
+
+=== Review withdrawal of PR #210: Introduce new section, “C2PA Manifest validation prerequisites”
+
+Discuss proposed withdrawal of link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210: Introduce new section, “C2PA Manifest validation prerequisites”]. After discussion in last meeting, I believe this PR is no longer necessary.
+
+=== Media industry identifiers task force
+
+Recap of a recent conversation with Richard Kroon (EIDR), Will Kreth (HAND Identity), and Scott Perry (Digital Governance Institute) on how to incorporate media industry identifiers into C2PA ecosystem via CAWG.
+
+Describe tentative working theory for how media industry identifiers will work using CAWG identity and metadata assertions and upcoming task force work to propose details.
+
+=== Levels of assurance
+
+Scott Perry will recap a discussion held recently on stating levels of assurance in identity claims aggregation's `verifiedIdentities` list and discuss potential next steps.
+
+=== Closing and review
+
+Invitation to subsequent meetings, which will typically be on Mondays.

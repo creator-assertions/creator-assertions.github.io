@@ -3,8 +3,6 @@
 ==== 
 The following meetings will deviate from the usual Monday schedule:
 
-*17 February 2025* instance cancelled.
-
 On *24 February 2025* we will hold _both_ the NA/EU and APAC sessions:
 
 NA/EU meeting will be held at the usual time slot (Monday):
@@ -15,7 +13,7 @@ NA/EU meeting will be held at the usual time slot (Monday):
 APAC meeting will _also_ be held at the usual APAC time (Monday/Tuesday):
 
 * 1800 US Pacific (Monday)
-* 0200 UTC (Tuesday 28 Jan)
+* 0200 UTC (Tuesday 25 Feb)
 * 0730 India (Tuesday)
 * 1300 Sydney, Australia (Tuesday)
 
