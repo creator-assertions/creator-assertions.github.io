@@ -1,0 +1,115 @@
+= 24 February 2024 (NA/EU)
+
+https://youtu.be/DpsVSuFoI50[Meeting recording]
+
+== Attendees
+
+* Andreas Reich, TrustNXT
+* Andy Rosen, Sequence Key
+* Charlie Halford, BBC
+* Clement Hecquet, Digimarc
+* Cole Davis, Switchchord
+* Daniel Bachenheimer, Accenture
+* David Bigsby, Government of British Columbia
+* Drummond Reed, Gen Digital
+* Eli Mallon, Aquareum
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Hans Granqvist, Noosphere
+* Jeremy Uzan, Universal Music
+* Kim Hamilton Duffy, DIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Slava Asipenko, Proof
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _0'58":_ Daniel Bachenheimer, Accenture
+
+=== CAWG joint collaboration agreement
+
+🎥 _1'33":_ Eric announced a joint collaboration agreement with the link:https://identity.foundation[Decentralized Identity Foundation] and link:https://trustoverip.org[Trust over IP Foundation] to further the work of the group under a larger standards development organization.
+
+Kim Hamilton Duffy introduced DIF, a Linux Foundation project focused on decentralized identity technology, structured collaboration, and technical specifications. DIFF operates under the W3C patent policy.
+
+Kim explained that Trust over IP is a peer organization to DIF, also under the Linux Foundation, and they have a history of successful joint participation in working groups, such as the DID Methods Working Group.
+
+Kim introduced the joint participation model, allowing members of Trust over IP and DIF to participate in the Creator Assertions Working Group without additional fees, promoting open collaboration and reducing duplicate efforts.
+
+Further logistical details including new calendar invitations, Slack, and IP agreements will be sent by e-mail to existing members within the next few days.
+
+Relevant documents:
+
+* xref:attachment$2025-02-24/dif-overview-for-cawg.pdf[DIF Overview for CAWG Slide deck (PDF)]
+* link:https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_charter_v1.pdf[CAWG charter within DIF] as approved by DIF steering committee
+* link:https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[CAWG operating addendum within DIF] as approved by DIF steering committee
+
+=== Meeting cadence
+
+🎥 _16'19":_ Eric proposed switching to an every-other-week meeting cadence with both time zones on the same week, starting from 10 March. The group agreed to this proposal.
+
+Meeting times will be based on US Pacific time as they are now:
+
+* NA/EU: 0800 US Pacific (1500 UTC as of March)
+* APAC: 1800 US Pacific (0100 UTC on Tuesdays as of March)
+
+IMPORTANT: The US will shift to Daylight Savings Time on 9 March 2025, meaning the scheduled times will likely shift earlier by one hour for members outside the US and Canada starting with our next meeting.
+
+=== Review previous action items
+
+🎥 _17'30":_ Action items from xref:2025-02-10-na-eu[10 February NA/EU]:
+
+* Update PR 211 from discussion. → *DONE* (See upcoming agenda item.)
+* Update PR 210 from discussion. → *DONE* (See upcoming agenda item.)
+* Eric to call meeting with Scott and David regarding levels of assurance and validation lifetime. → *DONE* (TO DO: See if Scott is ready to present.)
+
+Action items from xref:2025-02-10-apac[10 February APAC]:
+
+* PR 211: Revise PR to provide room for identity assertion consumer to interpret each verified identity according to its own rules. → *DONE* (See upcoming agenda item.)
+* PR 211: Create issue to track Alex’s idea about using bitstring status list to flag evolution of identity after ICA credential is issued. → *DONE* (See link:https://github.com/creator-assertions/identity-assertion/issues/215[issue #215].)
+
+=== Review PR #211: ICA validation section
+
+🎥 _18'16":_ Review and hopefully approve link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
+
+*ACTION:* Eric to revise PR to include table of status codes from this section and to finalize how to reference specific verified identity entries.
+
+=== Review withdrawal of PR #210: Introduce new section, “C2PA Manifest validation prerequisites”
+
+🎥 _25'22":_ Discuss proposed withdrawal of link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210: Introduce new section, “C2PA Manifest validation prerequisites”]. After discussion in last meeting, I believe this PR is no longer necessary.
+
+*ACTION (✅):* Eric to close this PR without merging.
+
+=== Media industry identifiers task force
+
+🎥 _18'16":_ Eric, Richard, and Scott recapped a recent conversation with Richard Kroon (EIDR), Will Kreth (HAND Identity), and Scott Perry (Digital Governance Institute) on how to incorporate media industry identifiers into C2PA ecosystem via CAWG.
+
+The current working theory is that the existing X.509 flavor of the CAWG identity assertion can be used by industry associations to represent their attestations of media identifiers.
+
+We agreed to form a subgroup to determine the correct placement of these identifiers within the CAWG metadata assertion, ensuring proper representation and standardization.
+
+Andy highlighted the complexity of media identifiers, mentioning various regional identifiers and the need for a flexible system to accommodate different sources and types of identifiers.
+
+Richard proposed that the CAWG should not develop an exhaustive list of identifiers but instead require that the identifier have a URN namespace, offloading the verification to the IETF.
+
+*ACTION (✅):* Eric to organize subgroup meeting. Interested parties, please contact Eric (scouten@adobe.com).
+
+=== Levels of assurance
+
+🎥 _38'21":_ Scott Perry led a recap of a discussion held recently on stating levels of assurance in identity claims aggregation's `verifiedIdentities` list.
+
+Scott emphasized the importance of incorporating levels of assurance into identity assertions to provide additional context and trustworthiness for the relying party. Scott mentioned existing standards like ISO, NIST, and eIDAS 2.0, which define levels of assurance and could be referenced in the identity assertions.
+
+The group discussed the role of the identity claims aggregator in assigning levels of assurance based on the gathered identity claims, considering the possibility of a scoring mechanism to represent the overall assurance level. David and Daniel raised concerns about the variability in assurance levels and the need for clear definitions and validation mechanisms to ensure the reliability of the asserted levels of assurance.
+
+*ACTION:* Eric and Scott to further explore the representation of levels of assurance in identity assertions and the potential for a scoring mechanism. They will continue to discuss and refine this topic in future meetings.
