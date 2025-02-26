@@ -1,0 +1,109 @@
+= 24 February 2024 (APAC)
+
+https://youtu.be/rr8SfixvO6M[Meeting recording]
+
+== Attendees
+
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yokoa
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Jo Spencer, Sezoo
+* John Phillips, Sezoo
+* Peleus Uhley, Adobe
+* Rohan Sahu, Content Lens
+* Scott Perry, Digital Governance Institute
+
+== Meeting notes
+
+=== CAWG joint collaboration agreement
+
+🎥 _1'33":_ Eric announced a joint collaboration agreement with the link:https://identity.foundation[Decentralized Identity Foundation] and link:https://trustoverip.org[Trust over IP Foundation] to further the work of the group under a larger standards development organization.
+
+Eric explained that a joint participation agreement has been agreed upon by the steering committees of both organizations, allowing a broader community to weigh in on the discussions. Participants who have signed the Community Specification License will need to sign an intellectual property agreement with DIF to continue their participation.
+
+Andrew raised a question about the signature process for the new agreement, to which Eric responded that the details would be made available in the next few days.
+
+Drummond Reed expressed enthusiasm for the new direction and suggested making a broader announcement through a Trust Over IP blog post. Eric agreed and mentioned working with Kim, Scott, and Drummond to draft the post and invite members from both organizations to participate actively.
+
+=== Introductions
+
+Since several members were new to each other in the APAC meeting, we did a round of re-introductions
+
+* 🎥 _8'08":_ Eric Scouten, Adobe
+* 🎥 _8'25":_ Drummond Reed, Gen Digital
+* 🎥 _9'01":_ Alex Tweeddale, Cheqd
+* 🎥 _9'38":_ Jo Spencer, Sezoo
+* 🎥 _10'17":_ John Phillips, Sezoo
+* 🎥 _10'44":_ Scott Perry, Digital Governance Institute
+* 🎥 _11'05":_ Rohan Sahu, Content Lens
+* 🎥 _11'29":_ Andrew Dworschak, Yokoa
+* 🎥 _11'59":_ Peleus Uhley, Adobe
+
+=== Meeting cadence
+
+🎥 _12'29":_ Eric proposed switching to an every-other-week meeting cadence with both time zones on the same week, starting from 10 March. The group agreed to this proposal.
+
+Meeting times will be based on US Pacific time as they are now:
+
+* NA/EU: 0800 US Pacific (1500 UTC as of March)
+* APAC: 1800 US Pacific (0100 UTC on Tuesdays as of March)
+
+IMPORTANT: The US will shift to Daylight Savings Time on 9 March 2025, meaning the scheduled times will likely shift earlier by one hour for members outside the US and Canada starting with our next meeting.
+
+=== Review previous action items
+
+🎥 _13'36":_ Action items from xref:2025-02-10-na-eu[10 February NA/EU]:
+
+* Update PR 211 from discussion. → *DONE* (See upcoming agenda item.)
+* Update PR 210 from discussion. → *DONE* (See upcoming agenda item.)
+* Eric to call meeting with Scott and David regarding levels of assurance and validation lifetime. → *DONE* (TO DO: See if Scott is ready to present.)
+
+Action items from xref:2025-02-10-apac[10 February APAC]:
+
+* PR 211: Revise PR to provide room for identity assertion consumer to interpret each verified identity according to its own rules. → *DONE* (See upcoming agenda item.)
+* PR 211: Create issue to track Alex’s idea about using bitstring status list to flag evolution of identity after ICA credential is issued. → *DONE* (See link:https://github.com/creator-assertions/identity-assertion/issues/215[issue #215].)
+
+=== Review PR #211: ICA validation section
+
+🎥 _13'36":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
+
+Eric reviewed changes made to the validation section, including allowing validators to continue validation at their option and flagging errors. The only must-stop conditions are parsing errors. The section on reasons for rejecting a verified identity was simplified to reference earlier rules.
+
+Andrew raised a question about raising multiple status codes.
+
+*ACTION:* Eric agreed to add a note clarifying that if a validator stops processing at the first failure, there may be other undetected failures.
+
+=== Review withdrawal of PR #210: Introduce new section, “C2PA Manifest validation prerequisites”
+
+🎥 _19'58":_ Discuss proposed withdrawal of link:https://github.com/creator-assertions/identity-assertion/pull/210[PR #210: Introduce new section, “C2PA Manifest validation prerequisites”]. After discussion in last meeting, I believe this PR is no longer necessary.
+
+*ACTION (✅):* Eric to close this PR without merging.
+
+=== Media industry identifiers task force
+
+🎥 _19'58":_ Eric and Scott recapped a recent conversation with Richard Kroon (EIDR), Will Kreth (HAND Identity), and Scott Perry (Digital Governance Institute) on how to incorporate media industry identifiers into C2PA ecosystem via CAWG.
+
+The breakthrough in that meeting was understanding that trusted third parties attest to media participants' identities rather than using direct signing from the named actors themselves. This led to a new working theory that the existing X.509 flavor of the CAWG identity assertion can be used by industry associations to represent their attestations of media identifiers in combination with the CAWG metadata assertion to store those identifiers.
+
+We agreed to form a subgroup to determine the correct placement of these identifiers within the CAWG metadata assertion, ensuring proper representation and standardization.
+
+=== Levels of assurance
+
+🎥 _25'54":_ Scott Perry recapped a discussion held recently on stating levels of assurance in identity claims aggregation's `verifiedIdentities` list and discuss potential next steps.
+
+Scott and Drummond proposed adding levels of assurance to the identity claims aggregation's verified identity list. They suggested passing through levels of assurance from recognized governance frameworks such as ISO, NIST, and eIDAS.
+
+They proposed adding fields for level of assurance, source, and governance framework to provide more detailed information about the assurance level of each verified identity.
+
+Drummond emphasized that the level of assurance should be contextual for each credential, and the identity claims aggregator should pass through the assurance level as asserted by the recognized governance framework. Scott highlighted the importance of including the governance framework to provide more information about the policies and ecosystem that issued the credential, ensuring transparency and reliability.
+
+Andrew pointed out that different documents, such as passports and driver's licenses, have varying levels of assurance. The group discussed the need to express these differences clearly.
+
+Eric suggested that optional fields could be added to the `verifiedIdentities list to indicate the type of document verified and its level of assurance, providing more detailed information.
+
+=== Future direction: Privacy-preserving identifiers
+
+🎥 _1h20'06":_ Andrew introduced the concept of identity hooks (see link:https://github.com/creator-assertions/identity-assertion/issues/216[issue #216]), which would allow privacy-preserving identifiers to be bound to future manifests. This would enable the evolution of identity signals over time.
+
+Eric and Drummond expressed interest in exploring the concept further. They discussed the potential benefits and agreed to have a preliminary one-on-one conversation to delve deeper into the idea.

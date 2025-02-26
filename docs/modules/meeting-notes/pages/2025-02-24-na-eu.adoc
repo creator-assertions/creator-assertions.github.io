@@ -80,7 +80,7 @@ Action items from xref:2025-02-10-apac[10 February APAC]:
 
 === Review PR #211: ICA validation section
 
-🎥 _18'16":_ Review and hopefully approve link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
+🎥 _18'16":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
 
 *ACTION:* Eric to revise PR to include table of status codes from this section and to finalize how to reference specific verified identity entries.
 
