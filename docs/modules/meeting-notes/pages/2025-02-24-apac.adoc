@@ -66,7 +66,7 @@ Action items from xref:2025-02-10-apac[10 February APAC]:
 
 === Review PR #211: ICA validation section
 
-🎥 _13'36":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
+🎥 _14'11":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: ICA validation section].
 
 Eric reviewed changes made to the validation section, including allowing validators to continue validation at their option and flagging errors. The only must-stop conditions are parsing errors. The section on reasons for rejecting a verified identity was simplified to reference earlier rules.
 
@@ -82,7 +82,7 @@ Andrew raised a question about raising multiple status codes.
 
 === Media industry identifiers task force
 
-🎥 _19'58":_ Eric and Scott recapped a recent conversation with Richard Kroon (EIDR), Will Kreth (HAND Identity), and Scott Perry (Digital Governance Institute) on how to incorporate media industry identifiers into C2PA ecosystem via CAWG.
+🎥 _21'31":_ Eric and Scott recapped a recent conversation with Richard Kroon (EIDR), Will Kreth (HAND Identity), and Scott Perry (Digital Governance Institute) on how to incorporate media industry identifiers into C2PA ecosystem via CAWG.
 
 The breakthrough in that meeting was understanding that trusted third parties attest to media participants' identities rather than using direct signing from the named actors themselves. This led to a new working theory that the existing X.509 flavor of the CAWG identity assertion can be used by industry associations to represent their attestations of media identifiers in combination with the CAWG metadata assertion to store those identifiers.
 
