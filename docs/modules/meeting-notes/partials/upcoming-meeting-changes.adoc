@@ -1,3 +1,4 @@
+////
 [IMPORTANT] 
 .Upcoming schedule changes
 ==== 
@@ -19,3 +20,4 @@ APAC meeting will _also_ be held at the usual APAC time (Monday/Tuesday):
 
 The agenda will be the same for both meetings.
 ====
+////

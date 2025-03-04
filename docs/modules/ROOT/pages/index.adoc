@@ -13,7 +13,9 @@ These assertions are specified by the following documents:
 * xref:metadata:ROOT:index.adoc[]
 * xref:training-and-data-mining:ROOT:index.adoc[]
 
-PDF versions of these documents are not currently available, but may be added soon.
+== CAWG is joining DIF!
+
+As of March 2025, CAWG is becoming a working group of the link:https://identity.foundation[Decentralized Identity Foundation (DIF)]. Please see their link:https://blog.identity.foundation/welcome-cawg/[blog article welcoming us]. The blog article contains a short sign-up form that will help you join and gain access to CAWG meetings.
 
 == Contributing
 
@@ -29,17 +31,28 @@ Each of the projects of the Creator Assertions Working Group are covered by a co
 
 === Meeting schedule
 
-The Creator Assertions Working Group holds weekly video meetings on Mondays at 8:00am US Pacific time / 11:00am US Eastern time / 1600 UTC for 90 minutes. There is a single meeting in which _all_ CAWG projects will be discussed.
+The Creator Assertions Working Group holds video meetings every other Monday at two times:
 
-The CAWG will re-evaluate the meeting cadence once 1.0 versions of each of the current projects have been released.
+*North America / Europe:*
 
-To attend the meeting, please:
+* 0800 US Pacific
+* 1100 US Eastern
+* 1500 UTC
+* 1600 Central Europe
 
-* Review the terms of the link:https://github.com/creator-assertions/identity-assertion/blob/main/contributor-license.md[Community Specification Contributor License Agreement].
-* Send a message to Eric Scouten (scouten@adobe.com) requesting an invitation and indicating your agreement to the CSL process.
+*APAC:*
+
+* 1800 US Pacific
+* 0100 (Tuesday) UTC
+* 0630 India
+* 1200 Sydney
+
+The same agenda is prepared for both meetings and the meetings are scheduled for 90 minutes each.
+
+To request an invitation, please view the link:https://blog.identity.foundation/welcome-cawg/[blog article welcoming CAWG into DIF]. The article contains a short sign-up form that will help you join and gain access to CAWG meetings and the mailing list.
 
 include::meeting-notes:partial$upcoming-meeting-changes.adoc[]
 
-==== Meeting notes
+=== Meeting notes
 
 Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
