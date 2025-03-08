@@ -102,7 +102,7 @@ Andy highlighted the complexity of media identifiers, mentioning various regiona
 
 Richard proposed that the CAWG should not develop an exhaustive list of identifiers but instead require that the identifier have a URN namespace, offloading the verification to the IETF.
 
-*ACTION (✅):* Eric to organize subgroup meeting. Interested parties, please contact Eric (scouten@adobe.com).
+*ACTION (✅):* Eric to organize media identifiers subgroup meeting. Interested parties, please contact Eric (scouten@adobe.com).
 
 === Levels of assurance
 
