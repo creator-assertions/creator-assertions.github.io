@@ -4,32 +4,20 @@ link:https://us02web.zoom.us/rec/play/EMqJaJQTGCu_nnno5Iwb07zw6-lbta6r6uXftTlS3b
 
 == Attendees
 
-    * Andreas Reich, TrustNXT
-    * Andy Rosen, Sequence Key
-    * Charlie Halford, BBC
-    * Clement Hecquet, Digimarc
-    * Cole Davis, Switchchord
-    * Daniel Bachenheimer, Accenture
-    * David Bigsby, Government of British Columbia
+* Andreas Reich, TrustNXT
+* Andrew Brown
+* Andy Rosen, Sequence Key
+* Cole Davis, Switchchord
 * Drummond Reed, Gen Digital
-    * Eli Mallon, Aquareum
 * Eric Scouten, Adobe
-    * Gavin Peacock, Adobe
-    * Hans Granqvist, Noosphere
-    * Jeremy Uzan, Universal Music
+* Hans Granqvist, Noosphere
 * Kim Hamilton Duffy, DIF
-    * Luke Nispel, OriginVault
-    * Makki Elfatih, HKDolts
-    * Nigel Earnshaw, BBC
+* Luke Nispel, OriginVault
+* Matt McKinney, ArcBlock
 * Otto Mora, Privado ID
-    * Peleus Uhley, Adobe
-    * Philippe Mougin, AFP
-    * Philippe Rixhon, JPEG Trust
-    * Richard W. Kroon, EIDR
-    * Scott Perry, Digital Governance Institute
-    * Slava Asipenko, Proof
-    * Victor Grey, JLINC
-    * Will Kreth, HAND (Human & Digital) Identity
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Victor Grey, JLINC
 
 == Meeting notes
 
