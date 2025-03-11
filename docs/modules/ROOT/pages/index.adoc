@@ -49,7 +49,25 @@ The Creator Assertions Working Group holds video meetings every other Monday at 
 
 The same agenda is prepared for both meetings and the meetings are scheduled for 90 minutes each.
 
-To request an invitation, please view the link:https://blog.identity.foundation/welcome-cawg/[blog article welcoming CAWG into DIF]. The article contains a short sign-up form that will help you join and gain access to CAWG meetings and the mailing list.
+To read about it, read link: https://blog.identity.foundation/welcome-cawg/[blog article welcoming CAWG into DIF].
+
+=== Joining
+1. Sign IPR Forms
+  - Are you already a DIF Member?
+    - If Yes: You're in
+    - If No: Are you a ToIP Member or CAWG Signatory?
+      - If Yes:
+        - Are you full-time employed or representing a company?  link:https://bit.ly/DIF-contributor[Sign the “Contributor” agreement]
+        - Otherwise: link:https://bit.ly/DIF-feedback-agreement[Sign the “Feedback Engagement” agreement]
+      - If No:
+        - link:https://identity.foundation/join/[Join DIF]
+2. Join DIF Communication Channels
+  - link:https://lists.identity.foundation/g/cawg[Join DIF Slack] and introduce yourself in the #wg-cawg channel.
+  - link:https://lists.identity.foundation/g/cawg[Join CAWG Mailing List]
+    - Mailing List Link: Subscribe to receive updates, meeting notes, and important discussions via email.
+3. Ask in one of the communication channels to be added to the calendar
+
+
 
 include::meeting-notes:partial$upcoming-meeting-changes.adoc[]
 
