@@ -24,6 +24,12 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 *ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures.
 
+=== PR #223: Add reference to standardized DID methods from W3C and DIF
+
+Review link:https://github.com/creator-assertions/identity-assertion/pull/223[PR #223: Add reference to standardized DID methods from W3C and DIF].
+
+NOTE: Some language in this PR is likely to conflict with #211 (next on agenda).
+
 === PR #211: Add instructions for identity claims aggregation validators
 
 Review link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: Add instructions for identity claims aggregation validators].
