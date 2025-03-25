@@ -1,0 +1,79 @@
+= 24 March 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/play/tBBQLU_gmtLQpl6ngjBVQCAB2FuXvbwXOsZQBRW4WB7_HVxnJlw-RGNwtU5-qoPDFwidQFmt9hlX_HcM.it8pipjdshQYmTxO?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FjyASCOhdAXw1TwL74NF9-ireuWKkq-fiyDijE0DRy7nfKVrOxTrHbc-OH0m9X88I.vErihe8r7Rc5UUgU[Meeting recording] (1h10m)
+
+== Attendees
+
+* Ben Curtis, JLINC
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Gillan Ward
+* Juan Caballero, DIF
+* Jim Fournier, JLINC
+* Kim Hamilton Duffy, DIF
+* Luke Nispel, OriginVault
+* Mohamed Badr Taddist, EBU
+* Nigel Earnshaw, BBC
+* Otto Mora, Privado ID
+* Peleus Uhley, Adobe
+* Phillippe Rixhon, Valunode
+* Victor Grey, JLINC
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _5'13":_ Mohamed Badr Taddist, EBU
+* 🎥 _6'05":_ Ben Curtis, JLINC
+* 🎥 _6'37":_ Jim Fournier, JLINC
+* 🎥 _6'54":_ Gillan Ward
+
+=== Review previous action items
+
+🎥 _8'04":_ Reviewed previous action items.
+
+*ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → Carry over.
+
+=== PR #223: Add reference to standardized DID methods from W3C and DIF
+
+🎥 _8'33":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/223[PR #223: Add reference to standardized DID methods from W3C and DIF].
+
+*OUTCOME:* See discussion under #211 as they are attempting to do similar things.
+
+=== PR #211: Add instructions for identity claims aggregation validators
+
+🎥 _11'21":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: Add instructions for identity claims aggregation validators].
+
+*ACTION:* Eric, Otto, and Juan to discuss merging language with Otto's proposal in #223. Once we've agreed, approved to merge this PR.
+
+=== PR #219: Add JSON Schema document
+
+🎥 _24'46":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/219[PR #219: Add JSON Schema document]. Looking for expertise in reading JSON Schema.
+
+*OUTCOMES:* Reviewed changes made by Luke Nispel to refactor the schema document and correct a few minor errors. Removed incorrect statement that `id` field is required.
+
+*ACTION (✅):* Eric to merge PR 219.
+
+*ACTION:* Luke to submit a PR adding a JSON-LD context document.
+
+=== PR #217: Fix typo: use `gathered_assertions` instead of `generated_assertions`
+
+🎥 _33'57":_ Deferred discussion link:https://github.com/creator-assertions/identity-assertion/pull/217[PR #217: Fix typo: use `gathered_assertions` instead of `generated_assertions`] until the DIF IPR agreements are signed by EBU.
+
+*ACTION:* Eric to follow up with Badr to ensure IPR agreement is signed before proceeding.
+
+=== Naming co-chairs
+
+🎥 _35'45":_ Discussed adding co-chairs for the CAWG. This process will commence after IIW.
+
+*ACTION:* Eric to work with Kim and Juan to determine the process.
+
+*ACTION:* Members who have an interest in serving as co-chair or in influencing the process should reach out to Eric, Kim, or Juan between now and IIW.
+
+=== FedID demo
+
+🎥 _38'22":_ Ben Curtis led a demo and discussion about link:https://fedid.me[FedID].
+
+Ben explained that FedID is an identifier and identity management solution built under the MIT no-surveillance license, initially designed to support identity management within ActivityPub. He demonstrated how two servers interact when managing DIDs in a federated fashion versus a blockchain fashion, and how user control keys are used instead of standard username passwords and explained the idea of a DID that can be used regardless of the data store location.
+
+_(Link to presentation to be added later.)_
