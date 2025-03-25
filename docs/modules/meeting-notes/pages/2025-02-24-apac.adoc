@@ -5,7 +5,7 @@ https://youtu.be/rr8SfixvO6M[Meeting recording]
 == Attendees
 
 * Alex Tweeddale, Cheqd
-* Andrew Dworschak, Yokoa
+* Andrew Dworschak, Yakoa
 * Drummond Reed, Gen Digital
 * Eric Scouten, Adobe
 * Jo Spencer, Sezoo
@@ -37,7 +37,7 @@ Since several members were new to each other in the APAC meeting, we did a round
 * 🎥 _10'17":_ John Phillips, Sezoo
 * 🎥 _10'44":_ Scott Perry, Digital Governance Institute
 * 🎥 _11'05":_ Rohan Sahu, Content Lens
-* 🎥 _11'29":_ Andrew Dworschak, Yokoa
+* 🎥 _11'29":_ Andrew Dworschak, Yakoa
 * 🎥 _11'59":_ Peleus Uhley, Adobe
 
 === Meeting cadence

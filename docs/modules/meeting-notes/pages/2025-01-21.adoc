@@ -8,7 +8,7 @@ A link to the meeting recording will be provided after the meeting.
 
 == Attendees
 
-* Andrew Dworschak, Yokoa
+* Andrew Dworschak, Yakoa
 * Andy Rosen, Sequence Key
 * Claudiu Cismaru, Adobe
 * David Bigsby, Government of British Columbia
@@ -29,7 +29,7 @@ A link to the meeting recording will be provided after the meeting.
 
 === New members introduction
 
-* 🎥 _1'01":_ Andrew Dworschak, Yokoa
+* 🎥 _1'01":_ Andrew Dworschak, Yakoa
 * 🎥 _2'00":_ Victor Grey, JLINC
 
 === Review previous action items

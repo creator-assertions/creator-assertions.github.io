@@ -5,7 +5,7 @@ https://youtu.be/-wtmCk91NQ4[Meeting recording]
 == Attendees
 
 * Alex Tweeddale, Cheqd
-* Andrew Dworschak, Yokoa
+* Andrew Dworschak, Yakoa
 * Andy Rosen, Sequence Key
 * Eric Scouten, Adobe
 * Peleus Uhley, Adobe

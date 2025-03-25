@@ -5,7 +5,7 @@ https://youtu.be/yZk2qUKvkSI[Meeting recording]
 == Attendees
 
 * Alex Tweeddale, Cheqd
-* Andrew Dworschak, Yokoa
+* Andrew Dworschak, Yakoa
 * Andy Rosen, Sequence Key
 * Drummond Reed, Gen Digital
 * Eric Scouten, Adobe
@@ -23,7 +23,7 @@ This being the first APAC meeting, we all introduced ourselves to each other:
 
 * 🎥 _1'24":_ Eric Scouten, Adobe
 * 🎥 _1'56":_ Alex Tweeddale, Cheqd
-* 🎥 _2'23":_ Andrew Dworschak, Yokoa
+* 🎥 _2'23":_ Andrew Dworschak, Yakoa
 * 🎥 _3'07":_ Andy Rosen, Sequence Key
 * 🎥 _3'41":_ Victor Grey, JLINC
 * 🎥 _4'33":_ Jeremy Uzan, Universal Music
