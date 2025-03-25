@@ -1,0 +1,65 @@
+= 24 March 2025 (APAC)
+
+https://us02web.zoom.us/rec/play/Gt1NRJ0ZuOsRgryvx5fFQCkbRpRvA7CSBEJiMUdjUEO7bt8IPDQNuYzBfD6xb1H0Qg5prci1Pvu_MJtn.N0N2H6Y-s2oT2Yqh?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FnqpRtjBsqdN3xMTB1X7512HhimbpDGiJsJdO10i_jeYswiDwWjAWNNosiz6u4zUm.fq88aVPCwqvhW4ul[Meeting recording] (28m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Eric Scouten, Adobe
+* John Phillips, Sezoo
+
+== Meeting notes
+
+=== New members introduction
+
+_(No new members today.)_
+
+=== Review previous action items
+
+🎥 _4'58":_ Reviewed previous action items.
+
+*ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → Carry over.
+
+=== PR #223: Add reference to standardized DID methods from W3C and DIF
+
+_(Joined with next item.)_
+
+=== PR #211: Add instructions for identity claims aggregation validators
+
+🎥 _5'26":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/211[PR #211: Add instructions for identity claims aggregation validators] and link:https://github.com/creator-assertions/identity-assertion/pull/223[PR #223: Add reference to standardized DID methods from W3C and DIF].
+
+*ACTION (✅):* Eric to fix typo spotted in PR 211.
+
+*ACTION* from NA/EU meeting: Eric, Otto, and Juan to discuss merging language with Otto's proposal in #223. Once we've agreed, approved to merge this PR. *Agreed to in this meeting.*
+
+=== PR #219: Add JSON Schema document
+
+🎥 _14'34":_ Reviewed link:https://github.com/creator-assertions/identity-assertion/pull/219[PR #219: Add JSON Schema document]. Looking for expertise in reading JSON Schema.
+
+*ACTION* from NA/EU meeting: Eric to merge PR 219. *Agreed to in this meeting.*
+
+=== PR #217: Fix typo: use `gathered_assertions` instead of `generated_assertions`
+
+🎥 _16'30":_ Deferred discussion link:https://github.com/creator-assertions/identity-assertion/pull/217[PR #217: Fix typo: use `gathered_assertions` instead of `generated_assertions`] until the DIF IPR agreements are signed by EBU.
+
+=== Naming co-chairs
+
+🎥 _16'46":_ Discussed adding co-chairs for the CAWG. This process will commence after IIW.
+
+*ACTION:* Eric to work with Kim and Juan to determine the process.
+
+*ACTION:* Members who have an interest in serving as co-chair or in influencing the process should reach out to Eric, Kim, or Juan between now and IIW.
+
+=== FedID demo
+
+Did not occur due to a logistical mix-up. Please review the recording from the xref:2025-03-24-na-eu.adoc[] meeting.
+
+=== JPEG Trust discussion
+
+🎥 _20'19":_ John led into a discussion about ISO JPEG Trust and possible work with CAWG. Eric noted the active involvement of Phillippe Rixhon of the JPEG Trust effort.
+
+=== Identity hooks discussion
+
+🎥 _25'30":_ Andrew reported on a recent discussion held by some members around the idea of identity hooks and a broader conversation around media identifiers. He also mentioned the need for technical work in the identity hook proposal and the need for a deeper understanding of the CAWG standard. Eric agreed to help Andrew with this and suggested a meeting for Friday.
+
+*ACTION (✅):* Eric and Andrew to arrange a 1:1 meeting to follow up.
