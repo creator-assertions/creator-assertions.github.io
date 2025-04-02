@@ -20,7 +20,7 @@ content:
     tags: v1.0
     start_path: docs
 
-  - url: https://github.com/creator-assertions/endorsement-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git
     branches:
     - HEAD
     start_path: docs
