@@ -10,7 +10,7 @@ content:
     start_path: docs
     edit_url: ~ 
 
-  - url: https://github.com/creator-assertions/identity-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches: 
     - main
     - verification-method
@@ -23,12 +23,12 @@ content:
     - main
     start_path: docs
 
-  - url: https://github.com/creator-assertions/metadata-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
     branches: ~
     tags: v1.0
     start_path: docs
 
-  - url: https://github.com/creator-assertions/training-and-data-mining-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion.git
     branches:
     - main
     tags: v1.0

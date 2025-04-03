@@ -2,7 +2,7 @@
 
 site:
   title: Creator Assertions Working Group
-  # url: https://creator-assertions.github.io (disabled because this is for local publishing)
+  # url: https://cawg.io (disabled because this is for local publishing)
   start_page: ROOT::index.adoc
 
 content:
@@ -12,7 +12,7 @@ content:
     start_path: docs
     edit_url: ~ 
 
-  - url: https://github.com/creator-assertions/identity-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches: 
     - HEAD
     - verification-method
@@ -25,12 +25,12 @@ content:
     - HEAD
     start_path: docs
 
-  - url: https://github.com/creator-assertions/metadata-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
     branches: []
     tags: v1.0
     start_path: docs
 
-  - url: https://github.com/creator-assertions/training-and-data-mining-assertion.git
+  - url: https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion.git
     branches:
     - HEAD
     tags: v1.0
