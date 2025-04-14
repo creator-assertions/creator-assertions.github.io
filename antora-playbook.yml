@@ -24,7 +24,8 @@ content:
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
-    branches: ~
+    branches:
+    - main
     tags: v1.0
     start_path: docs
 
