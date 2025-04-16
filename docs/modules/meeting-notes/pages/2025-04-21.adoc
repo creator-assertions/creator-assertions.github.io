@@ -55,6 +55,8 @@ Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pu
 
 NOTE: Not currently calling for WG approval on endorsement assertion. Consider archiving this spec for lack of interest?
 
+NOTE: Intent to reformat Asciidoc, having learned some best practices.
+
 === Media identifiers subgroup
 
 Call for members and getting started. (And apologies for not having done so already.)
