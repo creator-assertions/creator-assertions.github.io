@@ -4,6 +4,7 @@ The Creator Assertion Working Group holds regular video meetings as described in
 
 Notes from those meetings are published here:
 
+* _(upcoming)_ xref:2025-04-21.adoc[]
 * xref:2025-03-24-apac.adoc[]
 * xref:2025-03-24-na-eu.adoc[]
 * _(missing notes from APAC)_ xref:2025-03-10.adoc[]

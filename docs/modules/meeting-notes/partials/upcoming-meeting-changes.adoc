@@ -1,5 +1,1 @@
-[IMPORTANT] 
-.Upcoming schedule changes
-==== 
-Both NA/EU and APAC instances for *7 April 2025* have been canceled since many members will be traveling to link:https://internetidentityworkshop.com[Internet Identity Workshop].
-====
+// no upcoming meeting changes are planned

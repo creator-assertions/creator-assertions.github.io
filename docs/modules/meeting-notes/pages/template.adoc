@@ -1,6 +1,6 @@
 = (date)
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and to request an invitation.
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and membership information.
 
 == Meeting recording
 
@@ -10,7 +10,7 @@ A link to the meeting recording will be provided after the meeting.
 
 == Agenda
 
-=== 5 min: Start meeting
+=== Start meeting
 
 * Start recording
 * Welcome and W3C IPR reminder
@@ -18,14 +18,10 @@ A link to the meeting recording will be provided after the meeting.
 
 include::partial$upcoming-meeting-changes.adoc[]
 
-=== 5 min: New members introduction
+=== New members introduction
 
-=== 5 min: Review previous action items
+=== Review previous action items
 
 === Topic 1
 
 === Topic 2
-
-=== 5 min: Closing and review
-
-Invitation to subsequent meetings, which will typically be on Mondays.
