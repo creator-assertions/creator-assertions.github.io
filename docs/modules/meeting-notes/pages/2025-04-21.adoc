@@ -61,7 +61,7 @@ Call for members and getting started. (And apologies for not having done so alre
 
 === Co-chair election
 
-*Process proposal:* After today's meeting, we will open an election for one co-chair position (to serve alongside Eric Scouten). In the event there are multiple candidates, we will choose the candidate by [San Francisco-style ranked choice voting](https://opavote.com/methods/instant-runoff-voting#san-francisco-rcv). The election will be open for seven calendar days and the new co-chair will serve starting with the next meeting on 7 May.
+*Process proposal:* After today's meeting, we will open an election for one co-chair position (to serve alongside Eric Scouten). In the event there are multiple candidates, we will choose the candidate by link:https://opavote.com/methods/instant-runoff-voting#san-francisco-rcv[San Francisco-style ranked choice voting]. The election will be open for seven calendar days and the new co-chair will serve starting with the next meeting on 7 May.
 
 Open floor for candidates to self-nominate.
 
