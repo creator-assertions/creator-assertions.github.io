@@ -24,7 +24,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 From xref:2025-03-24-na-eu.adoc[]:
 
-*ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → Carry over.
+*ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → *DISCUSS* (Maybe we don't need this?)
 
 *ACTION (✅):* Eric, Otto, and Juan to discuss merging language with Otto’s proposal in #223. Once we’ve agreed, approved to merge this PR. -> *DONE*
 
@@ -38,7 +38,7 @@ From xref:2025-03-24-na-eu.adoc[]:
 
 === Review PR #227: Consolidate guidance around JSON schema document
 
-Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[Review PR #227: Consolidate guidance around JSON schema document].
+Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[PR #227: Consolidate guidance around JSON schema document].
 
 === Intent to submit for working group approval
 
