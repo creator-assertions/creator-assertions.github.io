@@ -40,6 +40,14 @@ From xref:2025-03-24-na-eu.adoc[]:
 
 Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[PR #227: Consolidate guidance around JSON schema document].
 
+=== Review PR #228: Add references to JPEG Trust work for ownership and rights declarations
+
+Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/228[PR #228: Add references to JPEG Trust work for ownership and rights declarations]. Wording suggested by Phillippe Rixhon.
+
+=== Review PR #229: Clarify the intent of verifiedAt timestamp
+
+Review link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/229[PR #229: Clarify the intent of verifiedAt timestamp].
+
 === Intent to submit for working group approval
 
 *ACTION:* All members to review the following draft specifications and make any objections known prior to 5 May 2025 meeting. Highlights of changes since the previous ratified versions of each are called out here:
