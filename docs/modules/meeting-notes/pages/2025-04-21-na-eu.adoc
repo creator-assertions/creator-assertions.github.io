@@ -1,0 +1,113 @@
+= 21 April 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/play/G_80fFM4q-mS6sog8CxxWuC4JXpTUURTEhTuZUc3Hlp30lMXuFkFw-0I1j5BpzcC1eSWA3rpoYQxgTAt.vgVz4wKfF3uG5tY1?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FbdDnC8jbuYxn6AwwGlOx-FEPTrpGTQN_uyHQULJ-YuUGOzqd3zDET8gC5qE4gRfG.oSvLEkiLKPpi3RES[Meeting recording] (1h 14m)
+
+== Attendees
+
+* Andrew Brown
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Judith Fleenor
+* Lauren Langsner, Adobe
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Otto Mora, Privado ID
+* Peleus Uhley, Adobe
+* Phillippe Rixhon, Valunode
+* Scott Perry, Digital Governance Institute
+* Victor Lu, independent consultant
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _7'42":_ Judith Fleenor
+* 🎥 _4'38":_ Lauren Langsner, Adobe
+* 🎥 _5'07":_ Victor Lu
+
+=== Review previous action items
+
+🎥 _5'41":_ From xref:2025-03-24-na-eu.adoc[]:
+
+🎥 _6'21":_ *ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → *Discussed and decided we don't need this.*
+
+*ACTION (✅):* Eric, Otto, and Juan to discuss merging language with Otto’s proposal in #223. Once we’ve agreed, approved to merge this PR. -> *DONE*
+
+*ACTION (✅):* Eric to merge PR 219.
+
+🎥 _12'15":_ *ACTION:* Luke to submit a PR adding a JSON-LD context document. -> *Discussed. Luke will file a PR this week.*
+
+*ACTION (✅):* Eric to work with Kim and Juan to determine the co-chair election process. -> *DONE*
+
+*ACTION (✅):* Eric and Andrew to arrange a 1:1 meeting to follow up on identity hooks. -> *DONE* (See also Andrew's IIW talk when proceedings are available.)
+
+=== Review PR #227: Consolidate guidance around JSON schema document
+
+🎥 _9'51":_ Reviewed link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[PR #227: Consolidate guidance around JSON schema document].
+
+*ACTION:* Eric to merge pending agreement from APAC group.
+
+=== Review PR #228: Add references to JPEG Trust work for ownership and rights declarations
+
+🎥 _12'47":_ Reviewed link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/228[PR #228: Add references to JPEG Trust work for ownership and rights declarations]. Wording suggested by Phillippe Rixhon.
+
+*ACTION:* Eric to merge pending agreement from APAC group.
+
+=== Review PR #229: Clarify the intent of verifiedAt timestamp
+
+🎥 _17'59":_ Reviewed link:https://github.com/decentralized-identity/cawg-identity-assertion/pull/229[PR #229: Clarify the intent of verifiedAt timestamp].
+
+*ACTION (✅):* Edited wording during meeting per suggestion Andrew Dworschak.
+
+*ACTION:* Eric to merge pending agreement from APAC group.
+
+
+=== Intent to submit for working group approval
+
+🎥 _31'15":_ Discussed intent to submit the following three draft specifications for working group approval in the next meeting, scheduled for 5 May 2025.
+
+* link:https://cawg.io/identity/1.1-draft/[Identity assertion, 1.1-draft]
+** Added link:https://cawg.io/identity/1.1-draft/#_identity_claims_aggregation[Identity claims aggregation]
+** Transition to DIF licensing and governance
+* link:https://cawg.io/metadata/1.1-draft/[Metadata assertion, 1.1-draft]
+** Transition to DIF licensing and governance
+* link:https://cawg.io/training-and-data-mining/1.1-draft/[Training and data mining assertion, 1.1-draft]
+** Fixed an inconsistency between schema and example
+** Transition to DIF licensing and governance
+
+NOTE: Not currently calling for WG approval on endorsement assertion. Consider archiving this spec for lack of interest?
+
+NOTE: Intent to reformat Asciidoc, having learned some best practices.
+
+*ACTION:* Luke to split JSON schema documents into one intended for VC DM 1.1 and another intended for VC DM 2.0. (Filed as link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/230[issue #230]).
+
+*ACTION:* All members to review the following draft specifications and make any objections known prior to 5 May 2025 meeting. Highlights of changes since the previous ratified versions of each are called out here:
+
+=== Media identifiers subgroup
+
+🎥 _44'44":_ Call for members and getting started. (And apologies for not having done so already.)
+
+=== Co-chair election
+
+🎥 _45'34":_ *Process proposal:* After today's meeting, we will open an election for one co-chair position (to serve alongside Eric Scouten). In the event there are multiple candidates, we will choose the candidate by link:https://opavote.com/methods/instant-runoff-voting#san-francisco-rcv[San Francisco-style ranked choice voting]. The election will be open for seven calendar days and the new co-chair will serve starting with the next meeting on 7 May.
+
+Open floor for candidates to self-nominate.
+
+* 🎥 _46'37":_ Scott Perry
+
+=== Brainstorm identity 1.2
+
+🎥 _50'49":_ What should be on our radar once we complete identity assertion 1.1?
+
+Brainstorming issues and credential formats for future CAWG identity work:
+
+* Concern about lack of visibility of CAWG. *ACTION:* Eric to work with to CAI team to increase awareness and outreach about the work of CAWG.
+* DIF's link:https://identity.foundation/credential-schemas/#basic-person-schema[basic person schema]
+* link:https://windley.com/archives/2025/04/establishing_first_person_digital_trust.shtml[First-person credentials] (not ready for adoption yet; Drummond to update when ready)
+* link:https://www.gleif.org/en[GLEIF legal] identity credentials (based on recent conversations at IIW)
+* Identity hooks (see Andrew’s proposal in link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/216[issue #216])
+* Crypto ecosystem
+* link:https://iabtechlab.com/standards/acif/[ACIF] from IAB Tech Lab
