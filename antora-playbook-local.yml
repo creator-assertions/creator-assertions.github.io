@@ -13,10 +13,8 @@ content:
     edit_url: ~ 
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
-    branches: 
+    branches:
     - HEAD
-    - verification-method
-    - ica-validation
     tags: v1.0
     start_path: docs
 
@@ -39,7 +37,7 @@ content:
 
 ui:
   bundle:
-    url: https://creator-assertions.github.io/antora-ui/ui-bundle-local.zip
+    url: https://cawg.io/antora-ui/ui-bundle-local.zip
     snapshot: true
 
 antora:

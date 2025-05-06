@@ -6,15 +6,14 @@ site:
 content:
   sources: 
   - url: https://github.com/creator-assertions/creator-assertions.github.io.git
-    branches: main
+    branches:
+    - main
     start_path: docs
     edit_url: ~ 
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
-    branches: 
+    branches:
     - main
-    - verification-method
-    - ica-validation
     tags: v1.0
     start_path: docs
 
