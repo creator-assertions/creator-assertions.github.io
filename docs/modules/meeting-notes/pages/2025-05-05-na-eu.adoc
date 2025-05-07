@@ -1,0 +1,87 @@
+= 05 May 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/play/PJdfHQ9HTmvpc6dGodtE3KivIIDeTvGZiZK69KxS5hVx9HxCqg6vzliWfLN9Oys37JnVTw9IAfSF052m.clZlsXWXJiVUY6az?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FdBlo22hCYe7h89rZWiW78iasw6kR8FgwGjV5k37LtytmA8TiSe5q-K26V3yINms.oh1p7Vzbr4tdcqxx[Meeting recording] (36m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Juan Caballero, DIF
+* Karla McKenna, GLEIF
+* Matt Margolis, Getty Images
+* Otto Mora, Privado ID
+* Philippe Mougin, AFP
+* Phillippe Rixhon, Valunode
+* Scott Perry, Digital Governance Institute
+* Slava Asipenko, Proof
+* Victor Grey, JLINC
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _5'03":_ Matt Margolis, Getty Images
+* 🎥 _5'31":_ Karla McKenna, GLEIF
+
+=== Reminder: Vote in co-chair election
+
+🎥 _7'58":_ Ballots should have been sent or will soon be sent and are to be completed by end of day this Friday.
+
+=== Media identifiers task force
+
+🎥 _9'29":_ Ongoing meeting series to discuss how various media segments can place their industry identifiers into CAWG metadata and identity assertions. Meetings are every other Monday alternating with the full CAWG meeting at 0800 US Pacific / 1500 UTC, starting Monday, 12 May 2025. Meeting details are on the DIF calendar, available to those who have signed the DIF contributor agreement.
+
+=== Review previous action items
+
+🎥 _10'40":_ From xref:2025-04-21-na-eu.adoc[] and xref:2025-04-21-apac.adoc[]:
+
+* *ACTION:* Luke to submit a PR adding a JSON-LD context document. -> *DONE* Will discuss later in agenda.
+* *ACTION (✅):* Eric to merge the following PRs:
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[#227: Consolidate guidance around JSON schema document]
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/228[#228: Add references to JPEG Trust work for ownership and rights declarations]
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/229[#229: Clarify the intent of verifiedAt timestamp]
+* *ACTION:* All members to review the following draft specifications and make any objections known prior to 5 May 2025 meeting. -> Will discuss later in agenda.
+
+=== PR #231: Add specific schemas for each VC schema version and JSON-LD context
+
+🎥 _11'28":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/231[PR #231: Add specific schemas for each VC schema version and JSON-LD context].
+
+*ACTION (✅):* Eric to merge the PR.
+
+=== Issue #225: Link to ToIP technical architecture is broken
+
+🎥 _13'47":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues/225[issue #225: Link to ToIP technical architecture is broken].
+
+*ACTION (✅):* Drummond provided an updated link. Eric to incorporate.
+
+=== Issue #174: Review latest draft of VC data model 2.0
+
+🎥 _16'27":_ Review https://github.com/decentralized-identity/cawg-identity-assertion/issues/174[issue #174: Review latest draft of VC data model 2.0]. Primary question: Any changes to VC DM 2.0 since mid-2024 that might impact our work?
+
+*ACTION (✅):* Close issue. VC DM 2.0 considered effectively stable.
+
+=== Ratification vote: Identity
+
+🎥 _18'31":_ Decided to promote https://cawg.io/identity/1.1-draft/[1.1 draft of identity assertion] to working-group approved status.
+
+*ACTION (✅):* Eric to republish identity assertion spec as 1.1 final and refer to DIF Steering Committee for final approval.
+
+=== Ratification vote: Metadata
+
+Decide whether to promote https://cawg.io/metadata/1.1-draft/[1.1 draft of metadata assertion] to working-group approved status.
+
+*ACTION (✅):* Eric to republish metadata assertion spec as 1.1 final and refer to DIF Steering Committee for final approval.
+
+=== Ratification vote: Training and data mining
+
+Decide whether to promote https://cawg.io/training-and-data-mining/1.1-draft/[1.1 draft of training and data mining assertion] to working-group approved status.
+
+Approved with the caveat that work done in response to EU AI Act will likely result in some rewording and a subsequent 1.2 or 2.0 version to follow.
+
+*ACTION (✅):* Eric to republish training and data mining assertion spec as 1.1 final and refer to DIF Steering Committee for final approval.
+
+=== Closing discussion
+
+* Reminder of media industry identifiers TF starting next week.
+* Luke will present in upcoming meeting on his work on the endorsement assertion.
