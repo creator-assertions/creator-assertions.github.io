@@ -1,0 +1,61 @@
+= 05 May 2025 (APAC)
+
+https://us02web.zoom.us/rec/play/22V1uHaDubTylOueiBToxz6gR5QCchMsv0Q21GL2JUU4ik16MzLScguPiiz1Fh7x81uthIGYVwHU3nbe.2RR4DikNssTuqWeP?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2F8E1_aa1Xy0syu0kkn3ym61xl-KBzwRiFoPjDm1sbDocvlqvQonu4i80cA2cQlcgx.CHrzITNVcDgu9_7j[Meeting recording] (22m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Eric Scouten (Adobe)
+* John Phillips (Sezoo)
+* Scott Perry, Digital Governance Institute
+* Victor Lu, independent consultant
+
+== Meeting notes
+
+=== Reminder: Vote in co-chair election
+
+🎥 _5'33":_ Ballots should have been sent or will soon be sent and are to be completed by end of day this Friday.
+
+=== Review previous action items
+
+🎥 _6'20":_ From xref:2025-04-21-na-eu.adoc[] and xref:2025-04-21-apac.adoc[]:
+
+* *ACTION:* Luke to submit a PR adding a JSON-LD context document. -> *DONE* Will discuss later in agenda.
+* *ACTION (✅):* Eric to merge the following PRs:
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/227[#227: Consolidate guidance around JSON schema document]
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/228[#228: Add references to JPEG Trust work for ownership and rights declarations]
+** https://github.com/decentralized-identity/cawg-identity-assertion/pull/229[#229: Clarify the intent of verifiedAt timestamp]
+* *ACTION:* All members to review the following draft specifications and make any objections known prior to 5 May 2025 meeting. -> Will discuss later in agenda.
+
+=== PR #231: Add specific schemas for each VC schema version and JSON-LD context
+
+🎥 _7'03":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/231[PR #231: Add specific schemas for each VC schema version and JSON-LD context].
+
+*ACTION (✅):* Andrew and Luke to discuss code duplication in the two versions of the spec. Eric to merge once completed.
+
+=== Issue #225: Link to ToIP technical architecture is broken
+
+🎥 _10'34":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues/225[issue #225: Link to ToIP technical architecture is broken].
+
+*ACTION (✅):* Resolved in NA/EU meeting.
+
+=== Issue #174: Review latest draft of VC data model 2.0
+
+🎥 _11'00":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues/174[issue #174: Review latest draft of VC data model 2.0]. Primary question: Any changes to VC DM 2.0 since mid-2024 that might impact our work?
+
+*ACTION (✅):* Agreed with outcome from NA/EU meeting. Close issue. VC DM 2.0 considered effectively stable.
+
+=== Ratification vote: Identity, metadata, and training/data mining assertions
+
+🎥 _13'06":_ Decided to promote all three assertions to working-group approved status.
+
+*ACTION (✅):* Eric to republish each assertion spec as 1.1 final (after changes described above) and refer to DIF Steering Committee for final approval.
+
+=== Media identifiers task force
+
+🎥 _13'47":_ Ongoing meeting series to discuss how various media segments can place their industry identifiers into CAWG metadata and identity assertions. Meetings are every other Monday alternating with the full CAWG meeting at 0800 US Pacific / 1500 UTC, starting Monday, 12 May 2025. Meeting details are on the DIF calendar, available to those who have signed the DIF contributor agreement.
+
+=== Closing discussion
+
+* Reminder of media industry identifiers TF starting next week.
+* Andrew will present in upcoming meeting on his work on identity hooks.

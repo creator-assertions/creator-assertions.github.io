@@ -47,7 +47,7 @@ https://us02web.zoom.us/rec/play/PJdfHQ9HTmvpc6dGodtE3KivIIDeTvGZiZK69KxS5hVx9Hx
 
 🎥 _11'28":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/231[PR #231: Add specific schemas for each VC schema version and JSON-LD context].
 
-*ACTION (✅):* Eric to merge the PR.
+*ACTION (✅):* Eric to merge the PR, pending APAC meeting approval.
 
 === Issue #225: Link to ToIP technical architecture is broken
 
