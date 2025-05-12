@@ -12,9 +12,8 @@ A link to the meeting recording will be provided after the meeting.
 
 === Start meeting
 
-* Start recording
 * Welcome and W3C IPR reminder
-* Agenda review and call for agenda items
+* Please comment in the chat for attendance
 
 include::partial$upcoming-meeting-changes.adoc[]
 

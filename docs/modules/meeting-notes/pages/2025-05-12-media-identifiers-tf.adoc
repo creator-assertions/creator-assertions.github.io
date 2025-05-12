@@ -1,0 +1,50 @@
+= 12 May 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/share/gCSE5QnxtLfCbyRhKyymVbwy-j8ADF8R29K43i8ETCM4cbcquWdV6kgepXCuhcmG.mlS6KgeLc8hhkwiN[Meeting recording] (53m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Eric Passoja
+* Eric Scouten, Adobe
+* Olaf Steenfadt, Global Media Registry
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+
+== Meeting notes
+
+🎥 _6'27":_ This was an open meeting with primary goals of setting the scope and name for this task force. Primary outcomes of today's meeting were:
+
+=== Name
+
+🎥 _18'23":_ We agreed to name this group *Media Identifiers Task Force.*
+
+=== Primary deliverables
+
+The problem space as we currently understand it is that there are many media industry identifiers that are commonly associated with various individual talent professionals (musicians, actors, directors, etc.) and organizations that should be associated with content that they are involved in producing. Most of these identifiers are not fully-provisioned verifiable identifiers (i.e. they do not have signing keys associated with them) so we rely on metadata providers that are trusted within each industry segment to properly add these identifiers and vouch for their validity.
+
+🎥 _38'58":_ We agreed to the following deliverables:
+
+. A new appendix in an upcoming version of the xref:identity:ROOT:index.adoc[] specification that:
+.. Recommends the adoption of existing IETF-issued namespace and field names for existing metadata. (Specifically avoiding defining new metadata standards within CAWG.)
+.. Recommends the use of CAWG identity issuers signed by trusted industry entities to sign the CAWG metadata assertion and attest to the validity of the content therein.
+. A new guidance document that discusses common use cases in various industries and demonstrates how the above recommendations would be implemented.
+
+*ACTION:* Eric to prepare initial drafts for the above documents.
+
+=== Open issues
+
+* 🎥 _9'09" and 32'34":_ How does a particular identifier _relate_ to the content? (In other words, a particular actor or director might _appear_ in a motion picture, but in what capacity or role?)
+* 🎥 _36'47":_ Link to rights and renumeration. (Note likely overlap with work in JPEG Trust on that topic.)
+* 🎥 _40'50":_ How do we incorporate (or encourage the development of) industry-specific trust lists? We need to know which industry entities are qualified to associate certain kinds of metadata for their specific markets or types of media. Follow work of Trust Over IP Foundation on review of trust lists and trust registries.
+* 🎥 _48'10":_ How specific do we want to get in regions of interest and/or temporal tagging of identifier? (i.e. "actor X appears from _36'47"_ to _38'12"_") Concern stated about the complexity of stating identifiers that deeply.
+
+=== Standards to consider and draw upon
+
+* 🎥 _14'12":_ link:https://www.census.gov/naics/[North American Industry Classification System]
+
+=== Next meeting time
+
+Our next regularly scheduled meeting collides with the US Memorial Day holiday.
+
+*ACTION:* Eric to poll active members with potential reschedule times.
