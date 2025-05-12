@@ -25,7 +25,7 @@ The problem space as we currently understand it is that there are many media ind
 
 🎥 _38'58":_ We agreed to the following deliverables:
 
-. A new appendix in an upcoming version of the xref:identity:ROOT:index.adoc[] specification that:
+. A new appendix in an upcoming version of the xref:metadata:ROOT:index.adoc[] specification that:
 .. Recommends the adoption of existing IETF-issued namespace and field names for existing metadata. (Specifically avoiding defining new metadata standards within CAWG.)
 .. Recommends the use of CAWG identity issuers signed by trusted industry entities to sign the CAWG metadata assertion and attest to the validity of the content therein.
 . A new guidance document that discusses common use cases in various industries and demonstrates how the above recommendations would be implemented.
