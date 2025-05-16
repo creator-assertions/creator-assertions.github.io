@@ -13,9 +13,10 @@ content:
     edit_url: ~ 
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
-    branches:
-    - HEAD
-    tags: v1.0
+    branches: [] # - HEAD (when there's a draft again)
+    tags:
+    - v1.0
+    - v1.1
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git
@@ -24,15 +25,17 @@ content:
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
-    branches:
-    - HEAD
-    tags: v1.0
+    branches: [] # - HEAD (when there's a draft again)
+    tags:
+    - v1.0
+    - v1.1
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion.git
-    branches:
-    - HEAD
-    tags: v1.0
+    branches: [] # - HEAD (when there's a draft again)
+    tags:
+    - v1.0
+    - v1.1
     start_path: docs
 
 ui:
