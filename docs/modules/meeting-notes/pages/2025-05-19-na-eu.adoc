@@ -1,0 +1,91 @@
+= 19 May 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/share/u6WuFzeSadeQuI9MA9Dw-7jOeZODvunjWm8BBs-FTyvDlQf6-BS4EPOK0t511_s.rioxZ6jxZP9TocWn[Meeting recording] (1h24m)
+
+== Attendees
+
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Drummond Reed, Gen Digital
+* Eric Scouten, Adobe
+* Gillan Ward
+* Juan Caballero, DIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== New members introduction
+
+=== Review previous action items
+
+🎥 _5'38":_ All proposed revisions to specifications were merged. As requested, three assertion specifications were submitted to DIF Steering Committee for final approval. Approval granted and the following specs are now DIF Ratified Specifications:
+
+* xref:1.1@identity:ROOT:index.adoc[]
+* xref:1.1@metadata:ROOT:index.adoc[]
+* xref:1.1@training-and-data-mining:ROOT:index.adoc[]
+
+Thank you to all participants, current and past, for helping us get to this milestone!
+
+=== Co-chair introduction
+
+🎥 _6'21":_ Welcome to Scott Perry as the newly-elected co-chair of CAWG. Scott talked about his background as a web trust auditor and his current work to build up the governance program for C2PA and his hopes to grow CAWG into a much larger ecosystem of content creators who can associate themselves with the content they produce.
+
+=== Report-out from media identifiers TF
+
+🎥 _10'46":_ Eric reported out from the xref:2025-05-12-media-identifiers-tf.adoc[initial meeting of the media identifiers task force], which was held on Monday, 12 May.
+
+*Problem space definition:* There are many media industry identifiers that are commonly associated with various individual talent professionals (musicians, actors, directors, etc.) and organizations that should be associated with content that they are involved in producing. Most of these identifiers are not fully-provisioned verifiable identifiers (i.e. they do not have signing keys associated with them) so we rely on metadata providers that are trusted within each industry segment to properly add these identifiers and vouch for their validity.
+
+*Deliverables:* We agreed to the following deliverables:
+
+. A new appendix in an upcoming version of the xref:metadata:ROOT:index.adoc[] specification that:
+.. Recommends the adoption of existing IETF-issued namespace and field names for existing metadata. (Specifically avoiding defining new metadata standards within CAWG.)
+.. Recommends the use of CAWG identity issuers signed by trusted industry entities to sign the CAWG metadata assertion and attest to the validity of the content therein.
+. A new guidance document that discusses common use cases in various industries and demonstrates how the above recommendations would be implemented.
+
+*ACTION:* Eric to prepare initial drafts for the above documents. (In progress.)
+
+*Meeting cadence:* Every Monday, alternating weeks with full CAWG meeting. Next week rescheduled to Wednesday, 28 May, to avoid US Memorial Day holiday.
+
+=== Meeting at Content Authenticity Summit
+
+🎥 _12'59":_ For those attending the link:https://www.contentauthenticitysummit.com[Content Authenticity Summit] (4 June) or who are already in New York City, we may have an additional in-person meetings on Tuesday or Thursday before or after the summit. Let me know if interested.
+
+=== Identity hooks
+
+🎥 _14'52":_ Andrew Dworschak introduced his proposal for identity hooks (see also link:https://https://github.com/decentralized-identity/cawg-identity-assertion/issues/216[issue #216]). Andrew introduced the concept of identity hooks, which allow creators to bind their role to multiple content creation steps without sacrificing privacy. He explained the importance of identity in media assets, distinguishing between de-anonymization and consistency use cases. He outlined how identity aggregators, claims generators, and verifiers can benefit from this new system, while also highlighting security considerations and ongoing work to address them.
+
+* xref:attachment$2025-05-19/andrew-dworschak-identity-hooks.pdf[Andrew’s slide deck (PDF)]
+
+=== First person credential project
+
+🎥 _54'13":_ Drummond Reed presented an overview of the "First person project," which aims to solve proof of personhood without relying on a global biometric database. He explained the concept of personal credentials, which are issued to unique individuals and use zero-knowledge proof cryptography for privacy. Drummond also introduced verifiable relationship credentials (VRCs), comparing them to PGP key signing at scale, and highlighted their potential to strengthen decentralized trust graphs. The presentation concluded with a brief mention of a workshop on 1st person credentials held at the Linux Foundation Member Summit.
+
+* xref:attachment$2025-05-19/drummond-reed-first-person-project.pdf[Drummond’s slide deck (PDF)]
+* link:https://arxiv.org/pdf/2408.07892[Personhood Credentials paper (PDF)] – the August 2024 paper that introduced personhood credentials from Steven Adler and other authors
+* link:https://windley.com/archives/2025/04/establishing_first_person_digital_trust.shtml[Phil Windley: Establishing First-Person Trust] – a blog article reflecting on the April 2025 IIW
+* link:https://groups.io/g/first-person-project[First Person Project’s mail list]
+* link:https://ayra.forum/ayra-network-effects-whitepaper/[Ayra Association: The Special Network Effects of Ayra Network Credentials]
+
+=== Deferred topics
+
+🎥 _1h18'43":_ Deferred topics to upcoming meetings:
+
+* **Machine / agentic identity:** Discuss agentic identity and how/if it may be relevant to future CAWG identity standards. → Deferred to 2 June meeting.
+* **Review "post-1.1" milestone in GitHub:** There are link:https://github.com/decentralized-identity/cawg-identity-assertion/milestone/10[39 open issues] flagged as "post 1.1." Let's discuss and start prioritizing what might be in scope for 1.2. → Deferred to 16 June meeting.
+
+=== Upcoming meeting conflicts
+
+🎥 _1h20'49":_ Eric unavailable to run the following meetings:
+
+* 02 June 2025 (travel to NY) -- Scott will run if enough agenda items
+* 23 June 2025 media identifiers (vacation) -- TBD
+* 30 June 2025 (vacation) -- Scott will run
