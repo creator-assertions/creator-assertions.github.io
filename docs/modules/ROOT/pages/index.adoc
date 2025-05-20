@@ -2,7 +2,7 @@
 
 The Creator Assertions Working Group builds upon the work of the link:https://c2pa.org:[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content.
 
-(See link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_technical_overview++[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model including assertions.)
+(See link:++https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview++[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model including assertions.)
 
 == Technical specifications
 
@@ -15,9 +15,13 @@ These assertions are specified by the following documents:
 
 == Contributing
 
-As of March 2025, CAWG has become a working group within the link:https://identity.foundation[Decentralized Identity Foundation (DIF)]. Please see their link:https://blog.identity.foundation/welcome-cawg/[blog article welcoming us].
+As of March 2025, CAWG is a working group within the link:https://identity.foundation[Decentralized Identity Foundation (DIF)]. CAWG operates under a link:https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement], which means that contributions to the CAWG specifications and attendance at CAWG meetings are open to:
 
-To participate in CAWG or attend our meetings, you will need to link:https://identity.foundation/join/[join DIF] at least at the contributor level.
+* DIF members (link:https://identity.foundation/join/[join here])
+* link:https://trustoverip.org[Trust Over IP Foundation] members
+* Signatories of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025
+
+Participants from included organizations may join CAWG without additional fees, provided they sign DIF’s intellectual property rights agreement.
 
 === Meeting schedule
 
@@ -38,8 +42,6 @@ The Creator Assertions Working Group holds video meetings every other Monday at 
 * 1200 Sydney
 
 The same agenda is prepared for both meetings and the meetings are scheduled for 90 minutes each.
-
-To request an invitation, please view the link:https://blog.identity.foundation/welcome-cawg/[blog article welcoming CAWG into DIF]. The article contains a short sign-up form that will help you join and gain access to CAWG meetings and the mailing list.
 
 include::meeting-notes:partial$upcoming-meeting-changes.adoc[]
 
