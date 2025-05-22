@@ -1,0 +1,34 @@
+= 19 May 2025 (APAC)
+
+https://us02web.zoom.us/rec/share/Wvb7kHeYhdoK5RtoIErt3dk8ghUsRb-L5_9iBL3VvQp_nkXezasOYuLwhgx7i45q.Boh5j_t_g2gC_8_-[Meeting recording] (1h11m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Drummond Reed
+* John Phillips, Sezoo
+* Peleus Uhley, Adobe
+* Scott Perry, Digital Governance Institute
+
+== Meeting notes
+
+=== Review previous action items
+
+🎥 _7'38":_ All proposed revisions to specifications were merged. As requested, three assertion specifications were submitted to DIF Steering Committee for final approval.
+
+=== Co-chair introduction
+
+🎥 _8'26":_ Welcome to Scott Perry as the newly-elected co-chair of CAWG. Scott talked about his background as a web trust auditor and his current work to build up the governance program for C2PA and his hopes to grow CAWG into a much larger ecosystem of content creators who can associate themselves with the content they produce.
+
+=== Identity hooks
+
+🎥 _14'10":_ Andrew Dworschak introduced his proposal for identity hooks (see also link:https://https://github.com/decentralized-identity/cawg-identity-assertion/issues/216[issue #216]). Andrew introduced the concept of identity hooks, which allow creators to bind their role to multiple content creation steps without sacrificing privacy. He explained the importance of identity in media assets, distinguishing between de-anonymization and consistency use cases. He outlined how identity aggregators, claims generators, and verifiers can benefit from this new system, while also highlighting security considerations and ongoing work to address them.
+
+* xref:attachment$2025-05-19/andrew-dworschak-identity-hooks.pdf[Andrew’s slide deck (PDF)]
+
+ACTION: Consider pulling together a task force to further explore identity hooks and consider potential security risks. Consider ways to leverage the work of the first-person credential project. Also consider ways to integrate with biometric-based credentials.
+
+Links mentioned during the meeting:
+
+* link:++https://www.biometricupdate.com/202502/biometric-bound-credentials-take-stage-at-eab-talk-from-trust-stamps-cso#:~:text=While%20FIDO2%20passkeys%20are%20“very,October%201%2C%202024++[Biometric Update: Biometric-bound credentials take stage at EAB talk from Trust Stamp’s CSO]
+* xref:attachment$2025-05-19/biometric-bound-credentials.pdf[TrustStamp: How Biometric Bound Credentials Resolve Critical Deficiencies in Digital Authentication]
