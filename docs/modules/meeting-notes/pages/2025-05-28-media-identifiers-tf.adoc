@@ -1,0 +1,39 @@
+= 28 May 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/share/gkUQEFRyWL71Fwxqe5I8W2-f3Fje1xu71V0V-GhFNV25INE4zgSt_GwIDyOEKklM.sFreFwaEH9EpboYp[Meeting recording] (1h8m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+🎥 _10'41":_ This was an open meeting with primary goals of reviewing proposed wording around the use of identity and metadata assertions in combination and preparing an initial draft of a metadata example.
+
+=== Review metadata assertion PR #4: Recommend use of identity assertion to attest to metadata authorship
+
+🎥 _13'38":_ Reviewed link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/4[metadata assertion PR #4: Recommend use of identity assertion to attest to metadata authorship].
+
+Group agreed to wording. Will discuss in next full CAWG meeting.
+
+=== Review metadata assertion PR #5: Add media identifiers appendix
+
+🎥 _15'58":_ Reviewed link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers appendix].
+
+Revised wording based on discussion.
+
+Challenges (unresolved as of yet):
+
+* Lacking an easily linkable list of metadata namespaces.
+* Dublin Core has a fairly coarse set of contributor roles. Motion picture may need more nuance.
+
+To research:
+
+* MovieLabs data format (may be too verbose -- and only available as an XML syntax)
+* Library of Congress schemas
+
+Updated the PR to add a rough draft example using EIDR and HAND identifiers.
