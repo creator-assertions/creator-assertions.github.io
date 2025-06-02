@@ -1,0 +1,54 @@
+= 02 June 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/share/8Zmp21vHxIZUJJ12IEqm3C-JA-S2SaiwpxzfNbDScPQLLWRvmqFioOEBG4kLm2ej.CFoNWFYK5q5D4rQ6[Meeting recording] (1h11m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Juan Caballero, DIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+
+== Meeting notes
+
+=== Discussion of Content Authenticity Summit
+
+🎥 _5'36":_ Brief discussion of the link:https://www.contentauthenticitysummit.com[Content Authenticity Summit], which will be held later this week.
+
+=== Review metadata PR #2: Update C2PA technical spec references to use version 2.2
+
+🎥 _8'51":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/2[PR #2: Update C2PA technical spec references to use version 2.2].
+
+No action taken.
+
+=== Review metadata PR #3: Add link to standard terms
+
+🎥 _10'01":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/3[PR #3: Add link to standard terms].
+
+No action taken.
+
+=== Review metadata PR #4: Recommend use of identity assertion to attest to metadata authorship
+
+🎥 _12'53":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/4[PR #4: Recommend use of identity assertion to attest to metadata authorship].
+
+Four primary concerns were raised about the proposed new language:
+
+. There's an interest in having a mechanism to specify whether the identity assertion signer has _authored_ the metadata in question or is _providing_ metadata that it obtained from another source. The binary of reference vs do-not-reference is potentially insufficient.
+. There's a concern about who has the right to assert metadata on behalf of another actor.
+. Potentially add language to discusourage the use of metadata assertion to assert intellectual property rights, which is more appropriately covered in forthcoming work from JPEG Trust.
+. Additional guidance may be needed to clarify what metadata should be placed in the C2PA metadata assertion (i.e. directly attested to by the hardware or software involved) versus which should be placed in CAWG metadata assertion.
+
+ACTION: Eric to work further with Andrew, Richard, and Phillippe to resolve outstanding concerns.
+
+=== Review metadata PR #5: Add media identifiers appendix
+
+🎥 _55'08":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[PR #5: Add media identifiers appendix].
+
+=== Discussion about alignment with credential schemas WG
+
+🎥 _1h08'08":_ Luke mentioned that there may be a potential alignment with DIF's credential schemas working group. Luke may propose a PR to consider moving part of the identity assertion to CSWG.
