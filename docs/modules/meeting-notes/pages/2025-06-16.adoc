@@ -83,6 +83,10 @@ Open discussion: What should we be tuning in to?
 
 Invite Wenjing and other ToIP members to help.
 
+=== Clerical change
+
+1.1 version of specs say "still waiting on steer co approval." Objection to re-tagging with language that reflects final status?
+
 === Schedule changes
 
 Scott will run media identifiers TF meeting on 23 June.
