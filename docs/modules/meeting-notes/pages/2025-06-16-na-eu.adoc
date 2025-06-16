@@ -1,0 +1,132 @@
+= 16 June 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/play/7152akWgb8gWfYrSA-0lmjuJ5QL8-q1nOT-Xw-8yMToSytazI6HQI3UMgSMSaEjAESr2VT8-d-eObiUB.h2WEkgiFfrps52wD?eagerLoadZvaPages=sidemenu.billing.plan_management&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FW-i430dEJXx5CM6NQZw5qDblYTQwEeuY6JvULGYV5zvzjpyBVN-jWYaN-fwEv5Ka.x5s2vCmcw0m49dqU[Meeting recording] (1h28m)
+
+== Attendees
+
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Juan Caballero, DIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nathan Freitas, ProofMode
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== Review previous action items
+
+🎥 _5'09":_ Reviewed previous action items.
+
+* Eric to work with Andrew, Richard, Phillippe to address outstanding concerns in PR 4. → NOT DONE (although covered effectively in this meeting)
+
+* Luke to move part of identity assertion spec to credential schemas WG? → Proposals reviewed and discussed. Agreed that Eric would sit in on upcoming CSWG to understand further. Not removing specs from CAWG custody yet.
+
+=== New members introduction
+
+* 🎥 _15'29":_ Nathan Freitas, link:https://proofmode.org/[ProofMode]
+** See link:https://proofmode.org/blog/cuttingroom[ProofMode's post about their collaboration with CuttingRoom].
+
+=== Readout from CAI Summit
+
+🎥 _21'04":_ Discussed the link:https://www.contentauthenticitysummit.com[Content Authenticity Summit] that was held at Cornell Tech in New York City on 4 June 2025. Some public reflections are published here:
+
+* link:https://ericscouten.dev/2025/content-authenticity-summit/[Eric's developer blog] (includes slide decks I used in two breakout sessions)
+* link:https://contentauthenticity.org/blog/content-authenticity-summit-2025[Andy Parson's reflections]
+
+A small group of CAWG members met in person at Adobe the next day. Some highlights:
+
+* *We aren't promoting CAWG sufficiently.* We could -- and should -- promote CAWG's work as part of a broader C2PA ecosystem. CAWG's landing page needs more explanation of what we're providing and aiming to provide in future. *ACTION:* Eric to work with team at Adobe and CAI team to design new landing page content. Interested parties, please speak up.
+** *Let's introduce the term C2PA _ecosystem_* to bring together the various groups that are working to build upon the core C2PA spec (CAWG, JPEG Trust, PDF, ONVIF, SMPTE, etc.). *ACTION:* Eric and Leonard to organize an initial ecosystem meeting.
+** Remember Hany Farid's comment in closing keynote: "Digital identity is the key to the whole process." (Approximate quote -- review video for exact wording.)
+** Provide a better public explanation for why C2PA and CAWG are separate.
+
+* Consider who to reach out to for both credential providers and content creator communities. Some examples:
+** Aside from list below, what creator ecosystems are hurting from impacts of deepfakes and AI.
+** IPTC / news media community
+** Other industry verticals
+** Mobile providers
+** Mobile software developers (esp. Truepic) -- Scott will reach out
+** Mobile device manufacturers (see later item about Apple announcement)
+** Travel / experience industry (AirBNB, etc.) -- link up with DIF Travel SIG
+** Insurance industry
+** Brand representatives (consider especially the case of brands licensing their IP to individual creators to create licensed derivative content)
+** Talent / entertainment broadly
+** Governments
+** Personhood credential providers (noted interest from First Person Credential project -- will follow up with Drummond when he's back from vacation)
+** Monitor ToIP personhood credential and verifiable relationship credential work. ToIP very interested to collaborate with us.
+
+* Create a toolkit / template for industry adoption of the CAWG spec. (Similar to what we're starting to do with IPTC.)
+
+* Who else should be present at CAWG meetings?
+
+* Consider replacing the name "identity" with "attribution."
+
+* Agentic identity
+
+=== Review metadata assertion PR #2: Update C2PA technical spec references to use version 2.2
+
+🎥 _50'54":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/2[PR #2: Update C2PA technical spec references to use version 2.2].
+
+*ACTION (✅):* Eric to merge PR.
+
+=== Review metadata assertion PR #3: Add link to standard terms
+
+🎥 _51'51":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/3[PR #3: Add link to standard terms].
+
+*ACTION (✅):* Eric to merge PR.
+
+=== Review metadata assertion PR #6: Clarifies intended use and adjusts use with identity assertion
+
+🎥 _52'20":_ Reviewed metadata assertion link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/6[PR #6: Clarifies intended use and adjusts use with identity assertion].
+
+*ACTION (✅):* Eric to merge PR.
+
+NOTE: This PR incorporates the existing link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/4[PR #4: Recommend use of identity assertion to attest to metadata authorship], so that PR was closed automatically.
+
+Also, based on discussion (starting at 🎥 _1h00'53"), I filed link:https://github.com/decentralized-identity/cawg-metadata-assertion/issues/7[issue #7: Consider adding a mechanism for metadata assertion generators to alter the default attestation].
+
+=== Incoming identity assertion spec requests
+
+🎥 _1h10'12":_ Briefly called attention to upcoming requests for the identity assertion spec. Will discuss further in upcoming meetings.
+
+* link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/233[#233: Linked web sites with annotations]
+* (No ticket yet) Provide mechanism for CAWG X.509 users (enterprises) to describe social media
+* Review link:https://github.com/decentralized-identity/cawg-identity-assertion/milestone/10[`post-1.1` milestone] and transfer issues to 1.2 milestone
+
+=== Apple announcement about document verification API
+
+🎥 _1h12'45":_ Brief discussion about Apple's announcement at WWDC that document verification APIs would be added to iOS 26, expected later this year. Some relevant links that were shared:
+
+* link:https://www.biometricupdate.com/202506/support-for-w3c-digital-credentials-api-digital-identity-passports-part-of-ios-26[Biometric Update: Support for W3C Digital Credentials API, digital identity passports part of iOS 26]
+* link:https://developer.apple.com/documentation/proximityreader/adopting-the-verifier-api-in-your-iphone-app[Apple Developer: Adopting the Verifier API in your iPhone app]
+* link:https://developer.apple.com/design/human-interface-guidelines/id-verifier[Apple Developer: ID Verifier]
+
+=== Clerical change
+
+🎥 _1h15'53":_ 1.1 version of specs say "still waiting on steer co approval."
+
+*ACTION:* Eric to coordinate with DIF GitHub owners to re-tag the 1.1 versions of the specs with language that reflects final status.
+
+=== Schedule changes
+
+🎥 _1h16'47":_ Eric on vacation next two weeks.
+
+* Scott will run media identifiers TF meeting on 23 June.
+* CAWG meeting on 30 June cancelled. (Scott also not available.)
+
+Discussed concern about low attendance at APAC meeting. Will discuss in today's APAC meeting and may cancel further instances.
+
+=== Agentic identity
+
+🎥 _1h20'34":_ Open discussion: What should we be tuning in to?
+
+*ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration.
+
+Related: ToIP recently released a white paper describing how C2PA+CAWG and Trust Spanning Protocol (TSP) from ToIP can be used in collaboration. See link:https://www.lfdecentralizedtrust.org/blog/how-can-we-trust-what-we-see-online-heres-one-way-forward[How Can We Trust What We See Online? Here's One Way Forward].
