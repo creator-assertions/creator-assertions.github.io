@@ -83,5 +83,5 @@ jobs:
       uses: actions/deploy-pages@v4
 
     - name: Delete deployment environment and comment
-  run: |
-    node .github/scripts/cleanup-preview.js
+      run: |
+        node .github/scripts/cleanup-preview.js
