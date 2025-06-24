@@ -20,5 +20,12 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          const cleanupScript = require('./.github/scripts/cleanup-preview.js');
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Read and execute the external script
+          const scriptPath = path.join(process.cwd(), '.github/scripts/cleanup-preview.js');
+          const scriptContent = fs.readFileSync(scriptPath, 'utf8');
+          const cleanupScript = eval(`(${scriptContent})`);
+          
           await cleanupScript({ github, context });
