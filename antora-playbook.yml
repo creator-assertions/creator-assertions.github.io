@@ -45,6 +45,7 @@ ui:
   bundle:
     url: https://cawg.io/antora-ui/ui-bundle.zip
     snapshot: true
+  supplemental_files: ./supplemental-ui
 
 antora:
   extensions:

@@ -1,0 +1,19 @@
+/* Top navigation enhancement */
+.navbar-end .navbar-item .navbar-link {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-end .navbar-item .navbar-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure proper spacing and alignment */
+.navbar-end {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+} 

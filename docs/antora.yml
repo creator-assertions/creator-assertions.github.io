@@ -2,3 +2,5 @@ name: ROOT
 version: ~
 title: Creator Assertions Home
 start_page: index.adoc
+nav:
+- modules/ROOT/nav.adoc

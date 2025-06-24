@@ -1,0 +1,9 @@
+.Technical Specifications
+* xref:identity:ROOT:index.adoc[Identity Assertions]
+* xref:endorsement:ROOT:index.adoc[Endorsement Assertions] 
+* xref:metadata:ROOT:index.adoc[Metadata Assertions]
+* xref:training-and-data-mining:ROOT:index.adoc[Training and Data Mining Assertions]
+
+.Resources
+* xref:faq.adoc[FAQ]
+* xref:meeting-notes:index.adoc[Meeting Notes] 
