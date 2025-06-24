@@ -82,36 +82,6 @@ jobs:
       id: deploy
       uses: actions/deploy-pages@v4
 
-    - name: Comment on PR
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const fs = require('fs');
-          const path = require('path');
-          
-          // Read and execute the external script
-          const scriptPath = path.join(process.cwd(), '.github/scripts/comment-preview.js');
-          const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-          const commentScript = eval(`(${scriptContent})`);
-          
-          const deploymentUrl = '${{ steps.deploy.outputs.page_url }}';
-          await commentScript({ github, context, deploymentUrl });
-
-  cleanup-on-close:
-    runs-on: ubuntu-latest
-    if: github.event.action == 'closed'
-    
-    steps:
-    - name: Delete deployment environment
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const fs = require('fs');
-          const path = require('path');
-          
-          // Read and execute the external script
-          const scriptPath = path.join(process.cwd(), '.github/scripts/delete-environment.js');
-          const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-          const deleteScript = eval(`(${scriptContent})`);
-          
-          await deleteScript({ github, context });
+    - name: Delete deployment environment and comment
+  run: |
+    node .github/scripts/cleanup-preview.js

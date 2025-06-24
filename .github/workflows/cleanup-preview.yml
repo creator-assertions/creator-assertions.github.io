@@ -15,17 +15,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+
     - name: Delete deployment environment and comment
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const fs = require('fs');
-          const path = require('path');
-          
-          // Read and execute the external script
-          const scriptPath = path.join(process.cwd(), '.github/scripts/cleanup-preview.js');
-          const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-          const cleanupScript = eval(`(${scriptContent})`);
-          
-          await cleanupScript({ github, context });
+  run: |
+    node .github/scripts/cleanup-preview.js
+
