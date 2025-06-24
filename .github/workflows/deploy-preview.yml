@@ -37,12 +37,6 @@ jobs:
     - name: Generate Site
       run: npx antora antora-playbook.yml
 
-    - name: Post-process paths for VC context/schema docs
-      run: |
-        if [ -d "build/site/identity/1.1/_attachments/ica" ]; then
-          mv build/site/identity/1.1/_attachments/ica build/site/identity/1.1/ica
-        fi
-
     - name: Disable Jekyll
       run: touch build/site/.nojekyll
 
