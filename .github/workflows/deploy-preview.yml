@@ -5,6 +5,7 @@ on:
     branches:
       - main
     types: [opened, synchronize, reopened]
+    workflow_dispatch:
 
 concurrency:
   group: deploy-preview-${{ github.event.pull_request.number }}
@@ -84,4 +85,4 @@ jobs:
 
     - name: Delete deployment environment and comment
       run: |
-        node .github/scripts/cleanup-preview.js
+        node .github/scripts/comment-preview.js
