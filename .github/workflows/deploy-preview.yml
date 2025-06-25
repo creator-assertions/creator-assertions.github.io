@@ -65,8 +65,8 @@ jobs:
         name: preview-site-${{ github.event.pull_request.number }}
         path: ./site
 
-    - name: Deploy preview
+    - name: Deploy PR preview
       uses: rossjrw/pr-preview-action@v1
       with:
         source-dir: ./build/site/
-        pages-base-url: 'cawg.io/'
+        pages-base-url: 'cawg.io'
