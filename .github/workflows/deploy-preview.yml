@@ -63,7 +63,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: preview-site-${{ github.event.pull_request.number }}
-        path: ./site
+        path: ./build/site
 
     - name: Deploy PR preview
       uses: rossjrw/pr-preview-action@v1
