@@ -65,18 +65,7 @@ jobs:
         name: preview-site-${{ github.event.pull_request.number }}
         path: ./site
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-
-    - name: Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v3
+    - name: Deploy preview
+      uses: rossjrw/pr-preview-action@v1
       with:
-        path: ./site
-
-    - name: Deploy to GitHub Pages
-      id: deploy
-      uses: actions/deploy-pages@v4
-
-    - name: Delete deployment environment and comment
-      run: |
-        node .github/scripts/comment-preview.js
+        source-dir: ./site/
