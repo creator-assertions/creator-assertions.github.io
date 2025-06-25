@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>05 August 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-08-05/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">05 August 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/14dY8St_Acw">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andreas Reich, TrustNXT</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Christian Paquin, Microsoft</p>
+</li>
+<li>
+<p>Drummond Reed, Gen Digital</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Liviu Gheorghe, Adobe</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Michael Becker, Identity Praxis</p>
+</li>
+<li>
+<p>Misha Deville, Vidos</p>
+</li>
+<li>
+<p>Pamela Dingle, Microsoft</p>
+</li>
+<li>
+<p>Paul England, Microsoft</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Scott Perry, Digital Governance Institute</p>
+</li>
+<li>
+<p>Tim Cappalli, Okta</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_review_previous_action_items"><a class="anchor" href="#_review_previous_action_items"></a>Review previous action items</h3>
+<div class="paragraph">
+<p>🎥 <em>1'07":</em> Review action items from <a href="../2024-07-29/" class="xref page">previous meeting</a>:</p>
+</div>
+<div class="sect3">
+<h4 id="_identity_assertion_1_0"><a class="anchor" href="#_identity_assertion_1_0"></a>Identity assertion 1.0</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Review <a href="https://github.com/creator-assertions/identity-assertion/pull/138/files">PR #138: Write up section on credential revocation</a>:</strong> <strong>ACTION:</strong> Eric to make minor wording changes as discussed in the meeting and merge. ✅</p>
+</li>
+<li>
+<p><strong>Eric to prepare PR that removes the example questions section from the “Name collisions” section.</strong> ✅: <a href="https://github.com/creator-assertions/identity-assertion/pull/158">PR #158: Fold name collisions discussion into existing homoglyph and typo-squatting attack discussion</a> reviewed by Peleus and merged.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_identity_assertion_1_x_vc_edition"><a class="anchor" href="#_identity_assertion_1_x_vc_edition"></a>Identity assertion 1.x (VC edition)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Review <a href="https://github.com/creator-assertions/identity-assertion/pull/157">PR #157: Unify <code>namedActor</code>, <code>affiliations</code>, and <code>identities</code> into a single <code>verifiedIdentities</code> property</a>.</strong> <strong>ACTION:</strong> Liviu to re-read PR and approve. Group otherwise approves merge. ✅: PR #157 reviewed by Liviu and Andreas and merged.</p>
+</li>
+<li>
+<p><strong>Review <a href="https://github.com/creator-assertions/identity-assertion/pull/147">PR #147: Remove requirement for <code>id</code> field</a>.</strong> <strong>ACTION:</strong> Eric to merge. ✅</p>
+</li>
+<li>
+<p><strong>Review <a href="https://github.com/creator-assertions/identity-assertion/pull/146">PR #146: Remove <code>issuer</code> section</a>.</strong> <strong>ACTION:</strong> Eric to modify the PR to retain a link to the VC data model section on issuer and merge. ✅</p>
+</li>
+<li>
+<p><strong>Discuss <a href="https://github.com/creator-assertions/identity-assertion/issues/151">issue #151: Review description of <code>boundTo</code> property</a>.</strong> <strong>ACTION:</strong> Eric to create PR per items discussed in meeting. ✅: We will discuss <a href="https://github.com/creator-assertions/identity-assertion/pull/159">PR #159</a> later in this meeting.</p>
+</li>
+<li>
+<p><strong>Discuss <a href="https://github.com/creator-assertions/identity-assertion/issues/155">issue #155: Write section on proof mechanisms</a>.</strong> <strong>ACTION (any interested members):</strong> Review comments added in this issue. Will discuss later in this meeting.</p>
+</li>
+<li>
+<p><strong>Discuss <a href="https://github.com/creator-assertions/identity-assertion/issues/115">issue #115: Provide meaningful differentiation between similarly-named actors</a>.</strong> <strong>ACTION:</strong> Eric to close as not currently feasible. ✅</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_identity_1_0_ratification_vote_postponed"><a class="anchor" href="#_identity_1_0_ratification_vote_postponed"></a>Identity 1.0 ratification vote POSTPONED</h3>
+<div class="paragraph">
+<p>🎥 <em>3'26":</em> Late last week, we received a request to consider some new feedback and so the ratification vote is delayed until we can meet with the involved parties.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_open_issues_for_identity_1_x"><a class="anchor" href="#_open_issues_for_identity_1_x"></a>Open issues for identity 1.x</h3>
+<div class="sect3">
+<h4 id="_review_pr_159_rename_boundto_to_c2paasset_and_clarify_some_items"><a class="anchor" href="#_review_pr_159_rename_boundto_to_c2paasset_and_clarify_some_items"></a>Review PR #159: Rename <code>boundTo</code> to <code>c2paAsset</code> and clarify some items</h4>
+<div class="paragraph">
+<p>🎥 <em>4'19":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/pull/159">PR #159: Rename <code>boundTo</code> to <code>c2paAsset</code> and clarify some items</a>.</p>
+</div>
+<div class="paragraph">
+<p>There was a lengthy discussion about alternatives for what to call the <code>signer_payload</code> entry within the asset-specific credential. Ultimately, the group zeroed in on the existing proposal to rename <code>boundTo</code> to <code>c2paAsset</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge PR 159 as is.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review_pr_162_tweak_wording_of_provider_name_entry"><a class="anchor" href="#_review_pr_162_tweak_wording_of_provider_name_entry"></a>Review PR #162: Tweak wording of <code>provider.name</code> entry</h4>
+<div class="paragraph">
+<p>🎥 <em>23'07":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/pull/162">PR #162: Tweak wording of <code>provider.name</code> entry</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to revise PR 162 to include some consideration of localization and possibly a definition of user-visible string.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review_issue_160_determine_structure_for_verifiedidentities_proof"><a class="anchor" href="#_review_issue_160_determine_structure_for_verifiedidentities_proof"></a>Review issue #160: Determine structure for <code>verifiedIdentities[?\].proof</code></h4>
+<div class="paragraph">
+<p>🎥 <em>30'50":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/issues/160">issue #160: Determine structure for <code>verifiedIdentities[?].proof</code></a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Liviu and Eric to do further coding / research work to describe what the <code>proof</code> data structure should look like in this case.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review_issue_155_write_section_on_proofs"><a class="anchor" href="#_review_issue_155_write_section_on_proofs"></a>Review issue #155: Write section on proofs</h4>
+<div class="paragraph">
+<p>🎥 <em>32'26":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/issues/155">issue #155: Write section on proofs</a>.</p>
+</div>
+<div class="paragraph">
+<p>Again, tentative agreement that we would should use only COSE signatures to secure the VCs.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Pam to discuss with Microsoft engineering team and report back next week.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review_issue_64_consider_stronger_timestamping_mechanism_than_w3c_vc_requires"><a class="anchor" href="#_review_issue_64_consider_stronger_timestamping_mechanism_than_w3c_vc_requires"></a>Review issue #64: Consider stronger timestamping mechanism than W3C VC requires</h4>
+<div class="paragraph">
+<p>🎥 <em>36'43":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/issues/64">issue #64: Consider stronger timestamping mechanism than W3C VC requires</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to explore whether we can reuse the COSE protected header mechanism for RFC 3161 timestamping in the VC approach.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review_issue_163_does_the_approach_taken_in_8_1_change_if_issuer_named_actor"><a class="anchor" href="#_review_issue_163_does_the_approach_taken_in_8_1_change_if_issuer_named_actor"></a>Review issue #163: Does the approach taken in §8.1 change if issuer == named actor?</h4>
+<div class="paragraph">
+<p>🎥 <em>56'59":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/issues/163">issue #163: Does the approach taken in §8.1 change if issuer == named actor?</a></p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to reach out to Will Kreth to explore signature scenarios.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>29 April 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-04-29/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">29 April 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/MtAXEaPWMgs">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andy Parsons, Adobe</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Carly Huitema, U of Guelph</p>
+</li>
+<li>
+<p>Charlie Halford, BBC</p>
+</li>
+<li>
+<p>Christian Paquin, Microsoft</p>
+</li>
+<li>
+<p>Clement Hecquet, Digimarc</p>
+</li>
+<li>
+<p>David Springgay, Microsoft</p>
+</li>
+<li>
+<p>Drummond Reed, Gen Digital</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Jesse Carter, CIRA</p>
+</li>
+<li>
+<p>Lindsay Walker, Starling Labs</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Michael Becker, Identity Praxis</p>
+</li>
+<li>
+<p>Nigel Earnshaw, BBC</p>
+</li>
+<li>
+<p>Paul England, Microsoft</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Pia Blumenthal, Adobe</p>
+</li>
+<li>
+<p>Radu Ghiorghisor, Adobe</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_agenda"><a class="anchor" href="#_agenda"></a>Agenda</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_5_min_start_meeting"><a class="anchor" href="#_5_min_start_meeting"></a>5 min: Start meeting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Start recording</p>
+</li>
+<li>
+<p>Welcome and community specification license reminder</p>
+</li>
+<li>
+<p>Agenda review and call for agenda items</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_new_members_introduction"><a class="anchor" href="#_5_min_new_members_introduction"></a>5 min: New members introduction</h3>
+<div class="paragraph">
+<p>No new members today.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_endorsement_assertion"><a class="anchor" href="#_endorsement_assertion"></a>Endorsement assertion</h3>
+<div class="paragraph">
+<p>🎥 <em>0'50":</em> Walk through <a href="https://github.com/creator-assertions/endorsement-assertion/pull/6">PR #6: Substantial rewrite, introducing the terms endorser and endorsee, and clarifying the workflow for each role</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to revise PR based on feedback in meeting. Now awaiting re-review from Charlie and Leonard.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to split out suggestion on interoperability with identity assertion into new issue to be considered later. New <a href="https://github.com/creator-assertions/endorsement-assertion/issues/8">issue #8</a> queued up for post-1.0 discussion.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_15_min_define_named_actors_role"><a class="anchor" href="#_15_min_define_named_actors_role"></a>15 min: Define named actor’s role</h3>
+<div class="paragraph">
+<p>🎥 <em>7'45":</em> Walk through <a href="https://github.com/creator-assertions/identity-assertion/pull/98">PR #98: Introduce an optional <code>signer_payload.role</code> field</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to review feedback in PR and update for re-review next week.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_discuss_multiple_step_processing_issue"><a class="anchor" href="#_5_min_discuss_multiple_step_processing_issue"></a>5 min: Discuss “multiple step processing” issue</h3>
+<div class="paragraph">
+<p>🎥 <em>24'01":</em> Walk through <a href="https://github.com/creator-assertions/identity-assertion/issue/63">issue #63: Possible interaction in “multiple step processing”</a>. Close or discuss any needed action items.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to refer this to C2PA TWG and close the CAWG issue.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_35_min_discuss_trust_and_threat_model_pr"><a class="anchor" href="#_35_min_discuss_trust_and_threat_model_pr"></a>35 min: Discuss trust and threat model PR</h3>
+<div class="paragraph">
+<p>🎥 <em>28'36":</em> Walk through <a href="https://github.com/creator-assertions/identity-assertion/pull/99">PR #99: Define identity assertion trust model</a>, which also includes formal descriptions of prior issue discussions on <em>threat</em> models.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to update PR based on discussion. (See comments in the PR.)</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Radu to discuss "Trust scenarios in identity assertion" with Adobe IMS team to see if 9.2.3 can be deleted.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_discuss_overview_section_pr"><a class="anchor" href="#_5_min_discuss_overview_section_pr"></a>5 min: Discuss overview section PR</h3>
+<div class="paragraph">
+<p>🎥 <em>1h08'05":</em> Walk through <a href="https://github.com/creator-assertions/identity-assertion/pull/102">PR #102: Clarify identity assertion “Overview” section</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge PR after making suggestions from meeting.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_15_min_discuss_security_model_pr"><a class="anchor" href="#_15_min_discuss_security_model_pr"></a>15 min: Discuss security model PR</h3>
+<div class="paragraph">
+<p>🎥 <em>1h14'29":</em> Walk through <a href="https://github.com/creator-assertions/identity-assertion/pull/96">PR #96: Signer payload fixes</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Some key participants in the substance of this discussion are not able to join today’s meeting, so this will be a discussion, but not a resolution of this issue.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>OUTCOME:</strong> Good discussion about the motivation for this PR. Will continue discussion in subsequent meeting. No action items.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_closing_and_review"><a class="anchor" href="#_5_min_closing_and_review"></a>5 min: Closing and review</h3>
+<div class="paragraph">
+<p>Invitation to subsequent meetings, which will typically be on Mondays.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
