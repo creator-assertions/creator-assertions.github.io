@@ -6,4 +6,5 @@
 
 .Resources
 * xref:faq.adoc[FAQ]
+* xref:meetings.adoc[Meetings]
 * xref:meeting-notes:index.adoc[Meeting Notes] 
