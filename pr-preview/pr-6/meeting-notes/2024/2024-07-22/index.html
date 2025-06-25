@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>22 July 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-07-22/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">22 July 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/5cnWiugU2Rg">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andy Parsons, Adobe</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Candice Ward</p>
+</li>
+<li>
+<p>Carly Huitema, U of Guelph</p>
+</li>
+<li>
+<p>Cole Davis, Switchchord</p>
+</li>
+<li>
+<p>David Bigsby, Government of British Columbia</p>
+</li>
+<li>
+<p>Drummond Reed, Gen Digital</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Jesse Carter, CIRA</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Konrad Bleyer-Simon, Global Media Registry</p>
+</li>
+<li>
+<p>Leonard Rosenthol, Adobe</p>
+</li>
+<li>
+<p>Lindsay Walker, Starling Labs</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Michael Becker, Identity Praxis</p>
+</li>
+<li>
+<p>Nigel Earnshaw, BBC</p>
+</li>
+<li>
+<p>Pamela Dingle, Microsoft</p>
+</li>
+<li>
+<p>Patrick Boehler, independent consultant</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Pia Blumenthal, Adobe</p>
+</li>
+<li>
+<p>Scott Perry, Digital Governance Institute</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_review_prs_for_identity_1_0"><a class="anchor" href="#_review_prs_for_identity_1_0"></a>Review PRs for identity 1.0</h3>
+<div class="sect3">
+<h4 id="_141_changed_trust_triangle_to_trust_diamond"><a class="anchor" href="#_141_changed_trust_triangle_to_trust_diamond"></a>#141: Changed trust triangle to trust diamond</h4>
+<div class="paragraph">
+<p>🎥 <em>2'15":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/pull/141">PR #141: Changed trust triangle to trust diamond in 9.1</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to make minor wording changes as discussed in the meeting and merge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_138_credential_revocation"><a class="anchor" href="#_138_credential_revocation"></a>#138: Credential revocation</h4>
+<div class="paragraph">
+<p>🎥 <em>9'02":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/pull/138">PR #138: Write up section on credential revocation</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to adjust wording:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Any evidence about revocation should be part of the identity assertion consumer&#8217;s report on the identity assertion.</p>
+</li>
+<li>
+<p>Revocation at time of signing should be cause for choosing untrusted status.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (interested members): Please review <a href="https://github.com/creator-assertions/identity-assertion/pull/138/commits/a1a0d23c0cf25b219c041e2cc86817520480a48e">proposed new wording</a> based on today’s meeting.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_136_formalize_trusted_well_formed_and_revoked_status_for_identity_assertion_signatures"><a class="anchor" href="#_136_formalize_trusted_well_formed_and_revoked_status_for_identity_assertion_signatures"></a>#136: Formalize trusted, well-formed, and revoked status for identity assertion signatures</h4>
+<div class="paragraph">
+<p>🎥 <em>42'09":</em> Review <a href="https://github.com/creator-assertions/identity-assertion/pull/136">PR #136: Formalize trusted, well-formed, and revoked status for identity assertion signatures</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to adjust wording to avoid implication that credential issuer must perform the revocation. Approved to merge after that change.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_updated_draft_available"><a class="anchor" href="#_updated_draft_available"></a>Updated draft available</h4>
+<div class="paragraph">
+<p>An updated draft incorporating #141 and #136 is <a href="https://creator-assertions.github.io/identity/1.0-draft">available here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_0_ratification_vote_next_week"><a class="anchor" href="#_1_0_ratification_vote_next_week"></a>1.0 ratification vote next week</h3>
+<div class="paragraph">
+<p>🎥 <em>49'18":</em> Discuss ratifaction vote. Agreed to proceed with ratification next week.</p>
+</div>
+<div class="paragraph">
+<p><strong>IMPORTANT:</strong> We will vote on ratification of the 1.0 version of the identity assertion in the <strong>29 July 2024</strong> meeting.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (all members): Very last call for review of the 1.0-draft spec. Please flag any items that feel like blockers to you.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_training_and_data_mining_assertion_1_1_draft"><a class="anchor" href="#_training_and_data_mining_assertion_1_1_draft"></a>Training and data mining assertion 1.1-draft</h3>
+<div class="paragraph">
+<p>🎥 <em>49'43":</em> Eric proposed to open a working draft for a future (1.1) version of the training and data mining assertion specification.</p>
+</div>
+<div class="paragraph">
+<p>The only changes <em>so far</em> since the approved 1.0 draft are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>New version "1.1-draft".</p>
+</li>
+<li>
+<p>Revert language in "Contributing" section from approved to working draft.</p>
+</li>
+<li>
+<p>Adding a note stating that an approved 1.1 version is expected late this year.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Additional changes are expected and the 1.1-draft text provides space for that work to proceed.</p>
+</div>
+<div class="paragraph">
+<p><strong>DECISION:</strong> Approved.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to promote 1.1 from pre-draft to draft.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_identity_assertion_1_x"><a class="anchor" href="#_review_identity_assertion_1_x"></a>Review identity assertion 1.x</h3>
+<div class="paragraph">
+<p>🎥 <em>53'08":</em> Review the 1.x-draft version of the identity assertion.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to convene subgroup meeting later in the week to revise 8.1.1 example to match likely usage pattern.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge <a href="https://github.com/creator-assertions/identity-assertion/pull/126">PR #126: Add VC schema description</a>. Group agreed that having two separate drafts for the VC version of this specification was confusing.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to review TO DO items and add GitHub issues.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+FYI there is active work underway at Adobe to validate this part of the spec in code. See <a href="https://github.com/scouten-adobe/cawg-identity-core">GitHub: scouten-adobe/cawg-identity-core</a>. Be aware this is very early code.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

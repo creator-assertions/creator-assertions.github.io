@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>15 July 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-07-15/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">15 July 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/cDAIVNVhPu4">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andreas Reich, TrustNXT</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Candice Ward</p>
+</li>
+<li>
+<p>Carly Huitema, U of Guelph</p>
+</li>
+<li>
+<p>Cole Davis, Switchchord</p>
+</li>
+<li>
+<p>David Bigsby, Government of British Columbia</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Jacques Latour, CIRA</p>
+</li>
+<li>
+<p>Jesse Carter, CIRA</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Leonard Rosenthol, Adobe</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Noga Hurwitz, Adobe</p>
+</li>
+<li>
+<p>Pamela Dingle, Microsoft</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Pia Blumenthal, Adobe</p>
+</li>
+<li>
+<p>Paul England, Microsoft</p>
+</li>
+<li>
+<p>Scott Perry, Digital Governance Institute</p>
+</li>
+<li>
+<p>Sébastien Testeau, Radio Canada</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_new_members_introduction"><a class="anchor" href="#_new_members_introduction"></a>New members introduction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>🎥 <em>1'37":</em> Andreas Reich, TrustNXT</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_updates_on_training_and_data_mining_assertion"><a class="anchor" href="#_updates_on_training_and_data_mining_assertion"></a>Updates on training and data mining assertion</h3>
+<div class="paragraph">
+<p>🎥 <em>3'32":</em> Leonard introduced us to the work of a new working group’s efforts to standardize vocabulary for content producers to express their usage intents, particularly with regard to AI training and data mining.</p>
+</div>
+<div class="paragraph">
+<p>No call to action at this time. Leonard expects to bring recommendations for an update to the CAWG training and data mining assertion based once this group finalizes its recommendations. This is likely in September or October.</p>
+</div>
+<div class="paragraph">
+<p>Related links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf">Open Future: <em>Considerations for Opt-Out Compliance Policies by AI Model Developers</em></a></p>
+</li>
+<li>
+<p><a href="https://www.ga4gh.org/product/data-use-ontology-duo/">Global Alliance for Genomics and Health: <em>Data Use Ontology</em></a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_prs_for_identity_1_0"><a class="anchor" href="#_review_prs_for_identity_1_0"></a>Review PRs for identity 1.0</h3>
+<div class="paragraph">
+<p>🎥 <em>15'51":</em> The group reviewed eight open PRs against identity assertion 1.0.</p>
+</div>
+<div class="sect3">
+<h4 id="_142_brief_section_to_reference_forthcoming_ux_guidance_document"><a class="anchor" href="#_142_brief_section_to_reference_forthcoming_ux_guidance_document"></a>#142: Brief section to reference forthcoming UX guidance document</h4>
+<div class="paragraph">
+<p>🎥 <em>15'46":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/142">PR #142: Brief section to reference forthcoming UX guidance document</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_141_changed_trust_triangle_to_trust_diamond_in_9_1"><a class="anchor" href="#_141_changed_trust_triangle_to_trust_diamond_in_9_1"></a>#141: Changed trust triangle to trust diamond in 9.1</h4>
+<div class="paragraph">
+<p>🎥 <em>19'29":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/141">PR #141: Changed trust triangle to trust diamond in 9.1</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to replace “trust registry” with “trust list” in the diagram and surrounding text.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to add link to Trust Over IP discussion of trust registries.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to add language suggesting that the trust diamond diagram is a depiction of <em>relationships.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to request re-review from Jacques once above changes are made.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_140_revise_discussion_of_capture_devices_holding_credentials"><a class="anchor" href="#_140_revise_discussion_of_capture_devices_holding_credentials"></a>#140: Revise discussion of capture devices holding credentials</h4>
+<div class="paragraph">
+<p>🎥 <em>41'59":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/140">PR #140: Revise discussion of capture devices holding credentials</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_138_write_up_section_on_credential_revocation"><a class="anchor" href="#_138_write_up_section_on_credential_revocation"></a>#138: Write up section on credential revocation</h4>
+<div class="paragraph">
+<p>🎥 <em>45'13":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/138">PR #138: Write up section on credential revocation</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to revise discussion to avoid implication that revocation happens due to misbehavior on the part of the credential holder.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to add language to ensure that any revocation check must include the time of issuance.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to request re-review from David once above changes are made.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_136_formalize_trusted_well_formed_and_revoked_status_for_identity_assertion_signatures"><a class="anchor" href="#_136_formalize_trusted_well_formed_and_revoked_status_for_identity_assertion_signatures"></a>#136: Formalize trusted, well-formed, and revoked status for identity assertion signatures</h4>
+<div class="paragraph">
+<p>🎥 <em>48'44":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/136">PR #136: Formalize trusted, well-formed, and revoked status for identity assertion signatures</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to add language to ensure that any revocation check must include the time of issuance.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to add language to clarify that trusted and well-formed statuses only apply if there is no known revocation of the named actor’s credential.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to request re-review from group once above changes are made.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_130_clarify_definition_of_named_actor"><a class="anchor" href="#_130_clarify_definition_of_named_actor"></a>#130: Clarify definition of “named actor”</h4>
+<div class="paragraph">
+<p>🎥 <em>48'44":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/130">PR #130: Clarify definition of “named actor”</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_128_describe_mitigations_for_homoglyphtypo_squatting_attacks_and_name_duplication"><a class="anchor" href="#_128_describe_mitigations_for_homoglyphtypo_squatting_attacks_and_name_duplication"></a>#128: Describe mitigations for homoglyph/typo-squatting attacks and name duplication</h4>
+<div class="paragraph">
+<p>🎥 <em>1h04'01":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/128">PR #128: Describe mitigations for homoglyph/typo-squatting attacks and name duplication</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_125_define_human_trust_vs_technical_trust"><a class="anchor" href="#_125_define_human_trust_vs_technical_trust"></a>#125: Define human trust vs technical trust</h4>
+<div class="paragraph">
+<p>🎥 <em>1h06'41":</em> Reviewed <a href="https://github.com/creator-assertions/identity-assertion/pull/125">PR #125: Define human trust vs technical trust</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_road_to_1_0_ratification"><a class="anchor" href="#_road_to_1_0_ratification"></a>Road to 1.0 ratification</h3>
+<div class="paragraph">
+<p>🎥 <em>1h10'03":</em> Given volume of changes in last week, group agreed to delay ratification vote by one week.</p>
+</div>
+<div class="paragraph">
+<p><strong>IMPORTANT:</strong> We will vote on ratification of the 1.0 version of the identity assertion in the <span class="line-through">22 July 2024</span> <strong>29 July 2024</strong> meeting.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (all members): Last call for review of the 1.0-draft spec. Please flag any items that feel like blockers to you.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beginning_the_ux_guidance_document"><a class="anchor" href="#_beginning_the_ux_guidance_document"></a>Beginning the UX guidance document</h3>
+<div class="paragraph">
+<p>🎥 <em>1h10'53":</em> Pia led the group through some of the concepts which will be addressed in the forthcoming CAWG UX guidance document. (Slides available <a href="https://www.figma.com/proto/J21ZWMt797w11F38gb4BPU/CAWG-identity-workshop?page-id=0%3A1&amp;node-id=14-1563&amp;viewport=-5473%2C678%2C0.31&amp;t=XA9YziXHtvjTTO9Q-1&amp;scaling=contain&amp;content-scaling=fixed&amp;starting-point-node-id=14%3A1563">here</a>.)</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to review the VC draft specification to ensure that the nature of an organizational affiliation can be expressed. (From Scott Perry: “One variant missing is the a person in a role acting on behalf of an organization such as Jane Smith, editor of The New York Times.”)</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

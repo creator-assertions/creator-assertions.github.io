@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>21 October 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-10-21/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">21 October 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/J9yHG0sfcxs">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andreas Reich, TrustNXT</p>
+</li>
+<li>
+<p>Andy Rosen, Sequence Key</p>
+</li>
+<li>
+<p>Christian Paquin, Microsoft</p>
+</li>
+<li>
+<p>Daniel Zellmer, Noosphere Technologies</p>
+</li>
+<li>
+<p>David Bigsby, Government of British Columbia</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Hans Granqvist, Noosphere</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Konrad Bleyer-Simon, Global Media Registry</p>
+</li>
+<li>
+<p>Liviu Gheorghe, Adobe</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Nigel Earnshaw, BBC</p>
+</li>
+<li>
+<p>Neil Thomson, Trust Over IP Foundation</p>
+</li>
+<li>
+<p>Noga Hurwitz, Adobe</p>
+</li>
+<li>
+<p>Pamela Dingle, Microsoft</p>
+</li>
+<li>
+<p>Scott Perry, Digital Governance Institute</p>
+</li>
+<li>
+<p>Tim Cappalli, Okta</p>
+</li>
+<li>
+<p>Utkarsh Sharma, Vlinder</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_new_members_introduction"><a class="anchor" href="#_new_members_introduction"></a>New members introduction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>🎥 <em>0'42":</em> Neil Thomson, Trust Over IP Foundation</p>
+</li>
+<li>
+<p>🎥 <em>1'39":</em> Noga Hurwitz, Adobe</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_previous_action_items"><a class="anchor" href="#_review_previous_action_items"></a>Review previous action items</h3>
+<div class="paragraph">
+<p>🎥 <em>2'10":</em> Briefly reviewed the following action items from two weeks ago.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ACTION (✅):</strong> Merged PRs as approved in previous meeting:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pull/190">PR #190: Consolidate wording about <code>cawg.</code> labels</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pull/191">PR #191: Remove <code>proof</code> entry from <code>verifiedIdentities\[n]</code> structure</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pull/192">PR #192: Add option to use RFC 3161 timestamp in ICA COSE signature</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>ACTION (✅):</strong> Eric to call subgroup meeting regarding <a href="https://github.com/creator-assertions/identity-assertion/pull/187">PR #187: Add support for verified presentations</a> and <a href="https://github.com/creator-assertions/identity-assertion/issues/53">issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard</a>. Outcome: No clear consensus on interoperable use case for W3C Verifiable Presentation. Move to withdraw PR 187.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_pr_188_add_support_for_domain_control_validation_dcv_aka_verified_web_site"><a class="anchor" href="#_review_pr_188_add_support_for_domain_control_validation_dcv_aka_verified_web_site"></a>Review PR #188: Add support for domain control validation (DCV) aka verified web site</h3>
+<div class="paragraph">
+<p>🎥 <em>2'57":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/188">PR #188: Add support for domain control validation (DCV) aka verified web site</a>.</p>
+</div>
+<div class="paragraph">
+<p>Follow up to Claudiu&#8217;s request to vet creator willingness/ability to go through proposed steps to prove control over domain.</p>
+</div>
+<div class="paragraph">
+<p><strong>Creator Feedback:</strong> Noga shared that creators expressed enthusiasm for a verified mechanism to protect their identity, creative spaces, and brand. They preferred a simple and accessible method for domain control validation. Noga found that <code>meta</code> tags are more accessible for most creators, especially those using platforms like Squarespace or Wix.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to revise PR 188 to remove discussion of DNS records and add discussion about using <code>meta</code> tags.</p>
+</div>
+<div class="paragraph">
+<p>Relevant links from chat:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://support.wix.com/en/article/adding-additional-meta-tags-to-your-sites-pages">Wix: Adding Additional Meta Tags to Your Site&#8217;s Pages</a></p>
+</li>
+<li>
+<p><a href="https://docs.digicert.com/en/certcentral/manage-certificates/dv-certificate-enrollment/domain-control-validation&#8212;&#8203;dcv&#8212;&#8203;methods.html">Digicert: Domain Control Validation (DCV) Methods</a></p>
+</li>
+<li>
+<p><a href="https://cabforum.org/working-groups/server/baseline-requirements/documents/">CA/B Forum: Baseline Requirements for TLS Server Certification</a> – §3.2.2.4</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Points to consider:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Validation should include a verification that the same random value that was initially specified remains present at the designated URL.</p>
+</li>
+<li>
+<p>Creator should be able to specify a path within a domain.</p>
+</li>
+<li>
+<p>Consider how BlueSky and Mastodon do domain verification.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_pr_187_add_support_for_verified_presentations"><a class="anchor" href="#_review_pr_187_add_support_for_verified_presentations"></a>Review PR #187: Add support for verified presentations</h3>
+<div class="paragraph">
+<p>🎥 <em>22'36":</em> Move to withdraw <a href="https://github.com/creator-assertions/identity-assertion/pull/187">PR #187: Add support for verified presentations</a>.</p>
+</div>
+<div class="paragraph">
+<p>Discuss the following two issues, which 187 was intended to close:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/33">#33: When to verify credentials?</a> – Suggested outcome: Reopen and assign to post 1.1 milestone. ✅ DONE.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/179">#179: Describe how ICA should request a Verifiable Presentation and how to describe that in VC</a> – Suggested outcome: Leave closed unless a use case arises. ✅ DONE.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Create issue to consider verified e-mail address. (DONE: See <a href="https://github.com/creator-assertions/identity-assertion/issues/196">issue #196: Consider adding verified e-mail address to ICA model?</a>)</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to close #187 without merging.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_issue_195_make_sure_identity_claims_aggregation_model_is_well_understood"><a class="anchor" href="#_review_issue_195_make_sure_identity_claims_aggregation_model_is_well_understood"></a>Review issue #195: Make sure identity claims aggregation model is well understood</h3>
+<div class="paragraph">
+<p>🎥 <em>38'44":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/issues/195">issue #195: Make sure identity claims aggregation model is well understood</a>.</p>
+</div>
+<div class="paragraph">
+<p>Eric acknowledged the need for more examples and explanatory text to clarify the model of identity claims aggregation. He committed to making this a priority before the next meeting.</p>
+</div>
+<div class="paragraph">
+<p>Eric mentioned the possibility of conducting a workshop at the Internet Identity Workshop (IIW) to gather feedback and improve the explanatory text for identity claims aggregation.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to prepare more examples and explanatory text ahead of IIW and to call a session describing the ICA model there.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_issue_53_explore_questions_of_anonymized_credentials_and_how_they_might_be_expressed_in_the_standard"><a class="anchor" href="#_review_issue_53_explore_questions_of_anonymized_credentials_and_how_they_might_be_expressed_in_the_standard"></a>Review issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard</h3>
+<div class="paragraph">
+<p>🎥 <em>41'38":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/issues/53">issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard</a>.</p>
+</div>
+<div class="paragraph">
+<p>No clear consensus on a use case for anonymized credentials in the identity claims aggregation model.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to move issue 53 to post-1.1 milestone.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_issue_171_recommend_require_use_of_bitstring_status_lists_for_revocation"><a class="anchor" href="#_review_issue_171_recommend_require_use_of_bitstring_status_lists_for_revocation"></a>Review issue #171: Recommend (require?) use of bitstring status lists for revocation?</h3>
+<div class="paragraph">
+<p>🎥 <em>41'38":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/issues/171">#171: Recommend (require?) use of bitstring status lists for revocation?</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Need for Revocation:</strong> Eric discussed the need for a mechanism to signal the invalidation of claims issued by an identity claims aggregator.</p>
+</div>
+<div class="paragraph">
+<p><strong>Claim Retraction:</strong> Scott emphasized the importance of having a clear path for claim retraction. He suggested exploring best practices for revocation mechanisms to ensure that claims can be invalidated when necessary. Revocation mechanisms are a moving target.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to review current revocation mechanisms and draft a PR describing at least one preferred revocation mechanism.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_open_discussion_what_questions_to_ask_at_iiw"><a class="anchor" href="#_open_discussion_what_questions_to_ask_at_iiw"></a>Open discussion: What questions to ask at IIW?</h3>
+<div class="paragraph">
+<p>🎥 <em>41'38":</em> Next week is <a href="https://internetidentityworkshop.com">Internet Identity Workshop</a>.</p>
+</div>
+<div class="paragraph">
+<p>Eric, Neil, and Pam will be attending.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to call sessions on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Explaining the identity claims aggregation model</p>
+</li>
+<li>
+<p>(Joint presentation with Wenjing Chu of Trust Over IP) Explaining the conceptual overlap and differences between C2PA+CAWG and ToIP&#8217;s Trust Spanning Protocol</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
