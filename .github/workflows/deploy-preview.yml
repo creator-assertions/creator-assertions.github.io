@@ -68,6 +68,5 @@ jobs:
     - name: Deploy PR preview
       uses: rossjrw/pr-preview-action@v1
       with:
-        preview-branch: main
         source-dir: ./build/site/
         pages-base-url: 'cawg.io'
