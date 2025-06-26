@@ -4,6 +4,13 @@ on:
   pull_request:
     types: [opened, reopened, synchronize, closed] # Trigger on PR open, reopen, sync, or close
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+  deployments: write
+  
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest  # Use a suitable runner environment
