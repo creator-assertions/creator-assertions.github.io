@@ -36,7 +36,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1  # Use the pr-preview-action
         with:
           source-dir: ./build/site  # Directory containing the built site files
-          preview-branch: main  # The branch to deploy previews to (usually gh-pages for GitHub Pages)
+          preview-branch: test  # The branch to deploy previews to (usually gh-pages for GitHub Pages)
           umbrella-dir: pr-preview  # Directory within the preview branch to store previews
           action: auto  # Automatically handles deployment and cleanup (deploy/remove)
 
