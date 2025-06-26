@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
   pull-requests: write
@@ -58,25 +58,15 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+
     - name: Download Preview Artifact
       uses: actions/download-artifact@v4
       with:
         name: preview-site-${{ github.event.pull_request.number }}
-        path: ./site
+        path: ./build/site
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-
-    - name: Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v3
+    - name: Deploy PR preview
+      uses: rossjrw/pr-preview-action@v1
       with:
-        path: ./site
-
-    - name: Deploy to GitHub Pages
-      id: deploy
-      uses: actions/deploy-pages@v4
-
-    - name: Delete deployment environment and comment
-      run: |
-        node .github/scripts/comment-preview.js
+        source-dir: ./build/site/
+        preview-branch: main
