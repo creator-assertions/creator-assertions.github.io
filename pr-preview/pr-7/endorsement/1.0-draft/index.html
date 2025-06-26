@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Endorsement Assertion :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/endorsement/1.0-draft/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="endorsement" data-version="1.0-draft">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Endorsement Assertion</span>
+    <span class="version">1.0-draft</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="./">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="./">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+<div class="edit-this-page"><a href="https://github.com/decentralized-identity/cawg-endorsement-assertion/edit/main/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Endorsement Assertion</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>An <em><a href="#_endorsement">endorsement</a></em> is a way of indicating approval for specific actions made on content after it has had a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> attached. (See <a href="#_generating_an_endorsement">Section 4, &#8220;Generating an endorsement&#8221;</a>.) The <strong>endorsement assertion</strong> is where an <em><a href="#_endorsement">endorsement</a></em> from the signer of an ingredient <em><a href="#_c2pa_asset">C2PA asset</a></em> (known here as an <em><a href="#_endorser">endorser</a></em>) is stored. These <em><a href="#_endorsement">endorsements</a></em> are typically provided (out-of-band of this specification) by ingredient <em><a href="#_c2pa_asset">C2PA asset</a></em> signers to actors those signers trust to perform the actions listed in the assertion (known here as <em><a href="#_endorsee">endorsees</a></em>). They are used by a validator when assessing whether the actions of the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> are “endorsed” or not. (See <a href="#_validation">Section 5, &#8220;Validation&#8221;</a>.)</p>
+</div>
+<div class="paragraph">
+<p><strong>Version 1.0 Draft 14 April 2025</strong> · <a href="#_version_history">Version history</a></p>
+</div>
+<div id="maintainers" class="paragraph">
+<p><strong>Maintainers:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="mailto:scouten@adobe.com">Eric Scouten</a> (<a href="https://adobe.com">Adobe</a>)</p>
+</li>
+</ul>
+</div>
+<h2 id="_license" class="discrete">License</h2>
+<div class="paragraph">
+<p>This specification is subject to the <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (2004).</p>
+</div>
+<div class="paragraph">
+<p>For sample or reference code included in the specification itself, that code is subject to the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0 license</a>, unless otherwise designated. In the case of any conflict or confusion within this specification repository between the W3C Patent Policy (2004) or other designated license, the terms of the W3C Patent Policy (2004) shall apply.</p>
+</div>
+<div class="paragraph">
+<p>These terms are inherited from the <a href="https://github.com/decentralized-identity/org/blob/main/Org%20documents/Membership%20agreements/DIF%20Project%20Charter%20_4.0.3.pdf">Decentralized Identity Foundation Project Charter</a>.</p>
+</div>
+<h2 id="_contributing" class="discrete">Contributing</h2>
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p>This specification is an active working draft. If you wish to contribute to its development, please view the <a href="https://cawg.io/#_contributing">CAWG contributing guide</a>.</p>
+</div>
+<h2 id="_foreword" class="discrete">Foreword</h2>
+<div class="paragraph">
+<p>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. No party shall be held responsible for identifying any or all such patent rights.</p>
+</div>
+<div class="paragraph">
+<p>Any trade name used in this document is information given for the convenience of users and does not constitute an endorsement.</p>
+</div>
+<div class="paragraph">
+<p>This document was prepared by the <a href="https://cawg.io">Creator Assertions Working Group</a>, a working group of the <a href="https://identity.foundation">Decentralized Identity Foundation</a>.</p>
+</div>
+<div class="paragraph">
+<p>THESE MATERIALS ARE PROVIDED “AS IS.” The Contributors and Licensees expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user. IN NO EVENT WILL THE CONTRIBUTORS OR LICENSEES BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS DELIVERABLE OR ITS GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div>
+<h2 id="_table_of_contents" class="discrete">Table of contents</h2>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_overview">1.1. Overview</a></li>
+<li><a href="#_use_case">1.2. Use case</a></li>
+</ul>
+</li>
+<li><a href="#_normative_references">2. Normative references</a></li>
+<li><a href="#_terms_and_definitions">3. Terms and definitions</a>
+<ul class="sectlevel2">
+<li><a href="#_actor">3.1. Actor</a></li>
+<li><a href="#_c2pa_asset">3.2. C2PA asset</a></li>
+<li><a href="#_c2pa_manifest">3.3. C2PA Manifest</a></li>
+<li><a href="#_endorsee">3.4. Endorsee</a></li>
+<li><a href="#_endorsement">3.5. Endorsement</a></li>
+<li><a href="#_endorser">3.6. Endorser</a></li>
+</ul>
+</li>
+<li><a href="#_generating_an_endorsement">4. Generating an endorsement</a>
+<ul class="sectlevel2">
+<li><a href="#_endorser_workflow">4.1. Endorser workflow</a></li>
+<li><a href="#_endorsee_workflow">4.2. Endorsee workflow</a></li>
+<li><a href="#_permitted_actions">4.3. Permitted actions</a></li>
+<li><a href="#_endorsement_cose_payload">4.4. Endorsement COSE payload</a></li>
+</ul>
+</li>
+<li><a href="#_validation">5. Validation</a></li>
+<li><a href="#_version_history">Appendix A: Version history</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="sect2">
+<h3 id="_overview"><a class="anchor" href="#_overview"></a>1.1. Overview</h3>
+<div class="paragraph">
+<p><em><a href="#_endorsement">Endorsements</a></em> are a way of indicating approval of three possible actions (see <a href="#_permitted_actions">Section 4.3, &#8220;Permitted actions&#8221;</a>) that could be applied to an <em><a href="#_c2pa_asset">C2PA asset</a></em> described by a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> in which the <em><a href="#_c2pa_asset">C2PA asset</a></em> is used as an ingredient.</p>
+</div>
+<div class="paragraph">
+<p><em><a href="#_endorsement">Endorsements</a></em> endorse the specific actions (described in <a href="#_permitted_actions">Section 4.3, &#8220;Permitted actions&#8221;</a>) that MAY be taken by the <em><a href="#_endorsee">endorsee</a></em>, and are therefore valid for <em><a href="#_c2pa_manifest">C2PA Manifests</a></em> that use only the specified actions. Actions are only endorsed by the signer of that action’s referenced ingredient (known here as the <em><a href="#_endorser">endorser</a></em>); they cannot be endorsed across more than multiple <em><a href="#_c2pa_manifest">C2PA Manifests</a></em> in the <em><a href="#_c2pa_asset">C2PA asset’s</a></em> provenance.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_case"><a class="anchor" href="#_use_case"></a>1.2. Use case</h3>
+<div class="paragraph">
+<p>As one example, an <em><a href="#_endorser">endorser</a></em> may want to endorse another party, such as a content-distribution network, who will transcode its <em><a href="#_c2pa_asset">C2PA asset</a></em> as part of a publication workflow. The <em><a href="#_endorser">endorser</a></em> creates an <em><a href="#_endorsement">endorsement</a></em> that identifies the transcoder, and conveys the <em><a href="#_endorsement">endorsement</a></em> to them in some method that is out-of-band from this specification. When the transcoder creates their <em><a href="#_c2pa_asset">C2PA asset</a></em> containing the ingredient, they include the <em><a href="#_endorsement">endorsement</a></em> as an <strong>endorsement assertion,</strong> which lets the <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> consumer know that the actions they performed have been endorsed.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_normative_references"><a class="anchor" href="#_normative_references"></a>2. Normative references</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html">C2PA technical specification, version 2.0</a></p>
+</li>
+<li>
+<p><a href="https://tools.ietf.org/html/rfc5280">Internet X.509 public key infrastructure certificate</a> (RFC 5280)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>3. Terms and definitions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_actor"><a class="anchor" href="#_actor"></a>3.1. Actor</h3>
+<div class="paragraph">
+<p>A human or non-human (hardware or software) that is participating in the C2PA ecosystem. For example: a camera (capture device), image editing software, cloud service, or the person using such tools.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+An organization or group of <em>actors</em> may also be considered an <em>actor.</em>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_c2pa_asset"><a class="anchor" href="#_c2pa_asset"></a>3.2. C2PA asset</h3>
+<div class="paragraph">
+<p>A file or stream of data containing <em>digital content,</em> <em>asset metadata,</em> and a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em>.</p>
+</div>
+<div class="paragraph">
+<p>For the purposes of this definition, we will extend the typical definition of “file” to include cloud-native and dynamically-generated data.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The definition of “C2PA asset” in this specification differs from the definition of “asset” given in the C2PA technical specification. A “C2PA asset” as defined in <em>this</em> specification MUST contain a <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_c2pa_manifest"><a class="anchor" href="#_c2pa_manifest"></a>3.3. C2PA Manifest</h3>
+<div class="paragraph">
+<p>The set of information about the <em>provenance</em> of a <em><a href="#_c2pa_asset">C2PA asset</a></em> based on the combination of one or more assertions, a single C2PA claim, and a claim signature.</p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_manifests">Section 11, “Manifests,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_endorsee"><a class="anchor" href="#_endorsee"></a>3.4. Endorsee</h3>
+<div class="paragraph">
+<p>An <em><a href="#_actor">actor</a></em> who receives an <em><a href="#_endorsement">endorsement</a></em> to perform a limited set of actions.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_endorsement"><a class="anchor" href="#_endorsement"></a>3.5. Endorsement</h3>
+<div class="paragraph">
+<p>A signed credential intended to convey approval from an <em><a href="#_endorser">endorser</a></em> to perform a limited set of actions on <em><a href="#_c2pa_asset">C2PA assets</a></em> on their behalf. Endorsements are not constrained to specific <em><a href="#_c2pa_asset">C2PA assets</a>.</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_endorser"><a class="anchor" href="#_endorser"></a>3.6. Endorser</h3>
+<div class="paragraph">
+<p>An <em><a href="#_actor">actor</a></em> who provides an <em><a href="#_endorsement">endorsement</a></em> authorizing an <em><a href="#_endorsee">endorsee</a></em> to perform a limited set of actions on any <em><a href="#_c2pa_asset">C2PA asset</a></em> signed by the <em>endorser.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generating_an_endorsement"><a class="anchor" href="#_generating_an_endorsement"></a>4. Generating an endorsement</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_endorser_workflow"><a class="anchor" href="#_endorser_workflow"></a>4.1. Endorser workflow</h3>
+<div class="paragraph">
+<p>Any <em><a href="#_actor">actor</a></em> MAY choose to become an <em><a href="#_endorser">endorser</a></em> by producing the following outputs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a <em><a href="#_c2pa_asset">C2PA asset</a></em> and a corresponding <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> (which MAY be embedded in the <em><a href="#_c2pa_asset">C2PA asset</a></em>)</p>
+</li>
+<li>
+<p>an <em><a href="#_endorsement">endorsement</a>,</em> as defined in <a href="#_endorsement_cose_payload">Section 4.4, &#8220;Endorsement COSE payload&#8221;</a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+An <em><a href="#_endorsement">endorsement</a></em> does not convey permission to perform these actions on any specific <em><a href="#_c2pa_asset">C2PA asset</a>.</em> Therefore, an <em><a href="#_endorsement">endorsement</a></em> MUST NOT be included in any <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> or <em><a href="#_c2pa_asset">C2PA asset</a></em> created by the <em><a href="#_endorser">endorser</a>.</em> It SHOULD be provided separately to the <em><a href="#_endorsee">endorsee</a>.</em>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The relationship among <em><a href="#_endorser">endorser</a></em>, <em><a href="#_endorsee">endorsee</a></em>, and the <em><a href="#_endorser">endorser’s</a></em> <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> is represented by the following diagram, which is non-normative:</p>
+</div>
+<div class="imageblock"><div class="mermaid content" style="width: 100%; ">erDiagram
+    er["Endorser"] {
+        x509-cert signingCredential
+    }
+    em["Endorser’s C2PA manifest"] {
+        assertions anyAssertions
+        cose-sig claimSignature
+    }
+    oa["Endorser’s C2PA asset"] {
+        c2pa-manifest manifest
+    }
+    e["Endorsement"] {
+        der endorseeCredential
+        date notValidBefore
+        date notValidAfter
+        cose-sig endorsementSignature
+    }
+    ee["Endorsee"] {
+        x509-cert signingCredential
+    }
+
+    er ||--|| em: "creates and signs"
+    er ||--|| e: "creates and signs"
+    em ||--|| oa: "describes"
+    e ||--|| ee: "identifies"</div></div>
+</div>
+<div class="sect2">
+<h3 id="_endorsee_workflow"><a class="anchor" href="#_endorsee_workflow"></a>4.2. Endorsee workflow</h3>
+<div class="paragraph">
+<p>An <em><a href="#_endorsee">endorsee</a>,</em> once in possession of a <em><a href="#_c2pa_asset">C2PA asset</a></em> and an <em><a href="#_endorsement">endorsement</a></em> signed by the same <em><a href="#_actor">actor</a></em> that signed the <em><a href="#_c2pa_asset">C2PA asset’s</a></em> <em><a href="#_c2pa_manifest">C2PA Manifest</a>,</em> MAY choose to perform one or more of the actions permitted in <a href="#_permitted_actions">Section 4.3, &#8220;Permitted actions&#8221;</a>, and describe those actions in a new <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The <em><a href="#_endorseee">endorsee</a></em> MAY include the <em><a href="#_endorsement">endorsement</a></em> by adding an <strong>endorsement assertion</strong> in the new <em><a href="#_c2pa_manifest">C2PA Manifest</a>’s</em> assertion store.</p>
+</div>
+<div class="paragraph">
+<p>Before generating an <strong>endorsement assertion,</strong> the <em><a href="#_endorsee">endorsee</a></em> MUST ensure that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>exactly one <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_actions"><code>c2pa.actions</code> assertion</a> exists in the <em><a href="#_c2pa_manifest">C2PA Manifest</a>,</em></p>
+</li>
+<li>
+<p>only the actions listed under <a href="#_permitted_actions">Section 4.3, &#8220;Permitted actions&#8221;</a> are present in the actions assertion,</p>
+</li>
+<li>
+<p>exactly one <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_ingredient">ingredient assertion</a> is present in the assertion store, and,</p>
+</li>
+<li>
+<p>that ingredient is the one referenced by the actions assertion’s <code>parameters.ingredient</code> field.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>endorsement assertion</strong> MUST have a label of <code>cawg.endorsement</code>. The assertion contents MUST be a <code>COSE_Sign1_Tagged</code> structure that is created as defined in <a href="#_endorsement_cose_payload">Section 4.4, &#8220;Endorsement COSE payload&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>There MUST NOT be more than one <strong>endorsement assertion</strong> in any <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The relationship between the <em><a href="#_endorser">endorser’s</a></em> <em><a href="#_c2pa_asset">C2PA asset</a></em> and the <em><a href="#_endorsee">endorsee’s</a></em> <em><a href="#_c2pa_asset">C2PA asset</a></em> is illustrated by the following diagram, which is non-normative:</p>
+</div>
+<div class="imageblock"><div class="mermaid content" style="width: 100%; ">erDiagram
+    oa["Endorser’s C2PA asset"] {
+        c2pa-manifest manifest
+    }
+    aa["Actions assertion"] {
+        list actionsPerformed
+    }
+    ia["Ingredient assertion"] {
+        ref endorsersAsset
+    }
+    e["Endorsement"] {
+        any endorseeCredential
+        date notValidBefore
+        date notValidAfter
+        cose-sig endorsementSignature
+    }
+    ea["Endorsement assertion"] {
+        ref endorsement
+    }
+    ee["Endorsee"] {
+        x509-cert signingCredential
+    }
+    eas["Endorsee’s C2PA asset"] {
+        c2pa-manifest manifest
+    }
+    eem["Endorsee’s C2PA manifest"] {
+        assertion ingredients
+        assertion actions
+        assertion endorsement
+        cose-sig claimSignature
+    }
+
+    oa ||--|| ia: "referenced by"
+    ee ||--|| eem: "creates and signs"
+    ee ||--|| aa: "creates"
+    e ||--|| ea: "included in"
+    aa ||--|| eem: "included in"
+    ia ||--|| eem: "included in"
+    ea ||--|| eem: "included in"
+    eem ||--|| eas: "describes"
+</div></div>
+</div>
+<div class="sect2">
+<h3 id="_permitted_actions"><a class="anchor" href="#_permitted_actions"></a>4.3. Permitted actions</h3>
+<div class="paragraph">
+<p>The <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_actions"><code>c2pa.actions</code> assertion</a> in a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> containing an <strong>endorsement assertion</strong> MAY contain any of the following action codes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>c2pa.published</code></p>
+</li>
+<li>
+<p><code>c2pa.transcoded</code></p>
+</li>
+<li>
+<p><code>c2pa.repackaged</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The actions assertion MUST NOT contain any other action codes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_endorsement_cose_payload"><a class="anchor" href="#_endorsement_cose_payload"></a>4.4. Endorsement COSE payload</h3>
+<div class="paragraph">
+<p><em><a href="#_endorsement">Endorsements</a></em> are COSE objects (see <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_digital_signatures">Section 13.2, “Digital Signatures,” of the C2PA 2.0 Technical Specification</a>), where the COSE payload is an “endorsement target” data structure encoded as CBOR, as shown below. The <code>endorseeCredential</code> field is an object with a single field, labelled according to the type of credential used to sign the <em><a href="#_endorsement">endorsement</a>.</em> The label of this field indicates to validators the type of the credential present, so that they know how to decode, parse and validate the credential correctly. The following table details the format of each of the currently specified credential types:</p>
+</div>
+<div class="sect3">
+<h4 id="_endorsement_credential_types"><a class="anchor" href="#_endorsement_credential_types"></a>4.4.1. Endorsement credential types</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Credential name</th>
+<th class="tableblock halign-left valign-top">CBOR label</th>
+<th class="tableblock halign-left valign-top">Value type</th>
+<th class="tableblock halign-left valign-top">Compares To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserved <em>(deprecated)</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This CBOR label was used in <a href="https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_endorsement_credential_types">a prior version of the endorsement assertion specification</a> and should no longer be used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">X.509 Certificate Hash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A SHA-256 hash of the <em>endorsee’s</em> X.509 certificate chain that will be used for signing the claims of <em><a href="#_c2pa_asset">C2PA assets</a></em> that this <em><a href="#_endorsement">endorsement</a></em> is expected to be used with.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the credential shall be compared (bitwise identical) to a SHA-256 hash of the entire certificate chain located in the <code>x5chain</code> or <code>33</code> (integer) COSE header of the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> claim signature. (See <a href="https://c2pfa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#x509_certificates">Section 14.6, “X.509 Certificates,” of the C2PA 2.0 Technical Specification</a>.)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em><a href="#_endorser">Endorsers</a></em> SHALL place the credential of the signer they are endorsing (the <em><a href="#_endorsee">endorsee</a></em>) and its type in the <code>endorseeCredential</code>. To limit the length of time that an <em><a href="#_endorser">endorser</a></em> is lending their <em><a href="#_endorsement">endorsement</a></em> to the <em><a href="#_endorsee">endorsee</a>,</em> the <code>notValidBefore</code> and <code>notValidAfter</code> fields MUST contain ISO 8601 date times.</p>
+</div>
+<div class="paragraph">
+<p>The schema for the endorsement target type is defined by the <code>endorsement-target-map</code> rule in the following <a href="https://datatracker.ietf.org/doc/html/rfc8610">CDDL Definition</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cddl hljs" data-lang="cddl">endorsement-target-map = {
+  "endorseeCredential" : public-credential, ; a DER-encoded SubjectPublicKeyInfo containing the public key
+  "notValidBefore": tdate, ; the date-time that this endorsement valid from; before this time it is not valid
+  "notValidAfter": tdate ; the date-time that this endorsement expires and is no longer valid
+  ? "metadata": $assertion-metadata-map, ; additional information about the assertion
+}
+
+public-credential = {
+  $credential-type: any ; an extensible field allowing the specification of the credential payload
+}
+
+$credential-type /= 1 ; credentials with this type are a DER-encoded ASN.1 SubjectPublicKeyInfo structure, as a bstr (specification text for usage)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An example endorsement target is shown below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "endorseeCredential": {
+    2: 'A SHA-256 hash of endorsee’s X.509 certificate chain'
+  },
+  "notValidBefore": 0("2021-03-21T20:04:00Z"),
+  "notValidAfter": 0("2022-03-21T20:04:00Z")
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To sign an <em><a href="#_endorsement">endorsement</a>,</em> follow the procedure specified in <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_digital_signatures">Section 13.2, “Digital Signatures,” of the C2PA 2.0 Technical Specification</a>, using the serialised CBOR <code>endorsement-target</code> object as the contents of the payload field. An <em><a href="#_endorser">endorser</a></em> SHALL NOT include a <code>x5chain</code> header and value, as <em><a href="#_endorsement">endorsements</a></em> are validated in the context of their use as an ingredient, and therefore use the signing credential of that ingredient <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> (See <a href="#_validation">Section 5, &#8220;Validation&#8221;</a>.)</p>
+</div>
+<div class="paragraph">
+<p>The serialized <code>COSE_Sign1_Tagged</code> structure resulting from the digital signature procedure is the <em><a href="#_endorsement">endorsement</a></em> that MAY be conveyed to the <em><a href="#_endorsee">endorsee</a></em> identified in the <code>endorsement-target</code>, but the process for conveying it is out of scope of this specification.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validation"><a class="anchor" href="#_validation"></a>5. Validation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Validation of an <strong>endorsement assertion</strong> SHALL only be attempted if the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> first meets a number of conditions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>There is exactly one <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_actions">actions assertion</a> present in the assertion store.</p>
+</li>
+<li>
+<p>There is exactly one <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_ingredient">ingredient assertion</a>.</p>
+</li>
+<li>
+<p>There is exactly one <strong>endorsement assertion.</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For each <code>action</code> object in the <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_actions">actions assertion</a>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check that the <code>action</code> field is set to <code>c2pa.published</code>, <code>c2pa.transcoded</code>, or <code>c2pa.repackaged</code>. If any other action is present, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Check the <code>ingredient</code> field that is a member of the <code>parameters</code> object for the presence of a JUMBF URI. If the JUMBF URI is not present, or cannot be resolved to the related ingredient assertion, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Follow the JUMBF URI link in the <code>ingredient</code> field to the ingredient assertion. Check that the URI link resolves to the single ingredient assertion in the active <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> If it does not, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation. Check that the <code>relationship</code> field is <code>parentOf</code>. If it is not, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Check the <code>c2pa_manifest</code> field in the ingredient assertion for the presence of a hashed URI. If the hashed URI is not present, or cannot be resolved to a <em><a href="#_c2pa_manifest">C2PA Manifest</a>,</em> fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Follow the JUMBF URI link in the <code>c2pa_manifest</code> field to the ingredient’s <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> Ensure that this <em>ingredient</em> <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> has been validated according to <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_recursively_validating_integrity_of_ingredients">Section 15.8, “Recursively validating integrity of ingredients,” of the C2PA 2.0 Technical Specification</a>, but do not skip the establishing of signer credential trust. If it does not validate, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Validate the endorsement as described in <a href="https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_recursively_validating_integrity_of_ingredients">Section 15.4, “Validate the signature,” of the C2PA Technical Specification</a>, using the credential of the ingredient <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> signer. If a signing credential is present in the endorsement’s signature’s headers, it shall not be used for validation. If validation fails, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>Validate the <code>endorsement-target</code> payload itself, following the steps below:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Compare the <code>endorseeCredential</code> to the SHA-256 hash of the credential of the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> signer, according to the table found in <a href="#_endorsement_credential_types">Section 4.4.1, &#8220;Endorsement credential types&#8221;</a>. If the comparison fails, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>If the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> is timestamped, then the <em>time-stamp</em> must fall within the endorsement’s validity time range. If it does not, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+<li>
+<p>If the active <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> is not timestamped, then the <em>time of validation</em> must fall within the endorsement’s validity time range. If it does not, fail the <strong>endorsement assertion</strong> validation process for this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> and do not proceed with further validation.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If all steps above have been completed without failure, the <strong>endorsement assertion</strong> SHOULD be considered valid.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_history"><a class="anchor" href="#_version_history"></a>Appendix A: Version history</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>28 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Prepare 1.0-draft version, derived from final description of <a href="https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_endorsement_2">endorsement assertion in C2PA 1.4 Technical Specification</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>04 March 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Promoted from pre-draft to draft status.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>05 May 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Substantial rewrite, introducing the terms <em><a href="#_endorser">endorser</a></em> and <em><a href="#_endorsee">endorsee</a>,</em> and clarifying the workflow for each role.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>14 April 2025</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Transition to DIF draft specification.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

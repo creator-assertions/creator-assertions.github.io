@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>11 March 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-03-11/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">11 March 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=fRXVg5cGdLY">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andy Parsons, Adobe</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Carly Huitema, U of Guelph</p>
+</li>
+<li>
+<p>Chris Staines, Arkeytyp</p>
+</li>
+<li>
+<p>Christian Paquin, Microsoft</p>
+</li>
+<li>
+<p>Drummond Reed, Gen Digital</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Jacques Latour, CIRA</p>
+</li>
+<li>
+<p>Jesse Carter, CIRA</p>
+</li>
+<li>
+<p>Judith Fleenor, Trust Over IP Foundation</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Leonard Rosenthol, Adobe</p>
+</li>
+<li>
+<p>Lindsay Walker, Starling Labs</p>
+</li>
+<li>
+<p>Michael Klein, Adobe</p>
+</li>
+<li>
+<p>Orie Steele, Transmute</p>
+</li>
+<li>
+<p>Orson Weems, FileBaby</p>
+</li>
+<li>
+<p>Patrick Boehler</p>
+</li>
+<li>
+<p>Paul England, Microsoft</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Peter Carrescia, Confirm Identity</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+<li>
+<p>(unknown, via mobile)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_agenda"><a class="anchor" href="#_agenda"></a>Agenda</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_5_min_start_meeting"><a class="anchor" href="#_5_min_start_meeting"></a>5 min: Start meeting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Start recording</p>
+</li>
+<li>
+<p>Welcome and community specification license reminder</p>
+</li>
+<li>
+<p>Agenda review and call for agenda items</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_new_members_introduction"><a class="anchor" href="#_5_min_new_members_introduction"></a>5 min: New members introduction</h3>
+<div class="paragraph">
+<p>🎥 <em>1'40":</em> New to this meeting:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Patrick Boehler, independent consultant</p>
+</li>
+<li>
+<p>Judith Fleenor, Trust Over IP Foundation</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_action_item_update"><a class="anchor" href="#_5_min_action_item_update"></a>5 min: Action item update</h3>
+<div class="paragraph">
+<p>🎥 <em>3'18":</em> From previous meeting, most items will carry over to this week:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/41">Issue #41: Privacy when verifying VCs</a> – Eric to call subgroup meeting. CARRY OVER.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/42">Issue #42: Add a Slack or Discord channel for this group</a> – CARRY OVER.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/43">Issue #43: Create an e-mail list for this group&#8217;s discussions</a> – CARRY OVER.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/44">Issue #44: Review presentation with key binding</a> – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley. – CARRY OVER.</p>
+</li>
+<li>
+<p><span class="line-through"><a href="https://github.com/creator-assertions/identity-assertion/pull/59">PR #59: Create <code>1.0-draft</code> version of the identity assertion specification</a></span> – DONE (received the required approvals and was merged).</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pull/60">PR #60: Create <code>1.x-add-w3c-vc</code> version of the identity assertion specification</a> - UPDATED (re-review later in this meeting)</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pull/69">PR #69: Resolve discussion about EKU requirements</a> – UPDATED (review later in this meeting)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_invitation_to_review_drafts"><a class="anchor" href="#_5_min_invitation_to_review_drafts"></a>5 min: Invitation to review drafts</h3>
+<div class="paragraph">
+<p>🎥 <em>7'12":</em> <strong>DISCUSSION:</strong> As per Community Specification License process <a href="https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process">§4: Specification development process</a>, I intend to submit the following three assertion specifications for working group approval (currently in draft status) in the 18 March 2024 meeting:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../endorsement/1.0-draft/" class="xref page">Endorsement Assertion</a></p>
+</li>
+<li>
+<p><a href="../../../metadata/1.2-draft/" class="xref page">Metadata Assertion</a></p>
+</li>
+<li>
+<p><a href="../../../training-and-data-mining/1.1/" class="xref page">Training and Data Mining Assertion</a></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>4.2. Draft. Each Pre-Draft document of a Working Group must first be Approved to become a “Draft Specification.” Once the Working Group approves a document as a Draft Specification, the Draft Specification becomes the basis for all going forward work on that specification.</p>
+</div>
+<div class="paragraph">
+<p>4.3. Working Group Approval. Once a Working Group believes it has achieved the objectives for its specification as described in the Scope, it will Approve that Draft Specification and progress it to “Approved Specification” status.</p>
+</div>
+</blockquote>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_20_min_icann79_report"><a class="anchor" href="#_20_min_icann79_report"></a>20 min: ICANN79 report</h3>
+<div class="paragraph">
+<p>🎥 <em>8'14":</em> Jacques Latour (CIRA) shared a brief overview of the presentation that he, Darrell O’Donnell (Continuum Loop), Eric Scouten (Adobe), and Mathieu Glaude (Northern Block), delivered at the ICANN79 Community Forum. Our discussion centered around the theme of Digital Trust, exploring its various facets and implications. Details here: <a href="https://icann79.sched.com/event/1a1CA/dnssec-and-security-workshop-1-of-3">ICANN79: DNSSEC and Security Workshop</a> and the <a href="https://icann.zoom.us/rec/play/DiYksDbrHJzQur91OBZmKwQL_ymxlKE1SPoSNXemWTrA0YSWtPE82CeYpWFGWa0NuMsyIACAPJTDQdoy.91PmUn7weO9Y26wt?canPlayFromShare=true&amp;from=share_recording_detail&amp;startTime=1709745304000&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Ficann.zoom.us%2Frec%2Fshare%2FtgQRWJcqsyp0QoTP_oZ3rq5mgqwPCiaWP2BVtGA5k4tOrZPcVZDOHeYx5NMnTQgh.qXXceOvRIMqBxhd0%3FstartTime%3D1709745304000">recording is here</a>.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a quick summary of what we covered:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The Path to Digital Trust Through Technical and Human Trust:</strong> We kicked off our presentation by discussing how both technical mechanisms and human factors contribute to establishing digital trust. (Starts at the 0-minute mark)</p>
+</li>
+<li>
+<p><strong>Content Authenticity: How to Trust Content Origin:</strong> Next, we delved into the importance of verifying the origin of digital content as a means to ensure its authenticity. (Begins at the 11-minute mark)</p>
+</li>
+<li>
+<p><strong>How Trust Registries Prevent Fraud, Scams, and Abuse:</strong> We also explored the role of trust registries in mitigating risks associated with fraud, scams, and abuse online. (Discussed at the 36-minute mark)</p>
+</li>
+<li>
+<p><strong>Closing Thoughts and Q&amp;A from Forum Attendees:</strong> We concluded with a session for closing thoughts and addressed questions from the attendees, fostering an engaging dialogue on digital trust. (Concludes at the 56-minute mark)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We understand that achieving digital trust is a multifaceted effort, not limited to a single solution. It&#8217;s our belief that ongoing discussions across diverse communities are essential for exploring the wide range of tools and strategies at our disposal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_follow_up_on_eku_restriction_discussion"><a class="anchor" href="#_5_min_follow_up_on_eku_restriction_discussion"></a>5 min: Follow-up on EKU restriction discussion</h3>
+<div class="paragraph">
+<p>🎥 <em>13'41":</em> As requested in previous meeting, I raised <a href="https://github.com/creator-assertions/identity-assertion/pull/69">PR #69: Resolve discussion about EKU requirements</a> to close the discussion on EKU restrictions. Review and move to approve and merge.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Group members, please review and approve or comment.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_30_min_review_open_issues_for_identity_1_0_milestone"><a class="anchor" href="#_30_min_review_open_issues_for_identity_1_0_milestone"></a>30 min: Review open issues for identity 1.0 milestone</h3>
+<div class="paragraph">
+<p>🎥 <em>14'01":</em> There are <a href="https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.0">13 open issues</a> that I&#8217;ve flagged as potentially relevant for the 1.0 version of the identity specification. Review these issues and make a plan for resolving them.</p>
+</div>
+<div class="paragraph">
+<p>Reviewed the following issues:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>🎥 <em>14'44":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/68">#68: Is the ID assertion TBS-data expressive enough?</a>&#8201;&#8212;&#8201;<strong>ACTION:</strong> Scouten to revise data structure to include a map as per Paul&#8217;s suggestion.</p>
+</li>
+<li>
+<p>🎥 <em>18'10":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/26">#26: Describe credential holder’s role in relation to the asset</a>&#8201;&#8212;&#8201;<strong>ACTION:</strong> Review W3C VC version 2 (as previously commented in GH issue).</p>
+</li>
+<li>
+<p>🎥 <em>23'45":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/67">#67: Bidirectional binding of identity assertions and claims</a>&#8201;&#8212;&#8201;<strong>ACTION:</strong> Paul England to propose wording once revised data structure in #68 is available.</p>
+</li>
+<li>
+<p>🎥 <em>30'57":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/66">#66: Lots of unnecessary hashing for identity assertions</a>&#8201;&#8212;&#8201;<strong>DECISION:</strong> Not a blocker; reconsider after 1.0 specification.</p>
+</li>
+<li>
+<p>🎥 <em>40'16":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/65">#65: Identity signers cannot sign "dc:title"</a>&#8201;&#8212;&#8201;<strong>DECISION:</strong> After discussion, this issue was withdrawn.</p>
+</li>
+<li>
+<p>🎥 <em>43'37":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/64">#64: Timestamping an identity assertion is not supported</a>&#8201;&#8212;&#8201;<strong>DECISION:</strong> Not relevant for X.509 case because RFC 3161 countersignatures are supproted/encouraged. Moved this to W3C VC milestone, where it is relevant.</p>
+</li>
+<li>
+<p>🎥 <em>45'44":</em> <a href="https://github.com/creator-assertions/identity-assertion/issues/63">#63: Possible interaction in "multiple step processing"</a>&#8201;&#8212;&#8201;<strong>ACTION:</strong> Scouten to draft PR with improved wording.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_impromptu_discussions"><a class="anchor" href="#_impromptu_discussions"></a>Impromptu discussions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>🎥 <em>48'35":</em> Impromptu discussion about signatures and C2PA trust list. Referred the trust list discussion to C2PA TWG and Trust List TF.</p>
+</li>
+<li>
+<p>🎥 <em>52'07":</em> Impromptu discussion about pluggable identity mechanisms and how CAWG will prioritize.</p>
+</li>
+<li>
+<p>🎥 <em>56'46":</em> Christian Paquin has updated his proposal for <a href="https://github.com/christianpaquin/c2pa-explorations/blob/main/web-domain-trust-anchor/web-domain-trust-anchor.md">Web domain trust anchor identity</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_10_min_review_1_x_add_w3c_vc_version_of_specification"><a class="anchor" href="#_10_min_review_1_x_add_w3c_vc_version_of_specification"></a>10 min: Review <code>1.x-add-w3c-vc</code> version of specification</h3>
+<div class="paragraph">
+<p><span class="line-through">Re-review <a href="https://github.com/creator-assertions/identity-assertion/pull/60">PR #60</a>, which creates a post-1.0 version of the specification with W3C VCs. Updated per @OR13 feedback.</span> Did not cover in today&#8217;s meeting.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_closing_and_review"><a class="anchor" href="#_5_min_closing_and_review"></a>5 min: Closing and review</h3>
+<div class="paragraph">
+<p>Invitation to subsequent meetings, which will typically be on Mondays.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
