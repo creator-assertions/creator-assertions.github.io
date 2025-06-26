@@ -56,9 +56,6 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
     - name: Download Preview Artifact
       uses: actions/download-artifact@v4
       with:
