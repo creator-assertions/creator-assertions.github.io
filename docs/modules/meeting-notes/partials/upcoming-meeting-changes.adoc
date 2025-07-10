@@ -1,3 +1,4 @@
+////
 [IMPORTANT] 
 .Upcoming schedule changes
 ==== 
@@ -5,3 +6,4 @@ The following meetings will deviate from the usual Monday schedule:
  
 *30 June 2025* instance cancelled.
 ====
+////

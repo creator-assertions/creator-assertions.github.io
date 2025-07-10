@@ -1,0 +1,62 @@
+= 14 July 2025
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and membership information.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+Action items xref:2025-06-16-na-eu.adoc[from previous meeting]:
+
+*ACTION:* Eric to coordinate with DIF GitHub owners to re-tag the 1.1 versions of the specs with language that reflects final status. → DONE
+
+*ACTION:* Eric to work with team at Adobe and CAI team to design new landing page content. → NOT DONE. Resuming effort later today.
+
+*ACTION:* Eric and Leonard to organize an initial C2PA ecosystem meeting. → NOT DONE. Eric to follow up with Leonard later this week.
+
+*ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. → UNDERWAY. Will discuss later in agenda.
+
+=== Readout from GDC
+
+Scott will give a readout from GDC earlier this month.
+
+=== Scope for identity assertion 1.2 effort
+
+There are link:https://github.com/decentralized-identity/cawg-identity-assertion/milestone/10[38 open issues and one pull request] against the `post-1.1` milestone for identity assertion. Prioritize issues to pull into 1.2 effort.
+
+=== Agentic identity discussion
+
+Tentatively planning to use next meeting (28 July) for a scope-of-work discussion for agentic identity within CAWG with invited guests from ToIP (Wenjing Chu), DIF (Andor Kesselman), and C2PA (Leonard Rosenthol and Karen Kilroy). Goal: Establish boundary between CAWG effort vs C2PA AI/ML working group. Anyone else we should invite?
+
+=== CAWG home page redo
+
+At NY on-site discussion last month, the CAWG home page was identified as a concern. It doesn't do much to _market_ or explain the CAWG effort. What would we like to say at cawg.io?
+
+=== Review open issues for training and data mining assertion
+
+Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.
+
+=== Review metadata assertion PR #5: Add media identifiers appendix
+
+Review link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers appendix].
+
+Still in draft, but looking for guidance and feedback.
+
+=== Continue APAC meetings?
+
+Low attendance at APAC meetings. Should we cancel?
