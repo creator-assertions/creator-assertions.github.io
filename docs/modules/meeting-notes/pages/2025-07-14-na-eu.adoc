@@ -1,0 +1,100 @@
+= 14 July 2025 (NA/EU)
+
+https://us02web.zoom.us/rec/share/7x-IeZpbe6DcQnNnq-6TWKe4B0_Hxl1tKBWVamljWb1fF2KB0NkLiwQ5zJBclh9x.KlncfbB7crly4ghQ[Meeting recording] (1h29m)
+
+== Attendees
+
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Juan Caballero, DIF
+* Kim Hamilton Duffy, DIF
+* Luke Nispel, OriginVault
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _6'18":_ Nigel Earnshaw, BBC
+
+=== Review previous action items
+
+🎥 _6'51":_ Reviewed action items xref:2025-06-16-na-eu.adoc[from previous meeting]:
+
+*ACTION:* Eric to coordinate with DIF GitHub owners to re-tag the 1.1 versions of the specs with language that reflects final status. → DONE
+
+*ACTION:* Eric to work with team at Adobe and CAI team to design new landing page content. → NOT DONE. Resuming effort later today.
+
+*ACTION:* Eric and Leonard to organize an initial C2PA ecosystem meeting. → NOT DONE. Eric to follow up with Leonard later this week.
+
+*ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. → UNDERWAY. Will discuss later in agenda.
+
+=== Readout from GDC
+
+🎥 _9'01":_ Scott provided a detailed overview from the link:https://globaldigitalcollaboration.org[Global Digital Collaboration] (GDC) conference held earlier this month.
+
+Scott participated in discussions about trust infrastructure, standards, and AI. The event, which attracted over 1000 attendees and 46 standards organizations, covered topics including eIDAS wallet requirements, agentic AI, and the C2PA conformance program. Scott reported significant interest from various stakeholders, including EU trust services companies and Web Trust, and mentioned upcoming meetings in September to explore collaboration opportunities.
+
+We continue to fight the misperception that human and organizational identity are part of the C2PA core specification and not hosted here in DIF/CAWG.
+
+=== Scope for identity assertion 1.2 effort
+
+🎥 _25'29":_ There are link:https://github.com/decentralized-identity/cawg-identity-assertion/milestone/10[38 open issues and one pull request] against the `post-1.1` milestone for identity assertion. Prioritize issues to pull into 1.2 effort.
+
+Reviewed the following identity assertion issues and PRs:
+
+* 🎥 _28'57":_ link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/212[Issue #212: Moving towards a stronger model for named actor signatures] → Moved to 1.2 milestone. Assigned to Alex and Andrew to lead discussion.
+* 🎥 _33'50":_ link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/216[Issue #216: Adding identity hooks for enhanced privacy and consistency] → Moved to 1.2 milestone. Assigned to Andrew to lead discussion.
+* 🎥 _36'47":_ link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/66[Issue #66: Lots of unnecessary hashing for identity assertions] → Closed as not planned.
+* 🎥 _38'31":_ There are several open issues related to levels of assurance. Merged as follows:
+** link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/172[Issue #172: Level of assurance?] → Closed in favor of #213.
+** link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/213[Issue #213: Add level of assurance and source of LoA fields to identity assertion container] → Moved to 1.2 milestone and assigned to Scott Perry to lead discussion.
+** link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/32[Issue #32: Levels of assurance for subject credentials?] → Closed in favor of #213.
+** link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/213[Issue #214: Devise a CAWG level of assurance scheme attributable to identity aggregators] → Not in scope for 1.2. Moved to new `post-1.2` milestone.
+* 🎥 _49'37":_ link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/51[Issue #51: Support mDL as an additional credential type?] → Moved to 1.2 milestone. Assigned to Andrew to lead discussion.
+
+=== Agentic identity discussion
+
+🎥 _53'51":_ *CONFIRMED* planning to use next meeting (28 July) for a scope-of-work discussion for agentic identity within CAWG with invited guests from ToIP (Wenjing Chu), DIF (Andor Kesselman), and C2PA (Leonard Rosenthol and Karen Kilroy). Goal: Establish boundary between CAWG effort vs C2PA AI/ML working group.
+
+Alex reminds us to also consider trust registries for agentic and other identities, especially looking at the UNTP, UN Global Trust Registry, and EBSI.
+
+Scott filed link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/236[issue #236] to track delegation as part of a future identity assertion spec.
+
+=== CAWG home page redo
+
+🎥 _1h07'54":_ At NY on-site discussion last month, the CAWG home page was identified as a concern. It doesn't do much to _market_ or explain the CAWG effort. What would we like to say at cawg.io?
+
+Promotional video. *ACTION:* Eric to explore whether we can use the link:https://www.okta.com/blog/2025/03/announcing-the-2025-identity-25-highlighting-a-community-of-digital-identity/[Okta Identity 25 video profile]. Members feel that this is an excellent high-level overview of CAWG.
+
+*ACTION:* Scott to work up initial draft text to use on CAWG home page.
+
+*GOAL:* Have content ready by first of September due to various conferences and presentation opportunities occurring in September.
+
+=== Review open issues for training and data mining assertion
+
+*DEFERRED due to lack of time.*
+
+Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.
+
+=== Review metadata assertion PR #5: Add media identifiers appendix
+
+*DEFERRED due to lack of time.*
+
+Review link:https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers appendix].
+
+Still in draft, but looking for guidance and feedback.
+
+=== Continue APAC meetings?
+
+Low attendance at APAC meetings. Should we cancel?
+
+*ACTION:* Eric to conduct APAC meeting today and propose ending the series except by special request.
