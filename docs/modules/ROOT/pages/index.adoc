@@ -17,9 +17,9 @@ These assertions are specified by the following documents:
 
 As of March 2025, CAWG is a working group within the link:https://identity.foundation[Decentralized Identity Foundation (DIF)]. CAWG operates under a link:https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement], which means that contributions to the CAWG specifications and attendance at CAWG meetings are open to:
 
-* DIF members (link:https://identity.foundation/join/[join here])
-* link:https://trustoverip.org[Trust Over IP Foundation] members
-* Signatories of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025
+* DIF members (link:https://identity.foundation/join/[join here]).
+* link:https://trustoverip.org[Trust Over IP Foundation] members.
+* Signatories of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025.
 
 Participants from included organizations may join CAWG without additional fees, provided they sign DIF’s intellectual property rights agreement.
 
@@ -47,4 +47,4 @@ include::meeting-notes:partial$upcoming-meeting-changes.adoc[]
 
 === Meeting notes
 
-Meeting notes and agendas for upcoming meetings are published xref:meeting-notes:index.adoc[here].
+For meeting notes and  upcoming meeting agendas, see xref:meeting-notes:index.adoc[Meeting notes].
