@@ -1,0 +1,3153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Identity Assertion :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/identity/1.1/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="identity" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Identity Assertion</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="../1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../1.1/">1.1</a>
+        </li>
+        <li class="version is-current">
+          <a href="./">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.0</button>
+  <div class="version-menu">
+    <a class="version" href="../1.1/">1.1</a>
+    <a class="version is-current" href="./">1.0</a>
+  </div>
+</div>
+<div class="edit-this-page"><a href="https://github.com/decentralized-identity/cawg-identity-assertion/blob/v1.0/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Identity Assertion</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html"><strong>C2PA technical specification</strong></a> allows <em><a href="#_actor">actors</a></em> in a workflow to make cryptographically signed <em><a href="#_c2pa_assertion">assertions</a></em> about the produced <em><a href="#_c2pa_asset">C2PA asset</a>.</em> This signature is issued by the vendor whose software or hardware was used to create the <em><a href="#_c2pa_assertion">C2PA assertions</a></em> and the <em><a href="#_c2pa_claim">C2PA claim</a>,</em> which is why it is called the <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>This specification describes a <em><a href="#_c2pa_assertion">C2PA assertion</a></em> referred to here as the <strong><a href="#_identity_assertion">identity assertion</a></strong> that can be added to a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> to enable a <em><a href="#_credential_holder">credential holder</a></em> to prove control over a digital identity and to use that identity to document the <em><a href="#_named_actor">named actor’s</a></em> role(s) in the <em><a href="#_c2pa_asset">C2PA asset</a>’s</em> lifecycle.</p>
+</div>
+<div class="paragraph">
+<p><strong>Version 1.0 Approved 09 September 2024</strong> · <a href="#_version_history">Version history</a></p>
+</div>
+<div id="maintainers" class="paragraph">
+<p><strong>Maintainers:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="mailto:scouten@adobe.com">Eric Scouten</a> (<a href="https://adobe.com">Adobe</a>)</p>
+</li>
+</ul>
+</div>
+<h2 id="_license" class="discrete">License</h2>
+<div class="paragraph">
+<p>This specification is subject to the <a href="https://github.com/CommunitySpecification/1.0">Community Specification License 1.0</a>.</p>
+</div>
+<div class="paragraph">
+<p>Additional information about this specification&#8217;s scope and governance can be found at the project’s <a href="https://github.com/creator-assertions/identity-assertion">GitHub repository (creator-assertions/identity-assertion)</a>. The Community Specification License documents at the root of that repository are the authoritative governance documents for this specification.</p>
+</div>
+<h2 id="_contributing" class="discrete">Contributing</h2>
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p>This publicly available specification was approved by the Creator Assertions Working Group on 09 September 2024.</p>
+</div>
+<div class="paragraph">
+<p>If you wish to contribute to the development of a future version of this specification, you are invited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://creator-assertions.github.io/index.html#_contributing">Read the CAWG contributing guide</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues">File an issue for discussion</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/pulls">File a pull request (suggested revision)</a></p>
+</li>
+<li>
+<p><a href="https://creator-assertions.github.io/index.html#_meeting_schedule">Attend a working group meeting</a></p>
+</li>
+<li>
+<p><a href="#maintainers">Contact one of the maintainers directly</a></p>
+</li>
+</ul>
+</div>
+<h2 id="_foreword" class="discrete">Foreword</h2>
+<div class="paragraph">
+<p>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. No party shall not be held responsible for identifying any or all such patent rights.</p>
+</div>
+<div class="paragraph">
+<p>Any trade name used in this document is information given for the convenience of users and does not constitute an endorsement.</p>
+</div>
+<div class="paragraph">
+<p>This document was prepared by the Creator Assertions Working Group.</p>
+</div>
+<div class="paragraph">
+<p>Known patent licensing exclusions are available in the <a href="https://github.com/creator-assertions/identity-assertion/blob/main/notices.md">specification’s <code>notices.md</code> file</a>.</p>
+</div>
+<div class="paragraph">
+<p>Any feedback or questions on this document should be directed to the <a href="https://github.com/creator-assertions/identity-assertion">specifications repository (GitHub: creator-assertions/identity-assertion)</a>.</p>
+</div>
+<div class="paragraph">
+<p>THESE MATERIALS ARE PROVIDED “AS IS.” The Contributors and Licensees expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user. IN NO EVENT WILL THE CONTRIBUTORS OR LICENSEES BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS DELIVERABLE OR ITS GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER MEMBER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div>
+<h2 id="_table_of_contents" class="discrete">Table of contents</h2>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_scope">1.1. Scope</a></li>
+<li><a href="#_c2pa_technical_specification">1.2. C2PA technical specification</a></li>
+<li><a href="#_trust_over_ip_technical_architecture">1.3. Trust over IP technical architecture</a></li>
+<li><a href="#_conceptual_overview">1.4. Conceptual overview</a></li>
+<li><a href="#_use_cases_and_examples">1.5. Use cases and examples</a></li>
+</ul>
+</li>
+<li><a href="#_normative_references">2. Normative references</a></li>
+<li><a href="#_terms_and_definitions">3. Terms and definitions</a>
+<ul class="sectlevel2">
+<li><a href="#_concepts_adapted_from_c2pa_technical_specification">3.1. Concepts adapted from C2PA technical specification</a></li>
+<li><a href="#_other_concepts">3.2. Other concepts</a></li>
+</ul>
+</li>
+<li><a href="#_standard_terms">4. Standard terms</a></li>
+<li><a href="#_assertion_definition">5. Assertion definition</a>
+<ul class="sectlevel2">
+<li><a href="#_overview">5.1. Overview</a></li>
+<li><a href="#_cbor_schema">5.2. CBOR schema</a></li>
+</ul>
+</li>
+<li><a href="#_creating_the_identity_assertion">6. Creating the identity assertion</a>
+<ul class="sectlevel2">
+<li><a href="#_presenting_the_signer_payload_data_structure_for_signature">6.1. Presenting the <code>signer_payload</code> data structure for signature</a></li>
+<li><a href="#_creating_the_assertion">6.2. Creating the assertion</a></li>
+<li><a href="#_interaction_with_data_hash_assertion">6.3. Interaction with data hash assertion</a></li>
+</ul>
+</li>
+<li><a href="#_validating_the_identity_assertion">7. Validating the identity assertion</a>
+<ul class="sectlevel2">
+<li><a href="#_validation_method">7.1. Validation method</a></li>
+<li><a href="#_status_codes">7.2. Status codes</a></li>
+</ul>
+</li>
+<li><a href="#_credentials_signatures_and_validation_methods">8. Credentials, signatures, and validation methods</a>
+<ul class="sectlevel2">
+<li><a href="#_w3c_verifiable_credentials">8.1. W3C verifiable credentials</a></li>
+<li><a href="#_x_509_certificates_and_cose_signatures">8.2. X.509 certificates and COSE signatures</a></li>
+</ul>
+</li>
+<li><a href="#_trust_model">9. Trust model</a>
+<ul class="sectlevel2">
+<li><a href="#_what_does_trust_mean">9.1. What does trust mean?</a></li>
+<li><a href="#_technical_trust_introduction">9.2. Technical trust introduction</a></li>
+<li><a href="#_trust_scenarios_in_identity_assertion">9.3. Trust scenarios in identity assertion</a></li>
+<li><a href="#_threats_to_trust_model">9.4. Threats to trust model</a></li>
+</ul>
+</li>
+<li><a href="#_user_experience">10. User experience</a>
+<ul class="sectlevel2">
+<li><a href="#_approach">10.1. Approach</a></li>
+<li><a href="#_public_review_feedback_and_evolution">10.2. Public review, feedback, and evolution</a></li>
+</ul>
+</li>
+<li><a href="#_version_history">Appendix A: Version history</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="sect2">
+<h3 id="_scope"><a class="anchor" href="#_scope"></a>1.1. Scope</h3>
+<div class="paragraph">
+<p>This specification describes a <em><a href="#_c2pa_assertion">C2PA assertion</a></em> that allows a <em><a href="#_named_actor">named actor</a></em> to document their relationship to a <em><a href="#_c2pa_asset">C2PA asset</a></em> produced by them or on their behalf independently from the <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>,</em> and to allow <em><a href="#_identity_assertion_consumer">consumers</a></em> of a <em><a href="#_c2pa_asset">C2PA asset</a></em> to independently verify that the received asset was in fact produced by the <em><a href="#_named_actor">named actor</a></em> and has not been tampered with.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+For purposes of the Community Specification License, the <a href="https://github.com/creator-assertions/identity-assertion/blob/main/scope.md">scope.md document</a> at the root of this project’s GitHub repository is the governing document of this specification’s scope.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This specification draws upon and extends existing work from two standards organizations:</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_c2pa_technical_specification"><a class="anchor" href="#_c2pa_technical_specification"></a>1.2. C2PA technical specification</h3>
+<div class="paragraph">
+<p>The <a href="https://c2pa.org">Coalition for Content Provenance and Authenticity (C2PA)</a> has developed a <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html">technical specification</a> for providing content provenance and authenticity. It is designed to enable global, opt-in, adoption of digital provenance techniques through the creation of a rich ecosystem of digital provenance enabled applications for a wide range of individuals and organizations while meeting appropriate security requirements.</p>
+</div>
+<div class="paragraph">
+<p>The C2PA technical specification allows other standards bodies to define additional metadata that can be incorporated into a <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> These statements come in the form of a <em><a href="#_c2pa_assertion">C2PA assertion</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>This specification describes a specific <em><a href="#_c2pa_assertion">C2PA assertion</a></em> that can be added to a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> to allow an <em><a href="#_actor">actor</a></em> to prove control over an digital identity and to bind that identity to a <em><a href="#_c2pa_asset">C2PA asset</a></em> (and, at their option, one or more <em><a href="#_c2pa_assertion">C2PA assertions</a></em>) produced by them or on their behalf.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This document references <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html">version 2.1 of the C2PA technical specification</a>, but it is compatible with all prior versions of the specification. Where there is a meaningful difference between versions of the C2PA specification, those will be described here.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Version 2.1 of the C2PA technical specification is in a draft public review as of this writing. It contains important changes to signature and timestamp logic that are germane to this specification.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_trust_over_ip_technical_architecture"><a class="anchor" href="#_trust_over_ip_technical_architecture"></a>1.3. Trust over IP technical architecture</h3>
+<div class="paragraph">
+<p>The <a href="https://trustoverip.org">Trust over IP Foundation (ToIP)</a> has developed a <a href="https://github.com/trustoverip/TechArch/blob/main/spec.md">technical architecture specification</a> for describing a decentralized digital trust infrastructure.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This specification refers to a “public review draft” of the ToIP technical architecture specification published on 14 November 2022 which is current as of the writing of this specification.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The ToIP architecture specification introduces the concept of <em><a href="#_toip_verifiable_identifier">verifiable identifier</a></em> as follows:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Design Principle #5 (<a href="https://trustoverip.org/permalink/Design-Principles-for-the-ToIP-Stack-V1.0-2022-11-17.pdf">Cryptographic Verifiability</a>) states that “messages and data structures exchanged between parties should be verifiable as authentic using standard cryptographic algorithms and protocols”. This requires that Endpoint Systems be able to associate, discover and verify the cryptographic keys associated with a ToIP identifier. This specification will refer to identifiers that meet this basic requirement of cryptographic verifiability as verifiable identifiers (VIDs).</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; <a href="https://github.com/trustoverip/TechArch/blob/main/spec.md#64-toip-identifiers">Section 6.4: ToIP identifiers</a>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The ToIP definition of the term “verifiable identifier” is well-aligned with the design goals of this specification. As of this writing, ToIP has just begun the process of producing a technical standard that describes how to <em>implement</em> verifiable identifiers. This specification will incorporate relevant technical standards for verifiable identifiers as they become available.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This specification describes mechanisms to support two common individual and organizational identity mechanisms that fit the conceptual description of <em><a href="#_toip_verifiable_identifier">ToIP verifiable identifier</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.w3.org/TR/did-core/">Decentralized identifiers (DIDs)</a> as defined by W3C <em>(This will be added in a subsequent draft.)</em></p>
+</li>
+<li>
+<p><a href="https://tools.ietf.org/html/rfc5280">X.509 certificates</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conceptual_overview"><a class="anchor" href="#_conceptual_overview"></a>1.4. Conceptual overview</h3>
+<div class="paragraph">
+<p>Each <strong><a href="#_identity_assertion">identity assertion</a></strong> instance allows exactly one <em><a href="#_credential_holder">credential holder</a></em> to sign a data structure known as <code>signer_payload</code>, which among other things includes a list of <em><a href="#_c2pa_assertion">C2PA assertions</a></em> which will subsequently be included in a <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The <em><a href="#_credential_holder">credential holder’s</a></em> signature should generally be construed as reflective of the <em><a href="#_named_actor">named actor’s</a></em> authorization of or active participation in the production of the the <em><a href="#_c2pa_asset">C2PA asset</a></em> in which it appears, as described by the specific <em><a href="#_c2pa_assertion">C2PA assertions</a></em> that are referenced in the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</div>
+<div class="paragraph">
+<p>Each <strong><a href="#_identity_assertion">identity assertion</a></strong> contains a <code>signer_payload</code> with hashlink references to one or more other <em><a href="#_c2pa_assertion">C2PA assertions</a>,</em> known here as <em><a href="#_referenced_assertions">referenced assertions</a>,</em> and a signature from the <em><a href="#_credential_holder">credential holder</a></em> over that payload, thus providing a non-repudiable, tamper-evident binding between the <em><a href="#_named_actor">named actor</a></em> and the list of <em><a href="#_referenced_assertions">referenced assertions</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The <code>signer_payload</code> and corresponding signature from the <em><a href="#_credential_holder">credential holder</a></em> binds this identity assertion to a specific <em><a href="#_c2pa_asset">C2PA asset</a></em> and allows the <em><a href="#_credential_holder">credential holder</a></em> to endorse or make additional statements about the <em><a href="#_named_actor">named actor’s</a></em> relationship to that <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> should be thought of as a trust signal that is independent from (and thus, in <em>addition</em> to) the trust signal provided by the <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> itself.</p>
+</div>
+<div id="trust-signal-scope-one-ia" class="exampleblock">
+<div class="title">Example 1. Trust signal scope with one identity assertion</div>
+<div class="content">
+<div class="paragraph">
+<p>The diagram that follows, with one <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> containing one <strong><a href="#_identity_assertion">identity assertion</a>,</strong> is intended to illustrate the most basic example of the two trust signals available and how they intersect:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/overview/single-ia-trust-bubbles.drawio.svg" alt="Single identity assertion trust example" width="240" height="400">
+</div>
+<div class="title">Figure 1. Overview of identity assertion</div>
+</div>
+<div class="paragraph">
+<p>In this notation, the small blue circles (A1, A2, etc.) are intended to represent any assertion other than an <strong><a href="#_identity_assertion">identity assertion</a></strong> or <em><a href="#_hard_binding">hard binding</a></em> assertion. (As examples, any of these could represent an actions assertion, a metadata assertion, or a thumbnail assertion.) The black circle (HB) is used to represent the <em><a href="#_hard_binding">hard binding</a></em> assertion, which is a required part of a valid <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> The yellow circle demonstrates the limit of <strong><a href="#_identity_assertion">identity assertion 1’s</a></strong> trust signal. The teal circle demonstrates the limit of the <em><a href="#_c2pa_manifest">C2PA Manifest’s</a></em> trust signal.</p>
+</div>
+<div class="paragraph">
+<p>The following diagram shows <strong><a href="#_identity_assertion">identity assertion 1</a></strong> using the <em><a href="#_credential_holder">credential holder’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1 and A2,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in <code>signer_payload</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/overview/identity-assertion-structure.drawio.svg" alt="Trust model for identity assertion" width="490" height="430">
+</div>
+<div class="title">Figure 2. Identity assertion structure</div>
+</div>
+<div class="paragraph">
+<p>The following diagram shows the <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> using the <em><a href="#_claim_generator">claim generator’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1, A2, and A3,</p>
+</li>
+<li>
+<p>identity assertion 1,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in the claim data structure.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/overview/manifest-structure.drawio.svg" alt="Trust model for C2PA Manifest" width="520" height="470">
+</div>
+<div class="title">Figure 3. C2PA Manifest structure</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> may be repeated any number of times to convey information specific to distinct <em><a href="#_named-actor">named actors</a>.</em></p>
+</div>
+<div id="trust-signal-scope-two-ias" class="exampleblock">
+<div class="title">Example 2. Trust signal scope with two non-overlapping identity assertions</div>
+<div class="content">
+<div class="paragraph">
+<p>The diagram that follows extends <a href="#trust-signal-scope-one-ia">Example 1, &#8220;Trust signal scope with one identity assertion&#8221;</a>, by showing how two <strong><a href="#_identity_assertion">identity assertions</a></strong> could be used to describe distinct assertions attested to by two distinct <em><a href="#_named_actor">named actors</a>:</em></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/overview/non-overlapping-trust-bubbles.drawio.svg" alt="Two non-overlapping identity assertions example" width="400" height="400">
+</div>
+<div class="title">Figure 4. Two non-overlapping identity assertions</div>
+</div>
+<div class="paragraph">
+<p>In this example, <strong><a href="#_identity_assertion">identity assertion 1</a></strong> is using its <em><a href="#_credential_holder">credential holder’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1 and A2,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in its <code>signer_payload</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The yellow circle demonstrates the limit of <strong><a href="#_identity_assertion">identity assertion 1’s</a></strong> trust signal.</p>
+</div>
+<div class="paragraph">
+<p>In this example, <strong><a href="#_identity_assertion">identity assertion 2</a></strong> is using its <em><a href="#_credential_holder">credential holder’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A3, A4, and A5,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in its <code>signer_payload</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The dark blue circle demonstrates the limit of <strong><a href="#_identity_assertion">identity assertion 2’s</a></strong> trust signal.</p>
+</div>
+<div class="paragraph">
+<p>Separately, the <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> uses the <em><a href="#_claim_generator">claim generator’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1, A2, A3, A4, A5, and A6,</p>
+</li>
+<li>
+<p>identity assertion 1,</p>
+</li>
+<li>
+<p>identity assertion 2,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in the claim data structure.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The teal circle demonstrates the limit of the <em><a href="#_c2pa_manifest">C2PA Manifest’s</a></em> trust signal.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>An <strong><a href="#_identity_assertion">identity assertion</a></strong> may reference one or more other <strong><a href="#_identity_assertion">identity assertions</a>.</strong> As an example, this might be used to convey an organizational endorsement of an individual creator’s credential.</p>
+</div>
+<div id="trust-signal-scope-nested-ias" class="exampleblock">
+<div class="title">Example 3. Trust signal scope with nested identity assertions</div>
+<div class="content">
+<div class="paragraph">
+<p>The diagram that follows modifies <a href="#trust-signal-scope-two-ias">Example 2, &#8220;Trust signal scope with two non-overlapping identity assertions&#8221;</a>, by showing how one <strong><a href="#_identity_assertion">identity assertion</a></strong> could be used to attest to the validity of another <strong><a href="#_identity_assertion">identity assertion</a>:</strong></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/overview/nested-trust-bubbles.drawio.svg" alt="Nested identity assertions example" width="400" height="400">
+</div>
+<div class="title">Figure 5. Nested identity assertions</div>
+</div>
+<div class="paragraph">
+<p>In this example, <strong><a href="#_identity_assertion">identity assertion 1</a></strong> is using its <em><a href="#_credential_holder">credential holder’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1 and A2,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in its <code>signer_payload</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The yellow circle demonstrates the limit of <strong><a href="#_identity_assertion">identity assertion 1’s</a></strong> trust signal.</p>
+</div>
+<div class="paragraph">
+<p>In this example, <strong><a href="#_identity_assertion">identity assertion 2</a></strong> is using its <em><a href="#_credential_holder">credential holder’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1, A2, A3, A4, and A5,</p>
+</li>
+<li>
+<p>identity assertion 1,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in its <code>signer_payload</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The dark blue circle demonstrates the limit of <strong><a href="#_identity_assertion">identity assertion 2’s</a></strong> trust signal, which completely overlaps the limit of <strong><a href="#_identity_assertion">identity assertion 1’s</a></strong> trust signal.</p>
+</div>
+<div class="paragraph">
+<p>Separately, the <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> uses the <em><a href="#_claim_generator">claim generator’s</a></em> signature to seal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assertions A1, A2, A3, A4, A5, and A6,</p>
+</li>
+<li>
+<p>identity assertion 1,</p>
+</li>
+<li>
+<p>identity assertion 2,</p>
+</li>
+<li>
+<p>the portion of the asset that does not include the <em><a href="#_c2pa_manifest_store">C2PA Manifest Store</a></em> (via HB), and</p>
+</li>
+<li>
+<p>any other information in the claim data structure.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The teal circle demonstrates the limit of the <em><a href="#_c2pa_manifest">C2PA Manifest’s</a></em> trust signal.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_cases_and_examples"><a class="anchor" href="#_use_cases_and_examples"></a>1.5. Use cases and examples</h3>
+<div class="paragraph">
+<p>The following is a non-exhaustive list of potential and general use cases for the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> Some of these are taken from, or built upon, the use cases developed within the <a href="https://www.originproject.info/">Project Origin Alliance</a> and the <a href="https://contentauthenticity.org/">Content Authenticity Initiative (CAI)</a> frameworks. Each use case will be described using some generic personas to help make the flow clear.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The identity assertion SHOULD NOT be construed to convey <em>ownership</em> of a <em><a href="#_c2pa_asset">C2PA asset</a>.</em> Ownership and rights transfers often take place outside of the digital realm. It is outside the scope of this specification to describe such transfers. It is possible that some other assertion could convey such information; such an assertion could be included in the set of <em><a href="#_referenced_assertions">referenced assertions.</a></em>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_enhancing_clarity_around_provenance_and_edits_for_journalistic_work"><a class="anchor" href="#_enhancing_clarity_around_provenance_and_edits_for_journalistic_work"></a>1.5.1. Enhancing clarity around provenance and edits for journalistic work</h4>
+<div class="paragraph">
+<p>A photojournalist Alice uses a Content Credentials-enabled capture device during a newsworthy event she is covering. Her capture device is linked to a digital wallet containing her professional credentials and records her identity in each captured asset. She then imports these assets into a Content Credentials-enabled editing application. Her identity is again associated with the edits that she has made. After editing, she sends her assets to her photo editor, Bob. Bob makes additional edits also using a Content Credentials-enabled application. A new identity assertion is recorded for these edits identifying Bob as the person responsible for those edits. The finalized asset is moved into the content management system of a news organization, which is also Content Credentials-enabled, before posting the asset to social media. Anyone viewing these assets can see the identity of Alice, Bob, and the news organization in a Content Credentials-enabled viewer.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_enhance_the_evidentiary_value_of_critical_footage"><a class="anchor" href="#_enhance_the_evidentiary_value_of_critical_footage"></a>1.5.2. Enhance the evidentiary value of critical footage</h4>
+<div class="paragraph">
+<p>A human rights defender Jane manages to capture footage containing Content Credentials-enabled provenance of violence during a protest. Jane’s capture device is linked to a digital wallet containing her professional credentials and records her identity in each captured asset. Jane sends the footage to a human rights organization that verifies that the asset meets video-as-evidence criteria. The human rights organization determines that releasing Jane’s identity to the public could pose a safety or privacy risk, so they redact the identity assertion using a Content Credentials-enabled editing application before publishing the footage.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_election_integrity_and_protecting_political_campaigns_from_deepfakes"><a class="anchor" href="#_election_integrity_and_protecting_political_campaigns_from_deepfakes"></a>1.5.3. Election integrity and protecting political campaigns from deepfakes</h4>
+<div class="paragraph">
+<p>Aarav is the director of social communications for a political candidate in an upcoming election. He feels concerned that in efforts to manipulate voters, bad actors will create deepfake videos to misrepresent the candidate. To protect the campaign, Aarav decides that all official communications will be created, produced, and published with Content Credentials-enabled tools. The identity assertion equips Aarav and his team with the ability to represent the campaign as the organizational author of the content that they publish. Aarav encourages voters to verify any digital campaign content to ensure that the material has Content Credentials that link the assets to the campaign.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_brand_protection_in_digital_marketing"><a class="anchor" href="#_brand_protection_in_digital_marketing"></a>1.5.4. Brand protection in digital marketing</h4>
+<div class="paragraph">
+<p>An advertising agency representing a popular sneaker brand wants to ensure that consumers are only purchasing the shoes through official channels. They have found several fraudulent campaigns online claiming to offer the shoes at a discount. To address these scams, the agency decides to incorporate Content Credentials into their creative process, using the identity assertion to represent the designer responsible for the campaign. Before the campaign goes live, the agency redacts the designer’s name and publishes the assets with Content Credentials using the identity assertion to represent the sneaker brand. Now consumers can refer to Content Credentials to identify legitimate promotional campaigns from the sneaker brand.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_attribution_for_digital_creators"><a class="anchor" href="#_attribution_for_digital_creators"></a>1.5.5. Attribution for digital creators</h4>
+<div class="paragraph">
+<p>One morning, Charlie, an up-and-coming digital artist, woke up to find that one of their designs went viral on social media. Charlie felt upset to see their art detached from their name. Charlie had spent months working on their artwork and was disappointed not to receive credit or compensation for their work. Moving forward, Charlie decides to use the identity assertion to link their name, social media, and copyright information to the art they create. Now, when Charlie posts their content to social media platforms that display Content Credentials, viewers can easily link the artwork back to Charlie.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_audio_sampling_and_artistic_collaboration"><a class="anchor" href="#_audio_sampling_and_artistic_collaboration"></a>1.5.6. Audio sampling and artistic collaboration</h4>
+<div class="paragraph">
+<p>Eve is a musician with a talent for releasing songs featuring clever lyrics and catchy beats. Ever since Eve’s music gained traction on audio streaming apps, artists have reached out asking permission to sample her beats. Eve views these collaborations as an opportunity to help new listeners discover her music, so it is important to her that the samples are traceable back to her. She decides to begin recording her songs using a Content Credentials-enabled device linked to a digital wallet containing her identity credentials and her profile on music streaming applications. Now, when other artists release songs that sample Eve’s tunes, she can demonstrate her contribution to the final work.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_normative_references"><a class="anchor" href="#_normative_references"></a>2. Normative references</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html">C2PA technical specification, version 2.1</a></p>
+</li>
+<li>
+<p><a href="https://tools.ietf.org/html/rfc5280">Internet X.509 public key infrastructure certificate</a> (RFC 5280)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>3. Terms and definitions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_concepts_adapted_from_c2pa_technical_specification"><a class="anchor" href="#_concepts_adapted_from_c2pa_technical_specification"></a>3.1. Concepts adapted from C2PA technical specification</h3>
+<div class="paragraph">
+<p>The following definitions are adapted from the <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_glossary">glossary</a> provided in the C2PA technical specification. This specification uses the prefix “C2PA” to denote data structures incorporated from that specification.</p>
+</div>
+<div class="sect3">
+<h4 id="_actor"><a class="anchor" href="#_actor"></a>3.1.1. Actor</h4>
+<div class="paragraph">
+<p>A human or non-human (hardware or software) that is participating in the C2PA ecosystem. For example: a camera (capture device), image editing software, cloud service, or the person using such tools.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+An organization or group of <em>actors</em> may also be considered an <em>actor</em> in the C2PA ecosystem.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_asset"><a class="anchor" href="#_c2pa_asset"></a>3.1.2. C2PA asset</h4>
+<div class="paragraph">
+<p>A file or stream of data containing <em>digital content,</em> <em>asset metadata,</em> and a <a href="#_c2pa_manifest">C2PA Manifest</a>.</p>
+</div>
+<div class="paragraph">
+<p>For the purposes of this definition, we will extend the typical definition of “file” to include cloud-native and dynamically-generated data.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The definition of “C2PA asset” in this specification differs from the definition of “asset” given in the C2PA technical specification. A “C2PA asset” as defined in <em>this</em> specification MUST contain a <a href="#_c2pa_manifest">C2PA Manifest</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_claim"><a class="anchor" href="#_c2pa_claim"></a>3.1.3. C2PA claim</h4>
+<div class="paragraph">
+<p>A digitally signed and tamper-evident data structure that references a set of <em><a href="#_c2pa_assertion">assertions</a></em> by one or more <em><a href="#_actor">actors</a>,</em> concerning a <em><a href="#_c2pa_asset">C2PA asset</a>,</em> and the information necessary to represent the <em><a href="#_content_binding">content binding</a>.</em> If any <em><a href="#_c2pa_assertion">C2PA assertions</a></em> were redacted, then a declaration to that effect is included. This data is a part of the <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_claims">Section 10, “Claims,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_claim_generator"><a class="anchor" href="#_c2pa_claim_generator"></a>3.1.4. C2PA claim generator</h4>
+<div class="paragraph">
+<p>The non-human (hardware or software) <em><a href="#_actor">actor</a></em> that generates the <em><a href="#_c2pa_claim">C2PA claim</a></em> about a <em><a href="#_c2pa_asset">C2PA asset</a></em> as well as the claim signature, thus leading to the <em><a href="#_c2pa_asset">C2PA asset</a>'s</em> associated <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_assertion"><a class="anchor" href="#_c2pa_assertion"></a>3.1.5. C2PA assertion</h4>
+<div class="paragraph">
+<p>A data structure which represents a statement asserted by an <em><a href="#_actor">actor</a></em> concerning the <em><a href="#_c2pa_asset">C2PA asset</a>.</em> This data is a part of the <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_assertions">Section 6, “Assertions,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_manifest"><a class="anchor" href="#_c2pa_manifest"></a>3.1.6. C2PA Manifest</h4>
+<div class="paragraph">
+<p>The set of information about the <em>provenance</em> of a <em><a href="#_c2pa_asset">C2PA asset</a></em> based on the combination of one or more <em><a href="#_c2pa_assertion">C2PA assertions</a></em> (including <em><a href="#_content_binding">content bindings</a></em>), a single <em><a href="#_c2pa_claim">C2PA claim</a>,</em> and a <em>claim signature.</em> A <em>C2PA Manifest</em> is part of a <em>C2PA Manifest Store.</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A <em>C2PA Manifest</em> can reference other <em>C2PA Manifests.</em>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_manifests">Section 11, “Manifests,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_manifest_consumer"><a class="anchor" href="#_c2pa_manifest_consumer"></a>3.1.7. C2PA Manifest Consumer</h4>
+<div class="paragraph">
+<p>An <em><a href="#_actor">actor</a></em> who consumes a <em><a href="#_c2pa_asset">C2PA asset</a></em> with an associated <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> for the purpose of obtaining the provenance data from the <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c2pa_manifest_store"><a class="anchor" href="#_c2pa_manifest_store"></a>3.1.8. C2PA Manifest Store</h4>
+<div class="paragraph">
+<p>A collection of <em><a href="#_c2pa_manifest">C2PA Manifests</a>,</em> which collectively describe the provenance history of a single <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_manifest_store">Section 11.1.4.2, “Manifest Store,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_content_binding"><a class="anchor" href="#_content_binding"></a>3.1.9. Content binding</h4>
+<div class="paragraph">
+<p>Information that associates digital content to a specific <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> associated with a specific <em><a href="#_c2pa_asset">C2PA asset</a>,</em> either as a <em>hard binding</em> or a <em>soft binding.</em></p>
+</div>
+<div class="paragraph">
+<p>Content bindings are described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_binding_to_content">Section 9, “Binding to content,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hard_binding"><a class="anchor" href="#_hard_binding"></a>3.1.10. Hard binding</h4>
+<div class="paragraph">
+<p>One or more cryptographic hashes that uniquely identifies either the entire <em><a href="#_c2pa_asset">C2PA asset</a></em> or a portion thereof.</p>
+</div>
+<div class="paragraph">
+<p>Hard bindings are described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hard_bindings">Section 9.2, “Hard bindings,”</a> of the C2PA technical specification.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_other_concepts"><a class="anchor" href="#_other_concepts"></a>3.2. Other concepts</h3>
+<div class="sect3">
+<h4 id="_credential_holder"><a class="anchor" href="#_credential_holder"></a>3.2.1. Credential holder</h4>
+<div class="paragraph">
+<p>The <em><a href="#_actor">actor</a></em> that has control (specifically signature authority) over a <em><a href="#_toip_verifiable_identifier">ToIP verifiable identifier</a></em> that describes a specific <em><a href="#_named_actor">named actor</a>.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_credential_revocation"><a class="anchor" href="#_credential_revocation"></a>3.2.2. Credential revocation</h4>
+<div class="paragraph">
+<p>An action signifying that a digital credential can no longer be considered as valid. This is typically indicated by an action on the part of the credential issuer stating that they can no longer attest to the validity of the information in the credential or an action on the part of the <em><a href="#_credential_holder">credential holder</a></em> stating that the public/private key pair associated with the credential is no longer valid.</p>
+</div>
+<div class="paragraph">
+<p>Adapted from <a href="https://trustoverip.github.io/ctwg-main-glossary/#term:revocation">Trust Over IP’s definition of revocation</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_identity_assertion"><a class="anchor" href="#_identity_assertion"></a>3.2.3. Identity assertion</h4>
+<div class="paragraph">
+<p>A <em><a href="#_c2pa_assertion">C2PA assertion</a></em> that allows a <em><a href="#_credential_holder">credential holder</a></em> to prove control over an digital identity and bind the identity to a set of <em><a href="#_c2pa_assertion">C2PA assertions</a></em> produced by them or on their behalf.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_identity_assertion_consumer"><a class="anchor" href="#_identity_assertion_consumer"></a>3.2.4. Identity assertion consumer</h4>
+<div class="paragraph">
+<p>A <em><a href="#_c2pa_manifest_consumer">C2PA Manifest Consumer</a></em> who also consumes and interprets the content of any <strong><a href="#_identity_assertion">identity assertions</a></strong> contained within the <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This role can also be thought of as a <strong>relying party</strong> or <strong>verifier</strong> as defined in specifications such as the <a href="https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier">W3C verifiable credentials data model</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_named_actor"><a class="anchor" href="#_named_actor"></a>3.2.5. Named actor</h4>
+<div class="paragraph">
+<p>The <em><a href="#_actor">actor</a></em> whose relationship to a <em><a href="#_c2pa_asset">C2PA asset</a></em> is documented by an <strong><a href="#_identity_assertion">identity assertion</a>.</strong> This may also be referred to as a <em>credential subject</em> when identified by the <strong>subject</strong> field of a <em><a href="#_toip_verifiable_identifier">ToIP verifiable identifier</a>.</em></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+A <em>named actor</em> may be any form of <em><a href="#_actor">actor</a>,</em> including an individual human, an organization of humans, or a non-human (software or hardware device).
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The <em>named actor</em> is not necessarily the same <em><a href="#_actor">actor</a></em> as the <em><a href="#_credential_holder">credential holder</a>,</em> though there is an implied trust relationship between the two <em><a href="#_actor">actors</a>.</em>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_placeholder_assertion"><a class="anchor" href="#_placeholder_assertion"></a>3.2.6. Placeholder assertion</h4>
+<div class="paragraph">
+<p>A temporary <em><a href="#_c2pa_assertion">C2PA assertion</a></em> that is created during <em><a href="#_c2pa_claim">C2PA claim</a></em> generation which reserves space for the eventual content of the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> A placeholder assertion MUST be used when the final file layout of the <em><a href="#_c2pa_asset">C2PA asset</a></em> is required for the <em><a href="#_hard_binding">hard binding</a></em> assertion, as described in <a href="#_interaction_with_data_hash_assertion">Section 6.3, &#8220;Interaction with data hash assertion&#8221;</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_referenced_assertions"><a class="anchor" href="#_referenced_assertions"></a>3.2.7. Referenced assertions</h4>
+<div class="paragraph">
+<p>The set of <em><a href="#_c2pa_assertion">C2PA assertions</a></em> that are referenced by an <strong><a href="#_identity_assertion">identity assertion</a></strong> and thus bound to (i.e. authorized by or created by) the <em><a href="#_credential_holder">credential holder</a></em> named in the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_toip_verifiable_identifier"><a class="anchor" href="#_toip_verifiable_identifier"></a>3.2.8. ToIP verifiable identifier</h4>
+<div class="paragraph">
+<p>Any identifier for which an endpoint system is “able to associate, discover and verify the cryptographic keys associated with a ToIP identifier.” This satisfies the ToIP design principle that “messages and data structures exchanged between parties should be verifiable as authentic using standard cryptographic algorithms and protocols.”</p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/trustoverip/TechArch/blob/v1-PR1/spec.md#64-toip-identifiers">ToIP identifiers</a> in the ToIP technology architecture specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trust"><a class="anchor" href="#_trust"></a>3.2.9. Trust</h4>
+<div class="paragraph">
+<p>In the context of an <strong><a href="#_identity_assertion">identity assertion</a>,</strong> we define <em>trust</em> as meeting or exceeding the minimum level of confidence an <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> requires over assertions made about the identity of the <em><a href="#_named_actor">named actor</a></em> and the <em><a href="#_named_actor">named actor’s</a></em> true intention regarding their attestations via content included in and referenced by the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trust_list"><a class="anchor" href="#_trust_list"></a>3.2.10. Trust list</h4>
+<div class="paragraph">
+<p>A list of <em><a href="#_actor">actors</a>,</em> published by an authoritative source that are trusted in a specific context.</p>
+</div>
+<div class="paragraph">
+<p>Adapted from <a href="https://trustoverip.github.io/ctwg-main-glossary/#term:trust-list">Trust Over IP’s definition of trust list</a>.</p>
+</div>
+<div class="paragraph">
+<p>A <em>trust list</em> can be considered a simplified form of a <a href="https://trustoverip.github.io/ctwg-main-glossary/#term:trust-registry">trust registry</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_standard_terms"><a class="anchor" href="#_standard_terms"></a>4. Standard terms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The key words “MUST,” “MUST NOT,” “REQUIRED,” “SHALL,” “SHALL NOT,” “SHOULD,” “SHOULD NOT,” “RECOMMENDED,” “NOT RECOMMENDED,” “MAY,” and “OPTIONAL” in this document are to be interpreted as described in <a href="https://tools.ietf.org/html/bcp14">BCP 14</a>, <a href="https://tools.ietf.org/html/rfc2119">RFC 2119</a>, and <a href="https://tools.ietf.org/html/rfc8174">RFC 8174</a> when they appear in any casing (upper, lower, or mixed).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assertion_definition"><a class="anchor" href="#_assertion_definition"></a>5. Assertion definition</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_overview"><a class="anchor" href="#_overview"></a>5.1. Overview</h3>
+<div class="paragraph">
+<p>This specification defines a <em><a href="#_c2pa_assertion">C2PA assertion</a></em> known as an <strong><a href="#_identity_assertion">identity assertion</a></strong> which MAY be used to bind one <em><a href="#_named_actor">named actor</a></em> to a set of <em><a href="#_referenced_assertions">referenced assertions</a></em> and other related data, known overall as the <em>signer payload.</em> This binding SHOULD generally be construed as authorization of or participation in the creation of the statements described by those assertions and corresponding portions of the <em><a href="#_c2pa_asset">C2PA asset</a></em> in which they appear.</p>
+</div>
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> contains the following data fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>signer_payload</code> contains the set of data to be signed by this <em><a href="#_credential_holder">credential holder</a></em>.</p>
+</li>
+<li>
+<p><code>signature</code> contains the raw byte stream of the <em><a href="#_credential_holder">credential holder</a>’s</em> signature</p>
+</li>
+<li>
+<p><code>pad1</code> and <code>pad2</code> are byte strings filled with binary <code>0x00</code> values used to fill space</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>signer_payload</code> field is a structure of type <code>signer-payload-map</code> which is signed by the <em><a href="#_credential_holder">credential holder</a></em>. It contains the following fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>referenced_assertions</code> <em>(required)</em> is an array of <code>hashed-uri-map</code> structures with one entry for every <em><a href="#_referenced_assertions">referenced assertion</a></em> chosen by the <em><a href="#_credential_holder">credential holder</a>.</em> It is subject to several requirements as described in <a href="#_referenced_assertions_requirements">Section 5.1.1, &#8220;Referenced assertions requirements&#8221;</a>.</p>
+</li>
+<li>
+<p><code>sig_type</code> <em>(required)</em> is a string identifying the data type of the signature. Valid credential types and the corresponding <code>signature</code> data structures and <code>signer_payload.sig_type</code> values are defined in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.</p>
+</li>
+<li>
+<p><code>role</code> <em>(optional)</em> contains one or more descriptions of the <em><a href="#_named_actor">named actor’s</a></em> relationship(s) to the <em><a href="#_c2pa_asset">C2PA asset</a>.</em> Possible role values are described in <a href="#_named_actor_roles">Section 5.1.2, &#8220;Named actor roles&#8221;</a>.</p>
+</li>
+<li>
+<p><code>expected_partial_claim</code> <em>(optional),</em> if present, describes the content of the expected <em><a href="#_c2pa_claim">C2PA claim</a>,</em> in which the <strong><a href="#_identity_assertion">identity assertion</a></strong> appears. It can be used to prevent the introduction or removal of <em><a href="#_c2pa_assertion">C2PA assertions</a></em> (other than the <em><a href="#_referenced_assertion">referenced assertions</a></em>) that could create unintended or unexpected semantics for the overall <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> The method for calculating this field is described in <a href="#_calculating_the_expected_partial_claim_field">Section 6.1.1, &#8220;Calculating the <code>expected_partial_claim</code> field&#8221;</a>.</p>
+</li>
+<li>
+<p><code>expected_claim_generator</code> <em>(optional),</em> if present, describes the X.509 certificate of the expected <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>.</em> It can be used to avoid creating an unwanted association between the <em><a href="#_named_actor">named actor</a></em> and an unexpected or undesired <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>.</em> The method for calculating this field is described in <a href="#_calculating_the_expected_claim_generator_field">Section 6.1.2, &#8220;Calculating the <code>expected_claim_generator</code> field&#8221;</a>.</p>
+</li>
+<li>
+<p><code>expected_countersigners</code> <em>(optional),</em> if present, describes the content of other <strong><a href="#_identity_assertion">identity assertion</a></strong> in the same <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> The method for calculating this field is described in <a href="#_calculating_the_expected_countersigners_field">Section 6.1.3, &#8220;Calculating the <code>expected_countersigners</code> field&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> SHALL have a label of <code>cawg.identity</code>.</p>
+</div>
+<div class="paragraph">
+<p>Multiple identity assertions may be used in the same <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> to describe the distinct roles of multiple <em><a href="#_actor">actors</a></em> in creating a single <em><a href="#_c2pa_asset">C2PA asset</a>.</em> This is illustrated in the <a href="#multiple-identity-assertions">multi-author example</a> from the conceptual overview. If this occurs, these assertions SHALL be given unique labels as described by <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_multiple_instances">Section 6.4, “Multiple instances,”</a> of the C2PA technical specification.</p>
+</div>
+<div class="sect3">
+<h4 id="_referenced_assertions_requirements"><a class="anchor" href="#_referenced_assertions_requirements"></a>5.1.1. Referenced assertions requirements</h4>
+<div class="paragraph">
+<p>The list of <em><a href="#_referenced_assertions">referenced assertions</a></em> contained in <code>signer_payload.referenced_assertions</code> is subject to the following requirements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For each assertion listed, an assertion with the same <code>url</code>, <code>alg</code>, and <code>hash</code> values MUST also be listed in the <code>created_assertions</code>, <code>generated_assertions</code>, or <code>assertions</code> field of the <em><a href="#_c2pa_claim">C2PA claim</a></em> in which the <strong><a href="#_identity_assertion">identity assertion</a></strong> appears.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <code>assertions</code> field appears only in version 1.x of the C2PA technical specification. It was replaced with <code>created_assertions</code> and <code>generated_assertions</code> in version 2.0 of the C2PA technical specification.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The list MUST NOT reference any assertion more than once.</p>
+</li>
+<li>
+<p>The list MUST include a <em><a href="#_hard_binding">hard binding</a></em> assertion as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hard_bindings">Section 9.2, “Hard bindings,”</a> of the C2PA technical specification.</p>
+</li>
+<li>
+<p>The list MAY reference other <strong><a href="#_identity_assertion">identity assertions</a>,</strong> provided that no cycle of references among <strong><a href="#_identity_assertion">identity assertions</a></strong> is created.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The requirement that the <code>hash</code> value for a <em><a href="#_referenced_assertions">referenced assertion</a></em> be known prior to presenting <code>signer_payload</code> for signature implies that an <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST NOT refer to itself.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_named_actor_roles"><a class="anchor" href="#_named_actor_roles"></a>5.1.2. Named actor roles</h4>
+<div class="paragraph">
+<p>The <em><a href="#_credential_holder">credential holder</a></em> MAY choose to describe one or more relationships of the <em><a href="#_named_actor">named actor</a></em> to the <em><a href="#_c2pa_asset">C2PA asset</a></em> by adding a <code>role</code> field to <code>signer_payload</code>.</p>
+</div>
+<div class="paragraph">
+<p>If present, the value for <code>role</code> MUST be a non-empty CBOR array of non-empty text strings. It is recommended that the CBOR text strings be chosen from the following values and that any user experience that presents the content of an <strong><a href="#_identity_assertion">identity assertion</a></strong> be prepared to describe these roles in the same human language as the surrounding interface:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.creator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> is a primary creator/author of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.contributor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> is a secondary creator/author of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.editor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> is an editor of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.producer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> is a producer of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.publisher</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> is a publisher of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.sponsor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> has supported or sponsored the creation of this <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.translator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em><a href="#_named_actor">named actor</a></em> has adapted of this <em><a href="#_c2pa_asset">C2PA asset</a></em> from a similar work in another language.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Other CBOR text string values MAY be used in <code>role</code> with the understanding that they may not be well understood by <strong><a href="#_identity_assertion">identity assertion</a></strong> consumers. CBOR text string values for <code>role</code> that begin with the prefix <code>cawg.</code> are reserved for the use of the Creator Assertions Working Group and MUST NOT be used unless defined in a this or a future version of this specification.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Future minor version updates (1.1, 1.2, etc.) to this specification MAY define new values for <code>role</code> using the <code>cawg.</code> prefix.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cbor_schema"><a class="anchor" href="#_cbor_schema"></a>5.2. CBOR schema</h3>
+<div class="paragraph">
+<p>The schema for this type is defined by the <code>identity</code> rule in the following <a href="https://datatracker.ietf.org/doc/html/rfc8610">CDDL definition</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cddl hljs" data-lang="cddl">identity = {
+  "signer_payload": $signer-payload-map, ; content to be signed by credential holder
+  "signature": bstr, ; byte string of the signature
+  "pad1": bstr, ; byte string filled with binary `0x00` values used for filling up space
+  ? "pad2": bstr, ; optional byte string filled with binary `0x00` values used for filling up space
+}
+
+signer-payload-map = {
+  "referenced_assertions": [1* $hashed-uri-map],
+  "sig_type": tstr .size (1..max-tstr-length), ; a string identifying the data type of the signature field
+  ? "role": [1* tstr .size (1..max-tstr-length)], ; one or more strings defining the named actor’s relationship(s) to this C2PA asset
+  ? "expected_partial_claim": $hash-map, ; hash of expected partial claim
+  ? "expected_claim_generator": $hash-map, ; hash of expected claim signer credential
+  ? "expected_countersigners": [1* $expected-countersigner-map], ; array of expected other identity assertion descriptions
+}
+
+hash-map = {
+  "alg": tstr .size (1..max-tstr-length), ; a string identifying the cryptographic hash algorithm used to compute this hash, taken from the C2PA hash algorithm identifier list
+  "hash": bstr, ;  byte string containing the hash value
+}
+
+expected-countersigner-map = {
+  "partial_signer_payload": $signer-payload-map ; signer_payload map from other identity assertion minus any `expected_countersigner` field
+  ? "expected_credentials": $hash-map ; expected identity assertion credentials
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Future minor version updates (1.1, 1.2, etc.) to this specification MAY add new fields to the <code>signer-payload-map</code> description, provided that such new data members are optional and there is a well-specified default meaning that is compatible with the 1.0 version of this specification. Such updates to the specification SHOULD continue to use the <code>cawg.identity</code> assertion label.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Possible values for the <code>signer_payload.sig_type</code> field and the corresponding interpretations of the <code>signature</code> field are described in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>hashed-uri-map</code> rule is defined in <a href="https://c2pa.org/specifications/specifications/1.3/specs/C2PA_Specification.html#_hashed_uris">Section 8.3.1, “Hashed URIs,”</a> of the C2PA technical specification.</p>
+</div>
+<div class="paragraph">
+<p>Possible values for the text string entries in the <code>signer_payload.role</code> field are provided in <a href="#_named_actor_roles">Section 5.1.2, &#8220;Named actor roles&#8221;</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_example"><a class="anchor" href="#_example"></a>5.2.1. Example</h4>
+<div class="paragraph">
+<p>An example in <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-diagnostic-notation">CBOR-Diag</a> is shown below, which is non-normative:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "signer_payload": {
+    "sig_type": "cawg.x509.cose",
+    "referenced_assertions": [
+      {
+        "url": "self#jumbf=c2pa/urn:uuid:F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4/c2pa.assertions/c2pa.hash.data",
+        "hash": b64'U9Gyz05tmpftkoEYP6XYNsMnUbnS/KcktAg2vv7n1n8='
+      },
+      {
+        "url": "self#jumbf=c2pa/urn:uuid:F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4/c2pa.assertions/c2pa.thumbnail.claim.jpeg",
+        "hash": b64'G5hfJwYeWTlflxOhmfCO9xDAK52aKQ+YbKNhRZeq92c='
+      },
+      {
+        "url": "self#jumbf=c2pa/urn:uuid:F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4/c2pa.assertions/c2pa.ingredient.v2",
+        "hash": b64'Yzag4o5jO4xPyfANVtw7ETlbFSWZNfeM78qbSi8Abkk='
+      }
+    ],
+    "role": ["cawg.creator"],
+  },
+  "signature": b64'....', // COSE signature
+  "pad1": b64'....', // zero-filled pad buffer
+  "pad2": b64'....'  // zero-filled pad buffer
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_the_identity_assertion"><a class="anchor" href="#_creating_the_identity_assertion"></a>6. Creating the identity assertion</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_presenting_the_signer_payload_data_structure_for_signature"><a class="anchor" href="#_presenting_the_signer_payload_data_structure_for_signature"></a>6.1. Presenting the <code>signer_payload</code> data structure for signature</h3>
+<div class="paragraph">
+<p>Prior to presenting the <em><a href="#_credential_holder">credential holder</a></em> with the <code>signer_payload</code> data structure for signature, the <em><a href="#_referenced_assertions">referenced assertions</a></em> MUST themselves be created. This process is described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_creating_assertions">Section 10.3.1, “Creating assertions,”</a> of the C2PA technical specification.</p>
+</div>
+<div class="paragraph">
+<p>The list of <em><a href="#_referenced_assertions">referenced assertions</a></em> MUST include the same <em><a href="#_hard_binding">hard binding</a></em> assertion that is present in the <em><a href="#_c2pa_claim">C2PA claim</a></em> itself. The list of <em><a href="#_referenced_assertions">referenced assertions</a></em> SHOULD include any <em><a href="#_c2pa_assertion">assertions</a></em> necessary to allow the <em><a href="#_actor">actor</a></em> to accurately describe their relationship to the content. For example, a <code>c2pa.actions</code> assertion could be referenced to attest that the <em><a href="#_actor">actor</a></em> performed those specific actions.</p>
+</div>
+<div class="paragraph">
+<p>The <code>signer_payload</code> data structure MUST be presented to be signed by the <em><a href="#_credential_holder">credential holder</a></em> corresponding to each <strong><a href="#_identity_assertion">identity assertion</a>.</strong> This process is described in more detail in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If a data hash assertion is being used, the <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> MUST also follow the process described in <a href="#_interaction_with_data_hash_assertion">Section 6.3, &#8220;Interaction with data hash assertion&#8221;</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_calculating_the_expected_partial_claim_field"><a class="anchor" href="#_calculating_the_expected_partial_claim_field"></a>6.1.1. Calculating the <code>expected_partial_claim</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a> generator</strong> chooses to include the <code>expected_partial_claim</code> field in <code>signer_payload</code>, it MUST be computed as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a valid <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure that includes references to all <em><a href="#_c2pa_assertion">C2PA assertions</a>,</em> <strong>including</strong> all <strong><a href="#_identity_assertion">identity assertions</a>.</strong> The <code>hash</code> value for all assertion references MUST be valid and correct, except in the following cases:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>For the specific <strong><a href="#_identity_assertion">identity assertion</a></strong> being computed, replace the <code>hash</code> value with all zero-value (<code>0x00</code>) bytes.</p>
+</li>
+<li>
+<p>For any <strong><a href="#_identity_assertion">identity assertions</a></strong> whose signing credentials are described via the <code>expected_countersigners</code> field, replace the <code>hash</code> value with all zero-value (<code>0x00</code>) bytes.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Serialize the <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure using one of the algorithms documented in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The <code>expected_partial_claim</code> field SHOULD contain a CBOR map with the following fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>alg</code> describing the hash algorithm as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification, and</p>
+</li>
+<li>
+<p><code>hash</code> value containing the computed hash of the serialized <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_calculating_the_expected_claim_generator_field"><a class="anchor" href="#_calculating_the_expected_claim_generator_field"></a>6.1.2. Calculating the <code>expected_claim_generator</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a> generator</strong> chooses to include the <code>expected_claim_generator</code> field in <code>signer_payload</code>, it MUST be computed as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Identify the end-entity signing certificate that will be used for the expected <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>.</em></p>
+</li>
+<li>
+<p>Serialize this signing certificate as a CBOR byte string as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#x509_certificates">Section 14.6, “X.509 certificates,”</a> of the C2PA technical specification. This serialization should be performed using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized end-entity certificate using one of the algorithms documented in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The resulting hash should be used as the <code>expected_claim_generator</code> field.</p>
+</div>
+<div class="paragraph">
+<p>The <code>expected_claim_generator</code> field SHOULD contain a CBOR map with the following fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>alg</code> describing the hash algorithm as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification, and</p>
+</li>
+<li>
+<p><code>hash</code> value containing the computed hash of the serialized certificate.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_calculating_the_expected_countersigners_field"><a class="anchor" href="#_calculating_the_expected_countersigners_field"></a>6.1.3. Calculating the <code>expected_countersigners</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a> generator</strong> chooses to include the <code>expected_countersigners</code> field in <code>signer_payload</code>, it MUST be computed as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For every <em>other</em> <strong><a href="#_identity_assertion">identity assertion</a></strong> that will be present in the <em><a href="#_c2pa_manifest">C2PA Manifest</a>:</em></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Calculate the <code>signer_payload</code> map for that <strong><a href="#_identity_assertion">identity assertion</a>.</strong> Exclude any <code>expected_countersigners</code> field from that <code>signer_payload</code> map and place the resulting <code>signer_payload</code> structure in the <code>partial_signer_payload</code> field of <em>this</em> <strong><a href="#_identity_assertion">identity assertion’s</a></strong> <code>expected_countersigners</code> map.</p>
+</li>
+<li>
+<p><em>(optional)</em> Identify the signing credential that will be used to sign that <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Serialize the signing credential as a CBOR byte string as described in <a href="#_serialization_for_credential_types">Serialization for credential types</a>. This serialization should be performed using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized signing credential using one of the algorithms documented in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Once the above materials have been gathered, the <code>expected_countersigners</code> field SHOULD contain a CBOR array of CBOR maps, each containing the following fields for each <strong><a href="#_identity_assertion">identity assertion</a></strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>partial_signer_payload</code> <em>(required)</em> containing the expected <code>signer_payload</code>, omitting any <code>expected_countersigners</code> field.</p>
+</li>
+<li>
+<p><code>expected_credentials</code> <em>(optional)</em> containing a description of the expected signing credentials:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p><code>alg</code> describing the hash algorithm as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing,”</a> of the C2PA technical specification, and</p>
+</li>
+<li>
+<p><code>hash</code> value containing the computed hash of the serialized signing credential.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_serialization_for_credential_types"><a class="anchor" href="#_serialization_for_credential_types"></a>6.1.4. Serialization for credential types</h4>
+<div class="paragraph">
+<p>The signing credential for other <strong><a href="#_identity_assertion">identity assertions</a></strong> should be serialized depending on the credential type:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Credential type</th>
+<th class="tableblock halign-left valign-top">Serialization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">X.509 certificate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">End-entity certificate</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_the_assertion"><a class="anchor" href="#_creating_the_assertion"></a>6.2. Creating the assertion</h3>
+<div class="paragraph">
+<p>Once the signature is obtained, the <strong><a href="#_identity_assertion">identity assertion</a></strong> can be created and added to the C2PA Manifest&#8217;s assertion store, and then referenced in the <em><a href="#_c2pa_claim">C2PA claim</a>.</em> If a <em><a href="#_placeholder_assertion">placeholder assertion</a></em> was previously added to the <em><a href="#_c2pa_claim">C2PA claim,</a></em> its content MUST now be replaced with the final assertion content as described below.</p>
+</div>
+<div class="paragraph">
+<p>The <code>signer_payload</code> data structure MUST be unchanged from the data structure that was presented to the <em><a href="#_credential_holder">credential holder</a></em> for signature.</p>
+</div>
+<div class="paragraph">
+<p>The values for the <code>signer_payload.sig_type</code> and <code>signature</code> fields depend on the nature of credential used. Some common signature types are described in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> SHOULD independently validate the signature from the <em><a href="#_credential_holder">credential holder</a></em> before proceeding.</p>
+</div>
+<div class="paragraph">
+<p>If a <em><a href="#placeholder_assertion">placeholder assertion</a></em> was used, the values of the <code>pad1</code> and <code>pad2</code> fields MUST now be recomputed (adjusted in size) such that the resulting <strong><a href="#_identity_assertion">identity assertion</a></strong> exactly matches the size in bytes of the <em><a href="#placeholder_assertion">placeholder assertion.</a></em> If the signature exceeds the space available in the <em><a href="#placeholder_assertion">placeholder assertion,</a></em> the claim generation process as described in <a href="#_interaction_with_data_hash_assertion">Section 6.3, &#8220;Interaction with data hash assertion&#8221;</a> MUST be repeated with a larger <em><a href="#_placeholder_assertion">placeholder assertion</a>.</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Preferred/deterministic CBOR serialization of byte arrays uses a variable-length integer to specify the length of the encoded binary data. When the length goes from zero to one byte, or one to two bytes (etc.), the length of the resulting pad jumps by two bytes. This means that not all paddings can be expressed using a single padding field. For example, 24-byte and 26-byte pads can be created, but a 25-byte pad cannot. If this situation arises, the desired padding can be split between <code>pad1</code> and <code>pad2</code>. For example, to make a 25-byte pad, an implementation can encode 19 bytes into <code>pad1</code> (resulting in an encoded length of 20 bytes), and 4 bytes into <code>pad2</code> (resulting in 5 bytes.)
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If no <em><a href="#placeholder_assertion">placeholder assertion</a></em> was used, the values of the <code>pad1</code> and <code>pad2</code> fields MAY be empty.</p>
+</div>
+<div class="paragraph">
+<p>The <code>pad1</code> and <code>pad2</code> fields of an <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST contain only zero-value (<code>0x00</code>) bytes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interaction_with_data_hash_assertion"><a class="anchor" href="#_interaction_with_data_hash_assertion"></a>6.3. Interaction with data hash assertion</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The process described in this section MUST be followed when using a data hash assertion as described by <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_data_hash">Section 18.5, “Data hash,”</a> of the C2PA technical specification. This process MAY be followed when using other <em><a href="#_hard_binding">hard binding</a></em> assertions.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The C2PA technical specification explains the need for pre-computing the <em><a href="#_c2pa_asset">C2PA asset’s</a></em> final file layout when using a data hash assertion as follows:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Some asset file formats require file offsets of the C2PA Manifest Store and asset content to be fixed before the manifest is signed, so that <em><a href="#_hard_binding">hard bindings</a></em> will correctly align with the content they authenticate. Unfortunately, the size of a manifest and its signature cannot be precisely known until after signing, which could cause file offsets to change. For example, in JPEG-1 files, the entire C2PA Manifest Store must appear in the file before the image data, and so its size will affect the file offsets of content being authenticated.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_multiple_step_processing">Section 10.4: “Multiple step processing”</a>
+</div>
+</div>
+<div class="paragraph">
+<p>Similarly, the size of the <strong><a href="#_identity_assertion">identity assertion</a></strong> cannot be known until its signature is obtained. Changing the size of the <strong><a href="#_identity_assertion">identity assertion</a></strong> after file layout is completed would invalidate the file offsets contained within the data hash assertion.</p>
+</div>
+<div class="paragraph">
+<p>In this case, it is necessary to use a <em><a href="#_placeholder_assertion">placeholder assertion</a></em> to reserve space for the content of the final <strong><a href="#_identity_assertion">identity assertion</a></strong> (including its signature) which will be created later.</p>
+</div>
+<div class="paragraph">
+<p>When using a data hash assertion, a <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> MUST follow the process described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_creating_a_claim">Section 10.3, “Creating a claim,”</a> and <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_multiple_step_processing">Section 10.4, “Multiple step processing,”</a> of the C2PA technical specification with additional steps as described below:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_creating_assertions">Section 10.3.1, “Creating assertions.”</a> Any <strong><a href="#_identity_assertion">identity assertion</a></strong> that will be added to the claim MUST be represented during this step by an assertion using the same label as the final <strong><a href="#_identity_assertion">identity assertion</a>.</strong> The content of the <em><a href="#_placeholder_assertion">placeholder assertion</a></em> is unimportant, except that the size in bytes of the <em><a href="#_placeholder_assertion">placeholder assertion</a></em> MUST be large enough to accommodate the final <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_adding_assertions_and_redactions">Section 10.3.2.1, “Adding assertions and redactions”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_adding_ingredients">Section 10.3.2.2, “Adding ingredients”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_connecting_the_signature">Section 10.3.2.3, “Connecting the signature”</a></p>
+</li>
+<li>
+<p>If using C2PA 1.x process, <a href="https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_prepare_the_xmp">Section 11.4.1, “Prepare the XMP”</a>.</p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_create_content_bindings">Section 10.4.1, “Create content bindings”</a></p>
+</li>
+<li>
+<p>The list of <em><a href="#_referenced_assertions">referenced assertions</a></em> (including the <em><a href="#_hard_binding">hard binding</a></em> assertion) MUST be presented to the <em><a href="#_credential_holder">credential holder</a></em> for each <strong><a href="#_identity_assertion">identity assertion</a></strong> to be added, as described in <a href="#_presenting_the_signer_payload_data_structure_for_signature">Section 6.1, &#8220;Presenting the <code>signer_payload</code> data structure for signature&#8221;</a> by the corresponding <em><a href="#_credential_holder">credential holder</a>.</em> Once each signature has been obtained, the <em><a href="#_placeholder_assertion">placeholder assertion</a></em> content MUST be replaced with the final <strong><a href="#_identity_assertion">identity assertion</a></strong> content incorporating that signature. The <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> SHOULD independently validate the signature from the <em><a href="#_credential_holder">credential holder</a></em> before proceeding.</p>
+</li>
+<li>
+<p>The remaining steps from <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_multiple_step_processing">Section 10.4, “Multiple step processing,”</a> MUST now be completed.</p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_signing_a_claim">Section 10.3.2.4, “Signing a claim”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_time_stamps">Section 10.3.2.5, “Time stamps”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_credential_revocation_information">Section 10.3.2.6, “Credential revocation information”</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>These steps are also represented by the following sequence diagram, which is non-normative:</p>
+</div>
+<div class="imageblock"><div class="mermaid content" style="width: 100%; ">sequenceDiagram
+    participant G as C2PA claim generator
+    participant H as Credential holder
+
+    G->>G: Create assertions
+    Note right of G: Includes placeholder assertions
+    G->>G: Create content bindings
+
+    loop For each credential holder
+    G->>H: Request signature over list of referenced assertions
+    H->>G: Provide signature over list of referenced assertions
+    G->>G: Independently verify signature
+    end
+
+    G->>G: Replace placeholder assertions with final identity assertions
+    G->>G: Create claim
+    G->>G: Issue claim generator signature for final claim
+    G->>G: Create manifest store</div></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validating_the_identity_assertion"><a class="anchor" href="#_validating_the_identity_assertion"></a>7. Validating the identity assertion</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_validation_method"><a class="anchor" href="#_validation_method"></a>7.1. Validation method</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Validation of the <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> MUST be completed with a finding that the manifest is at least <em>well-formed</em> as per <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_well_formed_manifest">Section 14.3.2, Well-formed manifest,”</a> of the C2PA technical specification before a validator attempts to report on the validity of an <strong><a href="#_identity_assertion">identity assertion</a>.</strong>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>An <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST contain a valid CBOR data structure that contains the required fields as documented in the <code>identity</code> rule in <a href="#_cbor_schema">Section 5.2, &#8220;CBOR schema&#8221;</a>. The <code>cawg.identity.cbor.invalid</code> error code SHALL be used to report assertions that do not follow this rule. A validator SHALL NOT consider any extra fields not documented in the <code>identity</code> rule during the validation process.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Extra fields can be read and processed in non-validation scenarios.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For each entry in <code>signer_payload.referenced_assertions</code>, the validator MUST verify that the same entry exists in either the <code>created_assertions</code> or <code>gathered_assertions</code> entry of the <em><a href="#_c2pa_claim">C2PA claim</a>.</em> (For version 1 claims, the entry must appear in the <code>assertions</code> entry.) The <code>cawg.identity.assertion.mismatch</code> error code SHALL be used to report violations of this rule.</p>
+</div>
+<div class="paragraph">
+<p>The validator SHOULD verify that no entry in <code>signer_payload.referenced_assertions</code> is duplicated. The <code>cawg.identity.assertion.duplicate</code> error code SHALL be used to report violations of this rule.</p>
+</div>
+<div class="paragraph">
+<p>The validator MUST ensure that <code>signer_payload.referenced_assertions</code> contains at least one <em><a href="#_hard_binding">hard binding</a></em> assertion as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hard_bindings">Section 9.2, “Hard bindings”</a> of the C2PA technical specification. The <code>cawg.identity.hard_binding_missing</code> error code SHALL be used to report a missing <em><a href="#_hard_binding">hard binding</a></em> assertion.</p>
+</div>
+<div class="paragraph">
+<p>The validator MUST maintain a list of valid <code>signer_payload.sig_type</code> values and corresponding code paths for the <code>signature</code> values that it is prepared to accept. Validators SHOULD be prepared to accept all signature types described in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>. The <code>cawg.identity.sig_type.unknown</code> error code SHALL be used to report assertions that contain unrecognized <code>signer_payload.sig_type</code> values.</p>
+</div>
+<div class="paragraph">
+<p>The <code>signature</code> field of an <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST contain a valid signature. The procedure for validating each signature type and corresponding status codes are described in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>pad1</code> and <code>pad2</code> fields of an <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST contain only zero-value (<code>0x00</code>) bytes. The <code>cawg.identity.pad.invalid</code> error code SHALL be used to report assertions that contain other values in these fields.</p>
+</div>
+<div class="sect3">
+<h4 id="_validating_the_expected_partial_claim_field"><a class="anchor" href="#_validating_the_expected_partial_claim_field"></a>7.1.1. Validating the <code>expected_partial_claim</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a></strong> contains an <code>expected_partial_claim</code> field in <code>signer_payload</code>, it MUST be validated as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Locate the <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure that includes this <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</li>
+<li>
+<p>Replace the <code>hash</code> value for the specific <strong><a href="#_identity_assertion">identity assertion</a></strong> being validated with all zero-value (<code>0x00</code>) bytes.</p>
+</li>
+<li>
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a></strong> contains an <code>expected_countersigners</code> field in <code>signer_payload</code>, for each entry in the <code>expected_countersigners</code> array where an <strong><a href="#_identity_assertion">identity assertion</a></strong> can be found that matches the signing credentials used as described in <a href="#_serialization_for_credential_types">Serialization for credential types</a>, replace the <code>hash</code> field for that <strong><a href="#_identity_assertion">identity assertion</a></strong> being validated with all zero-value (<code>0x00</code>) bytes.</p>
+</li>
+<li>
+<p>Serialize the updated <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure using the hash algorithm described by <code>expected_partial_claim.alg</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The resulting hash MUST exactly match the value present in <code>expected_partial_claim.hash</code>. The <code>cawg.identity.expected_partial_claim.mismatch</code> error code SHALL be used to report assertions that contain other values.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_validating_the_expected_claim_generator_field"><a class="anchor" href="#_validating_the_expected_claim_generator_field"></a>7.1.2. Validating the <code>expected_claim_generator</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a></strong> contains an <code>expected_claim_generator</code> field in <code>signer_payload</code>, it MUST be validated as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Locate the end-entity signing certificate that is present in the <em><a href="#_c2pa_claim">C2PA claim</a></em> signature. It can be located as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#x509_certificates">Section 14.6, “X.509 certificates,”</a> of the C2PA technical specification.</p>
+</li>
+<li>
+<p>Identify the CBOR bytes specific to this signing certifcate. If necessary, any re-serialization should be performed using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized end-entity certificate using the hash algorithm described by <code>expected_claim_generator.alg</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The resulting hash MUST exactly match the value present in <code>expected_claim_generator.hash</code>. The <code>cawg.identity.expected_claim_generator.mismatch</code> error code SHALL be used to report assertions that contain other values.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_validating_the_expected_countersigners_field"><a class="anchor" href="#_validating_the_expected_countersigners_field"></a>7.1.3. Validating the <code>expected_countersigners</code> field</h4>
+<div class="paragraph">
+<p>If the <strong><a href="#_identity_assertion">identity assertion</a></strong> contains an <code>expected_countersigners</code> field in <code>signer_payload</code>, it MUST be validated as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For every <em>other</em> <strong><a href="#_identity_assertion">identity assertion</a></strong> that is present in the <a href="#_c2pa_manifest">C2PA Manifest</a>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Find the <code>signer_payload</code> map in that <strong><a href="#_identity_assertion">identity assertion</a></strong>. Remove any <code>expected_countersigners</code> field that is found in that <code>signer_payload</code> map. This will be referred to in the rest of this process as the <em>partial signer payload.</em></p>
+</li>
+<li>
+<p>Search the <code>expected_countersigners</code> list <em>in the current <strong><a href="#_identity_assertion">identity assertion</a></strong> being validated</em> for an entry where <code>partial_signer_payload</code> matches the just-computed <em>partial signer payload.</em> If no such entry can be found, stop validating and return the <code>cawg.identity.unexpected_countersigner</code> error code.</p>
+</li>
+<li>
+<p>If the entry in <code>expected_countersigners</code> also contains an <code>expected_credentials</code> entry:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Serialize the signing credential as a CBOR byte string as described in <a href="#_serialization_for_credential_types">Serialization for credential types</a>. This serialization should be performed using <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core deterministic encoding,”</a> of RFC 8949: Concise binary object representation.</p>
+</li>
+<li>
+<p>Compute a hash of the serialized signing credential using the algorithm specified by the <code>alg</code> entry in the <code>expected_credentials</code> map.</p>
+</li>
+<li>
+<p>Compare the just-computed hash with the <code>hash</code> entry in the <code>expected_credentials</code> map. If they do not match, stop validating and return the <code>cawg.identity.expected_countersigner.mismatch</code> error code.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If any entry exists in <code>expected_countersigners</code> that was not matched by the previous loop, the <code>cawg.identity.expected_countersigner.missing</code> error code SHOULD be returned.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_status_codes"><a class="anchor" href="#_status_codes"></a>7.2. Status codes</h3>
+<div class="paragraph">
+<p>The set of standard success and failure codes for <strong><a href="#_identity_assertion">identity assertion</a></strong> validations are defined below. These follow the format defined by the section titled <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_returning_validation_results">Section 15.2, Returning validation results,”</a> of the C2PA technical specification.</p>
+</div>
+<div class="paragraph">
+<p>The <code>url</code> field for a status code MUST always be the label of the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> It is omitted from the tables below.</p>
+</div>
+<div class="sect3">
+<h4 id="_success_codes"><a class="anchor" href="#_success_codes"></a>7.2.1. Success codes</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.trusted</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a>,</strong> including the referenced credentials and signature binding the <em><a href="#_credential_holder">credential holder</a></em> to the <em><a href="#_c2pa_claim">C2PA claim</a></em>, is validated. The <em><a href="#_named_actor">named actor</a></em> is considered <strong>trusted</strong> according to the evaluation in <a href="#_trust_scenarios_in_identity_assertion">Section 9.3, &#8220;Trust scenarios in identity assertion&#8221;</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.well-formed</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a>,</strong> including the referenced credentials and signature binding the <em><a href="#_credential_holder">credential holder</a></em> to the <em><a href="#_c2pa_claim">C2PA claim</a></em>, is validated. The evaluation in <a href="#_trust_scenarios_in_identity_assertion">Section 9.3, &#8220;Trust scenarios in identity assertion&#8221;</a> could not identify any root of trust for the <em><a href="#_named_actor">named actor</a>.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_failure_codes"><a class="anchor" href="#_failure_codes"></a>7.2.2. Failure codes</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.cbor.invalid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The CBOR of the <strong><a href="#_identity_assertion">identity assertion</a></strong> is not valid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.assertion.mismatch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a></strong> contains an assertion reference that could not be found in the <em><a href="#_c2pa_claim">C2PA claim</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.assertion.duplicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a></strong> contains one or more duplicate assertion references.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.credential_revoked</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a></strong> was signed using a <em><a href="#_credential_revocation">revoked credential</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.hard_binding_missing</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong><a href="#_identity_assertion">identity assertion</a></strong> does not reference a <em><a href="#_hard_binding">hard binding</a></em> assertion.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.sig_type.unknown</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>signer_payload.sig_type</code> of the <strong><a href="#_identity_assertion">identity assertion</a></strong> is not recognized.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.pad.invalid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>pad1</code> or <code>pad2</code> field contains non-zero bytes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.expected_partial_claim.mismatch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>signer_payload.expected_partial_claim</code> field did not match the <em><a href="#_c2pa_claim">C2PA claim</a></em> data structure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.expected_claim_generator.mismatch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>signer_payload.expected_claim_generator</code> field did not match the X.509 certificate used to sign the <em><a href="#_c2pa_claim">C2PA claim</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.unexpected_countersigner</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <strong><a href="#_identity_assertion">identity assertion</a></strong> exists in this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> that was not described in <code>signer_payload.expected_countersigners</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cawg.identity.expected_countersigner.mismatch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <strong><a href="#_identity_assertion">identity assertion</a></strong> exists in this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> that has the expected <code>signer_payload</code> but has different signing credentials than were described in <code>signer_payload.expected_countersigners</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>`cawg.identity.expected_countersigner.missing</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>signer_payload.expected_countersigners</code> describes an <strong><a href="#_identity_assertion">identity assertion</a></strong> that does not exist in this <em><a href="#_c2pa_manifest">C2PA Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Additional failure codes relating to specific signature types are defined in <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_credentials_signatures_and_validation_methods"><a class="anchor" href="#_credentials_signatures_and_validation_methods"></a>8. Credentials, signatures, and validation methods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> allows multiple signature types to be represented, although only one <em><a href="#_toip_verifiable_identifier">ToIP verifiable identifier</a></em> and corresponding signature can be used in any single assertion.</p>
+</div>
+<div class="paragraph">
+<p>The signature type is represented by the <code>signer_payload.sig_type</code> field. Some credential types are described in this specification. It is strongly recommended that <strong><a href="#_identity_assertion">identity assertion</a></strong> validators be prepared to read all of the signature types described in this specification.</p>
+</div>
+<div class="paragraph">
+<p>Other specifications MAY define additional <code>signer_payload.sig_type</code> values and the corresponding definition of <code>signature</code> with the understanding that some <strong><a href="#_identity_assertion">identity assertion</a></strong> validators may not be prepared to understand such assertions. Values of <code>signer_payload.sig_type</code> that begin with the prefix <code>cawg.</code> are reserved for use of the Creator Assertions Working Group and MUST NOT be used in any specification not produced by this group.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Credential types in minor version updates</div>
+<div class="paragraph">
+<p>Future minor version updates (1.1, 1.2, etc.) to this specification MAY:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add new sections to this specification defining new credential types and their corresponding <code>signer_payload.sig_type</code> values.</p>
+</li>
+<li>
+<p>Mark existing sections of this specification defining existing credential types and their corresponding <code>signer_payload.sig_type</code> values as deprecated.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Such updates to the specification SHOULD continue to use the <code>cawg.identity</code> assertion label.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_w3c_verifiable_credentials"><a class="anchor" href="#_w3c_verifiable_credentials"></a>8.1. W3C verifiable credentials</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This portion of the specification is still undergoing significant exploration and revision. It will be added in a subsequent version.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_x_509_certificates_and_cose_signatures"><a class="anchor" href="#_x_509_certificates_and_cose_signatures"></a>8.2. X.509 certificates and COSE signatures</h3>
+<div class="paragraph">
+<p>In some use cases, an <em><a href="#_actor">actor</a></em> in the system MAY wish to provide an <em><a href="https://tools.ietf.org/html/rfc5280">X.509 certificate</a></em> to have an organizational or individual identity described by the certificate associated with the list of <em><a href="#_referenced_assertions">referenced assertions</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>The <code>signer_payload.sig_type</code> value for such an assertion MUST be <code>cawg.x509.cose</code>. The <code>signature</code> value MUST be a <em><a href="https://datatracker.ietf.org/doc/html/rfc8152">COSE signature</a></em> as described below.</p>
+</div>
+<div class="sect3">
+<h4 id="_generating_the_cose_signature"><a class="anchor" href="#_generating_the_cose_signature"></a>8.2.1. Generating the COSE signature</h4>
+<div class="paragraph">
+<p>To generate the COSE signature for an <strong><a href="#_identity_assertion">identity assertion</a>,</strong> the steps described in the listed sections of the C2PA technical specification MUST be followed with adaptations as described subsequently:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_signing_a_claim">Section 10.3.2.4, “Signing a claim”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_time_stamps">Section 10.3.2.5, “Time-stamps”</a></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+An <strong><a href="#_identity_assertion">identity assertion</a></strong> MUST NOT contain a v1 time-stamp as defined in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_choosing_the_payload">Section 10.3.2.5.2, “Choosing the payload.”</a>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_credential_revocation_information">Section 10.3.2.6, “Credential revocation information”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_hashing">Section 13.1, “Hashing”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_digital_signatures">Section 13.2, “Digital signatures”</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In each of the above sections, the following changes MUST be applied:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Any reference to the <em>claim</em> MUST be replaced with the CBOR serialization of the <code>signer_payload</code> field from the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> The <code>signer_payload</code> data structure MUST be serialized as described in <a href="https://www.rfc-editor.org/rfc/rfc8949.html#name-core-deterministic-encoding">Section 4.2.1, “Core Deterministic Encoding,”</a> of RFC 8949: Concise Binary Object Representation. The resulting byte string is presented to the <em><a href="#_credential_holder">credential holder</a></em> for signature.</p>
+</li>
+<li>
+<p>Any reference to the <em>claim generator</em> MUST be replaced with the <em><a href="#_actor">actor</a></em> whose <em>X.509 certificate</em> is being used for this assertion.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_validating_the_cose_signature"><a class="anchor" href="#_validating_the_cose_signature"></a>8.2.2. Validating the COSE signature</h4>
+<div class="paragraph">
+<p>To validate the COSE signature for an <strong><a href="#_identity_assertion">identity assertion</a>,</strong> the steps described in the listed sections of the C2PA technical specification MUST be followed with adaptations as described:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_validate_the_signature">Section 15.5, “Validate the signature.”</a> Disregard the paragraph that starts with “Retrieve the URI reference.” Instead retrieve the COSE signature from the <code>signature</code> field of the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_validate_the_time_stamp">Section 15.6, “Validate the time-stamp”</a></p>
+</li>
+<li>
+<p><a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_validate_the_credential_revocation_information">Section 15.7, “Validate the credential revocation information”</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In each of the above sections, the following changes MUST be applied:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Any reference to the <em>claim</em> MUST be replaced with the CBOR serialization of the <code>signer_payload</code> field from the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</li>
+<li>
+<p>Any reference to the <em>claim generator</em> MUST be replaced with the <em><a href="#_actor">actor</a></em> whose <em>X.509 certificate</em> is being used for this assertion.</p>
+</li>
+<li>
+<p>The validator SHALL maintain one or more <em><a href="#_trust_list">trust lists</a></em> which do not need to be the same as the <em><a href="#_trust_list">trust lists</a></em> used to validate claim generator signatures as described in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_c2pa_signers">Section 14.4.1, “C2PA Signers.”</a></p>
+</li>
+<li>
+<p>The validator SHALL consider any v1 time-stamp as defined in <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_choosing_the_payload">Section 10.3.2.5.2, “Choosing the payload”</a> to be invalid.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_trust_model"><a class="anchor" href="#_trust_model"></a>9. Trust model</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This section augments <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html#_trust_model">Section 14, “Trust model,”</a> of the C2PA technical specification by adding additional trust signals related to the identity of <em><a href="#_actor">actors</a></em> involved in creation of a <em><a href="#_c2pa_asset">C2PA asset</a>.</em> It does not replace any portion of the C2PA trust model.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_what_does_trust_mean"><a class="anchor" href="#_what_does_trust_mean"></a>9.1. What does trust mean?</h3>
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p>This specification defines three distinct kinds of trust:</p>
+</div>
+<div class="sect3">
+<h4 id="_technical_trust"><a class="anchor" href="#_technical_trust"></a>9.1.1. Technical trust</h4>
+<div class="paragraph">
+<p><strong>Technical trust</strong> exists if the following requirements are met to the satisfaction of the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Can I prove that the content I’m consuming was signed by a credential associated with a <em><a href="#_named_actor">named actor</a></em> and that the content is unmodified from what the <em><a href="#_named_actor">named actor</a></em> produced at the time it was signed?</p>
+</li>
+<li>
+<p>Can I trust that the identity signals in the credential point to a <em><a href="#_named_actor">named actor</a>?</em></p>
+</li>
+<li>
+<p>Do I trust that the identifier for the credential <strong>issuer</strong> is unique?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong><a href="#_identity_assertion">identity assertion</a></strong> should be thought of primarily as providing a framework for establishing <em>technical trust</em> between a <em><a href="#_named_actor">named actor</a></em> and an <em><a href="#_identity_assertion_consumer">identity assertion consumer</a>.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_governance_trust"><a class="anchor" href="#_governance_trust"></a>9.1.2. Governance trust</h4>
+<div class="paragraph">
+<p><strong>Governance trust</strong> exists if the following requirements are met to the satisfaction of the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Am I confident in how the credential(s) were issued to a <em><a href="#_named_actor">named actor</a>?</em> Do I understand the level of assurance offered by the credential issuer? Is it sufficient for me to accept the identity of the <em><a href="#_named_actor">named actor</a></em> as valid and meaningful?</p>
+</li>
+<li>
+<p>Am I confident in how the credential(s) were managed and controlled by the <em><a href="#_named_actor">named actor</a>,</em> <em><a href="#credential_holder">credential holder</a>,</em> and issuer, and then used to sign the content I&#8217;m consuming?</p>
+</li>
+<li>
+<p>If the issuer is referenced on a <em><a href="#_trust_list">trust list</a>,</em> do I trust the governance of that <em><a href="#_trust_list">trust list</a>?</em> In other words, do I have confidence in the process by which this issuer was added to and has remained on the <em><a href="#_trust_list">trust list</a>?</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Software tools supporting <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> can assist in establishing <em>governance trust</em> by making well-informed choices about roots of trust.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_reputation_trust"><a class="anchor" href="#_reputation_trust"></a>9.1.3. Reputation trust</h4>
+<div class="paragraph">
+<p><strong>Reputation trust</strong> exists if the following requirements are met to the satisfaction of the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Am I confident that the <em><a href="#_named_actor">named actor</a></em> will produce valuable content in good faith?</p>
+</li>
+<li>
+<p>Does the <em><a href="#_named_actor">named actor</a></em> have a reputation and legitimacy that I can rely on?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>While <em>reputation trust</em> requires <em>technical trust</em> and <em>governance trust</em> to be established in order to evaluate it meaningfully, these criteria are largely subjective and thus outside the scope of this specification. Also, unlike <em>technical trust,</em> the evaluation of <em>reputation trust</em> is likely to evolve over time as the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> gains experience with and learns more about the <em><a href="#_named_actor">named actor</a>.</em></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_technical_trust_introduction"><a class="anchor" href="#_technical_trust_introduction"></a>9.2. Technical trust introduction</h3>
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p>The relationships required to establish technical trust are typically described using a <em>trust diamond</em> as shown in the following diagram:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/trust-model/basic-trust-diamond.drawio.svg" alt="Basic trust triangle" width="430" height="250">
+</div>
+<div class="title">Figure 6. Basic trust diamond</div>
+</div>
+<div class="paragraph">
+<p>The four roles depicted can each be performed by a human, organization, machine, or some combination thereof. A <em>governing authority</em> sets the rules over the issuance of conformant identities from <em>credential issuers</em> to <em><a href="#_credential_holder">credential holders</a></em> and allows <em>credential issuers</em> to appear on a <em><a href="#_trust_list">trust list</a></em> after it satisfies the conformance of its rules within its governance framework. A <em><a href="#_credential_holder">credential holder</a></em> establishes a relationship with a <em>credential issuer.</em> If the <em>issuer</em> trusts the <em><a href="#_credential_holder">credential holder</a>,</em> it will then issue a digital credential which makes statements about the <em><a href="#_named_actor">named actor</a></em> (which may or may not be the same <em><a href="#_actor">actor</a></em> as the <em><a href="#_credential_holder">credential holder</a></em>) and is signed by the <em>issuer.</em></p>
+</div>
+<div class="paragraph">
+<p>Later, the <em><a href="#_credential_holder">credential holder</a></em> can then present this credential to a <em>verifier</em> (also often known as a “relying party”). If the <em>verifier</em> has an existing trust relationship with the <em>credential issuer,</em> then the <em>verifier</em> can choose to trust the credential, after checking that credential was issued by an <em>issuer</em> appearing on the <em><a href="#_trust_list">trust list</a>,</em> and the statements made within it.</p>
+</div>
+<div class="paragraph">
+<p>This pattern can be repeated if there is not a direct trust relationship between the <em>verifier</em> and <em>issuer.</em> The <em>issuer</em> itself might have a credential that is issued by another <em>issuer</em> that is known to the <em>verifier</em> as shown in the following diagram:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/trust-model/transitive-trust-triangle.drawio.svg" alt="Transitive trust triangle" width="570" height="220">
+</div>
+<div class="title">Figure 7. Transitive trust triangle</div>
+</div>
+<div class="paragraph">
+<p>In this scenario, <em>issuer 2</em> is playing a dual role as <em><a href="#_credential_holder">credential holder</a></em> and <em>credential issuer.</em> The <em>verifier</em> does not have a direct relationship with the issuer of the credentials that were presented (<em>issuer 2</em>). However, it can inspect <em>issuer 2’s</em> credentials and find that they were issued by <em>issuer 1,</em> with whom it does have a direct relationship. Based on the nature of that relationship, it may choose to extend <strong>transitive trust</strong> to <em>issuer 2</em> and thus to the credential that <em>issuer 2</em> issued.</p>
+</div>
+<div class="paragraph">
+<p>Web browsers provide a well-known example of transitive trust. Browsers have direct relationships with relatively few root trust anchors. Those anchors, known as <em>root certificate authorities,</em> in turn issue credentials to <em>certificate authorities</em> who then issue credentials to individual web site operators who then sign the content presented to a browser. This pattern may be repeated with multiple layers of intermediate certificate authorities. The web browser evaluates this entire chain of credentials when deciding whether to present a web site as trusted or not.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_trust_scenarios_in_identity_assertion"><a class="anchor" href="#_trust_scenarios_in_identity_assertion"></a>9.3. Trust scenarios in identity assertion</h3>
+<div class="paragraph">
+<p>The <code>signature</code> in an <strong><a href="#_identity_assertion">identity assertion</a></strong> could be considered as a new credential documenting the relationship between <em><a href="#_named_actor">named actor</a></em> and <em><a href="#_c2pa_asset">C2PA asset</a>,</em> which will be referred to in this section as an <em>asset-specific credential.</em></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+“Content Credential” is a trademarked term that refers to <em><a href="#_c2pa_manifest">C2PA Manifests</a></em> and MUST NOT be used in reference to <strong><a href="#_identity_assertion">identity assertion</a></strong> signatures.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For each form of credential that an <em><a href="#_identity_asertion_consumer">identity assertion consumer</a></em> is prepared to accept, it SHOULD maintain:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>a list of trust relationships that it is prepared to accept when interpreting any <strong><a href="#_identity_assertion">identity assertion</a>,</strong> and</p>
+</li>
+<li>
+<p>one or more mechanisms to check for credentials that have been <em><a href="#_credential_revocation">revoked</a></em> by the <em>issuer.</em></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>There are a few possible relationships between the implementation of the <strong><a href="#_identity_assertion">identity assertion</a>,</strong> <em><a href="#_named_actor">named actor</a>,</em> and <em>credential issuer,</em> as documented in the following subsections.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The trust decisions described in the scenarios should only be evaluated once the <strong><a href="#_identity_assertion">identity assertion</a></strong> and the signature material within have been successfully validated as described in <a href="#_validating_the_identity_assertion">Section 7, &#8220;Validating the identity assertion&#8221;</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The trust decision can result in one of three descriptions of the <em><a href="#_named_actor">named actor</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Trusted:</strong> The <em><a href="#_identity_asertion_consumer">identity assertion consumer</a></em> can verify a trust relationship to the <em><a href="#_named_actor">named actor</a></em> through its established roots of trust. The <em><a href="#_identity_asertion_consumer">identity assertion consumer</a></em> found no evidence that the credential was <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was created.</p>
+</li>
+<li>
+<p><strong>Well-formed:</strong> The <em><a href="#_identity_asertion_consumer">identity assertion consumer</a></em> can not verify a trust relationship to the <em><a href="#_named_actor">named actor</a>.</em> The <em><a href="#_identity_asertion_consumer">identity assertion consumer</a></em> found no evidence that the credential was <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was created.</p>
+</li>
+<li>
+<p><strong>Revoked:</strong> The credential used for signing the <strong><a href="#_identity_assertion">identity assertion</a></strong> had been <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was created.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_named_actor_as_issuer"><a class="anchor" href="#_named_actor_as_issuer"></a>9.3.1. Named actor as issuer</h4>
+<div class="paragraph">
+<p>In this scenario, the <em><a href="#_credential_holder">credential holder</a></em> possesses a credential that describes the <em><a href="#_named_actor">named actor</a></em> and is provisioned with the ability to generate digital signatures on the <em><a href="#_named_actor">named actor’s</a></em> behalf.</p>
+</div>
+<div class="paragraph">
+<p>This scenario is implicit in the X.509 certificate-based workflow as described in <a href="#_x_509_certificates_and_cose_signatures">Section 8.2, &#8220;X.509 certificates and COSE signatures&#8221;</a>. Other credential types MAY also follow this scenario.</p>
+</div>
+<div class="paragraph">
+<p>The <em><a href="#_credential_holder">credential holder</a></em> uses this signature authority directly to generate the <em>asset-specific credential,</em> as depicted in the following diagram, which is non-normative:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/trust-model/named-actor-as-issuer.drawio.svg" alt="Named actor as issuer" width="570" height="240">
+</div>
+<div class="title">Figure 8. Named actor as issuer</div>
+</div>
+<div class="paragraph">
+<p>In this scenario, the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> SHOULD make its trust decision based on the following predicates:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Is there a direct trust relationship with the <em><a href="#_named_actor">named actor</a>?</em> If so, the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>trusted.</strong></p>
+</li>
+<li>
+<p>Is there a transitive trust relationship with the <em><a href="#_named_actor">named actor</a></em> via its <em>credential issuer?</em> (In other words, does the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> trust the <em>credential issuer</em> to issue valid signature credentials?)</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If so, was the <em><a href="#_named_actor">named actor’s</a></em> credential <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was signed? If so, the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>revoked.</strong></p>
+</li>
+<li>
+<p>If the transitive trust relationship exists and the credential has not been <em><a href="#_credential_revocation">revoked</a>,</em> the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>trusted.</strong></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If neither relationship can be demonstrated, the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>well-formed.</strong></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Any available information about credential <em><a href="#_credential_revocation">revocation</a></em> SHOULD be included in the <em><a href="#_identity_assertion_consumer">identity assertion consumer’s</a></em> report about the <strong><a href="#_identity_assertion">identity assertion</a></strong> regardless of <strong>trusted</strong> or <strong>untrusted</strong> status.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The direct trust relationship case is possible, but relatively uncommon.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_named_actor_without_signature_authority"><a class="anchor" href="#_named_actor_without_signature_authority"></a>9.3.2. Named actor without signature authority</h4>
+<div class="paragraph">
+<p>In this scenario, the <em><a href="#_credential_holder">credential holder</a></em> possesses a credential that describes the <em><a href="#_named_actor">named actor</a></em> but does not have the ability to generate digital signatures on the <em><a href="#_named_actor">named actor’s</a></em> behalf.</p>
+</div>
+<div class="paragraph">
+<p>In this scenario, the hardware or software implementation that is generating the <strong><a href="#_identity_assertion">identity assertion</a></strong> MAY request a summary of the <em><a href="#_named_actor">named actor’s</a></em> credential from the <em><a href="#_credential_holder">credential holder</a>,</em> and gather that information into the <strong><a href="#_identity_assertion">identity assertion</a>,</strong> which it will then sign using its own credentials.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Example using W3C verifiable credentials</div>
+<div class="paragraph">
+<p>This example, which is non-normative, depicts a possible workflow for this scenario. In this scenario, the <em><a href="#_credential_holder">credential holder</a></em> wishes to use a W3C verifiable credential held in a wallet to generate an <strong><a href="#_identity_assertion">identity assertion</a></strong> on behalf of the credential’s <em><a href="#_named_actor">named actor</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>In this example, the wallet is prepared to selectively disclose portions of the credential via W3C verifiable presentation, but can neither reveal the entire credential nor issue other forms of signature.</p>
+</div>
+<div class="imageblock"><div class="mermaid content" style="width: 100%; ">sequenceDiagram
+    participant G as C2PA claim generator
+    participant W as Wallet
+    participant H as Credential holder
+
+    Note right of G: Create signer_payload
+
+    G->>W: Presentation request<br>including signer_payload
+    W->>H: Request consent for presentation
+    H->>W: Consent granted
+    W->>G: Verifiable presentation
+
+    Note right of G: Generate new asset-specific<br>credential using VP content</div></div>
+</div>
+</div>
+<div class="paragraph">
+<p>In this scenario, the <em>issuer</em> of the <em>asset-specific credential</em> is not the <em><a href="#_credential_holder">credential holder</a></em> but the <em><a href="#_actor">actor</a></em> that is generating the <strong><a href="#_identity_assertion">identity assertion</a>,</strong> as depicted in the following diagram, which is non-normative:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/trust-model/no-signature-authority.drawio.svg" alt="Named actor without signature authority" width="570" height="320">
+</div>
+<div class="title">Figure 9. Named actor without signature authority</div>
+</div>
+<div class="paragraph">
+<p>In this scenario, the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> SHOULD make its trust decision based on the following predicates:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Does the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> trust the <strong><a href="#_identity_assertion">identity assertion</a> generator</strong> to request a credential summary from the <em><a href="#_credential_holder">credential holder</a></em> and accurately reflect that credential summary into the <strong><a href="#_identity_assertion">identity assertion</a>?</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Is there a direct trust relationship with the <strong><a href="#_identity_assertion">identity assertion</a> generator?</strong> If so, proceed to step 2.</p>
+</li>
+<li>
+<p>Is there a transitive trust relationship with the <strong><a href="#_identity_assertion">identity assertion</a> generator</strong> via its <em>credential issuer?</em> (In other words, does the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> trust the <strong><a href="#_identity_assertion">identity assertion</a> generator’s</strong> <em>credential issuer</em> to issue valid signature credentials?)</p>
+</li>
+<li>
+<p>If so, was the <strong><a href="#_identity_assertion">identity assertion</a> generator’s</strong> credential <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was signed? If so, do not proceed. The <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>revoked.</strong></p>
+</li>
+<li>
+<p>If the transitive trust relationship exists and the credential has not been <em><a href="#_credential_revocation">revoked</a>,</em> proceed to step 2.</p>
+</li>
+<li>
+<p>If neither relationship can be demonstrated, do not proceed. The <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>well-formed.</strong></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Does the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> trust the <em><a href="#_named_actor">named actor’s</a> credential issuer</em> to issue valid credentials?</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Is there a direct trust relationship with the <em><a href="#_named_actor">named actor’s</a> credential issuer?</em> If so, proceed to step 3.</p>
+</li>
+<li>
+<p>Is there a transitive trust relationship with the <em><a href="#_named_actor">named actor’s</a> credential issuer</em> via its <em>credential issuer?</em> (In other words, does the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> trust the <em><a href="#named_actor">named actor’s</a> credential issuer</em> to issue valid credentials?) If so, proceed to step 3.</p>
+</li>
+<li>
+<p>If neither relationship can be demonstrated, do not proceed. The <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>well-formed.</strong></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Was the <em><a href="#_named_actor">named actor’s</a></em> credential <em><a href="#_credential_revocation">revoked</a></em> at the time the <strong><a href="#_identity_assertion">identity assertion</a></strong> was signed?</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If so, the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>revoked.</strong></p>
+</li>
+<li>
+<p>If no such <em><a href="#_credential_revocation">revocation</a></em> has been issued, the <strong><a href="#_identity_assertion">identity assertion</a></strong> SHOULD be treated as <strong>trusted.</strong></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Any available information about <em><a href="#_credential_revocation">credential revocation</a></em> SHOULD be included in the <em><a href="#_identity_assertion_consumer">identity assertion consumer’s</a></em> report about the <strong><a href="#_identity_assertion">identity assertion</a></strong> regardless of <strong>trusted</strong> or <strong>untrusted</strong> status.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_threats_to_trust_model"><a class="anchor" href="#_threats_to_trust_model"></a>9.4. Threats to trust model</h3>
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p>This section enumerates a number of potential attacks on the <strong><a href="#_identity_assertion">identity assertion</a></strong> trust model. If concrete guidance to mitigate or prevent a specific attack is available, that guidance should be incorporated as specific normative requirements elsewhere in this specification and referenced here.</p>
+</div>
+<div class="sect3">
+<h4 id="_replay_attacks"><a class="anchor" href="#_replay_attacks"></a>9.4.1. Replay attacks</h4>
+<div class="paragraph">
+<p>An attacker could attempt to extract a valid <strong><a href="#_identity_assertion">identity assertion</a></strong> out of one <em><a href="#_c2pa_asset">C2PA asset</a></em> and embed it in a new <em><a href="#_c2pa_asset">C2PA asset</a></em> of an attacker&#8217;s choosing without causing a validation error. This scenario could allow an attacker to falsely attribute the new <em><a href="#_c2pa_asset">C2PA asset</a></em> to a victim’s identity without their consent or knowledge. If the attacker’s <em><a href="#_c2pa_asset">C2PA asset</a></em> is controversial or illegal, then falsely attributing it to a victim’s identity could result in severe consequences for the victim. The system must ensure that an attacker can not apply an existing <strong><a href="#_identity_assertion">identity assertion</a></strong> to a different <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>To prevent this attack, we require that a valid <strong><a href="#_identity_assertion">identity assertion</a></strong> contain a <code>signer_payload.referenced_assertions</code> which includes a <em><a href="#_hard_binding">hard binding</a></em> assertion that properly describes the <em><a href="#_c2pa_asset">C2PA asset</a>.</em> A compliant <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should detect that the <em><a href="#_hard_binding">hard binding</a></em> assertion referenced by the original <strong><a href="#_identity_assertion">identity assertion</a></strong> does not match the attacker’s <em><a href="#_c2pa_asset">C2PA asset</a></em> and fail validation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parsing_and_validation_errors"><a class="anchor" href="#_parsing_and_validation_errors"></a>9.4.2. Parsing and validation errors</h4>
+<div class="paragraph">
+<p>Any content including, but not limited to the <em><a href="#_named_actor">named actor’s</a></em> identity, could be subject to a number of parsing or validation attacks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Injection of code</strong> (HTML, JavaScript, etc.) into a text field so that the attacker can attempt to control what is displayed to the end user. <em>Does the specification support markup in the text fields? Should all fields be considered unicode strings?</em></p>
+</li>
+<li>
+<p><strong>Text fields of excessive length:</strong> These can cause buffer overflows or could be an attempt to "push" trusted UI indicators out of the rendered view of the user. <em>Should the specification place an upper bound of the length of given fields?</em></p>
+</li>
+<li>
+<p><strong>Injection of special characters:</strong> These can be truncation attacks. For instance, if the UI parser is written in C, then an attacker might try to inject a null byte to cause discrepancies in the code about what should be displayed. <em>Are there any special characters necessitated by the specification that need to be escaped before being placed into the text field of an assertion?</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The effectiveness of such attacks will necessarily be dependent on the language and other related development tooling in use for any given implementation. Beyond reminding implementers that parsing and validation errors are a likely attack surface, it is outside the scope of this specification to provide language-specific guidance.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_name_collisions_homoglyph_attacks_and_typo_squatting_attacks"><a class="anchor" href="#_name_collisions_homoglyph_attacks_and_typo_squatting_attacks"></a>9.4.3. Name collisions, homoglyph attacks, and typo-squatting attacks</h4>
+<div class="paragraph">
+<p>An attacker could make use of visually-similar Unicode characters to mislead an end user into accepting a mistaken assertion of identity on behalf of a specific <em><a href="#_named_actor">named actor</a>.</em> Such attacks are common in phishing and impersonation attacks conducted on domain names and social media.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, it is likely that two or more <em><a href="#_named_actor">named actors</a></em> may legitimately have the same or very similar names. Whether legitimate or not, similar names may cause confusion among <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> absent other signals that disambiguate specific individuals or organizations. If anonymous identities are supported, <em><a href="#_identity_assertion">identity assertions</a></em> should also contain signals to disambiguate between anonymous identities.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The Creator Assertions Working Group supports the principle of <a href="https://www.icann.org/ua">Universal Acceptance as described by ICANN</a>. No mitigation for the attacks described in this section should result in preferential treatment for identifiers in any language or script system over any other language or script system.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Implementers are encouraged to apply one or more of the following approaches to mitigate this potential attack:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Credential issuers are encouraged to verify proposed names carefully to avoid malicious use of names. Intermediate authorities (<em><a href="#_trust list">trust lists</a>,</em> intermediate CAs, etc.) are encouraged to require such verification as part of their governance terms.</p>
+</li>
+<li>
+<p>Software tools that support <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> are encouraged to maintain a list of trust anchors that have well-established governance terms designed to avoid the inclusion of inadvertently or maliciously misleading identity credentials and to reference those roots of trust in their user experience.</p>
+</li>
+<li>
+<p>Software tools that support <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> are encouraged to maintain lists of known <em><a href="#_named_actor">named actors</a></em> via unique identifiers available with each credential type rather than the human-readable display names.</p>
+</li>
+<li>
+<p>Software tools that support <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> are encouraged to make visible the evaluation of an identity assertion as trusted, well-formed, or invalid.</p>
+</li>
+<li>
+<p>Software tools that support <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> are encouraged to display additional detail about the <em><a href="#_named_actor">named actor</a>,</em> such as the unique identifiers behind the credential, upon user request.</p>
+</li>
+<li>
+<p>Future versions of this specification will likely allow linking independent verifiable trust signals (social accounts, web sites, etc.). As those become available, <em><a href="#_named_actor">named actors</a></em> are encouraged to include those signals and <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> are encouraged to verify those signals.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_revocation_of_credential"><a class="anchor" href="#_revocation_of_credential"></a>9.4.4. Revocation of credential</h4>
+<div class="paragraph">
+<p>There are numerous scenarios which may result in the credential issued to a <em><a href="#_credential_holder">credential holder</a></em> being <em><a href="#_credential_revocation">revoked</a>.</em> Some are adverse, such as credential compromise or acting in bad faith. Other scenarios are routine, such as changes to the name, address, or other identifying information contained within the credentials.</p>
+</div>
+<div class="paragraph">
+<p>The <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should make a best effort to verify the status of the credential as of the time of <strong><a href="#_identity_assertion">identity assertion</a></strong> creation. The exact mechanism will vary based on the credential type and will be specified in the appropriate subsection of <a href="#_credentials_signatures_and_validation_methods">Section 8, &#8220;Credentials, signatures, and validation methods&#8221;</a>. If a credential is found to be <em><a href="#_credential_revocation">revoked</a></em> at that time, this information should be prominently displayed in any user experience regarding the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> Absent specific information as to the cause for <em><a href="#_credential_revocation">revocation,</a></em> a <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should not assume that a <em><a href="#_credential_revocation">revocation</a></em> is an indication of an adverse event.</p>
+</div>
+<div class="paragraph">
+<p>Software tools that support <em><a href="#_identity_assertion_consumer">Identity assertion consumers</a></em> are encouraged to be mindful of harms or risks – such as generating network traffic that may indicate interest in particular content – that may accrue to the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> in the process of making online inquiries about such status.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compromise_of_private_key_material"><a class="anchor" href="#_compromise_of_private_key_material"></a>9.4.5. Compromise of private key material</h4>
+<div class="paragraph">
+<p>In practice, the <em><a href="#_credential_holder">credential holder’s</a></em> signing keys will be issued to systems that perform <strong><a href="#_identity_assertion">identity assertion</a></strong> signing operations. These systems may make these operations available to end users and/or be deployed to user-owned platforms (e.g., mobile phones). Issuance or disclosure of signing keys to malicious actors enables attackers to create claim signatures on arbitrary assets using the compromised identity. The resulting <strong><a href="#_identity_assertion">identity assertions</a></strong> will be valid in terms of the <strong><a href="#_identity_assertion">identity assertion</a></strong> specification, but effectively allow for spoofing identity.</p>
+</div>
+<div class="paragraph">
+<p>It is therefore important that systems that manage <strong><a href="#_identity_assertion">identity assertion</a></strong> signing keys adhere to security and key management best practices. This includes leveraging platform-specific features (e.g., hardware security modules and cloud key management services), minimizing key reuse, and <em><a href="#_credential_revocation">revoking</a></em> keys when compromise is suspected. For more information on key management, see the <a href="https://csrc.nist.gov/Projects/Key-Management/Key-Management-Guidelines">NIST Key Management Guidelines</a>.</p>
+</div>
+<div class="paragraph">
+<p>Some <strong><a href="#_identity_assertion">identity assertion</a></strong> generation and signing systems may be exposed to untrusted users. Exploitation or misuse of these systems may allow attackers to create <strong><a href="#_identity_assertion">identity assertion</a></strong> signatures on arbitrary assets using identities provided by the system. The resulting <strong><a href="#_identity_assertion">identity assertions</a></strong> will be valid in terms of the <strong><a href="#_identity_assertion">identity assertion</a></strong> specification, but effectively allow for spoofing identity. The impact of such an attack may be amplified if identities are shared between users, and/or if the attack goes undetected for an extended period of time.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#_identity_assertion">Identity assertion</a></strong> generation and signing systems should consider industry best practices for information security, secure development and operation, and anti-abuse practices, including leveraging available platform-specific features for deployment (e.g., <a href="https://developer.android.com/training/safetynet">Android SafetyNet</a>, <a href="https://developer.apple.com/documentation/devicecheck">Apple DeviceCheck and AppAttest</a>).</p>
+</div>
+<div class="paragraph">
+<p>Capture devices, such as non-smartphone cameras, often do not have a mechanism for restricting access to specific users. It is recommended that such devices should not hold credentials for <em><a href="#_named_actor">named actors</a></em> and should not generate <strong><a href="#_identity_assertion">identity assertion</a></strong> unless they can access more secure credential-access mechanisms such as a digital wallet.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tampering_with_identity_assertion_content"><a class="anchor" href="#_tampering_with_identity_assertion_content"></a>9.4.6. Tampering with identity assertion content</h4>
+<div class="paragraph">
+<p>An attacker could attempt to alter the content of an <strong><a href="#_identity_assertion">identity assertion</a></strong> to substitute different credentials or alter the attestations included in <code>signer_payload</code> in order to create a misleading of the <em><a href="#_named_actor">named actor</a></em> or the <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p>
+</div>
+<div class="paragraph">
+<p>A compliant <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should validate the <code>signature</code> field of the <strong><a href="#_identity_assertion">identity assertion</a>.</strong> If the content of <code>signer_payload</code> has been altered, the signature should not match and the <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should fail validation in that case.</p>
+</div>
+<div class="paragraph">
+<p>The signature from the <em><a href="#_claim_generator">claim generator</a></em> provides an additional level of tamper evidence. In the event an attacker substitutes a new <strong><a href="#_identity_assertion">identity assertion</a></strong> which contains a new signature that is valid, the hash reference from the <em><a href="#_c2pa_claim">C2PA claim</a></em> should still mismatch. A compliant <em><a href="#_c2pa_manifest_consumer">C2PA Manifest Consumer</a></em> should fail validation in that case. When validation of a <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> has failed, a compliant <em><a href="#_identity_assertion_consumer">identity assertion consumer</a></em> should not attempt to interpret the content of any <strong><a href="#_identity_assertion">identity assertion</a></strong> in that <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_re_signing_by_an_adversarial_claim_generator"><a class="anchor" href="#_re_signing_by_an_adversarial_claim_generator"></a>9.4.7. Re-signing by an adversarial claim generator</h4>
+<div class="paragraph">
+<p>An attacker could take a valid <em><a href="#_c2pa_asset">C2PA asset</a></em> and create a new <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> with a new signature from a new <em><a href="#_claim_generator">claim generator</a></em> that alters the context that was anticipated by the original <em><a href="#_credential_holder">credential holder</a></em> when signing the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</div>
+<div id="new-context-adversarial-claim-generator" class="exampleblock">
+<div class="title">Example 4. New context introduced by adversarial claim generator</div>
+<div class="content">
+<div class="paragraph">
+<p>This diagram builds upon <a href="#trust-signal-scope-one-ia">Example 1, &#8220;Trust signal scope with one identity assertion&#8221;</a>, to show how an adversarial <em><a href="#_claim_generator">claim generator</a></em> could alter the context for the <strong><a href="#_identity_assertion">identity assertion</a>.</strong></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/adversarial-claim-generator/adversarial-trust-bubbles.drawio.svg" alt="Adversarial claim generator example" width="520" height="400">
+</div>
+<div class="title">Figure 10. Re-contextualization attack</div>
+</div>
+<div class="paragraph">
+<p>In this example, the attacker has used a new <em><a href="#_claim_generator">claim generator’s</a></em> signature to re-contextualize the original <em><a href="#_c2pa_asset">C2PA asset</a></em> without the original <em><a href="#_credential_holder">credential holder’s</a></em> knowledge.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Scope of attack surface</div>
+<div class="paragraph">
+<p>In this scenario, the attacker <em>could:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remove any <em><a href="#_c2pa_assertion">C2PA assertions</a></em> not referenced in the <strong><a href="#_identity_assertion">identity assertion</a></strong> (A3 in this example).</p>
+</li>
+<li>
+<p>Introduce new <em><a href="#_c2pa_assertion">C2PA assertions</a></em> (A4 and A5 in this example).</p>
+</li>
+<li>
+<p>Substitute a new <em><a href="#_claim_generator">claim generator</a></em> that is unknown to the <em><a href="#_credential_holder">credential holder</a>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The attacker could not:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modify the asset content (because the <em><a href="#_hard_binding">hard binding</a></em> assertion would not match the new asset).</p>
+</li>
+<li>
+<p>Modify any of the <em><a href="#_c2pa_assertion">C2PA assertions</a></em> referenced in the <strong><a href="#_identity_assertion">identity assertion</a></strong> (A1 or A2 in this example).</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>A <em><a href="#_credential_holder">credential holder</a></em> can prevent these attacks by using one or more of the following optional mechanisms in <code>signer_payload</code> which are intended to limit the content of the enclosing <em><a href="#_c2pa_manifest">C2PA Manifest</a>:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>expected_partial_claim</code>, which describes the content of the expected <em><a href="#_c2pa_claim">C2PA claim</a></em> in which the <strong><a href="#_identity_assertion">identity assertion</a></strong> appears.</p>
+</li>
+<li>
+<p><code>expected_claim_generator</code>, which describes the X.509 certificate of the expected <em><a href="#_c2pa_claim_generator">C2PA claim generator</a>.</em></p>
+</li>
+<li>
+<p><code>expected_countersigners</code>, which describes the signing credential(s) of the expected <em><a href="#_named_actor">named actors</a></em> for other <strong><a href="#_identity_assertion">identity assertions</a></strong> in the same <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See <a href="#_overview">Section 5.1, &#8220;Overview&#8221;</a>, for complete description of these mechanisms.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_experience"><a class="anchor" href="#_user_experience"></a>10. User experience</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="sect2">
+<h3 id="_approach"><a class="anchor" href="#_approach"></a>10.1. Approach</h3>
+<div class="paragraph">
+<p>The Creator Assertions Working Group intends, in a forthcoming document, to provide clear recommendations and guidance for implementers of identity-based provenance user experiences (UX). Similar to the C2PA’s <a href="https://c2pa.org/specifications/specifications/2.0/ux/UX_Recommendations.html">User experience guidance for implementers</a>, CAWG UX recommendations aim to define best practices for presenting CAWG identity assertions within a <em><a href="#_c2pa_manifest">C2PA Manifest</a>.</em> The recommendations strive to describe standard, readily-recognizable experiences that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>provide <em><a href="#named_actors">named actors</a></em> a means to express <strong><a href="#_identity_assertion">identity assertions</a></strong> about a <em><a href="#_c2pa_asset">C2PA asset</a>,</em> and</p>
+</li>
+<li>
+<p>provide <em><a href="#_identity_assertion_consumer">identity assertion consumers</a></em> with additional information about the <em><a href="#_c2pa_asset">C2PA asset</a></em> they are experiencing, thereby empowering them to understand who is involved in its creation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>CAWG UX recommendations should adhere to the same principles and levels of information disclosure outlined in the <a href="https://c2pa.org/specifications/specifications/2.0/ux/UX_Recommendations.html">C2PA UX Guidance</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_public_review_feedback_and_evolution"><a class="anchor" href="#_public_review_feedback_and_evolution"></a>10.2. Public review, feedback, and evolution</h3>
+<div class="paragraph">
+<p>Developing these recommendations is an ongoing process that involves diverse stakeholders, with the results balancing uniformity and familiarity with utility and flexibility for users across contexts, platforms, and devices. Feedback, review, user testing, and ongoing evolution are key requirements for success. The recommendations will therefore be an evolving document, informed by real-world experiences deploying CAWG-enabled <em><a href="#_c2pa_manifest">C2PA Manifests</a></em> across a wide variety of applications and scenarios. These recommendations will be provided as a companion document.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_history"><a class="anchor" href="#_version_history"></a>Appendix A: Version history</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>This section is non-normative.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>27 November 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Initial private review draft.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>29 November 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added this version history section.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>30 November 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minor proofreading edits.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>01 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Replace partial claim mechanism with list of assertions. Significant updates to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_placeholder_assertion">Section 3.2.6, &#8220;Placeholder assertion&#8221;</a></p>
+</li>
+<li>
+<p><a href="#_assertion_definition">Section 5, &#8220;Assertion definition&#8221;</a></p>
+</li>
+<li>
+<p><a href="#_creating_the_identity_assertion">Section 6, &#8220;Creating the identity assertion&#8221;</a></p>
+</li>
+<li>
+<p><a href="#_validation_method">Section 7.1, &#8220;Validation method&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Identify versions of normative reference documents.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_normative_references">Section 2, &#8220;Normative references&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>02 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add <em><a href="#_c2pa_claim_generator">C2PA claim generator</a></em> to the glossary and cross-reference it through out the document.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_concepts_adapted_from_c2pa_technical_specification">Section 3.1, &#8220;Concepts adapted from C2PA technical specification&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Minor proofreading edits.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>03 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add a TO DO item in <a href="#_trust_model">Section 9, &#8220;Trust model&#8221;</a>.</p>
+</li>
+<li>
+<p>Proofreading: Correct references to distributed identifiers to <em>decentralized identifiers.</em></p>
+</li>
+<li>
+<p>Incorporate additional review feedback.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>13 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add <a href="#_conceptual_overview">Section 1.4, &#8220;Conceptual overview&#8221;</a></p>
+</li>
+<li>
+<p>New wording regarding intended meaning of credential holder’s signature. Changes to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_conceptual_overview">Section 1.4, &#8220;Conceptual overview&#8221;</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Removed wording carried over from C2PA 1.3 spec regarding interpretation of verifiable credential.</p>
+</li>
+<li>
+<p>Rewrite <a href="#_w3c_verifiable_credentials">Section 8.1, &#8220;W3C verifiable credentials&#8221;</a>.</p>
+</li>
+<li>
+<p>Add <a href="#_content_binding">Section 3.1.9, &#8220;Content binding&#8221;</a> to glossary</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>15 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minor proofreading edits.</p>
+</li>
+<li>
+<p>Renamed <code>assertions</code> field in identity assertion to <code>referenced_assertions</code>; also introduced the term <em>referenced assertions</em> for the list of assertions signed by the <em><a href="#_named_actor">credential subject</a>.</em></p>
+</li>
+<li>
+<p>Added new language in <a href="#_overview">Section 5.1, &#8220;Overview&#8221;</a> to clarify that the use of this assertion is optional.</p>
+</li>
+<li>
+<p>Replace most references to <a href="#_content_binding">Content binding</a> with <a href="#_hard_binding">Hard binding</a>. Add glossary entry for <a href="#_hard_binding">Hard binding</a>.</p>
+</li>
+<li>
+<p>Add recommendation that <a href="#_c2pa_claim_generator">C2PA claim generator</a> independently validate the <em><a href="#_credential_holder">credential holder’s</a></em> signature before generating identity assertion. See <a href="#_creating_the_identity_assertion">Section 6, &#8220;Creating the identity assertion&#8221;</a>.</p>
+</li>
+<li>
+<p>Added <a href="#_validating_the_cose_signature">Section 8.2.2, &#8220;Validating the COSE signature&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>18 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clarify interaction between <em><a href="#_c2pa_manifest">C2PA Manifest</a></em> validation and identity assertion validation. See opening paragraphs of <a href="#_validating_the_identity_assertion">Section 7, &#8220;Validating the identity assertion&#8221;</a>.</p>
+</li>
+<li>
+<p>Add example of identity assertion in CBOR-DIAG. See <a href="#_cbor_schema">Section 5.2, &#8220;CBOR schema&#8221;</a>.</p>
+</li>
+<li>
+<p>Rewrite <span class="line-through">DID document requirements</span> and include an example of a compliant DID document.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>20 December 2023</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Extend <a href="#_terms_and_definitions">Section 3, &#8220;Terms and definitions&#8221;</a> to contain definitions for the following terms:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="line-through">W3C verifiable credential</span></p>
+</li>
+<li>
+<p><span class="line-through">W3C decentralized identifier</span></p>
+</li>
+<li>
+<p><span class="line-through">W3C decentralized identifierdocument</span></p>
+</li>
+<li>
+<p><a href="#_identity_assertion">Identity assertion</a></p>
+</li>
+<li>
+<p><a href="#_referenced_assertions">Referenced assertions</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Rewrite <a href="#_w3c_verifiable_credentials">Section 8.1, &#8220;W3C verifiable credentials&#8221;</a> to describe the signature as a <em>W3C verifiable credential</em> rather than a <em>verifiable presentation</em></p>
+</li>
+<li>
+<p>Add item in <span class="line-through">Open issues and discussion</span> to consider targeting VC 2.0 spec instead of 1.1 <em>(since moved to <a href="https://github.com/creator-assertions/identity-assertion/issues/34">GitHub issue #34</a>)</em></p>
+</li>
+<li>
+<p>Add a TO DO item calling for use cases and examples.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>11 January 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minor edits throughout the document based on feedback received over past few weeks.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>24 January 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add an example illustrating a multi-author scenario. See <a href="#_conceptual_overview">Section 1.4, &#8220;Conceptual overview&#8221;</a>.</p>
+</li>
+<li>
+<p>Add several new use cases and examples. See <a href="#_use_cases_and_examples">Section 1.5, &#8220;Use cases and examples&#8221;</a>.</p>
+</li>
+<li>
+<p>Minor edits and new discussion items throughout the document based on feedback received over past few weeks.</p>
+</li>
+<li>
+<p>Transition to Community Specification License. See <a href="#_license">License</a>.</p>
+</li>
+<li>
+<p>Move version history to end of document.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>02 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Transition from private draft to public site. See <a href="https://creator-assertions.github.io">Creator Assertions Working Group</a>.</p>
+</li>
+<li>
+<p>Replace <code>cca.*</code> prefixes with <code>cawg.*</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>04 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added <a href="#_contributing">Contributing</a> and <a href="#_foreword">Foreword</a> sections.</p>
+</li>
+<li>
+<p>Refined <a href="https://github.com/creator-assertions/identity-assertion/blob/main/scope.md"><code>scope.md</code></a> and <a href="https://github.com/creator-assertions/identity-assertion/blob/main/notices.md"><code>notices.md</code></a> text in project repository.</p>
+</li>
+<li>
+<p>Moved <a href="#_version_history">Version history</a> and <span class="linethrough">Open issues and discussion</span> to appendix. <em>(Open issues and discussion have since moved to <a href="https://github.com/creator-assertions/identity-assertion/issues">GitHub issues</a>.)</em></p>
+</li>
+<li>
+<p>Update references to C2PA technical specification from version 1.4 to 2.0.</p>
+</li>
+<li>
+<p>Adopt C2PA 2.0 concept of “well-formed manifest” in <a href="#_validation_method">Section 7.1, &#8220;Validation method&#8221;</a>.</p>
+</li>
+<li>
+<p>Translate many "to do" items to GitHub issues. See <a href="https://github.com/creator-assertions/identity-assertion/issues">Open issues</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>05 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Refined description of roles in <a href="https://github.com/creator-assertions/identity-assertion/blob/main/governance.md"><code>governance.md</code></a> in project repository.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>19 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Moved open issues and discussion section to <a href="https://github.com/creator-assertions/identity-assertion/issues">GitHub issues</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>20 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Promoted from pre-draft to draft status.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>26 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Merged <a href="https://github.com/creator-assertions/identity-assertion/pull/45">PR #45: Remove discussion of using W3C verifiable presentations</a> per CAWG meeting.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>28 February 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Prepare 1.0-draft version.</p>
+</li>
+<li>
+<p>Remove discussion of W3C VCs. (This section will be restored in a post-1.0 version.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>18 March 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remove user experience section. (This section will be restored in a post-1.0 version.)</p>
+</li>
+<li>
+<p>Remove W3C VC concepts from terms and definitions section. (This section will be restored in a post-1.0 version.)</p>
+</li>
+<li>
+<p>Clarify usage of <em><a href="#_credential_holder">credential holder</a></em> versus <em><a href="#_credential_subject">credential subject</a>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>19 March 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Close open issue regarding EKU requirements for X.509 credentials.</p>
+</li>
+<li>
+<p>Clarify wording regarding prohibition on identity assertion self-references.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>25 March 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create a top-level <code>tbs</code> map which contains <code>referenced_assertions</code> and may be extended to include other material which will be signed by the credential holder.</p>
+</li>
+<li>
+<p>Add language stating that this assertion is not intended to convey ownership of a C2PA asset.</p>
+</li>
+<li>
+<p>Clarify wording about zero-fill bytes in <code>pad1</code> and <code>pad2</code> fields.</p>
+</li>
+<li>
+<p>Add requirement on validator to report duplicate assertion references if found.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>01 April 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change validation language to be more permissive of extra fields in CBOR map data structure.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>08 April 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Rename <code>tbs</code> (to be signed) to <code>signer_payload</code>.</p>
+</li>
+<li>
+<p>Change <code>sig_type</code> value for X.509 to <code>cawg.x509.cose</code>.</p>
+</li>
+<li>
+<p>Reserve <code>sig_type</code> values starting with <code>cawg.</code> for future CAWG specifications.</p>
+</li>
+<li>
+<p>State that future versions of this specification may add new <code>sig_type</code> values without breaking the identity assertion format or requiring a major version change.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>29 April 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Restructure <a href="#_overview">Section 5.1, &#8220;Overview&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>20 May 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Move <code>sig_type</code> into <code>signer_payload</code>.</p>
+</li>
+<li>
+<p>Introduce new terms: <em><a href="#_named_actor">named actor</a></em> and <em><a href="#_identity_assertion_consumer">identity assertion consumer</a>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>28 May 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add optional protections against unexpected claim and unexpected claim generators.</p>
+</li>
+<li>
+<p>Revise <a href="#_conceptual_overview">Section 1.4, &#8220;Conceptual overview&#8221;</a>, to include new trust signal diagrams.</p>
+</li>
+<li>
+<p>Introduce an optional <code>signer_payload.role</code> field, describing <em><a href="#_named-actor">named actor’s</a></em> relationship to the <em><a href="#_c2pa_asset">C2PA asset</a>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>09 June 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Define <a href="#_trust_model">Section 9, &#8220;Trust model&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>13 June 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(Clerical): Fix several broken cross-references.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>17 June 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add wording to clarify that name collisions are not necessarily limited to individuals.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>24 June 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add wording to clarify that best practices for avoiding parsing and validation attacks are language-specific and thus outside the scope of this specification.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>08 July 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change the definition of <code>expected_countersigners</code> to require the expected <code>signer_payload</code> for other identity assertions</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>15 July 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added <a href="#_user_experience">Section 10, &#8220;User experience&#8221;</a>. (Brief section as a placeholder for forthcoming UX guidance.)</p>
+</li>
+<li>
+<p>Revise discussion of capture devices holding credentials. See <a href="#_use_cases_and_examples">Section 1.5, &#8220;Use cases and examples&#8221;</a> and <a href="#_compromise_of_private_key_material">Section 9.4.5, &#8220;Compromise of private key material&#8221;</a>.</p>
+</li>
+<li>
+<p>Added language to <a href="#_named_actor">Section 3.2.5, &#8220;Named actor&#8221;</a> to clarify that a named actor can be an organization of actors.</p>
+</li>
+<li>
+<p>Added language to describe mitigations for homoglpyh and typosquatting attacks.</p>
+</li>
+<li>
+<p>Added <a href="#_what_does_trust_mean">Section 9.1, &#8220;What does trust mean?&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>22 July 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Refine discussion of the relationships in technical trust. See <a href="#_technical_trust_introduction">Section 9.2, &#8220;Technical trust introduction&#8221;</a>.</p>
+</li>
+<li>
+<p>Formalize trusted, well-formed, and revoked status for identity assertion signatures. See <a href="#_trust_scenarios_in_identity_assertion">Section 9.3, &#8220;Trust scenarios in identity assertion&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>23 July 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(Clerical): Fix up broken links and remove TO DO items slated for later versions.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>29 July 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add section on credential revocation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>02 August 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fold name collisions discussion into existing homoglyph and typo-squatting attack discussion.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>12 August 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update links to point to C2PA 2.1 technical specification instead of 2.0. Add prohibition on using v1 timestamps as described in C2PA 2.0 and prior.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>20 August 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(Clerical) Capitalize SHALL consistently.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>09 September 2024</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Approved 1.0 version of this specification.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
