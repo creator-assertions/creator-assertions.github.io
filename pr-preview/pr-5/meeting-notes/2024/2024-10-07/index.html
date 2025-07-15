@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>07 October 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-10-07/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">07 October 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://youtu.be/xTUN-j7eUbY">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Andreas Reich, TrustNXT</p>
+</li>
+<li>
+<p>Andy Rosen, Sequence Key</p>
+</li>
+<li>
+<p>Claudiu Cismaru, Adobe</p>
+</li>
+<li>
+<p>David Bigsby, Government of British Columbia</p>
+</li>
+<li>
+<p>Eli Mallon, Aquareum</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Hans Granqvist, Noosphere</p>
+</li>
+<li>
+<p>Karen Kilroy, FileBaby</p>
+</li>
+<li>
+<p>Konrad Bleyer-Simon, Global Media Registry</p>
+</li>
+<li>
+<p>Loren Hart, Noosphere Technologies</p>
+</li>
+<li>
+<p>Nigel Earnshaw, BBC</p>
+</li>
+<li>
+<p>Pamela Dingle, Microsoft</p>
+</li>
+<li>
+<p>Peleus Uhley, Adobe</p>
+</li>
+<li>
+<p>Richard W. Kroon, EIDR</p>
+</li>
+<li>
+<p>Scott Perry, Digital Governance Institute</p>
+</li>
+<li>
+<p>Steven Milstein, Trust Over IP Foundation</p>
+</li>
+<li>
+<p>Tim Cappalli, Okta</p>
+</li>
+<li>
+<p>Utkarsh Sharma, Vlinder</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_new_members_introduction"><a class="anchor" href="#_new_members_introduction"></a>New members introduction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>🎥 <em>1'11":</em> Claudiu Cismaru, Adobe</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_trust_over_ip_discussion"><a class="anchor" href="#_trust_over_ip_discussion"></a>Trust Over IP discussion</h3>
+<div class="paragraph">
+<p>🎥 <em>2'25":</em> Steven Milstein from <a href="https://trustoverip.org">Trust Over IP Foundation</a>’s <a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22982892/AI+Metaverse+Technology+Task+Force?pageId=22982892">AI and Metaverse Task Force</a> joined us and introduced ToIP’s <a href="https://trustoverip.github.io/tswg-tsp-specification/">Trust Spanning Protocol</a> and discussed the idea of a potential integration with C2PA and/or CAWG.</p>
+</div>
+<div class="paragraph">
+<p>Eric and Steven highlighted the differences between C2PA and Trust Spanning Protocol. C2PA and CAWG focus on content and metadata embedding within digital media file formats, while Trust Spanning Protocol is more about secure point-to-point communication and identity verification.</p>
+</div>
+<div class="paragraph">
+<p>Steven discussed the potential for C2PA to use the Trust Spanning Protocol in its workflow, suggesting that it could help in the adoption of C2PA by providing a secure messaging layer.</p>
+</div>
+<div class="paragraph">
+<p>Eric acknowledged the challenges of widespread adoption of decentralized identity, noting that it is not yet sufficiently widespread for CAWG to adopt it fully. He emphasized the need to follow trends and advocate for adoption when the time is right.</p>
+</div>
+<div class="paragraph">
+<p>Steven and Eric discussed the importance of governance in decentralized identity, with Steven noting that governance is about relationships and trust rather than just technology. Eric added that CAWG aims to support evolving identity technologies within its framework.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_previous_action_items"><a class="anchor" href="#_review_previous_action_items"></a>Review previous action items</h3>
+<div class="paragraph">
+<p>🎥 <em>18'25":</em> Briefly reviewed the following action items from last week. Most of these translated into PRs that we discussed later.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ACTION:</strong> Eric to propose additional language explaining the identity claims aggregator model. Feedback received before and during the meeting suggests it is not sufficiently clear yet. <strong>NOT DONE</strong></p>
+</li>
+<li>
+<p><strong>ACTION:</strong> Eric to propose a PR that suggests other identity types (non <code>cawg.</code>) should follow reverse domain syntax. <strong>DONE</strong></p>
+</li>
+<li>
+<p><strong>ACTION:</strong> Eric to review potential domain control verification methods with UX and product management to determine suitability. <strong>IN PROGRESS</strong></p>
+</li>
+<li>
+<p><strong>ACTION:</strong> Eric to propose a PR deleting the <code>proof</code> section. <strong>DONE</strong></p>
+</li>
+<li>
+<p><strong>ACTION:</strong> Eric to propose a PR with RFC 3161 in COSE signature for identity claims aggregation model.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pr_190_consolidate_wording_about_cawg_labels"><a class="anchor" href="#_pr_190_consolidate_wording_about_cawg_labels"></a>PR #190: Consolidate wording about <code>cawg.</code> labels</h3>
+<div class="paragraph">
+<p>🎥 <em>19'37":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/190">PR #190: Consolidate wording about <code>cawg.</code> labels</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge PR.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pr_191_remove_proof_entry_from_verifiedidentitiesn_structure"><a class="anchor" href="#_pr_191_remove_proof_entry_from_verifiedidentitiesn_structure"></a>PR #191: Remove <code>proof</code> entry from <code>verifiedIdentities\[n\]</code> structure</h3>
+<div class="paragraph">
+<p>🎥 <em>22'54":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/191">PR #191: Remove <code>proof</code> entry from <code>verifiedIdentities\[n]</code> structure</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge PR.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pr_192_add_option_to_use_rfc_3161_timestamp_in_ica_cose_signature"><a class="anchor" href="#_pr_192_add_option_to_use_rfc_3161_timestamp_in_ica_cose_signature"></a>PR #192: Add option to use RFC 3161 timestamp in ICA COSE signature</h3>
+<div class="paragraph">
+<p>🎥 <em>25'52":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/192">PR #192: Add option to use RFC 3161 timestamp in ICA COSE signature</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION (✅):</strong> Eric to merge PR.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pr_187_add_support_for_verified_presentations"><a class="anchor" href="#_pr_187_add_support_for_verified_presentations"></a>PR #187: Add support for verified presentations</h3>
+<div class="paragraph">
+<p>🎥 <em>31'14":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/187">PR #187: Add support for verified presentations</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Inclusion:</strong> Eric discussed the inclusion of verified presentations in the identity assertion, explaining that this would allow for the inclusion of credentials such as driver’s licenses and professional accreditations.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sensitive Information:</strong> The group discussed concerns about sensitive information being included in the verified presentations. Tim suggested providing guidance on what should be redacted to prevent the inadvertent sharing of private information.</p>
+</div>
+<div class="paragraph">
+<p><strong>Proof Request:</strong> David raised the point that the information included in the verified presentation is driven by the proof request from the claims aggregator. He suggested that the spec should call out what information is requested and how it should be handled.</p>
+</div>
+<div class="paragraph">
+<p><strong>Trust and Governance:</strong> Pamela emphasized the importance of distinguishing between protocol implementation and trust framework governance. She suggested that considerations should be included in the spec, but the governance rules should be defined elsewhere.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to call subgroup meeting to refine the proposal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discussion_about_trust_infrastructure"><a class="anchor" href="#_discussion_about_trust_infrastructure"></a>Discussion about trust infrastructure</h3>
+<div class="paragraph">
+<p>🎥 <em>46'38":</em> Nigel raised concerns about the trust infrastructure for identity claims aggregators (ICAs), questioning how to ensure that ICAs are credible and trustworthy.</p>
+</div>
+<div class="paragraph">
+<p>Eric acknowledged the need for a governance process to ensure the credibility of ICAs. He mentioned that there are ongoing discussions about establishing a trust infrastructure for ICAs.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pr_188_add_support_for_domain_control_validation_dcv_aka_verified_web_site"><a class="anchor" href="#_pr_188_add_support_for_domain_control_validation_dcv_aka_verified_web_site"></a>PR #188: Add support for domain control validation (DCV) aka verified web site</h3>
+<div class="paragraph">
+<p>🎥 <em>50'42":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/pull/188">PR #188: Add support for domain control validation (DCV) aka verified web site</a>.</p>
+</div>
+<div class="paragraph">
+<p>Eric discussed the methods for verifying control over a web domain, including DNS text records and meta tags, and the potential challenges of using these techniques.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (underway): Eric working with Adobe product management to understand consumer viability of these techniques.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to explore how to avoid collision between DNS tags from multiple vendors.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issue_53_explore_questions_of_anonymized_credentials_and_how_they_might_be_expressed_in_the_standard"><a class="anchor" href="#_issue_53_explore_questions_of_anonymized_credentials_and_how_they_might_be_expressed_in_the_standard"></a>Issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard</h3>
+<div class="paragraph">
+<p>🎥 <em>57'43":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/issues/53">issue #53: Explore questions of anonymized credentials and how they might be expressed in the standard</a>.</p>
+</div>
+<div class="paragraph">
+<p>Is this relevant for ICA model or should it be considered as part of a future 1.x enhancement?</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> Eric to call meeting with BC representatives including Stephen Curran, Lindsay Walker (who originally raised the issue), and potentially Will Kreth to discuss further.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issue_32_levels_of_assurance_for_subject_credentials"><a class="anchor" href="#_issue_32_levels_of_assurance_for_subject_credentials"></a>Issue #32: Levels of assurance for subject credentials?</h3>
+<div class="paragraph">
+<p>🎥 <em>1h01'01":</em> Discussed <a href="https://github.com/creator-assertions/identity-assertion/issues/32">issue #32: Levels of assurance for subject credentials?</a></p>
+</div>
+<div class="paragraph">
+<p>Scott shared a link to <a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eIDAS+Levels+of+Assurance">eIDAS Levels of Assurance</a>.</p>
+</div>
+<div class="paragraph">
+<p>Important concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ICA will need to state the level of assurance it ascribes to the identity claim that it has received and is relaying.</p>
+</li>
+<li>
+<p>eIDAS does a good job of describing the level of confidence in the claimed identity.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

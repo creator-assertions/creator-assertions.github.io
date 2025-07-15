@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>20 February 2024 :: Creator Assertions Working Group</title>
+    <link rel="canonical" href="https://cawg.io/meeting-notes/2024/2024-02-20/">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({"themeVariables":{"fontFamily":"Roboto,sans-serif"}});</script><header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-dif-logo" href="https://identity.foundation">&nbsp;</a>
+      <a class="navbar-item" href="https://cawg.io">Creator Assertions Working Group</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Creator Assertions Home</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../../endorsement/1.0-draft/">Endorsement Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../endorsement/1.0-draft/">1.0-draft</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../identity/1.1/">Identity Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../identity/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../identity/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../metadata/1.2-draft/">Metadata Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../metadata/1.2-draft/">1.2-draft</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../metadata/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../../training-and-data-mining/1.1/">Training and Data Mining Assertion</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../training-and-data-mining/1.1/">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../../../training-and-data-mining/1.0/">1.0</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="component">
+      <a class="title" href="/meeting-notes/">Meeting Notes</a>
+    </li>
+
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">20 February 2024</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=WYfS0Q8ATNA">Meeting recording</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Aditya Khurjekar, Prove</p>
+</li>
+<li>
+<p>Andy Parsons, Adobe</p>
+</li>
+<li>
+<p>Andy Rosen</p>
+</li>
+<li>
+<p>Chris Staines, Arkeytyp</p>
+</li>
+<li>
+<p>Christian Paquin, Microsoft</p>
+</li>
+<li>
+<p>Edmond Cunningham, Arkeytyp</p>
+</li>
+<li>
+<p>Eric Scouten, Adobe</p>
+</li>
+<li>
+<p>Frank <em>_</em>, Verus</p>
+</li>
+<li>
+<p>Gavin Peacock, Adobe</p>
+</li>
+<li>
+<p>Jeremiah Wagstaff, Transmute</p>
+</li>
+<li>
+<p>John Collomosse, Adobe</p>
+</li>
+<li>
+<p>Lorie Groth, Digicert</p>
+</li>
+<li>
+<p>Michael Klein, Adobe</p>
+</li>
+<li>
+<p>Nick Lyons, Arkeytyp</p>
+</li>
+<li>
+<p>Nick Ritchie, BBC</p>
+</li>
+<li>
+<p>Orie Steele, Transmute</p>
+</li>
+<li>
+<p>Peter Carrescia, Confirm Identity</p>
+</li>
+<li>
+<p>Pia Blumenthal, Adobe</p>
+</li>
+<li>
+<p>Riley Hughes, Trinsic</p>
+</li>
+<li>
+<p>Stu Vaeth, Mastercard</p>
+</li>
+<li>
+<p>Will Kreth, HAND (Human &amp; Digital) Identity</p>
+</li>
+<li>
+<p>Wynne Kim, HAND (Human &amp; Digital) Identity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_agenda"><a class="anchor" href="#_agenda"></a>Agenda</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_5_min_start_meeting"><a class="anchor" href="#_5_min_start_meeting"></a>5 min: Start meeting</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Start recording</p>
+</li>
+<li>
+<p>Welcome and community specification license reminder</p>
+</li>
+<li>
+<p>Agenda review and call for agenda items</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_20_min_introductions_why_were_here"><a class="anchor" href="#_20_min_introductions_why_were_here"></a>20 min: Introductions / why we&#8217;re here</h3>
+<div class="paragraph">
+<p>Round-table discussion: Attendees describe their affiliations and what they are hoping to accomplish through the CAWG.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>🎥 <em>2'29":</em> Some of the common themes were:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AI provenance</p>
+</li>
+<li>
+<p>Identity wallets</p>
+</li>
+<li>
+<p>Identity proofing system&#8201;&#8212;&#8201;link to content</p>
+</li>
+<li>
+<p>Metaverse ID</p>
+</li>
+<li>
+<p>SSI</p>
+</li>
+<li>
+<p>Trust framework</p>
+</li>
+<li>
+<p>Standards with VCs</p>
+</li>
+<li>
+<p>Healthcare identity</p>
+</li>
+<li>
+<p>Talent identity (media, entertainment, sports)</p>
+</li>
+<li>
+<p>Supply chain, especially software supply chain</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_motion_to_approve_draft_status"><a class="anchor" href="#_5_min_motion_to_approve_draft_status"></a>5 min: Motion to approve draft status</h3>
+<div class="paragraph">
+<p>As per Community Specification License process <a href="https://github.com/creator-assertions/identity-assertion/blob/main/governance.md#4-specification-development-process">§4: Specification development process</a>, I submit the existing <a href="https://creator-assertions.github.io/identity/0.1-draft/">identity assertion specification</a> as a candidate draft and move to promote that document from <strong>pre-draft</strong> to <strong>draft</strong> status.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>4.1. Pre-Draft. Any Participant may submit a proposed initial draft document as a candidate Draft Specification of that Working Group. The Maintainer will designate each submission as a “Pre-Draft” document.</p>
+</div>
+<div class="paragraph">
+<p>4.2. Draft. Each Pre-Draft document of a Working Group must first be Approved to become a “Draft Specification.” Once the Working Group approves a document as a Draft Specification, the Draft Specification becomes the basis for all going forward work on that specification.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Community Specification License :: Governance Policy
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p>🎥 <em>15'37"</em>: Briefly discussed motion to promote to draft status.</p>
+</div>
+<div class="paragraph">
+<p><strong>DECISION:</strong> Current draft approved as draft.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_15_min_open_discussion_issues_that_need_to_be_addressed"><a class="anchor" href="#_15_min_open_discussion_issues_that_need_to_be_addressed"></a>15 min: Open discussion: Issues that need to be addressed</h3>
+<div class="paragraph">
+<p>Open call for new issues to be raised and discussed. Limit to 1-2 min per issue; we&#8217;ll file a GitHub issue if unable to come to a quick conclusion.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>🎥 <em>19'04":</em> Eric started at with a quick overview of the C2PA data model and the proposed identity assertion.</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>23'24":</em> Orie mentioned that the identity assertion has some conceptual similarities to software bill of material (SBOM) formats. Example SBOM in SPDX format: <a href="https://github.com/microsoft/sbom-tool/blob/main/samples/manifest.spdx.json" class="bare">https://github.com/microsoft/sbom-tool/blob/main/samples/manifest.spdx.json</a></p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>31'49":</em> Concern raised about privacy implications of publishing, selective disclosure, JWT (Add to existing <a href="https://github.com/creator-assertions/identity-assertion/issues/41">issue #41: Privacy when verifying VCs</a>). <strong>ACTION:</strong> <em>Eric Scouten</em> to call together a smaller working group on privacy and invite Christian, Nick Lyons, Orie, and Jeremiah. Orie noted (via chat) that there are some limitations on privacy that come from building on top of verifiable credentials, depending on how you define the credential format.</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>36'04":</em> Brief discussion about Sony&#8217;s proposed distributed ledger system for tracking volatile things like release windows, multiple types of info, related to movie releases and that this indicates that both ownership and identity are subject to change. Group decided not to pursue this topic for now.</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>38'51":</em> Christian Paquin mentioned that there are some proposals for simplifying identity models. There was a general sentiment in the group that "lightweight" expression of ownership using ZKP was desirable.</p>
+</div>
+<div class="paragraph">
+<p>Orie mentioned that IETF and related orgs are trying to simplify digital credentials. This is to some extent at odds with W3C VC extensibility model. Read up on <a href="https://datatracker.ietf.org/group/spice/about/">IETF "spice" working group</a>, which is a proposal within the IETF to charter a group to simplify digital credentials based on JOSE, COSE, and X.509.</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>41'43":</em> Chris Steele and Nick Lyons mention <a href="https://docs.verus.io/verusid/">Verus</a>, a DNS name space alternative, not resolved by ICANN. "Non-collision identity domain space with sub domains, transferable (referenced by private key IDS) can be traded on chain and solve the transfer of ownership in a trustless way."</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>41'43":</em> Orie issues a quick reminder that internationalization should always be on our minds when addressing identity. Unicode offers lots of vectors for abuse (e.g. similar <em>looking</em> names may not be exact string or binary matches).</p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>48'22":</em> Discussion on ways to participate outside of the meeting. Group requests e-mail list and Slack/Discord channel. Majority prefers Slack over Discord.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> <a href="https://github.com/creator-assertions/identity-assertion/issues/42">Issue #42: Add a Slack or Discord channel for this group</a></p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION:</strong> <a href="https://github.com/creator-assertions/identity-assertion/issues/43">Issue #43: Create an e-mail list for this group&#8217;s discussions</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_40_min_review_and_prioritize_to_do_items_in_existing_draft_specifications"><a class="anchor" href="#_40_min_review_and_prioritize_to_do_items_in_existing_draft_specifications"></a>40 min: Review and prioritize TO DO items in existing draft specifications</h3>
+<div class="sect3">
+<h4 id="_items_flagged_as_major"><a class="anchor" href="#_items_flagged_as_major"></a>Items flagged as “major”</h4>
+<div class="paragraph">
+<p>These items are likely to take extra time and attention. Looking for members willing to advise or draft responses to these issues that I’ve flagged as “major”:</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://github.com/creator-assertions/identity-assertion/issues/16">Issue #16: Determine whether to use VC or VP for signature</a></strong></p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>50'09":</em> General sense was that VPs are intended for ephemeral, one-off use cases and C2PA manifests are intended for more persistent broadcast usage. General sense that VCs are more appropriate for this use case. There was some discussion about replay attacks (which were a design flaw in the C2PA 1.x creative work assertion), but the new design of the identity assertion should prevent that.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (<a href="https://github.com/creator-assertions/identity-assertion/issues/16">Issue #16: Determine whether to use VC or VP for signature</a>): Eric to propose a PR that removes VC vs VP as a discussion item.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (<a href="https://github.com/creator-assertions/identity-assertion/issues/44">Issue #44: Review presentation with key binding</a>) discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://github.com/creator-assertions/identity-assertion/issues/34">Issue #34: Consider targeting VC 2.0 data model?</a></strong></p>
+</div>
+<div class="paragraph">
+<p>🎥 <em>78'20":</em> VC 2.0 is in candidate recommendation 1, but is likely to change before it becomes frozen. Not sure if the changes would affect anything we might depend upon.</p>
+</div>
+<div class="paragraph">
+<p><strong>ACTION</strong> (<a href="https://github.com/creator-assertions/identity-assertion/issues/34">Issue #34: Consider targeting VC 2.0 data model?</a>): Orie will ask around for more details.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_carry_over_for_next_meeting"><a class="anchor" href="#_carry_over_for_next_meeting"></a>Carry over for next meeting</h4>
+<div class="paragraph">
+<p>🎥 <em>80'35":</em> We ran out of time and did not address the remaining items.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/22">Issue #22: Define identity assertion trust model</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/23">Issue #23: Provide user experience guidance</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If time permits, review <a href="https://github.com/creator-assertions/identity-assertion/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">Other open issues</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_min_closing_and_review"><a class="anchor" href="#_5_min_closing_and_review"></a>5 min: Closing and review</h3>
+<div class="paragraph">
+<p>Invitation to subsequent meetings, which will typically be on Mondays.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_decisions"><a class="anchor" href="#_decisions"></a>Decisions</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pre-draft of <a href="https://creator-assertions.github.io/identity/">Identity assertion</a> promoted to draft status.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_action_items"><a class="anchor" href="#_action_items"></a>Action items</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/41">Issue #41: Privacy when verifying VCs</a> – Eric to call subgroup meeting.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/42">Issue #42: Add a Slack or Discord channel for this group</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/43">Issue #43: Create an e-mail list for this group&#8217;s discussions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/16">Issue #16: Determine whether to use VC or VP for signature</a> – Eric to propose a PR that removes VC vs VP as a discussion item.</p>
+</li>
+<li>
+<p><a href="https://github.com/creator-assertions/identity-assertion/issues/44">Issue #44: Review presentation with key binding</a> – discussed by Orie in meeting. Eric to follow up with Orie, Christian, and Riley.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The content on this site is provided under a <a href="https://community.dev">Community Specification License 1.0</a> license, except where otherwise noted.</p>
+  <p>The UI for this site is derived from the Antora default UI and is licensed under the MPL-2.0 license. Several icons are imported from Octicons and are licensed under the MIT license.</p>
+  <p>Authored in AsciiDoc. Produced by <a href="https://antora.org/" target="_blank" rel="noopener">Antora</a> and <a href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
