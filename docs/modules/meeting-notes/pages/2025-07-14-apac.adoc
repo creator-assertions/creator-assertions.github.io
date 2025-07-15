@@ -1,0 +1,39 @@
+= 14 July 2025 (APAC)
+
+https://us02web.zoom.us/rec/share/jA7jDLRIdU6YhhcF6QcN4eyiJENVSdFu2j4MP1qv2V_5J3oNrOenzvX5nfycvDFX.TyrVrUEOmzWyJ4xI[Meeting recording] (43m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Eric Scouten, Adobe
+* John Phillips, Sezoo
+* Victor Lu, independent consultant
+
+== Meeting notes
+
+=== Continue APAC meetings?
+
+🎥 _5'07":_ APAC meetings have not been well attended. Should we cancel?
+
+*ACTION (✅):* Eric to cancel upcoming CAWG APAC meetings.
+
+=== Promoting CAWG in APAC region
+
+🎥 _11'40":_ Long discussion about how we might build more interest in CAWG in the APAC region. Some specific outcomes:
+
+*ACTION:* John to look into having Eric and/or Scott present to link:https://openid.net/cg/australian-digital-trust-community-group/[OpenID Foundation Australia's Digital Trust Community Group].
+
+*ACTION:* Eric to investigate presenting to DIF's Asia Pacific interest group.
+
+*ACTION:* Victor to look into having Eric and/or Scott present to link:https://todogroup.org/community/meetings/[ToDo group], another LF member organization.
+
+*ACTION:* John to look into possible presentations to Australia, New Zealand, and Japanese governments. All are known to be interested in identity and provenance.
+
+=== CAWG home page redo
+
+🎥 _21'00":_ Recap of discussion from NA/EU meeting about CAWG home page.
+
+John suggested reviewing the UN Transparency Protocol web site for inspiration:
+
+* https://github.com/uncefact/spec-untp/tree/main[GitHub repo]
+* https://uncefact.github.io/spec-untp/[Public site]
