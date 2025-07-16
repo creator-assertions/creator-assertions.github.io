@@ -1,14 +1,12 @@
 = Meeting schedule
+:page-role: -toc
 
-The Creator Assertions Working Group holds video meetings every other Monday at a time convenient for North America / Europe and a time convenient for Asia Pacific (APAC). The same agenda is prepared for both meetings, which are scheduled for 90 minutes each.
+The Creator Assertions Working Group holds video meetings every other Monday at two times convenient for different regions:
 
-== North America / Europe 
+* **North America / Europe**: 0800 US Pacific / 1100 US Eastern / 1500 UTC / 1600 Central Europe
+* **Asia Pacific (APAC)**: 1800 US Pacific / 0100 (Tuesday) UTC / 0630 (Tuesday) India / 1200 (Tuesday) Australian Eastern Standard Time (Sydney)
 
-0800 US Pacific / 1100 US Eastern / 1500 UTC / 1600 Central Europe
-
-== Asia Pacific (APAC)
-
-1800 US Pacific / 0100 (Tuesday) UTC / 0630 India / 1200 Sydney
+The same agenda is prepared for both meetings, which are scheduled for 90 minutes each.
 
 include::meeting-notes:partial$upcoming-meeting-changes.adoc[]
 

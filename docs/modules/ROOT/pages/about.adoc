@@ -1,6 +1,6 @@
 = About CAWG
 
-More TBD.
+This is a placeholder. More TBD.
 
 == Mission
 
