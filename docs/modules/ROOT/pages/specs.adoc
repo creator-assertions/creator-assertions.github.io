@@ -1,0 +1,10 @@
+= Technical specifications
+
+CAWG develops and maintains the following technical specifications:
+
+* xref:identity:ROOT:index.adoc[]
+* xref:endorsement:ROOT:index.adoc[]
+* xref:metadata:ROOT:index.adoc[]
+* xref:training-and-data-mining:ROOT:index.adoc[]
+
+See the https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model including assertions.

@@ -1,10 +1,10 @@
-.Technical Specifications
-* xref:identity:ROOT:index.adoc[Identity Assertions]
-* xref:endorsement:ROOT:index.adoc[Endorsement Assertions] 
-* xref:metadata:ROOT:index.adoc[Metadata Assertions]
-* xref:training-and-data-mining:ROOT:index.adoc[Training and Data Mining Assertions]
-
-.Resources
+* xref:about.adoc[About CAWG]
+* xref:membership.adoc[Membership]
 * xref:faq.adoc[FAQ]
+* xref:specs.adoc[Technical Specifications]
+** xref:identity:ROOT:index.adoc[Identity Assertions]
+** xref:endorsement:ROOT:index.adoc[Endorsement Assertions] 
+** xref:metadata:ROOT:index.adoc[Metadata Assertions]
+** xref:training-and-data-mining:ROOT:index.adoc[Training and Data Mining Assertions]
 * xref:meetings.adoc[Meetings]
-* xref:meeting-notes:index.adoc[Meeting Notes] 
+** xref:meeting-notes:index.adoc[Meeting Notes] 

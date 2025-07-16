@@ -1,18 +1,27 @@
 = Creator Assertions Working Group
 :page-role: -toc
 
-The Creator Assertions Working Group (CAWG) builds upon the work of the https://c2pa.org[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content. CAWG is a working group within the https://identity.foundation[Decentralized Identity Foundation (DIF)]. 
+++++
+<img src="_images/home.png" class="home-image" alt="CAWG website image" width="50%">
+<div class="tagline-large">
+Advancing trust in digital content by enabling creators to make verifiable claims about authorship, intent, and identity.
+</div>
+<div class="tagline-sm">
+Building on the work of the <a href="https://c2pa.org" target="_blank">Coalition for Content Provenance and Authenticity (C2PA)</a>, CAWG empowers individuals and organizations to assert ownership of digital content while supporting privacy and transparency. Whether identifying the source of media or protecting creators’ rights, CAWG plays a critical role in promoting authenticity, combating misinformation, and shaping a more trustworthy digital ecosystem.
+</div>
 
-See the https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model including assertions.
+<br clear="all"/>
+++++
 
-== Technical specifications
+== Enhancing digital content trust
 
-CAWG assertions are described by the following technical specifications:
+CAWG develops and promotes open technical specifications that:
 
-* xref:identity:ROOT:index.adoc[]
-* xref:endorsement:ROOT:index.adoc[]
-* xref:metadata:ROOT:index.adoc[]
-* xref:training-and-data-mining:ROOT:index.adoc[]
+* **Empower creators with verifiable identity assertions**: CAWG allows content creators to link their digital identities to the content they produce, ensuring ownership and intent are transparent.
+* **Strengthens content authenticity and provenance**: CAWG extends the framework created by the C2PA Content Credentials specifications to include identity-based assertions, helping to verify the origin and history of digital content.
+* **Combats misinformation**: By embedding verifiable identity and content metadata, CAWG promotes a trustworthy online environment, reducing the spread of fake news and protecting intellectual property.
+* **Incorporate broad industry collaboration**: CAWG is part of a global initiative that includes C2PA and https://jpeg.org/jpegtrust/[JPEG Trust], ensuring a holistic approach to digital content authenticity, copyright, and integrity.
+* **Support practical applications**: Authoring tools can leverage CAWG specifications to link creators to social media profiles, offering real-world utility for content attribution and verification.
 
 == Participation
 

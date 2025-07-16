@@ -1,0 +1,66 @@
+.tagline-large {
+  display: flex;
+  /* align-items: center;  */
+  justify-content: left;
+  font-size: 150%;
+  font-weight: bold;
+  color: #2b2b2b;
+  height: 160px;
+  width: 50%;
+  float: left;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tagline-sm {
+  color: #2b2b2b;
+  font-weight: 200;
+  width: 50%;
+  float: left;
+  padding-right: 1rem;
+}
+
+.home-image {
+  float: right;
+  max-height: 400px;
+}
+
+/* Full-width layout for index page and pages without TOC */
+.page[data-page-role~="-toc"] .body,
+.page[data-page-role~="-toc"] .article,
+.page[data-page-role~="-toc"] .doc {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Ensure main container uses full width */
+.page[data-page-role~="-toc"] main {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Alternative approach - target the main content containers directly */
+body.article .body,
+body.article .article,
+body.article .doc {
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Remove any fixed max-width on the main content wrapper */
+.main-wrapper,
+.article-wrapper,
+.content-wrapper {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
