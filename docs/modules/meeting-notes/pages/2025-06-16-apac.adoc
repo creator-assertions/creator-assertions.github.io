@@ -1,0 +1,52 @@
+= 16 June 2025 (APAC)
+
+https://us02web.zoom.us/rec/play/yy2cyOwXrac-J4F-altoNz44YytWAFOr3_X_D5IeEHCIt09gsQod0e0HcH-nMTQDb85_z2uhfND8Ios.otOAFksQTvBTTRfc?eagerLoadZvaPages=sidemenu.billing.plan_management&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2F0uzuAkTWTjTtChND29R9JbVRbO_rOZvXsuKvSmC_lCdWn4mnv03M-jMfM-oE3nzH.-plwfV2gmOvxieVh[Meeting recording] (58m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Eric Scouten, Adobe
+* John Phillips, Sezoo
+* Victor Lu, independent consultant
+
+== Meeting notes
+
+=== Review previous action items
+
+🎥 _4'11":_ Reviewed previous action items.
+
+* Eric to work with Andrew, Richard, Phillippe to address outstanding concerns in PR 4. → NOT DONE (although covered effectively in NA/EU meeting)
+
+* Luke to move part of identity assertion spec to credential schemas WG? → Proposals reviewed and discussed. Agreed that Eric would sit in on upcoming CSWG to understand further. Not removing specs from CAWG custody yet.
+
+=== Readout from CAI Summit
+
+🎥 _4'52":_ Brief recap of readout from link:https://www.contentauthenticitysummit.com[Content Authenticity Summit], which was held at Cornell Tech in New York City on 4 June 2025. See notes xref:2025-06-16-na-eu.adoc#_readout_from_cai_summit[from NA/EU meeting].
+
+Related discussions about:
+
+* 🎥 _6'09":_ Renaming identity assertion to attribution assertion
+* 🎥 _11'03":_ Engaging social platform vendors
+* 🎥 _13'40":_ Using C2PA+CAWG for government use cases
+* 🎥 _16'03":_ Agentic identity
+* 🎥 _25'18":_ Real-world examples / existing code available?
+
+=== Review existing PRs against metadata assertion
+
+🎥 _30'00":_ Briefly discussed outcomes from xref:2025-06-16-na-eu.adoc#_review_metadata_assertion_pr_2_update_c2pa_technical_spec_references_to_use_version_2_2[from NA/EU meeting] regarding open pull requests against the 1.2 metadata assertion draft.
+
+=== Incoming identity assertion spec requests
+
+🎥 _32'21":_ Briefly called attention to upcoming requests for the identity assertion spec. Will discuss further in upcoming meetings.
+
+* link:https://github.com/decentralized-identity/cawg-identity-assertion/issues/233[#233: Linked web sites with annotations]
+* (No ticket yet) Provide mechanism for CAWG X.509 users (enterprises) to describe social media
+* Review link:https://github.com/decentralized-identity/cawg-identity-assertion/milestone/10[`post-1.1` milestone] and transfer issues to 1.2 milestone
+
+=== Apple announcement about document verification API
+
+🎥 _36'14":_ Brief discussion about Apple's announcement at WWDC that document verification APIs would be added to iOS 26, expected later this year.
+
+=== Agentic identity
+
+🎥 _40'36":_ Open discussion: What should we be tuning in to?

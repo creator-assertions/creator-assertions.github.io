@@ -15,7 +15,7 @@ content:
     branches: [] # - main (when there's a draft again)
     tags:
     - v1.0
-    - v1.1
+    - v1.1-final
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git
@@ -28,14 +28,14 @@ content:
     - main
     tags:
     - v1.0
-    - v1.1
+    - v1.1-final
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion.git
     branches: [] # - main (when there's a draft again)
     tags:
     - v1.0
-    - v1.1
+    - v1.1-final
     start_path: docs
 
 urls:
