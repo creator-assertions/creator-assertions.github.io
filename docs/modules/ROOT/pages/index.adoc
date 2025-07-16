@@ -18,8 +18,8 @@ Building on the work of the <a href="https://c2pa.org" target="_blank">Coalition
 CAWG develops and promotes open technical specifications that:
 
 * **Empower creators with verifiable identity assertions**: CAWG allows content creators to link their digital identities to the content they produce, ensuring ownership and intent are transparent.
-* **Strengthens content authenticity and provenance**: CAWG extends the framework created by the C2PA Content Credentials specifications to include identity-based assertions, helping to verify the origin and history of digital content.
-* **Combats misinformation**: By embedding verifiable identity and content metadata, CAWG promotes a trustworthy online environment, reducing the spread of fake news and protecting intellectual property.
+* **Strengthen content authenticity and provenance**: CAWG extends the framework created by the C2PA Content Credentials specifications to include identity-based assertions, helping to verify the origin and history of digital content.
+* **Combat misinformation**: By embedding verifiable identity and content metadata, CAWG promotes a trustworthy online environment, reducing the spread of fake news and protecting intellectual property.
 * **Incorporate broad industry collaboration**: CAWG is part of a global initiative that includes C2PA and https://jpeg.org/jpegtrust/[JPEG Trust], ensuring a holistic approach to digital content authenticity, copyright, and integrity.
 * **Support practical applications**: Authoring tools can leverage CAWG specifications to link creators to social media profiles, offering real-world utility for content attribution and verification.
 
