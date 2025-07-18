@@ -1,37 +1,46 @@
+/* Home page */
 .home-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
-}
-
-.home-content {
-  width: 50%;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .tagline-large {
   /* align-items: center;  */
   justify-content: left;
-  font-size: 160%;
+  font-size: 180%;
   font-weight: bold;
   color: #2b2b2b;
-  height: 160px;
+  height: auto;
   width: 100%;
-  padding-right: 1rem;
   margin-bottom: 1rem;
+}
+
+.home-bottom {
+  width: 100%;
 }
 
 .tagline-sm {
   color: #535252;
-  font-size: 110%;
+  font-size: 120%;
   font-weight: 200;
-  width: 100%;
+  width: 49%;
   padding-right: 1rem;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+.home-image-container {
+  width: 50%;
+  height: auto;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .home-image {
-  float: right;
-  width: 50%;
+  width: 100%;
   height: auto;
+  vertical-align: top;
+  float: right;
 }
 
 /* Full-width layout for index page and pages without TOC */
@@ -53,14 +62,17 @@
 }
 
 /* Alternative approach - target the main content containers directly */
+
 body.article .body,
 body.article .article,
 body.article .doc {
   max-width: none;
   margin-left: auto;
   margin-right: auto;
+  /*
   padding-left: 2rem;
   padding-right: 2rem;
+  */
 }
 
 /* Remove any fixed max-width on the main content wrapper */
