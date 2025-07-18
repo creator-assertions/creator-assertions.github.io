@@ -1,6 +1,6 @@
 = Meeting notes
 
-The Creator Assertion Working Group holds regular video meetings as described in xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule].
+The Creator Assertion Working Group holds regular video meetings as described in xref:ROOT:meetings.adoc[Meetings].
 
 Notes from those meetings are published here:
 
