@@ -12,7 +12,7 @@
   color: #2b2b2b;
   height: auto;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .home-bottom {
@@ -21,11 +21,10 @@
 
 .tagline-sm {
   color: #535252;
-  font-size: 120%;
+  font-size: 130%;
   font-weight: 200;
   width: 49%;
   padding-right: 1rem;
-  padding-top: 2rem;
   display: inline-block;
 }
 

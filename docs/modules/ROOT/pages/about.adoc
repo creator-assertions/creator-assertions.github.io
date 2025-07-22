@@ -8,7 +8,7 @@ CAWG's vision is to create a world where creators can assert their ownership of 
 
 CAWG's mission is to advance trust in digital content by enabling creators to make verifiable claims about authorship, intent, and identity.
 
-=== Specifications
+== Specifications
 
 CAWG develops and promotes open xref:specs.adoc[technical specifications] that:
 

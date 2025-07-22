@@ -1,10 +1,16 @@
 = Membership
 
-CAWG operates under a https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement] with the https://identity.foundation/[Decentralized Identity Foundation (DIF)]. Contributions and meetings are open to:
+CAWG operates under a https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement] with the https://identity.foundation/[Decentralized Identity Foundation (DIF)]. CAWG also collaborates with the https://trustoverip.org[Trust Over IP (TOIP) Foundation] on matters of mutual interest.
+
+Contributions and meetings are open to:
 
 * *DIF members*. For information on joining, see link:https://identity.foundation/join/[DIF - Join,window=_blank]
-* https://trustoverip.org[*Trust Over IP (TOIP) Foundation members*]. For information on joining, see link:https://trustoverip.org/get-involved/membership/[Membership - Trust Over IP,window=_blank].
+* *TOIP Foundation members*. For information on joining, see link:https://trustoverip.org/get-involved/membership/[Membership - Trust Over IP,window=_blank].
 
-Members of DIF or TOIP may join CAWG without additional fees, if they sign DIF’s intellectual property rights agreement.
+Members of DIF or TOIP may join CAWG without additional fees.
 
 NOTE: Signatories of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025 may also participate.
+
+== Members
+
+_TBD: Add list of members with logos, pending permission._

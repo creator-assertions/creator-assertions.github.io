@@ -5,26 +5,6 @@
 include::partial$home-page.html[]
 ++++
 
-== Enhancing digital content trust
-CAWG develops and promotes open xref:specs.adoc[technical specifications] that:
-
-* **Empower creators with verifiable identity assertions**: CAWG allows content creators to link their digital identities to the content they produce, ensuring ownership and intent are transparent.
-* **Strengthen content authenticity and provenance**: CAWG extends the framework created by the C2PA Content Credentials specifications to include identity-based assertions, helping to verify the origin and history of digital content.
-* **Combat misinformation**: By embedding verifiable identity and content metadata, CAWG promotes a trustworthy online environment, reducing the spread of fake news and protecting intellectual property.
-* **Incorporate broad industry collaboration**: CAWG is part of a global initiative that includes C2PA and https://jpeg.org/jpegtrust/[JPEG Trust], ensuring a holistic approach to digital content authenticity, copyright, and integrity.
-* **Support practical applications**: Authoring tools can leverage CAWG specifications to link creators to social media profiles, offering real-world utility for content attribution and verification.
-
-== Participation
-
-CAWG operates under a https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement] with DIF. Contributions and meetings are open to:
-
-* *DIF members*. For information on joining, see link:https://identity.foundation/join/[DIF - Join,window=_blank]
-* https://trustoverip.org[*Trust Over IP (TOIP) Foundation members*]. For information on joining, see link:https://trustoverip.org/get-involved/membership/[Membership - Trust Over IP,window=_blank]
-
-Members of DIF or TOIP may join CAWG without additional fees, if they sign DIF’s intellectual property rights agreement.
-
-NOTE: Signatories of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025 may also participate.
-
-=== Meetings
+== Meetings
 
 CAWG holds regular online xref:meetings.adoc[meetings].  For notes from past meetings, see xref:meeting-notes:index.adoc[Meeting notes]. 
