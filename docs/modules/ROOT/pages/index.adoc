@@ -1,4 +1,5 @@
 = Creator Assertions Working Group
+:page-role: -left-nav -toc -toolbar
 
 The Creator Assertions Working Group builds upon the work of the link:https://c2pa.org:[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content.
 
