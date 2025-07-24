@@ -1,5 +1,5 @@
 = Creator Assertions Working Group
-:page-role: -left-nav -toc -title home
+:page-role: -left-nav -toc -title cawg-logo home
 
 [.tagline-large]
 Advancing trust in digital content by enabling creators to make verifiable claims about authorship, intent, and identity.
