@@ -1,4 +1,5 @@
 = Membership
+:page-role: -left-nav -toc
 
 CAWG is a working group within the link:https://identity.foundation/[Decentralized Identity Foundation].
 Participation in CAWG requires link:https://identity.foundation/join/[membership in DIF,window=_blank], except that a https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf[joint participation agreement] exists between DIF and the https://trustoverip.org[Trust Over IP (ToIP) Foundation] to allow ToIP members to participate in CAWG meetings without becoming full members of DIF.
