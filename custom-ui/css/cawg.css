@@ -1,0 +1,64 @@
+body.home .nav-container {
+  display: none;
+}
+
+body.home .tagline-large {
+  margin: 4.2em 0 1em;
+  font-size: 250%;
+  font-weight: 900;
+  line-height: 1.2em;
+  hyphens: none;
+}
+
+body.home .tagline-small {
+  font-size: 120%;
+  max-width: 35rem;
+  hyphens: none;
+}
+
+body.home article.doc {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 90vw;
+  min-height: 80vh;
+}
+
+body.home article.doc div.feature-text {
+  flex: 1;
+  margin-left: 4em;
+  min-width: 0; /* Prevents flex item from overflowing */
+  max-width: 40rem;
+}
+
+body.home article.doc div.feature-image {
+  flex: 0 0 auto;
+  margin-top: 6em;
+  max-width: 50%;
+}
+
+/* Responsive behavior - stack on smaller screens */
+@media (max-width: 768px) {
+  body.home article.doc {
+    flex-direction: column;
+  }
+  
+  body.home article.doc div.feature-image {
+    max-width: 100%;
+  }
+}
+
+body.cawg-logo::before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  width: 450px;
+  height: 450px;
+  background-image: url(../img/cawg-logo-black.svg);
+  background-size: 450px 450px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  z-index: -1;
+}

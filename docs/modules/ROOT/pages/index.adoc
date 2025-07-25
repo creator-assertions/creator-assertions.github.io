@@ -1,14 +1,15 @@
 = Creator Assertions Working Group
 :page-role: -left-nav -toc -title cawg-logo home
 
+[.feature-text]
+--
 [.tagline-large]
-Advancing trust in digital content by enabling creators to make verifiable claims about authorship, intent, and identity.
+Enhancing trust with verifiable authorship and identity
 
-Building on the work of the link:https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)], CAWG empowers individuals and organizations to assert attribution of digital content while supporting privacy and transparency.
+[.tagline-small]
+Building on the work of the link:https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)], the *Creator Assertions Working Group* (CAWG) empowers individuals and organizations to assert attribution of digital content while supporting privacy and transparency.
 Whether identifying the source of media or protecting creators’ rights, CAWG plays a critical role in promoting authenticity, combating misinformation, and shaping a more trustworthy digital ecosystem.
+--
 
-[.home-container]
---
-[.home-image-container.home-bottom]
-image::home.png[CAWG website image]
---
+[.feature-image]
+image::glacier-with-cawg-credentials.png[CAWG credentials example,width=594]
