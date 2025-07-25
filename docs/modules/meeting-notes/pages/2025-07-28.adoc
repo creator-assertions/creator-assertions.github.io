@@ -34,6 +34,7 @@ IMPORTANT: Time Y could be arbitrarily later than Time X -- anywhere from minute
 
 *DISCUSSION:*
 
+* Is this a problem worth solving?
 * Do we agree that this use case is a useful framing? If not, how should we revise it?
 * If so, what statements do we want to present to Emily at time Y? (In other words, What kinds of questions is she likely to have about the content?)
 * Working backwards from that, what kinds of information do we need to record in the C2PA manifest at time X to enable those statements to be discoverable and verifiable at time Y?
