@@ -40,11 +40,12 @@ IMPORTANT: Time Y could be arbitrarily later than Time X -- anywhere from minute
 
 === Review of existing protocols
 
-The three primary protocols/mechanisms for interacting with and discovering agents appear to be:
+The four primary protocols/mechanisms for interacting with and discovering agents appear to be:
 
 * *link:https://github.com/a2aproject[A2A project]*
 * *link:https://github.com/modelcontextprotocol[Model Content Protocol (MCP)]*
 * *link:https://github.com/agntcy[AGNTCY]*
+* *link:https://spiffe.io[SPIFFE]*
 
 *DISCUSSION:* Of these, only AGNTCY appears to have even a discussion of agent identity that could outlive a specific transaction or interaction. (In terms of the use case above, any understanding of the identity of agents B and C doesn't live beyond Alice receiving the content back from B.)
 
