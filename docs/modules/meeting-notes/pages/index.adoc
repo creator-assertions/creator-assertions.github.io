@@ -1,5 +1,5 @@
 = Meetings
-:page-role: -toc
+:page-role: -toc cawg-logo
 
 The Creator Assertions Working Group holds video meetings for 90 minutes every other Monday at 0800 US Pacific / 1100 US Eastern / 1500 UTC / 1600 Central Europe.
 
