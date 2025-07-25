@@ -12,10 +12,10 @@ You can build a preview version of this site locally. On Mac, this can be done w
 
 ```sh
 $ npm install
-$ npx antora antora-playbook-local.yml
+$ npx antora --fetch antora-playbook-local.yml
 $ open build/site/index.html
 ```
 
-**IMPORTANT:** If you change the content of the wrapper page (`docs/modules/ROOT/...`), you must commit those changes to git (at least locally) before rebuilding the site. Antora does not pay attention to the contents of the git working directory.
+**IMPORTANT:** If you change the content of the wrapper page (`docs/modules/ROOT/...`), you must commit those changes to git (at least locally) before rebuilding the site. Antora does not pay attention to the contents of the Git working directory.
 
 The preview site will incorporate content from the other technical specification repositories as found on github.com.

@@ -1,0 +1,55 @@
+= Frequently Asked Questions
+:page-role: -left-nav -toc cawg-logo 
+
+== What is the Creator Assertions Working Group?
+
+The Creator Assertions Working Group (CAWG) builds upon the work of the link:https://c2pa.org[Coalition for Content Provenance and Authenticity] (C2PA) by defining additional assertions that allow content creators to express individual and organizational intent about their content.
+
+== What are Creator Assertions?
+
+Creator Assertions are additional data structures that extend the C2PA specification to enable content creators to make specific claims about their content, such as:
+
+* Identity assertions - proving who created the content
+* Metadata assertions - providing detailed information about the content
+* Training and data mining assertions - specifying how the content may be used
+* Endorsement assertions - showing approval or support for content
+
+== How do I participate in CAWG?
+
+As of March 2025, CAWG is a working group within the link:https://identity.foundation[Decentralized Identity Foundation (DIF)]. You can participate by:
+
+* Being a member of DIF (link:https://identity.foundation/join/[join here])
+* Being a member of the link:https://trustoverip.org[Trust Over IP Foundation]
+* Being a signatory of CAWG's previous operating agreement (Community Specification License) as of 1 February 2025
+
+== When does CAWG meet?
+
+See xref:meeting-notes:index.adoc[] for information about our regularly-scheduled meetings.
+
+== Where can I find meeting notes?
+
+Meeting notes and agendas are published xref:meeting-notes:index.adoc[here].
+
+== What technical specifications does CAWG maintain?
+
+CAWG maintains specifications for:
+
+* xref:identity:ROOT:index.adoc[Identity Assertions]
+* xref:metadata:ROOT:index.adoc[Metadata Assertions]
+* xref:training-and-data-mining:ROOT:index.adoc[Training and Data Mining Assertions]
+* xref:endorsement:ROOT:index.adoc[Endorsement Assertions]
+
+== How can I contribute to the specifications?
+
+Participants from included organizations may join CAWG without additional fees, provided they sign DIF's intellectual property rights agreement. Once you're a participant, you can contribute to the specifications through:
+
+* Participating in regular meetings
+* Reviewing and commenting on draft specifications
+* Proposing changes and improvements
+* Helping with implementation and testing
+
+== What is C2PA and how does it relate to CAWG?
+
+The Coalition for Content Provenance and Authenticity (C2PA) is an organization that develops technical standards for content provenance and authenticity. CAWG builds upon C2PA's work by defining additional assertions that creators can use to express their intent about their content.
+
+See the link:++https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview++[C2PA Technical Specification: Technical Overview] for more information about the underlying data model.

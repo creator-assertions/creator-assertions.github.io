@@ -1,0 +1,15 @@
+= Technical specifications
+
+The C2PA link:https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html[Content Credentials technical specification]
+describes how actors can make cryptographically-signed _assertions_ about a digital asset. 
+CAWG develops and maintains the following technical specifications for C2PA assertions:
+
+* **xref:identity:ROOT:index.adoc[]**: Describes an assertion that enables a credential holder to prove control over a digital identity and to use that identity to document the named actor’s role(s) in an asset’s lifecycle.
+
+* **xref:metadata:ROOT:index.adoc[]**: Describes an assertion for binding metadata from standards such as XMP, IPTC, and Exif to a C2PA Manifest in a tamper-evident way.  Unlike the c2pa.metadata assertion from the C2PA technical specification, this specification places no restrictions on which metadata fields may be included, so it supports a broader set of use cases. This makes it well-suited for use in gathered assertions in the C2PA claim schema, where the signer of the C2PA Manifest does not attest to the accuracy of the provided metadata but still ensures the integrity of the C2PA Manifest.
+
+* **xref:training-and-data-mining:ROOT:index.adoc[]**: Describes an assertion that enables someone to provide information about whether an asset with C2PA metadata may be used for data mining or AI/ML training.
+
+* **xref:endorsement:ROOT:index.adoc[]**: An endorsement is a way of indicating approval for specific actions made on content after it has had a C2PA Manifest attached. The signer of an ingredient asset stores endorsements using the endorsement assertion. The endorsement assertion indicates that the asset signer trusts a particular actor to perform the  actions indicated in the assertion. Then a validator uses that assertion when assessing whether the actions of the active C2PA Manifest are “endorsed” or not. 
+
+See the https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model, including assertions.
