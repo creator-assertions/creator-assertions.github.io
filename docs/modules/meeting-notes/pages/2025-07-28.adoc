@@ -1,0 +1,71 @@
+= 28 July 2025 (Agentic identity kickoff)
+
+Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and membership information.
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda (focus on agentic identity)
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members and invited guests introduction
+
+=== Defining a shared use case
+
+Initial discussion: Let's see if we agree to a core use case to address for agentic AI. Based on some preliminary discussions, I propose the following:
+
+.Proposed use case for agentic identity in CAWG
+****
+At time X, content *creator* _Alice_ (human or organization) invokes text-chat agent B which invokes image-generation agent C, which produces still-image content D, which is ultimately returned to content creator Alice. Alice then posts asset D to social media.
+
+At time Y, content *consumer* _Emily_ finds asset D. She has questions about how this asset was created and submits it to a C2PA verification site. The report contains information about Alice's identity and the role of agents B and C in producing the content D.
+
+IMPORTANT: Time Y could be arbitrarily later than Time X -- anywhere from minutes to years later.
+****
+
+*DISCUSSION:*
+
+* Do we agree that this use case is a useful framing? If not, how should we revise it?
+* If so, what statements do we want to present to Emily at time Y? (In other words, What kinds of questions is she likely to have about the content?)
+* Working backwards from that, what kinds of information do we need to record in the C2PA manifest at time X to enable those statements to be discoverable and verifiable at time Y?
+
+=== Review of existing protocols
+
+The three primary protocols/mechanisms for interacting with and discovering agents appear to be:
+
+* *link:https://github.com/a2aproject[A2A project]*
+* *link:https://github.com/modelcontextprotocol[Model Content Protocol (MCP)]*
+* *link:https://github.com/agntcy[AGNTCY]*
+
+*DISCUSSION:* Of these, only AGNTCY appears to have even a discussion of agent identity that could outlive a specific transaction or interaction. (In terms of the use case above, any understanding of the identity of agents B and C doesn't live beyond Alice receiving the content back from B.)
+
+* Is this assessment correct? Are there other forms of agentic identity that may be longer lasting that we should be studying? If not, what gaps are we likely to fill and how?
+
+* Are there other trends/technologies/works-in-progress that we should be considering?
+
+=== Interaction with / collaboration with C2PA
+
+C2PA has its own AI task force. Historically, the boundary between C2PA and CAWG has been that C2PA provides standards for what hardware and software implementations of C2PA can directly attest to and CAWG provides standards for human-sourced metadata and attribution.
+
+*DISCUSSION* _(Adapt based on outcome of use case review above.):_
+
+* The boundary between human and implementation is being tested. How cleanly can we achieve separation of concerns between C2PA and CAWG when a key part of agentic identity is _who_ was involved in creating and/or invoking the agent?
+
+* Further, how do we describe the chain of agent delegations that may have been involved in creation of an asset?
+
+* Given the answers to those questions, what collaboration and/or boundaries should inform our upcoming work with regard to AI?
+
+* _Related:_ What collaborations should we have with ToIP and other DIF WGs?
+
+=== Bonus topic: CAWG web site
+
+_(If we have time remaining:)_ Team at Adobe have been working on a proposed redesign of the CAWG web site. Review and feedback if time; if not, we'll post screen shots or a working prototype and invite offline feedback.
