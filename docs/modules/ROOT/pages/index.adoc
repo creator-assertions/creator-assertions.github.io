@@ -13,3 +13,15 @@ Whether identifying the source of media or protecting creators’ rights, CAWG p
 
 [.feature-image]
 image::glacier-with-cawg-credentials.png[CAWG credentials example,width=594]
+
+////
+== Meet the members
+
+(add member logos when ready)
+
+== Learn more about our efforts
+
+Creators, technologists, and advocates are coming together to shape the future of attribution and content transparency.
+
+(insert CAWG explainer video when available)
+////
