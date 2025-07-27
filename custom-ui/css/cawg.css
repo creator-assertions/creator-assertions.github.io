@@ -98,3 +98,7 @@ body.module-meeting-notes .nav-container {
 .nav-panel-explore .context {
   display: none; /* CAWG override from display: flex; */
 }
+
+.toolbar {
+  display: none; /* CAWG override from display: flex; */
+}
