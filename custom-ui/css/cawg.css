@@ -15,15 +15,28 @@ pre code {
 .doc h4,
 .doc h5,
 .doc h6 {
-  margin: 1rem 0; /* was 1rem 0 0 */
+  margin: 1rem 0; /* CAWG: Was 1rem 0 0 */
 }
 
 .doc h5 {
-  font-size: 95%; /* [scouten 2024-06-13]: Override browser default style sheet */
+  font-size: 95%; /* CAWG: Override browser default style sheet */
 }
 
 .doc h6 {
-  font-size: 90%; /* [scouten 2024-07-23]: Override browser default style sheet */
+  font-size: 90%; /* CAWG: Override browser default style sheet */
   font-weight: bold;
   color: #555;
+}
+
+.doc h2 { /* CAWG: Was .doc h2:not(.discrete) */
+  border-bottom: 1px solid var(--section-divider-color);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.4rem 1rem 0.1rem;
+}
+
+.doc h3:not(.discrete),
+.doc h4:not(.discrete),
+.doc h5:not(.discrete) { /* CAWG: Added h5 to this list */
+  font-weight: var(--alt-heading-font-weight);
 }
