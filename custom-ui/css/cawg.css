@@ -62,3 +62,7 @@ body.cawg-logo::before {
   opacity: 0.05;
   z-index: -1;
 }
+
+body.-title h1.page {
+  display: none;
+}
