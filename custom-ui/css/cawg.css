@@ -1,3 +1,4 @@
+/* CAWG home page customizations */
 body.home .nav-container {
   display: none;
 }
@@ -101,4 +102,91 @@ body.module-meeting-notes .nav-container {
 
 .toolbar {
   display: none; /* CAWG override from display: flex; */
+}
+
+/* Customize presentation of code snippets. */
+code {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: none;
+}
+
+pre code {
+  border: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Tweak rendering of headers. */
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+  margin: 1rem 0; /* CAWG: Was 1rem 0 0 */
+}
+
+.doc h2 { /* CAWG: Was .doc h2:not(.discrete) */
+  border-bottom: 1px solid #e1e1e1;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.4rem 1rem 0.1rem;
+}
+
+.doc h3:not(.discrete),
+.doc h4:not(.discrete),
+.doc h5:not(.discrete) { /* CAWG: Added h5 to this list */
+  font-weight: 600;
+}
+
+.doc h5 {
+  font-size: 95%; /* CAWG: Override browser default style sheet */
+}
+
+.doc h6 {
+  font-size: 90%; /* CAWG: Override browser default style sheet */
+  font-weight: 600;
+  color: #555;
+}
+
+/* Customize presentation of examples. */
+.doc .exampleblock > .content,
+.doc details.result > .content {
+  padding: 1rem 1rem 0.75rem;
+  background: #e1e1e1;
+  border-radius: 0.5rem;
+  border: none !important;
+  width: 100%;
+  word-wrap: anywhere;
+}
+
+/* Customize header to add DIF and CAWG logos. */
+.navbar-brand .navbar-dif-logo {
+  background: url(../img/dif-logo-white.png) no-repeat left;
+  background-size: 82%;
+  align-self: center;
+  padding: 0 0 0 4.2em;
+  border-right: 1px solid #ccc;
+  margin-right: 0.75em;
+  height: 2em;
+  font-size: 122%;
+  flex-wrap: wrap;
+  line-height: 1;
+}
+
+.navbar-brand .navbar-item {
+  background: url(../img/cawg-logo-white.svg) no-repeat left;
+  align-self: center;
+  color: #fff;
+  padding: 6px 0 0 2.2em;
+  height: 4em;
+  font-size: 122%;
+  flex-wrap: wrap;
+  line-height: 1;
+}
+
+.navbar-brand .navbar-item a { /* CAWG: was .navbar-brand .navbar-item:first-child a */
+  color: inherit;
+  word-wrap: normal;
 }
