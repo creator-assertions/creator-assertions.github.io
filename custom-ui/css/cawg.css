@@ -7,3 +7,23 @@ code {
 pre code {
   border: none;
 }
+
+/* Tweak rendering of headers. */
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+  margin: 1rem 0; /* was 1rem 0 0 */
+}
+
+.doc h5 {
+  font-size: 95%; /* [scouten 2024-06-13]: Override browser default style sheet */
+}
+
+.doc h6 {
+  font-size: 90%; /* [scouten 2024-07-23]: Override browser default style sheet */
+  font-weight: bold;
+  color: #555;
+}
