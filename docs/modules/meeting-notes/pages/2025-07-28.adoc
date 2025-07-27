@@ -54,6 +54,8 @@ The four primary protocols/mechanisms for interacting with and discovering agent
 
 * Are there other trends/technologies/works-in-progress that we should be considering?
 
+* Presentations / commentary from invited guests
+
 === Interaction with / collaboration with C2PA
 
 C2PA has its own AI task force. Historically, the boundary between C2PA and CAWG has been that C2PA provides standards for what hardware and software implementations of C2PA can directly attest to and CAWG provides standards for human-sourced metadata and attribution.
