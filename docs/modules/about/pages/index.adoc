@@ -11,7 +11,7 @@ CAWG's mission is to advance trust in digital content by enabling creators to ma
 
 == Specifications
 
-CAWG develops and promotes open xref:specs.adoc[technical specifications] that:
+CAWG develops and promotes open xref:ROOT:specs.adoc[technical specifications] that:
 
 * **Empower creators with verifiable identity assertions.**
 CAWG allows content creators to link their digital identities to the content they produce, ensuring ownership and intent are transparent.
