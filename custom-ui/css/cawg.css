@@ -1,0 +1,9 @@
+/* Customize presentation of code snippets. */
+code {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+pre code {
+  border: none;
+}
