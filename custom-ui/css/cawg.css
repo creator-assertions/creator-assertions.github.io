@@ -40,3 +40,14 @@ pre code {
 .doc h5:not(.discrete) { /* CAWG: Added h5 to this list */
   font-weight: var(--alt-heading-font-weight);
 }
+
+/* Customize presentation of examples. */
+.doc .exampleblock > .content,
+.doc details.result > .content {
+  padding: 1rem 1rem 0.75rem;
+  background: var(--sidebar-background);
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  word-wrap: anywhere;
+}
