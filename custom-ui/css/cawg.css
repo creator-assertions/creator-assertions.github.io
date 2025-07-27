@@ -2,10 +2,13 @@
 code {
   border: 1px solid #ddd;
   border-radius: 4px;
+  background: none;
 }
 
 pre code {
   border: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* Tweak rendering of headers. */
@@ -18,18 +21,8 @@ pre code {
   margin: 1rem 0; /* CAWG: Was 1rem 0 0 */
 }
 
-.doc h5 {
-  font-size: 95%; /* CAWG: Override browser default style sheet */
-}
-
-.doc h6 {
-  font-size: 90%; /* CAWG: Override browser default style sheet */
-  font-weight: bold;
-  color: #555;
-}
-
 .doc h2 { /* CAWG: Was .doc h2:not(.discrete) */
-  border-bottom: 1px solid var(--section-divider-color);
+  border-bottom: 1px solid #e1e1e1;
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
@@ -38,16 +31,26 @@ pre code {
 .doc h3:not(.discrete),
 .doc h4:not(.discrete),
 .doc h5:not(.discrete) { /* CAWG: Added h5 to this list */
-  font-weight: var(--alt-heading-font-weight);
+  font-weight: 600;
+}
+
+.doc h5 {
+  font-size: 95%; /* CAWG: Override browser default style sheet */
+}
+
+.doc h6 {
+  font-size: 90%; /* CAWG: Override browser default style sheet */
+  font-weight: 600;
+  color: #555;
 }
 
 /* Customize presentation of examples. */
 .doc .exampleblock > .content,
 .doc details.result > .content {
   padding: 1rem 1rem 0.75rem;
-  background: var(--sidebar-background);
+  background: #e1e1e1;
   border-radius: 0.5rem;
-  border: none;
+  border: none !important;
   width: 100%;
   word-wrap: anywhere;
 }
@@ -61,7 +64,7 @@ pre code {
   border-right: 1px solid #ccc;
   margin-right: 0.75em;
   height: 2em;
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: 122%;
   flex-wrap: wrap;
   line-height: 1;
 }
@@ -69,10 +72,10 @@ pre code {
 .navbar-brand .navbar-item {
   background: url(../img/cawg-logo-white.svg) no-repeat left;
   align-self: center;
-  color: var(--navbar-font-color);
+  color: #fff;
   padding: 6px 0 0 2.2em;
   height: 4em;
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: 122%;
   flex-wrap: wrap;
   line-height: 1;
 }
@@ -81,4 +84,3 @@ pre code {
   color: inherit;
   word-wrap: normal;
 }
-
