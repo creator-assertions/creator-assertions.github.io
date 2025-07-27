@@ -84,16 +84,16 @@ body.module-meeting-notes .nav-container {
   margin-top: 0.55em;
 }
 
-.navbar-item.navbar-item-home {
-  padding-left: 2em;
-  background: url(../img/home-white.svg) no-repeat left !important;
-  background-size: 27% !important;
+.navbar-item.navbar-item-home,
+.navbar-item.navbar-item-home:hover {
+  padding-left: 3em;
+  background: url(../img/home-white.svg) no-repeat !important;
+  background-position: left 1em center !important;
+  background-size: 22% !important;
 }
 
 .navbar-item.navbar-item-home:hover {
-  padding-left: 2em;
-  background: black url(../img/home-white.svg) no-repeat left !important;
-  background-size: 27% !important;
+  background-color: black !important;
 }
 
 .nav-panel-explore .context {
