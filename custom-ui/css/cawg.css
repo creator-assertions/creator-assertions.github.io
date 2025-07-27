@@ -94,3 +94,7 @@ body.module-meeting-notes .nav-container {
   background: black url(../img/home-white.svg) no-repeat left !important;
   background-size: 27% !important;
 }
+
+.nav-panel-explore .context {
+  display: none; /* CAWG override from display: flex; */
+}
