@@ -128,7 +128,7 @@ xref:attachment$2025-07-28/makki-elfatih-agentic-ai-a-rising-realm.pdf[Makki's s
 
 🎥 _1h01'05":_ C2PA has its own AI task force. Historically, the boundary between C2PA and CAWG has been that C2PA provides standards for what hardware and software implementations of C2PA can directly attest to and CAWG provides standards for human-sourced metadata and attribution.
 
-NOTE: Most of the discussion about this topic is in recording https://us02web.zoom.us/rec/share/z8Bz6X5uzsctFo15a1Kbh0I4tda0Xnmbb0qH8kWYzpzCii9CbFqiR3MON5fRm3vG.Nf4nxa5ve79v7e-g[part 2 (29m)]
+NOTE: Most of the discussion about this topic is in recording https://us02web.zoom.us/rec/share/z8Bz6X5uzsctFo15a1Kbh0I4tda0Xnmbb0qH8kWYzpzCii9CbFqiR3MON5fRm3vG.Nf4nxa5ve79v7e-g[part 2 (29m)].
 
 *DISCUSSION / OUTCOMES:*
 
@@ -141,7 +141,7 @@ NOTE: Most of the discussion about this topic is in recording https://us02web.zo
 
 === CAWG web site proposed update
 
-🎥 _21'19":_ Team at Adobe have been working on a proposed redesign of the CAWG web site, which was shared in the meeting. The redesign can be viewed in the video (starting at 21'58") or by downloading and building from link:PR #11 "Draft home page revision"[https://github.com/creator-assertions/creator-assertions.github.io/pull/11].
+🎥 _21'19":_ Team at Adobe have been working on a proposed redesign of the CAWG web site, which was shared in the meeting. The redesign can be viewed in the video (starting at 21'58") or by downloading and building from link:https://github.com/creator-assertions/creator-assertions.github.io/pull/11[PR #11 "Draft home page revision"].
 
 *FEEDBACK:*
 
