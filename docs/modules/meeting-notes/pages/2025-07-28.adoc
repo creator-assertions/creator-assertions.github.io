@@ -1,27 +1,61 @@
 = 28 July 2025 (Agentic identity kickoff)
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and membership information.
+Due to a technical glitch, this meeting recording comes in two parts:
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+* https://us02web.zoom.us/rec/share/O62n-maQdhI5ZhfxZi-PmalzSTcw0ZVmc7sdpTgYAI52pbterLHbP0V5Ou2rY38V.NJjv8AnYualkUHrB[Part 1 (1h 3m)]
+* https://us02web.zoom.us/rec/share/z8Bz6X5uzsctFo15a1Kbh0I4tda0Xnmbb0qH8kWYzpzCii9CbFqiR3MON5fRm3vG.Nf4nxa5ve79v7e-g[Part 2 (29m)]
 
 == Attendees
 
+* Alan Karp
+* Andor Kesselman, DIF
+* Andrew Dworschak, Yakoa
+* Andy Parsons, Adobe
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Gavin Peacock, Adobe
+* Karla McKenna, GLEIF
+* Kim Hamilton Duffy, DIF
+* Jen Tse, Adobe
+* Jeremy Uzan, Universal Music
+* Juan Caballero, DIF
+* Lauren Langsner, Adobe
+* Leonard Rosenthol, Adobe
+* Makki Elfatih, HKDolts
+* Massy Mahamli, Adobe
+* Michael Klein, Adobe
+* Misha Deville, Vidos
+* Nicholas Salvemini, Adobe
+* Nicky Hickman, Digital Egret
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Rand McKinney, Adobe
+* Santiago Lyon, Adobe
+* Scott Perry, Digital Governance Institute
+* Wenjing Chu, Trust Over IP / Futurewei
+* Will Kreth, HAND (Human & Digital) Identity
+
 == Agenda (focus on agentic identity)
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+NOTE: Time stamps are in recording https://us02web.zoom.us/rec/share/O62n-maQdhI5ZhfxZi-PmalzSTcw0ZVmc7sdpTgYAI52pbterLHbP0V5Ou2rY38V.NJjv8AnYualkUHrB[part 1] until otherwise noted.
 
 === New members and invited guests introduction
 
+* 🎥 _6'26":_ Nicky Hickman, Digital Egret
+* 🎥 _7'07":_ Wenjing Chu, Trust Over IP / Futurewei
+* 🎥 _7'40":_ Alan Karp
+* 🎥 _8'22":_ Andy Parsons, Adobe
+* 🎥 _8'37":_ Santiago Lyon, Adobe
+* 🎥 _8'53":_ Rand McKinney, Adobe
+* 🎥 _9'12":_ Jen Tse, Adobe
+* 🎥 _9'26":_ Michael Klein, Adobe
+* 🎥 _9'45":_ Nicholas Salvemini, Adobe
+* 🎥 _10'15":_ Erik Passoja, SAG/AFTRA
+
 === Defining a shared use case
 
-Initial discussion: Let's see if we agree to a core use case to address for agentic AI. Based on some preliminary discussions, I propose the following:
+🎥 _13'55":_ Eric proposed the following use case as an organizing rubric:
 
 .Proposed use case for agentic identity in CAWG
 ****
@@ -34,42 +68,82 @@ IMPORTANT: Time Y could be arbitrarily later than Time X -- anywhere from minute
 
 *DISCUSSION:*
 
-* Is this a problem worth solving?
-* Do we agree that this use case is a useful framing? If not, how should we revise it?
-* If so, what statements do we want to present to Emily at time Y? (In other words, What kinds of questions is she likely to have about the content?)
-* Working backwards from that, what kinds of information do we need to record in the C2PA manifest at time X to enable those statements to be discoverable and verifiable at time Y?
+* Is this a problem worth solving? *Enthusiastic yes.*
+
+* Suggested amendments to proposed use case:
+** Adopt Leonard's <<proposed_terms_and_definitions>>.
+** Important to encode _version_ of agent/tool as capabilities will evolve over time.
+** Spell out more about what Emily's questions about the content are. Some proposed examples:
+*** Is Alice really Alice?
+*** 
+
+* Suggested variations on the proposed use case:
+** Asset D gets published/circulated prior to having been returned to Alice.
+** Asset D is created maliciously in Alice's name by one or more agents.
+
+* Limitations on CAWG's scope:
+** Transactional authentication and authorization is handled by other protocols and out of scope for CAWG.
+** _Documenting_ what chain of delegation was used _is_ in scope for CAWG.
+** Documenting rights and payment expectations remain out of scope for CAWG. (Refer such topics to JPEG Trust.)
+
+🎥 _26'30":_ Leonard proposed that we adopt the following definitions:
+
+.Proposed terms and definitions:
+[#proposed_terms_and_definitions]
+****
+Tool:: a stateless operation where you pass all parameters in a single call
+NOTE: You need an agent when you have more than one tool and you require state between the tools plus there is additional logic that may be required 
+NOTE: Some tool models support returning information to the caller (such as for HITL interaction)
+ 
+Skill (aka workflow):: a system where the set of operations across multiple tools/agents/etc is predefined and hardcoded.
+EXAMPLE: a prepare for web skill that would know to do things such as color convert, optimize and save as PDF/A
+ 
+Agent:: a system, with a defined (but possibly mutable) goal, that can dynamically direct its own process (and possible tool usage), usually backed by an xLM.
+****
 
 === Review of existing protocols
 
-The four primary protocols/mechanisms for interacting with and discovering agents appear to be:
+🎥 _34'39":_ The primary protocols/mechanisms for interacting with and discovering agents appear to be:
 
 * *link:https://github.com/a2aproject[A2A project]*
 * *link:https://github.com/modelcontextprotocol[Model Content Protocol (MCP)]*
 * *link:https://github.com/agntcy[AGNTCY]*
 * *link:https://spiffe.io[SPIFFE]*
+* *link:https://projnanda.github.io/projnanda/[NANDA]*
 
-*DISCUSSION:* Of these, only AGNTCY appears to have even a discussion of agent identity that could outlive a specific transaction or interaction. (In terms of the use case above, any understanding of the identity of agents B and C doesn't live beyond Alice receiving the content back from B.)
+*DISCUSSION:* 
 
-* Is this assessment correct? Are there other forms of agentic identity that may be longer lasting that we should be studying? If not, what gaps are we likely to fill and how?
+Of these, only AGNTCY appears to have even a discussion of agent identity that could outlive a specific transaction or interaction. (In terms of the use case above, any understanding of the identity of agents B and C doesn't live beyond Alice receiving the content back from B.) General consensus that this assessment is correct, with the caveat that NANDA may also be exploring this space.
 
-* Are there other trends/technologies/works-in-progress that we should be considering?
+🎥 _41'06":_ Makki Elfatih gave a presentation outlining the current state of major agentic protocols and the authentication and authorization mechanisms that are included here.
 
-* Presentations / commentary from invited guests
+xref:attachment$2025-07-28/makki-elfatih-agentic-ai-a-rising-realm.pdf[Makki's slide deck (PDF)]
+
+*Relevant links:*
+
+* xref:attachment$2025-07-28/andor-kesselman-agentic-landscape.pdf[Andor's slide deck for GDC (PDF)]
+* link:https://github.com/a2aproject/A2A/discussions/741[Great starting point for agent registries] (Leonard suggests following the sub-issues linked there)
 
 === Interaction with / collaboration with C2PA
 
-C2PA has its own AI task force. Historically, the boundary between C2PA and CAWG has been that C2PA provides standards for what hardware and software implementations of C2PA can directly attest to and CAWG provides standards for human-sourced metadata and attribution.
+🎥 _1h01'05":_ C2PA has its own AI task force. Historically, the boundary between C2PA and CAWG has been that C2PA provides standards for what hardware and software implementations of C2PA can directly attest to and CAWG provides standards for human-sourced metadata and attribution.
 
-*DISCUSSION* _(Adapt based on outcome of use case review above.):_
+NOTE: Most of the discussion about this topic is in recording https://us02web.zoom.us/rec/share/z8Bz6X5uzsctFo15a1Kbh0I4tda0Xnmbb0qH8kWYzpzCii9CbFqiR3MON5fRm3vG.Nf4nxa5ve79v7e-g[part 2 (29m)]
 
-* The boundary between human and implementation is being tested. How cleanly can we achieve separation of concerns between C2PA and CAWG when a key part of agentic identity is _who_ was involved in creating and/or invoking the agent?
+*DISCUSSION / OUTCOMES:*
 
-* Further, how do we describe the chain of agent delegations that may have been involved in creation of an asset?
+* C2PA will host discussion about _tool_ identity when there are not humans in the loop.
+* CAWG will host discussion about _agent_ identity and documenting _delegation of authority_ when there are humans (including organizations) in the loop.
+* There's a related discussion with DIF about object capabilities APIs, which may be partially related.
+* Call for C2PA to build more of an _ecosystem_ of related standards and SDOs.
 
-* Given the answers to those questions, what collaboration and/or boundaries should inform our upcoming work with regard to AI?
+*ACTION:* Andor, Scott, and Eric to meet later this week to discuss upcoming AI identity task force and how CAWG relates to it and to draft a charter for CAWG AI task force if applicable.
 
-* _Related:_ What collaborations should we have with ToIP and other DIF WGs?
+=== CAWG web site proposed update
 
-=== Bonus topic: CAWG web site
+🎥 _21'19":_ Team at Adobe have been working on a proposed redesign of the CAWG web site, which was shared in the meeting. The redesign can be viewed in the video (starting at 21'58") or by downloading and building from link:PR #11 "Draft home page revision"[https://github.com/creator-assertions/creator-assertions.github.io/pull/11].
 
-_(If we have time remaining:)_ Team at Adobe have been working on a proposed redesign of the CAWG web site. Review and feedback if time; if not, we'll post screen shots or a working prototype and invite offline feedback.
+*FEEDBACK:*
+
+* Tagline should say "attribution" not "authorship."
+* Home page text should talk about CAWG's role as an SDO and avoid talking about (directly) "empowering" content authors.
