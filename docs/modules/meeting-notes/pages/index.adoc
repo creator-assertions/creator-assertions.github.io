@@ -9,7 +9,7 @@ Video conferencing information is only available to xref:ROOT:ROOT:membership.ad
 
 Notes (including video recordings) from prior meetings are published here:
 
-* _(upcoming)_ xref:2025-07-28.adoc[]
+* xref:2025-07-28.adoc[]
 * xref:2025-07-14-apac.adoc[]
 * xref:2025-07-14-na-eu.adoc[]
 * xref:2025-06-16-apac.adoc[]
