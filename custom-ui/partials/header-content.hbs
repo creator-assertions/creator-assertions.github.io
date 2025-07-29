@@ -13,8 +13,36 @@
       <!-- CAWG customization: Remove navbar burger -->
     </div>
     <div id="topbar-nav" class="navbar-menu">
+      <!-- CAWG customization: Add navbar items -->
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        {{#with (resolvePage "ROOT:ROOT:index.adoc")}}
+          <a class="navbar-item navbar-item-home" href="{{relativize url}}">Home</a>
+        {{/with}}
+      </div>
+      <div class="navbar-end">
+        {{#with (resolvePage "ROOT:about:index.adoc")}}
+          <a class="navbar-item" href="{{relativize url}}">About</a>
+        {{/with}}
+      </div>
+      <div class="navbar-end">
+        {{#with (resolvePage "ROOT:ROOT:faq.adoc")}}
+          <a class="navbar-item" href="{{relativize url}}">FAQ</a>
+        {{/with}}
+      </div>
+      <div class="navbar-end">
+        {{#with (resolvePage "ROOT:ROOT:membership.adoc")}}
+          <a class="navbar-item" href="{{relativize url}}">Membership</a>
+        {{/with}}
+      </div>
+      <div class="navbar-end">
+        {{#with (resolvePage "ROOT:ROOT:specs.adoc")}}
+          <a class="navbar-item" href="{{relativize url}}">Specifications</a>
+        {{/with}}
+      </div>
+      <div class="navbar-end">
+        {{#with (resolvePage "ROOT:meeting-notes:index.adoc")}}
+          <a class="navbar-item" href="{{relativize url}}">Meetings</a>
+        {{/with}}
       </div>
     </div>
   </nav>

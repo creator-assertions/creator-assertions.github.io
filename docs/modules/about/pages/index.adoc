@@ -1,0 +1,25 @@
+= About CAWG
+:page-role: -left-nav -toc cawg-logo 
+
+== Vision
+
+CAWG's vision is to create a world where creators can assert their relationship to digital content that they produce while supporting privacy and transparency.
+
+== Mission
+
+CAWG's mission is to advance trust in digital content by enabling creators to make verifiable claims about authorship, intent, and identity.
+
+== Specifications
+
+CAWG develops and promotes open xref:ROOT:specs.adoc[technical specifications] that:
+
+* **Empower creators with verifiable identity assertions.**
+CAWG allows content creators to link their digital identities to the content they produce, ensuring ownership and intent are transparent.
+* **Strengthen content authenticity and provenance.**
+CAWG extends the framework created by the C2PA Content Credentials specifications to include identity-based assertions, helping to verify the origin and history of digital content.
+* **Combat misinformation.**
+By embedding verifiable identity and content metadata, CAWG promotes a trustworthy online environment, reducing the spread of fake news and protecting intellectual property.
+* **Incorporate broad industry collaboration.**
+CAWG is part of a global initiative that includes C2PA and https://jpeg.org/jpegtrust/[JPEG Trust], ensuring a holistic approach to digital content authenticity, copyright, and integrity.
+* **Support practical applications.**
+Authoring tools can leverage CAWG specifications to link creators to social media profiles, offering real-world utility for content attribution and verification.
