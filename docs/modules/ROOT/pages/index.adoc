@@ -7,7 +7,7 @@
 [.feature-text]
 --
 [.tagline-large]
-Enhancing trust with verifiable authorship and identity
+Enhancing trust with verifiable attribution and identity
 
 [.tagline-small]
 Building on the work of the link:https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)], the *Creator Assertions Working Group* (CAWG) empowers individuals and organizations to assert attribution of digital content while supporting privacy and transparency.
