@@ -1,6 +1,9 @@
 = Creator Assertions Working Group
 :page-role: -left-nav -toc -title cawg-logo home
 
+[pass]
+<div class="feature-flex">
+
 [.feature-text]
 --
 [.tagline-large]
@@ -13,6 +16,16 @@ Whether identifying the source of media or protecting creators’ rights, CAWG p
 
 [.feature-image]
 image::glacier-with-cawg-credentials.png[CAWG credentials example,width=594]
+
+[pass]
+</div>
+
+[.home-nav]
+xref:ROOT:about:index.adoc[]
+xref:ROOT:ROOT:faq.adoc[]
+xref:ROOT:ROOT:membership.adoc[]
+xref:ROOT:ROOT:specs.adoc[]
+xref:ROOT:meeting-notes:index.adoc[]
 
 ////
 == Meet the members

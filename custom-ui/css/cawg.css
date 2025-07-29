@@ -18,21 +18,24 @@ body.home .tagline-small {
 }
 
 body.home article.doc {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
   max-width: 90vw;
   min-height: 80vh;
 }
 
-body.home article.doc div.feature-text {
+body.home article.doc div.feature-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+body.home article.doc div.feature-flex div.feature-text {
   flex: 1;
   margin-left: 4em;
   min-width: 0; /* Prevents flex item from overflowing */
   max-width: 40rem;
 }
 
-body.home article.doc div.feature-image {
+body.home article.doc div.feature-flex div.feature-image {
   flex: 0 0 auto;
   margin-top: 6em;
   max-width: 50%;
@@ -40,13 +43,32 @@ body.home article.doc div.feature-image {
 
 /* Responsive behavior - stack on smaller screens */
 @media (max-width: 768px) {
-  body.home article.doc {
+  body.home article.doc div.feature-flex {
     flex-direction: column;
   }
   
-  body.home article.doc div.feature-image {
+  body.home article.doc div.feature-flex div.feature-image {
     max-width: 100%;
   }
+}
+
+article.doc div.home-nav {
+  text-align: center;
+  font-size: 130%;
+  margin: 5em 0;
+  color: #666;
+}
+
+article.doc div.home-nav a {
+  border-left: 1px solid #ccc;
+  color: black;
+  font-weight: 600;
+  margin: 0 .75em 0 0;
+  padding: .25em 0 .25em .75em;
+}
+
+article.doc div.home-nav a:first-of-type {
+  border-left: none;
 }
 
 /* Pages with the cawg-logo style have a large background image of the logo. */
