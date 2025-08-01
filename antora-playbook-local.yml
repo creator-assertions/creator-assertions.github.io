@@ -13,7 +13,8 @@ content:
     edit_url: ~ 
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
-    branches: [] # - HEAD (when there's a draft again)
+    branches:
+    - HEAD
     tags:
     - v1.0
     - v1.1-final
