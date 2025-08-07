@@ -1,0 +1,55 @@
+= 11 August 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site.
+* *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Eric to include on new site.
+
+=== Identity assertion PRs
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/238[PR #238: Update referenced assertions requirements]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/72[PR #72: Emphasizing the use of REGISTERED spots in the advertising use case]
+
+=== Upcoming CAWG PRs
+
+Andrew Dworschak will present several new proposals for enhancing the use of DIDs, VCs, and VPs in the identity assertion.
+
+=== Identity assertion issue triage
+
+https://github.com/decentralized-identity/cawg-identity-assertion/issues[39 open issues against identity assertion]. Let's triage and assign.
+
+=== Agentic identity task force
+
+Recruit a lead for this TF.
+
+How do we describe delegation and tool/agent identity in archival-quality terms?
+
+=== Report out from media identifiers TF
+
+PR coming to formalize intended guidance.
+
+=== CAI meeting
+
+27 August CAI lunch and learn event.
+
+=== Review open issues for training and data mining assertion
+
+Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.

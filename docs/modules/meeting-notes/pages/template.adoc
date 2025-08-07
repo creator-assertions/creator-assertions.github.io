@@ -1,7 +1,5 @@
 = (date)
 
-Please see xref:ROOT:index.adoc#_meeting_schedule[Meeting schedule] for schedule information and membership information.
-
 == Meeting recording
 
 A link to the meeting recording will be provided after the meeting.
