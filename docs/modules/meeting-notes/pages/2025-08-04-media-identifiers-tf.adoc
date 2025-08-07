@@ -1,0 +1,26 @@
+= 04 August 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/share/Ae-PIzX8PYaG6JGUQ2w7n1ioZQ7nXGn1JjvHX7_eSLA_yacm99yI3XPtTiMcxVhg.DogryeSjxkGM9r1T[Meeting recording] (39m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Richard W. Kroon, EIDR
+* Tim Cappalli, Okta
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== SB 942
+
+🎥 _3'12":_ Erik (P) led a discussion about SB 942 and introduced a proposal for structured disclosure of the nature of generative and human-driven alterations that have occurred in the construction of a piece of digital media.
+
+=== Media-specific identifiers
+
+🎥 _26'29":_ Eric (S) led a discussion about ensuring that the right participants are in the room for future MITF discussions. Agreed that _transport_ provenance is out of scope for C2PA and thus CAWG.
+
+Richard restated a preference that the CAWG metadata assertion be used for a minimal set of data that can link out to other authoritative sources of information.
+
+ACTION: Eric to draft a PR to metadata assertion document stating the above.
