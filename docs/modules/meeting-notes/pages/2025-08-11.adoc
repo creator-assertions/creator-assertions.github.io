@@ -53,3 +53,7 @@ PR coming to formalize intended guidance.
 === Review open issues for training and data mining assertion
 
 Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.
+
+=== Review open PR for endorsement -> forward permission assertion
+
+Review link:https://github.com/decentralized-identity/cawg-endorsement-assertion/pull/11/files[PR #11: Transition from endorsement to forward-permission].
