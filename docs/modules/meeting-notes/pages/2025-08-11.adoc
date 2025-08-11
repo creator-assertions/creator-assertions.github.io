@@ -1,59 +1,121 @@
 = 11 August 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/pK4M_VF2Y6hkOTeiFAt-_xRJfJS7tXS7R4JxJJbGvt4UjRs-vGoMueOCjhGl1XX7.WLHKHGUiGbnQZ-J5[Meeting recording] (1h30m)
 
 == Attendees
 
-== Agenda
+* Alan Karp
+* Alex Tweeddale, Cheqd
+* Andrew Dworschak, Yakoa
+* Andrew ___, Noosphere
+* Andy Rosen, Sequence Key
+* Colin Murphy, Adobe
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Karla McKenna, GLEIF
+* Kim Hamilton Duffy, DIF
+* Luke Nispel, OriginVault
+* Nathan Freitas, ProofMode
+* Nigel Earnshaw, BBC
+* Nicholas Salvemini, Adobe
+* Otto Mora, Privado ID
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Rand McKinney, Adobe
+* Richard W. Kroon, EIDR
+* Santiago Lyon, Adobe
+* Scott Jones, RealEyes
+* Scott Perry, Digital Governance Institute
+* Tim Cappalli, Okta
+* V Re
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _10'30":_ Colin Murphy, Adobe
+* 🎥 _11'12":_ Scott Jones, RealEyes
+* 🎥 _11'53":_ V Re
+
+
 === Review previous action items
 
+🎥 _12'56":_ Reviewed action items from previous meeting.
+
 * *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
-* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site.
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA late August.
 * *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Eric to include on new site.
 
-=== Identity assertion PRs
+=== Identity assertion PR #238: Update referenced assertions requirements
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/238[PR #238: Update referenced assertions requirements]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/72[PR #72: Emphasizing the use of REGISTERED spots in the advertising use case]
+🎥 _15'06":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/238[PR #238: Update referenced assertions requirements].
+
+This PR is foundational to some of the work subsequently presented by Andrew in this meeting.
+
+Some questions were raised about whether the new guidance regarding finding the appropriate hard binding assertion should be replaced with guidance pointing to the ingredient assertion.
+
+*ACTION:* Eric to review further with Leonard, Nigel, and Andrew. (Working on scheduling now.)
+
+=== Identity assertion PR #72: Emphasizing the use of REGISTERED spots in the advertising use case
+
+🎥 _32'46":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/72[PR #72: Emphasizing the use of REGISTERED spots in the advertising use case].
+
+A question was raised about whether this adds clarity to the existing document. 
+
+*ACTION:* Eric to review further with Andy and Noga (original author of this section).
 
 === Upcoming CAWG PRs
 
-Andrew Dworschak will present several new proposals for enhancing the use of DIDs, VCs, and VPs in the identity assertion.
+🎥 _37'51":_ Andrew Dworschak presented several new proposals for enhancing the use of DIDs, VCs, and VPs in the identity assertion. There are five distinct proposals, which build on each other in roughly the following sequence:
+
+. Reorganization of Verifiable Credential (VC)
+. Verifiable Presentation (VP) Support
+. Persistent IDs and Delegation (i.e. Identity Hooks)
+. Claim Generator Attestations
+. mDL Compatibility
+
+These notes are available in the following locations:
+
+* link:https://yakoa.notion.site/CAWG-1-2-2396f6c95e54805fb7e0f27603854d1d?source=copy_link[Notion] (up to date with discussion from various CAWG members)
+* xref:attachment$2025-08-11/andrew-dworschak-cawg-1.2.pdf[PDF snapshot]
+
+A few links that were shared during this discussion:
+
+* link:https://weboftrust.github.io/WOT-terms/docs/glossary/self-certifying-identifier[Definition of self-certifying identifer]
+* link:https://trustoverip.github.io/tswg-keri-specification/[KERI draft specification at Trust Over IP]
 
 === Identity assertion issue triage
+
+_Deferred due to lack of time._
 
 https://github.com/decentralized-identity/cawg-identity-assertion/issues[39 open issues against identity assertion]. Let's triage and assign.
 
 === Agentic identity task force
 
-Recruit a lead for this TF.
+🎥 _1h25'57":_ We are looking to spin up a task force within CAWG to address questions of agentic identity. Looking for one or two people to lead this discussion. Please reach out to Scott or Eric if interested.
 
-How do we describe delegation and tool/agent identity in archival-quality terms?
+This task force will carry on the discussion started in the xref:2025-07-28.adoc[] meeting, which might be summarized as: How do we describe delegation and tool/agent identity in archival-quality terms?
 
 === Report out from media identifiers TF
+
+_Deferred due to lack of time._
 
 PR coming to formalize intended guidance.
 
 === CAI meeting
 
-27 August CAI lunch and learn event.
+🎥 _1h25'57":_ 27 August (9am US Pacific / noon US Eastern / 1600 UTC) CAI lunch and learn event. Formal announcement coming shortly.
 
-=== Review open issues for training and data mining assertion
+=== Open issues for training and data mining assertion
+
+_Deferred due to lack of time._
 
 Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.
 
-=== Review open PR for endorsement -> forward permission assertion
+=== Endorsement assertion PR #11: Transition from endorsement to forward-permission
 
-Review link:https://github.com/decentralized-identity/cawg-endorsement-assertion/pull/11/files[PR #11: Transition from endorsement to forward-permission].
+🎥 _1h27'49":_ Reviewed link:https://github.com/decentralized-identity/cawg-endorsement-assertion/pull/11/files[PR #11: Transition from endorsement to forward-permission].
+
+*ACTION:* Luke to revise PR to incorporate suggestions from Andrew's presentation.
