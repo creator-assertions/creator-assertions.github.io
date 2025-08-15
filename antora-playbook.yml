@@ -13,7 +13,7 @@ content:
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
-    - HEAD
+    - main
     tags:
     - v1.0
     - v1.1-final
@@ -27,6 +27,7 @@ content:
   - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
     branches:
     - main
+    - media-identifiers-appendix
     tags:
     - v1.0
     - v1.1-final

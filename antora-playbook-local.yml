@@ -28,6 +28,7 @@ content:
   - url: https://github.com/decentralized-identity/cawg-metadata-assertion.git
     branches:
     - HEAD
+    - media-identifiers-appendix
     tags:
     - v1.0
     - v1.1-final
