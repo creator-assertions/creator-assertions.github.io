@@ -1,0 +1,57 @@
+= 25 August 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA late August.
+* *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Eric to include on new site.
+* *ACTION (✅):* Eric to review PR #238 further with Leonard, Nigel, and Andrew. -> DONE. Will review today.
+* *ACTION (✅):* Eric to review further with Andy and Noga (original author of this section). -> Still pending.
+* *ACTION:* Luke to revise endorsement PR #11 to incorporate suggestions from Andrew's presentation.
+
+=== CAI meeting
+
+27 August (9am US Pacific / noon US Eastern / 1600 UTC) CAI lunch and learn event. Details at
+
+=== Identity assertion PR #238: Update referenced assertions requirements
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/238[PR #238: Update referenced assertions requirements].
+
+This PR is foundational to some of the work recently presented by Andrew.
+
+Re-review after discussions to address some of the concerns raised in previous meeting.
+
+=== Metadata assertion PR #5: Add media identifiers guidance
+
+Preliminary review of https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[PR #5: Add media identifiers guidance].
+
+Not ready to merge yet (a few to-do items), but want the larger group to know where media identifiers TF is headed.
+
+=== Metadata assertion PR #9: Add a section recommending a user experience warning about unattributed metadata
+
+Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/9[PR #9: Add a section recommending a user experience warning about unattributed metadata].
+
+=== Identity assertion issue triage
+
+There are https://github.com/decentralized-identity/cawg-identity-assertion/issues[39 open issues against identity assertion]. Let's triage and assign.
+
+=== Open issues for training and data mining assertion
+
+Review link:https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/issues[five open issues] against training and data mining assertion.
