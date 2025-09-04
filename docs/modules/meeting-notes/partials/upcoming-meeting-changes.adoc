@@ -1,3 +1,4 @@
+////
 [IMPORTANT] 
 .Upcoming schedule changes
 ==== 
@@ -5,3 +6,4 @@ The following meetings will deviate from the usual Monday schedule:
  
 *1 September 2025* instance of media identifiers TF moved to 2 September (avoids US Labor Day holiday).
 ====
+////

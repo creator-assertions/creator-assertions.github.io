@@ -1,0 +1,53 @@
+= 02 September 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/share/e0P5ClUAB4_qYQWr-qRxHZIDA3WiPEoHujIurft7vR5NqZDuKQ6FdZDa9MFNDj8z.Hme6rxs4BCgQbf_7[Meeting recording] (1h4m)
+
+== Attendees
+
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Howie Singer, RIAA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== New members introduction
+
+* 🎥 _7'36":_ Jenny Pretz, DDEX/RIAA
+* 🎥 _9'22":_ Howie Singer, RIAA
+
+=== Review metadata PR #5: Add media identifiers guidance
+
+🎥 _11'34":_ Reviewed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[PR #5: Add media identifiers guidance].
+
+NOTE: This draft PR is also available in rendered form on the CAWG site. See https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_with_media_industry_identifiers[§6, “Use with media industry identifiers.”]
+
+🎥 _14'57":_ General agreement that https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_case[§6.1, “Use case,”] fits all of the represented industries with a minor adjustment to say (bold is revised):
+
+[quote]
+It is often not logistically feasible to have individual contributors *involved in a signing process relating to the final rendered content,* ...
+
+*ACTION:* Jeremy to report back on supply chain and update on using https://isni.org/[ISNI] as artist identifier.
+
+🎥 _27'09":_ Reviewed https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_externally_defined_namespaces_and_field_names[§6.2, “Use externally-defined namespaces and field names.”] This section was renamed during the meeting from “Use of externally-defined identifiers” since externally-defined identifiers is addressed in a subsequent section.
+
+*ACTION:* Eric to schedule time in regular CAWG meeting to discuss the MAY statement at the end of §6.2. (Looking for feedback from the person who originally requested that line.)
+
+🎥 _40'19":_ Reviewed https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_externally_defined_data_sources_and_identifiers[§6.3, “Use externally-defined data sources and identifiers.”]
+
+Music industry has a challenge in that there are not widely-used, publicly-resolvable unique identifiers for most musical artists. Some work towards using https://isni.org/[ISNI] as artist identifier, but this is not widespread.
+
+From Jenny via chat:
+
+____
+* SCAPR - International Performer Number
+* IPN - for registered performers of recordings in SCAPR managed territories.
+* CISAC - Interested Party Information (base number and name numbers) for songwriters and publishers of works.
+* ISNI ISO Name Identifier bridges all plus companies, brands, fictitious characters, musical groups, etc.
+____
+
+*ACTION:* Will, Richard, and Erik to huddle on a short list of example registries to use in §6.3 and report back with an update to use in the spec.
