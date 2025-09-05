@@ -1,0 +1,48 @@
+= 08 September 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA ~~late August~~ -> early September.
+* *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Eric to include on new site.
+* *ACTION:* Luke to revise endorsement PR #11 to incorporate suggestions from Andrew's presentation.
+* *ACTION:* Referred metadata assertion PR #5 back to media identifiers TF to finalize wording and fill in TO DO items. -> UNDERWAY. Partially done in last week's meeting.
+* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage.
+* *ACTION:* Eric to revise wording to encourage use of human-language and URN-based identifiers. -> NOT DONE
+* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned.
+
+=== Review metadata assertion PR #5: Media identifiers TF
+
+Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Media identifiers TF], specifically the phrase:
+
+____
+A CAWG metadata assertion MAY also contain other metadata not directly described in this section.
+_(TO DO: Reword to make it more clear that metadata other than media identifiers can be used in the same metadata assertion. Discuss in full CAWG meeting.)_
+____
+
+Other to-do items will be address in next media identifiers TF meeting.
+
+=== Update from JPEG Trust
+
+Phillippe Rixhon will update the group on latest efforts in JPEG Trust to define rights and renumeration assertions for the C2PA ecosystem.
+
+=== Follow up on 1.2 VC additions
+
+Discuss https://cawg.io/meeting-notes/2025-08-11/#_upcoming_cawg_prs[Upcoming CAWG PRs] discussed in 11 August meeting. What can we do to move these proposals forward?
