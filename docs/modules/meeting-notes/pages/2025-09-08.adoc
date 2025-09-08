@@ -1,48 +1,81 @@
 = 08 September 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/qx3lC2VWbvi7kWsj2LU89w6qBWH905XYZ1JUuQPCvH6n2ry9PsQsgI0jAy_k91f_.Obzu1eeZ9ayDERaG[Meeting recording] (1h31m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Colin Murphy, Adobe
+* Dylan Ross, Adobe
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Gavin Peacock, Adobe
+* Jenny Pretz, DDEX/RIAA
+* Jeremie Charrier, Proof.com
+* Jeremy Uzan, Universal Music
+* Juan Caballero, DIF
+* Misha Deville, Vidos
+* Nigel Earnshaw, BBC
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Santiago Lyon, Adobe
+* Scott Jones, RealEyes
+* Scott Perry, Digital Governance Institute
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _8'30":_ Jeremie Charrier, Proof.com
+* 🎥 _9'14":_ Jenny Pretz, DDEX/RIAA
+* 🎥 _10'04":_ Misha Deville, Vidos
+
 === Review previous action items
+
+🎥 _10'37":_ Reviewed previous action items:
 
 * *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
 * *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA ~~late August~~ -> early September.
 * *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Eric to include on new site.
 * *ACTION:* Luke to revise endorsement PR #11 to incorporate suggestions from Andrew's presentation.
 * *ACTION:* Referred metadata assertion PR #5 back to media identifiers TF to finalize wording and fill in TO DO items. -> UNDERWAY. Partially done in last week's meeting.
-* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage.
+* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage. -> NOT DONE
 * *ACTION:* Eric to revise wording to encourage use of human-language and URN-based identifiers. -> NOT DONE
-* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned.
+* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned. -> NOT DONE
 
 === Review metadata assertion PR #5: Media identifiers TF
 
-Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Media identifiers TF], specifically the phrase:
+🎥 _12'31":_ Reviewed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Media identifiers TF], specifically the phrase:
 
 ____
 A CAWG metadata assertion MAY also contain other metadata not directly described in this section.
 _(TO DO: Reword to make it more clear that metadata other than media identifiers can be used in the same metadata assertion. Discuss in full CAWG meeting.)_
 ____
 
-Other to-do items will be address in next media identifiers TF meeting.
-
-=== Update from JPEG Trust
-
-Phillippe Rixhon will update the group on latest efforts in JPEG Trust to define rights and renumeration assertions for the C2PA ecosystem.
+*ACTION:* Eric to revise this sentence and move it into the non-normative introduction section (currently §6.1).
 
 === Follow up on 1.2 VC additions
 
-Discuss https://cawg.io/meeting-notes/2025-08-11/#_upcoming_cawg_prs[Upcoming CAWG PRs] discussed in 11 August meeting. What can we do to move these proposals forward?
+🎥 _20'31":_ Discussed https://cawg.io/meeting-notes/2025-08-11/#_upcoming_cawg_prs[Upcoming CAWG PRs] discussed in 11 August meeting.
+
+Andrew previewed an initial draft of the first PR which allows generic VCs and VPs to be incorporated into the identity assertion framework.
+
+*ACTION:* Andrew to review notes from this discussion and incorporate into a formal draft PR to review in an upcoming meeting.
+
+*ACTION:* Eric to convene a joint meeting with DIF's Credential Schema Working Group after this PR has gone through another round of CAWG review.
+
+*ACTION:* Group to revisit the question of what goes into `signer_payload` and what goes into the `signature` field.
+
+=== Update from JPEG Trust
+
+🎥 _56'02":_ Phillippe Rixhon provided an update on JPEG Trust, highlighting its progress as a standard in development with partial implementation in European projects. He emphasized the importance of digital identity and wallets in Europe by 2027, noting that this will have a significant impact worldwide, particularly in e-commerce and content access.
+
+Philippe stressed the need for compatibility between CAWG and the EU digital identity framework, identifying this as a crucial area for future development and collaboration. (Good news: When asked about the work on general-purpose VCs and VPs that Andrew presented earlier, Phillippe suggested that we “in good shape” to develop a standard that s compatible with EU DI framework.)
+
+EU IPO, the Intellectual Property Office of the European Union, published in May an important study on Gen AI from the point of view of copyright.
+
+*ACTION:* Phillippe to provide Eric with a link to this report, which will be added to meeting notes.
