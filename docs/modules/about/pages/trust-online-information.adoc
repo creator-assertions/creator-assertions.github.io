@@ -1,0 +1,60 @@
+= How can I trust online information?
+
+_Scott Perry, CAWG co-chair_
+
+== Introduction
+
+One of the most significant challenges in the digital age is the process of evaluating and trusting online information.
+The internet's open nature means anyone can publish content and easily claim any identity when doing so, blurring the lines between credible and unreliable sources.
+
+One challenge lies in the rapid and widespread dissemination of misinformation and disinformation, including fake news and manipulated images or videos.
+Social media algorithms often prioritize sensational or emotionally charged content, increasing the visibility of false information and making it difficult to distinguish from genuine news. 
+
+AI, particularly generative AI, is significantly blurring the lines of how online information is created and modified, making it increasingly difficult to determine its origin and authenticity.
+The rise of convincing AI-generated texts, images, and videos (often referred to as “deepfakes”), makes it a challenge to distinguish authentic content from synthetic creations. 
+
+The ease and speed with which AI can generate plausible, compelling content, coupled with a lack of transparency and readily available, accurate tools for detection, means that discerning between human and AI-generated information is becoming increasingly difficult for users.
+This can have serious consequences, impacting how individuals perceive and trust the information they encounter online, potentially contributing to the spread of misinformation and disinformation, https://www.it.miami.edu/about-umit/it-news/phishing/deepfakes/index.html[according to the University of Miami Information Technology^].
+
+== What is being done to address assuring provenance and authenticity of digital information?
+
+With the leadership of prominent tech firms and standards development organizations, an ecosystem of digital governance is emerging to address content provenance and authenticity. 
+It is being led by three separately managed but coordinated efforts by the https://c2pa.org[Coalition for Content Provenance and Authenticity^] (C2PA), the https://cawg.io[Creators Assertions Working Group^] (CAWG) and https://jpeg.org/jpegtrust/[JPEG Trust^].
+Together, they address the provenance and authenticity of digital information by providing standardized methods for tracking and verifying content's origin and history.
+
+=== C2PA
+
+The C2PA has created and published the https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html[Content Credentials specification^], a set of immutable and verifiable metadata that acts like a “nutrition label” for digital content, detailing its creation and modifications made by hardware and software products (e.g., Sony cameras, Samsung phones, Adobe Photoshop, etc.).
+C2PA specifications define the structure of these credentials, including assertions about the content's history, such as creation details, modifications, and AI usage. Content Credentials are tamper-evident, ensuring that any changes to the content are reflected in the credential, allowing users to verify the content's authenticity. 
+
+The C2PA specification focuses on the “what and the how” -- i.e. the provenance and authenticity of content, not on the identity of the person or organization creating that content.
+The core specification intentionally avoids mandating identity inclusion to prioritize user privacy and offer flexibility. However, it does provide mechanisms and guidance for incorporating identity information as optional extensions. 
+
+Extensions like the specifications defined by Creator Assertions Working Group (CAWG) support the inclusion of identity within Content Credentials, along with Verifiable Credentials that securely link the identity to the content.
+
+=== The Creators Assertion Working Group (CAWG)
+
+The C2PA allows creators to choose whether to include identity information or remain anonymous, a crucial aspect for those with privacy needs, such as human rights workers or journalists who might be operating in sensitive environments.
+However, there are many instances where content creators want to attribute their identity to objects they create, modify, and want to affix their attribution. This is the work of the https://cawg.io/identity[CAWG identity assertion].
+
+The CAWG originated in 2024 as a separate working group from the C2PA led by Adobe. In March 2025, the CAWG became part of an independent Standards Development Organization (SDO), joining the https://identity.foundation[Decentralized Identity Foundation^] within a joint collaboration agreement with another standards group, the https://trustoverip.org[Trust Over IP Project^] operating under the https://www.lfdecentralizedtrust.org[Linux Foundation Decentralized Trust Foundation^].
+With this restructuring, its mission is to create generally-accepted standards building on the C2PA Content Credentials specification by allowing verifiable claims about the relationship between an identity and the content.
+
+The CAWG’s primary objectives are to: 
+
+* *Define additional assertions for content creators:* The core mission of CAWG is to create and promote https://cawg.io/specs/[extensions to the C2PA specification], allowing creators to express their intent and ownership over their content.
+* *Enable the binding of digital identities to content:* This involves creating an https://cawg.io/identity[“identity assertion”] that allows creators to link their digital identity to the content they produce, thereby documenting their role in the content's lifecycle.
+* *Publish a more permissive metadata assertion specification:* The working group has published https://cawg.io/metadata[an adaptation of the existing C2PA metadata assertion] to allow for a broader range of metadata that isn't solely machine attestable.
+* *Enhance content transparency and trust:* By allowing creators to embed verifiable information about themselves and their content, CAWG aims to foster a more transparent and trustworthy online environment, helping to combat misinformation and protect intellectual property. 
+* CAWG aims to empower individual and organizational creators by providing them with tools to establish and verify their authorship of digital content within the existing C2PA framework. 
+* The CAWG allows creators to choose whether to include identity information or remain anonymous, a crucial aspect for those with privacy needs, such as human rights workers or journalists who might be operating in sensitive environments.
+* The CAWG creates specifications used by tools like those from Adobe that can use services to connect social media accounts (e.g., Behance, Instagram, Twitter) to an identity within a manifest, further verifying the association. 
+
+== What about intellectual property and copyright protection?
+
+While the C2PA and CAWG establish a foundation of provenance and authenticity, both do not address the truth and rights of digital objects. https://jpeg.org/jpegtrust/[JPEG Trust^], a working group within the International Standards Organization (ISO) JPEG standards effort, provides a comprehensive framework to allow content creators to express their intended usage rights (including copyright and renumeration expectations) in concert with the C2PA and CAWG’s mechanism for expressing provenance.
+ 
+== The C2PA ecosystem working to achieve online trust
+
+The C2PA, CAWG, and JPEG Trust initiatives work together to create a more robust and trustworthy digital ecosystem.
+C2PA provides the foundational standard for Content Credentials, CAWG extends this by adding identity-based assertions, and JPEG Trust offers a broader framework for expressing rights and renumeration expectations. 

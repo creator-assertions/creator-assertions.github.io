@@ -23,3 +23,7 @@ By embedding verifiable identity and content metadata, CAWG promotes a trustwort
 CAWG is part of a global initiative that includes C2PA and https://jpeg.org/jpegtrust/[JPEG Trust], ensuring a holistic approach to digital content authenticity, copyright, and integrity.
 * **Support practical applications.**
 Authoring tools can leverage CAWG specifications to link creators to social media profiles, offering real-world utility for content attribution and verification.
+
+== More information
+
+* xref:trust-online-information.adoc[]
