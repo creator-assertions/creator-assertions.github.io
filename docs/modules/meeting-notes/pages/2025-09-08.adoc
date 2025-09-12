@@ -76,6 +76,4 @@ Andrew previewed an initial draft of the first PR which allows generic VCs and V
 
 Philippe stressed the need for compatibility between CAWG and the EU digital identity framework, identifying this as a crucial area for future development and collaboration. (Good news: When asked about the work on general-purpose VCs and VPs that Andrew presented earlier, Phillippe suggested that we “in good shape” to develop a standard that s compatible with EU DI framework.)
 
-EU IPO, the Intellectual Property Office of the European Union, published in May an important study on Gen AI from the point of view of copyright.
-
-*ACTION:* Phillippe to provide Eric with a link to this report, which will be added to meeting notes.
+EU IPO, the Intellectual Property Office of the European Union, published in May https://www.euipo.europa.eu/en/news/euipo-releases-study-on-generative-artificial-intelligence-and-copyright[an important study on Gen AI] from the point of view of copyright.
