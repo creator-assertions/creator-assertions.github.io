@@ -1,0 +1,40 @@
+= 15 September 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/play/u9akJoRWYWOECymEvfskgxwD9m9aAGoAgHuXa97VicMBKfZMO0mL-t0GBOaf8nHPxh2e_jlTk4jRicWh.xmeqnyB_-uXn7NRo[Meeting recording] (46m)
+
+== Attendees
+
+* Charlie Halford, BBC
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Richard W. Kroon, EIDR
+* Scott Jones, RealEyes
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== Survey invitation from SMPTE
+
+🎥 _4'05":_ SMPTE working group has forwarded to us a survey on content provenance that's informing some related work. They are asking how do you use or how would you use content provenance in particular around audio-based workflows.
+
+If you have relevant experience, please complete the survey https://www.surveymonkey.com/r/7B3CGW9[here].
+
+=== Review metadata assertion PR #5: Add media identifiers guidance
+
+🎥 _11'53":_ Reviewed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+
+Changes made as a result of this review:
+
+* https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_case[§6.1: Use case]: Added new language (the IMPORTANT section) stating that the design space for this section is currently limited to public-facing media assets.
+* https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_externally_defined_data_sources_and_identifiers[§6.3: Use externally-defined data sources and identifiers]: Simplified the references to DOI and EIDR.
+
+=== Call to action: Best practices working group
+
+🎥 _39'41":_ Richard suggests forming a Media and Entertainment Best Practices Working Group to provide media-sector specific guidance on the kinds of metadata and registries that appropriate to different sectors.
+
+=== Proposed music industry schema
+
+🎥 _44'32":_ Erik shared a draft for a watermarking data schema for music industry and requested review. Feel free to comment https://docs.google.com/document/d/1og0JXhhhoxneZMm_K-K2-IvJedUpA79pzuugdvUb6Ss/edit?usp=drivesdk[here].
