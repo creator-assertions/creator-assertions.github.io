@@ -1,0 +1,37 @@
+= 22 September 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments.
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA ~~late August~~ -> late September.
+* *ACTION:* Scott to work up initial draft text to use on CAWG home page. -> DONE. Included on new site.
+* *ACTION:* Luke to revise endorsement PR #11 to incorporate suggestions from Andrew's presentation.
+* *ACTION:* Referred metadata assertion PR #5 back to media identifiers TF to finalize wording and fill in TO DO items. -> DONE. Will review.
+* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage.
+* *ACTION:* Eric to revise wording to encourage use of human-language and URN-based identifiers. -> NOT DONE
+* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned.
+
+=== Review identity assertion PR #240: Add X.509 trust model guidance
+
+https://github.com/decentralized-identity/cawg-identity-assertion/pull/240
+
+=== Review metadata assertion PR #5: Add media identifiers guidance
+
+https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5
