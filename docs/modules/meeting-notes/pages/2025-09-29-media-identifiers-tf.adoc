@@ -1,32 +1,43 @@
 = 29 September 2025 (Media Identifiers Task Force)
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/gBUmjhT0hv-IjHZw8aaqAFHbHcKU810L9aSW6GgbR-aiqXu_a8wyf8o9p5_H3nV7.ZA-GXHw72x1vTlY-[Meeting recording] (43m)
 
 == Attendees
 
-== Agenda
+* Drummond Reed
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Kim Beauchamp, Universal Music
+* Makki Elfatih, HKDolts
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
 
-=== Start meeting
+== Meeting notes
 
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
+=== New members introduction
 
-include::partial$upcoming-meeting-changes.adoc[]
+* 🎥 _15'26":_ Kim Beauchamp
 
-=== (Final?) review of metadata assertion PR #5: Add media identifiers guidance
+=== Review metadata assertion PR #5: Add media identifiers guidance
 
-Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+🎥 _4'52":_ Reviewed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
 
-New language added in externally-defined data sources section regarding URN values.
+Agreed to new language added in externally-defined data sources section regarding URN values.
 
-ACTION: Decide if assertion is ready to present to full CAWG group for inclusion in metadata assertion 1.2?
+Discussed possible use of ISNI for recorded music identifiers.
 
-=== Review from UMG
+*ACTION:* Jenny Pretz and Kim Beauchamp to review https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_externally_defined_data_sources_and_identifiers[section 6] to see if ISNI can be made suitable for purpose here.
 
-ACTION: Check with Jeremy regarding supply-chain team review of new language.
+*ACTION:* Erik Passoja to convene relevant members of entertainment industry (Will Kreth and Richard Kroon, among others) to review PR and ensure it is suitable for purpose.
+
+*ACTION:* Erik Passoja to convene with Phillippe Rixhon to ensure that new guidance is compatible with forthcoming JPEG Trust work on rights and permissions.
+
+*OUTCOME:* Not ready to bring to full CAWG membership next week. Target is to bring the PR to CAWG meeting on 3 November.
 
 === Next steps?
 
-In previous meeting, Richard suggested forming a Media and Entertainment Best Practices Working Group to provide media-sector specific guidance on the kinds of metadata and registries that appropriate to different sectors. Is that the successor to the current effort?
+🎥 _31'50":_ In previous meeting, Richard suggested forming a Media and Entertainment Best Practices Working Group to provide media-sector specific guidance on the kinds of metadata and registries that appropriate to different sectors. Is that the successor to the current effort?
+
+*ACTION:* Richard and Erik to spin up effort to draft industry-specific best practices documents. This may come through EIDR's existing working group.
