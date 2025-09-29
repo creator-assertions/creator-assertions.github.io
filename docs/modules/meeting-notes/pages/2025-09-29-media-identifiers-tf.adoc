@@ -1,0 +1,32 @@
+= 29 September 2025 (Media Identifiers Task Force)
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== (Final?) review of metadata assertion PR #5: Add media identifiers guidance
+
+Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+
+New language added in externally-defined data sources section regarding URN values.
+
+ACTION: Decide if assertion is ready to present to full CAWG group for inclusion in metadata assertion 1.2?
+
+=== Review from UMG
+
+ACTION: Check with Jeremy regarding supply-chain team review of new language.
+
+=== Next steps?
+
+In previous meeting, Richard suggested forming a Media and Entertainment Best Practices Working Group to provide media-sector specific guidance on the kinds of metadata and registries that appropriate to different sectors. Is that the successor to the current effort?
