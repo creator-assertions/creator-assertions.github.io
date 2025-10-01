@@ -1,16 +1,28 @@
 /* Fix anchor link scrolling to account for fixed header. */
 /* Pure CSS solution - Antora's JavaScript scroll behavior is disabled */
 
+/* High specificity to override any other scroll-padding-top */
+html.js html,
 html {
-  scroll-padding-top: 5rem;
-  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem !important;
+  scroll-behavior: smooth !important;
 }
 
-/* Chrome-specific adjustment (doesn't affect Safari) */
+/* Chrome-specific adjustment with high specificity */
 @supports (-webkit-appearance: none) and (not (-webkit-touch-callout: none)) {
+  html.js html,
   html {
-    scroll-padding-top: 4.5rem;
+    scroll-padding-top: 3.75rem !important;
   }
+}
+
+/* Fallback using scroll-margin-top for better browser support */
+[id] {
+  scroll-margin-top: 3.75rem;
+}
+
+.doc [id] {
+  scroll-margin-top: 3.75rem;
 }
 
 /* CAWG home page customizations */
