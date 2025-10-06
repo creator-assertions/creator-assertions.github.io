@@ -4,6 +4,7 @@
 ==== 
 The following meetings will deviate from the usual Monday schedule:
 
+* *06 October 2025* (full CAWG meeting) _postponed_ to 13 October
 * *13 October 2025* (Media Identifiers TF) cancelled
 * *20 October 2025* (full CAWG meeting) cancelled
 ====
