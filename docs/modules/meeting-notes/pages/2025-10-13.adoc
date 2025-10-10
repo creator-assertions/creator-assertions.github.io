@@ -1,0 +1,38 @@
+= 13 October 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments. (We'll talk at IIW.)
+* *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA late September.
+* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage.
+* *ACTION:* Eric to revise wording to encourage use of human-language and URN-based identifiers. -> DONE (See https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5/commits/fea4dc981d58663cc7a5c666dd354ff40ddef177[commit `fea4dc`].)
+* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned.
+
+=== Review identity assertion PR #240: Add X.509 trust model guidance
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity assertion PR #240: Add X.509 trust model guidance].
+
+=== Review identity assertion PR #241: Add guidance for display of named actor logo
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/241[identity assertion PR #241: Add guidance for display of named actor logo].
+
+=== European Signature Dialog introduction
+
+Members of the https://www.european-signature-dialog.eu[European Signature Dialog] are expected to join us.
