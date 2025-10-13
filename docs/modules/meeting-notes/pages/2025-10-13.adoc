@@ -1,23 +1,50 @@
 = 13 October 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/lteH2ZtVltjceRpQdH24xbMOo9V2zVEelXC-X8oFlnvYwLnkE2tp7sAEjEaHFOZF.pLbiJE_owNf4eDfd[Meeting recording] (1h10m)
 
 == Attendees
 
-== Agenda
+* Andrea van Arkel, European Signature Dialog
+* Andrew Dworschak, Yakoa
+* Charlie Halford, BBC
+* Enrico Entschew, D-Trust
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Felix von Rosenberg, D-Trust
+* Howie Singer, RIAA
+* Judith Fleenor
+* Makki Elfatih, HKDolts
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Tom Jones
+* Urayoan Camacho, DTI (Digital Trust International)
+* Utkarsh Sharma, Vlinder
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
+=== European Signature Dialog introduction
 
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+🎥 _8'29":_ Scott invited several guests from https://www.european-signature-dialog.eu[European Signature Dialog] to join today's meeting. Generally speaking, these represent EU qualified signature providers (CAs) who are interested in supporting European content creators' efforts to sign CAWG identity assertions.
 
 === New members introduction
 
+* 🎥 _9'52":_ Judith Fleenor
+* 🎥 _11'07":_ Andrea van Arkel, European Signature Dialog
+* 🎥 _12'36":_ Enrico Entschew, D-Trust
+* 🎥 _13'32":_ Felix von Rosenberg, D-Trust
+* 🎥 _14'21":_ Urayoan Camacho, DTI (Digital Trust International)
+* 🎥 _15'25":_ Utkarsh Sharma, Vlinder
+
+=== Review of CAWG purpose
+
+🎥 _16'37":_ Eric gave a quick recap of the group's purpose and work to date.
+
 === Review previous action items
+
+🎥 _19'40":_ Skipped review of action items. Status summarized here:
 
 * *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> UNDERWAY. No new developments. (We'll talk at IIW.)
 * *ACTION:* Eric to explore promotional video ideas. -> UNDERWAY. Working with Adobe team to build a new 1-2 minute video that we can use on site. ETA late September.
@@ -27,12 +54,28 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Review identity assertion PR #240: Add X.509 trust model guidance
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity assertion PR #240: Add X.509 trust model guidance].
+🎥 _20'13":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity assertion PR #240: Add X.509 trust model guidance].
+
+This PR proposes a trust model for X.509 certificates, which is important to making the identity assertion usable and interoperable in practice. The proposed interim trust model leverages existing S/MIME email signature infrastructure with a validity window until March 2027 during which time a certificate governance program more appropriate to content signing will be developed.
+
+*ACTIONS:* Some edits were requested by the group:
+
+* 🎥 _30'18":_ Scott and Charlie to explore options for broadening the time stamp authority requirements beyond the set of CAs specifically allowed by the C2PA. -> *IN PROGRESS* (See https://github.com/decentralized-identity/cawg-identity-assertion/issues/242[issue 242].)
+* 🎥 _33'25":_ Scott to elaborate on the criteria for inclusion of roots of trust in the CAWG-mandated trust configuration.
+* 🎥 _40'42":_ Eric to replace “CAWG trust list” name with “CAWG trust configuration.”
+* 🎥 _43'10":_ Eric to revise wording around “must accept certificate” to something like “must treat as trusted.”
+* 🎥 _1h04'06":_ Richard to explore options for recognizing industry sector statements as extended metadata in X.509 certificates.
 
 === Review identity assertion PR #241: Add guidance for display of named actor logo
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/241[identity assertion PR #241: Add guidance for display of named actor logo].
+🎥 _50'38":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/241[identity assertion PR #241: Add guidance for display of named actor logo].
 
-=== European Signature Dialog introduction
+🎥 _53'26":_ *ACTION:* Eric to incorporate feedback from Charlie suggesting that a validator should only display a logo when a certificate is deemed trusted.
 
-Members of the https://www.european-signature-dialog.eu[European Signature Dialog] are expected to join us.
+=== Invitation: Media identifiers TF subgroup meeting
+
+🎥 _1h05'04":_ Invitation to join subgroup working on last-minute edits to https://cawg.io/metadata/1.2-draft+media-identifiers/#_use_with_media_industry_identifiers[proposed section 6 of metadata assertion] and how this group interacts with the forthcoming work of the JPEG Trust initiative. Group will be meeting next three Wednesdays at 8am Pacific. Contact mailto:erikpassoja@gmail.com[Erik Passoja] for details.
+
+=== Reminder: CAWG Slack channel
+
+🎥 _1h08'02":_ Reminder that there is a CAWG-specific Slack channel on the DIF Slack. Contact mailto:scouten@adobe.com[Eric Scouten] for details.
