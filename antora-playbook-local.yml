@@ -44,6 +44,7 @@ content:
   - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
     branches: 
     - HEAD
+    - define-profile
     start_path: docs
 
 ui:
