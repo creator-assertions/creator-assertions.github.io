@@ -40,6 +40,11 @@ content:
     - v1.1-final
     start_path: docs
 
+  - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
+    branches: 
+    - main
+    start_path: docs
+
 urls:
   html_extension_style: indexify
 

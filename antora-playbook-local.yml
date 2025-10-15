@@ -41,6 +41,11 @@ content:
     - v1.1-final
     start_path: docs
 
+  - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
+    branches: 
+    - HEAD
+    start_path: docs
+
 ui:
   bundle:
     url: https://cawg.io/antora-ui/ui-bundle.zip

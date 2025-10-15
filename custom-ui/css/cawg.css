@@ -144,6 +144,23 @@ body.module-meeting-notes .nav-container {
   display: none; /* CAWG override from display: flex; */
 }
 
+.nav-panel-explore .ia-heading {
+  font-weight: 600;
+  font-size: 120%;
+  list-style-type: none;
+  margin-left: -.35rem;
+  margin-top: 3.5rem;
+  margin-bottom: .75rem;
+}
+
+.nav-panel-explore .ia-heading:first-of-type {
+  margin-top: .5rem;
+}
+
+.nav-panel-explore .component {
+  list-style-type: none;
+}
+
 .toolbar {
   display: none; /* CAWG override from display: flex; */
 }
