@@ -1,4 +1,4 @@
-// ////
+////
 [IMPORTANT] 
 .Upcoming schedule changes
 ==== 
@@ -6,4 +6,4 @@ The following meetings will deviate from the usual Monday schedule:
 
 * *20 October 2025* (full CAWG meeting) cancelled
 ====
-// ////
+////

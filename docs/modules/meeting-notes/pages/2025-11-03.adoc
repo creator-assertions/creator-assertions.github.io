@@ -1,0 +1,69 @@
+= 03 November 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to reach out to Wenjing and other ToIP members to build tighter collaboration on agentic identity. -> DONE
+* *ACTION:* Eric to explore promotional video ideas. -> DONE. Video recorded; in production now.
+* *ACTION:* Andrew to propose updating examples in remainder of metadata asertion spec to match this suggested usage.
+* *ACTION:* Drummond and Andrew to meet to ensure that FPP and CAWG VC efforts are technically aligned. -> DONE?
+* *ACTION:* Eric to edit PR 240 based on feedback from group.
+* *ACTION:* Eric to edit PR 241 to incorporate feedback from Charlie suggesting that a validator should only display a logo when a certificate is deemed trusted.
+* *ACTION:* Richard and media identifiers to work toward updating metadata assertion guidance. (Will discuss later in meeting.)
+
+=== Reminder: CAWG Slack channel
+
+Reminder that there is a CAWG-specific Slack channel on the DIF Slack. Contact mailto:scouten@adobe.com[Eric Scouten] for details.
+
+=== Heads up: UX guidance draft
+
+In next meeting (17 November), Pia will walk us through a proposed UX guidance draft. Available for review here:
+
+* https://github.com/decentralized-identity/cawg-ux-guidance/pull/1[UX guidance PR #1]
+* https://cawg.io/ux-guidance/1.0-draft+initial-draft/[Rendered draft]
+
+=== IIW readout
+
+Further discussion available on https://ericscouten.dev/2025/iiw41/[Eric's IIW live-blog].
+
+=== Agentic identity workshop readout
+
+Discuss Eric's session on agentic identity for content creation and likely outcomes for CAWG.
+
+=== Review PR #240: Add X.509 trust model guidance
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[PR #240: Add X.509 trust model guidance].
+
+=== Review PR #241: Add guidance for display of named actor logo
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/241[PR #241: Add guidance for display of named actor logo].
+
+=== Identity assertion 1.2 ready to publish?
+
+PROPOSAL: Submit identity assertion 1.2 for WG ratification; move VC integration to 1.3.
+
+=== Review draft organizational identity profile
+
+Discuss proposal for CAWG to publish an organizational identity profile. Available for review here:
+
+* https://github.com/decentralized-identity/cawg-organizational-identity-profile/pull/1[Organizational identity profile PR #1]
+* https://cawg.io/organizational-identity-profile/1.0-draft+define-profile/[Rendered version]
+
+=== Readout on media identifiers TF work
+
