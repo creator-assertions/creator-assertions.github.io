@@ -1,0 +1,50 @@
+= 17 November 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+=== Readout from media identifiers TF
+
+Discussion from media identifiers TF about progress toward best-practices guide and metadata assertion spec.
+
+=== Review metadata assertion PR #5: Add media identifiers guidance
+
+Review and possibly merge https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+
+IMPORTANT: I plan to submit the resulting specification for WG ratification in the next meeting on 1 December.
+
+=== Review identity assertion PR #240: Add media identifiers guidance
+
+Review and possibly merge https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity PR #240: Add X.509 trust model guidance].
+
+=== Review identity assertion PR #241: Add media identifiers guidance
+
+Review and possibly merge https://github.com/decentralized-identity/cawg-identity-assertion/pull/244[identity PR #241: Add X.509 trust model guidance].
+
+=== Ratify identity assertion 1.2 draft?
+
+Proposal: Mark identity assertion 1.2 as completed after merging above two PRs and submit to steering committee for final ratification.
+
+=== Discussion: How to handle identity assertion validation in network-constrained environments?
+
+Some implementors are surprised by the requirement to make network calls to validate CAWG identity assertion credentials. Discuss possible guidance for this issue.
+
+=== Discussion: Adoption of vLEI organizational credentials
+
+New interest in supporting vLEI (see https://gleif.org) credentials and possible new members to help guide us in implementation. Initial discussion and scoping conversation.
