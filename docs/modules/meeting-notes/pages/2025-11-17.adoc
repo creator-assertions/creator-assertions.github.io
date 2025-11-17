@@ -23,6 +23,8 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 Discussion from media identifiers TF about progress toward best-practices guide and metadata assertion spec.
 
+=== Review UX draft
+
 === Review metadata assertion PR #5: Add media identifiers guidance
 
 Review and possibly merge https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
