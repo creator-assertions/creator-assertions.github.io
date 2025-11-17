@@ -1,52 +1,107 @@
 = 17 November 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/dqjpDtuRzXQDjL5MV6nLrIRnaNAfDcaOVcSwYhHM6XQSwxx1Zpqdz6A1dcTb5eTN.NGD58WvvO4Yk1WZN[Meeting recording] (1h27m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Charlie Halford, BBC
+* Daniel Saeuberli, DIDAS
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Howie Singer, RIAA
+* Jeremy Uzan, Universal Music
+* Joe Grinstead, Pixlmob
+* Karla McKenna, GLEIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Matt Ford
+* Nicholas Salvemini, Adobe
+* Nigel Earnshaw, BBC
+* Pia Blumenthal, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Santiago Lyon, Adobe
+* Scott Perry, Digital Governance Institute
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
-=== Review previous action items
+* 🎥 _1'43":_ Vasily Suvorov, accelerate.swiss
+* 🎥 _2'33":_ Daniel Saeuberli, DIDAS
+* 🎥 _3'27":_ Joe Grinstead, Pixlmob
+* 🎥 _5'03":_ Matt Ford
 
 === Readout from media identifiers TF
 
-Discussion from media identifiers TF about progress toward best-practices guide and metadata assertion spec.
+🎥 _6'22":_ Richard reported out from the media identifiers TF about progress toward best-practices guide and metadata assertion spec.
+The practice is nearly complete, with only DDEX's review of music examples remaining, and encouraged further circulation and feedback from interested parties.
+DDEX is holding their plenary meeting this week and there is a session planned around C2PA and CAWG at which Eric will be presenting.
+Jeremy expressed support for the initiative and highlighted the importance of ISNI in the music industry, while Richard clarified that the proposed standard focuses on content identification with optional richer metadata.
 
 === Review UX draft
 
-=== Review metadata assertion PR #5: Add media identifiers guidance
+🎥 _13'29":_ Pia presented a proposed new document providing guidance on UX presentation for CAWG assertions, which is designed to complement the existing C2PA UX guidance.
+The document introduces patterns for displaying CAWG identity assertions within the C2PA information hierarchy, defines levels of progressive disclosure UIs, and includes examples of UI components.
+Charlie raised a question about “bubbling up” information, which Pia acknowledged as an area for further exploration.
 
-Review and possibly merge https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+*ACTION:* All team members invited to review and provide feedback.
 
-IMPORTANT: I plan to submit the resulting specification for WG ratification in the next meeting on 1 December.
+* https://cawg.io/ux-guidance/1.0-draft+initial-draft/[Rendered version]
+* https://github.com/decentralized-identity/cawg-ux-guidance/pull/1[GitHub pull request]
 
-=== Review identity assertion PR #240: Add media identifiers guidance
+*ACTION:* Group to add language to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion).
 
-Review and possibly merge https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity PR #240: Add X.509 trust model guidance].
+=== Review identity assertion PR #240: Add X.509 trust model guidance
 
-=== Review identity assertion PR #241: Add media identifiers guidance
+🎥 _35'18":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/240[identity PR #240: Add X.509 trust model guidance].
 
-Review and possibly merge https://github.com/decentralized-identity/cawg-identity-assertion/pull/244[identity PR #241: Add X.509 trust model guidance].
+*ACTION (✅):* Eric to merge this PR.
+
+=== Review identity assertion PR #241: Add guidance for display of named actor logo
+
+🎥 _36'43":_ Discussed merge https://github.com/decentralized-identity/cawg-identity-assertion/pull/241[identity PR #241: Add guidance for display of named actor logo].
+
+*ACTION (✅):* Eric to merge this PR.
 
 === Ratify identity assertion 1.2 draft?
 
-Proposal: Mark identity assertion 1.2 as completed after merging above two PRs and submit to steering committee for final ratification.
+🎥 _41'17":_ Eric proposed to mark identity assertion 1.2 as completed after merging above two PRs and submit to steering committee for final ratification.
 
-=== Discussion: How to handle identity assertion validation in network-constrained environments?
+*APPROVED*
 
-Some implementors are surprised by the requirement to make network calls to validate CAWG identity assertion credentials. Discuss possible guidance for this issue.
+=== Review metadata assertion PR #5: Add media identifiers guidance
+
+🎥 _42'24":_ Reviewed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[metadata assertion PR #5: Add media identifiers guidance].
+
+*ACTION (✅):* Eric to merge this PR.
+
+IMPORTANT: I plan to submit the resulting specification for WG ratification in the next meeting on 1 December.
+
+=== Discussion: Introduction to W3C VC integration work for identity 1.3
+
+🎥 _47'32":_ Andrew presented updated proposals for enhancing the use of DIDs, VCs, and VPs in the identity assertion.
+The new proposals allow for more complex statements about content creators and their roles, including multiple signatures and broader validity ranges.
+
+These notes are available in the following locations:
+
+* link:https://yakoa.notion.site/CAWG-1-2-2396f6c95e54805fb7e0f27603854d1d?source=copy_link[Notion] (up to date with discussion from various CAWG members)
+* xref:attachment$2025-08-11/andrew-dworschak-cawg-1.2.pdf[PDF snapshot from August]
+
+*ACTION:* Eric to work with Andrew to re-host the draft specification language in the CAWG repo.
 
 === Discussion: Adoption of vLEI organizational credentials
 
-New interest in supporting vLEI (see https://gleif.org) credentials and possible new members to help guide us in implementation. Initial discussion and scoping conversation.
+🎥 _1h02'05":_ New interest in supporting vLEI (see https://gleif.org), a credential system that enhances the standard LEI (Legal Entity Identifier) used in financial services.
+Vasily explained how vLEI allows organizations to prove ownership, designate roles, and issue credentials through a federated system with certified local operational units and qualified VLEI issuers.
+
+=== Discussion: How to handle identity assertion validation in network-constrained environments?
+
+🎥 _1h20'37":_ Some implementors are surprised by the requirement to make network calls to validate CAWG identity assertion credentials. Brief discussion about possible guidance for this issue.
