@@ -30,6 +30,10 @@ Proposal: Merge https://cawg.io/organizational-identity-profile/1.0-draft+define
 
 Proposal: Mark https://cawg.io/metadata/1.2-draft/[metadata assertion 1.2] as completed and submit to steering committee for final ratification.
 
+=== Review UX guidance draft
+
+Pia will lead us on a detailed review of the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document]. Goal is to place this for ratification vote in the 15 December meeting.
+
 === Alternate Monday meeting purpose
 
 In https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/[last week's meeting], the media identifiers task force determined that their work was complete for now, given the CAWG's acceptance of the new section on media identifiers into the metadata assertion.
