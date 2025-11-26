@@ -1,0 +1,45 @@
+= 24 November 2025 (Media Identifiers Task Force)
+
+https://us02web.zoom.us/rec/share/o9W-pPuVryPRibxaB09cfoNYwdBWS78DnnDTqmOzqOn0DFd-0YFZEJX_tyv-ONKB.jdTZPpwy-1_TE-Jr[Meeting recording] (1h06m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Drummond Reed
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jeremy Uzan, Universal Music
+* Jenny Pretz, DDEX/RIAA
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Vasily Suvorov, accelerate.swiss
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== Continue this meeting series?
+
+Full CAWG has accepted the https://github.com/decentralized-identity/cawg-metadata-assertion/pull/5[new metadata assertion spec section 6 on media identifiers guidance] and will likely ratify the resulting metadata assertion version 1.2 soon. Writing this section was the primary purpose of this group. Worth it to continue?
+
+=== Readout from DDEX conference
+
+DDEX held its 45th Plenary meeting last week in Toronto. Eric was invited to give a presentation on C2PA and CAWG; this was well-received and DDEX members present agreed that DDEX would engage further with the C2PA and CAWG to describe music-specific metadata.
+
+Similar to what is being done with motion picture, the agreement is to start with metadata marking for what is released to the public and then work backward through the supply chain as vendors are able to engage. DDEX will be sending more representatives to CAWG.
+
+=== Organizational identity governance
+
+We started to discuss requirements for a long-term governance program for organizational identity. This is what would follow after the current interim program based on S/MIME expires in March 2027.
+
+A few requirements for that long-term program were stated:
+
+* Credentials should include some concept of levels of assurance.
+* Credentials should include a concept of _what_ other industry-specific assertions can be made. (For instance, who has the right to apply the DOI numbers for actors in a metadata assertion? Or what credibility should be ascribed to such statements?) This may generalize into a form of endorsement or professional affiliation credential (i.e. credential subject is recognized as a member of XYZ organization which gives them standing to make certain statements).
+
+Scott introduced the concept of distinguishing between who is making a claim and what are they making a claim about.
+
+Scott and Drummond discussed the idea of trust registries as a potential answer to the "who is qualified to say what" question.
+
+Vasily mentioned that OpenID Foundation has a concept of https://openid.net/specs/openid-federation-1_0.html#name-trust-marks[Trust Marks], which may be an answer to the "who is qualified to say what" question.
+
+*OUTCOME:* Media identifiers TF work is considered closed for now; retain the time slot to make available for another CAWG subgroup going forward.
