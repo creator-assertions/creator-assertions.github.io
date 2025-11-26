@@ -1,0 +1,37 @@
+= 01 December 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Andrew to propose updating examples in remainder of metadata assertion spec to match this suggested usage.
+* *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion).
+
+=== Ratify organizational identity profile?
+
+Proposal: Merge https://cawg.io/organizational-identity-profile/1.0-draft+define-profile/[draft organizational identity profile], mark as completed 1.0 version, and submit to steering committee for final ratification.
+
+=== Ratify metadata assertion 1.2 draft?
+
+Proposal: Mark https://cawg.io/metadata/1.2-draft/[metadata assertion 1.2] as completed and submit to steering committee for final ratification.
+
+=== Alternate Monday meeting
+
+In https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/[last week's meeting], the media identifiers task force determined that their work was complete for now, given the CAWG's acceptance of the new section on media identifiers into the metadata assertion.
+
+The alternate Monday time slot is now available; is there a new body of work to take up that space? (FWIW there was https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/#_organizational_identity_governance[an interesting discussion on how organizational identity governance should evolve]) that might be a candidate for this space.
