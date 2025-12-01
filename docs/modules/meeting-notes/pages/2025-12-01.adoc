@@ -1,43 +1,73 @@
 = 01 December 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/play/E9RXJe6CLK9A9ZeWPLCvWhajC3hUVEeDPCqriwSU8C8ML5H2maQ7Yera1db7fskqGiEVOEhQbriFBVXk.o71-yKjZXGwonbv7?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus02web.zoom.us%2Frec%2Fshare%2FSU4DBmW0B_QaAEPJ-rQZan7EdVeq8ceReoSB_YBnq_OAqxBXvz5eOn2UEf1GGmD1.NowmWVKtaXuJhFsh&autoplay=true&startTime=1764605028000[Meeting recording] (38m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Charlie Halford, BBC
+* Darren Clarke, Guardian Project
+* Drummond Reed
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Howie Singer, RIAA
+* Jeremy Uzan, Universal Music
+* Jenny Pretz, DDEX/RIAA
+* Karla McKenna, GLEIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Marcos Armstrong, CBC
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Nigel Earnshaw, BBC
+* Pia Blumenthal, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
+== Meeting notes
 
 include::partial$upcoming-meeting-changes.adoc[]
 
 === New members introduction
 
+* 🎥 _1'00":_ Marcos Armstrong, CBC
+
+
 === Review previous action items
 
-* *ACTION:* Andrew to propose updating examples in remainder of metadata assertion spec to match this suggested usage.
-* *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion).
+* 🎥 _1'40":_ *ACTION:* Andrew to propose updating examples in remainder of metadata assertion spec to match this suggested usage. -> Will take up in next Monday's meeting.
+* 🎥 _2'49":_ *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> Will take up in next Monday's meeting.
 
 === Ratify organizational identity profile?
 
-Proposal: Merge https://cawg.io/organizational-identity-profile/1.0-draft+define-profile/[draft organizational identity profile], mark as completed 1.0 version, and submit to steering committee for final ratification.
+🎥 _3'10":_ Proposal: Merge https://cawg.io/organizational-identity-profile/1.0-draft+define-profile/[draft organizational identity profile], mark as completed 1.0 version, and submit to steering committee for final ratification.
+
+*ACTION (✅):* Eric to make updates requested during meeting, merge, and submit to steering committee for final approval.
+
+IMPORTANT: The profile document has moved to  has moved to its final URL at https://cawg.io/organizational-identity-profile/1.0/.
 
 === Ratify metadata assertion 1.2 draft?
 
-Proposal: Mark https://cawg.io/metadata/1.2-draft/[metadata assertion 1.2] as completed and submit to steering committee for final ratification.
+🎥 _19'04":_ Proposal: Mark https://cawg.io/metadata/1.2-draft/[metadata assertion 1.2] as completed and submit to steering committee for final ratification.
+
+*OUTCOME:* Delay ratification vote to 15 December meeting.
 
 === Review UX guidance draft
 
-Pia will lead us on a detailed review of the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document]. Goal is to place this for ratification vote in the 15 December meeting.
+🎥 _21'12":_ Final review of the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document].
+
+IMPORTANT: This document will be up for ratification in the 15 December meeting.
 
 === Alternate Monday meeting purpose
 
-In https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/[last week's meeting], the media identifiers task force determined that their work was complete for now, given the CAWG's acceptance of the new section on media identifiers into the metadata assertion.
+🎥 _31'10":_ In https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/[last week's meeting], the media identifiers task force determined that their work was complete for now, given the CAWG's acceptance of the new section on media identifiers into the metadata assertion.
 
 The alternate Monday time slot is now available; is there a new body of work to take up that space? (FWIW there was https://cawg.io/meeting-notes/2025-11-24-media-identifiers-tf/#_organizational_identity_governance[an interesting discussion on how organizational identity governance should evolve]) that might be a candidate for this space.
 
-Related: https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[issue #247: Creation of Trust Registry Task Force under CAWG].
+*OUTCOME:* We will use next Monday's meeting (08 December) to review wording on roles and the potential conflict between identity and metadata assertion.
+
+*ACTION:* Eric to work with Scott on https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[spinning up a trust registry task force (issue #247)] and with Andrew on spinning up a VC integration task force.
