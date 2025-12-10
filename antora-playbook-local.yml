@@ -15,6 +15,7 @@ content:
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
     - HEAD
+    - rework-verifiable-identifier-reference
     tags:
     - v1.0
     - v1.1-final
