@@ -1,0 +1,41 @@
+= 15 December 2025
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+* Welcome and W3C IPR reminder
+* Please comment in the chat for attendance
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> Will result in revisions to metadata assertion.
+* *ACTION:* Eric to work with Scott on https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[spinning up a trust registry task force (issue #247)] and with Andrew on spinning up a VC integration task force. -> Will spin up in new year.
+
+=== Re-ratify CAWG identity 1.2
+
+PROPOSAL: Re-approve the https://cawg.io/identity/1.2+rework-verifiable-identifier/[CAWG identity assertion 1.2] given changes requested by DIF SC.
+
+=== Ratify UX guidance document?
+
+PROPOSAL: Approve the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document] and submit to DIF SC for approval.
+
+=== Meet on 22 December?
+
+The alternate-week meeting next Monday is still on the calendar. Will there be critical mass for that, or should we defer until first meeting in January?
+
+Reminder: Full CAWG meeting on 29 December is cancelled for holiday cheer and travel.
+
+=== Re-discuss: Offline resolution of verifiable identifiers
+
+What guidance (if any) should we offer to CAWG identity assertion consumers who need to operate in network-constrained environments?
