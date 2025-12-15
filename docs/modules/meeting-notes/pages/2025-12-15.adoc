@@ -1,41 +1,87 @@
 = 15 December 2025
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/4CbVQIknubHuzZmxMlKqn4XOmZ7Y3OuHle5Xg95xlZQfVDSnIQXVZ953rssjV57k.BFpOQV-ihb-reSZb[Meeting recording] (1h03m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Charlie Halford, BBC
+* Daniel Saeuberli, DIDAS
+* Dom Guinard, SSL.com
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Gavin Peacock, Adobe
+* Grace Rachmany, DIF
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Nigel Earnshaw, BBC
+* Pia Blumenthal, Adobe
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Santiago Lyon, Adobe
+* Scott Perry, Digital Governance Institute
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _5'13":_ Dom Guinard, SSL.com
+* 🎥 _5'59":_ Grace Rachmany, DIF
+
 === Review previous action items
+
+🎥 _7'20":_ Review of existing action items, both of which will carry on into the new year.
 
 * *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> Will result in revisions to metadata assertion.
 * *ACTION:* Eric to work with Scott on https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[spinning up a trust registry task force (issue #247)] and with Andrew on spinning up a VC integration task force. -> Will spin up in new year.
 
 === Re-ratify CAWG identity 1.2
 
-PROPOSAL: Re-approve the https://cawg.io/identity/1.2+rework-verifiable-identifier/[CAWG identity assertion 1.2] given changes requested by DIF SC.
+🎥 _8'26":_ PROPOSAL: Re-approve the https://cawg.io/identity/1.2+rework-verifiable-identifier/[CAWG identity assertion 1.2] given changes requested by DIF SC.
+
+*OUTCOME:* Approved.
+
+*ACTION (✅):* Eric to mark 1.2 as SC approved and publish.
 
 === Ratify UX guidance document?
 
-PROPOSAL: Approve the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document] and submit to DIF SC for approval.
+🎥 _17'49":_ PROPOSAL: Approve the https://cawg.io/ux-guidance/1.0-draft+initial-draft/[UX guidance draft document] and submit to DIF SC for approval.
+
+*OUTCOME:* Conditionally approved, but needs the TO DO abstract item populated.
+
+*ACTION:* Pia to submit abstract text to Eric. Eric to then publish to group for online approval.
 
 === Meet on 22 December?
 
-The alternate-week meeting next Monday is still on the calendar. Will there be critical mass for that, or should we defer until first meeting in January?
+🎥 _19'50":_ The alternate-week meeting next Monday is still on the calendar. Will there be critical mass for that, or should we defer until first meeting in January?
 
 Reminder: Full CAWG meeting on 29 December is cancelled for holiday cheer and travel.
 
+*ACTION:* Eric to cancel 22 December meeting. Scott to organize 5 January meeting.
+
 === Re-discuss: Offline resolution of verifiable identifiers
 
-What guidance (if any) should we offer to CAWG identity assertion consumers who need to operate in network-constrained environments?
+🎥 _21'33":_ What guidance (if any) should we offer to CAWG identity assertion consumers who need to operate in network-constrained environments?
+
+*ACTION (✅):* Eric to create issue queueing up further discussion on this topic. See https://github.com/decentralized-identity/cawg-identity-assertion/issues/249[issue #249: Add guidance regarding required network calls for validating credentials].
+
+=== Ad-hoc discussion: Work for 2026
+
+🎥 _30'14":_ Discussed a number of topics that will guide CAWG's work in 2026, including:
+
+* 🎥 _30'14":_ Creating a relationship matrix for the potentially many roles involved in C2PA+CAWG signing.
++
+*ACTION:* Eric to work with Daniel to organize a subgroup to kick off work on relationship matrix.
+
+* 🎥 _34'38":_ Role of individuals _within_ an organization.
+* 🎥 _39'57":_ Potential role of vLEIs.
+* 🎥 _57'01":_ Potential description of endorsements (i.e. named actor is a member of ___).
