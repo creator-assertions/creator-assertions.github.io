@@ -10,8 +10,7 @@ A link to the meeting recording will be provided after the meeting.
 
 === Start meeting
 
-* Welcome and W3C IPR reminder
-* Please comment in the chat for attendance
+Welcome and W3C IPR reminder
 
 include::partial$upcoming-meeting-changes.adoc[]
 
