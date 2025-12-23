@@ -50,7 +50,6 @@ content:
   - url: https://github.com/decentralized-identity/cawg-ux-guidance.git
     branches: 
     - HEAD
-    - initial-draft
     start_path: docs
 
 ui:
