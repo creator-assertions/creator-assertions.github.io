@@ -1,0 +1,31 @@
+= CAWG’s identity assertion: A framework for asserting provenance
+:page-role: -left-nav -toc cawg-logo 
+
+_Eric Scouten, CAWG co-chair_
+
+== Introduction
+
+I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem. I hope this page provides a useful overview for understanding the identity assertion.
+
+== What organizations are involved?
+
+There are three independent organizations that collaborate to define and support the content authenticity ecosystem:
+
+* The *https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)]* defines _technical standards_ that provide a framework for securely attaching metadata to digital media files (“assets”) and defining specific metadata that can be asserted by the hardware or software implementing C2PA. Think of this as the **“What and how”** for digital media.
+* The *https://cawg.io[Creator Assertions Working Group (CAWG)]* defines _technical standards_ for human-generated metadata about digital media that fits into the C2PA ecosystem. This work is primarily encapsulated in CAWG's https://cawg.io/identity[identity assertion] and https://cawg.io/metadata[metadata assertion] specifications. This of this as the **“Who”** for digital media.
+* The *https://contentauthenticity.org[Content Authenticity Initiative (CAI)]* is a business alliance that promotes the cause of digital provenance through education and public policy advocacy. It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
+
+[IMPORTANT]
+.CAWG is not part of C2PA
+====
+A common misconception is that CAWG is a working group _within_ C2PA. It is not.
+
+C2PA has, since early 2024, chosen to focus exclusively on metadata that can be directly attested to by a hardware device or software tool _without_ human input.
+
+CAWG was created at that time to provide a home for metadata that is attested to by individual or organizational content creators. It is a working group within the https://identity.foundation[Decentralized Identity Foundation (DIF)] and a separate membership in DIF is required to participate in CAWG.
+====
+
+== How is this different from XMP, IPTC, and Exif?
+
+(to do ...)
+
