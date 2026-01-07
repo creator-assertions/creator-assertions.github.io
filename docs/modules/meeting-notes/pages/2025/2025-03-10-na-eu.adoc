@@ -37,7 +37,7 @@ xref:attachment$2025-01-27/c2pa-cawg-walkthrough.pdf[Slide deck (PDF)]
 
 === Review previous action items
 
-🎥 _41'23":_ Action items from xref:2025-02-24-na-eu[24 February NA/EU]:
+🎥 _41'23":_ Action items from xref:2025/2025-02-24-na-eu[24 February NA/EU]:
 
 *ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. → Carry over.
 

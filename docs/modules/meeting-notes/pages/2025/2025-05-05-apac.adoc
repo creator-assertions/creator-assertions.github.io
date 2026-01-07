@@ -18,7 +18,7 @@ https://us02web.zoom.us/rec/play/22V1uHaDubTylOueiBToxz6gR5QCchMsv0Q21GL2JUU4ik1
 
 === Review previous action items
 
-🎥 _6'20":_ From xref:2025-04-21-na-eu.adoc[] and xref:2025-04-21-apac.adoc[]:
+🎥 _6'20":_ From xref:2025/2025-04-21-na-eu.adoc[] and xref:2025/2025-04-21-apac.adoc[]:
 
 * *ACTION:* Luke to submit a PR adding a JSON-LD context document. -> *DONE* Will discuss later in agenda.
 * *ACTION (✅):* Eric to merge the following PRs:

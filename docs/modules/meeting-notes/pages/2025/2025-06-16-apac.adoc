@@ -21,7 +21,7 @@ https://us02web.zoom.us/rec/play/yy2cyOwXrac-J4F-altoNz44YytWAFOr3_X_D5IeEHCIt09
 
 === Readout from CAI Summit
 
-🎥 _4'52":_ Brief recap of readout from link:https://www.contentauthenticitysummit.com[Content Authenticity Summit], which was held at Cornell Tech in New York City on 4 June 2025. See notes xref:2025-06-16-na-eu.adoc#_readout_from_cai_summit[from NA/EU meeting].
+🎥 _4'52":_ Brief recap of readout from link:https://www.contentauthenticitysummit.com[Content Authenticity Summit], which was held at Cornell Tech in New York City on 4 June 2025. See notes xref:2025/2025-06-16-na-eu.adoc#_readout_from_cai_summit[from NA/EU meeting].
 
 Related discussions about:
 
@@ -33,7 +33,7 @@ Related discussions about:
 
 === Review existing PRs against metadata assertion
 
-🎥 _30'00":_ Briefly discussed outcomes from xref:2025-06-16-na-eu.adoc#_review_metadata_assertion_pr_2_update_c2pa_technical_spec_references_to_use_version_2_2[from NA/EU meeting] regarding open pull requests against the 1.2 metadata assertion draft.
+🎥 _30'00":_ Briefly discussed outcomes from xref:2025/2025-06-16-na-eu.adoc#_review_metadata_assertion_pr_2_update_c2pa_technical_spec_references_to_use_version_2_2[from NA/EU meeting] regarding open pull requests against the 1.2 metadata assertion draft.
 
 === Incoming identity assertion spec requests
 

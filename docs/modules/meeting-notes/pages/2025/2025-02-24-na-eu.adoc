@@ -67,13 +67,13 @@ IMPORTANT: The US will shift to Daylight Savings Time on 9 March 2025, meaning t
 
 === Review previous action items
 
-🎥 _17'30":_ Action items from xref:2025-02-10-na-eu[10 February NA/EU]:
+🎥 _17'30":_ Action items from xref:2025/2025-02-10-na-eu[10 February NA/EU]:
 
 * Update PR 211 from discussion. → *DONE* (See upcoming agenda item.)
 * Update PR 210 from discussion. → *DONE* (See upcoming agenda item.)
 * Eric to call meeting with Scott and David regarding levels of assurance and validation lifetime. → *DONE* (TO DO: See if Scott is ready to present.)
 
-Action items from xref:2025-02-10-apac[10 February APAC]:
+Action items from xref:2025/2025-02-10-apac[10 February APAC]:
 
 * PR 211: Revise PR to provide room for identity assertion consumer to interpret each verified identity according to its own rules. → *DONE* (See upcoming agenda item.)
 * PR 211: Create issue to track Alex’s idea about using bitstring status list to flag evolution of identity after ICA credential is issued. → *DONE* (See link:https://github.com/creator-assertions/identity-assertion/issues/215[issue #215].)

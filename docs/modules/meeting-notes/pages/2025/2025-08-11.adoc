@@ -96,7 +96,7 @@ https://github.com/decentralized-identity/cawg-identity-assertion/issues[39 open
 
 🎥 _1h25'57":_ We are looking to spin up a task force within CAWG to address questions of agentic identity. Looking for one or two people to lead this discussion. Please reach out to Scott or Eric if interested.
 
-This task force will carry on the discussion started in the xref:2025-07-28.adoc[] meeting, which might be summarized as: How do we describe delegation and tool/agent identity in archival-quality terms?
+This task force will carry on the discussion started in the xref:2025/2025-07-28.adoc[] meeting, which might be summarized as: How do we describe delegation and tool/agent identity in archival-quality terms?
 
 === Report out from media identifiers TF
 

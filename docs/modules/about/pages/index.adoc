@@ -26,5 +26,4 @@ Authoring tools can leverage CAWG specifications to link creators to social medi
 
 == More information
 
-* xref:identity-framework.adoc[]
 * xref:trust-online-information.adoc[]

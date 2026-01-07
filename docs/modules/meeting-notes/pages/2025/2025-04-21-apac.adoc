@@ -14,7 +14,7 @@ https://us02web.zoom.us/rec/share/Phmv4Mmt-qjCRG4GSDYcPOG9q4crqjmy73Cf75jMTDJzvk
 
 === Review previous action items
 
-🎥 _5'29":_ From xref:2025-03-24-na-eu.adoc[]:
+🎥 _5'29":_ From xref:2025/2025-03-24-na-eu.adoc[]:
 
 *ACTION:* Eric agreed to add a note to PR 211 clarifying that if a validator stops processing at the first failure, there may be other undetected failures. -> *Discussed and decided we don't need this.*
 
