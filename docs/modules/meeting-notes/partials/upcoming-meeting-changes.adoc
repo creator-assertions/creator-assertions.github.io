@@ -1,8 +1,8 @@
-[IMPORTANT] 
-.Upcoming schedule changes
-==== 
-The following meetings will deviate from the usual Monday schedule:
+// [IMPORTANT] 
+// .Upcoming schedule changes
+// ==== 
+// The following meetings will deviate from the usual Monday schedule:
 
-* *22 December 2025* (CAWG special topics meeting) cancelled -> series will resume on *5 January 2026*
-* *29 December 2025* (full CAWG meeting) cancelled -> series will resume on *12 January 2026*
-====
+// * *22 December 2025* (CAWG special topics meeting) cancelled -> series will resume on *5 January 2026*
+// * *29 December 2025* (full CAWG meeting) cancelled -> series will resume on *12 January 2026*
+// ====

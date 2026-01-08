@@ -1,0 +1,62 @@
+= 05 January 2026 (Trust Task Force)
+
+https://us02web.zoom.us/rec/share/jzTB4IL7aD12iHUJ6VivHbFbuSHEtUDfVzX5ORlfD7IWX1OA8ex5nvfs8k-WPsdr.UmC9xCQehk9pW6R6[Meeting recording] (1h06m)
+
+== Attendees
+
+* Andy Rosen, Sequence Key
+* Charlie Halford, BBC
+* Daniel Saeuberli, DIDAS
+* Darrell O'Donnell, Ayra Foundation
+* Dom Guinard, SSL.com
+* Drummond Reed
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Grace Rachmany, DIF
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Makki Elfatih, HKDolts
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Vasily Suvorov, accelerate.swiss
+
+== Meeting notes
+
+=== Initial context
+
+🎥 _5'47":_ Scott described the context of CAWG sitting as part of the C2PA ecosystem. C2PA last year established its conformance program, which enables content consumers to have confidence in the what and the how attestations from conformant products. CAWG now faces a similar question regarding the identity of human content creators, whether individual or organizational. Providing a lasting architecture for clarity on that front is the purpose of this task force.
+
+The news media industry, represented here by IPTC and BBC, have shown interest in taking ownership and control the kinds of attributions that can be made on behalf of their industry members. We are expecting other industries to have interest in doing the same, so an important part of this TF's work will be to support those efforts in a scalable fashion.
+
+=== Scope
+
+🎥 _17'57":_ Vasily raised the question: What is the scope of the trust registry we would create? CAWG-specific or broader?
+
+Consensus: Limit scope to creator assertions (i.e. identity claims for digital media content that is described by C2PA manifests).
+
+🎥 _23'32":_ Peleus raised the question of whether the TF scope should include private use cases (i.e. specialized use cases internal a specific company or organization)?
+
+Consensus: Limit scope to public content.
+
+=== Trust registry work at ToIP
+
+🎥 _30'52":_ Drummond gave a brief introduction to the trust registry query protocol work being done at link:https://trustoverip.org[Trust Over IP Foundation]. The intent of this protocol is to provide a mechanism for establishing the validity of claims made in various kinds of credentials.
+
+Drummond encouraged us to think about not having just one trust registry but a _class of trust registries_ that serve the needs of a wide variety of content creators who need to have credentials that can be trusted.
+
+Drummond also encouraged us to think about the governance of individual trust registries as out of scope for CAWG, but rather the responsibility of industry-specific organizations. CAWG instead should focus on establishing guidance for what defines a CAWG-compliant trust registry.
+
+=== Music industry
+
+🎥 _35'44":_ Music industry, through DDEX, is interested in principle to manage a trust registry for music creators, with the caveat that they need to better understand what that means.
+
+=== Credential types
+
+🎥 _38'20":_ Eric reminded the group that we're talking mostly about X.509 mechanisms for now, but there is already one other credential type (identity claims aggregation) in the existing identity assertion spec, and there are likely to be more within the year.
+
+=== Attaching industry-specific endorsements outside of identity
+
+🎥 _40'06":_ Charlie and Eric discussed the notion of industry-specific endorsements as an attachment separate from an organizational identity credential.
+
+As a specific exmaple, depending on the specific digital media asset in question, the BBC might be acting as a news-media organization or an entertainment provider. An organizational identity credential would likely be the same in either case, but an IPTC news media endorsement should only be attached to news content.

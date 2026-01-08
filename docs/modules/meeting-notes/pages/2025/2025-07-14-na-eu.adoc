@@ -27,7 +27,7 @@ https://us02web.zoom.us/rec/share/7x-IeZpbe6DcQnNnq-6TWKe4B0_Hxl1tKBWVamljWb1fF2
 
 === Review previous action items
 
-🎥 _6'51":_ Reviewed action items xref:2025-06-16-na-eu.adoc[from previous meeting]:
+🎥 _6'51":_ Reviewed action items xref:2025/2025-06-16-na-eu.adoc[from previous meeting]:
 
 *ACTION:* Eric to coordinate with DIF GitHub owners to re-tag the 1.1 versions of the specs with language that reflects final status. → DONE
 

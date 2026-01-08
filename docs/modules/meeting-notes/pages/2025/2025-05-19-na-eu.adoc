@@ -40,7 +40,7 @@ Thank you to all participants, current and past, for helping us get to this mile
 
 === Report-out from media identifiers TF
 
-🎥 _10'46":_ Eric reported out from the xref:2025-05-12-media-identifiers-tf.adoc[initial meeting of the media identifiers task force], which was held on Monday, 12 May.
+🎥 _10'46":_ Eric reported out from the xref:2025/2025-05-12-media-identifiers-tf.adoc[initial meeting of the media identifiers task force], which was held on Monday, 12 May.
 
 *Problem space definition:* There are many media industry identifiers that are commonly associated with various individual talent professionals (musicians, actors, directors, etc.) and organizations that should be associated with content that they are involved in producing. Most of these identifiers are not fully-provisioned verifiable identifiers (i.e. they do not have signing keys associated with them) so we rely on metadata providers that are trusted within each industry segment to properly add these identifiers and vouch for their validity.
 

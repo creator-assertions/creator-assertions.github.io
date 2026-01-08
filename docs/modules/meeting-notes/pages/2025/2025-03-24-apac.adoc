@@ -52,7 +52,7 @@ _(Joined with next item.)_
 
 === FedID demo
 
-Did not occur due to a logistical mix-up. Please review the recording from the xref:2025-03-24-na-eu.adoc[] meeting.
+Did not occur due to a logistical mix-up. Please review the recording from the xref:2025/2025-03-24-na-eu.adoc[] meeting.
 
 === JPEG Trust discussion
 
