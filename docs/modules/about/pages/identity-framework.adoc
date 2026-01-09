@@ -5,27 +5,102 @@ _Eric Scouten, CAWG co-chair_
 
 == Introduction
 
-I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem. I hope this page provides a useful overview for understanding the identity assertion.
+I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem.
+This page is intended to provide a useful overview for understanding the identity assertion.
 
 == What organizations are involved?
 
 There are three independent organizations that collaborate to define and support the content authenticity ecosystem:
 
 * The *https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)]* defines _technical standards_ that provide a framework for securely attaching metadata to digital media files (“assets”) and defining specific metadata that can be asserted by the hardware or software implementing C2PA. Think of this as the **“What and how”** for digital media.
-* The *https://cawg.io[Creator Assertions Working Group (CAWG)]* defines _technical standards_ for human-generated metadata about digital media that fits into the C2PA ecosystem. This work is primarily encapsulated in CAWG's https://cawg.io/identity[identity assertion] and https://cawg.io/metadata[metadata assertion] specifications. This of this as the **“Who”** for digital media.
-* The *https://contentauthenticity.org[Content Authenticity Initiative (CAI)]* is a business alliance that promotes the cause of digital provenance through education and public policy advocacy. It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
+
+* The *https://cawg.io[Creator Assertions Working Group (CAWG)]* defines _technical standards_ for human-generated metadata about digital media that fits into the C2PA ecosystem.
+This work is primarily encapsulated in CAWG's https://cawg.io/identity[identity assertion] and https://cawg.io/metadata[metadata assertion] specifications.
+Think of this as the **“Who”** for digital media.
+
+* The *https://contentauthenticity.org[Content Authenticity Initiative (CAI)]* is a business alliance that promotes the cause of digital provenance through education and public policy advocacy.
+It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
+
+For the remainder of this page, I will speak of C2PA, CAWG, and other standards that build upon the C2PA core specification as the *C2PA ecosystem.*
 
 [IMPORTANT]
+[#cawg-not-c2pa]
 .CAWG is not part of C2PA
 ====
-A common misconception is that CAWG is a working group _within_ C2PA. It is not.
+A common misconception is that CAWG is a working group _within_ C2PA.
+It is not.
 
-C2PA has, since early 2024, chosen to focus exclusively on metadata that can be directly attested to by a hardware device or software tool _without_ human input.
+C2PA has since 2024 chosen to focus exclusively on metadata that can be directly attested to by a hardware device or software tool _without_ human input.
 
-CAWG was created at that time to provide a home for metadata that is attested to by individual or organizational content creators. It is a working group within the https://identity.foundation[Decentralized Identity Foundation (DIF)] and a separate membership in DIF is required to participate in CAWG.
+CAWG was created at that time to provide a home for metadata that is attested to by individual or organizational content creators.
+It is a working group within the https://identity.foundation[Decentralized Identity Foundation (DIF)].
+A membership in DIF is required to participate in CAWG.
 ====
+
+== Who signs what?
+
+When an individual or organization wants to claim attribution for a specific content, they sign with their own credentials, _separately_ from the hardware or software tool that generated the binary representatio of that content.
+This separate provides a clear indication of who is taking responsibility for what parts of the content, as shown in the table below:
+
+[%header, cols="2,3,3", frame=none, grid=rows, stripes=odd]
+|====
+| &nbsp;
+| C2PA claim generator
+| CAWG named actor
+
+| Specification
+| link:https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html[C2PA Content Credentials]
+| link:http://cawg.io/identity/[CAWG identity assertion]
+
+| Who is signing?
+| Hardware or software product
+| Individual or organizational content creator
+
+| How many signatures?
+| Exactly one, required
+a| Any number, optional
+
+Available for those content creators who wish to identify themselves as content creators.
+
+| What are they taking responsibility for?
+a| Information available without human input, e.g.
+
+* GPS data
+* Time of capture
+* Edit actions taken
+* Was AI used?
+* Ingredients incorporated
+a| Information provided by humans, e.g.
+
+* Who created the content?
+* Events or locations depicted in content
+* Other metadata for context
+
+| What credential are they using?
+| X.509 certificate issued to “conforming products” (i.e. hardware or software that demonstrates compliance with C2PA rules)
+| Multiple credential types (see <<CAWG credential types>> below)
+|====
+
+== CAWG credential types
+
+(TO DO: Describe the currently-supported credential types and plans to extend.)
 
 == How is this different from XMP, IPTC, and Exif?
 
-(to do ...)
+Let's start with how the C2PA ecosystem is _similar_ to the existing metadata formats:
+Many of the same kinds of information that can be conveyed using XMP, IPTC, and Exif standards (e.g., capture device information, location, description, and authorship claims) can also be conveyed through the C2PA ecosystem.
 
+What sets the C2PA ecosystem apart is:
+
+* *C2PA metadata is _securely_ attached to content.*
+C2PA uses cryptographic hashes and signatures to ensure that metadata is not changed since it was changed.
+These techniques also ensure that a valid C2PA manifest can not be transplanted and used to describe content other than the specific file that it was _intended_ to describe.
+We think of this as a *tamper-evident “nutrition label”* for content.
+
+* *C2PA metadata contains an audit trail.*
+Unlike XMP, IPTC, and Exif, C2PA metadata _retains_ prior attestations when existing content is incorporated into new content.
+This means that a content consumer can trace back through potentially many sources and read the attestations from each source's creator.
+
+* *CAWG identity assertions require secure digital credentials.*
+A claim of authorship, as described by the CAWG identity assertion, can only be signed using a digital credential using a private/public key pair.
+This serves to prevent false claims of authorship.
