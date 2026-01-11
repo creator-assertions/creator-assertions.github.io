@@ -1,0 +1,76 @@
+= 12 January 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> Will result in revisions to metadata assertion.
+* *ACTION:* Eric to work with Scott on https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[spinning up a trust registry task force (issue #247)] and with Andrew on spinning up a VC integration task force. -> Will spin up in new year.
+* *ACTION (✅):* Pia to submit abstract text to Eric. Eric to then publish to group for online approval. -> DONE (see later in agenda)
+* *ACTION (✅):* Eric to create issue queueing up further discussion on this topic. -> DONE (see later in agenda)
+
+=== Approve UX guidance document?
+
+Re-approve https://cawg.io/ux-guidance/1.0-draft/[UX guidance document]. Was approved in 15 December meeting, except that the abstract was missing. Unchanged, except to add the abstract.
+
+=== Re-approve org ID profile
+
+Re-approve https://cawg.io/organizational-identity-profile/1.0/[Organizational identity profile]. DIF SC requested that we remove “or later version” clauses and instead provide new versions of this document when we have reviewed the relevant documents
+
+=== FYI: Trust Over IP HAVID task force closing
+
+=== FYI: Identity 1.3 draft is open!
+
+See https://cawg.io/identity/1.3-draft/[1.3-draft].
+
+Request existing work from Andrew on VC/VP as a PR against main.
+
+=== Review PR #250: Update links to point to C2PA 2.3
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/250[PR #250] which updates the C2PA references from 2.2 to 2.3.
+
+=== Readout from trust TF
+
+Trust task force https://cawg.io/meeting-notes/2026-01-05-trust-tf/[met last week].
+
+=== New task forces
+
+Three new task forces likely to spin up:
+
+* Add VC/VP support (esp. First Person Project credentials) to identity assertion -> Andrew?
+* Add ACDC support (esp. vLEI) to identity assertion -> Vasily
+* Add relationship matrix to identity assertion or adjacent document -> Daniel
+
+For each, need a chair and a meeting time.
+
+=== Review identity assertion framework FAQ
+
+Review draft of identity assertion framework FAQ.
+
+=== Remove endorsement assertion?
+
+Endorsement assertion has had no discussion and little interest. Remove from active draft status?
+
+=== Review metadata 1.2 -- what needs to be completed?
+
+New language requested late last year to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). Feedback requested; I'll attempt to draft a revision later in the week.
+
+Are there other topics?
+
+=== Open discussion: Required network calls for validating credentials
+
+Follow up on https://github.com/decentralized-identity/cawg-identity-assertion/issues/249[issue #249: Add guidance regarding required network calls for validating credentials].
