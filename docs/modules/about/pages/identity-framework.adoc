@@ -10,7 +10,7 @@ This page is intended to provide a useful overview for understanding the identit
 
 == What organizations are involved?
 
-There are four independent organizations that collaborate to define and support the content authenticity ecosystem:
+There are five independent organizations that collaborate to define and support the content authenticity ecosystem:
 
 * The *https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)]* defines _technical standards_ that provide a framework for securely attaching metadata to digital media files (“assets”) and defining specific metadata that can be asserted by the hardware or software implementing C2PA. Think of this as the **“What and how”** for digital media.
 
@@ -20,6 +20,9 @@ Think of this as the **“Who”** for digital media.
 
 * The *https://contentauthenticity.org[Content Authenticity Initiative (CAI)]* is a business alliance that promotes the cause of digital provenance through education and public policy advocacy.
 It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
+
+* The *https://iptc.org[International Press Telecommunications Council (IPTC)]* is the global standards body of the news media.
+IPTC provides the technical foundation for the news ecosystem and describe how news-related metadata is represented in the C2PA ecosystem.
 
 * *https://jpeg.org/jpegtrust/[JPEG Trust]* (ISO/IEC 21617) is a standard development organization that provides a framework for establishing trust in media.
 This framework includes aspects of authenticity, provenance, attribution, intellectual property rights, and integrity through secure and reliable annotation of the media assets throughout their life cycle.
@@ -91,7 +94,7 @@ a| Information provided by humans, e.g.
 == How is this different from XMP, IPTC, and Exif?
 
 Let's start with how the C2PA ecosystem is _similar_ to the existing metadata formats:
-Many of the same kinds of information that can be conveyed using XMP, IPTC, and Exif standards (e.g., capture device information, location, description, and authorship claims) can also be conveyed through the C2PA ecosystem.
+Many of the same kinds of information that can be conveyed using XMP, IPTC Photo Metadata, and Exif standards (e.g., capture device information, location, description, and authorship claims) can also be conveyed through the C2PA ecosystem.
 
 What sets the C2PA ecosystem apart is:
 
@@ -101,7 +104,7 @@ These techniques also ensure that a valid C2PA manifest can not be transplanted 
 We think of this as a *tamper-evident “nutrition label”* for content.
 
 * *C2PA metadata contains an audit trail.*
-Unlike XMP, IPTC, and Exif, C2PA metadata _retains_ prior attestations when existing content is incorporated into new content.
+Unlike XMP, IPTC Photo Metadata, and Exif, C2PA metadata _retains_ prior attestations when existing content is incorporated into new content.
 This means that a content consumer can trace back through potentially many sources and read the attestations from each source's creator.
 
 * *CAWG identity assertions require secure digital credentials.*
