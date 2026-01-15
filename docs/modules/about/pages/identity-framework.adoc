@@ -89,7 +89,36 @@ a| Information provided by humans, e.g.
 
 == CAWG credential types
 
-(TO DO: Describe the currently-supported credential types and plans to extend.)
+An important aspect of the https://cawg.io/identity/[CAWG identity assertion] is that it is built to make use of many credential types.
+The core requirements for credential formats are that they:
+
+. *Are independently verifiable.*
+(In other words, a public key for a given credential can be located by any interested verifying party.)
+
+. *Have the capacity to sign arbitrary binary payloads.*
+In practice, the payloads are relatively small (typically 1KB or less).
+The content of the payload, when signed by private keys controlled by the credential holder, indicates the credential holder's knowledge of the specific digital media asset being described.
+
+As of this writing, the https://cawg.io/identity/1.2[1.2 version of the CAWG identity assertion] describes two credential types:
+
+. *X.509 certificates.*
+As part of an interim governance plan, S/MIME certificates typically used to convey organizational identity and widely available through well-governed certificate authorities, can be used to sign CAWG identity assertions.
++
+IMPORTANT: These certificates are _not_ compatible with the C2PA _claim generator_ certificates used to sign C2PA manifests.
+
+. *Identity claims aggregation* credentials.
+These credentials are a specialized version of W3C Verifiable Credentials which allow a trusted platform vendor (known here as an _identity claims aggregator)_ to gather information about a user, typically an individual content creator, and replay those signals on their behalf to sign CAWG identity assertions.
++
+IMPORTANT: This version of the CAWG identity assertion is not otherwise compatible with W3C Verifiable Credentials.
+
+=== Possible future credential types
+
+As of this writing (early 2026), work is underway to explore adding two more credential types:
+
+* W3C Verifiable Credentials, with a specific emphasis on https://www.firstperson.network[First Person Network] credentials
+* Authentic Chained Data Containers (ACDC), with a specific emphasis on https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei[verifiable LEIs]
+
+CAWG makes no guarantee regarding when or whether these credential types will be supported.
 
 == How is this different from XMP, IPTC, and Exif?
 
