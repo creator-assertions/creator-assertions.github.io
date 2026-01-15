@@ -3,18 +3,18 @@
 
 _Eric Scouten, CAWG co-chair_
 
-== Introduction
-
 I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem.
 This page is intended to provide a useful overview for understanding the identity assertion.
 
-== What organizations are involved?
+== The C2PA ecosystem
 
 There are five independent organizations that collaborate to define and support the content authenticity ecosystem:
 
-* The *https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)]* defines _technical standards_ that provide a framework for securely attaching metadata to digital media files (“assets”) and defining specific metadata that can be asserted by the hardware or software implementing C2PA. Think of this as the **“What and how”** for digital media.
+* The *https://c2pa.org[Coalition for Content Provenance and Authenticity (C2PA)]* is a _standards development organization_ that defines a *core technical framework* that allows many kinds of metadata (known collectively as “assertions”) to be securely attached to a specific piece of digital media.
+It then uses that framework to define specific kinds of metadata that can be asserted by the hardware or software implementing C2PA.
+Think of this as the **“What and how”** for digital media.
 
-* The *https://cawg.io[Creator Assertions Working Group (CAWG)]* defines _technical standards_ for human-generated metadata about digital media that fits into the C2PA ecosystem.
+* The *https://cawg.io[Creator Assertions Working Group (CAWG)]* is a _standards development organization_ that builds upon the C2PA framework by defining how human-generated metadata about digital media fits into the C2PA ecosystem.
 This work is primarily encapsulated in CAWG's https://cawg.io/identity[identity assertion] and https://cawg.io/metadata[metadata assertion] specifications.
 Think of this as the **“Who”** for digital media.
 
@@ -22,7 +22,7 @@ Think of this as the **“Who”** for digital media.
 It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
 
 * The *https://iptc.org[International Press Telecommunications Council (IPTC)]* is the global standards body of the news media.
-IPTC provides the technical foundation for the news ecosystem and describe how news-related metadata is represented in the C2PA ecosystem.
+IPTC provides the technical foundation for the news ecosystem and describes how news-related metadata is represented in the C2PA ecosystem.
 
 * *https://jpeg.org/jpegtrust/[JPEG Trust]* (ISO/IEC 21617) is a _standards development organization_ that provides a framework for establishing trust in media.
 This framework includes aspects of authenticity, provenance, attribution, intellectual property rights, and integrity through secure and reliable annotation of the media assets throughout their life cycle.
@@ -62,6 +62,10 @@ This separate provides a clear indication of who is taking responsibility for wh
 | Hardware or software product
 | Individual or organizational content creator
 
+| Who issues the credentials?
+| X.509 certificates are issued to “conforming products” (i.e. hardware or software products that demonstrate compliance with C2PA rules)
+| Multiple credential types (see <<CAWG credential types>> below)
+
 | How many signatures?
 | Exactly one, required
 a| Any number, optional
@@ -81,10 +85,6 @@ a| Information provided by humans, e.g.
 * Who created the content?
 * Events or locations depicted in content
 * Other metadata for context
-
-| What credential are they using?
-| X.509 certificate issued to “conforming products” (i.e. hardware or software that demonstrates compliance with C2PA rules)
-| Multiple credential types (see <<CAWG credential types>> below)
 |====
 
 == CAWG credential types
