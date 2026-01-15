@@ -24,7 +24,7 @@ It is also the name of the business unit at Adobe which supports all three of th
 * The *https://iptc.org[International Press Telecommunications Council (IPTC)]* is the global standards body of the news media.
 IPTC provides the technical foundation for the news ecosystem and describe how news-related metadata is represented in the C2PA ecosystem.
 
-* *https://jpeg.org/jpegtrust/[JPEG Trust]* (ISO/IEC 21617) is a standard development organization that provides a framework for establishing trust in media.
+* *https://jpeg.org/jpegtrust/[JPEG Trust]* (ISO/IEC 21617) is a _standards development organization_ that provides a framework for establishing trust in media.
 This framework includes aspects of authenticity, provenance, attribution, intellectual property rights, and integrity through secure and reliable annotation of the media assets throughout their life cycle.
 
 For the remainder of this page, I will speak of C2PA, CAWG, and other standards that build upon the C2PA core specification as the *C2PA ecosystem.*
