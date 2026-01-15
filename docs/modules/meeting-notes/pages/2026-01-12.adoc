@@ -1,22 +1,37 @@
 = 12 January 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/TGscpsz6AvXbKhFbSl_bv4130q7Hm1YRMZVppm0cjTq_qW_FNQIvP2E_PTYRrOyx.5llTtAsxSSvyJzGW[Meeting recording] (1h23m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Charlie Halford, BBC
+* Dom Guinard, SSL.com
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Luke Nispel, OriginVault
+* Makki Elfatih, HKDolts
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Santiago Lyon, Adobe
+* Scott Perry, Digital Governance Institute
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Victor Lu, independent consultant
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
-
-=== New members introduction
+== Meeting notes
 
 === Review previous action items
+
+🎥 _8'20":_ Quick review of previous action items:
 
 * *ACTION:* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> Will result in revisions to metadata assertion.
 * *ACTION:* Eric to work with Scott on https://github.com/decentralized-identity/cawg-identity-assertion/issues/247[spinning up a trust registry task force (issue #247)] and with Andrew on spinning up a VC integration task force. -> Will spin up in new year.
@@ -25,52 +40,123 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Approve UX guidance document?
 
-Re-approve https://cawg.io/ux-guidance/1.0-draft/[UX guidance document]. Was approved in 15 December meeting, except that the abstract was missing. Unchanged, except to add the abstract.
+🎥 _8'42":_ Re-approve https://cawg.io/ux-guidance/1.0-draft/[UX guidance document]. Was approved in 15 December meeting, except that the abstract was missing. Unchanged, except to add the abstract.
+
+*ACTION (✅):* Eric to mark document as WG approved and submit to DIF SC for ratification.
 
 === Re-approve org ID profile
 
-Re-approve https://cawg.io/organizational-identity-profile/1.0/[Organizational identity profile]. DIF SC requested that we remove “or later version” clauses and instead provide new versions of this document when we have reviewed the relevant documents
+🎥 _10'02":_ Re-approve https://cawg.io/organizational-identity-profile/1.0/[Organizational identity profile]. DIF SC requested that we remove “or later version” clauses and instead provide new versions of this document when we have reviewed the relevant documents.
+
+*ACTION (✅):* Eric to mark document as WG approved and submit to DIF SC for ratification.
 
 === FYI: Trust Over IP HAVID task force closing
 
+🎥 _17'14":_ Discuss an earlier effort to build a bridge between DIDs and X.509, which turned out not to yield a grand-unification plan for verifiable identifiers. CAWG identity assertion subsequently built a framework for accepting multiple different credential types.
+
+Possible that some recent work in that TF could be used to add additional attribution to X.509s that would be useful in this context.
+
+*ACTION:* Scott to request rights to use the ToIP TF work in the CAWG context.
+
 === FYI: Identity 1.3 draft is open!
 
-See https://cawg.io/identity/1.3-draft/[1.3-draft].
+🎥 _21'55":_ See https://cawg.io/identity/1.3-draft/[1.3-draft].
 
-Request existing work from Andrew on VC/VP as a PR against main.
+*ACTION:* Eric to coordinate with Andrew to ensure that previous work on VC/VP work is an active PR against main.
 
 === Review PR #250: Update links to point to C2PA 2.3
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/250[PR #250] which updates the C2PA references from 2.2 to 2.3.
+🎥 _22'31":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/250[PR #250] which updates the C2PA references from 2.2 to 2.3.
+
+*ACTION (✅):* Eric to merge PR.
 
 === Readout from trust TF
 
-Trust task force https://cawg.io/meeting-notes/2026-01-05-trust-tf/[met last week].
+🎥 _23'45":_ Scott gave a summary of the initial trust task force https://cawg.io/meeting-notes/2026-01-05-trust-tf/[last week].
+
+* The first meeting was successful, with strong participation from industry and user groups.
+* Participants discussed the need for mechanisms to assert conformance for identity and metadata usage across diverse use cases.
+* CAWG’s role is to provide *generic standards* for identity and metadata, while allowing industries to manage and define their own specific metadata tags.
+* There is a need to educate industry groups on applying CAWG standards and assessing their own conformance.
+* Ongoing efforts to standardize *trust registries* were discussed, including existing EU and C2PA work, as potential inputs to this group.
+* The task force may align with *https://ayra.forum/about/[Ayra]*, which is working on trust registry interoperability and could provide reusable groundwork.
+* The group agreed the task force is viable and should continue, with next steps focused on finalizing the mission statement and deliverables.
+
+This task force will meet every other Monday (alternating with the full CAWG meeting) and will meet on 19 January.
 
 === New task forces
 
-Three new task forces likely to spin up:
+🎥 _27'40":_ Three new task forces are spinning up:
 
-* Add VC/VP support (esp. First Person Project credentials) to identity assertion -> Andrew?
+* Add VC/VP support (esp. First Person Project credentials) to identity assertion -> Andrew
 * Add ACDC support (esp. vLEI) to identity assertion -> Vasily
 * Add relationship matrix to identity assertion or adjacent document -> Daniel
 
-For each, need a chair and a meeting time.
+*ACTION:* Eric to work with each of the TF chairs to set up meeting times.
 
 === Review identity assertion framework FAQ
 
-Review draft of identity assertion framework FAQ.
+🎥 _31'04":_ Eric presented a draft framework document on the Identity Assertion, intended to explain how identity assertions work and how they fit into the broader content provenance ecosystem. The document is a distilled, narrative version of slide decks Eric has been using and is meant to serve as an accessible “start here” reference.
+
+The draft covers:
+
+* The roles of organizations involved in content provenance (C2PA, CAWG, CAI, etc.)
+* Clarification that CAWG is not a working group within C2PA, a common misconception
+* Who signs what in the ecosystem (C2PA claim generators vs. CAWG named actors)
+* Responsibilities, number of signatures, and credential usage
+* How identity assertions differ from legacy metadata systems (XMP, IPTC photo metadata, etc.)
+
+*ACTION (✅):* Eric to publish xref:attachment$2025-02-24/dif-overview-for-cawg.pdf[Draft document as reviewed on Monday].
+
+*ACTION:* Eric to revise the document to incorporate feedback received:
+
+* Explicitly mention the *C2PA conformance program*
+* Better explain how *CAWG assertions live inside the C2PA manifest*
+* Include IPTC as an active organization in provenance work
+* Use clearer terminology when referencing IPTC standards (i.e. IPTC *photo metadata* specification)
+* Move toward an *ecosystem-oriented framing* rather than strict separation
 
 === Remove endorsement assertion?
 
-Endorsement assertion has had no discussion and little interest. Remove from active draft status?
+🎥 _44'13":_ Endorsement assertion has had no discussion and little interest. Remove from active draft status?
+
+*ACTION:* Charlie to confer with team at BBC and suggest next steps.
 
 === Review metadata 1.2 -- what needs to be completed?
 
-New language requested late last year to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). Feedback requested; I'll attempt to draft a revision later in the week.
+🎥 _45'56":_ New language requested late last year to address Phillippe Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). Feedback requested; I'll attempt to draft a revision later in the week.
 
-Are there other topics?
+*ACTION:* Eric to draft a PR that adds language to section 6 roughly like this:
+
+[quote]
+These fields should be used only in the case where a valid signing credential is not available. So, in other words, a publisher might sign the identity assertion and attest to ...
+
+*ACTION:* Charlie to file new issue suggesting a closer linkage between the CAWG identity framework `signer_payload.role` field and the Dublin Core metadata fields used in the CAWG metadata assertiopn.
+
+=== FYI: C2PA+CAWG mobile SDKs available
+
+🎥 _1h02'09":_ Nathan pointed out that mobile SDKs are now available derived from the `c2pa-rs` open-source SDKs made available from the Adobe CAI team. Please see https://opensource.contentauthenticity.org/docs/mobile for more information.
+
+=== OpenSSF introduction
+
+🎥 _1h04'21":_ Victor introduced the group to the https://openssf.org[OpenSSF project], which is focused on end-to-end model provenance, aiming to track both data and model lineage from source through deployment, with a strong security perspective. 
+
+There is some overlap of this project to the work of C2PA and CAWG, but it's important to note that while C2PA supports provenance and audit trails for digital media, it does not capture the full set of metadata involved in ML training pipelines. CAWG and C2PA were seen as addressing related but different scopes, particularly around identity frameworks and credential types.
+
+Jeremy shared related work from the AIML/COG space on capturing ML pipeline provenance (datasets, transformations, training, and resulting models) using graph-based manifests. Victor highlighted differences between the OpenSSF security-focused effort and CAWG/C2PA, especially around identity protocols, and raised the question of how the efforts could interoperate.
+
+Victor encourages CAWG participants to engage with the OpenSSF work. Those interested are encouraged to review https://docs.google.com/document/d/146N_FQqrMf6TkrniF8LmqEVzp-LmdSV5z-JfKgevp48/[notes from their recent meetings].
+
+=== Proposal: Standardize signing service API
+
+🎥 _1h11'52":_ Charlie proposed that a standardized HTTPS API protocol be developed which covers the generation of C2PA manifests and/or CAWG identity assertions.
+
+*ACTION:* Eric and Charlie to talk offline and then perhaps bring a proposal to the group.
 
 === Open discussion: Required network calls for validating credentials
 
-Follow up on https://github.com/decentralized-identity/cawg-identity-assertion/issues/249[issue #249: Add guidance regarding required network calls for validating credentials].
+🎥 _1h14'18":_ Follow up on https://github.com/decentralized-identity/cawg-identity-assertion/issues/249[issue #249: Add guidance regarding required network calls for validating credentials].
+
+*OUTCOME:* Not feasible to constrain the credential space to those that do not require outbound network traffic.
+
+*ACTION:* Eric to propose a PR that makes this explicit.
