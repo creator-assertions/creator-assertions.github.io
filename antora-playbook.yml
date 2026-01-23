@@ -14,11 +14,11 @@ content:
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
     - main
+    - w3c-vc-credential-support
     tags:
     - v1.0
     - v1.1-final
     - "1.2"
-    - 1.3-draft+vc-vp
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git
