@@ -1,0 +1,64 @@
+= 26 January 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+From xref:2026-01-12.adoc[]:
+
+* *ACTION (✅):* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> DONE (see later in agenda)
+* *ACTION (✅):* Eric to mark UX guidance document as WG approved and submit to DIF SC for ratification. -> DONE (awaiting SC response)
+* *ACTION (✅):* Eric to mark org ID profile document as WG approved and submit to DIF SC for ratification. -> DONE (awaiting SC response)
+* *ACTION:* Scott to request rights to use the ToIP TF work on high-availability VIDs in the CAWG context.
+* *ACTION (✅):* Eric to coordinate with Andrew to ensure that previous work on VC/VP work is an active PR against main. -> DONE (see later in agenda)
+* *ACTION (✅):* Eric to merge PR #250 (refer to C2PA 2.3). -> DONE
+* *ACTION:* Eric to work with each of the TF chairs to set up meeting times. -> Awaiting DIF staff response
+* *ACTION (✅):* Eric to revise the identity assertion as framework document to incorporate feedback received. -> DONE
+* *ACTION (✅):* Eric to publish https://cawg.io/about/identity-framework/[identity assertion as framework document]. -> DONE
+* *ACTION:* Charlie to confer with team at BBC about future of endorsement assertion and suggest next steps.
+* *ACTION (✅):* Eric to draft a PR that adds language to metadata assertion regarding potential duplication of information. -> DONE
+* *ACTION:* Charlie to file new issue suggesting a closer linkage between the CAWG identity framework `signer_payload.role` field and the Dublin Core metadata fields used in the CAWG metadata assertiopn.
+* *ACTION:* Eric and Charlie to talk offline and then perhaps bring a proposal to the group.
+* *ACTION (✅):* Eric to propose a PR that makes this explicit. -> DONE (see later in agenda)
+
+=== Readout from trust task force
+
+=== Review identity assertion PR #251: Add network traffic policy
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy], based on discussion from last week.
+
+=== Review identity assertion PR #252: W3C verifiable credential support
+
+Preliminary read of https://github.com/decentralized-identity/cawg-identity-assertion/pull/252[PR #252: W3C verifiable credential support]. Will discuss at length in task force to be started soon.
+
+=== Triage open issues for CAWG identity assertion 1.3
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/issues[44 open issues] against CAWG identity assertion spec. Sort into 1.3, post-1.3, or won't do.
+
+=== Review metadata assertion PR #10: Avoid duplication of information between identity and metadata assertions
+
+Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/10[PR #10: Avoid duplication of information between identity and metadata assertions].
+
+=== Ratify metadata assertion 1.2?
+
+Given outcome of PR #10, is metadata ready to ratify?
+
+=== did:unconf conference
+
+Eric will be attending https://didunconf.africa[did:unconf Africa] in Cape Town, South Africa, next month. Any topics / questions that CAWG would like to bring to that conference?
+
+=== AOB
