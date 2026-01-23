@@ -2,7 +2,7 @@
 :page-role: -left-nav -toc cawg-logo 
 
 _Eric Scouten, CAWG co-chair_ +
-_DRAFT 15 January 2026_
+23 January 2026_
 
 I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem.
 This page is intended to provide a useful overview for understanding the identity assertion.
@@ -46,8 +46,8 @@ A membership in DIF is required to participate in CAWG.
 
 == Who signs what?
 
-When an individual or organization wants to claim attribution for a specific content, they sign with their own credentials, _separately_ from the hardware or software tool that generated the binary representatio of that content.
-This separate provides a clear indication of who is taking responsibility for what parts of the content, as shown in the table below:
+When an individual or organization wants to claim attribution for a specific content, they sign with their own credentials, _separately_ from the hardware or software tool that generated the binary representation of that content.
+This separation provides a clear indication of who is taking responsibility for what parts of the content, as shown in the table below:
 
 [%header, cols="2,3,3", frame=none, grid=rows, stripes=odd]
 |====
