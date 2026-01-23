@@ -2,7 +2,7 @@
 :page-role: -left-nav -toc cawg-logo 
 
 _Eric Scouten, CAWG co-chair_ +
-23 January 2026_
+23 January 2026
 
 I am often asked to explain how the CAWG identity assertion works and how it fits into the overall content authenticity ecosystem.
 This page is intended to provide a useful overview for understanding the identity assertion.
