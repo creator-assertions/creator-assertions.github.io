@@ -22,8 +22,9 @@ Think of this as the **“Who”** for digital media.
 * The *https://contentauthenticity.org[Content Authenticity Initiative (CAI)]* is a business alliance that promotes the cause of digital provenance through education and public policy advocacy.
 It is also the name of the business unit at Adobe which supports all three of these organizations through open source, open standards development, and support of Adobe product teams implementing CAI.
 
-* The *https://iptc.org[International Press Telecommunications Council (IPTC)]* is the global standards body of the news media.
-IPTC provides the technical foundation for the news ecosystem and describes how news-related metadata is represented in the C2PA ecosystem.
+* The *https://iptc.org[International Press Telecommunications Council (IPTC)]* is an industry standards body for news media.
+Carrying forward the work of Project Origin, a media provenance initiative that helped establish C2PA, IPTC develops best practices and trust infrastructure to support the implementation of C2PA across the news media industry.
+It manages the Origin Verified News Publishers List, a set of vetted publisher signing certificates that serves as a baseline trust source for CAWG-conformant validation of identity assertions.
 
 * *https://jpeg.org/jpegtrust/[JPEG Trust]* (ISO/IEC 21617) is a _standards development organization_ that provides a framework for establishing trust in media.
 This framework includes aspects of authenticity, provenance, attribution, intellectual property rights, and integrity through secure and reliable annotation of the media assets throughout their life cycle.
