@@ -1,24 +1,53 @@
 = 26 January 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/pwN8xkkgRavRNqcJ7EDKCyExTwD7h4sCZvL68NO9B5kJRYjABXKuUNJNnXRhZ8Cl.JmTR7UXhT4SeblPZ[Meeting recording] (1h11m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Bill Huang, Trufo
+* Charlie Halford, BBC
+* Dom Guinard, SSL.com
+* Drummond Reed, First Person Project
+* Eric Scouten, Adobe
+* Esteban Garcia
+* Gavin Peacock, Adobe
+* John Carlucci, HAND (Human & Digital) Identity
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Leonard Rosenthol, Adobe
+* Luke Nispel, OriginVault
+* Marcos Armstrong, CBC/Radio-Canada
+* Makki Elfatih, HKDolts
+* Matt Ford
+* Nicholas Salvemini, Adobe
+* Nigel Earnshaw, BBC
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Sébastien Testeau, CBC/Radio-Canada
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _2'53":_ Sébastien Testeau, CBC/Radio-Canada
+* 🎥 _5'59":_ HAND (Human & Digital) Identity
+
+=== First Person Partner Workshop
+
+🎥 _4'01":_ Drummond gave a description of the First Person Partner workshop, which is happening later this week and also the Summit on Human Agency to be held on 23 February in Napa, California.
+
 === Review previous action items
 
-From xref:2026-01-12.adoc[]:
+🎥 _6'49":_ Reviewed action items from previous meeting xref:2026-01-12.adoc[]:
 
 * *ACTION (✅):* Group to add language to UX guidance doc to address Pierre Mougin's concern that we have two potential locations to state publisher identity (metadata assertion vs identity assertion). -> DONE (see later in agenda)
 * *ACTION (✅):* Eric to mark UX guidance document as WG approved and submit to DIF SC for ratification. -> DONE (awaiting SC response)
@@ -35,30 +64,48 @@ From xref:2026-01-12.adoc[]:
 * *ACTION:* Eric and Charlie to talk offline and then perhaps bring a proposal to the group.
 * *ACTION (✅):* Eric to propose a PR that makes this explicit. -> DONE (see later in agenda)
 
-=== Readout from trust task force
+=== Update on JPEG Trust collaboration
 
-=== Review identity assertion PR #251: Add network traffic policy
+🎥 _8'55":_ Leonard gave an update on the JPEG Trust Committee’s work, highlighting the progress and upcoming publication of the second edition of JPEG Trust Part 1, which integrates concepts of authorship, ownership, and rights. He explained the standard’s interlinking components, including CAWG’s identity and metadata assertions and ODRL, and demonstrated how these elements can be utilized in real-world scenarios. Leonard also introduced JPEG Trust Part 2, which offers trust indicator sets, profiles, and reports, and mentioned a reference implementation in Java that supports COG assertions. The discussion concluded with an overview of how various standards and initiatives are coming together to create a connected ecosystem for content credentials and rights management.
 
-Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy], based on discussion from last week.
-
-=== Review identity assertion PR #252: W3C verifiable credential support
-
-Preliminary read of https://github.com/decentralized-identity/cawg-identity-assertion/pull/252[PR #252: W3C verifiable credential support]. Will discuss at length in task force to be started soon.
-
-=== Triage open issues for CAWG identity assertion 1.3
-
-Review https://github.com/decentralized-identity/cawg-identity-assertion/issues[44 open issues] against CAWG identity assertion spec. Sort into 1.3, post-1.3, or won't do.
+xref:attachment$2026-01-26/lrosenthol-jpeg-trust.pdf[Leonard's slide deck (PDF)]
 
 === Review metadata assertion PR #10: Avoid duplication of information between identity and metadata assertions
 
-Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/10[PR #10: Avoid duplication of information between identity and metadata assertions].
+🎥 _21'57":_ Review https://github.com/decentralized-identity/cawg-metadata-assertion/pull/10[PR #10: Avoid duplication of information between identity and metadata assertions].
+
+*ACTION (✅):* Eric to withdraw this PR. 
+
+*ACTION:* Eric to draft a new PR to explicitly explicitly encourage the use of `self#jumbf` references as shown in Leonard’s presentation
 
 === Ratify metadata assertion 1.2?
 
-Given outcome of PR #10, is metadata ready to ratify?
+🎥 _36'33":_ Given outcome of PR #10, is metadata ready to ratify?
+
+*OUTCOME:* Not ready to ratify.
+
+=== Readout from trust task force
+
+🎥 _37'04":_ Scott gave a readout from the trust task force meeting that happened last week. The meeting covered how the work of the https://ayra.forum/[Ayra Foundation] and https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22987378/Trust+Registry+Task+Force[Trust Over IP’s Trust Registry Task Forc] and how these efforts might help CAWG establish communities of trust for content creators.
+
+=== Review identity assertion PR #251: Add network traffic policy
+
+🎥 _39'22":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy], based on discussion from last week.
+
+*ACTION:* Eric to revise PR to introduce a new status code for validators to use when their network configuration or policy prohibits verification of credentials.
+
+=== Review identity assertion PR #252: W3C verifiable credential support
+
+🎥 _43'36":_ Preliminary read of https://github.com/decentralized-identity/cawg-identity-assertion/pull/252[PR #252: W3C verifiable credential support]. Will discuss at length in task force to be started soon.
+
+We expect this to be a long-running effort. The current draft will be published at https://cawg.io/identity/1.3-draft+vc-vp/ for the duration of this effort.
 
 === did:unconf conference
 
-Eric will be attending https://didunconf.africa[did:unconf Africa] in Cape Town, South Africa, next month. Any topics / questions that CAWG would like to bring to that conference?
+🎥 _46'35":_ Eric will be attending https://didunconf.africa[did:unconf Africa] in Cape Town, South Africa, next month. Any topics / questions that CAWG would like to bring to that conference?
 
-=== AOB
+=== Triage open issues for CAWG identity assertion 1.3
+
+🎥 _47'57":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues[44 open issues] against CAWG identity assertion spec. Sorted into 1.3, post-1.3, or won't do.
+
+*ACTION:* Eric to convert notes placed in issues to milestones assigned to the various task forces that are spinning up.
