@@ -43,13 +43,15 @@ content:
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
-    branches:
-    - HEAD
+    branches: [] # - main (when there's a draft again)
+    tags:
+    - v1.0
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-ux-guidance.git
-    branches:
-    - HEAD
+    branches: [] # - main (when there's a draft again)
+    tags:
+    - v1.0
     start_path: docs
 
 ui:
