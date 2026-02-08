@@ -1,0 +1,57 @@
+= 09 February 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Eric to withdraw metadata PR #10: Avoid duplication of information between identity and metadata assertions. -> ✅ DONE
+
+* *ACTION:* Eric to draft a new metadata PR to explicitly explicitly encourage the use of `self#jumbf` references as shown in Leonard’s presentation. -> ✅ DONE (will discuss later)
+
+* *ACTION:* Eric to revise identity PR to introduce a new status code for validators to use when their network configuration or policy prohibits verification of credentials. -> ✅ DONE (will discuss later)
+
+* *ACTION:* Eric to convert notes placed in issues to milestones assigned to the various task forces that are spinning up. -> ✅ DONE (will discuss later)
+
+=== Checking in on task force formation
+
+I haven't heard meeting times yet. Status update?
+
+=== Review metadata assertion PR #11: Update to reference C2PA 2.3 and CAWG identity 1.2
+
+Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/11[metadata assertion PR #11: Update to reference C2PA 2.3 and CAWG identity 1.2].
+
+=== Review metadata assertion PR #12: Add section on referencing the named actor from an identity assertion
+
+Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[metadata assertion PR #12: Add section on referencing the named actor from an identity assertion].
+
+=== Metadata assertion spec ready to finalize?
+
+Based on above PRs, are we ready for working group approval on metadata assertion 1.2?
+
+=== Review identity assertion PR #251: Add network traffic policy
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[identity assertion PR #251: Add network traffic policy].
+
+=== Review identity assertion PR #254: Move VC to §8.3 and change section title
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/254[identity assertion PR #254: Move VC to §8.3 and change section title].
+
+=== Review identity assertion PR #255: Rework W3C VC introductory section
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/255[identity assertion PR #255: Rework W3C VC introductory section].
+
+=== AOB
