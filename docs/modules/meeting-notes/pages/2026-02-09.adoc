@@ -1,22 +1,44 @@
 = 09 February 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/cjqj4xSn2rTX8ivviYIxBUr4g5cHc4dXlTRNZL3AmNSs2LfHu9g7YIcTk2bOyoCb.km9QroVGOlZRICc5[Meeting recording] (54m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Charlie Halford, BBC
+* Christian Suacier, Archon
+* Dom Guinard, SSL.com
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Luke Nispel, OriginVault
+* Marcos Armstrong, CBC/Radio-Canada
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Sri Murugan, ???
+* Tom Jones
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _4'31":_ Christian Suacier, Archon
+* 🎥 _5'25":_ Sri Murugan, Vlinder
+
 === Review previous action items
+
+🎥 _6'17":_ Reviewed action items from previous meeting xref:2026-01-26.adoc[]:
 
 * *ACTION:* Eric to withdraw metadata PR #10: Avoid duplication of information between identity and metadata assertions. -> ✅ DONE
 
@@ -28,30 +50,52 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Checking in on task force formation
 
-I haven't heard meeting times yet. Status update?
+🎥 _7'24":_ I haven't heard meeting times yet. Status update?
 
 === Review metadata assertion PR #11: Update to reference C2PA 2.3 and CAWG identity 1.2
 
-Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/11[metadata assertion PR #11: Update to reference C2PA 2.3 and CAWG identity 1.2].
+🎥 _9'20":_ Discussed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/11[metadata assertion PR #11: Update to reference C2PA 2.3 and CAWG identity 1.2].
+
+*ACTION (✅):* Eric to merge PR.
 
 === Review metadata assertion PR #12: Add section on referencing the named actor from an identity assertion
 
-Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[metadata assertion PR #12: Add section on referencing the named actor from an identity assertion].
+🎥 _11'21":_ Discussed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[metadata assertion PR #12: Add section on referencing the named actor from an identity assertion].
+
+*ACTION:* Eric to revise PR per feedback received after the meeting. New section to be added similar to existing section 5 to describe how to represent multiple representations of the same entity (i.e. human readable vs URI).
+
+Phillippe shared this later in the meeting:
+
+> In Dublin Core, you can express multiple contributors by repeating the dc:contributor element for each individual or organization, or by separating them with a semicolon within a single field. As dc:contributor is a repeatable element, this allows for the inclusion of multiple contributors, such as editors, translators, or illustrators, in addition to the primary creator. See 4.8 Creator and 4.10 Contributor here: https://www.dublincore.org/specifications/dublin-core/usageguide/elements/
 
 === Metadata assertion spec ready to finalize?
 
-Based on above PRs, are we ready for working group approval on metadata assertion 1.2?
+🎥 _22'20":_ Based on above PRs, are we ready for working group approval on metadata assertion 1.2?
+
+*OUTCOME:* Not ready.
 
 === Review identity assertion PR #251: Add network traffic policy
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[identity assertion PR #251: Add network traffic policy].
+🎥 _22'48":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[identity assertion PR #251: Add network traffic policy].
+
+*ACTION:* Eric and Peleus to revise wording to differentiate between transient failure and configuration/policy prohibition on the validator.
 
 === Review identity assertion PR #254: Move VC to §8.3 and change section title
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/254[identity assertion PR #254: Move VC to §8.3 and change section title].
+🎥 _32'17":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/254[identity assertion PR #254: Move VC to §8.3 and change section title].
+
+*ACTION (✅):* Eric to merge PR.
 
 === Review identity assertion PR #255: Rework W3C VC introductory section
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/255[identity assertion PR #255: Rework W3C VC introductory section].
+🎥 _35'11":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/255[identity assertion PR #255: Rework W3C VC introductory section].
 
-=== AOB
+*ACTION (✅):* Eric to publish rendered version of this PR for further review. Please see https://cawg.io/build/site/identity/1.3-draft+vc-vp+new-introduction/#_verifiable_credential_binding_conceptual_overview.
+
+=== Better assistance for users / implementers
+
+🎥 _41'42":_ Discussion about how CAWG could do a better job of presenting its work to potential users. As an example, the IPTC has a technical work group and separately a user outreach and education work group.
+
+Also raised is having a set of interoperability test suites.
+
+Continue discussion in next meeting.

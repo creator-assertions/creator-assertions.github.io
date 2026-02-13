@@ -16,6 +16,7 @@ content:
     branches:
     - HEAD
     - w3c-vc-credential-support
+    - revise-overview
     tags:
     - v1.0
     - v1.1-final
