@@ -90,7 +90,7 @@ Phillippe shared this later in the meeting:
 
 🎥 _35'11":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/255[identity assertion PR #255: Rework W3C VC introductory section].
 
-*ACTION (✅):* Eric to publish rendered version of this PR for further review. Please see https://cawg.io/build/site/identity/1.3-draft+vc-vp+new-introduction/#_verifiable_credential_binding_conceptual_overview.
+*ACTION (✅):* Eric to publish rendered version of this PR for further review. Please see https://cawg.io/identity/1.3-draft+vc-vp+new-introduction/#_w3c_verifiable_credentials.
 
 === Better assistance for users / implementers
 
