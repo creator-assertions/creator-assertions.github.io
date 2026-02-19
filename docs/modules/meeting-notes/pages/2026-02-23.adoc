@@ -18,8 +18,15 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Review previous action items
 
-=== Topic 1
+=== Checking in on task force formation - VC/VP Task Force - I haven't heard meeting times yet. Status update?
+
+https://github.com/decentralized-identity/cawg-identity-assertion/pull/254[identity assertion PR #254: Move VC to §8.3 and change section title].
+*ACTION (✅):* Eric to merge PR. -> ✅ DONE
+
+=== Trust Task Force
+Jenny Pretz Music Industry Model
 
 === Topic 2
+Building out Interoperability Test Suites
 
 === AOB
