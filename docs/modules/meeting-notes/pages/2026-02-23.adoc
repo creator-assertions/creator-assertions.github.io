@@ -1,6 +1,8 @@
 = 23 February 2026
 
-https://us02web.zoom.us/rec/share/U103k6tdANZh1rjSB6-eT7GtjVp1OLjQUQ-hPep_mf9F76zF4WtDmlEMF3ZwN4c.eQXEJSes-wnIY7me[Meeting recording]
+== Meeting recording
+
+[zoom link](https://us02web.zoom.us/rec/share/U103k6tdANZh1rjSB6-eT7GtjVp1OLjQUQ-hPep_mf9F76zF4WtDmlEMF3ZwN4c.eQXEJSes-wnIY7me)
 
 == Attendees
 
