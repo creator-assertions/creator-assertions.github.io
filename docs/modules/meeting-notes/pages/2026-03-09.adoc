@@ -17,9 +17,23 @@ include::partial$upcoming-meeting-changes.adoc[]
 === New members introduction
 
 === Review previous action items
+None
 
-=== Topic 1
+=== Recap of Human2Human Summit in Napa Valley (Drummond)
 
-=== Topic 2
+=== Recap of First Meeting of VC/VP Task Force (Andrew)
+
+=== Recap of Trust TF Meeting (Scott)
+
+**#256 Create Guidance for the use of Trust Registries in Spec** 
+After a few meetings of the Trust Task Force, we reached consensus regarding the shared responsibility of CAWG and Industry ecosystems to create governance frameworks and mechanisms supporting interoperable trust registries similar as demonstrated by the IPTC. This issue is to create guidance (SHOULD) language within the CAWG spec, likely within the trust model section.
+
+**#257 Add the URI of a Trust Registry in Gathered Assertions** 
+Within the work of the CAWG Trust TF, we have explored the use of trust registries that identify authorized parties from trust ecosystems that are allowed to make gathered assertions in CAWG manifests. The IPTC currently does this. While a separate issue creates guidance on the use of trust registries, there is currently no place within a CAWG assertion that points to an authorized trust registry. This issue starts the process of identifying what and where a URI for an authoritative registry shall be included in a CAWG assertion so that validators can resolve authorization queries.
+
+=== #258 Expand the Training & Data Mining Assertion to a Broader Set of Consent Assertions (Erik)
+Currently, the CAWG Specification includes the following consent assertions: Training and Data Mining Assertion: Describes an assertion that enables someone to provide information about whether an asset with C2PA metadata may be used for data mining or AI/ML training.
+
+In working with Erik Passoja, CAWG member, there is a broader set of consent assertions that should be added to this category that creators need to protect their digital assets. Erik has created a separate proposal which is too long to include in this issue but available on the CAWG Slack Channel.
 
 === AOB
