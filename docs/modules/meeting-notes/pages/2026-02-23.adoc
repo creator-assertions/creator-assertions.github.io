@@ -2,24 +2,39 @@
 
 == Meeting recording
 
-A link to the meeting recording will be provided after the meeting.
+[zoom link](https://us02web.zoom.us/rec/share/U103k6tdANZh1rjSB6-eT7GtjVp1OLjQUQ-hPep_mf9F76zF4WtDmlEMF3ZwN4c.eQXEJSes-wnIY7me)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Christian Suacier, Archon
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Nathan Freitas, ProofMode
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+* Bill Huang, Trufo
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
+* Christian Suacier, Archon
+* Bill Huang, Trufo
 
 === Review previous action items
 
-=== Topic 1
+https://github.com/decentralized-identity/cawg-identity-assertion/pull/254[identity assertion PR #254: Move VC to §8.3 and change section title].
+*ACTION (✅):* Eric to merge PR. -> ✅ DONE
 
-=== Topic 2
+=== Checking in on task force formation - VC/VP Task Force Andrew Dworschak offered to hold the TF meeting at 9:00-10:00PT on alternative Mondays. 
+The meeting focused on the progress and upcoming tasks of the task force, including the need to align participants on the goals and address uncertainties in integrating the environment with the VC and VP ecosystem. Scott discussed recruiting new members, particularly from Trust Over IP, and mentioned the interest of attendees at the human-to-human conference in Napa Valley. 
+* *ACTION:* Scott will work with Juan and Grace to put the proposed meeting on the DIF Calendar -> ✅ DONE
 
-=== AOB
+=== Music Industry Trust Registry Discussion
+
+Jenny Pretz was highlighted for her efforts in understanding the governance and interoperability aspects within the Trust Task Force, particularly regarding metadata tags in the CAWG specification. The group is exploring the roles of CAWG, industry, and other organizations in establishing governance structures, with Jenny presenting a diagram to illustrate her understanding of how governance and interoperability could work within her community.
+
+Jenny, representing the RIAA and DDEX, discussed the challenges of creating a trust registry for the music industry. She explained that the industry lacks a central ID system and has traditionally used XML messages for communication between well-known organizations. Jenny proposed the idea of a "registry of registries" to accommodate both organizations and the creative community. She sought input on whether a trust registry was necessary beyond existing certifications and how to structure the process for organizations to participate.
+
