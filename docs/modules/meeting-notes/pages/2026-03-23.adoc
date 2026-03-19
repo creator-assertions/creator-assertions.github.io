@@ -1,0 +1,36 @@
+= 23 March 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+Juan Caballero agreed to present activitiy in the Agentic AI Working Group of DIF. (in today's agenda)
+
+Erik Passoja agreed to present current legislation that may have an effect on CAWG. (in today's agenda)
+
+=== Recap of Meeting of VC/VP Task Force (Andrew)
+
+=== Recap of Trust TF Meeting (Scott)
+
+=== Proposal to create new Consent Task Force led by Erik Passoja
+
+=== Juan Caballero will present activitiy in the Agentic AI Working Group of DIF. 
+
+=== Erik Passoja will present current legislation that may have an effect on CAWG. 
+
+=== GitHub Issue #13 Add our own version of c2pa "inception" actions to allow CAWG signers to specify provenance (Charlie)
+
+=== AOB
