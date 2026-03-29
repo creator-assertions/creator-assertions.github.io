@@ -1,0 +1,68 @@
+= 23 March 2026
+
+https://us02web.zoom.us/rec/share/dCTGBBIRsUMj7I8v1icBDN7cWI9LWcCFSZTyFNjbeQmPhAqygIO71pug_ARWl2vk.VyvWv_Qynxd_VVfv[Meeting recording] (1h33m)
+
+== Attendees
+
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Charlie Halford, BBC
+* Dom Guinard, SSL.com
+* Drummond Reed
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Gavin Peacock, Adobe
+* Juan Caballero, DIF
+* Jeremy Uzan, Universal Music
+* John Carlucci, HAND (Human & Digital) Identity
+* Karla McKenna, GLEIF
+* Leonard Rosenthol, Adobe
+* Luke Nispel, OriginVault
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Niels Rump, DDEX
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+
+== Meeting notes
+
+=== Review metadata issue #13: Add CAWG inception actions
+
+🎥 _11'45":_ Charlie introduced https://github.com/decentralized-identity/cawg-metadata-assertion/issues/13[metadata assertion issue #13: Add our own version of c2pa "inception" actions to allow CAWG signers to specify provenance]. The key request here is to enable users to make provenance attestations when using open-source or other tools that can not make the kinds of secure-execution-environment claims necessary for C2PA conformance. This would be achieved by having some form of CAWG-provided provenance attestation endorsed by a CAWG identity assertion and a minimal C2PA-conformant claim generator which would include only a `c2pa.opened` inception action, stating that (from a C2PA perspective) that the asset existed at this point of time, without itself taking responsibility for any claims about how that asset was produced.
+
+Group explored the idea of a CAWG actions assertion.
+
+*ACTION (✅):* Charlie and Eric to meet to further discuss this issue and how to move to a concrete proposal.
+
+*ACTION* _(determined during above meeting):_ Eric to draft a new `cawg.actions` assertion spec.
+
+=== Proposal: Create consent task force
+
+🎥 _45'54":_ Proposal to create a task force for documenting consent of people depicted in an asset.
+
+*ACTION:* Erik Passoja to work with Juan and Grace-zel to create task force meetings.
+
+=== Review of Trusted AI Agents Working Group
+
+🎥 _49'06":_ Juan gave an overview of DIF's Trusted AI Agents Working Group. TAAWG is currently spinning up a task force on delegation, which is likely relevant to CAWG. Scott raised the question of 
+
+*ACTION:* Interested CAWG Working Group members, please review the Agentic AI Working Group's https://github.com/decentralized-identity/taa-delegatable-authorization-tf/blob/main/spec/problem_space_report.md[delegation report] and https://github.com/decentralized-identity/trusted-ai-agents/tree/main/work_items/use_cases[use case repository] in preparation for a focused session on delegation and potential joint use case development. TAAWG would welcome CAWG members joining with specific use cases.
+
+Eric reminds that when we're talking about delegation, we should also consider human-to-human delegation (i.e. staff working on behalf of a major recording artist).
+
+=== Review of VC/VP task force
+
+🎥 _1h01'52":_ Andrew gave a review of last week's VC/VP task force, which was mostly focused on reviewing existing issues that had been assigned to the group.
+
+*ACTION:* Eric working with Drummond on a possible co-chair.
+
+=== Overview of pending legislation
+
+🎥 _1h01'52":_ Erik Passoja provided an overview of legislation pending in several countries and states that relate to AI transparency and copyright labeling.
+
+xref:attachment$2026-03-23/passoja-cawg-legislative-landscape.pdf[Erik's slide deck (PDF)]
