@@ -7,7 +7,7 @@
 == Attendees
 
 * Andrew Dworschak, Yakoa
-* Christian Suacier, Archon
+* Christian Saucier, Archon
 * Jenny Pretz, DDEX/RIAA
 * Jeremy Uzan, Universal Music
 * Nathan Freitas, ProofMode
@@ -20,7 +20,7 @@
 == Meeting notes
 
 === New members introduction
-* Christian Suacier, Archon
+* Christian Saucier, Archon
 * Bill Huang, Trufo
 
 === Review previous action items
