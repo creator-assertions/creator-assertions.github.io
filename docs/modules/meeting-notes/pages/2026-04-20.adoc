@@ -22,6 +22,10 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 *ACTION* _(determined during above meeting):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
 
+*ACTION:* Interested CAWG Working Group members, please review the Agentic AI Working Group’s https://github.com/decentralized-identity/taa-delegatable-authorization-tf/blob/main/spec/problem_space_report.md[delegation report] and https://github.com/decentralized-identity/trusted-ai-agents/tree/main/work_items/use_cases[use case repository] in preparation for a focused session on delegation and potential joint use case development. TAAWG would welcome CAWG members joining with specific use cases.
+
+*ACTION:* Eric working with Drummond on a possible co-chair for VC/VP task force.
+
 === Readout from trust task force: Scott
 
 === Readout from VC/VP task force: Andrew
