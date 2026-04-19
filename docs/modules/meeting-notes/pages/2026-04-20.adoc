@@ -1,0 +1,45 @@
+= 20 April 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION (✅):* Charlie and Eric to meet to further discuss this issue and how to move to a concrete proposal.
+
+*ACTION* _(determined during above meeting):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
+
+=== Readout from trust task force: Scott
+
+=== Readout from VC/VP task force: Andrew
+
+=== Readout from consent task force: Erik
+
+=== Review identity assertion PR 251: Add network traffic policy
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy].
+
+=== Review identity assertion PR 264: Define “archival-quality identifier”
+
+Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”].
+
+=== Topics for IIW?
+
+=== Review metadata assertion PR 12: Add section on referencing the named actor from an identity assertion
+
+Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[PR #12: Add section on referencing the named actor from an identity assertion].
+
+=== AOB
