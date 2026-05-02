@@ -1,0 +1,39 @@
+= 04 May 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+=== IIW readout
+
+* Archival-quality credentials
+* Governance assertion
+* Originator Profile project
+
+=== Readout from trust task force: Scott
+
+=== Readout from VC/VP task force: Andrew
+
+=== Readout from consent task force: Erik
+
+=== Review PR #72: Emphasizing the use of REGISTERED spots in the advertising use case
+
+Review identity assertion [PR #72: Emphasizing the use of REGISTERED spots in the advertising use case](https://github.com/decentralized-identity/cawg-identity-assertion/pull/72/changes).
+
+=== Discussion: Are separate versions for individual assertions worth keeping?
+
+=== AOB
