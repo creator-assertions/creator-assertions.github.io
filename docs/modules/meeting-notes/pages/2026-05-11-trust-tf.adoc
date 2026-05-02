@@ -1,0 +1,25 @@
+= (date)
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Open question: Where does this belong?
+
+Should this be its own assertion or an extension to the identity assertion? What we're talking about looks _like_ identity.
+
+How do we technically express affiliation?
+
+=== AOB
