@@ -1,49 +1,94 @@
 = 20 April 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/play/TieSBoFvcLY5Takux8GDde6tlIGhv4FDOnMFW0TXPxiHJbL9vFg9n3l3S5Ob5FRbEZV1kSA-1RqyfLEZ.srw_QinUFsIzvf-u[Meeting recording] (1h33m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Burt Kaliski, Verisign
+* Christian Saucier, Archon
+* Dom Guinard, SSL.com
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX
+* Jeremy Uzan, Universal Music
+* Makki Elfatih, HKDolts
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+* Vasily Suvorov, accelerate.swiss
 
-=== Start meeting
+== Meeting notes
 
-Welcome and W3C IPR reminder
+=== Readout from IPTC Provenance Summit
 
-include::partial$upcoming-meeting-changes.adoc[]
+🎥 _11'45":_ MEAN task force (music, entertainment, advertising, and news) made a very definitive statement that C2PA alone is insufficient for the creative community, and that you must implement CAWG and C2PA together to make effective use of C2PA. This statement was well-received at the conference.
 
 === New members introduction
 
+* 🎥 _14'16":_ Eric Osterweil, Verisign
+* 🎥 _14'50":_ Burt Kaliski, Verisign
+
 === Review previous action items
 
-*ACTION (✅):* Charlie and Eric to meet to further discuss this issue and how to move to a concrete proposal.
+🎥 _15'56":_
+
+*ACTION (✅):* Charlie and Eric to meet to further discuss this issue and how to move to a concrete proposal. -> DONE
 
 *ACTION* _(determined during above meeting):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
 
 *ACTION:* Interested CAWG Working Group members, please review the Agentic AI Working Group’s https://github.com/decentralized-identity/taa-delegatable-authorization-tf/blob/main/spec/problem_space_report.md[delegation report] and https://github.com/decentralized-identity/trusted-ai-agents/tree/main/work_items/use_cases[use case repository] in preparation for a focused session on delegation and potential joint use case development. TAAWG would welcome CAWG members joining with specific use cases.
 
-*ACTION:* Eric working with Drummond on a possible co-chair for VC/VP task force.
-
 === Readout from trust task force: Scott
+
+🎥 _17'05":_ Trust TF is developing a governance-backed metadata assertion. Key quote:
+
+> We have many different governing authorities that have interest into overseeing the use of certain assertions, made over certain pieces of data, or certain assertions made for an industry. [There are]
+industry groups, and they have, you know, governance and jurisdictions around the use of making certain claims. 
 
 === Readout from VC/VP task force: Andrew
 
+🎥 _30'25":_ VC/VP TF discussed possible need/desire to have a time stamp for VC signature that is separate from the C2PA claim generator's time stamp signature.
+
+Also working on how to get data from the signer paylod into the credential and/or presentation.
+
 === Readout from consent task force: Erik
+
+🎥 _38'14":_ Consent TF is focusing on describing three kinds of consent:
+
+* asset creation (largely covered already by C2PA)
+* identity (of creators? of subjects depicted?)
+* use of content (purpose)
+
+Sorting out boundaries between consent TF and the IP rights work being done at JPEG Trust.
+
+Erik published an https://docs.google.com/document/d/1kcimylxVo1iLPzJoOA1U_quPfQLK2ttwC0IzxSTaN3E/edit?usp=sharing[initial spec for consent assertion] and invites review.
 
 === Review identity assertion PR 251: Add network traffic policy
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy].
+🎥 _45'59":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy].
+
+*ACTION:* Eric to revise PR to introduce a new status code, something like `cawg.identity.network-traffic-blocked`.
 
 === Review identity assertion PR 264: Define “archival-quality identifier”
 
-Discuss https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”].
+🎥 _1h05'01":_ Discussed https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”].
 
-=== Topics for IIW?
+*ACTION:* Eric to revise PR to use verifiable _identifier_ instead of verifiable _credential._
+
+*ACTION:* Eric to incorporate feedback from IIW discussion on this topic.
 
 === Review metadata assertion PR 12: Add section on referencing the named actor from an identity assertion
 
-Discuss https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[PR #12: Add section on referencing the named actor from an identity assertion].
+🎥 _1h18'01":_ Discussed https://github.com/decentralized-identity/cawg-metadata-assertion/pull/12[PR #12: Add section on referencing the named actor from an identity assertion].
 
-=== AOB
+*ACTION:* Eric to revise PR to address feedback from Charlie Halford.
