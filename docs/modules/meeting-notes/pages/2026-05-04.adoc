@@ -8,24 +8,15 @@ https://us02web.zoom.us/rec/share/UBn5UX2lu26F8Xkk9QRh6a_z45YNGNEknovNcW-f_fyBGh
 * Andy Rosen, Sequence Key
 * Bill Huang, Trufo
 * Bruce MacCormack
-    * Burt Kaliski, Verisign
-    * Christian Saucier, Archon
 * Dom Guinard, SSL.com
-    * Eric Osterweil, Verisign
-    * Eric Scouten, Adobe
 * Erik Passoja, SAG/AFTRA
 * Grace Rachmany, DIF
 * Jenny Pretz, RIAA
 * Jeremy Uzan, Universal Music
-    * Makki Elfatih, HKDolts
 * Nathan Freitas, ProofMode
 * Nicholas Salvemini, Adobe
-    * Peleus Uhley, Adobe
-    * Philippe Mougin, AFP
 * Philippe Rixhon, JPEG Trust
-    * Richard W. Kroon, EIDR
 * Scott Perry, Digital Governance Institute
-    * Will Kreth, HAND (Human & Digital) Identity
 * Vasily Suvorov, accelerate.swiss
 
 NOTE: Attendance info might be incomplete. Based on those who spoke either in audio or chat this week.
