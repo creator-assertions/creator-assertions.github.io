@@ -63,7 +63,7 @@ Andy asked that we continue to defer this.
 
 🎥 _59'30":_ Phillippe raised a number of questions about who is involved in the signing process of a C2PA manifest and CAWG identity assertion and what legal standing they may have in various jurisdictions. This question evolved into a discussion about agentic identity and how it relates to human identity in the CAWG ecosystem.
 
-=== Questions about who is signing in the C2PA and CAWG ecosystem
+=== MEAN coalition open letter pending
 
 🎥 _1h12'49":_ Richard provided a heads up that there is a discussion group going on amongst members of
 commercial or professional music, entertainment, advertising, and news drafting an open letter that will be submitted to C2PA and CAWG reiterating what Bruce said in the previous meeting's readout on the IPTC Provenance Summit that C2PA alone is insufficient for the use cases that are important to these industries. This highlights a potential gap in that CAWG doesn't have its own conformance regime.
