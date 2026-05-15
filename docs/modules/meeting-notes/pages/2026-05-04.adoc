@@ -21,7 +21,7 @@ https://us02web.zoom.us/rec/share/UBn5UX2lu26F8Xkk9QRh6a_z45YNGNEknovNcW-f_fyBGh
 
 NOTE: Attendance info might be incomplete. Based on those who spoke either in audio or chat this week.
 
-== Meeting notesw
+== Meeting notes
 
 === IIW readout: Scott
 
@@ -59,7 +59,7 @@ Bruce mentioned that there is an IPTC-hosted summit in Japan in October, where C
 
 Andy asked that we continue to defer this.
 
-=== Questions about who is signing in the C2PA and CAWG ecosystem.
+=== Questions about who is signing in the C2PA and CAWG ecosystem
 
 🎥 _59'30":_ Phillippe raised a number of questions about who is involved in the signing process of a C2PA manifest and CAWG identity assertion and what legal standing they may have in various jurisdictions. This question evolved into a discussion about agentic identity and how it relates to human identity in the CAWG ecosystem.
 
