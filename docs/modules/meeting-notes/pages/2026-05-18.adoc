@@ -1,0 +1,54 @@
+
+= 18 May 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION* _(determined when meeting with Charlie Halford):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
+
+=== Holiday coverage
+
+Task force meetings next Monday (25 May) may need to be rescheduled for US holiday.
+
+Also, Eric not available for 29 June general meeting.
+
+=== Readout from trust task force: Eric
+
+Key topics:
+
+* Trust registry vs credentials all the way down?
+* Is the governance assertion a membership credential vs delegation of authority?
+* Can I trust the credential? Can I use it to operate under my governance?
+
+We posited five goals for identity endorsement:
+
+. Enable verification of content creator identity for an arbitrary length of time after content creation.
+. Enable content creator to state the governance under which the content is being created. (This was discussed as a reference-bound registry. I think.)
+. Enable content creator to state the endorsement of a governance organization under which the content is being created. (Big open question: How much is baked in at time of content creation vs how much needs to be discovered at time of verification?)
+. Enable distinction between content creator's use of restricted metadata that is authorized by professional organization from non-member assertion of that same metadata.
+. Enable discovery of additional information / updates to permission / endorsement that may have occurred subsequent to the content creation. 
+
+=== Readout from VC/VP task force: Andrew
+
+=== Readout from consent task force: Erik
+
+=== Readout from KERI/ACDC task force: Vasily
+
+=== Heads up: Request from C2PA to rename status codes
+
+=== AOB
