@@ -27,6 +27,8 @@ Task force meetings next Monday (25 May) may need to be rescheduled for US holid
 
 Also, Eric not available for 29 June general meeting.
 
+=== Readout from Singapore and Asia trip: Scott
+
 === Readout from trust task force: Eric
 
 Key topics:
@@ -41,11 +43,21 @@ We posited five goals for identity endorsement:
 . Enable content creator to state the governance under which the content is being created. (This was discussed as a reference-bound registry. I think.)
 . Enable content creator to state the endorsement of a governance organization under which the content is being created. (Big open question: How much is baked in at time of content creation vs how much needs to be discovered at time of verification?)
 . Enable distinction between content creator's use of restricted metadata that is authorized by professional organization from non-member assertion of that same metadata.
-. Enable discovery of additional information / updates to permission / endorsement that may have occurred subsequent to the content creation. 
+. Enable discovery of additional information / updates to permission / endorsement that may have occurred subsequent to the content creation.
 
 === Readout from VC/VP task force: Andrew
 
 === Readout from consent task force: Erik
+
+Erik isn't able to join us today. He provided the following readout:
+
+____
+Last session, we worked through the first portion of the consent assertion spec.  We also addressed the recently filed Avatar / Kilter federal complaint as a real-world example to walk through several domains of consent, including creator, subject, access and purpose, and delegated consent.  We then worked through the eight asset consent categories.
+
+This week's discussion will cover recent developments in the entertainment industry like the SAG-AFTRA / AMPTP tentative agreement and RSL Media launch and how they relate to identity and consent as we continue working through the spec.
+____
+
+Next meeting: Thursday, 21 May, 9am US Pacific / noon US Eastern / 1600 UTC.
 
 === Readout from KERI/ACDC task force: Vasily
 
