@@ -1,37 +1,61 @@
 
 = 18 May 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/2mZ0P-gu5-pSrTQjoFtEsmFJ5grKkujWkZa-GM8F5iQcd6YYeqK_0d7NRQW0Stld.d3pBrZE7zZT-_5jn[Meeting recording] (46m)
 
 == Attendees
 
-== Agenda
+* Andrew Dworschak, Yakoa
+* Andy Rosen, Sequence Key
+* Bruce MacCormack
+* Charlie Halford, BBC
+* Colin Murphy, Adobe
+* Drummond Reed
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Gavin Peacock, Adobe
+* Jenny Pretz, RIAA
+* Jeremy Uzan, Universal Music
+* John Carlucci, HAND (Human & Digital) Identity
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Niels Rump, DDEX
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Toby Weir-Jones, Verisign
+* Utkarsh Sharma, Vlinder
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _6'29":_ Toby Weir-Jones, Verisign
+
 === Review previous action items
+
+🎥 _7'07":_ 
 
 *ACTION* _(determined when meeting with Charlie Halford):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
 
 === Holiday coverage
 
-Task force meetings next Monday (25 May) may need to be rescheduled for US holiday.
+🎥 _7'50":_ Task force meetings next Monday (25 May) may need to be rescheduled for US holiday. -> Trust TF rescheduled to Tuesday (26 May) next week.
 
 Also, Eric not available for 29 June general meeting.
 
 === Readout from Singapore and Asia trip: Scott
 
+🎥 _8'51":_ Scott reported on his recent trip to Asia where he attended the CAI Content Authenticity Summit in Singapore, which was hosted by CAI and CATOS with approximately 175 attendees including a minister and representatives from companies like TikTok and Google. The meeting focused on content provenance issues and AI-related information, with Scott presenting on the C2PA conformance program and noting that several companies are already in the pipeline for conformance.
+
+Charlie and Scott mentioned that they have both met with the https://originator-profile.org/en-US/[Originator Profile] team, noting potential collaboration areas including how they handle attached-to-text items and maintain attributes about named actors.
+
 === Readout from trust task force: Eric
 
-Key topics:
+🎥 _21'06":_ Key topics:
 
 * Trust registry vs credentials all the way down?
 * Is the governance assertion a membership credential vs delegation of authority?
@@ -47,9 +71,11 @@ We posited five goals for identity endorsement:
 
 === Readout from VC/VP task force: Andrew
 
+🎥 _36'27":_ Previous meeting was cancelled. Will resume next week.f
+
 === Readout from consent task force: Erik
 
-Erik isn't able to join us today. He provided the following readout:
+🎥 _38'30":_ Erik isn't able to join us today. He provided the following readout:
 
 ____
 Last session, we worked through the first portion of the consent assertion spec.  We also addressed the recently filed Avatar / Kilter federal complaint as a real-world example to walk through several domains of consent, including creator, subject, access and purpose, and delegated consent.  We then worked through the eight asset consent categories.
@@ -61,6 +87,21 @@ Next meeting: Thursday, 21 May, 9am US Pacific / noon US Eastern / 1600 UTC.
 
 === Readout from KERI/ACDC task force: Vasily
 
+🎥 _39'26":_ KERI/ACDC task force conducted its initial kickoff meeting last week.
+
+* agreed goals:
+** focus on vLEI as the governance driven usage of KERI/ACDC with global coverage for organizations and organizational role credentials
+** focus on basic credentials that can "sign" Identity Assertion. In scope: vLEI LE (Legal Entity) and Role (Official and Engagement Context roles)
+** out of focus for now: "linked" credentials that can provide additional context, e.g. membership, etc.
+*** will see how "authority" and "consent" Task forces develop and possibly link up with them
+* first technical considerations
+** think about the needs of "archival quality" identifiers
+** provide for ease of discovery of the AIDs' Key Event Logs (KELs) for the purposes of the verification including witnesses, etc.
+** provide for the ability to include all required credentials in the assertion (e.g. QVI, Role, etc) that are required to establish and verify the entity that is signing the assertion.
+** use CESR signatures for the signature payload over the assertion, think about the need for timestamps and version of the keys used
+
 === Heads up: Request from C2PA to rename status codes
 
-=== AOB
+🎥 _42'46":_ Eric relayed a request from C2PA for us to discontinue the use of C2PA-reserved status codes when validating CAWG X.509 assertions.
+
+*ACTION:* Eric to prepare a PR introducing new CAWG-specific status codes.
