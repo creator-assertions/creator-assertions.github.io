@@ -16,7 +16,7 @@ content:
     branches:
     - HEAD
     - w3c-vc-credential-support
-    - revise-overview
+    - separate-cawg-status-codes
     tags:
     - v1.0
     - v1.1-final
@@ -44,7 +44,8 @@ content:
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
-    branches: [] # - main (when there's a draft again)
+    branches:
+    - 1.1-update
     tags:
     - v1.0
     start_path: docs
