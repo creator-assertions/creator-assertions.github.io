@@ -18,8 +18,16 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Review previous action items
 
-=== Topic 1
+=== Readout from trust task force: Scott
 
-=== Topic 2
+=== Readout from VC/VP task force: Andrew
+
+=== Readout from consent task force: Erik
+
+=== Readout from KERI/ACDC task force: Vasily
+
+=== Review active PRs
+
+=== Review/triage new issues
 
 === AOB

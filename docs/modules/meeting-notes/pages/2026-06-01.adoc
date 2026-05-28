@@ -1,0 +1,59 @@
+= 01 June 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION* _(determined when meeting with Charlie Halford):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
+
+*ACTION:* Eric to prepare a PR introducing new CAWG-specific status codes. -> DONE (will discuss later in agenda)
+
+=== Readout from EIC: Grace
+
+=== Readout from trust task force: Scott
+
+=== Readout from VC/VP task force: Andrew
+
+=== Readout from consent task force: Erik
+
+=== Readout from KERI/ACDC task force: Vasily
+
+=== Review active PRs
+
+==== Identity assertion
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #251: Add network traffic policy]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/266[PR #266: Update references to point to C2PA 2.4]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]
+** Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
+
+==== Organizational identity profile
+
+* https://github.com/decentralized-identity/cawg-organizational-identity-profile/pull/2[PR #2: Proposed version 1.1]
+** Updated to reference version 2.4 of the C2PA technical specification.
+** Introduced separate generator and validator profiles with additional requirements for each.
+
+=== Review/triage new issues
+
+==== Identity assertion
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/259[Issue #259: Formal Comment: Consent-State Verification as a Separate Interoperable Service Layer (Post-TRQP, Post-v1.2)]
+
+=== Withdraw existing endorsement assertion?
+
+=== AOB
