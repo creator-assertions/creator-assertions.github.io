@@ -42,6 +42,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 * https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]
 ** Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
 * https://github.com/decentralized-identity/cawg-identity-assertion/pull/267[PR #267: Add governance hooks for identity assertion]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/268[PR #268: Remove optional fields `expected_partial_claim`, `expected_claim_generator`, and `expected_countersigners`]
 
 ==== Organizational identity profile
 
