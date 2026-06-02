@@ -1,61 +1,138 @@
 = 01 June 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/D2We3hzBuXxJQSKIgHo1wtA01yfO04znYWU2AJsbYAfVesMHIepHfJeitzMtrSAK.EfRlW7-Qp9d-dOFy[Meeting recording] (1h11m)
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Eric Levin, Intinuous
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Grace Rachmany, DIF
+* Jenny Pretz, RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Makki Elfatih, HKDolts
+* Nicholas Salvemini, Adobe
+* Niels Rump, DDEX
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _6'31":_ Erik Levin, Intinuous _(auditing)_
+
 === Review previous action items
+
+🎥 _7'43":_
 
 *ACTION* _(determined when meeting with Charlie Halford):_ Eric to draft a new `cawg.actions` assertion spec. -> NOT DONE
 
 *ACTION:* Eric to prepare a PR introducing new CAWG-specific status codes. -> DONE (will discuss later in agenda)
 
-=== Readout from EIC: Grace
-
 === Readout from trust task force: Scott
 
-=== Readout from VC/VP task force: Andrew
+🎥 _8'39":_ Scott provided a readout on the Trust Task Force's work regarding governance-backed assertions, explaining they decided to create hooks in the identity assertion for processing and governance to occur outside of the immediate digital object, trust registry and referenced registry hooks. Work is in progress in the https://cawg.io/identity/1.3-draft+governance/[“governance” draft branch].
+
+*Next meeting:* Monday, 8 June, 0800 Pacific / 1100 Eastern / 1500 UTC.
+
+=== Readout from EIC: Grace
+
+🎥 _12'23":_ Grace reported on her presentation about COG at the https://www.kuppingercole.com/events/eic2026[EIC conference], noting that while there is interest and business opportunity for wallet providers, the conference format made it difficult to reach the right audience.
+
+Grace suggests that we do better promotion of CAWG prior to speaking at events like this so we get the right people in the room. We will have an opportunity to speak at Identity Week America in September.
+
+Scott suggested two avenues for progress: developing verifiable credentials on COG specifications through the VC VP task force and engaging with content provenance initiatives. Philippe confirmed that JPEC Trust will implement both C2PA and COG standards, with discussions ongoing with EU digital wallet providers, and indicated that some new implementations might emerge by the end of June.
 
 === Readout from consent task force: Erik
 
+🎥 _21'36":_ Erik discussed the need to define "creator" within the CAWG, as it is central to our work (including in our _name!_) but currently lacks a clear definition. He read a proposed definition from the specification, which describes a creator as a human whose original creative contribution gives rise to a digital asset, and noted that corporations and AI systems are not considered creators under US law. The group agreed to review the definition further.
+
+The current working draft of the consent assertion is available on https://docs.google.com/document/d/1BOrbz205WjWc-UthZ45kyCrjJ5sl8ju_i0RJw9JhHP0/edit?tab=t.0#heading=h.flp873cuc4ru[Google docs]. Note specifically that the current proposed definition for _creator_ is on page 10-11 of that document.
+
+*ACTION:* Eric to work with Erik P to translate the Google doc to Asciidoc syntax.
+
+*ACTION:* Eric to work with Richard to get the media best practices document published.
+
+*Next meeting:* Thursday, 4 June, 0900 Pacific / 1200 Eastern / 1600 UTC.
+
 === Readout from KERI/ACDC task force: Vasily
+
+🎥 _43'15":_ Vasily summarized the following in an e-mail before the meeting:
+
+* Briefed new TF members on the goals of the TF
+* Discussed the technical details of using vLEI credentials to create and sign Identity Assertion
+* Agreed that:
+** "Signature" payload of the assertion will be used to store all required metadata and the signature itself. 
+** Focus should be on enabling "archival" quality signatures that enable verification over a long period of time
+** The following data is considered to be essential for inclusion in the payload:
+*** Autonomic Identifier (AID) of the signer (Legal Entity or Person/Machine holding a Role)
+*** vLEI Legal Entity (LE) Credential (mandatory)
+*** vLEI Role (OOR or ECR), if signed by the holder of such credential
+*** Out Of Band Introduction (OOBI) link to a Witness, that can provide Key Event Log (KEL) of the signing AID
+*** Version (sequence) number of the latest "Establishment Event" in the KEL. This is needed to know which keys were authorized at the time of the signing. 
+*** Signature (in CESR)  itself; can be a group signature 
+*** Optional: "Interaction Event" sequence number in the AID's KEL containing (anchoring) the hash of the Identity Assertion for high-assurance use-cases. "Rotation" Event can be used as the anchoring event for the highest level of assurance. 
+** Open questions:
+*** KERI/ACDC is a stateful system and requires access to a number of "event logs" (e.g. KEL/TEL) of the involved ecosystem (e.g. GLIEF, QVIs, Les) to enable E2E verification. Also credentials Schemas are needed.  All these can be archived. How to enable "air-gapped" or "limited" verifiers? 
+*** Could be a "white-listed" bridge (costly). Or a white-listed repository (e.g. git, .well-known, etc) and a Watcher. Need to evaluate options.
+**** Find a balance between including too much data in the Assertion and making it easy for verifiers to get hold of all the Logs, Schemas, etc needed to perform verification. Similar to "certificate chains", revocation lists, etc. as used in a X509 setting.
+
+*ACTION:* Eric to work with Vasily to create a branch of the CAWG Spec on GitHub.
+
+*Next meeting:* Tuesday, 9 June, 0700 Pacific / 1000 Eastern / 1400 UTC.
 
 === Review active PRs
 
-==== Identity assertion
+==== Identity assertion PR #251: Network traffic policy
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #251: Add network traffic policy]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/266[PR #266: Update references to point to C2PA 2.4]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]
-** Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/267[PR #267: Add governance hooks for identity assertion]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/268[PR #268: Remove optional fields `expected_partial_claim`, `expected_claim_generator`, and `expected_countersigners`]
+🎥 _49'36":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/251[PR #251: Add network traffic policy].
+
+*ACTION (✅):* Eric to merge PR.
+
+=== Identity assertion PR #264: Define “archival-quality identifier”
+
+🎥 _57'11":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define “archival-quality identifier”].
+
+*ACTION:* Eric to incorporate feedback from IIW changing this to archival-quality _credential.*
+
+=== Identity assertion PR #266: Update references to point to C2PA 2.4
+
+🎥 _57'52":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/266[PR #266: Update references to point to C2PA 2.4].
+
+*ACTION (✅):* Eric to merge PR.
+
+=== Identity assertion PR #265: Rewrite X.509 validation section
+
+🎥 _58'21":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section].
+
+*ACTION:* Members familiar with X.509 asked to review. Will bring for vote in next meeting.
+
+=== Identity assertion PR #267: Add governance hooks for identity assertion
+
+🎥 _58'21":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/267[PR #267: Add governance hooks for identity assertion].
+
+Informational review only. Trust TF will continue work on this.
+
+=== Identity assertion PR #268: Remove optional fields `expected_partial_claim`, `expected_claim_generator`, and `expected_countersigners`
+
+🎥 _1h01'43":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/268[PR #268: Remove optional fields `expected_partial_claim`, `expected_claim_generator`, and `expected_countersigners`].
+
+*ACTION (✅):* Eric to merge PR.
 
 ==== Organizational identity profile
 
-* https://github.com/decentralized-identity/cawg-organizational-identity-profile/pull/2[PR #2: Proposed version 1.1]
-** Updated to reference version 2.4 of the C2PA technical specification.
-** Introduced separate generator and validator profiles with additional requirements for each.
+🎥 _1h01'43":_ Reviewed https://github.com/decentralized-identity/cawg-organizational-identity-profile/pull/2[PR #2: Proposed version 1.1].
 
-=== Review/triage new issues
-
-==== Identity assertion
-
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/259[Issue #259: Formal Comment: Consent-State Verification as a Separate Interoperable Service Layer (Post-TRQP, Post-v1.2)]
-
-=== Withdraw existing endorsement assertion?
-
-=== AOB
+No action; will re-review when relevant media partners are present.
