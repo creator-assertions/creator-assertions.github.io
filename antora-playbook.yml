@@ -17,6 +17,7 @@ content:
     - w3c-vc-credential-support
     - separate-cawg-status-codes
     - governance
+    - vlei
     tags:
     - v1.0
     - v1.1-final
