@@ -1,0 +1,43 @@
+= 15 June 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Need to meet again. New questions.
+
+=== Readout from trust task force: Scott
+
+=== Readout from VC/VP task force: Andrew
+
+VC/VP task force temporarily on hold. Will resume on 06 July.
+
+=== Readout from consent task force: Erik
+
+=== Readout from KERI/ACDC task force: Vasily
+
+=== Review active PRs and issues
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]
+** Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define "archival-quality identifier"]
+** Updated based on feedback from IIW
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/270[Issue #270: CAWG definitions needed]
+
+=== AOB
