@@ -24,7 +24,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Readout from consent task force: Erik
 
-=== Readout from KERI/ACDC task force: Vasily
+=== Readout from vLEI task force: Vasily
 
 === Review active PRs
 

@@ -1,43 +1,77 @@
 = 15 June 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/xNYcUHJI66-VvGfv9XaZMRRuGfJHMEVpQdquNH-PWS7KbP6Uew4ICF2XNlOBs2s.Ind1iWIsDRNB8VOJ[Meeting recording] (1h01m)
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Charlie Halford, BBC
+* Drummond Reed
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jeremy Uzan, Universal Music
+* Joe Grinstead, Pixlmob
+* Karla McKenna, GLEIF
+* Makki Elfatih, HKDolts
+* Nathan Freitas, ProofMode
+* Niels Rump, DDEX
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Toby Weir-Jones, Verisign
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
-
-=== New members introduction
+== Meeting notes
 
 === Review previous action items
 
-*ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Need to meet again. New questions.
+🎥 _5'55":_
+
+*ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Eric and Charlie to meet later in the week.
+
+=== New members introduction
+
+* 🎥 _8'48":_ Joe Grinstead, Pixlmob
 
 === Readout from trust task force: Scott
 
+🎥 _6'34":_ The Trust Task Force discussed adding two governance-backed fields to the CAWG identity assertion: a trust registry link and a referenced registry link. Scott and Eric planned to finalize the necessary changes in a PR, which they will present at next week's Trust Task Force meeting and aim to get approved in two weeks.
+
 === Readout from VC/VP task force: Andrew
 
-VC/VP task force temporarily on hold. Will resume on 06 July.
+🎥 _10'54":_ The Verifiable Credential Task Force is currently on hold due to other commitments, with plans to resume on 6 July.
 
 === Readout from consent task force: Erik
 
-=== Readout from KERI/ACDC task force: Vasily
+🎥 _11'32":_ Erik presented version 0.21 of the CAWG consent assertion specification, thanking team members including Will, Scott, Eric, Andy Rosen, and particularly Richard Kroon for their contributions. He introduced two items for the group: the updated consent assertion draft and a GitHub issue (number 270) regarding the need for definitions of roles like creator in the COG specifications.
+
+=== Readout from vLEI task force: Vasily
+
+🎥 _14'18":_ Vasily reported on the vLEI task force's recent meeting where they reviewed CBOR payload specifications and discussed archival quality of assertions to ensure long-term verifiability, with Eric suggesting they examine RFC 3161 for guidance on timestamping.
 
 === Review active PRs and issues
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]
-** Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
+==== Identity assertion PR #265: Rewrite X.509 validation section
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define "archival-quality identifier"]
-** Updated based on feedback from IIW
+🎥 _19'07":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Section on validating X.509 credentials rewritten to avoid reuse of C2PA-specific status codes.
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/270[Issue #270: CAWG definitions needed]
+*ACTION:* Eric to re-review the PR. Looks like some technical errors occurred.
 
-=== AOB
+==== Identity assertion PR #264: Define "archival-quality identifier"
+
+🎥 _22'12":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/264[PR #264: Define "archival-quality identifier"]. Updated based on feedback from IIW. Approved after some edits live in the meeting.
+
+*ACTION (✅):* Eric to merge PR 264.
+
+==== Identity assertion issue #270: New term definitions
+
+🎥 _55'39":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues/270[Issue #270: CAWG definitions needed].
+
+The discussion covered the need for separate definitions of terms like “creator,” “asset creator,” and “content creator” in the COG specifications, with Erik sharing detailed definitions he had developed. The conversation ended with plans to incorporate these definitions into the identity assertion section and schedule further discussions about COG definitions in future meetings.
+
+*ACTION:* Eric to add more time in agenda to review in detail.
