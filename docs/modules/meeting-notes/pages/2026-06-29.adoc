@@ -46,7 +46,7 @@ Do we want to have a consolidated spec release starting with 1.4?
 
 Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Fixed some merge-conflict errors discovered in previous meeting.
 
-The relevant section in this PR is ++https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature++[§8.2.2. Validating the COSE signature].
+The relevant section in this PR is https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature[§8.2.2. Validating the COSE signature].
 
 Pulse check: How close are we to ready to ratify the 1.3 identity assertion? C2PA would like us to land the X.509 changes ASAP.
 
