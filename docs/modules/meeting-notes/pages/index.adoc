@@ -9,6 +9,7 @@ Video conferencing information is only available to xref:ROOT:ROOT:membership.ad
 
 Notes (including video recordings) from prior meetings are published here:
 
+* xref:2026-06-29.adoc[]
 * xref:2026-06-15.adoc[]
 * xref:2026-06-01.adoc[]
 * xref:2026-05-18.adoc[]

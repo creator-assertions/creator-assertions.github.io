@@ -1,0 +1,49 @@
+= 29 June 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Eric and Charlie to meet later in the week. -> DONE: Eric and Leonard to coordinate response between CAWG and C2PA.
+
+*ACTION:* Eric to re-review PR 265. Looks like some technical errors occurred.
+
+*ACTION:* Eric to merge PR 264. -> DONE
+
+*ACTION:* Eric to add more time in agenda to review definitions in detail. -> DONE (will discuss later)
+
+=== Readout from trust task force: Scott
+
+=== Readout from discussion with W3C VC group: Scott
+
+=== Readout from consent task force: Erik
+
+=== Readout from vLEI task force: Vasily
+
+=== Structure of CAWG specs
+
+Do we want to have a consolidated spec release starting with 1.4?
+
+=== Definition of terms: Erik
+
+=== CAWG x UX task force: Matthew
+
+=== Review active PRs
+
+=== Review/triage new issues
+
+=== AOB

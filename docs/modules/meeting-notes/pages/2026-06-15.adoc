@@ -72,6 +72,6 @@ https://us02web.zoom.us/rec/share/xNYcUHJI66-VvGfv9XaZMRRuGfJHMEVpQdquNH-PWS7KbP
 
 🎥 _55'39":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/issues/270[Issue #270: CAWG definitions needed].
 
-The discussion covered the need for separate definitions of terms like “creator,” “asset creator,” and “content creator” in the COG specifications, with Erik sharing detailed definitions he had developed. The conversation ended with plans to incorporate these definitions into the identity assertion section and schedule further discussions about COG definitions in future meetings.
+The discussion covered the need for separate definitions of terms like “creator,” “asset creator,” and “content creator” in the COG specifications, with Erik sharing detailed definitions he had developed. The conversation ended with plans to incorporate these definitions into the identity assertion section and schedule further discussions about CAWG definitions in future meetings.
 
 *ACTION:* Eric to add more time in agenda to review in detail.
