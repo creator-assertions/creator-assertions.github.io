@@ -20,7 +20,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 *ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Eric and Charlie to meet later in the week. -> DONE: Eric and Leonard to coordinate response between CAWG and C2PA.
 
-*ACTION:* Eric to re-review PR 265. Looks like some technical errors occurred.
+*ACTION:* Eric to re-review PR 265. -> DONE (will discuss later)
 
 *ACTION:* Eric to merge PR 264. -> DONE
 
@@ -42,7 +42,13 @@ Do we want to have a consolidated spec release starting with 1.4?
 
 === CAWG x UX task force: Matthew
 
-=== Review active PRs
+=== Review identity assertion PR #265: Rewrite X.509 validation section
+
+Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Fixed some merge-conflict errors discovered in previous meeting.
+
+The relevant section in this PR is ++https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature++[§8.2.2. Validating the COSE signature].
+
+Pulse check: How close are we to ready to ratify the 1.3 identity assertion? C2PA would like us to land the X.509 changes ASAP.
 
 === Review/triage new issues
 
