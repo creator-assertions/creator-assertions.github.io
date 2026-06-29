@@ -20,9 +20,9 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 *ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Eric and Charlie to meet later in the week. -> DONE: Eric and Leonard to coordinate response between CAWG and C2PA.
 
-*ACTION:* Eric to re-review PR 265. -> DONE (will discuss later)
+*ACTION:* Eric to re-review PR 265 (Rewrite X.509 validation section). -> DONE (will discuss later)
 
-*ACTION:* Eric to merge PR 264. -> DONE
+*ACTION:* Eric to merge PR 264 (archive-quality identifier). -> DONE
 
 *ACTION:* Eric to add more time in agenda to review definitions in detail. -> DONE (will discuss later)
 
