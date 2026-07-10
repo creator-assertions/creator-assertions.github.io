@@ -1,22 +1,40 @@
 = 29 June 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/BDzOvwP8qkNyPTAGnOH9Vurheo9bzZNu7bKXi-I6jasoP3VYlabCpbPLV15p6hRl.Wo3IONGihfq9Gim1[Meeting recording] (2h06m)
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Dom Guinard, SSL.com
+* Drummond Reed
+* Erik Passoja, SAG/AFTRA
+* Grace Rachmany, DIF
+* Jenny Pretz, DDEX/RIAA
+* Joe Grinstead, Pixlmob
+* Karla McKenna, GLEIF
+* Makki Elfatih, HKDolts
+* Matthew Rappard, Cognitive Proof
+* Nathan Freitas, ProofMode
+* Niels Rump, DDEX
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Vasily Suvorov, accelerate.swiss
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
+NOTE: Attendance info might be incomplete. Based on those who spoke either in audio or chat this week.
 
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _13'25":_ Matthew Rappard, Cognitive Proof
+
 === Review previous action items
+
+🎥 _15'09":_
 
 *ACTION:* Eric to draft a new `cawg.actions` assertion spec. -> Eric and Charlie to meet later in the week. -> DONE: Eric and Leonard to coordinate response between CAWG and C2PA.
 
@@ -28,27 +46,33 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Readout from trust task force: Scott
 
+🎥 _17'48":_ Trust TF is making progress on adding governance hooks or additional claims hooks within the identity assertion, one being the trust registry hook based on Trust Over IP's Trust Registry Query Protocol and establishing a long-term plan for governing identity credential issuance.
+
 === Readout from discussion with W3C VC group: Scott
+
+🎥 _21'45":_ Scott working to establish a relationship with W3C Verifiable Credentials Group. Scott and Eric will be presenting on 22 July.
 
 === Readout from consent task force: Erik
 
-=== Readout from vLEI task force: Vasily
+🎥 _24'09":_ Erik working with Eric to convert consent assertion to Asciidoc and have it ready for full CAWG meeting. Meetings suspended unless additional work identified.
 
-=== Structure of CAWG specs
-
-Do we want to have a consolidated spec release starting with 1.4?
-
-=== Definition of terms: Erik
+*ACTION:* Eric to prepare Asciidoc site.
 
 === CAWG x UX task force: Matthew
 
-=== Review identity assertion PR #265: Rewrite X.509 validation section
+🎥 _28'01":_ Spinning up CAWG UX task force. Request from Andy Rosen to have more media industry representation in UX TF.
 
-Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Fixed some merge-conflict errors discovered in previous meeting.
+=== Where to focus attention?
 
-The relevant section in this PR is https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature[§8.2.2. Validating the COSE signature].
+🎥 _32'04":_ Richard draws attention to a letter being drafted by media industry leadership asking that the focus be moved from C2PA to CAWG as the primary consumer-facing specification. Concern raised that CAWG requires C2PA, but C2PA doesn't require CAWG. CAWG members generally welcoming the recognition that the identities of content creators and persons depicted in content are important parts of the overall provenance story.
 
-Pulse check: How close are we to ready to ratify the 1.3 identity assertion? C2PA would like us to land the X.509 changes ASAP.
+=== Readout from vLEI task force: Vasily
+
+🎥 _1h06'45":_ First draft of vLEI credential spec available in GitHub.
+
+=== Definition of terms: Erik
+
+🎥 _1h08'57":_ Based on recent discussion, have split the definition of "creator" into two terms: "content creator" and "asset creator." Still awaiting feedback from review of other similar definitions in other standards.
 
 === Review/triage new issues
 
