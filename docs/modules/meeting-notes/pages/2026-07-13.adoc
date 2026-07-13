@@ -18,7 +18,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Review previous action items
 
-*ACTION:* Eric to prepare Asciidoc site. -> NOT DONE
+*ACTION:* Eric to prepare Asciidoc site. -> DONE (see later)
 
 === Review identity assertion PR #265: Rewrite X.509 validation section
 
@@ -27,6 +27,10 @@ Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/26
 The relevant section in this PR is https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature[§8.2.2. Validating the COSE signature].
 
 Pulse check: How close are we to ready to ratify the 1.3 identity assertion? C2PA would like us to land the X.509 changes ASAP.
+
+=== Review consent assertion PR #1: Initial draft
+
+Review https://github.com/decentralized-identity/cawg-consent-assertion/pull/1[PR #1: Initial specification, converted from Google Docs working draft].
 
 === Structure of CAWG specs
 
@@ -39,9 +43,5 @@ Do we want to have a consolidated spec release starting with 1.4?
 === Readout from consent task force: Erik
 
 === Readout from vLEI task force: Vasily
-
-=== Review active PRs
-
-=== Review/triage new issues
 
 === AOB
