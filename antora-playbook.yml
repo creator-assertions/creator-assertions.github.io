@@ -24,6 +24,12 @@ content:
     - "1.2"
     start_path: docs
 
+  - url: https://github.com/decentralized-identity/cawg-consent-assertion.git
+    branches:
+    - main
+    - initial-draft
+    start_path: docs
+
   - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git
     branches:
     - main

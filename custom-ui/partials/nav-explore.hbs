@@ -10,7 +10,16 @@
       Assertion Specifications
     </li>
     {{#each site.components}}
-    {{#if (and (ne ./title "Creator Assertions Home") (endsWith ./title "Assertion") (ne ./title "Endorsement Assertion")) }}
+    {{#if (and (ne ./title "Creator Assertions Home") (endsWith ./title "Assertion") (ne ./title "Consent Assertion") (ne ./title "Endorsement Assertion")) }}
+    <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
+      <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
+      {{> component-versions}}
+    </li>
+    {{/if}}
+    {{/each}}
+
+    {{#each site.components}}
+    {{#if (eq ./title "Consent Assertion") }}
     <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
       <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
       {{> component-versions}}

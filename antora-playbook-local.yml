@@ -6,11 +6,11 @@ site:
   start_page: ROOT::index.adoc
 
 content:
-  sources: 
+  sources:
   - url: .
     branches: HEAD
     start_path: docs
-    edit_url: ~ 
+    edit_url: ~
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
@@ -23,6 +23,12 @@ content:
     - v1.0
     - v1.1-final
     - "1.2"
+    start_path: docs
+
+  - url: https://github.com/decentralized-identity/cawg-consent-assertion.git
+    branches:
+    - HEAD
+    - initial-draft
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-endorsement-assertion.git

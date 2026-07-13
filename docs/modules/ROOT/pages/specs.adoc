@@ -10,6 +10,8 @@ CAWG develops and maintains the following technical specifications for C2PA asse
 
 * **xref:training-and-data-mining:ROOT:index.adoc[]**: Describes an assertion that enables someone to provide information about whether an asset with C2PA metadata may be used for data mining or AI/ML training.
 
+* **xref:consent:ROOT:index.adoc[]**: Describes a consent assertion that enables a creator or rights holder to express machine-readable declarations of permitted and prohibited use for a digital asset.
+
 * **xref:endorsement:ROOT:index.adoc[]**: An endorsement is a way of indicating approval for specific actions made on content after it has had a C2PA Manifest attached. The signer of an ingredient asset stores endorsements using the endorsement assertion. The endorsement assertion indicates that the asset signer trusts a particular actor to perform the  actions indicated in the assertion. Then a validator uses that assertion when assessing whether the actions of the active C2PA Manifest are “endorsed” or not. 
 
 See the https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html#_technical_overview[C2PA Technical Specification: Technical Overview] for an explanation of the C2PA data model, including assertions.
