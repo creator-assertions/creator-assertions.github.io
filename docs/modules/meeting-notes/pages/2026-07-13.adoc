@@ -1,47 +1,89 @@
 = 13 July 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/RA5UHoOBDR0007oKHu6hfPG3KDNEw7_-RQF4a6yNO5o52K54_TUGiIMsrB2Q6Bnm.c8l2ihDat6bJA1Ly[Meeting recording] (1h00m)
 
 == Attendees
 
-== Agenda
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Cooper Halpern, Digital Governance Institute
+* Drummond Reed
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music
+* Karla McKenna, GLEIF
+* Matthew Rappard, Cognitive Proof
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Niels Rump, DDEX
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Toby Weir-Jones, Verisign
+* Vasily Suvorov, accelerate.swiss
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+* 🎥 _11'23":_ Cooper Halpern, Digital Governance Institute
+
 === Review previous action items
 
-*ACTION:* Eric to prepare Asciidoc site. -> DONE (see later)
+🎥 _12'29":_
+
+*ACTION:* Eric to prepare Asciidoc site. -> DONE (except it wasn't -- more later)
 
 === Review identity assertion PR #265: Rewrite X.509 validation section
 
-Review https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Fixed some merge-conflict errors discovered in previous meeting.
+🎥 _13'02":_ Reviewed https://github.com/decentralized-identity/cawg-identity-assertion/pull/265[PR #265: Rewrite X.509 validation section]. Since the previous review, we restored some important text that had been lost in merge-conflict resolution.
 
 The relevant section in this PR is https://cawg.io/identity/1.3-draft+x509-rewrite/#_validating_the_cose_signature[§8.2.2. Validating the COSE signature].
 
-Pulse check: How close are we to ready to ratify the 1.3 identity assertion? C2PA would like us to land the X.509 changes ASAP.
+*ACTION (✅):* Eric to merge this PR.
+
+=== Ratify identity assertion 1.3?
+
+🎥 _19'07":_ Working group approval for identity assertion 1.3 once above PR is merged.
+
+*ACTION (✅):* Eric to submit identity assertion 1.3 to DIF Steering Committee for ratification.
 
 === Review consent assertion PR #1: Initial draft
 
-Review https://github.com/decentralized-identity/cawg-consent-assertion/pull/1[PR #1: Initial specification, converted from Google Docs working draft].
+🎥 _24'26":_ Reviewed https://github.com/decentralized-identity/cawg-consent-assertion/pull/1[PR #1: Initial specification, converted from Google Docs working draft]. It was identified later that we were reviewing an outdated draft.
+
+*ACTION:* Eric to re-convert the document to Asciidoc using corrected source provided by Erik.
+
+*ACTION:* Eric to move definitions of consent domains into the conceptual model section.
 
 === Structure of CAWG specs
 
-Do we want to have a consolidated spec release starting with 1.4?
+🎥 _30'29":_ Do we want to have a consolidated spec release starting with 1.4?
+
+*ACTION:* Eric to create a consolidated spec after the 1.3 release is finalized.
+
+=== Definitions task force
+
+🎥 _36'02":_ Erik moves that we create a definitions task force. Will meet at 9am Pacific on Thursdays.
 
 === Readout from trust task force: Scott
 
-=== Readout from VC/VP task force: Andrew
+🎥 _39'34":_ Scott provided an update on the Trust Task Force, reporting progress on finalizing the Trust Registry Query Protocol (TRQP) integration with four required fields and discussing plans to draft these parameters into the specification.
 
-=== Readout from consent task force: Erik
+=== Update on VC/VP task force: Eric and Scott
+
+🎥 _43'17":_ Looking for co-chairs who can carry this group forward. Scott and Eric to present to W3C VC task force on 22 July.
+
+=== Readout from UX task force: Matthew
+
+🎥 _45'12":_ Six PRs for UI/UX language updates to 1.3 specifications. Scott raised concerns about low attendance at the CAWG UX task force meetings and encouraged better participation.
 
 === Readout from vLEI task force: Vasily
 
-=== AOB
+🎥 _49'27":_ vLEI TF is hoping to have a complete draft at the next meeting.

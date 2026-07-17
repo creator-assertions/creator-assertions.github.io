@@ -20,9 +20,7 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Readout from trust task force: Scott
 
-=== Readout from VC/VP task force: Andrew
-
-=== Readout from consent task force: Erik
+=== Readout from UX task force: Matthew
 
 === Readout from vLEI task force: Vasily
 
