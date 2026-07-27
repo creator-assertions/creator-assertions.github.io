@@ -1,0 +1,61 @@
+= 27 July 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+*ACTION (✅):* Eric to merge PR 265 (rewrite X.509). -> DONE
+
+*ACTION (✅):* Eric to submit identity assertion 1.3 to DIF Steering Committee for ratification. -> DONE
+
+*ACTION:* Eric to re-convert the document to Asciidoc using corrected source provided by Erik. -> NOT DONE
+
+*ACTION:* Eric to move definitions of consent domains into the conceptual model section. -> NOT DONE
+
+*ACTION:* Eric to create a consolidated spec after the 1.3 release is finalized. -> NOT DONE
+
+=== Readout from trust task force: Scott
+
+Last week’s meeting focused on finalizing the parameters needed for the Trust Registry action in the CAWG Identity Assertion. We agreed to move forward with the four standar parameters specified in the Trust Over IP’s Trust Registry Query Protocol (TRQP) (`entity_id`, `action`, `resource`, and `authority_id`). We agreed to adopt CAWG-based definitions within our newly Definitions Task Force.
+
+We also walked through a reference architecture of a https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/tree/main/docs[CAWG/TRQP test scenario (Photography contest)] with Sankharshan Mukhopadhyay.
+
+We briefly covered the what should replace the global trust model when the current use of S/MIME certificates sunsets after March 2027. The preliminary feedback is to focus on content-signing certificate Object Identifiers (OIDs).
+
+=== Readout from UX task force: Matthew
+
+=== Readout from vLEI task force: Vasily
+
+=== Readout from terms and definitions task force: Erik
+
+=== Review active PRs
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/273[#273: Update error code `cawg.identity.network_traffic_required`] - Matthew
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/276[#276: Add Trust Registry resolution API specification] - Matthew
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/278[#287: Named actor claims] - Charlie
+
+=== Review/triage new issues
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/270[#270: CAWG definitions needed] - Erik
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/271[#271: IPTC anchor list] - Dom
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/272[#272: Future support for the interim trust model] - Dom
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/274[#274: CAWG X.509 + TRQP Trust Model] - Bill
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/275[#275: CAWG & TRQP] - Darrell
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/277[#277: Proposal: DNSSEC/DANE-anchored signer trust (domain-bound keys via a TLSA record) as a new sig_type] - Unknown GitHub user
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/279[#279: Proposed changes to 3.3.9] - Erik
+
+=== AOB
