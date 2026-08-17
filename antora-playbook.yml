@@ -13,7 +13,7 @@ content:
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
-    - main
+    # - main - restore when there's a new draft
     - w3c-vc-credential-support
     - governance
     - vlei
@@ -21,6 +21,7 @@ content:
     - v1.0
     - v1.1-final
     - "1.2"
+    - v1.3
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-consent-assertion.git
