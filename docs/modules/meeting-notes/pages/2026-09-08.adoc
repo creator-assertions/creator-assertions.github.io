@@ -1,0 +1,94 @@
+= 08 September 2026
+
+https://us02web.zoom.us/rec/share/ar2r4sG74-Nf0NkkEO0HUmqr9dQOUuhvhrnTYL-6VqALUrpyQ2eTDCOoWc-84bPS.CC-8AxjnND_bG55K[Meeting recording] (1h04m)
+
+== Attendees
+
+* Dom Guinard, SSL.com
+* Eric Scouten, Adobe
+* Grace Rachmany, DIF
+* Iman Attia, EBU
+* Matthew Rappard, Cognitive Proof
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Robert Angelo, Little Dog Productions
+* Scott Perry, Digital Governance Institute
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
+
+=== Start meeting
+
+Welcome and W3C IPR reminder.
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+* 🎥 _5'53":_ Iman Attia, EBU (European Broadcasting Union) – a media authenticity and privacy researcher, following on from EBU's prior C2PA privacy analysis with an interest in CAWG privacy and zero-knowledge-proof approaches.
+* 🎥 _6'53":_ Robert Angelo, Little Dog Productions – shipped a macOS identity-claims-aggregator app called Recognize; hoping to get involved with the Trust Task Force.
+
+=== Readout from trust task force: Eric
+
+🎥 _8'26":_ No prepared readout was available this week; Eric asked whether anyone present could report on last week's Trust Task Force meeting, but no one spoke up.
+
+=== Readout from vLEI task force
+
+🎥 _9'20":_ vLEI Task Force did not meet last week; Vasily had a scheduling conflict.
+
+=== CAWG certificate validation issues and a possible CAWG-hosted validator
+
+🎥 _9'43":_ Dom raised that interest in CAWG has been rising sharply, alongside growing frustration that none of the common validators correctly validate CAWG certificates – a problem well known on the CAWG Discord, with people reportedly giving up on CAWG credentials as a result. He noted the fix (loading the Mozilla root store as a trust store) should be close to trivial, and suggested filing an issue or PR against the c2pa-rs repository, since most implementations depend on it.
+
+Eric acknowledged Adobe operates one of the validators referenced and is incomplete on CAWG certificate validation there; he attributed the gap to the team's bandwidth being consumed by recent AI-disclosure-law compliance work, and committed to raising priority internally. He noted the IPTC-operated validator may already do a better job against IPTC's trust infrastructure.
+
+Robert had separately filed something addressing part of the problem: a fix landed on the main branch in July but hadn't been backported to the stable release train. Eric explained Adobe's newer release strategy (main branch takes riskier changes; stable receives non-breaking backports; a breaking-change release ships roughly every two months, with the next one the following week).
+
+*ACTION:* Eric to get Robert's fix, plus any other necessary changes, into next week's stable release.
+
+Dom separately confirmed Robert's fix addresses roughly half the underlying issue (trust-list support). Iman raised a related, previously unreported issue with multiple signers on a single identity assertion (only the last signer's information is reflected), which Eric said would now get attention since it maps to a use case nobody had raised before.
+
+Philippe Rixhon added that his company's WIPO project on multi-signature assertions is directly relevant: in the music industry, a single composition (with a royalty split, or an AI reservation, for example) often needs to be counter-signed by multiple stakeholders (composer, lyricist, arranger, etc.) across different jurisdictions and collective management organizations, each potentially signing at a different time. Eric sketched how this could layer under a single C2PA claim: one CAWG identity assertion per co-signer, counter-signing a shared underlying assertion, all wrapped by the hardware/software C2PA claim for the asset.
+
+Philippe Mougin flagged validator UX as a separate open problem: CAWG information can be very granular (multiple identity-assertion signers, etc.), and there are not yet clear guidelines or samples for how a validator should surface that to an end user.
+
+Later in the meeting, Grace suggested DIF could help build and host a CAWG-specific validator, drawing a direct parallel to DIF's experience spinning up a second Universal Resolver implementation after community frustration with the original: a member-contributed reference implementation, hosted inexpensively (since most validation work can run in-browser) and ideally surfaced from the CAWG website itself, which Grace noted would also meaningfully boost the site's SEO. She proposed this become a short-lived task force to pull together Robert's and others' existing work into something the group is happy running long-term, with DIF able to sponsor modest hosting costs. Dom agreed a CAWG-run validator would help ensure new spec changes are supported promptly, but stressed the group should also keep pushing established tools toward CAWG support rather than relying on one reference site; he noted the C2PA-side "conformulator" (which will replace the current verify.contentauthenticity.org validator) is not expected to process CAWG certificates either.
+
+*ACTION:* Eric to confirm with Pia and Andy (C2PA) whether the upcoming conformulator will surface CAWG information.
+
+*ACTION:* Grace to help organize a short-lived task force, with DIF support, to build and host a CAWG reference validator.
+
+=== Review active PRs
+
+🎥 _25'40":_ Charlie's named actor claims proposal, carried over from the review two weeks ago, was deferred again since Charlie was not present.
+
+=== Future of CAWG: Friends of CAWG meeting (New York, early October)
+
+🎥 _26'41":_ Eric referred back to the discussion he opened two weeks earlier (see the xref:2026-08-24.adoc[24 August notes]) about CAWG's long-term organizational structure, and encouraged anyone with questions to watch that recording. He shared plans for an in-person "Friends of CAWG" gathering of key stakeholders in New York, tentatively 1, 2, or 5 October, with remote participation for those unable to travel, and polled attendees on availability. Dom, Philippe Rixhon, and others indicated likely remote or in-person availability, with the 2nd emerging as a favored date for several attendees.
+
+=== Readout from Global Digital Collaboration (GDC) conference: Scott and Grace
+
+🎥 _37'40":_ Scott presented on the C2PA conformance program and CAWG to an EU-heavy audience at GDC, which was focused heavily on EU wallet rollout and the governance bodies being set up to oversee wallet performance – a space Scott sees as an opportunity for CAWG assertions. Turnout for the session was modest (around 20 people) but engaged; Scott asked for community help, particularly from the EU, on verifiable credentials work, and suggested reviving CAWG's dormant task force on wallet-issued verifiable credentials.
+
+Grace added color: she fielded several unrelated inquiries at GDC about content-provenance-adjacent data schemas and, more surprisingly, business-wallet interoperability, which she noted is really the Open Wallet Foundation's remit, not CAWG's. She reported that GDC has effectively become the Open Wallet Foundation's main focus, that the Foundation is being folded into LFDT under new leadership, and that she is steering business-wallet-interoperability questions toward DIF's standing offer to host new working groups rather than trying to absorb that scope into existing efforts.
+
+Scott also noted strong interest in trust registries at GDC (including in the context of eIDAS and banking-sector business registries), observed that the EU has not yet settled its own trust registry methodology, and suggested CAWG – already implementing the Trust Registry Query Protocol – could help solve problems GDC has struggled with, such as trade-document exchange and digitally signing PDFs, now that C2PA supports PDFs. Philippe Rixhon suggested this, along with his view that CAWG's core spec should remain globally valid across jurisdictions (with regional bodies layering jurisdiction-specific implementations, e.g. eIDAS in Europe, on top), would be a good topic for the October gathering. Matthew suggested CAWG could publish guidance for industries on how to build their own "trust registry of trust registries" that plugs cleanly into CAWG.
+
+=== AI agent ecosystems: traction with MCP and agent skill files
+
+🎥 _49'38":_ Matthew reported unexpectedly strong interest from the Model Context Protocol (MCP) community after pitching C2PA/CAWG as a solution to unsigned, unattributed "skill files" being uploaded for AI agents, a problem the MCP group is actively trying to solve. His pitch required no changes to MCP itself, only a recommendation that provenance data be expressed via C2PA/CAWG, and the group indicated they'd bring it to their next committee meeting. Matthew argued AI tooling is fertile ground for adoption generally, since it has the fewest entrenched players and least attachment to existing identity approaches.
+
+*ACTION:* Grace to connect Matthew with a DIF contact (Dylan) already working on MCP-related standards efforts.
+
+=== Trust registries and the Trust Registry Query Protocol (TRQP)
+
+🎥 _53'12":_ Matthew argued CAWG should treat its own assertions as credentials subject to TRQP lookups, and, critically, define what the data returned by a TRQP query actually means for a CAWG assertion (e.g. what "issuer" or "action" means in that context), which he believes would resolve a lot of ambiguity at once. Scott pushed back that no real trust registry ecosystem exists yet to build on: TRQP itself deliberately started as simple as possible (a basic "does this registry have this certificate" query) specifically to see if the concept gets any adoption at all, and CAWG is the first group he's aware of building it in this early. Both agreed on the underlying goal; Matthew clarified his ask was narrower than a full "trust registry of trust registries" – just a CAWG-specific definition of how to interpret TRQP response data once received.
+
+=== Interim trust list sunset timeline
+
+🎥 _1h00'22":_ Dom asked for clarity on what happens to the existing S/MIME-based interim trust list as newer trust mechanisms come online. Eric confirmed the spec was deliberately worded so that content produced before the sunset date remains valid under that infrastructure in perpetuity, but acknowledged the March 2027 sunset date will likely need to move out another 3-6 months, since CAWG's own longer-term infrastructure won't be ready by then. Dom noted there's real value in the existing S/MIME-based system precisely because validation is already working for it, and encouraged continuing to support it.
+
+=== AOB
+
+🎥 _1h02'43":_ Matthew floated starting a conversation about tiered "levels" of assertions, arguing it may be easier to demonstrate value with simpler, lower-level assertions that later grow into the fuller high-level solution CAWG is building toward. Eric noted this echoes a recurring topic from Trust Task Force discussions.

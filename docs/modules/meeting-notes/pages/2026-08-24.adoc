@@ -1,0 +1,107 @@
+= 24 August 2026
+
+https://us02web.zoom.us/rec/share/ofCJrD1zwb20-eeDSeMgcJboSKj8_hSJGGdQir63absNpNC1H-k6dWGJZibQxvif.uWJN70PIfTgUJ7G8[Meeting recording] (1h02m)
+
+== Attendees
+
+* Aaron A. Grego, Trustlayer Foundation
+* Andy Rosen, Sequence Key
+* Bill Huang, Trufo
+* Bruce MacCormack
+* Charlie Halford, BBC
+* Drummond Reed
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Erik Passoja, SAG/AFTRA
+* Grace Rachmany, DIF
+* Jenny Pretz, DDEX/RIAA
+* Jeremy Uzan, Universal Music Group
+* Joe Grinstead, Pixlmob
+* Juan Caballero, DIF
+* Matthew Rappard, Cognitive Proof
+* Nathan Freitas, ProofMode
+* Nicholas Salvemini, Adobe
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Philippe Rixhon, JPEG Trust
+* Richard W. Kroon, EIDR
+* Toby Weir-Jones, Verisign
+* Victor Grey, JLINC
+
+== Meeting notes
+
+=== Start meeting
+
+Welcome and W3C IPR reminder.
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+NOTE: Eric had a hard conflict at the top of the hour and had not been able to circulate a written agenda in advance, so this session ran shorter and more informally than usual.
+
+=== New members introduction
+
+* 🎥 _9'36":_ Aaron A. Grego, Trustlayer Foundation
+
+=== Readout from consent and terms/definitions task forces: Erik
+
+🎥 _10'35":_ Consent Task Force: the latest (v0.21) draft has been moved into the CAWG specifications by Eric; Erik will now review it closely.
+
+*ACTION (✅):* Eric to re-convert the consent assertion document to Asciidoc using corrected source provided by Erik. -> DONE
+
+Terms and Definitions Task Force had a good session two weeks ago, with Scott Perry providing feedback on the definitions of "creator," "identity," and "identifier"; the group feels close to settled language. Next meeting is Thursday at 9am.
+
+=== Readout from trust task force: Eric (filling in for Scott)
+
+🎥 _11'24":_ Continued work on defining the interaction with Trust Over IP's Trust Registry Query Protocol (TRQP). Charlie presented an approach that may unify this with the named actor claims work; this will be a major topic at next Monday's meeting.
+
+=== Readout from vLEI task force
+
+🎥 _12'11":_ No representative was present; will follow up in a future meeting.
+
+=== Future structure of CAWG: possible independent SDO
+
+🎥 _12'32":_ Eric opened a discussion about ongoing conversations regarding CAWG's organizational future, including the possibility of forming an independent standards development organization (an LF Joint Development Foundation, similar to C2PA's) rather than continuing solely within DIF. He emphasized there is no dissatisfaction with DIF's hosting; the question is which vehicle best serves CAWG's growing constituency, which extends beyond identity into content producers' broader needs.
+
+Jeremy asked how a transition would affect the existing IPTC trust list. Eric explained the current system is designed to hold for content created through the end of March 2027 (a deadline likely to be extended), and that content created under today's rules would continue to be honored indefinitely; the open question is what trust anchors apply going forward. Matthew noted many CAWG specs are downstream of DIF and that scoping around creators' specific needs makes sense, though Eric noted the audience may extend beyond creatives to governments, insurers, and others who need provenance information.
+
+Jeremy also asked how this would relate to C2PA. Eric reiterated that C2PA has been clear it is not interested in identity or human-sourced metadata, which is a core reason for CAWG to exist as its own organization with its own conformance program (a superset of C2PA's) and governance over who may issue trusted credentials. Richard noted there is an outstanding issue and four pull requests at C2PA (to be discussed that same afternoon) proposing that CAWG conformance – for the identity, metadata, and AI opt-out assertions – be recognized within C2PA conformance.
+
+=== Conformance program and governance
+
+🎥 _20'13":_ Grace asked which body should run a conformance program, whether the Linux Foundation is the right home for one, and what alternatives exist if not. Eric agreed this is a central open question alongside shared trust infrastructure, and said it is not yet settled whether an LF JDF (as C2PA uses) is the right vehicle. Grace noted DIF is fully supportive of whatever the working group decides.
+
+Drummond noted that Trust Over IP deliberately does not do governance itself – it produces specs and models, not governing bodies – and suggested CAWG is effectively creating a governance body (a "Verifiable Trust Network" in ToIP terms) for the specs that are CAWG-specific, while DIDs/VCs/TRQP continue to be standardized elsewhere. Richard laid out the distinct functions CAWG needs to ensure happen, whether or not CAWG performs them directly: standards development (already underway), a conformance program, enforcement, trust registry conformance and certification, and branding/marketing. Eric agreed all of these need to exist for the ecosystem to succeed.
+
+Eric noted that Bruce had raised a concern (via chat) that LF-based organizations can be seen by non-tech organizations as biased toward tech companies – a voice Eric wants to make sure stays part of this conversation.
+
+Separately, in response to Matthew's observation that non-technical creators often don't realize the value CAWG assertions provide them (e.g. embedded payment addresses), and Matthew's broader frustration at having seen many groups fail to define what a "trust registry" even is, Erik Passoja described work his team has done prototyping a registry of registries. Richard added that CAWG should not try to do everything itself but should ensure standards, conformance, enforcement, and branding all happen somewhere.
+
+*ACTION:* Eric to draft one unified CAWG technical specification covering identity, metadata, usage rights, consent, and related assertions, to give vendors and content producers a single reference point.
+
+=== Defining "trust"
+
+🎥 _33'02":_ Eric Osterweil suggested the group be more precise about what "trust" means in this context, distinguishing authorization (is this party allowed to do X?) from trustworthiness (should I trust this creator or this object?), and floated the idea that some of this determination could be left to relying parties rather than centralized in a registry. Eric Scouten pointed to Section 9 of the identity assertion spec, which already defines three kinds of trust – governance trust, technical trust, and reputational trust – noting that reputational trust in particular is a personal judgment call that no technology can settle.
+
+Juan Caballero (Bumblefudge) said the group currently skews toward registry operators and producer-side participants, and encouraged bringing in more relying parties and platforms – both large, high-scale consumers that need cacheable registry-based trust, and smaller, more artisanal platforms – to better understand their actual requirements.
+
+=== CAWG's relationship to C2PA: scope and branding
+
+🎥 _41'18":_ Richard reiterated that C2PA alone cannot answer questions like who created content or for what project (it identifies the tool, not the human), and expressed concern that C2PA's brand recognition leads people to credit it for things that are really CAWG's domain; he'd like to see CAWG get proper credit as a necessary superset. Eric agreed C2PA is foundational to CAWG, but that CAWG is an important superset of what C2PA can do.
+
+Jeremy pushed back gently, noting that from a conformance-list perspective the C2PA/CAWG boundary can feel blurry – a conformant product can effectively act like an organization's own signing service. He floated the idea of a "Universal Music Group" signing service that lets UMG assert an artist is part of its label. Matthew connected this to an analogy from a recent UX task force meeting: C2PA is like Bluetooth (systems can connect to each other), while CAWG is like a specific device joining that network under an org's identity. Erik Passoja flagged that this raises hard ecosystem questions about how independent artists relate to organizations like UMG.
+
+=== Worked end-to-end example for the music industry
+
+🎥 _47'09":_ Jenny said it would be valuable to build a full worked example for the music industry, since the relevant use cases (e.g. an individual musician's contribution to a track) sit more naturally under CAWG than under the C2PA audio task force, and there's technical functionality still missing (e.g. a way for a contributor to assert authorship without needing direct access to the underlying audio file). Eric suggested more joint working sessions across the hardware/software and content-producer sides to avoid scattered, duplicated discussions.
+
+=== Minimal claim generator for small creators
+
+🎥 _49'17":_ Richard noted that any device or tool making a CAWG assertion must itself be C2PA conformant, and described a model where a small, dedicated, freely available signing device or service could be the last step in a creator's toolchain, letting small creators who could never get their own tools certified still participate. Charlie confirmed the BBC has been exploring a similar "minimal claim generator" service that other small tools could plug into, which also sidesteps some of the key-storage problems inherent in desktop tools. Charlie separately cautioned that full C2PA-style conformance can be a heavy lift, and suggested future CAWG conformance work focus more on governance of issuers than on certifying every end-entity or subscriber.
+
+=== Should CAWG standardize through SMPTE?
+
+🎥 _51'36":_ Eric raised, for open discussion, the idea of organizing part of CAWG's work under SMPTE, citing SMPTE's wide recognition in media industries and generally well-received IP policy as pros, against a slower, more process-heavy path to completion as a con. Andy described SMPTE Standards Community membership costs (roughly $500/year, or more for organizational tiers) and suggested that lighter-weight SMPTE user groups (e.g. the IMF user group) can move quickly and hand a proven, road-tested result to the main standards community for formal publication. Richard agreed the "SMPTE" imprint carries real value and is a fast track toward ISO recognition, but that developing a standard from scratch inside SMPTE's process is slow; the better play is to arrive with working consensus already in hand and use SMPTE mainly for final wordsmithing and publication. Erik Passoja added that SMPTE's process is collaborative but ultimately subject to a vote by a much larger body than those drafting the work.
+
+=== AOB
+
+🎥 _58'22":_ Matthew, drawing on recent audio task force demo work, raised that CAWG credentials are becoming "wallet-y" – users may need a wallet to share their CAWG information across multiple devices – and suggested exploring this once the demo is further along, since wallets add real complexity. Juan Caballero (Bumblefudge) agreed, framing it more broadly as a need for liveness or human-in-the-loop checks (whatever the interface – wallet, enterprise wallet, or authenticator), and suggested that gathering concrete requirements from consuming platforms (on liveness, authentication, and key management) would help clarify what's actually needed at different scales.
