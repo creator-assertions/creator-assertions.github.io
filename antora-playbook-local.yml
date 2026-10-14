@@ -51,6 +51,12 @@ content:
     - v1.1-final
     start_path: docs
 
+  - url: https://github.com/decentralized-identity/cawg-certificate-profile.git
+    branches:
+    - main
+    - initial-draft
+    start_path: docs
+
   - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
     branches:
     - 1.1-update
