@@ -1,121 +1,134 @@
 = 05 October 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/TzDNv7EIePeuYsSQxtbp2F527nWnBrUOPQ772oNo2G5Uxp4030x6A0rb4q05Tj03.DpuT-Fyezek__V5p[Meeting recording] (1h07m)
 
 == Attendees
 
-== Agenda
+// Compiled from Zoom participant screenshots taken during the meeting, plus chat and transcript.
+* Adam Fiock, SSL.com
+* Andy Rosen, SequenceKey
+* Bill Huang, Trufo
+* Brad Stewart, Verified Human
+* Dom Guinard, SSL.com
+* Drummond Reed, First Person Project
+* Eric Scouten, Adobe
+* Grace Rachmany, DIF
+* Iman Attia, EBU
+* Jenny Pretz, RIAA
+* Jeremy Uzan, Universal Music Group
+* Juan Caballero, DIF
+* Makki Elfatih, HKDolts
+* Matthew Rappard, Cognitive Proof
+* Michael Stattmann, Castlabs
+* Nathan Freitas, Guardian Project
+* Padma, Castlabs
+* Peleus Uhley, Adobe
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Toby Weir-Jones, Verisign
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
+
+== Meeting notes
 
 === Start meeting
 
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+🎥 _10'05":_ Eric gave the standard reminder that the meeting operates under the DIF Code of Conduct and the W3C IPR policy. Grace clarified that only those who have signed the DIF IPR agreements can participate actively; others are welcome to listen in.
 
 === New members introduction
 
+🎥 _5'44":_ Brad Stewart, Verified Human – certifies human authorship in music and audio. Interested in the operating side of running an attester. He is contributing a use case to the Trust Task Force on 12 October and offered to help with conformance scope.
+
+🎥 _6'34":_ Adam Fiock, SSL.com – a certificate authority; interested in compliance.
+
+🎥 _7'10":_ Iman Attia, EBU – interested in CAWG from a privacy perspective.
+
+🎥 _7'58":_ Michael Stattmann, Castlabs (with colleague Padma, product manager) – media technology company with a C2PA-approved certificate authority, a generator product in the conformance program, and video players. Castlabs wants to issue CAWG certificates and use them in its generator product; its main markets are news publishers, broadcasters, and content creators.
+
 === Review previous action items
+
+🎥 _10'57":_ Skipped this week.
 
 === Readout from Friends of CAWG meeting
 
-Last Friday we held a four-hour hybrid working meeting on the future of CAWG, with about 30 participants from across industries.
-The goal was to give the co-chairs clear direction on scope, organizational structure, governance, trust partnerships, and naming.
+🎥 _11'06":_ Eric reported on last Friday's working meeting at Adobe, attended by about 30 people including several who have not been able to take part in CAWG until now. It gave Eric and Scott direction on CAWG's scope and organizational structure. Scott added that executives from the usual participating organizations attended, giving a fuller picture of their positions.
 
-Headline: strong convergence on scope and structure, one clear approval (the new home), and a dated plan to be operational by mid-December.
+==== Scope
 
-==== Scope: CAWG is the identity layer
+🎥 _13'07":_ CAWG should be the home for creators and creator identity in the Content Credentials ecosystem: who is claiming credit or a role in producing a C2PA asset, and what stable facts about that act of creation can be stated in the manifest. Rights, licensing, and consent change over time and vary by region and contract, so CAWG will provide a standard way to link to authoritative external sources (such as those run by DDEX) instead of expressing that data in the manifest. This deprioritizes a few topics discussed previously.
 
-CAWG is the home for the creator and identity layer of the Content Credentials ecosystem. The focus is making clear who asserted what, about which asset, and in what capacity, for individuals as well as organizations.
-CAWG stays tied to C2PA, and our assertions live in a C2PA manifest. That dependency wasn't up for debate (with a footnote).
-Stable creation facts (who, when) stay in the manifest.
-Rights, licensing, consent, and training/data-mining permissions change by time, territory, ownership, and contract; C2PA doesn't provide a mechanism for mutable data so we will instead prefer to define standardized, unambiguous links to authoritative external sources.
+🎥 _15'26":_ Matthew and Jenny explained the music industry's view: the data is dynamic (a media asset can have up to seven rights holders, updated as often as weekly), and creators may assert rights they don't actually hold. In chat, Brad suggested adding certification and verification status to the mutable-data category, with the external link carrying a freshness expectation as well as a location.
 
-Interoperability is a priority: DDEX, WIPO Global ID, and other identity and metadata systems.
+🎥 _17'59":_ CAWG will define the structure and extension points; each industry self-organizes and writes its own profile (vocabularies, how membership is recognized, what external data to expect).
 
-Industries populate their own profiles. CAWG defines the structure, extension points, and recognition requirements.
+🎥 _19'04":_ Asked about agentic systems, Eric said a software tool is a claim generator named under C2PA, and the person or organization operating it is a named actor in CAWG; he has not yet seen that model break down. Scott said agentic is on the table as an extension of identity relationships, though less mature than the three identity types the Trust Task Force started with (organization, individual, and sponsor-validated). Michael offered an AI dubbing and translation use case. Scott said who is making a claim is in scope, while whether they have the right to make it is for industry to decide.
 
-==== New home: independent, unfunded JDF project
+🎥 _23'31":_ Andy said motion pictures already depend on the SMPTE registry and urged speed, since studio pipelines assume identity and consent infrastructure exists. Scott said CAWG will ask SMPTE and the studios what they need and provide the standard structure for it. Jenny offered to walk the group through recent ISNI and DDEX work on parties and AI use cases.
 
-Approved without objection: CAWG becomes an independent, initially unfunded Joint Development Foundation project under the Linux Foundation.
+*ACTION:* Jenny to present the ISNI/DDEX party and AI use-case scenarios at a future meeting and relate them to CAWG's work.
 
-* IP carries forward on the W3C Patent Policy. JDF also requires antitrust and conduct agreements.
-* CAWG stays separate from C2PA but pursues a formal liaison relationship.
-* The steering committee can later move to a funded model if needs arise.
+==== New home
+
+🎥 _27'45":_ The proposal is for CAWG to become an independent, initially unfunded Joint Development Foundation project under the Linux Foundation, separate from C2PA (similar to how C2PA is organized). Eric said that, barring major objections, he and Scott will start talks with Grace, Juan, and the DIF steering committee about leaving DIF, with thanks for DIF's hosting over the past year and a half. No objections were voiced.
+
+🎥 _29'36":_ Grace said it is legitimate for industries to make this decision, but unusual for the discussion to take place outside DIF's IPR agreement and open only to a select few. She invited anyone uncomfortable objecting in this group to contact her or Juan privately. Eric also welcomed feedback on the decision and how it was made.
 
 ==== Trust governance
 
-Two layers: CAWG sets the top-level framework and baseline requirements, and external organizations run trust lists, conformance, and industry-specific validation.
-CAWG decides which frameworks qualify for recognition. It won't operate registries or conformance programs.
-We separated who you are (identity) from what you are (roles like news organization or musician). Self-regulating industry bodies, such as IPTC, would attest to the latter.
-
-Concern raised: inconsistent validators could fragment the ecosystem. Common validation requirements are a charter priority, but there's no complete solution yet.
-The current identity assertion relies on S/MIME governance for content created through 31 March 2027. That date is provisional, and we need to extend or replace the arrangement before it becomes urgent.
-Details such as baseline requirements, designation criteria, and designation terms are still to be drafted.
+🎥 _30'57":_ Eric described two layers: CAWG sets the top-level framework for identity verification and credential issuance, while industry bodies (for example, IPTC for news publishers) decide who is credentialed in their industry. CAWG will define how such bodies are recognized and what data they must provide. Scott said this works because CAWG left industry-specific governance to industry, and industry accepted that. Drummond said this is the two-layer model of a governance framework of governance frameworks, as in the Trust Over IP metamodel. Matthew stressed the need for education so industries understand the structure; Scott said the CAI could help. Eric compared the approach to the JDF's own pre-built recipe for forming an organization: CAWG should give industries a form to fill in.
 
 ==== Steering committee
 
-Direction: small, capped, odd-numbered, around 9 to 11 seats.
-
-Set participation expectations up front, with term limits, rotation, and removal for prolonged non-participation.
-
-Representation goals: industry, organization size, geography, for-profit and nonprofit, individual creators, labor and creative organizations, broadcasters, advertising, and civil society, with a cap on technology companies.
-Advisory or tiered participation will give broader groups a voice without bloating the committee.
-
-News and broadcast need a smaller follow-up (Bruce, Mike, and others) on how representatives are chosen and held accountable.
+🎥 _39'56":_ The committee should stay small. The charter will set participation expectations, term limits, rotation, and removal for non-participation, with diversity across industries, organization sizes, geographies, and organization types, and a mix of creators and technology companies. A couple of industries were flagged for extra attention. Scott said seat holders must represent a broader swath of viewpoints and do the work, not only speak for their own company. Drummond said in chat that stakeholder-group representation should be the top goal. Matthew suggested a seat focused on decentralized identity; Eric agreed and said CAWG should seek liaison relationships with DIF and Trust Over IP.
 
 ==== Naming
 
-The organization, the technical standard, and any consumer trust mark may carry separate names.
+🎥 _46'44":_ There is a strong current of opinion that "CAWG" is a poor name. A small group will bring back cleared options before any documents are signed; anyone with naming experience should contact Scott or Eric. Scott said "working group" no longer fits, "creator" and "attribution" matter, the name should extend beyond creative industries, and it should reflect a B2B mission. In chat, Bill suggested keeping the CAWG acronym (for example, "Credential Attestation & Web Governance"), and Jenny suggested "Authenticity Network for Digital Identity."
 
-A small naming task group — to be formed — brings back two or three cleared options in 2-3 weeks; Scott and I finalize the name shortly thereafter.
+🎥 _49'17":_ Eric did not read through the timeline; the agenda lists charters going to Linux Foundation staff on 16 October, a unified CAWG 2.0 draft circulating on 30 October, the new technical working group reviewing CAWG 2.0 in mid-to-late November, a public announcement in late November, and CAWG operating as an independent project by mid-December. He asked for help with naming and for feedback on the charter and scope, sent to him, Grace, or Juan.
 
-Criteria: international usability, clarity, IP clearance, and a credible B2B standards name.
+🎥 _50'03":_ On the relationship to C2PA, Scott said CAWG is dependent on C2PA but wants to be separate and aligned; the C2PA chair and vice chair supported alignment without complete merging. Eric said C2PA leadership has been supportive.
 
-We'll consult C2PA stakeholders before choosing anything that echoes their name, since some C2PA participants have concerns about identity work being associated with C2PA.
-No name and no consumer mark has been chosen.
+🎥 _51'24":_ Matthew suggested a wiki for name submissions and asked that any rename consider CAWG-specific error codes and labels. Eric said he will resist renaming assertion labels or error codes, since renaming the training and data mining assertion earlier made it hard to know what to read and write. Andy argued for a professional brainstorm over a wiki.
 
-==== Timeline and what's next
+In chat, Brad asked whether the call for patent exclusions will state the controlling deadline and the specifications covered, and where it will be published. This was not answered in the meeting.
 
-* *Today, Mon 5 Oct:* We issue the call for patent exclusions. This starts a waiting period that we're planning around as 30 days, ending 4 Nov. _Risk:_ if it turns out to be 45 days (ending 19 Nov), formation, the working group start, and the announcement could slip by up to two weeks.
-* *This week:* We ask the full DIF Steering Committee to review CAWG's exit as a DIF working group, with approval targeted for late October. That approval is a dependency. Technical work continues in DIF until the new organization can accept contributions.
-* *Fri 16 Oct:* Draft project and working group charters go to Linux Foundation JDF staff.
-* *Fri 30 Oct:* Circulate a unified CAWG 2.0 draft, giving about two weeks of review.
-* *Late Oct to mid-Nov:* LF legal and steering committee review the charter. Then the JDF project is formed, IP agreements are re-signed, and specs and repos migrate.
-* *Mid to late Nov:* The new technical working group convenes to review and approve CAWG 2.0.
-* *Late Nov:* Public announcement, avoiding Thanksgiving week.
-* *Late Nov to Dec:* We draft baseline requirements and designation criteria, and begin trust partnership designation conversations with X.509 candidates and GLEIF.
-* *Mid-December:* CAWG is operational as an independent JDF project with its own steering committee. This is aggressive and depends on the name, charter, legal transition, and DIF approval.
-* *Q1 2027:* First designation agreement(s) with trust governance partners.
+*ACTION:* Eric and Scott to begin conversations with the DIF steering committee about CAWG becoming an independent organization.
 
-==== Asks of the audience
-
-* Send charter comments to me.
-* Volunteer for the naming task group, the steering committee model, or the news/broadcast representation conversation.
-We also need an owner for conformance scope: where CAWG-level conformance ends and industry-level conformance begins. Tell us if you can help.
-* Review the CAWG 2.0 draft when it circulates.
+*ACTION:* Anyone with naming experience to contact Scott or Eric; anyone with charter or scope feedback to contact Eric, Grace, or Juan.
 
 === Readout from definitions task force: Erik
 
-The Definitions Task Force met again on 24 September and advanced definitions of identity, identifier, and the creator roles. In about a month we'll bring a draft to the full group for a vote. Where a term we need isn't yet in the spec, we'll bring a spec recommendation alongside it.
-
-This Thursday’s Definitions Task Force has been MOVED to next Thursday, 15 October, as Erik, our chair, is at the Frontier Summit in Vancouver this week.
+🎥 _54'18":_ Erik could not attend; Eric reported that the task force advanced definitions of particular terms and expects to bring a draft to the full group for a vote in about a month. This week's meeting is moved to Thursday, 15 October.
 
 === Readout from trust task force: Scott
 
+🎥 _54'56":_ The task force had been working on a governance-backed assertion using trust registries and the Trust Registry Query Protocol, but interest has grown in a CAWG certificate policy for X.509 certificates. Scott drafted one from the C2PA certificate policy and the CA/Browser Forum S/MIME Baseline Requirements, whose organization, individual, and sponsor-validated tracks suit CAWG. The group has homework to review it, with discussion at the next meeting on 12 October. Scott also circulated earlier Trust Over IP work on issuer requirements for verifiable credentials, aiming for comparable identity-verification assurance across X.509 and verifiable credentials.
+
+In chat, Brad asked about the format and length of contributions for 12 October; this was not answered in the meeting.
+
 === Readout from UX task force: Matthew
+
+🎥 _59'54":_ C2PA is discussing summarization (aggregating many manifests). Matthew believes there are industry-specific concerns for CAWG and will return to the topic.
 
 === Readout from vLEI task force: Vasily
 
+🎥 _1h00'47":_ Vasily was not present; no readout.
+
 === Review active PRs
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pulls
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/278 (if Charlie is present)
-* Proposal (no PR yet): Extend S/MIME sunset date to 31 August 2027 (will be incorporated in CAWG 2.0 draft if approved)
+🎥 _1h01'04":_ Matthew asked people to review his two PRs on repeated trust-registry (TRQP) queries. Bill's PR was deferred; PR #278 was not discussed.
+
+🎥 _1h02'12":_ Eric proposed extending the S/MIME sunset date from 31 March to 31 August 2027 in the CAWG 2.0 draft, since a replacement won't be ready by March. Dom asked whether a sunset is needed at all, noting that people are invested in S/MIME, which works today. Eric said yes: he wants pressure on CAWG to create its own certificate policy and doesn't want to commit to S/MIME in perpetuity, though that could be decided later. Matthew suggested accepting it indefinitely but within a defined scope. Bill said CAWG needs its own governed primary method and shouldn't promise more than the standard can deliver. Scott said the draft policy will follow generally accepted standards, using constructs like EKUs and OIDs, without new concepts that burden CAs.
+
+No decision was taken; the question is referred to the Trust Task Force.
+
+*ACTION:* Trust Task Force to take up the S/MIME sunset question, including Dom's previously submitted issue.
 
 === Review/triage new issues
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues
+Not covered this week.
 
 === AOB
+
+🎥 _1h07'00":_ None. The next meeting is in two weeks.
