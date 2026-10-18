@@ -1,0 +1,74 @@
+= 19 October 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION (✅):* Eric to get Robert's fix, plus any other necessary changes, into the next stable release. -> DONE
+
+* *ACTION:* Eric to confirm with Pia and Andy whether the upcoming conformulator will surface CAWG information. -> NOT DONE
+
+* *ACTION:* Grace to organize a short-lived task force, with DIF support, to build and host a CAWG reference validator. -> STATUS UNKNOWN
+
+* *ACTION:* Grace to connect Matthew with DIF's Dylan on MCP-related standards efforts. -> STATUS UNKNOWN
+
+* *ACTION:* Jenny to present the ISNI/DDEX party and AI-use-case scenarios at a future meeting. -> OPEN
+
+* *ACTION:* Eric and Scott to begin conversations with the DIF steering committee about CAWG becoming independent. -> UNDERWAY
+
+* *ACTION:* Trust Task Force to take up the S/MIME sunset question, including Dom's previously submitted issue. -> STATUS UNKNOWN
+
+* *ACTION:* Eric to draft one unified CAWG technical specification. -> OPEN
+
+* *ACTION:* Eric to move definitions of consent domains into the conceptual model section. -> OPEN
+
+* *ACTION:* Collect naming suggestions for Scott or Eric, and charter or scope feedback for Eric, Grace, or Juan.
+
+=== Readout from trust task force: Scott
+
+=== Readout from UX task force: Matthew
+
+=== Readout from vLEI task force: Vasily
+
+=== Readout from definitions task force: Erik
+
+=== Review active PRs
+
+NOTE: Includes open items updated since 19 September 2026, plus the issue explicitly labeled for the agenda. Items assigned to task forces are excluded.
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/288[cawg-identity-assertion #288: Fix cawg.crypto_wallet entry in ICA example credential]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/287[cawg-identity-assertion #287: Fix ICA JSON schema $ref targets and align schemas with the spec]
+* https://github.com/decentralized-identity/cawg-metadata-assertion/pull/14[cawg-metadata-assertion #14: Fix JSON syntax in media identifier example]
+* https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/pull/11[cawg-training-and-data-mining-assertion #11: Fix CDDL references, CBOR example, and constraint_info naming]
+
+=== Review/triage new issues
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/291[cawg-identity-assertion #291: §7.2: should a status code's url be the identity assertion's label or its JUMBF URI?]
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/290[cawg-identity-assertion #290: May cawg.identity.well-formed accompany cawg.x509.credential.untrusted?]
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/289[cawg-identity-assertion #289: Clarify that identity-assertion failure codes don't invalidate the C2PA Manifest]
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/286[cawg-identity-assertion #286: Delegated creator]
+* https://github.com/decentralized-identity/cawg-identity-assertion/issues/285[cawg-identity-assertion #285: Creative contribution]
+
+=== Naming progress report
+
+Not yet organized. Call for interest. Or wild brainstorm ideas.
+
+=== Cancel next meeting?
+
+Meeting two weeks from today (2 November) is busy with travel for IIW for many members. Proceed or cancel?
+
+=== AOB

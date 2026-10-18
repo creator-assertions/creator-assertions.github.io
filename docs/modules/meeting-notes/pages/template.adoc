@@ -24,6 +24,8 @@ include::partial$upcoming-meeting-changes.adoc[]
 
 === Readout from vLEI task force: Vasily
 
+=== Readout from definitions task force: Erik
+
 === Review active PRs
 
 === Review/triage new issues
