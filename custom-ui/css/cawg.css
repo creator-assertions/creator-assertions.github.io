@@ -306,6 +306,14 @@ pre code {
   border-radius: 4px;
 }
 
+.doc .listingblock pre,
+.doc .listingblock pre > code,
+.doc .literalblock pre,
+.doc .literalblock pre > code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 /* Tweak rendering of headers. */
 .doc h1,
 .doc h2,
@@ -337,6 +345,99 @@ pre code {
   font-size: 90%; /* CAWG: Override browser default style sheet */
   font-weight: 600;
   color: #555;
+}
+
+/* Keep description terms closer to their definitions than preceding entries. */
+.doc .dlist dd + dt {
+  margin-top: calc(0.5rem + 8pt + 4px);
+}
+
+.doc .dlist dd > .openblock > .content > .paragraph:first-child {
+  margin-top: calc(1rem - 8px);
+}
+
+.doc .dlist dt .anchor {
+  position: absolute;
+  width: 1.75ex;
+  margin-left: -1.5ex;
+  padding-top: 0.05em;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.doc .dlist dt .anchor::before {
+  content: "\00a7";
+}
+
+.doc .dlist dt:hover .anchor,
+.doc .dlist dt:focus-within .anchor {
+  opacity: 1;
+}
+
+/* Keep continuation paragraphs compact and make the gap between items clear. */
+.doc .olist li > .paragraph,
+.doc .ulist li > .paragraph {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.doc .olist li + li,
+.doc .ulist li + li {
+  margin-top: 1rem;
+}
+
+/* Tighten spacing only between two single-paragraph items. */
+.doc .olist li:has(> p:only-child) + li:has(> p:only-child),
+.doc .ulist li:has(> p:only-child) + li:has(> p:only-child) {
+  margin-top: 0.4rem;
+}
+
+/* Distinguish TODO reminders while reusing the IMPORTANT admonition treatment. */
+.doc .admonitionblock.todo td.icon i::after {
+  content: "TO DO";
+}
+
+.doc .admonitionblock.todo td.icon i {
+  background-color: #e88a00;
+}
+
+.doc .admonitionblock.todo td.content {
+  position: relative;
+  border: 0;
+  background: transparent;
+}
+
+.doc .admonitionblock.todo td.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #e88a00;
+  border-radius: 0.5rem;
+  background: #fffaf0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.doc .admonitionblock.todo td.content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.doc .admonitionblock.todo td.icon {
+  z-index: 2;
+}
+
+/* Use horizontal rules only for AsciiDoc tables, without a top frame. */
+.doc table.tableblock {
+  border: 0;
+}
+
+.doc table.tableblock th.tableblock,
+.doc table.tableblock td.tableblock {
+  border-width: 0 0 1px;
 }
 
 /* Customize presentation of examples. */

@@ -51,10 +51,9 @@ content:
     - v1.1-final
     start_path: docs
 
-  - url: https://github.com/decentralized-identity/cawg-certificate-profile.git
-    branches:
-    - main
-    - initial-draft
+  - url: https://github.com/decentralized-identity/cawg-certificate-policy
+    branches: [scouten-adobe-google-doc-to-asciidoc] #  switch to `main` once PR 2 is merged
+    tags: []
     start_path: docs
 
   - url: https://github.com/decentralized-identity/cawg-organizational-identity-profile.git
