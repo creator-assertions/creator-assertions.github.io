@@ -1,0 +1,49 @@
+= 16 November 2026
+
+== Meeting recording
+
+A link to the meeting recording will be provided after the meeting.
+
+== Attendees
+
+== Agenda
+
+=== Start meeting
+
+Welcome and W3C IPR reminder
+
+include::partial$upcoming-meeting-changes.adoc[]
+
+=== New members introduction
+
+=== Review previous action items
+
+* *ACTION:* Jenny to present the ISNI/DDEX party and AI-use-case scenarios at a future meeting. -> OPEN
+
+* *ACTION:* Eric and Scott to begin conversations with the DIF steering committee about CAWG becoming independent. -> DONE
+
+* *ACTION:* Trust Task Force to take up the S/MIME sunset question, including Dom's previously submitted issue. -> WILL DISCUSS LATER
+
+* *ACTION:* Eric to draft one unified CAWG technical specification. -> OPEN
+
+* *ACTION:* Eric to move definitions of consent domains into the conceptual model section. -> OPEN
+
+* *ACTION:* Collect naming suggestions for Scott or Eric, and charter or scope feedback for Eric, Grace, or Juan. -> WILL DISCUSS LATER
+
+=== Readout from trust task force: Scott
+
+=== Readout from UX task force: Matthew
+
+=== Readout from vLEI task force: Vasily
+
+=== Readout from definitions task force: Erik
+
+=== Review active PRs
+
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/296[Identity assertion #296: Extend interim trust list program through 31 December 2027 - #296]
+
+=== Review/triage new issues
+
+=== Naming the new organization
+
+=== AOB
