@@ -1,74 +1,120 @@
 = 19 October 2026
 
-== Meeting recording
-
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/MTbdhxw7OqLQAQY16_p8snn5Yy8f39-kFsmqTX2X5SGH_CceFzgCYkw__vmJu3BY.EVHqwtewUaVQNdCM[Meeting recording] (1h06m)
 
 == Attendees
 
-== Agenda
+// Compiled from Zoom participant screenshots, chat, and transcript.
+* Andy Rosen, SequenceKey
+* Bill Huang, Trufo
+* Drummond Reed, First Person Project
+* Eric Osterweil, Verisign
+* Eric Scouten, Adobe
+* Grace Rachmany, DIF
+* Jenny Pretz, RIAA
+* Jeremy Uzan, Universal Music Group
+* Joe Grinstead, Pixlmob
+* Juan Caballero, DIF
+* Makki Elfatih, HKDolts
+* Matthew Rappard, Cognitive Proof
+* Nathan Freitas, Guardian Project
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Titusz Pan, ISCC Foundation
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+🎥 _13'12":_ Titusz Pan, director of the ISCC Foundation, introduced the Foundation's TDM rights-reservation registry, which contains roughly 300,000 trade-book titles with AI reservations. The Foundation is planning C2PA support for EPUB e-books. Titusz is interested in interoperability between the training and data mining assertion, TDMRep, and IETF preferences work; he recently joined DIF.
+
 === Review previous action items
 
-* *ACTION (✅):* Eric to get Robert's fix, plus any other necessary changes, into the next stable release. -> DONE
+🎥 _14'51":_ The mid-September C2PA SDK release should include Robert's requested fix.
 
-* *ACTION:* Eric to confirm with Pia and Andy whether the upcoming conformulator will surface CAWG information. -> NOT DONE
+The upcoming conformulator does not currently surface CAWG information. Matthew has filed a PR that would add it, pending C2PA's acceptance.
 
-* *ACTION:* Grace to organize a short-lived task force, with DIF support, to build and host a CAWG reference validator. -> STATUS UNKNOWN
+The reference-validator work had not started. Matthew offered for the UX Task Force to spend the next two weeks developing a browser-based verifier from its conformance tool. The approach is to keep most features client-side and split out any features that need a backend; ongoing server support is not expected for the core functionality.
 
-* *ACTION:* Grace to connect Matthew with DIF's Dylan on MCP-related standards efforts. -> STATUS UNKNOWN
+Matthew has connected with DIF's Dylan about MCP-related standards work.
 
-* *ACTION:* Jenny to present the ISNI/DDEX party and AI-use-case scenarios at a future meeting. -> OPEN
+Jenny is willing to present the ISNI/DDEX party and AI-use-case work. The next two meeting dates conflict with conferences and DDEX activities, so she offered to share a diagram and the forthcoming ISNI AI-policy consultation document in Slack if she can share them.
 
-* *ACTION:* Eric and Scott to begin conversations with the DIF steering committee about CAWG becoming independent. -> UNDERWAY
+Eric and Scott raised CAWG independence as a preliminary topic with the DIF Steering Committee. They plan to bring a more formal request to its next meeting, assuming a name has been selected.
 
-* *ACTION:* Trust Task Force to take up the S/MIME sunset question, including Dom's previously submitted issue. -> STATUS UNKNOWN
+The Trust Task Force had not directly addressed the S/MIME sunset question. Scott will add it to the next task-force agenda while the certificate-policy draft continues to be refined.
 
-* *ACTION:* Eric to draft one unified CAWG technical specification. -> OPEN
-
-* *ACTION:* Eric to move definitions of consent domains into the conceptual model section. -> OPEN
-
-* *ACTION:* Collect naming suggestions for Scott or Eric, and charter or scope feedback for Eric, Grace, or Juan.
+Eric has not started the unified technical specification or moved the consent-domain definitions into the conceptual model. Naming suggestions had been received but not yet collected into a list.
 
 === Readout from trust task force: Scott
 
+🎥 _23'11":_ Scott described three work streams. The task force has paused its work on a trust-registry query protocol reference in the identity assertion while it prioritizes a CAWG certificate policy for X.509 certificates. The draft covers individual, organizational, and sponsor-validated certificates; the task force will revisit whether to retain S/MIME use and continue refining the policy.
+
+The task force is also developing a framework template for industry governance frameworks and conformance programs. It plans to draw on the Trust Over IP governance toolkit and other existing deliverables. Scott encouraged members to review and participate in the work.
+
+The certificate-policy draft is now in AsciiDoc and available for review. The group discussed using GitHub for comments; Eric has a PR to move the document there and carried over editorial comments as TODO boxes. Scott asked members to review the draft before the next Trust Task Force meeting.
+
 === Readout from UX task force: Matthew
+
+🎥 _30'49":_ The task force has released a conformance tool to help validator implementers check their error messages and behavior against the specification. It plans to maintain the tool even without a formal conformance program and use it to create a web-based verifier. Matthew also suggested keeping a list of other available verifiers.
 
 === Readout from vLEI task force: Vasily
 
+🎥 _32'08":_ Vasily was not present; there was no readout.
+
 === Readout from definitions task force: Erik
+
+🎥 _32'23":_ Erik was not present. Scott said the task force still needs to finalize its agreed definitions so they can be brought to the working group for acceptance. He also noted that a consent recommendation from the task force is awaiting disposition and placement on the agenda.
 
 === Review active PRs
 
-NOTE: Includes open items updated since 19 September 2026, plus the issue explicitly labeled for the agenda. Items assigned to task forces are excluded.
+🎥 _33'53":_ Matthew presented four editorial and conformance fixes:
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/288[cawg-identity-assertion #288: Fix cawg.crypto_wallet entry in ICA example credential]
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/287[cawg-identity-assertion #287: Fix ICA JSON schema $ref targets and align schemas with the spec]
-* https://github.com/decentralized-identity/cawg-metadata-assertion/pull/14[cawg-metadata-assertion #14: Fix JSON syntax in media identifier example]
-* https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/pull/11[cawg-training-and-data-mining-assertion #11: Fix CDDL references, CBOR example, and constraint_info naming]
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/288[cawg-identity-assertion #288] aligns the ICA example credential with the specification.
+* https://github.com/decentralized-identity/cawg-identity-assertion/pull/287[cawg-identity-assertion #287] fixes JSON Schema references and aligns the schemas with the specification.
+* https://github.com/decentralized-identity/cawg-metadata-assertion/pull/14[cawg-metadata-assertion #14] removes invalid trailing commas from a JSON example.
+* https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/pull/11[cawg-training-and-data-mining-assertion #11] fixes CDDL references, a CBOR diagnostic example, and a duplicate field name.
+
+There were no objections to merging any of the four PRs; Eric said he would merge them after the meeting. He also suggested applying CDDL validation tooling to the CAWG specifications.
+
+*ACTION:* Eric to merge PRs #288, #287, #14, and #11 after the meeting.
 
 === Review/triage new issues
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/291[cawg-identity-assertion #291: §7.2: should a status code's url be the identity assertion's label or its JUMBF URI?]
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/290[cawg-identity-assertion #290: May cawg.identity.well-formed accompany cawg.x509.credential.untrusted?]
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/289[cawg-identity-assertion #289: Clarify that identity-assertion failure codes don't invalidate the C2PA Manifest]
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/286[cawg-identity-assertion #286: Delegated creator]
-* https://github.com/decentralized-identity/cawg-identity-assertion/issues/285[cawg-identity-assertion #285: Creative contribution]
+🎥 _40'29":_ Matthew said conformance testing exposed ambiguity in the identity assertion's status-code URL: the specification should require a JUMBF URI reference so a status identifies the correct assertion when multiple manifests are reported together. He will submit a PR.
 
-=== Naming progress report
+The group discussed whether `cawg.identity.well-formed` can accompany an untrusted-credential failure. Matthew argued that once certificate trust validation fails, the verifier should report that failure rather than also report the assertion as well-formed. Eric agreed that the statuses conflict; Matthew will propose clarifying text.
 
-Not yet organized. Call for interest. Or wild brainstorm ideas.
+*ACTION:* Matthew to propose a clarification for issue #290 on whether `cawg.identity.well-formed` can accompany an untrusted-credential failure.
+
+The discussion also covered how identity-assertion failure codes relate to C2PA status reporting. Eric noted that CAWG 1.3 uses its own X.509 failure codes rather than reusing C2PA status codes. Matthew will draft the related clarification.
+
+*ACTION:* Matthew to draft a clarification for issue #289 on identity-assertion failure codes and C2PA manifest validity.
+
+🎥 _46'27":_ Makki presented a proposal for a delegated-creator assertion describing who performs creative work on behalf of an organization. Potential delegate types include an employee, an AI system, or an independent creator such as a contractor; the organization would remain responsible. The group agreed to form a task force to develop a proposal, with Makki as chair. Eric encouraged participation from news organizations, including the BBC and IPTC.
+
+🎥 _50'40":_ Makki also introduced a proposed assertion to describe AI's role in a creative workflow, such as whether work was made without AI assistance, co-created with AI, or commissioned. Members said this is a contested topic that warrants a focused discussion and regulatory review across relevant jurisdictions. The group agreed to combine this work with the delegated-creator task force; Makki will organize it.
+
+*ACTION:* Makki to invite members to a task force on delegated creators and AI's role in creative work, and bring proposals back to the working group.
 
 === Cancel next meeting?
 
-Meeting two weeks from today (2 November) is busy with travel for IIW for many members. Proceed or cancel?
+🎥 _56'42":_ The 2 November meeting conflicts with IIW travel for several members, and Eric will be unavailable to host. Scott offered to run it if there is sufficient interest and agenda material. Members were asked to share feedback and possible topics in Slack; no decision to cancel or proceed was made.
+
+*ACTION:* Members to indicate in Slack whether they want a 2 November meeting and suggest agenda topics; Scott can host if there is sufficient interest.
+
+=== Naming progress report
+
+🎥 _58'23":_ Eric said he had not yet organized the naming group and asked interested members to contact him during the week. In the discussion, Andy's proposed names included CARD, CRED, CLEAN, CORE, TRACE, ORIGIN, and ASSIST; other suggestions included NICE and C3PA. No name was selected. Richard noted that the organization's name and its consumer-facing brand could be separate.
+
+The group also discussed whether existing `cawg.*` assertion labels and error codes would need to change. Eric cautioned against renaming established data structures because the previous TDM assertion rename created compatibility problems. Members were asked to put further suggestions in Slack.
+
+*ACTION:* Interested members to post naming suggestions in Slack; Eric to organize a naming exercise and bring options back to the group.
 
 === AOB
+
+🎥 _1h05'30":_ No additional business. The meeting closed at approximately 1h05m.

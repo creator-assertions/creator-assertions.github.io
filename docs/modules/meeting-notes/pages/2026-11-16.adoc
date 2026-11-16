@@ -2,48 +2,114 @@
 
 == Meeting recording
 
-A link to the meeting recording will be provided after the meeting.
+https://us02web.zoom.us/rec/share/ZO8DZrNjwUJD4b9NX-QFelnl0g3_0-awUFElO2PecSqCjqxaSPz89kvFQvZQ1_M2.gXZ2xERbPyf2tgAt[Meeting recording] (1h27m)
 
 == Attendees
 
-== Agenda
+// Compiled from Zoom participant screenshots.
+* Andrew Brown
+* Andy Rosen, SequenceKey
+* Charlie Halford, BBC
+* Dom Guinard, SSL.com
+* Drummond Reed, First Person Project
+* Eric Scouten, Adobe
+* Erik Passoja
+* Jeremy Uzan, Universal Music Group
+* Makki Elfatih, HKDolts
+* Matthew Rappard, Cognitive Proof
+* Nathan Freitas, Guardian Project
+* Nicholas Salvemini
+* Peleus Uhley, Adobe
+* Philippe Mougin, AFP
+* Richard W. Kroon, EIDR
+* Scott Perry, Digital Governance Institute
+* Toby Weir-Jones, Verisign
+* Victor Grey, JLINC
+* Will Kreth, HAND (Human & Digital) Identity
+* Zak
 
-=== Start meeting
-
-Welcome and W3C IPR reminder
-
-include::partial$upcoming-meeting-changes.adoc[]
+== Meeting notes
 
 === New members introduction
 
+🎥 _5'06":_ Zak introduced himself as a member of BBC R&D, where he is working with Charlie Halford on C2PA implementation and broader adoption.
+
 === Review previous action items
 
-* *ACTION:* Jenny to present the ISNI/DDEX party and AI-use-case scenarios at a future meeting. -> OPEN
+🎥 _6'22":_ Jenny was not present, so her ISNI/DDEX presentation was deferred. Eric and Scott have spoken with the DIF Steering Committee about CAWG becoming independent; the committee is aware of the plan and supports transferring the standards and helping with the transition. Naming the new organization remains the main obstacle to forming it.
 
-* *ACTION:* Eric and Scott to begin conversations with the DIF steering committee about CAWG becoming independent. -> DONE
+The Trust Task Force has taken up the S/MIME sunset question; an active PR extending the interim trust-list date is discussed below. Eric has not started the unified technical specification or moved the consent-domain discussion into AsciiDoc, and apologized for delays caused by unexpected demands in October. Naming suggestions have been collected and received preliminary review.
 
-* *ACTION:* Trust Task Force to take up the S/MIME sunset question, including Dom's previously submitted issue. -> WILL DISCUSS LATER
+The following actions from 19 October remain incomplete:
 
-* *ACTION:* Eric to draft one unified CAWG technical specification. -> OPEN
-
-* *ACTION:* Eric to move definitions of consent domains into the conceptual model section. -> OPEN
-
-* *ACTION:* Collect naming suggestions for Scott or Eric, and charter or scope feedback for Eric, Grace, or Juan. -> WILL DISCUSS LATER
+* *ACTION:* Eric to merge PRs #288, #287, #14, and #11. -> NOT DONE
+* *ACTION:* Matthew to propose a clarification for issue #290 on whether `cawg.identity.well-formed` can accompany an untrusted-credential failure. -> NOT DONE
+* *ACTION:* Matthew to draft a clarification for issue #289 on identity-assertion failure codes and C2PA manifest validity. -> NOT DONE
 
 === Readout from trust task force: Scott
 
+🎥 _8'30":_ Scott reported on three work streams. The task force continues work with Trust Over IP on Trust Registry Query Protocol transactions, but has paused that effort while prioritizing a CAWG certificate policy that can support a CA trust list.
+
+The task force agreed to extend the interim S/MIME trust-list sunset to 31 December 2027, by which time it expects a replacement process to be ready. It is also working to include NIST assurance levels in the certificate policy, with S/MIME transactions allowed at levels appropriate to the vetting performed. Scott will bring proposed policy updates to the next task-force meeting.
+
+The third work stream is a governance-framework template for industry-specific use of CAWG assertions. The task force plans to build on Trust Over IP's governance metamodel, which is being moved into GitHub, after the certificate policy is further along. The Trust Task Force will meet the following Monday despite the U.S. Thanksgiving week.
+
 === Readout from UX task force: Matthew
+
+🎥 _13'24":_ Matthew reported on the CAWG version of the conformulator and a recent Meta-hosted Plugfest, where companies discussed how to represent AI-generated or AI-edited media. There is progress but no consensus yet. The conformulator can accept rubrics, although CAWG has not defined one. The chat included the https://c2pa-conformulator.netlify.app/[C2PA Conformulator] link.
 
 === Readout from vLEI task force: Vasily
 
+🎥 _14'47":_ Vasily was not present. Eric reported that the task force is close to a draft vLEI profile for the CAWG identity assertion. The draft has gone through several revisions, TODOs have been removed, and members are doing one final thorough review before bringing it to the full group.
+
 === Readout from definitions task force: Erik
+
+🎥 _15'26":_ Erik said the task force is focused on finalizing definitions and the specification text that depends on them. The https://docs.google.com/document/d/18OoJbW7MWeASApWIJZdNuFKPcnuqQgNMmD-CKzvQMgU/edit[CAWG Definitions Draft v0.3] was shared in chat. The group now meets Thursdays at 0900 Pacific on the DIF calendar, except that it will skip U.S. Thanksgiving on 26 November.
+
+One key definition is that an entity is a human or organization, not a machine; machines belong to C2PA's domain. Eric expects the definitions to become a larger definitions section in the unified specification. Matthew is using AI to review existing documents for conflicts with the proposed definitions, and expects to separate purely editorial fixes from issues needing discussion.
+
+Erik described work to align terminology for agentic AI with C2PA and NIST. He argued that any agent identity should be paired with a human or organizational identity responsible for the agent's behavior. The https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems#comment-167861[NIST article on agent identity management] was shared in chat. Erik is seeking a December discussion with NIST, CAWG, and C2PA; Scott suggested that he and Erik also compare terminology with Richard Witt's work on internet fiduciaries. Matthew noted that the MCP and SkillMD security groups are considering C2PA, and therefore CAWG, as a recommendation.
 
 === Review active PRs
 
-* https://github.com/decentralized-identity/cawg-identity-assertion/pull/296[Identity assertion #296: Extend interim trust list program through 31 December 2027 - #296]
+🎥 _23'04":_ Eric presented https://github.com/decentralized-identity/cawg-identity-assertion/pull/296[identity assertion PR #296], which extends the interim trust-list program through 31 December 2027. The proposal changes the sunset date in two places, with the remaining edits being logistical. Philippe asked that the time zone be specified; Eric will state the cutoff as 23:59 UTC on 31 December 2027. There were no objections to sending the PR to the Steering Committee for ratification.
+
+*ACTION:* Eric to specify the 31 December 2027 cutoff as 23:59 UTC and submit the resulting 1.4 version of the identity assertion to the Steering Committee for ratification.
+
+=== Consent assertion
+
+🎥 _25'40":_ Scott asked about the status of the consent assertion. Erik said it is ready for review and a vote, and shared the https://cawg.io/consent/1.0-draft+initial-version/[consent specification] and https://github.com/decentralized-identity/cawg-consent-assertion/pull/5[consent assertion PR #5]. Eric proposed giving members two weeks to review it and scheduling a vote at the next meeting. Scott and Richard agreed to be reviewers; other members who rely on consent were invited to comment.
+
+The group discussed whether consent belongs in CAWG if the organization focuses on immutable claims. Erik argued that consent is inherently changeable, and that a signed claim can point to an authoritative registry for current terms and a history of changes. Scott suggested that CAWG could make an immutable claim that consent was asserted at a particular time, potentially with a timestamp, while industry-specific systems maintain current consent. Richard noted the practical difficulty of updating assets already distributed when consent changes. No decision was made on scope or ratification; the draft will return for a vote after review.
+
+Andy suggested involving https://www.linkedin.com/in/ryanschnizlein/[Ryan Schnizlein] for expertise in AICP broadcast-TV-spot contractual-delivery requirements.
+
+*ACTION:* Scott, Richard, and Jeremy to review consent PR #5; members to provide feedback before the vote at the next meeting.
+
+=== Delegated creator task force update
+
+🎥 _44'51":_ Makki reported that the task force has held three sessions and is meeting biweekly. It is defining use cases, distinguishing permission to delegate from the actions actually performed by a delegate, and stress-testing a TRQP version contributed by Sankrushan.
+
+The task force is developing a survey for broader creative-industry input, beginning with delegated creators and consent. The draft survey, shared in chat, has more than 20 questions; the group is considering whether to send it as one survey or as a series and how to involve C2PA task forces. Scott recommended coordinating the cross-task-force survey through the full working group while each task force develops its own questions. Makki will facilitate this work at the next Trust Task Force meeting. The https://docs.google.com/document/d/1lcSbUxVdP8bfx2MBiVmAG3KVrGZabjvl/edit[proposed survey] was shared in chat.
+
+*ACTION:* Makki to facilitate drafting Trust Task Force survey questions at its next meeting and bring the combined survey back to the working group.
 
 === Review/triage new issues
 
+Not covered this week.
+
 === Naming the new organization
 
+🎥 _52'14":_ Eric described name-screening criteria: avoid “Foundation” because the project will be hosted by the Linux Foundation; avoid terms that collide with existing organizations or C2PA terminology; and retain a visible but not overly close relationship to C2PA. When Philippe questioned excluding “provenance,” Eric agreed to revise that criterion.
+
+The group discussed risks in “identity” and “trust”: identity could obscure the group's work on metadata and consent, while “trust” might imply that a consumer should trust the truth of an organization's claims. Members emphasized that CAWG adds human and organizational claims, including attribution and credit, to a cryptographically bound C2PA record; it does not describe the record of digital-object changes that C2PA calls provenance.
+
+🎥 _1h03'46":_ C3A emerged as the leading draft name, expanded in chat as “Coalition for Creator Claims and Attribution.” Members supported the direction but continued to discuss alternatives and wording, including C3MA (“Coalition for Creator Claims, Metadata and Attribution”), C-Trust, CAITE, TRUENESS, and C4A. “Credit” was suggested as a more familiar alternative to “attribution.” The group noted that C3A domains are largely taken, while c3ma.com and c3.ma were suggested as available options.
+
+No final organization name was adopted. Eric closed by proposing that the group continue with C3A or a variant and look for a name that is meaningful and does not have problematic collisions. The legal organization name can be separate from a consumer-facing brand, which may need marketing input. Nathan shared the https://proofmode.org/cawg_user_guide[Proofmode CAWG user guide] as an example of current user-facing communication.
+
+*ACTION:* Eric to continue name-collision research and bring a C3A or variant forward for broader feedback.
+
 === AOB
+
+🎥 _1h27'49":_ No additional business. The meeting closed at approximately 1h27m.
