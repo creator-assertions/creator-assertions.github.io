@@ -13,7 +13,7 @@ content:
 
   - url: https://github.com/decentralized-identity/cawg-identity-assertion.git
     branches:
-    # - main - restore when there's a new draft
+    - main # disable when 1.4 is published
     - w3c-vc-credential-support
     - governance
     - vlei
